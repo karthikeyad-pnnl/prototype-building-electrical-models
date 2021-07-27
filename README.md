@@ -51,6 +51,7 @@ Organization
 - `models`: Modelica distribution system models
 - `design`: Design documentation and other supporting files; used to create the Modelica models
 - `scripts`: Model generation scripts
+- `weather`: Weather files (from [here](https://www.energycodes.gov/prototype-building-models); included for convenience)
 
 The `models` and `design` directories have parallel subdirectory structures organized by *Building Category* > *Building Type* > *Code* > *Climate Zone*.
 
