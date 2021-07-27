@@ -1,7 +1,7 @@
 Prototype Building Electrical Models
 ====================================
 
-The **Prototype Building Electrical Models** are detailed electrical distribution system models designed to accompany the [Prototype Building Models] maintained by the U.S. Department of Energy (DOE)) [Building Energy Codes Program]. The electrical distribution models are implemented using [BEEAM], a [Modelica] library that simulates the performance of building electrical distribution systems using harmonic power flow.
+The **Prototype Building Electrical Models** are detailed electrical distribution system models designed to accompany the [Prototype Building Models] maintained by the U.S. Department of Energy (DOE) [Building Energy Codes Program]. The electrical distribution models are implemented using [BEEAM], a [Modelica] library that simulates the performance of building electrical distribution systems using harmonic power flow.
 
 At present, the models in this repository are experimental and cover only a very limited subset of the available prototype building models. They should not be considered an official supplement or extension to the prototype building models.
 
@@ -13,7 +13,7 @@ At present, the models in this repository are experimental and cover only a very
 Description
 -----------
 
-The prototype building electrical models are intended to support simulation-based research of building electrical distribution system efficiency and harmonic performance; comparison of alternating current (AC) and direct current (DC) electrical system designs; and grid-interactive, efficient buildings (GEBs). Each model consists of a realistic electrical distribution system design implemented in Modelica, including distribution equipment (*e.g.* transformers, cables), power electronics converters (including load-packaged converters), local photovoltaic (PV) generation (if applicable) and individual loads. At present, the models focus on granular representation of lighting and miscellaneous electrical loads (MELs).
+The prototype building electrical models are intended to support simulation-based research regarding building electrical distribution system efficiency; distribution system power quality and harmonic performance; comparison of alternating current (AC) and direct current (DC) electrical system designs; and grid-interactive, efficient buildings (GEBs). Each model consists of a detailed, realistic electrical distribution system design implemented in Modelica, including distribution equipment (*e.g.* transformers, cables), power electronics converters (including load-packaged converters), local photovoltaic (PV) generation (if applicable) and individual loads. At present, the models focus on granular representation of lighting and miscellaneous electrical loads (MELs).
 
 Each represented commercial prototype building has multiple corresponding distribution models reflecting combinations of the distribution topologies and installed PV generation scenarios outlined below.
 
@@ -23,9 +23,9 @@ Each represented commercial prototype building has multiple corresponding distri
 
 The following distribution topologies are represented:
 
-- Conventional AC distribution: representative of typical design practice
-- Local DC distribution: low-voltage lighting and MELs served by common AC/DC converters (*e.g.* PoE switches or 24V multichannel converters)
-- Central DC distribution: central 380 V DC backbone with low-voltage lighting and MELs served by step-down DC/DC converters
+- AC distribution: representative of typical/conventional design practice
+- Local DC distribution: low-voltage lighting and MELs served by multichannel AC/DC converters (*e.g.* PoE switches or 24V multichannel converters)
+- Central DC distribution: central 380V DC backbone with low-voltage lighting and MELs served by step-down DC/DC converters
 
 ***TO DO:** Add graphics and more description?*
 
