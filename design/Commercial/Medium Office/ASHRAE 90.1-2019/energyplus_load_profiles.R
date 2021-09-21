@@ -51,7 +51,7 @@ zone_areas <- list(
 # Lighting power density (from IDF; identical for all zones)
 lpd <- 6.888902667 # W/m^2
 
-# Total exterior lighting design power (from IDF)
+# Total exterior lighting design power (from IDF) -- NOT USED CURRENTLY
 exterior_lights_design_power <- (519.2 + 375.7 + 4341.6) # W
 
 # Plug load design power level (from IDF; identical for all three floors)
@@ -142,9 +142,9 @@ data <- data %>% transmute(
   l3_zn2_plugs     = `PERIMETER_TOP_ZN_2_MISCPLUG_EQUIP:Electric Equipment Electricity Rate [W](TimeStep)`,
   l3_zn3_plugs     = `PERIMETER_TOP_ZN_3_MISCPLUG_EQUIP:Electric Equipment Electricity Rate [W](TimeStep)`,
   l3_zn4_plugs     = `PERIMETER_TOP_ZN_4_MISCPLUG_EQUIP:Electric Equipment Electricity Rate [W](TimeStep)`,
-  exterior_lights  = `EXTERIOR_LIGHTS_A:Exterior Lights Electricity Rate [W](TimeStep)` +
-    `EXTERIOR_LIGHTS_B:Exterior Lights Electricity Rate [W](TimeStep)` +
-    `EXTERIOR_LIGHTS_C:Exterior Lights Electricity Rate [W](TimeStep)`,
+  # exterior_lights  = `EXTERIOR_LIGHTS_A:Exterior Lights Electricity Rate [W](TimeStep)` +
+  #   `EXTERIOR_LIGHTS_B:Exterior Lights Electricity Rate [W](TimeStep)` +
+  #   `EXTERIOR_LIGHTS_C:Exterior Lights Electricity Rate [W](TimeStep)`,
   all_mechanical   = `CORE_BOTTOM_ELEVATORS_EQUIP:Electric Equipment Electricity Rate [W](TimeStep)` + 
     `ELEVATORS_LIGHTS_FAN:Electric Equipment Electricity Rate [W](TimeStep)` + 
     `CORE_BOTTOM VAV BOX REHEAT COIL:Heating Coil Electricity Rate [W](TimeStep)` + 
@@ -174,13 +174,16 @@ data <- data %>% transmute(
     `PACU_VAV_BOT_COOLC DXCOIL:Cooling Coil Electricity Rate [W](TimeStep)` + 
     `PACU_VAV_MID_COOLC DXCOIL:Cooling Coil Electricity Rate [W](TimeStep)` + 
     `PACU_VAV_TOP_COOLC DXCOIL:Cooling Coil Electricity Rate [W](TimeStep)` + 
-    `SHWSYS1 PUMP:Pump Electricity Rate [W](TimeStep)`
+    `SHWSYS1 PUMP:Pump Electricity Rate [W](TimeStep)` +
+    `EXTERIOR_LIGHTS_A:Exterior Lights Electricity Rate [W](TimeStep)` +
+    `EXTERIOR_LIGHTS_B:Exterior Lights Electricity Rate [W](TimeStep)` +
+    `EXTERIOR_LIGHTS_C:Exterior Lights Electricity Rate [W](TimeStep)`,
 )
 
 # Notes:
-# 1. All exterior lights are lumped
-# 2. All mechanical is lumped
-# 3. Elevators are included in mechanical
+# 1. All mechanical is lumped
+# 2. Elevators are included in mechanical
+# 3. Exterior lights are currently included in mechanical
 
 ################################################################################
 
@@ -295,38 +298,40 @@ write_csv(
 
 ##### Exterior Lights ##########################################################
 
-# Converter model parameters for LED drivers
-converter_params_exterior_lights <- list(
-  alpha = 0.03,
-  beta  = 0.02,
-  gamma = 0.01,
-  thr   = 0.05,
-  stdby = 0.01
-)
+# DISABLED -- Exterior lights are lumped w/ mechanical at this time
 
-# Normalize by design power
-exterior_lights <- data %>% transmute(
-  ts = ts,
-  exterior_lights = exterior_lights / exterior_lights_design_power
-)
-
-# Convert to DC output power (can take a while to calculate!)
-exterior_lights <- mutate_at(
-  exterior_lights,
-  vars(contains("lights")),
-  function (x) sapply(x, solve_Pout,
-    alpha = converter_params_exterior_lights$alpha,
-    beta  = converter_params_exterior_lights$beta,
-    gamma = converter_params_exterior_lights$gamma,
-    thr   = converter_params_exterior_lights$thr,
-    stdby = converter_params_exterior_lights$stdby)
-)
-
-# Write CSVs
-write_csv(
-  select(exterior_lights, ts = ts, val = exterior_lights),
-  paste0(paste(file_prefix, "Exterior", "Lights", sep="-"), ".csv")
-)
+# # Converter model parameters for LED drivers
+# converter_params_exterior_lights <- list(
+#   alpha = 0.03,
+#   beta  = 0.02,
+#   gamma = 0.01,
+#   thr   = 0.05,
+#   stdby = 0.01
+# )
+# 
+# # Normalize by design power
+# exterior_lights <- data %>% transmute(
+#   ts = ts,
+#   exterior_lights = exterior_lights / exterior_lights_design_power
+# )
+# 
+# # Convert to DC output power (can take a while to calculate!)
+# exterior_lights <- mutate_at(
+#   exterior_lights,
+#   vars(contains("lights")),
+#   function (x) sapply(x, solve_Pout,
+#     alpha = converter_params_exterior_lights$alpha,
+#     beta  = converter_params_exterior_lights$beta,
+#     gamma = converter_params_exterior_lights$gamma,
+#     thr   = converter_params_exterior_lights$thr,
+#     stdby = converter_params_exterior_lights$stdby)
+# )
+# 
+# # Write CSVs
+# write_csv(
+#   select(exterior_lights, ts = ts, val = exterior_lights),
+#   paste0(paste(file_prefix, "Exterior", "Lights", sep="-"), ".csv")
+# )
 
 ################################################################################
 
