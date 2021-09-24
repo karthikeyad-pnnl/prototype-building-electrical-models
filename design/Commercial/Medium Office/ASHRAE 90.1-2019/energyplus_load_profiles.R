@@ -102,12 +102,14 @@ file_prefix <- paste(building, code_vintage, location, sep="-") %>%
 raw_data <- read_csv('eplusout.csv')
 
 ## Initial Processing
-# Convert date/time to seconds elapsed
+# Convert date/time to seconds elapsed relative to first timestep
 data <- raw_data %>% mutate(
     ts = parse_date_time(paste("2017", `Date/Time`), "%Y %m/%d %H:%M:%S")
   ) %>% mutate(
-    ts = difftime(ts, ymd_hms("2017-01-01 00:00:00"), units = "hours"),
+    ts = difftime(ts, ymd_hms("2017-01-01 00:15:00"), units = "hours"),
   )
+
+# NOTE: Time reference scaled so that the first timestep is zero
 
 # Sum categories
 data <- data %>% transmute(
