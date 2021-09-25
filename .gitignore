@@ -1,0 +1,5 @@
+# CSV files unless explicitly committed
+*.csv
+
+# R history
+.Rhistory
