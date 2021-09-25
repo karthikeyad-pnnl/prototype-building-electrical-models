@@ -193,11 +193,11 @@ data <- data %>% transmute(
 
 # Converter model parameters for LED drivers
 converter_params_lights <- list(
-  alpha = 0.0097,
-  beta  = 0.0963,
-  gamma = 0.0558,
-  thr   = 0.05,
-  stdby = 0.0162
+  alpha = 0.0074,
+  beta  = 0.1014,
+  gamma = 0.0509,
+  thr   = 2.25/45,
+  stdby = 1.0478/45
 )
 
 # Normalize by zone lighting power densities
@@ -370,11 +370,11 @@ write_csv(
 
 # Converter model parameters for laptop AC/DC converters
 converter_params_laptops <- list(
-  alpha = 0.0253,
-  beta  = 0.0612,
-  gamma = 0.0777,
-  thr   = 0.05,
-  stdby = 0.0228
+  alpha = 0.0308,
+  beta  = 0.0498,
+  gamma = 0.0836,
+  thr   = 4.5/90,
+  stdby = 1.0616/90
 )
 
 # Rename columns
@@ -417,11 +417,11 @@ write_csv(
 
 # Converter model parameters for monitor/display AC/DC converters
 converter_params_monitors <- list(
-  alpha = 0.0253,
-  beta  = 0.0612,
-  gamma = 0.0777,
-  thr   = 0.05,
-  stdby = 0.0228
+  alpha = 0.0308,
+  beta  = 0.0498,
+  gamma = 0.0836,
+  thr   = 4.5/90,
+  stdby = 1.0616/90
 )
 
 # Rename columns
@@ -464,11 +464,11 @@ write_csv(
 
 # Converter model parameters for TV AC/DC converters
 converter_params_tvs <- list(
-  alpha = 0.0279,
-  beta  = 0.0192,
-  gamma = 0.0525,
-  thr   = 0.05,
-  stdby = 0.0243
+  alpha = 0.0298,
+  beta  = 0.0118,
+  gamma = 0.0606,
+  thr   = 0,
+  stdby = 0
 )
 
 # Rename columns
@@ -511,11 +511,11 @@ write_csv(
 
 # Converter model parameters for printer AC/DC converters
 converter_params_printers <- list(
-  alpha = 0.0279,
-  beta  = 0.0192,
-  gamma = 0.0525,
-  thr   = 0.05,
-  stdby = 0.0243
+  alpha = 0.0298,
+  beta  = 0.0118,
+  gamma = 0.0606,
+  thr   = 0,
+  stdby = 0
 )
 
 # Rename columns
@@ -558,11 +558,11 @@ write_csv(
 
 # Converter model parameters for multi-function device AC/DC converters
 converter_params_mfds <- list(
-  alpha = 0.0279,
-  beta  = 0.0192,
-  gamma = 0.0525,
-  thr   = 0.05,
-  stdby = 0.0243
+  alpha = 0.0298,
+  beta  = 0.0118,
+  gamma = 0.0606,
+  thr   = 0,
+  stdby = 0
 )
 
 # Rename columns
@@ -605,11 +605,11 @@ write_csv(
 
 # Converter model parameters for IT equipment AC/DC converters
 converter_params_itequip <- list(
-  alpha = 0.0279,
-  beta  = 0.0192,
-  gamma = 0.0525,
-  thr   = 0.05,
-  stdby = 0.0243
+  alpha = 0.0298,
+  beta  = 0.0118,
+  gamma = 0.0606,
+  thr   = 0,
+  stdby = 0
 )
 
 # Rename columns
