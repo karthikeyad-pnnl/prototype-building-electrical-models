@@ -64,7 +64,7 @@ plug_design_power <- (7937.1558 + 1673.2028 + 1059.217 + 1673.2138 + 1059.21) # 
 calc_Pin <- function(x, alpha, beta, gamma, thr, stdby) {
   # Lambda for homotopy function
   if (thr == 0) {
-    lamba = double(length(x))
+    lambda <- double(length(x))
   } else {
     lambda <- (thr - x) / thr
     lambda[lambda < 0] <- 0
