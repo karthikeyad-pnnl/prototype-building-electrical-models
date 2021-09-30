@@ -109,7 +109,7 @@ data <- raw_data %>% mutate(
     ts = difftime(ts, ymd_hms("2017-01-01 00:15:00"), units = "hours"),
   )
 
-# NOTE: Time reference scaled so that the first timestep is zero
+# NOTE: Time reference scaled so that the first timestep is t = 0
 
 # Sum categories
 data <- data %>% transmute(
