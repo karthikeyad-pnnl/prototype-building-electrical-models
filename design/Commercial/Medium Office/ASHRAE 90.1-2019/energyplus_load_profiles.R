@@ -193,11 +193,11 @@ data <- data %>% transmute(
 
 # Converter model parameters for LED drivers
 converter_params_lights <- list(
-  alpha = 0.0074,
-  beta  = 0.1014,
-  gamma = 0.0509,
-  thr   = 2.25/45,
-  stdby = 1.0478/45
+  alpha  = 0.0074,
+  beta   = 0.1014,
+  gamma  = 0.0509,
+  thr    = 2.25/45,
+  stdby  = 1.0478/45
 )
 
 # Normalize by zone lighting power densities
@@ -368,6 +368,9 @@ write_csv(
 
 ##### Laptops ##################################################################
 
+# Demand factor for laptops
+df_laptops <- 0.322
+
 # Converter model parameters for laptop AC/DC converters
 converter_params_laptops <- list(
   alpha = 0.0308,
@@ -383,6 +386,22 @@ laptops <- plugs %>% select(
   l1_laptops = l1_plugs_general,
   l2_laptops = l2_plugs_general,
   l3_laptops = l3_plugs_general
+)
+
+# Correct for demand factor
+laptops <- mutate_at(
+  laptops,
+  vars(contains("laptops")),
+  function (x) {x * df_laptops}
+)
+
+# Correct for per-unit base (rated input -> rated output)
+pin_fl_laptops <- with(converter_params_laptops,
+  calc_Pin(1, alpha, beta, gamma, thr, stdby)) # Per-unit Pin for Pout = 1
+laptops <- mutate_at(
+  laptops,
+  vars(contains("laptops")),
+  function (x) {x * pin_fl_laptops}
 )
 
 # Convert noramlized plug power to DC output power
@@ -415,6 +434,9 @@ write_csv(
 
 ##### Monitors #################################################################
 
+# Demand factor for monitors
+df_monitors <- 0.558
+
 # Converter model parameters for monitor/display AC/DC converters
 converter_params_monitors <- list(
   alpha = 0.0308,
@@ -430,6 +452,22 @@ monitors <- plugs %>% select(
   l1_monitors = l1_plugs_general,
   l2_monitors = l2_plugs_general,
   l3_monitors = l3_plugs_general
+)
+
+# Correct for demand factor
+monitors <- mutate_at(
+  monitors,
+  vars(contains("monitors")),
+  function (x) {x * df_monitors}
+)
+
+# Correct for per-unit base (rated input -> rated output)
+pin_fl_monitors <- with(converter_params_monitors,
+  calc_Pin(1, alpha, beta, gamma, thr, stdby)) # Per-unit Pin for Pout = 1
+monitors <- mutate_at(
+  monitors,
+  vars(contains("monitors")),
+  function (x) {x * pin_fl_monitors}
 )
 
 # Convert noramlized plug power to DC output power
@@ -462,13 +500,16 @@ write_csv(
 
 ##### TVs ######################################################################
 
+# Demand factor for TVs
+df_tvs <- 0.558
+
 # Converter model parameters for TV AC/DC converters
 converter_params_tvs <- list(
-  alpha = 0.0298,
-  beta  = 0.0118,
-  gamma = 0.0606,
-  thr   = 0,
-  stdby = 0
+  alpha = 0.0308,
+  beta  = 0.0498,
+  gamma = 0.0836,
+  thr   = 4.5/90,
+  stdby = 1.0616/90
 )
 
 # Rename columns
@@ -477,6 +518,22 @@ tvs <- plugs %>% select(
   l1_tvs = l1_plugs_general,
   l2_tvs = l2_plugs_general,
   l3_tvs = l3_plugs_general
+)
+
+# Correct for demand factor
+tvs <- mutate_at(
+  tvs,
+  vars(contains("tvs")),
+  function (x) {x * df_tvs}
+)
+
+# Correct for per-unit base (rated input -> rated output)
+pin_fl_tvs <- with(converter_params_tvs,
+  calc_Pin(1, alpha, beta, gamma, thr, stdby)) # Per-unit Pin for Pout = 1
+tvs <- mutate_at(
+  tvs,
+  vars(contains("tvs")),
+  function (x) {x * pin_fl_tvs}
 )
 
 # Convert noramlized plug power to DC output power
@@ -509,6 +566,9 @@ write_csv(
 
 ##### Printers #################################################################
 
+# Demand factor for printers
+df_printers <- 0.271
+
 # Converter model parameters for printer AC/DC converters
 converter_params_printers <- list(
   alpha = 0.0298,
@@ -524,6 +584,22 @@ printers <- plugs %>% select(
   l1_printers = l1_plugs_general,
   l2_printers = l2_plugs_general,
   l3_printers = l3_plugs_general
+)
+
+# Correct for demand factor
+printers <- mutate_at(
+  printers,
+  vars(contains("printers")),
+  function (x) {x * df_printers}
+)
+
+# Correct for per-unit base (rated input -> rated output)
+pin_fl_printers <- with(converter_params_printers,
+  calc_Pin(1, alpha, beta, gamma, thr, stdby)) # Per-unit Pin for Pout = 1
+printers <- mutate_at(
+  printers,
+  vars(contains("printers")),
+  function (x) {x * pin_fl_printers}
 )
 
 # Convert noramlized plug power to DC output power
@@ -556,7 +632,10 @@ write_csv(
 
 ##### MFDs #####################################################################
 
-# Converter model parameters for multi-function device AC/DC converters
+# Demand factor for MFDs
+df_mfds <- 0.271
+
+# Converter model parameters for MFD AC/DC converters
 converter_params_mfds <- list(
   alpha = 0.0298,
   beta  = 0.0118,
@@ -571,6 +650,22 @@ mfds <- plugs %>% select(
   l1_mfds = l1_plugs_general,
   l2_mfds = l2_plugs_general,
   l3_mfds = l3_plugs_general
+)
+
+# Correct for demand factor 
+mfds <- mutate_at(
+  mfds,
+  vars(contains("mfds")),
+  function (x) {x * df_mfds}
+)
+
+# Correct for per-unit base (rated input -> rated output)
+pin_fl_mfds <- with(converter_params_mfds,
+  calc_Pin(1, alpha, beta, gamma, thr, stdby)) # Per-unit Pin for Pout = 1
+mfds <- mutate_at(
+  mfds,
+  vars(contains("mfds")),
+  function (x) {x * pin_fl_mfds}
 )
 
 # Convert noramlized plug power to DC output power
@@ -603,6 +698,9 @@ write_csv(
 
 ##### IT Equipment #############################################################
 
+# Demand factor for IT equipment
+df_itequip <- 0.225
+
 # Converter model parameters for IT equipment AC/DC converters
 converter_params_itequip <- list(
   alpha = 0.0298,
@@ -618,6 +716,22 @@ itequip <- plugs %>% select(
   l1_itequip = l1_plugs_general,
   l2_itequip = l2_plugs_general,
   l3_itequip = l3_plugs_general
+)
+
+# Correct for demand factor
+itequip <- mutate_at(
+  itequip,
+  vars(contains("itequip")),
+  function (x) {x * df_itequip}
+)
+
+# Correct for per-unit base (rated input -> rated output)
+pin_fl_itequip <- with(converter_params_itequip,
+  calc_Pin(1, alpha, beta, gamma, thr, stdby)) # Per-unit Pin for Pout = 1
+itequip <- mutate_at(
+  itequip,
+  vars(contains("itequip")),
+  function (x) {x * pin_fl_itequip}
 )
 
 # Convert noramlized plug power to DC output power
@@ -659,3 +773,90 @@ write_csv(
 )
 
 ################################################################################
+
+##### Cross-Check: Plug Loads ##################################################
+
+# Check that calculated plug load profiles are correct by summing them to
+# recover the original load profile.
+
+# Reference
+plugs_ref <- select(plugs, ts, l1_plugs_general) %>%
+  transmute(
+    ts  = ts,
+    total_ref = l1_plugs_general * plug_design_power
+  )
+
+# Calculated
+# (Connected plug load spreadsheet is source of all sizing info)
+plugs_calc <- select(plugs, ts, l1_plugs_general) %>%
+  transmute(
+    ts  = ts,
+    balance = l1_plugs_general * 6613
+  ) %>%
+  left_join(select(laptops,  ts, laptops  = l1_laptops ), by = "ts") %>%
+  left_join(select(monitors, ts, monitors = l1_monitors), by = "ts") %>%
+  left_join(select(tvs,      ts, tvs      = l1_tvs     ), by = "ts") %>%
+  left_join(select(printers, ts, printers = l1_printers), by = "ts") %>%
+  left_join(select(mfds,     ts, mfds     = l1_mfds    ), by = "ts") %>%
+  left_join(select(itequip,  ts, itequip  = l1_itequip ), by = "ts") %>%
+  mutate(
+    ts = ts,
+    laptops = with(converter_params_laptops,
+      calc_Pin(laptops, alpha, beta, gamma, thr, stdby)) * 50 * 49,
+    monitors = with(converter_params_monitors,
+      calc_Pin(monitors, alpha, beta, gamma, thr, stdby)) * 33 * 40,
+    tvs = with(converter_params_tvs,
+      calc_Pin(tvs, alpha, beta, gamma, thr, stdby)) * 5 * 109,
+    printers = with(converter_params_printers,
+      calc_Pin(printers, alpha, beta, gamma, thr, stdby)) * 9 * 794,
+    mfds = with(converter_params_mfds,
+      calc_Pin(mfds, alpha, beta, gamma, thr, stdby)) * 3 * 621,
+    itequip = with(converter_params_itequip,
+      calc_Pin(itequip, alpha, beta, gamma, thr, stdby)) * 55 * 145,
+    total = laptops + monitors + tvs + printers + mfds + itequip + balance
+  )
+
+# # Calculated
+# # (Connected plug load spreadsheet is source of all sizing info)
+# plugs_calc <- select(plugs, ts, l1_plugs_general) %>%
+#   transmute(
+#     ts  = ts,
+#     balance = l1_plugs_general * 6613
+#   ) %>%
+#   left_join(select(laptops,  ts, laptops  = l1_laptops ), by = "ts") %>%
+#   left_join(select(monitors, ts, monitors = l1_monitors), by = "ts") %>%
+#   left_join(select(tvs,      ts, tvs      = l1_tvs     ), by = "ts") %>%
+#   left_join(select(printers, ts, printers = l1_printers), by = "ts") %>%
+#   left_join(select(mfds,     ts, mfds     = l1_mfds    ), by = "ts") %>%
+#   left_join(select(itequip,  ts, itequip  = l1_itequip ), by = "ts") %>%
+#   mutate(
+#     ts = ts,
+#     laptops = with(converter_params_laptops,
+#                    calc_Pin(laptops, alpha, beta, gamma, thr, stdby)) * 2850,
+#     monitors = with(converter_params_monitors,
+#                     calc_Pin(monitors, alpha, beta, gamma, thr, stdby)) * 1518,
+#     tvs = with(converter_params_tvs,
+#                calc_Pin(tvs, alpha, beta, gamma, thr, stdby)) * 635,
+#     printers = with(converter_params_printers,
+#                     calc_Pin(printers, alpha, beta, gamma, thr, stdby)) * 7875,
+#     mfds = with(converter_params_mfds,
+#                 calc_Pin(mfds, alpha, beta, gamma, thr, stdby)) * 2052,
+#     itequip = with(converter_params_itequip,
+#                    calc_Pin(itequip, alpha, beta, gamma, thr, stdby)) * 8800,
+#     total = laptops + monitors + tvs + printers + mfds + itequip + balance
+#   )
+
+# Compare
+plugs_compare <- left_join(plugs_ref, plugs_calc, by = "ts") %>%
+  mutate(error = total_ref - total)
+
+# Parity plot
+plot(total ~ total_ref, data = plugs_compare)
+abline(0, 1, col='red') # Parity line
+
+# Time series plot
+plot(total_ref ~ ts, data = plugs_compare, type='l', xlim=c(0,7*24))
+lines(total ~ ts, data = plugs_compare, type='l', col='blue')
+
+################################################################################
+
