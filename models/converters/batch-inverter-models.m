@@ -15,12 +15,12 @@ addpath(fullfile('..', '..', '..', ...
 
 % CSV containing device metadata and source directory information
 % (Run one of these at a time)
-%deviceList = fullfile('.', 'PV Inverters.csv');
-deviceList = fullfile('.', 'Battery Inverters.csv');
+deviceList = fullfile('.', 'PV Inverters.csv');
+%deviceList = fullfile('.', 'Battery Inverters.csv');
 
 % File name, path to use for output (Run one of these at a time)
-%outList = fullfile('.', 'PV Inverter Generated Models.csv');
-outList = fullfile('.', 'Battery Inverter Generated Models.csv');
+outList = fullfile('.', 'PV Inverter Generated Models.csv');
+%outList = fullfile('.', 'Battery Inverter Generated Models.csv');
 
 % Standby power output threshold (fraction of nominal power)
 standbyThreshold = 0.01;
