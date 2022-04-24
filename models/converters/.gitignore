@@ -1,0 +1,19 @@
+# CSV input files (exported from spreadsheet)
+AC-DC Converter List.csv
+DC-DC Converter List.csv
+Battery Inverter List.csv
+PV Inverter List.csv
+
+# Generated models
+AC-DC Individual Models/*
+AC-DC Converter Generated Models.csv
+AC-DC Converter Generated Models.mat
+DC-DC Converter Generated Models.csv
+DC-DC Converter Generated Models.mat
+Battery Inverter Generated Models.csv
+Battery Inverter Generated Models.mat
+PV Inverter Generated Models.csv
+PV Inverter Generated Models.mat
+
+# Converter groups
+Converter Groups/*
