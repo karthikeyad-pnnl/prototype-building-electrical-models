@@ -54,7 +54,7 @@ The steps required to generate a complete set of converter models are provided b
 7. To generate AC/DC converter (rectifier) models, run the following script *twice*: `batch-ac-dc-converter-models.m`
    1. The first execution populates efficiency curves for all models and harmonic current matrices for converters with harmonic characterization data 
    2. The second execution populates default harmonic current matrices for converters that lack harmonic characterization data
-8. To generate DC/DC converter models, run the following script: `batch-dc-dc-converter-models.m
+8. To generate DC/DC converter models, run the following script: `batch-dc-dc-converter-models.m`
 9. To generate DC/AC converter (inverter) models, modify and run the following script *twice*: `batch-inverter-models.m`
    1. Edit the script and run once with `PV Inverters.csv` as input and `PV Inverter Generated Models.csv` as output
    2. Edit the script and run once with `Battery Inverters.csv` as input and `Battery Inverter Generated Models.csv` as output
@@ -72,7 +72,7 @@ The model generation scripts produce the following output files:
    4. Battery inverters: `Battery Inverter Generated Models.csv` and `.mat`
 2. Individual AC/DC converter models in MAT file format, within the `AC-DC Individual Models` subdirectory
 3. Converter group analysis output, including some or all of:
-   1. `Converter Groups Median Models.csv`, a CSV file containing the best-fit median efficiency model for each converter group
+   1. `Converter Groups Median Models.csv`, a CSV file specifying the best-fit median efficiency model for each converter group
    2. `Converter Groups Median Models.mat`, a MAT file with the same contents as `Converter Groups Median Models.csv`
    2. CSV files by group, each containing a group of similar converters, filtered per the input criteria
    3. Converter group loss and efficiency curve plots
