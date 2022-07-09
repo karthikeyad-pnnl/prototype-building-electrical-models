@@ -23,7 +23,10 @@ library(lubridate)
 # Building metadata (used for output filenames)
 building     <- "Medium Office"
 code_vintage <- "ASHRAE 90.1-2019"
-location     <- "Great Falls"
+location     <- "Tampa"
+
+# Path to eplusout.csv (set this to correspond to metadata above)
+eplusout <- file.path("2A Tampa","eplusout.csv")
 
 # Zone areas
 zone_areas <- list(
@@ -102,7 +105,7 @@ file_prefix <- paste(building, code_vintage, location, sep="-") %>%
 # Note: source file "eplusout.csv" must be in working directory
 
 # Read E+ 
-raw_data <- read_csv('eplusout.csv')
+raw_data <- read_csv(eplusout)
 
 ## Initial Processing
 # Convert date/time to seconds elapsed relative to first timestep
