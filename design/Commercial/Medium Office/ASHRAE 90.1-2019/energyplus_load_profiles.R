@@ -60,6 +60,12 @@ exterior_lights_design_power <- (519.2 + 375.7 + 4341.6) # W
 # Plug load design power level (from IDF; identical for all three floors)
 plug_design_power <- (7937.1558 + 1673.2028 + 1059.217 + 1673.2138 + 1059.21) # W
 
+# Representative converter model data (from CSV)
+converter_models <- read_csv(
+  file.path("..", "..", "..", "..", "models", "converters", "Converter Groups",
+    "Converter Groups Median Models.csv")
+)
+
 ## Loss model functions
 # Used for converting AC/DC converter input (AC) power to output (DC) power
 
@@ -198,12 +204,17 @@ data <- data %>% transmute(
 ##### Interior Lights ##########################################################
 
 # Converter model parameters for LED drivers
+converter_params_lights_table <- converter_models %>%
+  filter(`Device Group Description` == "AC/DC LED Driver 20-100W, 10-60VDC out")
+
 converter_params_lights <- list(
-  alpha  = 0.0074,
-  beta   = 0.1014,
-  gamma  = 0.0509,
-  thr    = 2.25/45,
-  stdby  = 1.0478/45
+  alpha  = converter_params_lights_table[["Loss Model Alpha Per-Unit (pu)"]],
+  beta   = converter_params_lights_table[["Loss Model Beta Per-Unit (pu)"]],
+  gamma  = converter_params_lights_table[["Loss Model Gamma Per-Unit (pu)"]],
+  thr    = converter_params_lights_table[["Standby Threshold (W)"]] /
+           converter_params_lights_table[["Rated Power Output (W)"]],
+  stdby  = converter_params_lights_table[["Standby Power (W)"]] /
+           converter_params_lights_table[["Rated Power Output (W)"]]
 )
 
 # Normalize by zone lighting power densities
@@ -309,12 +320,18 @@ write_csv(
 # DISABLED -- Exterior lights are lumped w/ mechanical at this time
 
 # # Converter model parameters for LED drivers
+# Converter model parameters for LED drivers
+# converter_params_exterior_lights_table <- converter_models %>%
+#   filter(`Device Group Description` == "AC/DC LED Driver 20-100W, 10-60VDC out")
+# 
 # converter_params_exterior_lights <- list(
-#   alpha = 0.03,
-#   beta  = 0.02,
-#   gamma = 0.01,
-#   thr   = 0.05,
-#   stdby = 0.01
+#   alpha  = converter_params_lights_table[["Loss Model Alpha Per-Unit (pu)"]],
+#   beta   = converter_params_lights_table[["Loss Model Beta Per-Unit (pu)"]],
+#   gamma  = converter_params_lights_table[["Loss Model Gamma Per-Unit (pu)"]],
+#   thr    = converter_params_lights_table[["Standby Threshold (W)"]] /
+#     converter_params_lights_table[["Rated Power Output (W)"]],
+#   stdby  = converter_params_lights_table[["Standby Power (W)"]] /
+#     converter_params_lights_table[["Rated Power Output (W)"]]
 # )
 # 
 # # Normalize by design power
@@ -378,12 +395,17 @@ write_csv(
 df_laptops <- 0.322
 
 # Converter model parameters for laptop AC/DC converters
+converter_params_laptops_table <- converter_models %>%
+  filter(`Device Group Description` == "AC/DC Load-Packaged 40-120W, 0-60VDC out")
+
 converter_params_laptops <- list(
-  alpha = 0.0308,
-  beta  = 0.0498,
-  gamma = 0.0836,
-  thr   = 4.5/90,
-  stdby = 1.0616/90
+  alpha  = converter_params_laptops_table[["Loss Model Alpha Per-Unit (pu)"]],
+  beta   = converter_params_laptops_table[["Loss Model Beta Per-Unit (pu)"]],
+  gamma  = converter_params_laptops_table[["Loss Model Gamma Per-Unit (pu)"]],
+  thr    = converter_params_laptops_table[["Standby Threshold (W)"]] /
+           converter_params_laptops_table[["Rated Power Output (W)"]],
+  stdby  = converter_params_laptops_table[["Standby Power (W)"]] /
+           converter_params_laptops_table[["Rated Power Output (W)"]]
 )
 
 # Rename columns
@@ -444,12 +466,17 @@ write_csv(
 df_monitors <- 0.558
 
 # Converter model parameters for monitor/display AC/DC converters
+converter_params_monitors_table <- converter_models %>%
+  filter(`Device Group Description` == "AC/DC Load-Packaged 40-120W, 0-60VDC out")
+
 converter_params_monitors <- list(
-  alpha = 0.0308,
-  beta  = 0.0498,
-  gamma = 0.0836,
-  thr   = 4.5/90,
-  stdby = 1.0616/90
+  alpha  = converter_params_monitors_table[["Loss Model Alpha Per-Unit (pu)"]],
+  beta   = converter_params_monitors_table[["Loss Model Beta Per-Unit (pu)"]],
+  gamma  = converter_params_monitors_table[["Loss Model Gamma Per-Unit (pu)"]],
+  thr    = converter_params_monitors_table[["Standby Threshold (W)"]] /
+           converter_params_monitors_table[["Rated Power Output (W)"]],
+  stdby  = converter_params_monitors_table[["Standby Power (W)"]] /
+           converter_params_monitors_table[["Rated Power Output (W)"]]
 )
 
 # Rename columns
@@ -510,12 +537,17 @@ write_csv(
 df_tvs <- 0.558
 
 # Converter model parameters for TV AC/DC converters
+converter_params_tvs_table <- converter_models %>%
+  filter(`Device Group Description` == "AC/DC Load-Packaged 40-120W, 0-60VDC out")
+
 converter_params_tvs <- list(
-  alpha = 0.0308,
-  beta  = 0.0498,
-  gamma = 0.0836,
-  thr   = 4.5/90,
-  stdby = 1.0616/90
+  alpha  = converter_params_tvs_table[["Loss Model Alpha Per-Unit (pu)"]],
+  beta   = converter_params_tvs_table[["Loss Model Beta Per-Unit (pu)"]],
+  gamma  = converter_params_tvs_table[["Loss Model Gamma Per-Unit (pu)"]],
+  thr    = converter_params_tvs_table[["Standby Threshold (W)"]] /
+           converter_params_tvs_table[["Rated Power Output (W)"]],
+  stdby  = converter_params_tvs_table[["Standby Power (W)"]] /
+           converter_params_tvs_table[["Rated Power Output (W)"]]
 )
 
 # Rename columns
@@ -576,12 +608,17 @@ write_csv(
 df_printers <- 0.271
 
 # Converter model parameters for printer AC/DC converters
+converter_params_printers_table <- converter_models %>%
+  filter(`Device Group Description` == "AC/DC Load-Packaged 120-1000W, 0-60VDC out")
+
 converter_params_printers <- list(
-  alpha = 0.0298,
-  beta  = 0.0118,
-  gamma = 0.0606,
-  thr   = 0,
-  stdby = 0
+  alpha  = converter_params_printers_table[["Loss Model Alpha Per-Unit (pu)"]],
+  beta   = converter_params_printers_table[["Loss Model Beta Per-Unit (pu)"]],
+  gamma  = converter_params_printers_table[["Loss Model Gamma Per-Unit (pu)"]],
+  thr    = converter_params_printers_table[["Standby Threshold (W)"]] /
+           converter_params_printers_table[["Rated Power Output (W)"]],
+  stdby  = converter_params_printers_table[["Standby Power (W)"]] /
+           converter_params_printers_table[["Rated Power Output (W)"]]
 )
 
 # Rename columns
@@ -642,12 +679,17 @@ write_csv(
 df_mfds <- 0.271
 
 # Converter model parameters for MFD AC/DC converters
+converter_params_mfds_table <- converter_models %>%
+  filter(`Device Group Description` == "AC/DC Load-Packaged 120-1000W, 0-60VDC out")
+
 converter_params_mfds <- list(
-  alpha = 0.0298,
-  beta  = 0.0118,
-  gamma = 0.0606,
-  thr   = 0,
-  stdby = 0
+  alpha  = converter_params_mfds_table[["Loss Model Alpha Per-Unit (pu)"]],
+  beta   = converter_params_mfds_table[["Loss Model Beta Per-Unit (pu)"]],
+  gamma  = converter_params_mfds_table[["Loss Model Gamma Per-Unit (pu)"]],
+  thr    = converter_params_mfds_table[["Standby Threshold (W)"]] /
+           converter_params_mfds_table[["Rated Power Output (W)"]],
+  stdby  = converter_params_mfds_table[["Standby Power (W)"]] /
+           converter_params_mfds_table[["Rated Power Output (W)"]]
 )
 
 # Rename columns
@@ -708,12 +750,17 @@ write_csv(
 df_itequip <- 0.225
 
 # Converter model parameters for IT equipment AC/DC converters
+converter_params_itequip_table <- converter_models %>%
+  filter(`Device Group Description` == "AC/DC Load-Packaged 120-1000W, 0-60VDC out")
+
 converter_params_itequip <- list(
-  alpha = 0.0298,
-  beta  = 0.0118,
-  gamma = 0.0606,
-  thr   = 0,
-  stdby = 0
+  alpha  = converter_params_itequip_table[["Loss Model Alpha Per-Unit (pu)"]],
+  beta   = converter_params_itequip_table[["Loss Model Beta Per-Unit (pu)"]],
+  gamma  = converter_params_itequip_table[["Loss Model Gamma Per-Unit (pu)"]],
+  thr    = converter_params_itequip_table[["Standby Threshold (W)"]] /
+           converter_params_itequip_table[["Rated Power Output (W)"]],
+  stdby  = converter_params_itequip_table[["Standby Power (W)"]] /
+           converter_params_itequip_table[["Rated Power Output (W)"]]
 )
 
 # Rename columns
