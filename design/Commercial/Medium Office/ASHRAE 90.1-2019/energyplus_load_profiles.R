@@ -75,13 +75,16 @@ calc_Pin <- function(x, alpha, beta, gamma, thr, stdby) {
   return(x + lambda*stdby + (1-lambda)*(alpha + beta * x + gamma * x^2))
 }
 
-# Solve converter power output from power input
+# Solve converter power output from power input (min Pout = 0)
 solve_Pout <- function(y, alpha, beta, gamma, thr, stdby) {
   # Function for uniroot
   f <- function(x) {calc_Pin(x, alpha, beta, gamma, thr, stdby) - y}
   
+  # Edge case: desired input power is less than converter standby
+  if (y <= stdby) return (0) # Set output power to zero
+  
   # Execute
-  uniroot(f, lower=-1, upper=1)$root
+  max(uniroot(f, lower=-1, upper=1)$root, 0)
   
   # Note: must be vectorized on application
 }
