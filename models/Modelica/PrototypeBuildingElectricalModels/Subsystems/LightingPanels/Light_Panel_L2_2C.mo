@@ -1,4 +1,4 @@
-within ;
+within PrototypeBuildingElectricalModels.Subsystems.LightingPanels;
 model Light_Panel_L2_2C
   outer HPF.SystemDef systemDef;
   Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
@@ -13,7 +13,7 @@ model Light_Panel_L2_2C
   Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Core_Lights(
     tableOnFile=true,
     tableName="L2-Core-Lights",
-    fileName=ModelicaServices.ExternalReferences.loadResource("modelica://HPF/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+    fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
     smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
     extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
     timeScale(displayUnit="h") = 3600)
@@ -22,7 +22,7 @@ model Light_Panel_L2_2C
   Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn1_Lights(
     tableOnFile=true,
     tableName="L2-Zn1-Lights",
-    fileName=ModelicaServices.ExternalReferences.loadResource("modelica://HPF/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+    fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
     smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
     extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
     timeScale(displayUnit="h") = 3600)
@@ -31,7 +31,7 @@ model Light_Panel_L2_2C
   Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn2_Lights(
     tableOnFile=true,
     tableName="L2-Zn2-Lights",
-    fileName=ModelicaServices.ExternalReferences.loadResource("modelica://HPF/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+    fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
     smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
     extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
     timeScale(displayUnit="h") = 3600)
@@ -40,7 +40,7 @@ model Light_Panel_L2_2C
   Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn3_Lights(
     tableOnFile=true,
     tableName="L2-Zn3-Lights",
-    fileName=ModelicaServices.ExternalReferences.loadResource("modelica://HPF/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+    fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
     smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
     extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
     timeScale(displayUnit="h") = 3600)
@@ -49,7 +49,7 @@ model Light_Panel_L2_2C
   Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn4_Lights(
     tableOnFile=true,
     tableName="L2-Zn4-Lights",
-    fileName=ModelicaServices.ExternalReferences.loadResource("modelica://HPF/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+    fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
     smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
     extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
     timeScale(displayUnit="h") = 3600)
