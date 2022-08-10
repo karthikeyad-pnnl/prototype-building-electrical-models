@@ -16,5 +16,7 @@ equation
     Line(points = {{-40, 28}, {-40, 42}, {32, 42}}, color = {92, 53, 102}));
 
 annotation(
-    uses(HPF(version = "0.1.0-beta")));
+    uses(HPF(version = "0.1.0-beta")),
+    __OpenModelica_simulationFlags(lv = "LOG_STATS", nls = "newton", s = "dassl"),
+  experiment(StartTime = 0, StopTime = 86400, Tolerance = 1e-4, Interval = 900));
 end SingleLightingPanel;
