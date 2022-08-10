@@ -5,5 +5,5 @@ package PrototypeBuildingElectricalModels
     Diagram,
     Icon,
     version = "0.1-beta",
-    uses(Modelica(version = "3.2"), BEEAM(version = "0.3")));
+    uses(Modelica(version = "3.2"), BEEAM(version = "0.1")));
 end PrototypeBuildingElectricalModels;
