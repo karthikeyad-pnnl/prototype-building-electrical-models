@@ -32,4 +32,6 @@ PV System Production Profiles
 - Each subdirectory contains a [System Advisor Model] (SAM) model of the PV systems at that geographic location
 - Each subdirectory also includes annual hourly PV output exported from the SAM model in CSV format
 
+**TO DO:** A Python script to convert the PV production profiles into CombiTimeTable format is also needed
+
 [System Advisor Model]: https://sam.nrel.gov/ "System Advisor Model"
