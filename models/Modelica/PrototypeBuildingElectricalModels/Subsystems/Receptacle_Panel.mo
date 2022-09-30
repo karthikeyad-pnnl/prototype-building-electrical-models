@@ -17939,5 +17939,9329 @@ package Receptacle_Panel
         end SmallDC_MEL_Panel_L3C;
       end Small_MELs;
     end DC_Local_SD;
+
+    package DC_Central_SD
+      package Large_MELs
+        model large_AC_MEL_Panel_L1A
+          outer parameter Real PF;
+          outer parameter Real PF1;
+          /* parameter Real PF = 0.9; */
+
+          outer HPF.SystemDef systemDef;
+          Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+            Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_IT_Equipment(
+            tableOnFile=true,
+            tableName="L1-All-ITEquipment",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-92,72},{-72,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_MFD(
+            tableOnFile=true,
+            tableName="L1-All-MFDs",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-28,72},{-8,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Printer(
+            tableOnFile=true,
+            tableName="L1-All-Printers",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{40,72},{60,92}})));
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Display(
+            tableOnFile=true,
+            tableName="L1-All-TVs",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{72,72},{92,92}})));
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_display(V = 48, alpha = 4.62836768, beta = 0.025225007, gamma = 0.00145528);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_ite(V = 48, alpha = 1.7735384, beta = 0.002302422, gamma = 0.000167704);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_mfd(V = 48, alpha = 6.883545915, beta = 0.002302422, gamma = 0.0000432087);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_printer(V = 48, alpha = 9.699038125, beta = 0.002302422, gamma = 0.0000306658);
+
+        /* Insert models here */
+
+        /* MEL_Model IT_Equipment_53 rcpt_ckt-L1_11A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_53(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_53(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_53;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_11A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_11A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=40.81);
+
+        /* MEL_Model IT_Equipment_48 rcpt_ckt-L1_10A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_48(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_48(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_48;
+
+        /* MEL_Model IT_Equipment_47 rcpt_ckt-L1_10A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_47(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_47(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_47;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_10A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_10A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=36.74);
+
+        /* MEL_Model IT_Equipment_43 rcpt_ckt-L1_9A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_43(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_43(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_43;
+
+        /* MEL_Model IT_Equipment_42 rcpt_ckt-L1_9A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_42(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_42(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_42;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_9A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_9A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=30.93);
+
+        /* MEL_Model IT_Equipment_38 rcpt_ckt-L1_8A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_38(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_38(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_38;
+
+        /* MEL_Model IT_Equipment_37 rcpt_ckt-L1_8A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_37(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_37(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_37;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_8A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_8A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=27.71);
+
+        /* MEL_Model IT_Equipment_32 rcpt_ckt-L1_7A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_32(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_32(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_32;
+
+        /* MEL_Model IT_Equipment_31 rcpt_ckt-L1_7A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_31(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_31(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_31;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_7A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_7A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=15.79);
+
+        /* MEL_Model IT_Equipment_26 rcpt_ckt-L1_6A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_26(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_26(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_26;
+
+        /* MEL_Model IT_Equipment_25 rcpt_ckt-L1_6A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_25(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_25(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_25;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_6A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_6A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=24.99);
+
+        /* MEL_Model Printer_5 rcpt_ckt-L1_5A */
+          Modelica.Blocks.Math.Gain Gain_Printer_5(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_5(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_5;
+
+        /* MEL_Model IT_Equipment_21 rcpt_ckt-L1_5A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_21(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_21(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_21;
+
+        /* MEL_Model IT_Equipment_20 rcpt_ckt-L1_5A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_20(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_20(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_20;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_5A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_5A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=25.15);
+
+        /* MEL_Model Printer_4 rcpt_ckt-L1_4A */
+          Modelica.Blocks.Math.Gain Gain_Printer_4(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_4(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_4;
+
+        /* MEL_Model IT_Equipment_15 rcpt_ckt-L1_4A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_15(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_15(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_15;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_4A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_4A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=29.31);
+
+        /* MEL_Model IT_Equipment_12 rcpt_ckt-L1_3A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_12(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_12(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_12;
+
+        /* MEL_Model IT_Equipment_11 rcpt_ckt-L1_3A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_11(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_11(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_11;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_3A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_3A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=13.21);
+
+        /* MEL_Model IT_Equipment_7 rcpt_ckt-L1_2A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_7(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_7(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_7;
+
+        /* MEL_Model IT_Equipment_6 rcpt_ckt-L1_2A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_6(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_6(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_6;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_2A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_2A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=15.51);
+
+        /* MEL_Model MFD_1 rcpt_ckt-L1_1A */
+          Modelica.Blocks.Math.Gain Gain_MFD_1(k=621) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_MFD_1(modelData = modelData_mfd);
+          HPF.DC.Variable_DC_Load MFD_1;
+
+        /* MEL_Model IT_Equipment_2 rcpt_ckt-L1_1A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_2(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_2(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_2;
+
+        /* MEL_Model IT_Equipment_1 rcpt_ckt-L1_1A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_1(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_1(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_1;
+
+        /* MEL_Model Display_1 rcpt_ckt-L1_1A */
+          Modelica.Blocks.Math.Gain Gain_Display_1(k=127) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Display_1(modelData = modelData_display);
+          HPF.DC.Variable_DC_Load Display_1;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_1A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_1A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=10.0);
+
+          Modelica.Electrical.Analog.Interfaces.PositivePin p
+            "Positive electrical pin of port 1" annotation (Placement(transformation(
+                  extent={{-114,-10},{-94,10}}),iconTransformation(extent={{-110,90},{-90,
+                    110}})));
+          HPF.Cables.NEC_CableModelDC cable_mels_L1_A(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+              length=15) annotation (Placement(visible=true, transformation(
+                origin={-48,2},
+                extent={{10,-10},{-10,10}},
+                rotation=0)));
+        equation
+
+        /* Insert equation here */
+
+        /* MEL_Connect IT_Equipment_53 rcpt_ckt-L1_11A */
+          connect(IT_Equipment_53.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_53.p2, IT_Equipment_53.p);
+          connect(MEL_Conv_IT_Equipment_53.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_53.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_53.p1, cable_rcpt_cktL1_11A.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_53.u);
+          connect(IT_Equipment_53.u, Gain_IT_Equipment_53.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_11A */
+          connect(cable_rcpt_cktL1_11A.n, cable_mels_L1_A.p);
+
+        /* MEL_Connect IT_Equipment_48 rcpt_ckt-L1_10A */
+          connect(IT_Equipment_48.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_48.p2, IT_Equipment_48.p);
+          connect(MEL_Conv_IT_Equipment_48.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_48.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_48.p1, cable_rcpt_cktL1_10A.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_48.u);
+          connect(IT_Equipment_48.u, Gain_IT_Equipment_48.y);
+
+        /* MEL_Connect IT_Equipment_47 rcpt_ckt-L1_10A */
+          connect(IT_Equipment_47.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_47.p2, IT_Equipment_47.p);
+          connect(MEL_Conv_IT_Equipment_47.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_47.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_47.p1, cable_rcpt_cktL1_10A.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_47.u);
+          connect(IT_Equipment_47.u, Gain_IT_Equipment_47.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_10A */
+          connect(cable_rcpt_cktL1_10A.n, cable_mels_L1_A.p);
+
+        /* MEL_Connect IT_Equipment_43 rcpt_ckt-L1_9A */
+          connect(IT_Equipment_43.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_43.p2, IT_Equipment_43.p);
+          connect(MEL_Conv_IT_Equipment_43.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_43.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_43.p1, cable_rcpt_cktL1_9A.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_43.u);
+          connect(IT_Equipment_43.u, Gain_IT_Equipment_43.y);
+
+        /* MEL_Connect IT_Equipment_42 rcpt_ckt-L1_9A */
+          connect(IT_Equipment_42.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_42.p2, IT_Equipment_42.p);
+          connect(MEL_Conv_IT_Equipment_42.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_42.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_42.p1, cable_rcpt_cktL1_9A.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_42.u);
+          connect(IT_Equipment_42.u, Gain_IT_Equipment_42.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_9A */
+          connect(cable_rcpt_cktL1_9A.n, cable_mels_L1_A.p);
+
+        /* MEL_Connect IT_Equipment_38 rcpt_ckt-L1_8A */
+          connect(IT_Equipment_38.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_38.p2, IT_Equipment_38.p);
+          connect(MEL_Conv_IT_Equipment_38.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_38.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_38.p1, cable_rcpt_cktL1_8A.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_38.u);
+          connect(IT_Equipment_38.u, Gain_IT_Equipment_38.y);
+
+        /* MEL_Connect IT_Equipment_37 rcpt_ckt-L1_8A */
+          connect(IT_Equipment_37.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_37.p2, IT_Equipment_37.p);
+          connect(MEL_Conv_IT_Equipment_37.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_37.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_37.p1, cable_rcpt_cktL1_8A.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_37.u);
+          connect(IT_Equipment_37.u, Gain_IT_Equipment_37.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_8A */
+          connect(cable_rcpt_cktL1_8A.n, cable_mels_L1_A.p);
+
+        /* MEL_Connect IT_Equipment_32 rcpt_ckt-L1_7A */
+          connect(IT_Equipment_32.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_32.p2, IT_Equipment_32.p);
+          connect(MEL_Conv_IT_Equipment_32.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_32.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_32.p1, cable_rcpt_cktL1_7A.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_32.u);
+          connect(IT_Equipment_32.u, Gain_IT_Equipment_32.y);
+
+        /* MEL_Connect IT_Equipment_31 rcpt_ckt-L1_7A */
+          connect(IT_Equipment_31.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_31.p2, IT_Equipment_31.p);
+          connect(MEL_Conv_IT_Equipment_31.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_31.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_31.p1, cable_rcpt_cktL1_7A.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_31.u);
+          connect(IT_Equipment_31.u, Gain_IT_Equipment_31.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_7A */
+          connect(cable_rcpt_cktL1_7A.n, cable_mels_L1_A.p);
+
+        /* MEL_Connect IT_Equipment_26 rcpt_ckt-L1_6A */
+          connect(IT_Equipment_26.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_26.p2, IT_Equipment_26.p);
+          connect(MEL_Conv_IT_Equipment_26.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_26.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_26.p1, cable_rcpt_cktL1_6A.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_26.u);
+          connect(IT_Equipment_26.u, Gain_IT_Equipment_26.y);
+
+        /* MEL_Connect IT_Equipment_25 rcpt_ckt-L1_6A */
+          connect(IT_Equipment_25.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_25.p2, IT_Equipment_25.p);
+          connect(MEL_Conv_IT_Equipment_25.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_25.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_25.p1, cable_rcpt_cktL1_6A.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_25.u);
+          connect(IT_Equipment_25.u, Gain_IT_Equipment_25.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_6A */
+          connect(cable_rcpt_cktL1_6A.n, cable_mels_L1_A.p);
+
+        /* MEL_Connect Printer_5 rcpt_ckt-L1_5A */
+          connect(Printer_5.n, GndDC.p);
+          connect(MEL_Conv_Printer_5.p2, Printer_5.p);
+          connect(MEL_Conv_Printer_5.n1, GndDC.p);
+          connect(MEL_Conv_Printer_5.n2, GndDC.p);
+          connect(MEL_Conv_Printer_5.p1, cable_rcpt_cktL1_5A.p);
+          connect(combiTimeTable_L1_Printer.y[1], Gain_Printer_5.u);
+          connect(Printer_5.u, Gain_Printer_5.y);
+
+        /* MEL_Connect IT_Equipment_21 rcpt_ckt-L1_5A */
+          connect(IT_Equipment_21.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_21.p2, IT_Equipment_21.p);
+          connect(MEL_Conv_IT_Equipment_21.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_21.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_21.p1, cable_rcpt_cktL1_5A.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_21.u);
+          connect(IT_Equipment_21.u, Gain_IT_Equipment_21.y);
+
+        /* MEL_Connect IT_Equipment_20 rcpt_ckt-L1_5A */
+          connect(IT_Equipment_20.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_20.p2, IT_Equipment_20.p);
+          connect(MEL_Conv_IT_Equipment_20.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_20.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_20.p1, cable_rcpt_cktL1_5A.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_20.u);
+          connect(IT_Equipment_20.u, Gain_IT_Equipment_20.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_5A */
+          connect(cable_rcpt_cktL1_5A.n, cable_mels_L1_A.p);
+
+        /* MEL_Connect Printer_4 rcpt_ckt-L1_4A */
+          connect(Printer_4.n, GndDC.p);
+          connect(MEL_Conv_Printer_4.p2, Printer_4.p);
+          connect(MEL_Conv_Printer_4.n1, GndDC.p);
+          connect(MEL_Conv_Printer_4.n2, GndDC.p);
+          connect(MEL_Conv_Printer_4.p1, cable_rcpt_cktL1_4A.p);
+          connect(combiTimeTable_L1_Printer.y[1], Gain_Printer_4.u);
+          connect(Printer_4.u, Gain_Printer_4.y);
+
+        /* MEL_Connect IT_Equipment_15 rcpt_ckt-L1_4A */
+          connect(IT_Equipment_15.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_15.p2, IT_Equipment_15.p);
+          connect(MEL_Conv_IT_Equipment_15.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_15.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_15.p1, cable_rcpt_cktL1_4A.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_15.u);
+          connect(IT_Equipment_15.u, Gain_IT_Equipment_15.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_4A */
+          connect(cable_rcpt_cktL1_4A.n, cable_mels_L1_A.p);
+
+        /* MEL_Connect IT_Equipment_12 rcpt_ckt-L1_3A */
+          connect(IT_Equipment_12.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_12.p2, IT_Equipment_12.p);
+          connect(MEL_Conv_IT_Equipment_12.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_12.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_12.p1, cable_rcpt_cktL1_3A.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_12.u);
+          connect(IT_Equipment_12.u, Gain_IT_Equipment_12.y);
+
+        /* MEL_Connect IT_Equipment_11 rcpt_ckt-L1_3A */
+          connect(IT_Equipment_11.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_11.p2, IT_Equipment_11.p);
+          connect(MEL_Conv_IT_Equipment_11.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_11.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_11.p1, cable_rcpt_cktL1_3A.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_11.u);
+          connect(IT_Equipment_11.u, Gain_IT_Equipment_11.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_3A */
+          connect(cable_rcpt_cktL1_3A.n, cable_mels_L1_A.p);
+
+        /* MEL_Connect IT_Equipment_7 rcpt_ckt-L1_2A */
+          connect(IT_Equipment_7.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_7.p2, IT_Equipment_7.p);
+          connect(MEL_Conv_IT_Equipment_7.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_7.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_7.p1, cable_rcpt_cktL1_2A.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_7.u);
+          connect(IT_Equipment_7.u, Gain_IT_Equipment_7.y);
+
+        /* MEL_Connect IT_Equipment_6 rcpt_ckt-L1_2A */
+          connect(IT_Equipment_6.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_6.p2, IT_Equipment_6.p);
+          connect(MEL_Conv_IT_Equipment_6.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_6.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_6.p1, cable_rcpt_cktL1_2A.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_6.u);
+          connect(IT_Equipment_6.u, Gain_IT_Equipment_6.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_2A */
+          connect(cable_rcpt_cktL1_2A.n, cable_mels_L1_A.p);
+
+        /* MEL_Connect MFD_1 rcpt_ckt-L1_1A */
+          connect(MFD_1.n, GndDC.p);
+          connect(MEL_Conv_MFD_1.p2, MFD_1.p);
+          connect(MEL_Conv_MFD_1.n1, GndDC.p);
+          connect(MEL_Conv_MFD_1.n2, GndDC.p);
+          connect(MEL_Conv_MFD_1.p1, cable_rcpt_cktL1_1A.p);
+          connect(combiTimeTable_L1_MFD.y[1], Gain_MFD_1.u);
+          connect(MFD_1.u, Gain_MFD_1.y);
+
+        /* MEL_Connect IT_Equipment_2 rcpt_ckt-L1_1A */
+          connect(IT_Equipment_2.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_2.p2, IT_Equipment_2.p);
+          connect(MEL_Conv_IT_Equipment_2.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_2.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_2.p1, cable_rcpt_cktL1_1A.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_2.u);
+          connect(IT_Equipment_2.u, Gain_IT_Equipment_2.y);
+
+        /* MEL_Connect IT_Equipment_1 rcpt_ckt-L1_1A */
+          connect(IT_Equipment_1.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_1.p2, IT_Equipment_1.p);
+          connect(MEL_Conv_IT_Equipment_1.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_1.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_1.p1, cable_rcpt_cktL1_1A.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_1.u);
+          connect(IT_Equipment_1.u, Gain_IT_Equipment_1.y);
+
+        /* MEL_Connect Display_1 rcpt_ckt-L1_1A */
+          connect(Display_1.n, GndDC.p);
+          connect(MEL_Conv_Display_1.p2, Display_1.p);
+          connect(MEL_Conv_Display_1.n1, GndDC.p);
+          connect(MEL_Conv_Display_1.n2, GndDC.p);
+          connect(MEL_Conv_Display_1.p1, cable_rcpt_cktL1_1A.p);
+          connect(combiTimeTable_L1_Display.y[1], Gain_Display_1.u);
+          connect(Display_1.u, Gain_Display_1.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_1A */
+          connect(cable_rcpt_cktL1_1A.n, cable_mels_L1_A.p);
+
+          connect(cable_mels_L1_A.n, p) annotation (Line(points={{-58,2},{-74,2},{-74,0},
+                  {-104,0}}, color={0,0,255}));
+          annotation ();
+        end large_AC_MEL_Panel_L1A;
+
+        model large_AC_MEL_Panel_L1B
+          outer parameter Real PF;
+          outer parameter Real PF1;
+          /* parameter Real PF = 0.9; */
+
+          outer HPF.SystemDef systemDef;
+          Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+            Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_IT_Equipment(
+            tableOnFile=true,
+            tableName="L1-All-ITEquipment",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-92,72},{-72,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_MFD(
+            tableOnFile=true,
+            tableName="L1-All-MFDs",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-28,72},{-8,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Printer(
+            tableOnFile=true,
+            tableName="L1-All-Printers",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{40,72},{60,92}})));
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Display(
+            tableOnFile=true,
+            tableName="L1-All-TVs",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{72,72},{92,92}})));
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_display(V = 48, alpha = 4.62836768, beta = 0.025225007, gamma = 0.00145528);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_ite(V = 48, alpha = 1.7735384, beta = 0.002302422, gamma = 0.000167704);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_mfd(V = 48, alpha = 6.883545915, beta = 0.002302422, gamma = 0.0000432087);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_printer(V = 48, alpha = 9.699038125, beta = 0.002302422, gamma = 0.0000306658);
+
+        /* Insert models here */
+
+        /* MEL_Model IT_Equipment_54 rcpt_ckt-L1_11B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_54(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_54(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_54;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_11B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_11B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=36.16);
+
+        /* MEL_Model IT_Equipment_50 rcpt_ckt-L1_10B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_50(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_50(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_50;
+
+        /* MEL_Model IT_Equipment_49 rcpt_ckt-L1_10B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_49(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_49(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_49;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_10B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_10B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=36.88);
+
+        /* MEL_Model Printer_8 rcpt_ckt-L1_9B */
+          Modelica.Blocks.Math.Gain Gain_Printer_8(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_8(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_8;
+
+        /* MEL_Model IT_Equipment_44 rcpt_ckt-L1_9B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_44(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_44(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_44;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_9B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_9B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=28.06);
+
+        /* MEL_Model IT_Equipment_39 rcpt_ckt-L1_8B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_39(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_39(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_39;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_8B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_8B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=27.55);
+
+        /* MEL_Model IT_Equipment_34 rcpt_ckt-L1_7B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_34(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_34(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_34;
+
+        /* MEL_Model IT_Equipment_33 rcpt_ckt-L1_7B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_33(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_33(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_33;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_7B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_7B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=14.33);
+
+        /* MEL_Model Printer_6 rcpt_ckt-L1_6B */
+          Modelica.Blocks.Math.Gain Gain_Printer_6(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_6(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_6;
+
+        /* MEL_Model IT_Equipment_28 rcpt_ckt-L1_6B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_28(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_28(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_28;
+
+        /* MEL_Model IT_Equipment_27 rcpt_ckt-L1_6B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_27(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_27(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_27;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_6B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_6B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=23.57);
+
+        /* MEL_Model IT_Equipment_22 rcpt_ckt-L1_5B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_22(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_22(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_22;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_5B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_5B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=25.44);
+
+        /* MEL_Model MFD_2 rcpt_ckt-L1_4B */
+          Modelica.Blocks.Math.Gain Gain_MFD_2(k=621) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_MFD_2(modelData = modelData_mfd);
+          HPF.DC.Variable_DC_Load MFD_2;
+
+        /* MEL_Model IT_Equipment_17 rcpt_ckt-L1_4B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_17(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_17(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_17;
+
+        /* MEL_Model IT_Equipment_16 rcpt_ckt-L1_4B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_16(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_16(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_16;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_4B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_4B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=27.79);
+
+        /* MEL_Model IT_Equipment_14 rcpt_ckt-L1_3B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_14(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_14(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_14;
+
+        /* MEL_Model IT_Equipment_13 rcpt_ckt-L1_3B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_13(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_13(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_13;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_3B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_3B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=12.48);
+
+        /* MEL_Model IT_Equipment_9 rcpt_ckt-L1_2B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_9(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_9(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_9;
+
+        /* MEL_Model IT_Equipment_8 rcpt_ckt-L1_2B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_8(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_8(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_8;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_2B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_2B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=20.21);
+
+        /* MEL_Model Printer_1 rcpt_ckt-L1_1B */
+          Modelica.Blocks.Math.Gain Gain_Printer_1(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_1(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_1;
+
+        /* MEL_Model IT_Equipment_3 rcpt_ckt-L1_1B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_3(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_3(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_3;
+
+        /* MEL_Model Display_2 rcpt_ckt-L1_1B */
+          Modelica.Blocks.Math.Gain Gain_Display_2(k=127) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Display_2(modelData = modelData_display);
+          HPF.DC.Variable_DC_Load Display_2;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_1B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_1B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=15.49);
+
+          Modelica.Electrical.Analog.Interfaces.PositivePin p
+            "Positive electrical pin of port 1" annotation (Placement(transformation(
+                  extent={{-114,-10},{-94,10}}),iconTransformation(extent={{-110,90},{-90,
+                    110}})));
+          HPF.Cables.NEC_CableModelDC cable_mels_L1_B(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+              length=15) annotation (Placement(visible=true, transformation(
+                origin={-48,2},
+                extent={{10,-10},{-10,10}},
+                rotation=0)));
+        equation
+
+        /* Insert equation here */
+
+        /* MEL_Connect IT_Equipment_54 rcpt_ckt-L1_11B */
+          connect(IT_Equipment_54.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_54.p2, IT_Equipment_54.p);
+          connect(MEL_Conv_IT_Equipment_54.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_54.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_54.p1, cable_rcpt_cktL1_11B.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_54.u);
+          connect(IT_Equipment_54.u, Gain_IT_Equipment_54.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_11B */
+          connect(cable_rcpt_cktL1_11B.n, cable_mels_L1_B.p);
+
+        /* MEL_Connect IT_Equipment_50 rcpt_ckt-L1_10B */
+          connect(IT_Equipment_50.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_50.p2, IT_Equipment_50.p);
+          connect(MEL_Conv_IT_Equipment_50.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_50.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_50.p1, cable_rcpt_cktL1_10B.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_50.u);
+          connect(IT_Equipment_50.u, Gain_IT_Equipment_50.y);
+
+        /* MEL_Connect IT_Equipment_49 rcpt_ckt-L1_10B */
+          connect(IT_Equipment_49.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_49.p2, IT_Equipment_49.p);
+          connect(MEL_Conv_IT_Equipment_49.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_49.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_49.p1, cable_rcpt_cktL1_10B.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_49.u);
+          connect(IT_Equipment_49.u, Gain_IT_Equipment_49.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_10B */
+          connect(cable_rcpt_cktL1_10B.n, cable_mels_L1_B.p);
+
+        /* MEL_Connect Printer_8 rcpt_ckt-L1_9B */
+          connect(Printer_8.n, GndDC.p);
+          connect(MEL_Conv_Printer_8.p2, Printer_8.p);
+          connect(MEL_Conv_Printer_8.n1, GndDC.p);
+          connect(MEL_Conv_Printer_8.n2, GndDC.p);
+          connect(MEL_Conv_Printer_8.p1, cable_rcpt_cktL1_9B.p);
+          connect(combiTimeTable_L1_Printer.y[1], Gain_Printer_8.u);
+          connect(Printer_8.u, Gain_Printer_8.y);
+
+        /* MEL_Connect IT_Equipment_44 rcpt_ckt-L1_9B */
+          connect(IT_Equipment_44.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_44.p2, IT_Equipment_44.p);
+          connect(MEL_Conv_IT_Equipment_44.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_44.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_44.p1, cable_rcpt_cktL1_9B.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_44.u);
+          connect(IT_Equipment_44.u, Gain_IT_Equipment_44.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_9B */
+          connect(cable_rcpt_cktL1_9B.n, cable_mels_L1_B.p);
+
+        /* MEL_Connect IT_Equipment_39 rcpt_ckt-L1_8B */
+          connect(IT_Equipment_39.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_39.p2, IT_Equipment_39.p);
+          connect(MEL_Conv_IT_Equipment_39.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_39.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_39.p1, cable_rcpt_cktL1_8B.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_39.u);
+          connect(IT_Equipment_39.u, Gain_IT_Equipment_39.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_8B */
+          connect(cable_rcpt_cktL1_8B.n, cable_mels_L1_B.p);
+
+        /* MEL_Connect IT_Equipment_34 rcpt_ckt-L1_7B */
+          connect(IT_Equipment_34.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_34.p2, IT_Equipment_34.p);
+          connect(MEL_Conv_IT_Equipment_34.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_34.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_34.p1, cable_rcpt_cktL1_7B.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_34.u);
+          connect(IT_Equipment_34.u, Gain_IT_Equipment_34.y);
+
+        /* MEL_Connect IT_Equipment_33 rcpt_ckt-L1_7B */
+          connect(IT_Equipment_33.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_33.p2, IT_Equipment_33.p);
+          connect(MEL_Conv_IT_Equipment_33.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_33.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_33.p1, cable_rcpt_cktL1_7B.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_33.u);
+          connect(IT_Equipment_33.u, Gain_IT_Equipment_33.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_7B */
+          connect(cable_rcpt_cktL1_7B.n, cable_mels_L1_B.p);
+
+        /* MEL_Connect Printer_6 rcpt_ckt-L1_6B */
+          connect(Printer_6.n, GndDC.p);
+          connect(MEL_Conv_Printer_6.p2, Printer_6.p);
+          connect(MEL_Conv_Printer_6.n1, GndDC.p);
+          connect(MEL_Conv_Printer_6.n2, GndDC.p);
+          connect(MEL_Conv_Printer_6.p1, cable_rcpt_cktL1_6B.p);
+          connect(combiTimeTable_L1_Printer.y[1], Gain_Printer_6.u);
+          connect(Printer_6.u, Gain_Printer_6.y);
+
+        /* MEL_Connect IT_Equipment_28 rcpt_ckt-L1_6B */
+          connect(IT_Equipment_28.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_28.p2, IT_Equipment_28.p);
+          connect(MEL_Conv_IT_Equipment_28.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_28.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_28.p1, cable_rcpt_cktL1_6B.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_28.u);
+          connect(IT_Equipment_28.u, Gain_IT_Equipment_28.y);
+
+        /* MEL_Connect IT_Equipment_27 rcpt_ckt-L1_6B */
+          connect(IT_Equipment_27.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_27.p2, IT_Equipment_27.p);
+          connect(MEL_Conv_IT_Equipment_27.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_27.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_27.p1, cable_rcpt_cktL1_6B.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_27.u);
+          connect(IT_Equipment_27.u, Gain_IT_Equipment_27.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_6B */
+          connect(cable_rcpt_cktL1_6B.n, cable_mels_L1_B.p);
+
+        /* MEL_Connect IT_Equipment_22 rcpt_ckt-L1_5B */
+          connect(IT_Equipment_22.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_22.p2, IT_Equipment_22.p);
+          connect(MEL_Conv_IT_Equipment_22.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_22.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_22.p1, cable_rcpt_cktL1_5B.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_22.u);
+          connect(IT_Equipment_22.u, Gain_IT_Equipment_22.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_5B */
+          connect(cable_rcpt_cktL1_5B.n, cable_mels_L1_B.p);
+
+        /* MEL_Connect MFD_2 rcpt_ckt-L1_4B */
+          connect(MFD_2.n, GndDC.p);
+          connect(MEL_Conv_MFD_2.p2, MFD_2.p);
+          connect(MEL_Conv_MFD_2.n1, GndDC.p);
+          connect(MEL_Conv_MFD_2.n2, GndDC.p);
+          connect(MEL_Conv_MFD_2.p1, cable_rcpt_cktL1_4B.p);
+          connect(combiTimeTable_L1_MFD.y[1], Gain_MFD_2.u);
+          connect(MFD_2.u, Gain_MFD_2.y);
+
+        /* MEL_Connect IT_Equipment_17 rcpt_ckt-L1_4B */
+          connect(IT_Equipment_17.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_17.p2, IT_Equipment_17.p);
+          connect(MEL_Conv_IT_Equipment_17.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_17.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_17.p1, cable_rcpt_cktL1_4B.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_17.u);
+          connect(IT_Equipment_17.u, Gain_IT_Equipment_17.y);
+
+        /* MEL_Connect IT_Equipment_16 rcpt_ckt-L1_4B */
+          connect(IT_Equipment_16.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_16.p2, IT_Equipment_16.p);
+          connect(MEL_Conv_IT_Equipment_16.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_16.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_16.p1, cable_rcpt_cktL1_4B.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_16.u);
+          connect(IT_Equipment_16.u, Gain_IT_Equipment_16.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_4B */
+          connect(cable_rcpt_cktL1_4B.n, cable_mels_L1_B.p);
+
+        /* MEL_Connect IT_Equipment_14 rcpt_ckt-L1_3B */
+          connect(IT_Equipment_14.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_14.p2, IT_Equipment_14.p);
+          connect(MEL_Conv_IT_Equipment_14.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_14.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_14.p1, cable_rcpt_cktL1_3B.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_14.u);
+          connect(IT_Equipment_14.u, Gain_IT_Equipment_14.y);
+
+        /* MEL_Connect IT_Equipment_13 rcpt_ckt-L1_3B */
+          connect(IT_Equipment_13.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_13.p2, IT_Equipment_13.p);
+          connect(MEL_Conv_IT_Equipment_13.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_13.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_13.p1, cable_rcpt_cktL1_3B.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_13.u);
+          connect(IT_Equipment_13.u, Gain_IT_Equipment_13.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_3B */
+          connect(cable_rcpt_cktL1_3B.n, cable_mels_L1_B.p);
+
+        /* MEL_Connect IT_Equipment_9 rcpt_ckt-L1_2B */
+          connect(IT_Equipment_9.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_9.p2, IT_Equipment_9.p);
+          connect(MEL_Conv_IT_Equipment_9.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_9.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_9.p1, cable_rcpt_cktL1_2B.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_9.u);
+          connect(IT_Equipment_9.u, Gain_IT_Equipment_9.y);
+
+        /* MEL_Connect IT_Equipment_8 rcpt_ckt-L1_2B */
+          connect(IT_Equipment_8.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_8.p2, IT_Equipment_8.p);
+          connect(MEL_Conv_IT_Equipment_8.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_8.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_8.p1, cable_rcpt_cktL1_2B.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_8.u);
+          connect(IT_Equipment_8.u, Gain_IT_Equipment_8.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_2B */
+          connect(cable_rcpt_cktL1_2B.n, cable_mels_L1_B.p);
+
+        /* MEL_Connect Printer_1 rcpt_ckt-L1_1B */
+          connect(Printer_1.n, GndDC.p);
+          connect(MEL_Conv_Printer_1.p2, Printer_1.p);
+          connect(MEL_Conv_Printer_1.n1, GndDC.p);
+          connect(MEL_Conv_Printer_1.n2, GndDC.p);
+          connect(MEL_Conv_Printer_1.p1, cable_rcpt_cktL1_1B.p);
+          connect(combiTimeTable_L1_Printer.y[1], Gain_Printer_1.u);
+          connect(Printer_1.u, Gain_Printer_1.y);
+
+        /* MEL_Connect IT_Equipment_3 rcpt_ckt-L1_1B */
+          connect(IT_Equipment_3.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_3.p2, IT_Equipment_3.p);
+          connect(MEL_Conv_IT_Equipment_3.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_3.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_3.p1, cable_rcpt_cktL1_1B.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_3.u);
+          connect(IT_Equipment_3.u, Gain_IT_Equipment_3.y);
+
+        /* MEL_Connect Display_2 rcpt_ckt-L1_1B */
+          connect(Display_2.n, GndDC.p);
+          connect(MEL_Conv_Display_2.p2, Display_2.p);
+          connect(MEL_Conv_Display_2.n1, GndDC.p);
+          connect(MEL_Conv_Display_2.n2, GndDC.p);
+          connect(MEL_Conv_Display_2.p1, cable_rcpt_cktL1_1B.p);
+          connect(combiTimeTable_L1_Display.y[1], Gain_Display_2.u);
+          connect(Display_2.u, Gain_Display_2.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_1B */
+          connect(cable_rcpt_cktL1_1B.n, cable_mels_L1_B.p);
+
+          connect(cable_mels_L1_B.n, p) annotation (Line(points={{-58,2},{-74,2},{-74,0},
+                  {-104,0}}, color={0,0,255}));
+          annotation ();
+        end large_AC_MEL_Panel_L1B;
+
+        model large_AC_MEL_Panel_L1C
+          outer parameter Real PF;
+          outer parameter Real PF1;
+          /* parameter Real PF = 0.9; */
+
+          outer HPF.SystemDef systemDef;
+          Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+            Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_IT_Equipment(
+            tableOnFile=true,
+            tableName="L1-All-ITEquipment",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-92,72},{-72,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_MFD(
+            tableOnFile=true,
+            tableName="L1-All-MFDs",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-28,72},{-8,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Printer(
+            tableOnFile=true,
+            tableName="L1-All-Printers",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{40,72},{60,92}})));
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Display(
+            tableOnFile=true,
+            tableName="L1-All-TVs",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{72,72},{92,92}})));
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_display(V = 48, alpha = 4.62836768, beta = 0.025225007, gamma = 0.00145528);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_ite(V = 48, alpha = 1.7735384, beta = 0.002302422, gamma = 0.000167704);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_mfd(V = 48, alpha = 6.883545915, beta = 0.002302422, gamma = 0.0000432087);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_printer(V = 48, alpha = 9.699038125, beta = 0.002302422, gamma = 0.0000306658);
+
+        /* Insert models here */
+
+        /* MEL_Model Printer_9 rcpt_ckt-L1_11C */
+          Modelica.Blocks.Math.Gain Gain_Printer_9(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_9(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_9;
+
+        /* MEL_Model IT_Equipment_55 rcpt_ckt-L1_11C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_55(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_55(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_55;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_11C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_11C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=28.61);
+
+        /* MEL_Model IT_Equipment_41 rcpt_ckt-L1_8C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_41(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_41(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_41;
+
+        /* MEL_Model IT_Equipment_40 rcpt_ckt-L1_8C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_40(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_40(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_40;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_8C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_8C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=29.76);
+
+        /* MEL_Model Printer_7 rcpt_ckt-L1_7C */
+          Modelica.Blocks.Math.Gain Gain_Printer_7(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_7(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_7;
+
+        /* MEL_Model IT_Equipment_36 rcpt_ckt-L1_7C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_36(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_36(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_36;
+
+        /* MEL_Model IT_Equipment_35 rcpt_ckt-L1_7C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_35(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_35(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_35;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_7C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_7C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=18.53);
+
+        /* MEL_Model IT_Equipment_30 rcpt_ckt-L1_6C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_30(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_30(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_30;
+
+        /* MEL_Model IT_Equipment_29 rcpt_ckt-L1_6C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_29(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_29(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_29;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_6C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_6C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=19.46);
+
+        /* MEL_Model IT_Equipment_24 rcpt_ckt-L1_5C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_24(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_24(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_24;
+
+        /* MEL_Model IT_Equipment_23 rcpt_ckt-L1_5C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_23(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_23(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_23;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_5C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_5C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=30.23);
+
+        /* MEL_Model Printer_3 rcpt_ckt-L1_2C */
+          Modelica.Blocks.Math.Gain Gain_Printer_3(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_3(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_3;
+
+        /* MEL_Model IT_Equipment_10 rcpt_ckt-L1_2C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_10(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_10(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_10;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_2C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_2C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=18.48);
+
+        /* MEL_Model Printer_2 rcpt_ckt-L1_1C */
+          Modelica.Blocks.Math.Gain Gain_Printer_2(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_2(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_2;
+
+        /* MEL_Model IT_Equipment_5 rcpt_ckt-L1_1C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_5(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_5(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_5;
+
+        /* MEL_Model IT_Equipment_4 rcpt_ckt-L1_1C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_4(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_4(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_4;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_1C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_1C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=16.79);
+
+        /* MEL_Model IT_Equipment_52 rcpt_ckt-L1_10C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_52(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_52(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_52;
+
+        /* MEL_Model IT_Equipment_51 rcpt_ckt-L1_10C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_51(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_51(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_51;
+
+        /* MEL_Model Display_5 rcpt_ckt-L1_10C */
+          Modelica.Blocks.Math.Gain Gain_Display_5(k=127) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Display_5(modelData = modelData_display);
+          HPF.DC.Variable_DC_Load Display_5;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_10C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_10C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=40.9);
+
+        /* MEL_Model MFD_3 rcpt_ckt-L1_9C */
+          Modelica.Blocks.Math.Gain Gain_MFD_3(k=621) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_MFD_3(modelData = modelData_mfd);
+          HPF.DC.Variable_DC_Load MFD_3;
+
+        /* MEL_Model IT_Equipment_46 rcpt_ckt-L1_9C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_46(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_46(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_46;
+
+        /* MEL_Model IT_Equipment_45 rcpt_ckt-L1_9C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_45(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_45(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_45;
+
+        /* MEL_Model Display_4 rcpt_ckt-L1_9C */
+          Modelica.Blocks.Math.Gain Gain_Display_4(k=127) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Display_4(modelData = modelData_display);
+          HPF.DC.Variable_DC_Load Display_4;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_9C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_9C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=37.71);
+
+        /* MEL_Model IT_Equipment_19 rcpt_ckt-L1_4C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_19(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_19(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_19;
+
+        /* MEL_Model IT_Equipment_18 rcpt_ckt-L1_4C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_18(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_18(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_18;
+
+        /* MEL_Model Display_3 rcpt_ckt-L1_4C */
+          Modelica.Blocks.Math.Gain Gain_Display_3(k=127) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Display_3(modelData = modelData_display);
+          HPF.DC.Variable_DC_Load Display_3;
+
+        /* MEL_Model  cable_rcpt_ckt-L1_4C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL1_4C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=22.3);
+
+          Modelica.Electrical.Analog.Interfaces.PositivePin p
+            "Positive electrical pin of port 1" annotation (Placement(transformation(
+                  extent={{-114,-10},{-94,10}}),iconTransformation(extent={{-110,90},{-90,
+                    110}})));
+          HPF.Cables.NEC_CableModelDC cable_mels_L1_C(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+              length=15) annotation (Placement(visible=true, transformation(
+                origin={-48,2},
+                extent={{10,-10},{-10,10}},
+                rotation=0)));
+        equation
+
+        /* Insert equation here */
+
+        /* MEL_Connect Printer_9 rcpt_ckt-L1_11C */
+          connect(Printer_9.n, GndDC.p);
+          connect(MEL_Conv_Printer_9.p2, Printer_9.p);
+          connect(MEL_Conv_Printer_9.n1, GndDC.p);
+          connect(MEL_Conv_Printer_9.n2, GndDC.p);
+          connect(MEL_Conv_Printer_9.p1, cable_rcpt_cktL1_11C.p);
+          connect(combiTimeTable_L1_Printer.y[1], Gain_Printer_9.u);
+          connect(Printer_9.u, Gain_Printer_9.y);
+
+        /* MEL_Connect IT_Equipment_55 rcpt_ckt-L1_11C */
+          connect(IT_Equipment_55.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_55.p2, IT_Equipment_55.p);
+          connect(MEL_Conv_IT_Equipment_55.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_55.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_55.p1, cable_rcpt_cktL1_11C.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_55.u);
+          connect(IT_Equipment_55.u, Gain_IT_Equipment_55.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_11C */
+          connect(cable_rcpt_cktL1_11C.n, cable_mels_L1_C.p);
+
+        /* MEL_Connect IT_Equipment_41 rcpt_ckt-L1_8C */
+          connect(IT_Equipment_41.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_41.p2, IT_Equipment_41.p);
+          connect(MEL_Conv_IT_Equipment_41.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_41.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_41.p1, cable_rcpt_cktL1_8C.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_41.u);
+          connect(IT_Equipment_41.u, Gain_IT_Equipment_41.y);
+
+        /* MEL_Connect IT_Equipment_40 rcpt_ckt-L1_8C */
+          connect(IT_Equipment_40.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_40.p2, IT_Equipment_40.p);
+          connect(MEL_Conv_IT_Equipment_40.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_40.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_40.p1, cable_rcpt_cktL1_8C.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_40.u);
+          connect(IT_Equipment_40.u, Gain_IT_Equipment_40.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_8C */
+          connect(cable_rcpt_cktL1_8C.n, cable_mels_L1_C.p);
+
+        /* MEL_Connect Printer_7 rcpt_ckt-L1_7C */
+          connect(Printer_7.n, GndDC.p);
+          connect(MEL_Conv_Printer_7.p2, Printer_7.p);
+          connect(MEL_Conv_Printer_7.n1, GndDC.p);
+          connect(MEL_Conv_Printer_7.n2, GndDC.p);
+          connect(MEL_Conv_Printer_7.p1, cable_rcpt_cktL1_7C.p);
+          connect(combiTimeTable_L1_Printer.y[1], Gain_Printer_7.u);
+          connect(Printer_7.u, Gain_Printer_7.y);
+
+        /* MEL_Connect IT_Equipment_36 rcpt_ckt-L1_7C */
+          connect(IT_Equipment_36.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_36.p2, IT_Equipment_36.p);
+          connect(MEL_Conv_IT_Equipment_36.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_36.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_36.p1, cable_rcpt_cktL1_7C.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_36.u);
+          connect(IT_Equipment_36.u, Gain_IT_Equipment_36.y);
+
+        /* MEL_Connect IT_Equipment_35 rcpt_ckt-L1_7C */
+          connect(IT_Equipment_35.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_35.p2, IT_Equipment_35.p);
+          connect(MEL_Conv_IT_Equipment_35.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_35.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_35.p1, cable_rcpt_cktL1_7C.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_35.u);
+          connect(IT_Equipment_35.u, Gain_IT_Equipment_35.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_7C */
+          connect(cable_rcpt_cktL1_7C.n, cable_mels_L1_C.p);
+
+        /* MEL_Connect IT_Equipment_30 rcpt_ckt-L1_6C */
+          connect(IT_Equipment_30.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_30.p2, IT_Equipment_30.p);
+          connect(MEL_Conv_IT_Equipment_30.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_30.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_30.p1, cable_rcpt_cktL1_6C.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_30.u);
+          connect(IT_Equipment_30.u, Gain_IT_Equipment_30.y);
+
+        /* MEL_Connect IT_Equipment_29 rcpt_ckt-L1_6C */
+          connect(IT_Equipment_29.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_29.p2, IT_Equipment_29.p);
+          connect(MEL_Conv_IT_Equipment_29.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_29.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_29.p1, cable_rcpt_cktL1_6C.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_29.u);
+          connect(IT_Equipment_29.u, Gain_IT_Equipment_29.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_6C */
+          connect(cable_rcpt_cktL1_6C.n, cable_mels_L1_C.p);
+
+        /* MEL_Connect IT_Equipment_24 rcpt_ckt-L1_5C */
+          connect(IT_Equipment_24.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_24.p2, IT_Equipment_24.p);
+          connect(MEL_Conv_IT_Equipment_24.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_24.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_24.p1, cable_rcpt_cktL1_5C.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_24.u);
+          connect(IT_Equipment_24.u, Gain_IT_Equipment_24.y);
+
+        /* MEL_Connect IT_Equipment_23 rcpt_ckt-L1_5C */
+          connect(IT_Equipment_23.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_23.p2, IT_Equipment_23.p);
+          connect(MEL_Conv_IT_Equipment_23.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_23.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_23.p1, cable_rcpt_cktL1_5C.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_23.u);
+          connect(IT_Equipment_23.u, Gain_IT_Equipment_23.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_5C */
+          connect(cable_rcpt_cktL1_5C.n, cable_mels_L1_C.p);
+
+        /* MEL_Connect Printer_3 rcpt_ckt-L1_2C */
+          connect(Printer_3.n, GndDC.p);
+          connect(MEL_Conv_Printer_3.p2, Printer_3.p);
+          connect(MEL_Conv_Printer_3.n1, GndDC.p);
+          connect(MEL_Conv_Printer_3.n2, GndDC.p);
+          connect(MEL_Conv_Printer_3.p1, cable_rcpt_cktL1_2C.p);
+          connect(combiTimeTable_L1_Printer.y[1], Gain_Printer_3.u);
+          connect(Printer_3.u, Gain_Printer_3.y);
+
+        /* MEL_Connect IT_Equipment_10 rcpt_ckt-L1_2C */
+          connect(IT_Equipment_10.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_10.p2, IT_Equipment_10.p);
+          connect(MEL_Conv_IT_Equipment_10.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_10.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_10.p1, cable_rcpt_cktL1_2C.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_10.u);
+          connect(IT_Equipment_10.u, Gain_IT_Equipment_10.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_2C */
+          connect(cable_rcpt_cktL1_2C.n, cable_mels_L1_C.p);
+
+        /* MEL_Connect Printer_2 rcpt_ckt-L1_1C */
+          connect(Printer_2.n, GndDC.p);
+          connect(MEL_Conv_Printer_2.p2, Printer_2.p);
+          connect(MEL_Conv_Printer_2.n1, GndDC.p);
+          connect(MEL_Conv_Printer_2.n2, GndDC.p);
+          connect(MEL_Conv_Printer_2.p1, cable_rcpt_cktL1_1C.p);
+          connect(combiTimeTable_L1_Printer.y[1], Gain_Printer_2.u);
+          connect(Printer_2.u, Gain_Printer_2.y);
+
+        /* MEL_Connect IT_Equipment_5 rcpt_ckt-L1_1C */
+          connect(IT_Equipment_5.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_5.p2, IT_Equipment_5.p);
+          connect(MEL_Conv_IT_Equipment_5.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_5.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_5.p1, cable_rcpt_cktL1_1C.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_5.u);
+          connect(IT_Equipment_5.u, Gain_IT_Equipment_5.y);
+
+        /* MEL_Connect IT_Equipment_4 rcpt_ckt-L1_1C */
+          connect(IT_Equipment_4.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_4.p2, IT_Equipment_4.p);
+          connect(MEL_Conv_IT_Equipment_4.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_4.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_4.p1, cable_rcpt_cktL1_1C.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_4.u);
+          connect(IT_Equipment_4.u, Gain_IT_Equipment_4.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_1C */
+          connect(cable_rcpt_cktL1_1C.n, cable_mels_L1_C.p);
+
+        /* MEL_Connect IT_Equipment_52 rcpt_ckt-L1_10C */
+          connect(IT_Equipment_52.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_52.p2, IT_Equipment_52.p);
+          connect(MEL_Conv_IT_Equipment_52.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_52.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_52.p1, cable_rcpt_cktL1_10C.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_52.u);
+          connect(IT_Equipment_52.u, Gain_IT_Equipment_52.y);
+
+        /* MEL_Connect IT_Equipment_51 rcpt_ckt-L1_10C */
+          connect(IT_Equipment_51.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_51.p2, IT_Equipment_51.p);
+          connect(MEL_Conv_IT_Equipment_51.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_51.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_51.p1, cable_rcpt_cktL1_10C.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_51.u);
+          connect(IT_Equipment_51.u, Gain_IT_Equipment_51.y);
+
+        /* MEL_Connect Display_5 rcpt_ckt-L1_10C */
+          connect(Display_5.n, GndDC.p);
+          connect(MEL_Conv_Display_5.p2, Display_5.p);
+          connect(MEL_Conv_Display_5.n1, GndDC.p);
+          connect(MEL_Conv_Display_5.n2, GndDC.p);
+          connect(MEL_Conv_Display_5.p1, cable_rcpt_cktL1_10C.p);
+          connect(combiTimeTable_L1_Display.y[1], Gain_Display_5.u);
+          connect(Display_5.u, Gain_Display_5.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_10C */
+          connect(cable_rcpt_cktL1_10C.n, cable_mels_L1_C.p);
+
+        /* MEL_Connect MFD_3 rcpt_ckt-L1_9C */
+          connect(MFD_3.n, GndDC.p);
+          connect(MEL_Conv_MFD_3.p2, MFD_3.p);
+          connect(MEL_Conv_MFD_3.n1, GndDC.p);
+          connect(MEL_Conv_MFD_3.n2, GndDC.p);
+          connect(MEL_Conv_MFD_3.p1, cable_rcpt_cktL1_9C.p);
+          connect(combiTimeTable_L1_MFD.y[1], Gain_MFD_3.u);
+          connect(MFD_3.u, Gain_MFD_3.y);
+
+        /* MEL_Connect IT_Equipment_46 rcpt_ckt-L1_9C */
+          connect(IT_Equipment_46.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_46.p2, IT_Equipment_46.p);
+          connect(MEL_Conv_IT_Equipment_46.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_46.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_46.p1, cable_rcpt_cktL1_9C.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_46.u);
+          connect(IT_Equipment_46.u, Gain_IT_Equipment_46.y);
+
+        /* MEL_Connect IT_Equipment_45 rcpt_ckt-L1_9C */
+          connect(IT_Equipment_45.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_45.p2, IT_Equipment_45.p);
+          connect(MEL_Conv_IT_Equipment_45.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_45.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_45.p1, cable_rcpt_cktL1_9C.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_45.u);
+          connect(IT_Equipment_45.u, Gain_IT_Equipment_45.y);
+
+        /* MEL_Connect Display_4 rcpt_ckt-L1_9C */
+          connect(Display_4.n, GndDC.p);
+          connect(MEL_Conv_Display_4.p2, Display_4.p);
+          connect(MEL_Conv_Display_4.n1, GndDC.p);
+          connect(MEL_Conv_Display_4.n2, GndDC.p);
+          connect(MEL_Conv_Display_4.p1, cable_rcpt_cktL1_9C.p);
+          connect(combiTimeTable_L1_Display.y[1], Gain_Display_4.u);
+          connect(Display_4.u, Gain_Display_4.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_9C */
+          connect(cable_rcpt_cktL1_9C.n, cable_mels_L1_C.p);
+
+        /* MEL_Connect IT_Equipment_19 rcpt_ckt-L1_4C */
+          connect(IT_Equipment_19.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_19.p2, IT_Equipment_19.p);
+          connect(MEL_Conv_IT_Equipment_19.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_19.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_19.p1, cable_rcpt_cktL1_4C.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_19.u);
+          connect(IT_Equipment_19.u, Gain_IT_Equipment_19.y);
+
+        /* MEL_Connect IT_Equipment_18 rcpt_ckt-L1_4C */
+          connect(IT_Equipment_18.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_18.p2, IT_Equipment_18.p);
+          connect(MEL_Conv_IT_Equipment_18.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_18.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_18.p1, cable_rcpt_cktL1_4C.p);
+          connect(combiTimeTable_L1_IT_Equipment.y[1], Gain_IT_Equipment_18.u);
+          connect(IT_Equipment_18.u, Gain_IT_Equipment_18.y);
+
+        /* MEL_Connect Display_3 rcpt_ckt-L1_4C */
+          connect(Display_3.n, GndDC.p);
+          connect(MEL_Conv_Display_3.p2, Display_3.p);
+          connect(MEL_Conv_Display_3.n1, GndDC.p);
+          connect(MEL_Conv_Display_3.n2, GndDC.p);
+          connect(MEL_Conv_Display_3.p1, cable_rcpt_cktL1_4C.p);
+          connect(combiTimeTable_L1_Display.y[1], Gain_Display_3.u);
+          connect(Display_3.u, Gain_Display_3.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L1_4C */
+          connect(cable_rcpt_cktL1_4C.n, cable_mels_L1_C.p);
+
+          connect(cable_mels_L1_C.n, p) annotation (Line(points={{-58,2},{-74,2},{-74,0},
+                  {-104,0}}, color={0,0,255}));
+          annotation ();
+        end large_AC_MEL_Panel_L1C;
+
+        model large_AC_MEL_Panel_L2A
+          outer parameter Real PF;
+          outer parameter Real PF1;
+          /* parameter Real PF = 0.9; */
+
+          outer HPF.SystemDef systemDef;
+          Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+            Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_IT_Equipment(
+            tableOnFile=true,
+            tableName="L2-All-ITEquipment",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-92,72},{-72,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_MFD(
+            tableOnFile=true,
+            tableName="L2-All-MFDs",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-28,72},{-8,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Printer(
+            tableOnFile=true,
+            tableName="L2-All-Printers",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{40,72},{60,92}})));
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Display(
+            tableOnFile=true,
+            tableName="L2-All-TVs",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{72,72},{92,92}})));
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_display(V = 48, alpha = 4.62836768, beta = 0.025225007, gamma = 0.00145528);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_ite(V = 48, alpha = 1.7735384, beta = 0.002302422, gamma = 0.000167704);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_mfd(V = 48, alpha = 6.883545915, beta = 0.002302422, gamma = 0.0000432087);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_printer(V = 48, alpha = 9.699038125, beta = 0.002302422, gamma = 0.0000306658);
+
+        /* Insert models here */
+
+        /* MEL_Model IT_Equipment_107 rcpt_ckt-L2_17A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_107(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_107(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_107;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_17A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_17A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=24.99);
+
+        /* MEL_Model IT_Equipment_102 rcpt_ckt-L2_14A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_102(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_102(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_102;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_14A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_14A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=14.9);
+
+        /* MEL_Model IT_Equipment_101 rcpt_ckt-L2_13A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_101(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_101(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_101;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_13A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_13A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=18.44);
+
+        /* MEL_Model Printer_17 rcpt_ckt-L2_11A */
+          Modelica.Blocks.Math.Gain Gain_Printer_17(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_17(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_17;
+
+        /* MEL_Model IT_Equipment_95 rcpt_ckt-L2_11A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_95(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_95(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_95;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_11A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_11A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=15.02);
+
+        /* MEL_Model IT_Equipment_89 rcpt_ckt-L2_10A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_89(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_89(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_89;
+
+        /* MEL_Model IT_Equipment_88 rcpt_ckt-L2_10A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_88(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_88(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_88;
+
+        /* MEL_Model IT_Equipment_87 rcpt_ckt-L2_10A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_87(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_87(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_87;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_10A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_10A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=34.53);
+
+        /* MEL_Model Printer_15 rcpt_ckt-L2_9A */
+          Modelica.Blocks.Math.Gain Gain_Printer_15(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_15(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_15;
+
+        /* MEL_Model IT_Equipment_85 rcpt_ckt-L2_9A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_85(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_85(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_85;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_9A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_9A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=23.09);
+
+        /* MEL_Model IT_Equipment_74 rcpt_ckt-L2_5A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_74(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_74(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_74;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_5A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_5A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=13.82);
+
+        /* MEL_Model IT_Equipment_72 rcpt_ckt-L2_4A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_72(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_72(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_72;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_4A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_4A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=17.48);
+
+        /* MEL_Model IT_Equipment_65 rcpt_ckt-L2_2A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_65(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_65(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_65;
+
+        /* MEL_Model IT_Equipment_64 rcpt_ckt-L2_2A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_64(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_64(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_64;
+
+        /* MEL_Model IT_Equipment_63 rcpt_ckt-L2_2A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_63(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_63(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_63;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_2A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_2A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=21.04);
+
+        /* MEL_Model Printer_14 rcpt_ckt-L2_8A */
+          Modelica.Blocks.Math.Gain Gain_Printer_14(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_14(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_14;
+
+        /* MEL_Model IT_Equipment_79 rcpt_ckt-L2_8A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_79(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_79(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_79;
+
+        /* MEL_Model Display_7 rcpt_ckt-L2_8A */
+          Modelica.Blocks.Math.Gain Gain_Display_7(k=127) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Display_7(modelData = modelData_display);
+          HPF.DC.Variable_DC_Load Display_7;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_8A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_8A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=40.46);
+
+        /* MEL_Model MFD_4 rcpt_ckt-L2_1A */
+          Modelica.Blocks.Math.Gain Gain_MFD_4(k=621) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_MFD_4(modelData = modelData_mfd);
+          HPF.DC.Variable_DC_Load MFD_4;
+
+        /* MEL_Model IT_Equipment_57 rcpt_ckt-L2_1A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_57(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_57(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_57;
+
+        /* MEL_Model IT_Equipment_56 rcpt_ckt-L2_1A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_56(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_56(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_56;
+
+        /* MEL_Model Display_6 rcpt_ckt-L2_1A */
+          Modelica.Blocks.Math.Gain Gain_Display_6(k=127) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Display_6(modelData = modelData_display);
+          HPF.DC.Variable_DC_Load Display_6;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_1A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_1A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=26.25);
+
+          Modelica.Electrical.Analog.Interfaces.PositivePin p
+            "Positive electrical pin of port 1" annotation (Placement(transformation(
+                  extent={{-114,-10},{-94,10}}),iconTransformation(extent={{-110,90},{-90,
+                    110}})));
+          HPF.Cables.NEC_CableModelDC cable_mels_L2_A(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+              length=15) annotation (Placement(visible=true, transformation(
+                origin={-48,2},
+                extent={{10,-10},{-10,10}},
+                rotation=0)));
+        equation
+
+        /* Insert equation here */
+
+        /* MEL_Connect IT_Equipment_107 rcpt_ckt-L2_17A */
+          connect(IT_Equipment_107.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_107.p2, IT_Equipment_107.p);
+          connect(MEL_Conv_IT_Equipment_107.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_107.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_107.p1, cable_rcpt_cktL2_17A.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_107.u);
+          connect(IT_Equipment_107.u, Gain_IT_Equipment_107.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_17A */
+          connect(cable_rcpt_cktL2_17A.n, cable_mels_L2_A.p);
+
+        /* MEL_Connect IT_Equipment_102 rcpt_ckt-L2_14A */
+          connect(IT_Equipment_102.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_102.p2, IT_Equipment_102.p);
+          connect(MEL_Conv_IT_Equipment_102.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_102.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_102.p1, cable_rcpt_cktL2_14A.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_102.u);
+          connect(IT_Equipment_102.u, Gain_IT_Equipment_102.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_14A */
+          connect(cable_rcpt_cktL2_14A.n, cable_mels_L2_A.p);
+
+        /* MEL_Connect IT_Equipment_101 rcpt_ckt-L2_13A */
+          connect(IT_Equipment_101.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_101.p2, IT_Equipment_101.p);
+          connect(MEL_Conv_IT_Equipment_101.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_101.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_101.p1, cable_rcpt_cktL2_13A.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_101.u);
+          connect(IT_Equipment_101.u, Gain_IT_Equipment_101.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_13A */
+          connect(cable_rcpt_cktL2_13A.n, cable_mels_L2_A.p);
+
+        /* MEL_Connect Printer_17 rcpt_ckt-L2_11A */
+          connect(Printer_17.n, GndDC.p);
+          connect(MEL_Conv_Printer_17.p2, Printer_17.p);
+          connect(MEL_Conv_Printer_17.n1, GndDC.p);
+          connect(MEL_Conv_Printer_17.n2, GndDC.p);
+          connect(MEL_Conv_Printer_17.p1, cable_rcpt_cktL2_11A.p);
+          connect(combiTimeTable_L2_Printer.y[1], Gain_Printer_17.u);
+          connect(Printer_17.u, Gain_Printer_17.y);
+
+        /* MEL_Connect IT_Equipment_95 rcpt_ckt-L2_11A */
+          connect(IT_Equipment_95.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_95.p2, IT_Equipment_95.p);
+          connect(MEL_Conv_IT_Equipment_95.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_95.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_95.p1, cable_rcpt_cktL2_11A.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_95.u);
+          connect(IT_Equipment_95.u, Gain_IT_Equipment_95.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_11A */
+          connect(cable_rcpt_cktL2_11A.n, cable_mels_L2_A.p);
+
+        /* MEL_Connect IT_Equipment_89 rcpt_ckt-L2_10A */
+          connect(IT_Equipment_89.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_89.p2, IT_Equipment_89.p);
+          connect(MEL_Conv_IT_Equipment_89.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_89.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_89.p1, cable_rcpt_cktL2_10A.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_89.u);
+          connect(IT_Equipment_89.u, Gain_IT_Equipment_89.y);
+
+        /* MEL_Connect IT_Equipment_88 rcpt_ckt-L2_10A */
+          connect(IT_Equipment_88.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_88.p2, IT_Equipment_88.p);
+          connect(MEL_Conv_IT_Equipment_88.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_88.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_88.p1, cable_rcpt_cktL2_10A.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_88.u);
+          connect(IT_Equipment_88.u, Gain_IT_Equipment_88.y);
+
+        /* MEL_Connect IT_Equipment_87 rcpt_ckt-L2_10A */
+          connect(IT_Equipment_87.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_87.p2, IT_Equipment_87.p);
+          connect(MEL_Conv_IT_Equipment_87.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_87.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_87.p1, cable_rcpt_cktL2_10A.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_87.u);
+          connect(IT_Equipment_87.u, Gain_IT_Equipment_87.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_10A */
+          connect(cable_rcpt_cktL2_10A.n, cable_mels_L2_A.p);
+
+        /* MEL_Connect Printer_15 rcpt_ckt-L2_9A */
+          connect(Printer_15.n, GndDC.p);
+          connect(MEL_Conv_Printer_15.p2, Printer_15.p);
+          connect(MEL_Conv_Printer_15.n1, GndDC.p);
+          connect(MEL_Conv_Printer_15.n2, GndDC.p);
+          connect(MEL_Conv_Printer_15.p1, cable_rcpt_cktL2_9A.p);
+          connect(combiTimeTable_L2_Printer.y[1], Gain_Printer_15.u);
+          connect(Printer_15.u, Gain_Printer_15.y);
+
+        /* MEL_Connect IT_Equipment_85 rcpt_ckt-L2_9A */
+          connect(IT_Equipment_85.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_85.p2, IT_Equipment_85.p);
+          connect(MEL_Conv_IT_Equipment_85.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_85.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_85.p1, cable_rcpt_cktL2_9A.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_85.u);
+          connect(IT_Equipment_85.u, Gain_IT_Equipment_85.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_9A */
+          connect(cable_rcpt_cktL2_9A.n, cable_mels_L2_A.p);
+
+        /* MEL_Connect IT_Equipment_74 rcpt_ckt-L2_5A */
+          connect(IT_Equipment_74.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_74.p2, IT_Equipment_74.p);
+          connect(MEL_Conv_IT_Equipment_74.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_74.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_74.p1, cable_rcpt_cktL2_5A.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_74.u);
+          connect(IT_Equipment_74.u, Gain_IT_Equipment_74.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_5A */
+          connect(cable_rcpt_cktL2_5A.n, cable_mels_L2_A.p);
+
+        /* MEL_Connect IT_Equipment_72 rcpt_ckt-L2_4A */
+          connect(IT_Equipment_72.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_72.p2, IT_Equipment_72.p);
+          connect(MEL_Conv_IT_Equipment_72.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_72.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_72.p1, cable_rcpt_cktL2_4A.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_72.u);
+          connect(IT_Equipment_72.u, Gain_IT_Equipment_72.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_4A */
+          connect(cable_rcpt_cktL2_4A.n, cable_mels_L2_A.p);
+
+        /* MEL_Connect IT_Equipment_65 rcpt_ckt-L2_2A */
+          connect(IT_Equipment_65.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_65.p2, IT_Equipment_65.p);
+          connect(MEL_Conv_IT_Equipment_65.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_65.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_65.p1, cable_rcpt_cktL2_2A.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_65.u);
+          connect(IT_Equipment_65.u, Gain_IT_Equipment_65.y);
+
+        /* MEL_Connect IT_Equipment_64 rcpt_ckt-L2_2A */
+          connect(IT_Equipment_64.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_64.p2, IT_Equipment_64.p);
+          connect(MEL_Conv_IT_Equipment_64.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_64.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_64.p1, cable_rcpt_cktL2_2A.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_64.u);
+          connect(IT_Equipment_64.u, Gain_IT_Equipment_64.y);
+
+        /* MEL_Connect IT_Equipment_63 rcpt_ckt-L2_2A */
+          connect(IT_Equipment_63.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_63.p2, IT_Equipment_63.p);
+          connect(MEL_Conv_IT_Equipment_63.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_63.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_63.p1, cable_rcpt_cktL2_2A.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_63.u);
+          connect(IT_Equipment_63.u, Gain_IT_Equipment_63.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_2A */
+          connect(cable_rcpt_cktL2_2A.n, cable_mels_L2_A.p);
+
+        /* MEL_Connect Printer_14 rcpt_ckt-L2_8A */
+          connect(Printer_14.n, GndDC.p);
+          connect(MEL_Conv_Printer_14.p2, Printer_14.p);
+          connect(MEL_Conv_Printer_14.n1, GndDC.p);
+          connect(MEL_Conv_Printer_14.n2, GndDC.p);
+          connect(MEL_Conv_Printer_14.p1, cable_rcpt_cktL2_8A.p);
+          connect(combiTimeTable_L2_Printer.y[1], Gain_Printer_14.u);
+          connect(Printer_14.u, Gain_Printer_14.y);
+
+        /* MEL_Connect IT_Equipment_79 rcpt_ckt-L2_8A */
+          connect(IT_Equipment_79.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_79.p2, IT_Equipment_79.p);
+          connect(MEL_Conv_IT_Equipment_79.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_79.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_79.p1, cable_rcpt_cktL2_8A.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_79.u);
+          connect(IT_Equipment_79.u, Gain_IT_Equipment_79.y);
+
+        /* MEL_Connect Display_7 rcpt_ckt-L2_8A */
+          connect(Display_7.n, GndDC.p);
+          connect(MEL_Conv_Display_7.p2, Display_7.p);
+          connect(MEL_Conv_Display_7.n1, GndDC.p);
+          connect(MEL_Conv_Display_7.n2, GndDC.p);
+          connect(MEL_Conv_Display_7.p1, cable_rcpt_cktL2_8A.p);
+          connect(combiTimeTable_L2_Display.y[1], Gain_Display_7.u);
+          connect(Display_7.u, Gain_Display_7.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_8A */
+          connect(cable_rcpt_cktL2_8A.n, cable_mels_L2_A.p);
+
+        /* MEL_Connect MFD_4 rcpt_ckt-L2_1A */
+          connect(MFD_4.n, GndDC.p);
+          connect(MEL_Conv_MFD_4.p2, MFD_4.p);
+          connect(MEL_Conv_MFD_4.n1, GndDC.p);
+          connect(MEL_Conv_MFD_4.n2, GndDC.p);
+          connect(MEL_Conv_MFD_4.p1, cable_rcpt_cktL2_1A.p);
+          connect(combiTimeTable_L2_MFD.y[1], Gain_MFD_4.u);
+          connect(MFD_4.u, Gain_MFD_4.y);
+
+        /* MEL_Connect IT_Equipment_57 rcpt_ckt-L2_1A */
+          connect(IT_Equipment_57.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_57.p2, IT_Equipment_57.p);
+          connect(MEL_Conv_IT_Equipment_57.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_57.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_57.p1, cable_rcpt_cktL2_1A.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_57.u);
+          connect(IT_Equipment_57.u, Gain_IT_Equipment_57.y);
+
+        /* MEL_Connect IT_Equipment_56 rcpt_ckt-L2_1A */
+          connect(IT_Equipment_56.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_56.p2, IT_Equipment_56.p);
+          connect(MEL_Conv_IT_Equipment_56.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_56.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_56.p1, cable_rcpt_cktL2_1A.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_56.u);
+          connect(IT_Equipment_56.u, Gain_IT_Equipment_56.y);
+
+        /* MEL_Connect Display_6 rcpt_ckt-L2_1A */
+          connect(Display_6.n, GndDC.p);
+          connect(MEL_Conv_Display_6.p2, Display_6.p);
+          connect(MEL_Conv_Display_6.n1, GndDC.p);
+          connect(MEL_Conv_Display_6.n2, GndDC.p);
+          connect(MEL_Conv_Display_6.p1, cable_rcpt_cktL2_1A.p);
+          connect(combiTimeTable_L2_Display.y[1], Gain_Display_6.u);
+          connect(Display_6.u, Gain_Display_6.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_1A */
+          connect(cable_rcpt_cktL2_1A.n, cable_mels_L2_A.p);
+
+          connect(cable_mels_L2_A.n, p) annotation (Line(points={{-58,2},{-74,2},{-74,0},
+                  {-104,0}}, color={0,0,255}));
+          annotation ();
+        end large_AC_MEL_Panel_L2A;
+
+        model large_AC_MEL_Panel_L2B
+          outer parameter Real PF;
+          outer parameter Real PF1;
+          /* parameter Real PF = 0.9; */
+
+          outer HPF.SystemDef systemDef;
+          Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+            Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_IT_Equipment(
+            tableOnFile=true,
+            tableName="L2-All-ITEquipment",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-92,72},{-72,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_MFD(
+            tableOnFile=true,
+            tableName="L2-All-MFDs",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-28,72},{-8,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Printer(
+            tableOnFile=true,
+            tableName="L2-All-Printers",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{40,72},{60,92}})));
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Display(
+            tableOnFile=true,
+            tableName="L2-All-TVs",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{72,72},{92,92}})));
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_display(V = 48, alpha = 4.62836768, beta = 0.025225007, gamma = 0.00145528);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_ite(V = 48, alpha = 1.7735384, beta = 0.002302422, gamma = 0.000167704);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_mfd(V = 48, alpha = 6.883545915, beta = 0.002302422, gamma = 0.0000432087);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_printer(V = 48, alpha = 9.699038125, beta = 0.002302422, gamma = 0.0000306658);
+
+        /* Insert models here */
+
+        /* MEL_Model IT_Equipment_104 rcpt_ckt-L2_15B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_104(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_104(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_104;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_15B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_15B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=18.87);
+
+        /* MEL_Model IT_Equipment_103 rcpt_ckt-L2_14B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_103(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_103(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_103;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_14B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_14B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=15.08);
+
+        /* MEL_Model IT_Equipment_98 rcpt_ckt-L2_11B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_98(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_98(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_98;
+
+        /* MEL_Model IT_Equipment_97 rcpt_ckt-L2_11B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_97(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_97(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_97;
+
+        /* MEL_Model IT_Equipment_96 rcpt_ckt-L2_11B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_96(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_96(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_96;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_11B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_11B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=21.91);
+
+        /* MEL_Model Printer_16 rcpt_ckt-L2_10B */
+          Modelica.Blocks.Math.Gain Gain_Printer_16(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_16(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_16;
+
+        /* MEL_Model IT_Equipment_91 rcpt_ckt-L2_10B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_91(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_91(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_91;
+
+        /* MEL_Model IT_Equipment_90 rcpt_ckt-L2_10B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_90(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_90(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_90;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_10B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_10B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=27.62);
+
+        /* MEL_Model MFD_5 rcpt_ckt-L2_8B */
+          Modelica.Blocks.Math.Gain Gain_MFD_5(k=621) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_MFD_5(modelData = modelData_mfd);
+          HPF.DC.Variable_DC_Load MFD_5;
+
+        /* MEL_Model IT_Equipment_81 rcpt_ckt-L2_8B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_81(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_81(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_81;
+
+        /* MEL_Model IT_Equipment_80 rcpt_ckt-L2_8B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_80(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_80(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_80;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_8B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_8B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=33.22);
+
+        /* MEL_Model IT_Equipment_76 rcpt_ckt-L2_6B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_76(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_76(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_76;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_6B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_6B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=24.26);
+
+        /* MEL_Model IT_Equipment_71 rcpt_ckt-L2_3B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_71(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_71(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_71;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_3B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_3B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=30.16);
+
+        /* MEL_Model Printer_12 rcpt_ckt-L2_2B */
+          Modelica.Blocks.Math.Gain Gain_Printer_12(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_12(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_12;
+
+        /* MEL_Model IT_Equipment_67 rcpt_ckt-L2_2B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_67(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_67(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_67;
+
+        /* MEL_Model IT_Equipment_66 rcpt_ckt-L2_2B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_66(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_66(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_66;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_2B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_2B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=34.53);
+
+        /* MEL_Model Printer_10 rcpt_ckt-L2_1B */
+          Modelica.Blocks.Math.Gain Gain_Printer_10(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_10(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_10;
+
+        /* MEL_Model IT_Equipment_59 rcpt_ckt-L2_1B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_59(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_59(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_59;
+
+        /* MEL_Model IT_Equipment_58 rcpt_ckt-L2_1B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_58(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_58(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_58;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_1B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_1B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=21.33);
+
+        /* MEL_Model MFD_6 rcpt_ckt-L2_9B */
+          Modelica.Blocks.Math.Gain Gain_MFD_6(k=621) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_MFD_6(modelData = modelData_mfd);
+          HPF.DC.Variable_DC_Load MFD_6;
+
+        /* MEL_Model Display_8 rcpt_ckt-L2_9B */
+          Modelica.Blocks.Math.Gain Gain_Display_8(k=127) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Display_8(modelData = modelData_display);
+          HPF.DC.Variable_DC_Load Display_8;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_9B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_9B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=26.36);
+
+          Modelica.Electrical.Analog.Interfaces.PositivePin p
+            "Positive electrical pin of port 1" annotation (Placement(transformation(
+                  extent={{-114,-10},{-94,10}}),iconTransformation(extent={{-110,90},{-90,
+                    110}})));
+          HPF.Cables.NEC_CableModelDC cable_mels_L2_B(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+              length=15) annotation (Placement(visible=true, transformation(
+                origin={-48,2},
+                extent={{10,-10},{-10,10}},
+                rotation=0)));
+        equation
+
+        /* Insert equation here */
+
+        /* MEL_Connect IT_Equipment_104 rcpt_ckt-L2_15B */
+          connect(IT_Equipment_104.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_104.p2, IT_Equipment_104.p);
+          connect(MEL_Conv_IT_Equipment_104.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_104.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_104.p1, cable_rcpt_cktL2_15B.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_104.u);
+          connect(IT_Equipment_104.u, Gain_IT_Equipment_104.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_15B */
+          connect(cable_rcpt_cktL2_15B.n, cable_mels_L2_B.p);
+
+        /* MEL_Connect IT_Equipment_103 rcpt_ckt-L2_14B */
+          connect(IT_Equipment_103.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_103.p2, IT_Equipment_103.p);
+          connect(MEL_Conv_IT_Equipment_103.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_103.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_103.p1, cable_rcpt_cktL2_14B.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_103.u);
+          connect(IT_Equipment_103.u, Gain_IT_Equipment_103.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_14B */
+          connect(cable_rcpt_cktL2_14B.n, cable_mels_L2_B.p);
+
+        /* MEL_Connect IT_Equipment_98 rcpt_ckt-L2_11B */
+          connect(IT_Equipment_98.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_98.p2, IT_Equipment_98.p);
+          connect(MEL_Conv_IT_Equipment_98.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_98.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_98.p1, cable_rcpt_cktL2_11B.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_98.u);
+          connect(IT_Equipment_98.u, Gain_IT_Equipment_98.y);
+
+        /* MEL_Connect IT_Equipment_97 rcpt_ckt-L2_11B */
+          connect(IT_Equipment_97.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_97.p2, IT_Equipment_97.p);
+          connect(MEL_Conv_IT_Equipment_97.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_97.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_97.p1, cable_rcpt_cktL2_11B.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_97.u);
+          connect(IT_Equipment_97.u, Gain_IT_Equipment_97.y);
+
+        /* MEL_Connect IT_Equipment_96 rcpt_ckt-L2_11B */
+          connect(IT_Equipment_96.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_96.p2, IT_Equipment_96.p);
+          connect(MEL_Conv_IT_Equipment_96.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_96.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_96.p1, cable_rcpt_cktL2_11B.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_96.u);
+          connect(IT_Equipment_96.u, Gain_IT_Equipment_96.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_11B */
+          connect(cable_rcpt_cktL2_11B.n, cable_mels_L2_B.p);
+
+        /* MEL_Connect Printer_16 rcpt_ckt-L2_10B */
+          connect(Printer_16.n, GndDC.p);
+          connect(MEL_Conv_Printer_16.p2, Printer_16.p);
+          connect(MEL_Conv_Printer_16.n1, GndDC.p);
+          connect(MEL_Conv_Printer_16.n2, GndDC.p);
+          connect(MEL_Conv_Printer_16.p1, cable_rcpt_cktL2_10B.p);
+          connect(combiTimeTable_L2_Printer.y[1], Gain_Printer_16.u);
+          connect(Printer_16.u, Gain_Printer_16.y);
+
+        /* MEL_Connect IT_Equipment_91 rcpt_ckt-L2_10B */
+          connect(IT_Equipment_91.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_91.p2, IT_Equipment_91.p);
+          connect(MEL_Conv_IT_Equipment_91.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_91.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_91.p1, cable_rcpt_cktL2_10B.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_91.u);
+          connect(IT_Equipment_91.u, Gain_IT_Equipment_91.y);
+
+        /* MEL_Connect IT_Equipment_90 rcpt_ckt-L2_10B */
+          connect(IT_Equipment_90.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_90.p2, IT_Equipment_90.p);
+          connect(MEL_Conv_IT_Equipment_90.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_90.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_90.p1, cable_rcpt_cktL2_10B.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_90.u);
+          connect(IT_Equipment_90.u, Gain_IT_Equipment_90.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_10B */
+          connect(cable_rcpt_cktL2_10B.n, cable_mels_L2_B.p);
+
+        /* MEL_Connect MFD_5 rcpt_ckt-L2_8B */
+          connect(MFD_5.n, GndDC.p);
+          connect(MEL_Conv_MFD_5.p2, MFD_5.p);
+          connect(MEL_Conv_MFD_5.n1, GndDC.p);
+          connect(MEL_Conv_MFD_5.n2, GndDC.p);
+          connect(MEL_Conv_MFD_5.p1, cable_rcpt_cktL2_8B.p);
+          connect(combiTimeTable_L2_MFD.y[1], Gain_MFD_5.u);
+          connect(MFD_5.u, Gain_MFD_5.y);
+
+        /* MEL_Connect IT_Equipment_81 rcpt_ckt-L2_8B */
+          connect(IT_Equipment_81.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_81.p2, IT_Equipment_81.p);
+          connect(MEL_Conv_IT_Equipment_81.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_81.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_81.p1, cable_rcpt_cktL2_8B.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_81.u);
+          connect(IT_Equipment_81.u, Gain_IT_Equipment_81.y);
+
+        /* MEL_Connect IT_Equipment_80 rcpt_ckt-L2_8B */
+          connect(IT_Equipment_80.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_80.p2, IT_Equipment_80.p);
+          connect(MEL_Conv_IT_Equipment_80.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_80.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_80.p1, cable_rcpt_cktL2_8B.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_80.u);
+          connect(IT_Equipment_80.u, Gain_IT_Equipment_80.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_8B */
+          connect(cable_rcpt_cktL2_8B.n, cable_mels_L2_B.p);
+
+        /* MEL_Connect IT_Equipment_76 rcpt_ckt-L2_6B */
+          connect(IT_Equipment_76.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_76.p2, IT_Equipment_76.p);
+          connect(MEL_Conv_IT_Equipment_76.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_76.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_76.p1, cable_rcpt_cktL2_6B.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_76.u);
+          connect(IT_Equipment_76.u, Gain_IT_Equipment_76.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_6B */
+          connect(cable_rcpt_cktL2_6B.n, cable_mels_L2_B.p);
+
+        /* MEL_Connect IT_Equipment_71 rcpt_ckt-L2_3B */
+          connect(IT_Equipment_71.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_71.p2, IT_Equipment_71.p);
+          connect(MEL_Conv_IT_Equipment_71.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_71.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_71.p1, cable_rcpt_cktL2_3B.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_71.u);
+          connect(IT_Equipment_71.u, Gain_IT_Equipment_71.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_3B */
+          connect(cable_rcpt_cktL2_3B.n, cable_mels_L2_B.p);
+
+        /* MEL_Connect Printer_12 rcpt_ckt-L2_2B */
+          connect(Printer_12.n, GndDC.p);
+          connect(MEL_Conv_Printer_12.p2, Printer_12.p);
+          connect(MEL_Conv_Printer_12.n1, GndDC.p);
+          connect(MEL_Conv_Printer_12.n2, GndDC.p);
+          connect(MEL_Conv_Printer_12.p1, cable_rcpt_cktL2_2B.p);
+          connect(combiTimeTable_L2_Printer.y[1], Gain_Printer_12.u);
+          connect(Printer_12.u, Gain_Printer_12.y);
+
+        /* MEL_Connect IT_Equipment_67 rcpt_ckt-L2_2B */
+          connect(IT_Equipment_67.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_67.p2, IT_Equipment_67.p);
+          connect(MEL_Conv_IT_Equipment_67.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_67.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_67.p1, cable_rcpt_cktL2_2B.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_67.u);
+          connect(IT_Equipment_67.u, Gain_IT_Equipment_67.y);
+
+        /* MEL_Connect IT_Equipment_66 rcpt_ckt-L2_2B */
+          connect(IT_Equipment_66.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_66.p2, IT_Equipment_66.p);
+          connect(MEL_Conv_IT_Equipment_66.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_66.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_66.p1, cable_rcpt_cktL2_2B.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_66.u);
+          connect(IT_Equipment_66.u, Gain_IT_Equipment_66.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_2B */
+          connect(cable_rcpt_cktL2_2B.n, cable_mels_L2_B.p);
+
+        /* MEL_Connect Printer_10 rcpt_ckt-L2_1B */
+          connect(Printer_10.n, GndDC.p);
+          connect(MEL_Conv_Printer_10.p2, Printer_10.p);
+          connect(MEL_Conv_Printer_10.n1, GndDC.p);
+          connect(MEL_Conv_Printer_10.n2, GndDC.p);
+          connect(MEL_Conv_Printer_10.p1, cable_rcpt_cktL2_1B.p);
+          connect(combiTimeTable_L2_Printer.y[1], Gain_Printer_10.u);
+          connect(Printer_10.u, Gain_Printer_10.y);
+
+        /* MEL_Connect IT_Equipment_59 rcpt_ckt-L2_1B */
+          connect(IT_Equipment_59.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_59.p2, IT_Equipment_59.p);
+          connect(MEL_Conv_IT_Equipment_59.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_59.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_59.p1, cable_rcpt_cktL2_1B.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_59.u);
+          connect(IT_Equipment_59.u, Gain_IT_Equipment_59.y);
+
+        /* MEL_Connect IT_Equipment_58 rcpt_ckt-L2_1B */
+          connect(IT_Equipment_58.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_58.p2, IT_Equipment_58.p);
+          connect(MEL_Conv_IT_Equipment_58.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_58.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_58.p1, cable_rcpt_cktL2_1B.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_58.u);
+          connect(IT_Equipment_58.u, Gain_IT_Equipment_58.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_1B */
+          connect(cable_rcpt_cktL2_1B.n, cable_mels_L2_B.p);
+
+        /* MEL_Connect MFD_6 rcpt_ckt-L2_9B */
+          connect(MFD_6.n, GndDC.p);
+          connect(MEL_Conv_MFD_6.p2, MFD_6.p);
+          connect(MEL_Conv_MFD_6.n1, GndDC.p);
+          connect(MEL_Conv_MFD_6.n2, GndDC.p);
+          connect(MEL_Conv_MFD_6.p1, cable_rcpt_cktL2_9B.p);
+          connect(combiTimeTable_L2_MFD.y[1], Gain_MFD_6.u);
+          connect(MFD_6.u, Gain_MFD_6.y);
+
+        /* MEL_Connect Display_8 rcpt_ckt-L2_9B */
+          connect(Display_8.n, GndDC.p);
+          connect(MEL_Conv_Display_8.p2, Display_8.p);
+          connect(MEL_Conv_Display_8.n1, GndDC.p);
+          connect(MEL_Conv_Display_8.n2, GndDC.p);
+          connect(MEL_Conv_Display_8.p1, cable_rcpt_cktL2_9B.p);
+          connect(combiTimeTable_L2_Display.y[1], Gain_Display_8.u);
+          connect(Display_8.u, Gain_Display_8.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_9B */
+          connect(cable_rcpt_cktL2_9B.n, cable_mels_L2_B.p);
+
+          connect(cable_mels_L2_B.n, p) annotation (Line(points={{-58,2},{-74,2},{-74,0},
+                  {-104,0}}, color={0,0,255}));
+          annotation ();
+        end large_AC_MEL_Panel_L2B;
+
+        model large_AC_MEL_Panel_L2C
+          outer parameter Real PF;
+          outer parameter Real PF1;
+          /* parameter Real PF = 0.9; */
+
+          outer HPF.SystemDef systemDef;
+          Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+            Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_IT_Equipment(
+            tableOnFile=true,
+            tableName="L2-All-ITEquipment",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-92,72},{-72,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_MFD(
+            tableOnFile=true,
+            tableName="L2-All-MFDs",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-28,72},{-8,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Printer(
+            tableOnFile=true,
+            tableName="L2-All-Printers",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{40,72},{60,92}})));
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Display(
+            tableOnFile=true,
+            tableName="L2-All-TVs",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{72,72},{92,92}})));
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_display(V = 48, alpha = 4.62836768, beta = 0.025225007, gamma = 0.00145528);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_ite(V = 48, alpha = 1.7735384, beta = 0.002302422, gamma = 0.000167704);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_mfd(V = 48, alpha = 6.883545915, beta = 0.002302422, gamma = 0.0000432087);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_printer(V = 48, alpha = 9.699038125, beta = 0.002302422, gamma = 0.0000306658);
+
+        /* Insert models here */
+
+        /* MEL_Model IT_Equipment_106 rcpt_ckt-L2_16C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_106(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_106(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_106;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_16C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_16C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=21.26);
+
+        /* MEL_Model Printer_18 rcpt_ckt-L2_15C */
+          Modelica.Blocks.Math.Gain Gain_Printer_18(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_18(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_18;
+
+        /* MEL_Model IT_Equipment_105 rcpt_ckt-L2_15C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_105(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_105(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_105;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_15C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_15C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=21.63);
+
+        /* MEL_Model IT_Equipment_100 rcpt_ckt-L2_12C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_100(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_100(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_100;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_12C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_12C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=24.14);
+
+        /* MEL_Model IT_Equipment_99 rcpt_ckt-L2_11C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_99(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_99(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_99;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_11C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_11C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=30.82);
+
+        /* MEL_Model IT_Equipment_94 rcpt_ckt-L2_10C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_94(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_94(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_94;
+
+        /* MEL_Model IT_Equipment_93 rcpt_ckt-L2_10C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_93(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_93(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_93;
+
+        /* MEL_Model IT_Equipment_92 rcpt_ckt-L2_10C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_92(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_92(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_92;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_10C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_10C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=16.65);
+
+        /* MEL_Model IT_Equipment_86 rcpt_ckt-L2_9C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_86(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_86(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_86;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_9C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_9C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=29.37);
+
+        /* MEL_Model IT_Equipment_84 rcpt_ckt-L2_8C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_84(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_84(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_84;
+
+        /* MEL_Model IT_Equipment_83 rcpt_ckt-L2_8C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_83(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_83(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_83;
+
+        /* MEL_Model IT_Equipment_82 rcpt_ckt-L2_8C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_82(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_82(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_82;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_8C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_8C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=24.49);
+
+        /* MEL_Model IT_Equipment_78 rcpt_ckt-L2_7C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_78(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_78(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_78;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_7C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_7C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=38.02);
+
+        /* MEL_Model Printer_13 rcpt_ckt-L2_6C */
+          Modelica.Blocks.Math.Gain Gain_Printer_13(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_13(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_13;
+
+        /* MEL_Model IT_Equipment_77 rcpt_ckt-L2_6C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_77(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_77(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_77;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_6C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_6C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=35.85);
+
+        /* MEL_Model IT_Equipment_75 rcpt_ckt-L2_5C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_75(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_75(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_75;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_5C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_5C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=17.88);
+
+        /* MEL_Model IT_Equipment_73 rcpt_ckt-L2_4C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_73(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_73(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_73;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_4C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_4C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=13.64);
+
+        /* MEL_Model IT_Equipment_70 rcpt_ckt-L2_2C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_70(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_70(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_70;
+
+        /* MEL_Model IT_Equipment_69 rcpt_ckt-L2_2C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_69(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_69(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_69;
+
+        /* MEL_Model IT_Equipment_68 rcpt_ckt-L2_2C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_68(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_68(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_68;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_2C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_2C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=37.69);
+
+        /* MEL_Model Printer_11 rcpt_ckt-L2_1C */
+          Modelica.Blocks.Math.Gain Gain_Printer_11(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_11(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_11;
+
+        /* MEL_Model IT_Equipment_62 rcpt_ckt-L2_1C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_62(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_62(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_62;
+
+        /* MEL_Model IT_Equipment_61 rcpt_ckt-L2_1C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_61(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_61(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_61;
+
+        /* MEL_Model IT_Equipment_60 rcpt_ckt-L2_1C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_60(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_60(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_60;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_1C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_1C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=16.13);
+
+        /* MEL_Model IT_Equipment_110 rcpt_ckt-L2_17C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_110(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_110(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_110;
+
+        /* MEL_Model IT_Equipment_109 rcpt_ckt-L2_17C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_109(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_109(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_109;
+
+        /* MEL_Model IT_Equipment_108 rcpt_ckt-L2_17C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_108(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_108(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_108;
+
+        /* MEL_Model Display_10 rcpt_ckt-L2_17C */
+          Modelica.Blocks.Math.Gain Gain_Display_10(k=127) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Display_10(modelData = modelData_display);
+          HPF.DC.Variable_DC_Load Display_10;
+
+        /* MEL_Model Display_9 rcpt_ckt-L2_17C */
+          Modelica.Blocks.Math.Gain Gain_Display_9(k=127) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Display_9(modelData = modelData_display);
+          HPF.DC.Variable_DC_Load Display_9;
+
+        /* MEL_Model  cable_rcpt_ckt-L2_17C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL2_17C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=15.59);
+
+          Modelica.Electrical.Analog.Interfaces.PositivePin p
+            "Positive electrical pin of port 1" annotation (Placement(transformation(
+                  extent={{-114,-10},{-94,10}}),iconTransformation(extent={{-110,90},{-90,
+                    110}})));
+          HPF.Cables.NEC_CableModelDC cable_mels_L2_C(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+              length=15) annotation (Placement(visible=true, transformation(
+                origin={-48,2},
+                extent={{10,-10},{-10,10}},
+                rotation=0)));
+        equation
+
+        /* Insert equation here */
+
+        /* MEL_Connect IT_Equipment_106 rcpt_ckt-L2_16C */
+          connect(IT_Equipment_106.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_106.p2, IT_Equipment_106.p);
+          connect(MEL_Conv_IT_Equipment_106.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_106.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_106.p1, cable_rcpt_cktL2_16C.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_106.u);
+          connect(IT_Equipment_106.u, Gain_IT_Equipment_106.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_16C */
+          connect(cable_rcpt_cktL2_16C.n, cable_mels_L2_C.p);
+
+        /* MEL_Connect Printer_18 rcpt_ckt-L2_15C */
+          connect(Printer_18.n, GndDC.p);
+          connect(MEL_Conv_Printer_18.p2, Printer_18.p);
+          connect(MEL_Conv_Printer_18.n1, GndDC.p);
+          connect(MEL_Conv_Printer_18.n2, GndDC.p);
+          connect(MEL_Conv_Printer_18.p1, cable_rcpt_cktL2_15C.p);
+          connect(combiTimeTable_L2_Printer.y[1], Gain_Printer_18.u);
+          connect(Printer_18.u, Gain_Printer_18.y);
+
+        /* MEL_Connect IT_Equipment_105 rcpt_ckt-L2_15C */
+          connect(IT_Equipment_105.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_105.p2, IT_Equipment_105.p);
+          connect(MEL_Conv_IT_Equipment_105.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_105.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_105.p1, cable_rcpt_cktL2_15C.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_105.u);
+          connect(IT_Equipment_105.u, Gain_IT_Equipment_105.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_15C */
+          connect(cable_rcpt_cktL2_15C.n, cable_mels_L2_C.p);
+
+        /* MEL_Connect IT_Equipment_100 rcpt_ckt-L2_12C */
+          connect(IT_Equipment_100.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_100.p2, IT_Equipment_100.p);
+          connect(MEL_Conv_IT_Equipment_100.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_100.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_100.p1, cable_rcpt_cktL2_12C.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_100.u);
+          connect(IT_Equipment_100.u, Gain_IT_Equipment_100.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_12C */
+          connect(cable_rcpt_cktL2_12C.n, cable_mels_L2_C.p);
+
+        /* MEL_Connect IT_Equipment_99 rcpt_ckt-L2_11C */
+          connect(IT_Equipment_99.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_99.p2, IT_Equipment_99.p);
+          connect(MEL_Conv_IT_Equipment_99.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_99.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_99.p1, cable_rcpt_cktL2_11C.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_99.u);
+          connect(IT_Equipment_99.u, Gain_IT_Equipment_99.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_11C */
+          connect(cable_rcpt_cktL2_11C.n, cable_mels_L2_C.p);
+
+        /* MEL_Connect IT_Equipment_94 rcpt_ckt-L2_10C */
+          connect(IT_Equipment_94.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_94.p2, IT_Equipment_94.p);
+          connect(MEL_Conv_IT_Equipment_94.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_94.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_94.p1, cable_rcpt_cktL2_10C.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_94.u);
+          connect(IT_Equipment_94.u, Gain_IT_Equipment_94.y);
+
+        /* MEL_Connect IT_Equipment_93 rcpt_ckt-L2_10C */
+          connect(IT_Equipment_93.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_93.p2, IT_Equipment_93.p);
+          connect(MEL_Conv_IT_Equipment_93.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_93.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_93.p1, cable_rcpt_cktL2_10C.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_93.u);
+          connect(IT_Equipment_93.u, Gain_IT_Equipment_93.y);
+
+        /* MEL_Connect IT_Equipment_92 rcpt_ckt-L2_10C */
+          connect(IT_Equipment_92.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_92.p2, IT_Equipment_92.p);
+          connect(MEL_Conv_IT_Equipment_92.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_92.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_92.p1, cable_rcpt_cktL2_10C.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_92.u);
+          connect(IT_Equipment_92.u, Gain_IT_Equipment_92.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_10C */
+          connect(cable_rcpt_cktL2_10C.n, cable_mels_L2_C.p);
+
+        /* MEL_Connect IT_Equipment_86 rcpt_ckt-L2_9C */
+          connect(IT_Equipment_86.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_86.p2, IT_Equipment_86.p);
+          connect(MEL_Conv_IT_Equipment_86.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_86.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_86.p1, cable_rcpt_cktL2_9C.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_86.u);
+          connect(IT_Equipment_86.u, Gain_IT_Equipment_86.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_9C */
+          connect(cable_rcpt_cktL2_9C.n, cable_mels_L2_C.p);
+
+        /* MEL_Connect IT_Equipment_84 rcpt_ckt-L2_8C */
+          connect(IT_Equipment_84.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_84.p2, IT_Equipment_84.p);
+          connect(MEL_Conv_IT_Equipment_84.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_84.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_84.p1, cable_rcpt_cktL2_8C.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_84.u);
+          connect(IT_Equipment_84.u, Gain_IT_Equipment_84.y);
+
+        /* MEL_Connect IT_Equipment_83 rcpt_ckt-L2_8C */
+          connect(IT_Equipment_83.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_83.p2, IT_Equipment_83.p);
+          connect(MEL_Conv_IT_Equipment_83.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_83.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_83.p1, cable_rcpt_cktL2_8C.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_83.u);
+          connect(IT_Equipment_83.u, Gain_IT_Equipment_83.y);
+
+        /* MEL_Connect IT_Equipment_82 rcpt_ckt-L2_8C */
+          connect(IT_Equipment_82.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_82.p2, IT_Equipment_82.p);
+          connect(MEL_Conv_IT_Equipment_82.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_82.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_82.p1, cable_rcpt_cktL2_8C.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_82.u);
+          connect(IT_Equipment_82.u, Gain_IT_Equipment_82.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_8C */
+          connect(cable_rcpt_cktL2_8C.n, cable_mels_L2_C.p);
+
+        /* MEL_Connect IT_Equipment_78 rcpt_ckt-L2_7C */
+          connect(IT_Equipment_78.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_78.p2, IT_Equipment_78.p);
+          connect(MEL_Conv_IT_Equipment_78.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_78.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_78.p1, cable_rcpt_cktL2_7C.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_78.u);
+          connect(IT_Equipment_78.u, Gain_IT_Equipment_78.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_7C */
+          connect(cable_rcpt_cktL2_7C.n, cable_mels_L2_C.p);
+
+        /* MEL_Connect Printer_13 rcpt_ckt-L2_6C */
+          connect(Printer_13.n, GndDC.p);
+          connect(MEL_Conv_Printer_13.p2, Printer_13.p);
+          connect(MEL_Conv_Printer_13.n1, GndDC.p);
+          connect(MEL_Conv_Printer_13.n2, GndDC.p);
+          connect(MEL_Conv_Printer_13.p1, cable_rcpt_cktL2_6C.p);
+          connect(combiTimeTable_L2_Printer.y[1], Gain_Printer_13.u);
+          connect(Printer_13.u, Gain_Printer_13.y);
+
+        /* MEL_Connect IT_Equipment_77 rcpt_ckt-L2_6C */
+          connect(IT_Equipment_77.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_77.p2, IT_Equipment_77.p);
+          connect(MEL_Conv_IT_Equipment_77.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_77.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_77.p1, cable_rcpt_cktL2_6C.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_77.u);
+          connect(IT_Equipment_77.u, Gain_IT_Equipment_77.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_6C */
+          connect(cable_rcpt_cktL2_6C.n, cable_mels_L2_C.p);
+
+        /* MEL_Connect IT_Equipment_75 rcpt_ckt-L2_5C */
+          connect(IT_Equipment_75.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_75.p2, IT_Equipment_75.p);
+          connect(MEL_Conv_IT_Equipment_75.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_75.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_75.p1, cable_rcpt_cktL2_5C.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_75.u);
+          connect(IT_Equipment_75.u, Gain_IT_Equipment_75.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_5C */
+          connect(cable_rcpt_cktL2_5C.n, cable_mels_L2_C.p);
+
+        /* MEL_Connect IT_Equipment_73 rcpt_ckt-L2_4C */
+          connect(IT_Equipment_73.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_73.p2, IT_Equipment_73.p);
+          connect(MEL_Conv_IT_Equipment_73.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_73.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_73.p1, cable_rcpt_cktL2_4C.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_73.u);
+          connect(IT_Equipment_73.u, Gain_IT_Equipment_73.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_4C */
+          connect(cable_rcpt_cktL2_4C.n, cable_mels_L2_C.p);
+
+        /* MEL_Connect IT_Equipment_70 rcpt_ckt-L2_2C */
+          connect(IT_Equipment_70.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_70.p2, IT_Equipment_70.p);
+          connect(MEL_Conv_IT_Equipment_70.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_70.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_70.p1, cable_rcpt_cktL2_2C.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_70.u);
+          connect(IT_Equipment_70.u, Gain_IT_Equipment_70.y);
+
+        /* MEL_Connect IT_Equipment_69 rcpt_ckt-L2_2C */
+          connect(IT_Equipment_69.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_69.p2, IT_Equipment_69.p);
+          connect(MEL_Conv_IT_Equipment_69.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_69.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_69.p1, cable_rcpt_cktL2_2C.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_69.u);
+          connect(IT_Equipment_69.u, Gain_IT_Equipment_69.y);
+
+        /* MEL_Connect IT_Equipment_68 rcpt_ckt-L2_2C */
+          connect(IT_Equipment_68.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_68.p2, IT_Equipment_68.p);
+          connect(MEL_Conv_IT_Equipment_68.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_68.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_68.p1, cable_rcpt_cktL2_2C.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_68.u);
+          connect(IT_Equipment_68.u, Gain_IT_Equipment_68.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_2C */
+          connect(cable_rcpt_cktL2_2C.n, cable_mels_L2_C.p);
+
+        /* MEL_Connect Printer_11 rcpt_ckt-L2_1C */
+          connect(Printer_11.n, GndDC.p);
+          connect(MEL_Conv_Printer_11.p2, Printer_11.p);
+          connect(MEL_Conv_Printer_11.n1, GndDC.p);
+          connect(MEL_Conv_Printer_11.n2, GndDC.p);
+          connect(MEL_Conv_Printer_11.p1, cable_rcpt_cktL2_1C.p);
+          connect(combiTimeTable_L2_Printer.y[1], Gain_Printer_11.u);
+          connect(Printer_11.u, Gain_Printer_11.y);
+
+        /* MEL_Connect IT_Equipment_62 rcpt_ckt-L2_1C */
+          connect(IT_Equipment_62.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_62.p2, IT_Equipment_62.p);
+          connect(MEL_Conv_IT_Equipment_62.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_62.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_62.p1, cable_rcpt_cktL2_1C.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_62.u);
+          connect(IT_Equipment_62.u, Gain_IT_Equipment_62.y);
+
+        /* MEL_Connect IT_Equipment_61 rcpt_ckt-L2_1C */
+          connect(IT_Equipment_61.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_61.p2, IT_Equipment_61.p);
+          connect(MEL_Conv_IT_Equipment_61.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_61.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_61.p1, cable_rcpt_cktL2_1C.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_61.u);
+          connect(IT_Equipment_61.u, Gain_IT_Equipment_61.y);
+
+        /* MEL_Connect IT_Equipment_60 rcpt_ckt-L2_1C */
+          connect(IT_Equipment_60.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_60.p2, IT_Equipment_60.p);
+          connect(MEL_Conv_IT_Equipment_60.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_60.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_60.p1, cable_rcpt_cktL2_1C.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_60.u);
+          connect(IT_Equipment_60.u, Gain_IT_Equipment_60.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_1C */
+          connect(cable_rcpt_cktL2_1C.n, cable_mels_L2_C.p);
+
+        /* MEL_Connect IT_Equipment_110 rcpt_ckt-L2_17C */
+          connect(IT_Equipment_110.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_110.p2, IT_Equipment_110.p);
+          connect(MEL_Conv_IT_Equipment_110.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_110.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_110.p1, cable_rcpt_cktL2_17C.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_110.u);
+          connect(IT_Equipment_110.u, Gain_IT_Equipment_110.y);
+
+        /* MEL_Connect IT_Equipment_109 rcpt_ckt-L2_17C */
+          connect(IT_Equipment_109.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_109.p2, IT_Equipment_109.p);
+          connect(MEL_Conv_IT_Equipment_109.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_109.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_109.p1, cable_rcpt_cktL2_17C.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_109.u);
+          connect(IT_Equipment_109.u, Gain_IT_Equipment_109.y);
+
+        /* MEL_Connect IT_Equipment_108 rcpt_ckt-L2_17C */
+          connect(IT_Equipment_108.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_108.p2, IT_Equipment_108.p);
+          connect(MEL_Conv_IT_Equipment_108.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_108.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_108.p1, cable_rcpt_cktL2_17C.p);
+          connect(combiTimeTable_L2_IT_Equipment.y[1], Gain_IT_Equipment_108.u);
+          connect(IT_Equipment_108.u, Gain_IT_Equipment_108.y);
+
+        /* MEL_Connect Display_10 rcpt_ckt-L2_17C */
+          connect(Display_10.n, GndDC.p);
+          connect(MEL_Conv_Display_10.p2, Display_10.p);
+          connect(MEL_Conv_Display_10.n1, GndDC.p);
+          connect(MEL_Conv_Display_10.n2, GndDC.p);
+          connect(MEL_Conv_Display_10.p1, cable_rcpt_cktL2_17C.p);
+          connect(combiTimeTable_L2_Display.y[1], Gain_Display_10.u);
+          connect(Display_10.u, Gain_Display_10.y);
+
+        /* MEL_Connect Display_9 rcpt_ckt-L2_17C */
+          connect(Display_9.n, GndDC.p);
+          connect(MEL_Conv_Display_9.p2, Display_9.p);
+          connect(MEL_Conv_Display_9.n1, GndDC.p);
+          connect(MEL_Conv_Display_9.n2, GndDC.p);
+          connect(MEL_Conv_Display_9.p1, cable_rcpt_cktL2_17C.p);
+          connect(combiTimeTable_L2_Display.y[1], Gain_Display_9.u);
+          connect(Display_9.u, Gain_Display_9.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L2_17C */
+          connect(cable_rcpt_cktL2_17C.n, cable_mels_L2_C.p);
+
+          connect(cable_mels_L2_C.n, p) annotation (Line(points={{-58,2},{-74,2},{-74,0},
+                  {-104,0}}, color={0,0,255}));
+          annotation ();
+        end large_AC_MEL_Panel_L2C;
+
+        model large_AC_MEL_Panel_L3A
+          outer parameter Real PF;
+          outer parameter Real PF1;
+          /* parameter Real PF = 0.9; */
+
+          outer HPF.SystemDef systemDef;
+          Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+            Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_IT_Equipment(
+            tableOnFile=true,
+            tableName="L3-All-ITEquipment",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-92,72},{-72,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_MFD(
+            tableOnFile=true,
+            tableName="L3-All-MFDs",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-28,72},{-8,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Printer(
+            tableOnFile=true,
+            tableName="L3-All-Printers",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{40,72},{60,92}})));
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Display(
+            tableOnFile=true,
+            tableName="L3-All-TVs",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{72,72},{92,92}})));
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_display(V = 48, alpha = 4.62836768, beta = 0.025225007, gamma = 0.00145528);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_ite(V = 48, alpha = 1.7735384, beta = 0.002302422, gamma = 0.000167704);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_mfd(V = 48, alpha = 6.883545915, beta = 0.002302422, gamma = 0.0000432087);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_printer(V = 48, alpha = 9.699038125, beta = 0.002302422, gamma = 0.0000306658);
+
+        /* Insert models here */
+
+        /* MEL_Model Printer_26 rcpt_ckt-L3_14A */
+          Modelica.Blocks.Math.Gain Gain_Printer_26(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_26(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_26;
+
+        /* MEL_Model MFD_9 rcpt_ckt-L3_14A */
+          Modelica.Blocks.Math.Gain Gain_MFD_9(k=621) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_MFD_9(modelData = modelData_mfd);
+          HPF.DC.Variable_DC_Load MFD_9;
+
+        /* MEL_Model IT_Equipment_163 rcpt_ckt-L3_14A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_163(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_163(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_163;
+
+        /* MEL_Model IT_Equipment_162 rcpt_ckt-L3_14A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_162(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_162(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_162;
+
+        /* MEL_Model IT_Equipment_161 rcpt_ckt-L3_14A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_161(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_161(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_161;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_14A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_14A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=42.25);
+
+        /* MEL_Model IT_Equipment_159 rcpt_ckt-L3_13A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_159(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_159(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_159;
+
+        /* MEL_Model IT_Equipment_158 rcpt_ckt-L3_13A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_158(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_158(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_158;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_13A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_13A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=29.46);
+
+        /* MEL_Model IT_Equipment_151 rcpt_ckt-L3_11A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_151(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_151(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_151;
+
+        /* MEL_Model IT_Equipment_150 rcpt_ckt-L3_11A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_150(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_150(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_150;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_11A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_11A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=40.68);
+
+        /* MEL_Model IT_Equipment_146 rcpt_ckt-L3_10A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_146(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_146(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_146;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_10A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_10A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=17.07);
+
+        /* MEL_Model Printer_23 rcpt_ckt-L3_9A */
+          Modelica.Blocks.Math.Gain Gain_Printer_23(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_23(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_23;
+
+        /* MEL_Model IT_Equipment_140 rcpt_ckt-L3_9A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_140(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_140(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_140;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_9A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_9A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=17.36);
+
+        /* MEL_Model Printer_21 rcpt_ckt-L3_8A */
+          Modelica.Blocks.Math.Gain Gain_Printer_21(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_21(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_21;
+
+        /* MEL_Model IT_Equipment_135 rcpt_ckt-L3_8A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_135(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_135(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_135;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_8A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_8A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=21.95);
+
+        /* MEL_Model IT_Equipment_131 rcpt_ckt-L3_7A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_131(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_131(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_131;
+
+        /* MEL_Model IT_Equipment_130 rcpt_ckt-L3_7A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_130(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_130(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_130;
+
+        /* MEL_Model IT_Equipment_129 rcpt_ckt-L3_7A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_129(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_129(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_129;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_7A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_7A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=28.43);
+
+        /* MEL_Model IT_Equipment_125 rcpt_ckt-L3_6A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_125(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_125(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_125;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_6A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_6A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=12.47);
+
+        /* MEL_Model IT_Equipment_119 rcpt_ckt-L3_4A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_119(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_119(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_119;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_4A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_4A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=14.54);
+
+        /* MEL_Model IT_Equipment_116 rcpt_ckt-L3_3A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_116(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_116(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_116;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_3A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_3A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=17.9);
+
+        /* MEL_Model IT_Equipment_113 rcpt_ckt-L3_2A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_113(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_113(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_113;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_2A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_2A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=23.21);
+
+        /* MEL_Model IT_Equipment_111 rcpt_ckt-L3_1A */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_111(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_111(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_111;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_1A */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_1A(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=31.85);
+
+          Modelica.Electrical.Analog.Interfaces.PositivePin p
+            "Positive electrical pin of port 1" annotation (Placement(transformation(
+                  extent={{-114,-10},{-94,10}}),iconTransformation(extent={{-110,90},{-90,
+                    110}})));
+          HPF.Cables.NEC_CableModelDC cable_mels_L3_A(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+              length=15) annotation (Placement(visible=true, transformation(
+                origin={-48,2},
+                extent={{10,-10},{-10,10}},
+                rotation=0)));
+        equation
+
+        /* Insert equation here */
+
+        /* MEL_Connect Printer_26 rcpt_ckt-L3_14A */
+          connect(Printer_26.n, GndDC.p);
+          connect(MEL_Conv_Printer_26.p2, Printer_26.p);
+          connect(MEL_Conv_Printer_26.n1, GndDC.p);
+          connect(MEL_Conv_Printer_26.n2, GndDC.p);
+          connect(MEL_Conv_Printer_26.p1, cable_rcpt_cktL3_14A.p);
+          connect(combiTimeTable_L3_Printer.y[1], Gain_Printer_26.u);
+          connect(Printer_26.u, Gain_Printer_26.y);
+
+        /* MEL_Connect MFD_9 rcpt_ckt-L3_14A */
+          connect(MFD_9.n, GndDC.p);
+          connect(MEL_Conv_MFD_9.p2, MFD_9.p);
+          connect(MEL_Conv_MFD_9.n1, GndDC.p);
+          connect(MEL_Conv_MFD_9.n2, GndDC.p);
+          connect(MEL_Conv_MFD_9.p1, cable_rcpt_cktL3_14A.p);
+          connect(combiTimeTable_L3_MFD.y[1], Gain_MFD_9.u);
+          connect(MFD_9.u, Gain_MFD_9.y);
+
+        /* MEL_Connect IT_Equipment_163 rcpt_ckt-L3_14A */
+          connect(IT_Equipment_163.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_163.p2, IT_Equipment_163.p);
+          connect(MEL_Conv_IT_Equipment_163.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_163.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_163.p1, cable_rcpt_cktL3_14A.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_163.u);
+          connect(IT_Equipment_163.u, Gain_IT_Equipment_163.y);
+
+        /* MEL_Connect IT_Equipment_162 rcpt_ckt-L3_14A */
+          connect(IT_Equipment_162.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_162.p2, IT_Equipment_162.p);
+          connect(MEL_Conv_IT_Equipment_162.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_162.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_162.p1, cable_rcpt_cktL3_14A.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_162.u);
+          connect(IT_Equipment_162.u, Gain_IT_Equipment_162.y);
+
+        /* MEL_Connect IT_Equipment_161 rcpt_ckt-L3_14A */
+          connect(IT_Equipment_161.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_161.p2, IT_Equipment_161.p);
+          connect(MEL_Conv_IT_Equipment_161.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_161.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_161.p1, cable_rcpt_cktL3_14A.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_161.u);
+          connect(IT_Equipment_161.u, Gain_IT_Equipment_161.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_14A */
+          connect(cable_rcpt_cktL3_14A.n, cable_mels_L3_A.p);
+
+        /* MEL_Connect IT_Equipment_159 rcpt_ckt-L3_13A */
+          connect(IT_Equipment_159.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_159.p2, IT_Equipment_159.p);
+          connect(MEL_Conv_IT_Equipment_159.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_159.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_159.p1, cable_rcpt_cktL3_13A.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_159.u);
+          connect(IT_Equipment_159.u, Gain_IT_Equipment_159.y);
+
+        /* MEL_Connect IT_Equipment_158 rcpt_ckt-L3_13A */
+          connect(IT_Equipment_158.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_158.p2, IT_Equipment_158.p);
+          connect(MEL_Conv_IT_Equipment_158.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_158.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_158.p1, cable_rcpt_cktL3_13A.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_158.u);
+          connect(IT_Equipment_158.u, Gain_IT_Equipment_158.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_13A */
+          connect(cable_rcpt_cktL3_13A.n, cable_mels_L3_A.p);
+
+        /* MEL_Connect IT_Equipment_151 rcpt_ckt-L3_11A */
+          connect(IT_Equipment_151.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_151.p2, IT_Equipment_151.p);
+          connect(MEL_Conv_IT_Equipment_151.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_151.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_151.p1, cable_rcpt_cktL3_11A.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_151.u);
+          connect(IT_Equipment_151.u, Gain_IT_Equipment_151.y);
+
+        /* MEL_Connect IT_Equipment_150 rcpt_ckt-L3_11A */
+          connect(IT_Equipment_150.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_150.p2, IT_Equipment_150.p);
+          connect(MEL_Conv_IT_Equipment_150.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_150.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_150.p1, cable_rcpt_cktL3_11A.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_150.u);
+          connect(IT_Equipment_150.u, Gain_IT_Equipment_150.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_11A */
+          connect(cable_rcpt_cktL3_11A.n, cable_mels_L3_A.p);
+
+        /* MEL_Connect IT_Equipment_146 rcpt_ckt-L3_10A */
+          connect(IT_Equipment_146.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_146.p2, IT_Equipment_146.p);
+          connect(MEL_Conv_IT_Equipment_146.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_146.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_146.p1, cable_rcpt_cktL3_10A.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_146.u);
+          connect(IT_Equipment_146.u, Gain_IT_Equipment_146.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_10A */
+          connect(cable_rcpt_cktL3_10A.n, cable_mels_L3_A.p);
+
+        /* MEL_Connect Printer_23 rcpt_ckt-L3_9A */
+          connect(Printer_23.n, GndDC.p);
+          connect(MEL_Conv_Printer_23.p2, Printer_23.p);
+          connect(MEL_Conv_Printer_23.n1, GndDC.p);
+          connect(MEL_Conv_Printer_23.n2, GndDC.p);
+          connect(MEL_Conv_Printer_23.p1, cable_rcpt_cktL3_9A.p);
+          connect(combiTimeTable_L3_Printer.y[1], Gain_Printer_23.u);
+          connect(Printer_23.u, Gain_Printer_23.y);
+
+        /* MEL_Connect IT_Equipment_140 rcpt_ckt-L3_9A */
+          connect(IT_Equipment_140.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_140.p2, IT_Equipment_140.p);
+          connect(MEL_Conv_IT_Equipment_140.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_140.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_140.p1, cable_rcpt_cktL3_9A.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_140.u);
+          connect(IT_Equipment_140.u, Gain_IT_Equipment_140.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_9A */
+          connect(cable_rcpt_cktL3_9A.n, cable_mels_L3_A.p);
+
+        /* MEL_Connect Printer_21 rcpt_ckt-L3_8A */
+          connect(Printer_21.n, GndDC.p);
+          connect(MEL_Conv_Printer_21.p2, Printer_21.p);
+          connect(MEL_Conv_Printer_21.n1, GndDC.p);
+          connect(MEL_Conv_Printer_21.n2, GndDC.p);
+          connect(MEL_Conv_Printer_21.p1, cable_rcpt_cktL3_8A.p);
+          connect(combiTimeTable_L3_Printer.y[1], Gain_Printer_21.u);
+          connect(Printer_21.u, Gain_Printer_21.y);
+
+        /* MEL_Connect IT_Equipment_135 rcpt_ckt-L3_8A */
+          connect(IT_Equipment_135.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_135.p2, IT_Equipment_135.p);
+          connect(MEL_Conv_IT_Equipment_135.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_135.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_135.p1, cable_rcpt_cktL3_8A.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_135.u);
+          connect(IT_Equipment_135.u, Gain_IT_Equipment_135.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_8A */
+          connect(cable_rcpt_cktL3_8A.n, cable_mels_L3_A.p);
+
+        /* MEL_Connect IT_Equipment_131 rcpt_ckt-L3_7A */
+          connect(IT_Equipment_131.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_131.p2, IT_Equipment_131.p);
+          connect(MEL_Conv_IT_Equipment_131.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_131.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_131.p1, cable_rcpt_cktL3_7A.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_131.u);
+          connect(IT_Equipment_131.u, Gain_IT_Equipment_131.y);
+
+        /* MEL_Connect IT_Equipment_130 rcpt_ckt-L3_7A */
+          connect(IT_Equipment_130.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_130.p2, IT_Equipment_130.p);
+          connect(MEL_Conv_IT_Equipment_130.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_130.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_130.p1, cable_rcpt_cktL3_7A.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_130.u);
+          connect(IT_Equipment_130.u, Gain_IT_Equipment_130.y);
+
+        /* MEL_Connect IT_Equipment_129 rcpt_ckt-L3_7A */
+          connect(IT_Equipment_129.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_129.p2, IT_Equipment_129.p);
+          connect(MEL_Conv_IT_Equipment_129.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_129.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_129.p1, cable_rcpt_cktL3_7A.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_129.u);
+          connect(IT_Equipment_129.u, Gain_IT_Equipment_129.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_7A */
+          connect(cable_rcpt_cktL3_7A.n, cable_mels_L3_A.p);
+
+        /* MEL_Connect IT_Equipment_125 rcpt_ckt-L3_6A */
+          connect(IT_Equipment_125.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_125.p2, IT_Equipment_125.p);
+          connect(MEL_Conv_IT_Equipment_125.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_125.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_125.p1, cable_rcpt_cktL3_6A.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_125.u);
+          connect(IT_Equipment_125.u, Gain_IT_Equipment_125.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_6A */
+          connect(cable_rcpt_cktL3_6A.n, cable_mels_L3_A.p);
+
+        /* MEL_Connect IT_Equipment_119 rcpt_ckt-L3_4A */
+          connect(IT_Equipment_119.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_119.p2, IT_Equipment_119.p);
+          connect(MEL_Conv_IT_Equipment_119.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_119.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_119.p1, cable_rcpt_cktL3_4A.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_119.u);
+          connect(IT_Equipment_119.u, Gain_IT_Equipment_119.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_4A */
+          connect(cable_rcpt_cktL3_4A.n, cable_mels_L3_A.p);
+
+        /* MEL_Connect IT_Equipment_116 rcpt_ckt-L3_3A */
+          connect(IT_Equipment_116.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_116.p2, IT_Equipment_116.p);
+          connect(MEL_Conv_IT_Equipment_116.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_116.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_116.p1, cable_rcpt_cktL3_3A.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_116.u);
+          connect(IT_Equipment_116.u, Gain_IT_Equipment_116.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_3A */
+          connect(cable_rcpt_cktL3_3A.n, cable_mels_L3_A.p);
+
+        /* MEL_Connect IT_Equipment_113 rcpt_ckt-L3_2A */
+          connect(IT_Equipment_113.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_113.p2, IT_Equipment_113.p);
+          connect(MEL_Conv_IT_Equipment_113.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_113.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_113.p1, cable_rcpt_cktL3_2A.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_113.u);
+          connect(IT_Equipment_113.u, Gain_IT_Equipment_113.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_2A */
+          connect(cable_rcpt_cktL3_2A.n, cable_mels_L3_A.p);
+
+        /* MEL_Connect IT_Equipment_111 rcpt_ckt-L3_1A */
+          connect(IT_Equipment_111.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_111.p2, IT_Equipment_111.p);
+          connect(MEL_Conv_IT_Equipment_111.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_111.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_111.p1, cable_rcpt_cktL3_1A.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_111.u);
+          connect(IT_Equipment_111.u, Gain_IT_Equipment_111.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_1A */
+          connect(cable_rcpt_cktL3_1A.n, cable_mels_L3_A.p);
+
+          connect(cable_mels_L3_A.n, p) annotation (Line(points={{-58,2},{-74,2},{-74,0},
+                  {-104,0}}, color={0,0,255}));
+          annotation ();
+        end large_AC_MEL_Panel_L3A;
+
+        model large_AC_MEL_Panel_L3B
+          outer parameter Real PF;
+          outer parameter Real PF1;
+          /* parameter Real PF = 0.9; */
+
+          outer HPF.SystemDef systemDef;
+          Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+            Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_IT_Equipment(
+            tableOnFile=true,
+            tableName="L3-All-ITEquipment",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-92,72},{-72,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_MFD(
+            tableOnFile=true,
+            tableName="L3-All-MFDs",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-28,72},{-8,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Printer(
+            tableOnFile=true,
+            tableName="L3-All-Printers",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{40,72},{60,92}})));
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Display(
+            tableOnFile=true,
+            tableName="L3-All-TVs",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{72,72},{92,92}})));
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_display(V = 48, alpha = 4.62836768, beta = 0.025225007, gamma = 0.00145528);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_ite(V = 48, alpha = 1.7735384, beta = 0.002302422, gamma = 0.000167704);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_mfd(V = 48, alpha = 6.883545915, beta = 0.002302422, gamma = 0.0000432087);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_printer(V = 48, alpha = 9.699038125, beta = 0.002302422, gamma = 0.0000306658);
+
+        /* Insert models here */
+
+        /* MEL_Model Printer_25 rcpt_ckt-L3_13B */
+          Modelica.Blocks.Math.Gain Gain_Printer_25(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_25(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_25;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_13B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_13B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=29.46);
+
+        /* MEL_Model IT_Equipment_165 rcpt_ckt-L3_14B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_165(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_165(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_165;
+
+        /* MEL_Model IT_Equipment_164 rcpt_ckt-L3_14B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_164(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_164(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_164;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_14B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_14B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=38.71);
+
+        /* MEL_Model IT_Equipment_156 rcpt_ckt-L3_12B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_156(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_156(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_156;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_12B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_12B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=22.32);
+
+        /* MEL_Model IT_Equipment_153 rcpt_ckt-L3_11B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_153(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_153(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_153;
+
+        /* MEL_Model IT_Equipment_152 rcpt_ckt-L3_11B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_152(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_152(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_152;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_11B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_11B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=38.02);
+
+        /* MEL_Model IT_Equipment_126 rcpt_ckt-L3_6B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_126(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_126(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_126;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_6B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_6B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=10.22);
+
+        /* MEL_Model IT_Equipment_123 rcpt_ckt-L3_5B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_123(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_123(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_123;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_5B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_5B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=18.39);
+
+        /* MEL_Model IT_Equipment_121 rcpt_ckt-L3_4B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_121(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_121(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_121;
+
+        /* MEL_Model IT_Equipment_120 rcpt_ckt-L3_4B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_120(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_120(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_120;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_4B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_4B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=17.59);
+
+        /* MEL_Model IT_Equipment_115 rcpt_ckt-L3_2B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_115(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_115(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_115;
+
+        /* MEL_Model IT_Equipment_114 rcpt_ckt-L3_2B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_114(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_114(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_114;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_2B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_2B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=21.9);
+
+        /* MEL_Model Printer_24 rcpt_ckt-L3_10B */
+          Modelica.Blocks.Math.Gain Gain_Printer_24(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_24(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_24;
+
+        /* MEL_Model IT_Equipment_148 rcpt_ckt-L3_10B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_148(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_148(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_148;
+
+        /* MEL_Model IT_Equipment_147 rcpt_ckt-L3_10B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_147(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_147(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_147;
+
+        /* MEL_Model Display_14 rcpt_ckt-L3_10B */
+          Modelica.Blocks.Math.Gain Gain_Display_14(k=127) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Display_14(modelData = modelData_display);
+          HPF.DC.Variable_DC_Load Display_14;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_10B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_10B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=24.02);
+
+        /* MEL_Model IT_Equipment_142 rcpt_ckt-L3_9B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_142(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_142(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_142;
+
+        /* MEL_Model IT_Equipment_141 rcpt_ckt-L3_9B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_141(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_141(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_141;
+
+        /* MEL_Model Display_13 rcpt_ckt-L3_9B */
+          Modelica.Blocks.Math.Gain Gain_Display_13(k=127) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Display_13(modelData = modelData_display);
+          HPF.DC.Variable_DC_Load Display_13;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_9B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_9B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=16.35);
+
+        /* MEL_Model MFD_8 rcpt_ckt-L3_8B */
+          Modelica.Blocks.Math.Gain Gain_MFD_8(k=621) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_MFD_8(modelData = modelData_mfd);
+          HPF.DC.Variable_DC_Load MFD_8;
+
+        /* MEL_Model IT_Equipment_137 rcpt_ckt-L3_8B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_137(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_137(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_137;
+
+        /* MEL_Model IT_Equipment_136 rcpt_ckt-L3_8B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_136(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_136(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_136;
+
+        /* MEL_Model Display_12 rcpt_ckt-L3_8B */
+          Modelica.Blocks.Math.Gain Gain_Display_12(k=127) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Display_12(modelData = modelData_display);
+          HPF.DC.Variable_DC_Load Display_12;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_8B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_8B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=26.74);
+
+        /* MEL_Model Printer_20 rcpt_ckt-L3_7B */
+          Modelica.Blocks.Math.Gain Gain_Printer_20(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_20(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_20;
+
+        /* MEL_Model IT_Equipment_132 rcpt_ckt-L3_7B */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_132(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_132(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_132;
+
+        /* MEL_Model Display_11 rcpt_ckt-L3_7B */
+          Modelica.Blocks.Math.Gain Gain_Display_11(k=127) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Display_11(modelData = modelData_display);
+          HPF.DC.Variable_DC_Load Display_11;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_7B */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_7B(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=28.12);
+
+          Modelica.Electrical.Analog.Interfaces.PositivePin p
+            "Positive electrical pin of port 1" annotation (Placement(transformation(
+                  extent={{-114,-10},{-94,10}}),iconTransformation(extent={{-110,90},{-90,
+                    110}})));
+          HPF.Cables.NEC_CableModelDC cable_mels_L3_B(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+              length=15) annotation (Placement(visible=true, transformation(
+                origin={-48,2},
+                extent={{10,-10},{-10,10}},
+                rotation=0)));
+        equation
+
+        /* Insert equation here */
+
+        /* MEL_Connect Printer_25 rcpt_ckt-L3_13B */
+          connect(Printer_25.n, GndDC.p);
+          connect(MEL_Conv_Printer_25.p2, Printer_25.p);
+          connect(MEL_Conv_Printer_25.n1, GndDC.p);
+          connect(MEL_Conv_Printer_25.n2, GndDC.p);
+          connect(MEL_Conv_Printer_25.p1, cable_rcpt_cktL3_13B.p);
+          connect(combiTimeTable_L3_Printer.y[1], Gain_Printer_25.u);
+          connect(Printer_25.u, Gain_Printer_25.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_13B */
+          connect(cable_rcpt_cktL3_13B.n, cable_mels_L3_B.p);
+
+        /* MEL_Connect IT_Equipment_165 rcpt_ckt-L3_14B */
+          connect(IT_Equipment_165.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_165.p2, IT_Equipment_165.p);
+          connect(MEL_Conv_IT_Equipment_165.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_165.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_165.p1, cable_rcpt_cktL3_14B.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_165.u);
+          connect(IT_Equipment_165.u, Gain_IT_Equipment_165.y);
+
+        /* MEL_Connect IT_Equipment_164 rcpt_ckt-L3_14B */
+          connect(IT_Equipment_164.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_164.p2, IT_Equipment_164.p);
+          connect(MEL_Conv_IT_Equipment_164.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_164.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_164.p1, cable_rcpt_cktL3_14B.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_164.u);
+          connect(IT_Equipment_164.u, Gain_IT_Equipment_164.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_14B */
+          connect(cable_rcpt_cktL3_14B.n, cable_mels_L3_B.p);
+
+        /* MEL_Connect IT_Equipment_156 rcpt_ckt-L3_12B */
+          connect(IT_Equipment_156.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_156.p2, IT_Equipment_156.p);
+          connect(MEL_Conv_IT_Equipment_156.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_156.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_156.p1, cable_rcpt_cktL3_12B.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_156.u);
+          connect(IT_Equipment_156.u, Gain_IT_Equipment_156.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_12B */
+          connect(cable_rcpt_cktL3_12B.n, cable_mels_L3_B.p);
+
+        /* MEL_Connect IT_Equipment_153 rcpt_ckt-L3_11B */
+          connect(IT_Equipment_153.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_153.p2, IT_Equipment_153.p);
+          connect(MEL_Conv_IT_Equipment_153.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_153.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_153.p1, cable_rcpt_cktL3_11B.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_153.u);
+          connect(IT_Equipment_153.u, Gain_IT_Equipment_153.y);
+
+        /* MEL_Connect IT_Equipment_152 rcpt_ckt-L3_11B */
+          connect(IT_Equipment_152.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_152.p2, IT_Equipment_152.p);
+          connect(MEL_Conv_IT_Equipment_152.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_152.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_152.p1, cable_rcpt_cktL3_11B.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_152.u);
+          connect(IT_Equipment_152.u, Gain_IT_Equipment_152.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_11B */
+          connect(cable_rcpt_cktL3_11B.n, cable_mels_L3_B.p);
+
+        /* MEL_Connect IT_Equipment_126 rcpt_ckt-L3_6B */
+          connect(IT_Equipment_126.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_126.p2, IT_Equipment_126.p);
+          connect(MEL_Conv_IT_Equipment_126.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_126.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_126.p1, cable_rcpt_cktL3_6B.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_126.u);
+          connect(IT_Equipment_126.u, Gain_IT_Equipment_126.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_6B */
+          connect(cable_rcpt_cktL3_6B.n, cable_mels_L3_B.p);
+
+        /* MEL_Connect IT_Equipment_123 rcpt_ckt-L3_5B */
+          connect(IT_Equipment_123.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_123.p2, IT_Equipment_123.p);
+          connect(MEL_Conv_IT_Equipment_123.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_123.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_123.p1, cable_rcpt_cktL3_5B.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_123.u);
+          connect(IT_Equipment_123.u, Gain_IT_Equipment_123.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_5B */
+          connect(cable_rcpt_cktL3_5B.n, cable_mels_L3_B.p);
+
+        /* MEL_Connect IT_Equipment_121 rcpt_ckt-L3_4B */
+          connect(IT_Equipment_121.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_121.p2, IT_Equipment_121.p);
+          connect(MEL_Conv_IT_Equipment_121.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_121.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_121.p1, cable_rcpt_cktL3_4B.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_121.u);
+          connect(IT_Equipment_121.u, Gain_IT_Equipment_121.y);
+
+        /* MEL_Connect IT_Equipment_120 rcpt_ckt-L3_4B */
+          connect(IT_Equipment_120.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_120.p2, IT_Equipment_120.p);
+          connect(MEL_Conv_IT_Equipment_120.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_120.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_120.p1, cable_rcpt_cktL3_4B.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_120.u);
+          connect(IT_Equipment_120.u, Gain_IT_Equipment_120.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_4B */
+          connect(cable_rcpt_cktL3_4B.n, cable_mels_L3_B.p);
+
+        /* MEL_Connect IT_Equipment_115 rcpt_ckt-L3_2B */
+          connect(IT_Equipment_115.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_115.p2, IT_Equipment_115.p);
+          connect(MEL_Conv_IT_Equipment_115.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_115.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_115.p1, cable_rcpt_cktL3_2B.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_115.u);
+          connect(IT_Equipment_115.u, Gain_IT_Equipment_115.y);
+
+        /* MEL_Connect IT_Equipment_114 rcpt_ckt-L3_2B */
+          connect(IT_Equipment_114.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_114.p2, IT_Equipment_114.p);
+          connect(MEL_Conv_IT_Equipment_114.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_114.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_114.p1, cable_rcpt_cktL3_2B.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_114.u);
+          connect(IT_Equipment_114.u, Gain_IT_Equipment_114.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_2B */
+          connect(cable_rcpt_cktL3_2B.n, cable_mels_L3_B.p);
+
+        /* MEL_Connect Printer_24 rcpt_ckt-L3_10B */
+          connect(Printer_24.n, GndDC.p);
+          connect(MEL_Conv_Printer_24.p2, Printer_24.p);
+          connect(MEL_Conv_Printer_24.n1, GndDC.p);
+          connect(MEL_Conv_Printer_24.n2, GndDC.p);
+          connect(MEL_Conv_Printer_24.p1, cable_rcpt_cktL3_10B.p);
+          connect(combiTimeTable_L3_Printer.y[1], Gain_Printer_24.u);
+          connect(Printer_24.u, Gain_Printer_24.y);
+
+        /* MEL_Connect IT_Equipment_148 rcpt_ckt-L3_10B */
+          connect(IT_Equipment_148.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_148.p2, IT_Equipment_148.p);
+          connect(MEL_Conv_IT_Equipment_148.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_148.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_148.p1, cable_rcpt_cktL3_10B.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_148.u);
+          connect(IT_Equipment_148.u, Gain_IT_Equipment_148.y);
+
+        /* MEL_Connect IT_Equipment_147 rcpt_ckt-L3_10B */
+          connect(IT_Equipment_147.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_147.p2, IT_Equipment_147.p);
+          connect(MEL_Conv_IT_Equipment_147.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_147.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_147.p1, cable_rcpt_cktL3_10B.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_147.u);
+          connect(IT_Equipment_147.u, Gain_IT_Equipment_147.y);
+
+        /* MEL_Connect Display_14 rcpt_ckt-L3_10B */
+          connect(Display_14.n, GndDC.p);
+          connect(MEL_Conv_Display_14.p2, Display_14.p);
+          connect(MEL_Conv_Display_14.n1, GndDC.p);
+          connect(MEL_Conv_Display_14.n2, GndDC.p);
+          connect(MEL_Conv_Display_14.p1, cable_rcpt_cktL3_10B.p);
+          connect(combiTimeTable_L3_Display.y[1], Gain_Display_14.u);
+          connect(Display_14.u, Gain_Display_14.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_10B */
+          connect(cable_rcpt_cktL3_10B.n, cable_mels_L3_B.p);
+
+        /* MEL_Connect IT_Equipment_142 rcpt_ckt-L3_9B */
+          connect(IT_Equipment_142.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_142.p2, IT_Equipment_142.p);
+          connect(MEL_Conv_IT_Equipment_142.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_142.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_142.p1, cable_rcpt_cktL3_9B.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_142.u);
+          connect(IT_Equipment_142.u, Gain_IT_Equipment_142.y);
+
+        /* MEL_Connect IT_Equipment_141 rcpt_ckt-L3_9B */
+          connect(IT_Equipment_141.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_141.p2, IT_Equipment_141.p);
+          connect(MEL_Conv_IT_Equipment_141.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_141.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_141.p1, cable_rcpt_cktL3_9B.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_141.u);
+          connect(IT_Equipment_141.u, Gain_IT_Equipment_141.y);
+
+        /* MEL_Connect Display_13 rcpt_ckt-L3_9B */
+          connect(Display_13.n, GndDC.p);
+          connect(MEL_Conv_Display_13.p2, Display_13.p);
+          connect(MEL_Conv_Display_13.n1, GndDC.p);
+          connect(MEL_Conv_Display_13.n2, GndDC.p);
+          connect(MEL_Conv_Display_13.p1, cable_rcpt_cktL3_9B.p);
+          connect(combiTimeTable_L3_Display.y[1], Gain_Display_13.u);
+          connect(Display_13.u, Gain_Display_13.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_9B */
+          connect(cable_rcpt_cktL3_9B.n, cable_mels_L3_B.p);
+
+        /* MEL_Connect MFD_8 rcpt_ckt-L3_8B */
+          connect(MFD_8.n, GndDC.p);
+          connect(MEL_Conv_MFD_8.p2, MFD_8.p);
+          connect(MEL_Conv_MFD_8.n1, GndDC.p);
+          connect(MEL_Conv_MFD_8.n2, GndDC.p);
+          connect(MEL_Conv_MFD_8.p1, cable_rcpt_cktL3_8B.p);
+          connect(combiTimeTable_L3_MFD.y[1], Gain_MFD_8.u);
+          connect(MFD_8.u, Gain_MFD_8.y);
+
+        /* MEL_Connect IT_Equipment_137 rcpt_ckt-L3_8B */
+          connect(IT_Equipment_137.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_137.p2, IT_Equipment_137.p);
+          connect(MEL_Conv_IT_Equipment_137.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_137.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_137.p1, cable_rcpt_cktL3_8B.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_137.u);
+          connect(IT_Equipment_137.u, Gain_IT_Equipment_137.y);
+
+        /* MEL_Connect IT_Equipment_136 rcpt_ckt-L3_8B */
+          connect(IT_Equipment_136.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_136.p2, IT_Equipment_136.p);
+          connect(MEL_Conv_IT_Equipment_136.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_136.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_136.p1, cable_rcpt_cktL3_8B.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_136.u);
+          connect(IT_Equipment_136.u, Gain_IT_Equipment_136.y);
+
+        /* MEL_Connect Display_12 rcpt_ckt-L3_8B */
+          connect(Display_12.n, GndDC.p);
+          connect(MEL_Conv_Display_12.p2, Display_12.p);
+          connect(MEL_Conv_Display_12.n1, GndDC.p);
+          connect(MEL_Conv_Display_12.n2, GndDC.p);
+          connect(MEL_Conv_Display_12.p1, cable_rcpt_cktL3_8B.p);
+          connect(combiTimeTable_L3_Display.y[1], Gain_Display_12.u);
+          connect(Display_12.u, Gain_Display_12.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_8B */
+          connect(cable_rcpt_cktL3_8B.n, cable_mels_L3_B.p);
+
+        /* MEL_Connect Printer_20 rcpt_ckt-L3_7B */
+          connect(Printer_20.n, GndDC.p);
+          connect(MEL_Conv_Printer_20.p2, Printer_20.p);
+          connect(MEL_Conv_Printer_20.n1, GndDC.p);
+          connect(MEL_Conv_Printer_20.n2, GndDC.p);
+          connect(MEL_Conv_Printer_20.p1, cable_rcpt_cktL3_7B.p);
+          connect(combiTimeTable_L3_Printer.y[1], Gain_Printer_20.u);
+          connect(Printer_20.u, Gain_Printer_20.y);
+
+        /* MEL_Connect IT_Equipment_132 rcpt_ckt-L3_7B */
+          connect(IT_Equipment_132.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_132.p2, IT_Equipment_132.p);
+          connect(MEL_Conv_IT_Equipment_132.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_132.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_132.p1, cable_rcpt_cktL3_7B.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_132.u);
+          connect(IT_Equipment_132.u, Gain_IT_Equipment_132.y);
+
+        /* MEL_Connect Display_11 rcpt_ckt-L3_7B */
+          connect(Display_11.n, GndDC.p);
+          connect(MEL_Conv_Display_11.p2, Display_11.p);
+          connect(MEL_Conv_Display_11.n1, GndDC.p);
+          connect(MEL_Conv_Display_11.n2, GndDC.p);
+          connect(MEL_Conv_Display_11.p1, cable_rcpt_cktL3_7B.p);
+          connect(combiTimeTable_L3_Display.y[1], Gain_Display_11.u);
+          connect(Display_11.u, Gain_Display_11.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_7B */
+          connect(cable_rcpt_cktL3_7B.n, cable_mels_L3_B.p);
+
+          connect(cable_mels_L3_B.n, p) annotation (Line(points={{-58,2},{-74,2},{-74,0},
+                  {-104,0}}, color={0,0,255}));
+          annotation ();
+        end large_AC_MEL_Panel_L3B;
+
+        model large_AC_MEL_Panel_L3C
+          outer parameter Real PF;
+          outer parameter Real PF1;
+          /* parameter Real PF = 0.9; */
+
+          outer HPF.SystemDef systemDef;
+          Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+            Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_IT_Equipment(
+            tableOnFile=true,
+            tableName="L3-All-ITEquipment",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-92,72},{-72,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_MFD(
+            tableOnFile=true,
+            tableName="L3-All-MFDs",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-28,72},{-8,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Printer(
+            tableOnFile=true,
+            tableName="L3-All-Printers",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{40,72},{60,92}})));
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Display(
+            tableOnFile=true,
+            tableName="L3-All-TVs",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{72,72},{92,92}})));
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_display(V = 48, alpha = 4.62836768, beta = 0.025225007, gamma = 0.00145528);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_ite(V = 48, alpha = 1.7735384, beta = 0.002302422, gamma = 0.000167704);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_mfd(V = 48, alpha = 6.883545915, beta = 0.002302422, gamma = 0.0000432087);
+         parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_printer(V = 48, alpha = 9.699038125, beta = 0.002302422, gamma = 0.0000306658);
+
+        /* Insert models here */
+
+        /* MEL_Model Printer_27 rcpt_ckt-L3_14C */
+          Modelica.Blocks.Math.Gain Gain_Printer_27(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_27(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_27;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_14C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_14C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=38.71);
+
+        /* MEL_Model IT_Equipment_157 rcpt_ckt-L3_12C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_157(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_157(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_157;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_12C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_12C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=22.42);
+
+        /* MEL_Model IT_Equipment_155 rcpt_ckt-L3_11C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_155(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_155(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_155;
+
+        /* MEL_Model IT_Equipment_154 rcpt_ckt-L3_11C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_154(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_154(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_154;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_11C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_11C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=37.86);
+
+        /* MEL_Model IT_Equipment_149 rcpt_ckt-L3_10C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_149(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_149(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_149;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_10C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_10C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=31.02);
+
+        /* MEL_Model IT_Equipment_145 rcpt_ckt-L3_9C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_145(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_145(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_145;
+
+        /* MEL_Model IT_Equipment_144 rcpt_ckt-L3_9C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_144(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_144(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_144;
+
+        /* MEL_Model IT_Equipment_143 rcpt_ckt-L3_9C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_143(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_143(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_143;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_9C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_9C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=16.21);
+
+        /* MEL_Model Printer_22 rcpt_ckt-L3_8C */
+          Modelica.Blocks.Math.Gain Gain_Printer_22(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_22(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_22;
+
+        /* MEL_Model IT_Equipment_139 rcpt_ckt-L3_8C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_139(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_139(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_139;
+
+        /* MEL_Model IT_Equipment_138 rcpt_ckt-L3_8C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_138(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_138(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_138;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_8C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_8C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=24.58);
+
+        /* MEL_Model MFD_7 rcpt_ckt-L3_7C */
+          Modelica.Blocks.Math.Gain Gain_MFD_7(k=621) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_MFD_7(modelData = modelData_mfd);
+          HPF.DC.Variable_DC_Load MFD_7;
+
+        /* MEL_Model IT_Equipment_134 rcpt_ckt-L3_7C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_134(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_134(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_134;
+
+        /* MEL_Model IT_Equipment_133 rcpt_ckt-L3_7C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_133(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_133(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_133;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_7C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_7C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=23.51);
+
+        /* MEL_Model Printer_19 rcpt_ckt-L3_6C */
+          Modelica.Blocks.Math.Gain Gain_Printer_19(k=875) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Printer_19(modelData = modelData_printer);
+          HPF.DC.Variable_DC_Load Printer_19;
+
+        /* MEL_Model IT_Equipment_128 rcpt_ckt-L3_6C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_128(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_128(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_128;
+
+        /* MEL_Model IT_Equipment_127 rcpt_ckt-L3_6C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_127(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_127(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_127;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_6C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_6C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=14.69);
+
+        /* MEL_Model IT_Equipment_124 rcpt_ckt-L3_5C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_124(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_124(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_124;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_5C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_5C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=13.51);
+
+        /* MEL_Model IT_Equipment_122 rcpt_ckt-L3_4C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_122(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_122(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_122;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_4C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_4C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=15.5);
+
+        /* MEL_Model IT_Equipment_118 rcpt_ckt-L3_3C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_118(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_118(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_118;
+
+        /* MEL_Model IT_Equipment_117 rcpt_ckt-L3_3C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_117(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_117(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_117;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_3C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_3C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=16.74);
+
+        /* MEL_Model IT_Equipment_112 rcpt_ckt-L3_1C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_112(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_112(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_112;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_1C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_1C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=24.65);
+
+        /* MEL_Model IT_Equipment_160 rcpt_ckt-L3_13C */
+          Modelica.Blocks.Math.Gain Gain_IT_Equipment_160(k=160) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_IT_Equipment_160(modelData = modelData_ite);
+          HPF.DC.Variable_DC_Load IT_Equipment_160;
+
+        /* MEL_Model Display_15 rcpt_ckt-L3_13C */
+          Modelica.Blocks.Math.Gain Gain_Display_15(k=127) annotation (HideResult=true);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Conv_Display_15(modelData = modelData_display);
+          HPF.DC.Variable_DC_Load Display_15;
+
+        /* MEL_Model  cable_rcpt_ckt-L3_13C */
+          HPF.Cables.NEC_CableModelDC cable_rcpt_cktL3_13C(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=37.48);
+
+          Modelica.Electrical.Analog.Interfaces.PositivePin p
+            "Positive electrical pin of port 1" annotation (Placement(transformation(
+                  extent={{-114,-10},{-94,10}}),iconTransformation(extent={{-110,90},{-90,
+                    110}})));
+          HPF.Cables.NEC_CableModelDC cable_mels_L3_C(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+              length=15) annotation (Placement(visible=true, transformation(
+                origin={-48,2},
+                extent={{10,-10},{-10,10}},
+                rotation=0)));
+        equation
+
+        /* Insert equation here */
+
+        /* MEL_Connect Printer_27 rcpt_ckt-L3_14C */
+          connect(Printer_27.n, GndDC.p);
+          connect(MEL_Conv_Printer_27.p2, Printer_27.p);
+          connect(MEL_Conv_Printer_27.n1, GndDC.p);
+          connect(MEL_Conv_Printer_27.n2, GndDC.p);
+          connect(MEL_Conv_Printer_27.p1, cable_rcpt_cktL3_14C.p);
+          connect(combiTimeTable_L3_Printer.y[1], Gain_Printer_27.u);
+          connect(Printer_27.u, Gain_Printer_27.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_14C */
+          connect(cable_rcpt_cktL3_14C.n, cable_mels_L3_C.p);
+
+        /* MEL_Connect IT_Equipment_157 rcpt_ckt-L3_12C */
+          connect(IT_Equipment_157.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_157.p2, IT_Equipment_157.p);
+          connect(MEL_Conv_IT_Equipment_157.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_157.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_157.p1, cable_rcpt_cktL3_12C.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_157.u);
+          connect(IT_Equipment_157.u, Gain_IT_Equipment_157.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_12C */
+          connect(cable_rcpt_cktL3_12C.n, cable_mels_L3_C.p);
+
+        /* MEL_Connect IT_Equipment_155 rcpt_ckt-L3_11C */
+          connect(IT_Equipment_155.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_155.p2, IT_Equipment_155.p);
+          connect(MEL_Conv_IT_Equipment_155.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_155.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_155.p1, cable_rcpt_cktL3_11C.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_155.u);
+          connect(IT_Equipment_155.u, Gain_IT_Equipment_155.y);
+
+        /* MEL_Connect IT_Equipment_154 rcpt_ckt-L3_11C */
+          connect(IT_Equipment_154.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_154.p2, IT_Equipment_154.p);
+          connect(MEL_Conv_IT_Equipment_154.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_154.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_154.p1, cable_rcpt_cktL3_11C.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_154.u);
+          connect(IT_Equipment_154.u, Gain_IT_Equipment_154.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_11C */
+          connect(cable_rcpt_cktL3_11C.n, cable_mels_L3_C.p);
+
+        /* MEL_Connect IT_Equipment_149 rcpt_ckt-L3_10C */
+          connect(IT_Equipment_149.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_149.p2, IT_Equipment_149.p);
+          connect(MEL_Conv_IT_Equipment_149.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_149.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_149.p1, cable_rcpt_cktL3_10C.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_149.u);
+          connect(IT_Equipment_149.u, Gain_IT_Equipment_149.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_10C */
+          connect(cable_rcpt_cktL3_10C.n, cable_mels_L3_C.p);
+
+        /* MEL_Connect IT_Equipment_145 rcpt_ckt-L3_9C */
+          connect(IT_Equipment_145.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_145.p2, IT_Equipment_145.p);
+          connect(MEL_Conv_IT_Equipment_145.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_145.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_145.p1, cable_rcpt_cktL3_9C.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_145.u);
+          connect(IT_Equipment_145.u, Gain_IT_Equipment_145.y);
+
+        /* MEL_Connect IT_Equipment_144 rcpt_ckt-L3_9C */
+          connect(IT_Equipment_144.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_144.p2, IT_Equipment_144.p);
+          connect(MEL_Conv_IT_Equipment_144.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_144.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_144.p1, cable_rcpt_cktL3_9C.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_144.u);
+          connect(IT_Equipment_144.u, Gain_IT_Equipment_144.y);
+
+        /* MEL_Connect IT_Equipment_143 rcpt_ckt-L3_9C */
+          connect(IT_Equipment_143.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_143.p2, IT_Equipment_143.p);
+          connect(MEL_Conv_IT_Equipment_143.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_143.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_143.p1, cable_rcpt_cktL3_9C.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_143.u);
+          connect(IT_Equipment_143.u, Gain_IT_Equipment_143.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_9C */
+          connect(cable_rcpt_cktL3_9C.n, cable_mels_L3_C.p);
+
+        /* MEL_Connect Printer_22 rcpt_ckt-L3_8C */
+          connect(Printer_22.n, GndDC.p);
+          connect(MEL_Conv_Printer_22.p2, Printer_22.p);
+          connect(MEL_Conv_Printer_22.n1, GndDC.p);
+          connect(MEL_Conv_Printer_22.n2, GndDC.p);
+          connect(MEL_Conv_Printer_22.p1, cable_rcpt_cktL3_8C.p);
+          connect(combiTimeTable_L3_Printer.y[1], Gain_Printer_22.u);
+          connect(Printer_22.u, Gain_Printer_22.y);
+
+        /* MEL_Connect IT_Equipment_139 rcpt_ckt-L3_8C */
+          connect(IT_Equipment_139.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_139.p2, IT_Equipment_139.p);
+          connect(MEL_Conv_IT_Equipment_139.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_139.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_139.p1, cable_rcpt_cktL3_8C.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_139.u);
+          connect(IT_Equipment_139.u, Gain_IT_Equipment_139.y);
+
+        /* MEL_Connect IT_Equipment_138 rcpt_ckt-L3_8C */
+          connect(IT_Equipment_138.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_138.p2, IT_Equipment_138.p);
+          connect(MEL_Conv_IT_Equipment_138.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_138.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_138.p1, cable_rcpt_cktL3_8C.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_138.u);
+          connect(IT_Equipment_138.u, Gain_IT_Equipment_138.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_8C */
+          connect(cable_rcpt_cktL3_8C.n, cable_mels_L3_C.p);
+
+        /* MEL_Connect MFD_7 rcpt_ckt-L3_7C */
+          connect(MFD_7.n, GndDC.p);
+          connect(MEL_Conv_MFD_7.p2, MFD_7.p);
+          connect(MEL_Conv_MFD_7.n1, GndDC.p);
+          connect(MEL_Conv_MFD_7.n2, GndDC.p);
+          connect(MEL_Conv_MFD_7.p1, cable_rcpt_cktL3_7C.p);
+          connect(combiTimeTable_L3_MFD.y[1], Gain_MFD_7.u);
+          connect(MFD_7.u, Gain_MFD_7.y);
+
+        /* MEL_Connect IT_Equipment_134 rcpt_ckt-L3_7C */
+          connect(IT_Equipment_134.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_134.p2, IT_Equipment_134.p);
+          connect(MEL_Conv_IT_Equipment_134.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_134.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_134.p1, cable_rcpt_cktL3_7C.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_134.u);
+          connect(IT_Equipment_134.u, Gain_IT_Equipment_134.y);
+
+        /* MEL_Connect IT_Equipment_133 rcpt_ckt-L3_7C */
+          connect(IT_Equipment_133.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_133.p2, IT_Equipment_133.p);
+          connect(MEL_Conv_IT_Equipment_133.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_133.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_133.p1, cable_rcpt_cktL3_7C.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_133.u);
+          connect(IT_Equipment_133.u, Gain_IT_Equipment_133.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_7C */
+          connect(cable_rcpt_cktL3_7C.n, cable_mels_L3_C.p);
+
+        /* MEL_Connect Printer_19 rcpt_ckt-L3_6C */
+          connect(Printer_19.n, GndDC.p);
+          connect(MEL_Conv_Printer_19.p2, Printer_19.p);
+          connect(MEL_Conv_Printer_19.n1, GndDC.p);
+          connect(MEL_Conv_Printer_19.n2, GndDC.p);
+          connect(MEL_Conv_Printer_19.p1, cable_rcpt_cktL3_6C.p);
+          connect(combiTimeTable_L3_Printer.y[1], Gain_Printer_19.u);
+          connect(Printer_19.u, Gain_Printer_19.y);
+
+        /* MEL_Connect IT_Equipment_128 rcpt_ckt-L3_6C */
+          connect(IT_Equipment_128.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_128.p2, IT_Equipment_128.p);
+          connect(MEL_Conv_IT_Equipment_128.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_128.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_128.p1, cable_rcpt_cktL3_6C.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_128.u);
+          connect(IT_Equipment_128.u, Gain_IT_Equipment_128.y);
+
+        /* MEL_Connect IT_Equipment_127 rcpt_ckt-L3_6C */
+          connect(IT_Equipment_127.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_127.p2, IT_Equipment_127.p);
+          connect(MEL_Conv_IT_Equipment_127.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_127.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_127.p1, cable_rcpt_cktL3_6C.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_127.u);
+          connect(IT_Equipment_127.u, Gain_IT_Equipment_127.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_6C */
+          connect(cable_rcpt_cktL3_6C.n, cable_mels_L3_C.p);
+
+        /* MEL_Connect IT_Equipment_124 rcpt_ckt-L3_5C */
+          connect(IT_Equipment_124.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_124.p2, IT_Equipment_124.p);
+          connect(MEL_Conv_IT_Equipment_124.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_124.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_124.p1, cable_rcpt_cktL3_5C.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_124.u);
+          connect(IT_Equipment_124.u, Gain_IT_Equipment_124.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_5C */
+          connect(cable_rcpt_cktL3_5C.n, cable_mels_L3_C.p);
+
+        /* MEL_Connect IT_Equipment_122 rcpt_ckt-L3_4C */
+          connect(IT_Equipment_122.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_122.p2, IT_Equipment_122.p);
+          connect(MEL_Conv_IT_Equipment_122.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_122.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_122.p1, cable_rcpt_cktL3_4C.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_122.u);
+          connect(IT_Equipment_122.u, Gain_IT_Equipment_122.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_4C */
+          connect(cable_rcpt_cktL3_4C.n, cable_mels_L3_C.p);
+
+        /* MEL_Connect IT_Equipment_118 rcpt_ckt-L3_3C */
+          connect(IT_Equipment_118.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_118.p2, IT_Equipment_118.p);
+          connect(MEL_Conv_IT_Equipment_118.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_118.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_118.p1, cable_rcpt_cktL3_3C.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_118.u);
+          connect(IT_Equipment_118.u, Gain_IT_Equipment_118.y);
+
+        /* MEL_Connect IT_Equipment_117 rcpt_ckt-L3_3C */
+          connect(IT_Equipment_117.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_117.p2, IT_Equipment_117.p);
+          connect(MEL_Conv_IT_Equipment_117.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_117.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_117.p1, cable_rcpt_cktL3_3C.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_117.u);
+          connect(IT_Equipment_117.u, Gain_IT_Equipment_117.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_3C */
+          connect(cable_rcpt_cktL3_3C.n, cable_mels_L3_C.p);
+
+        /* MEL_Connect IT_Equipment_112 rcpt_ckt-L3_1C */
+          connect(IT_Equipment_112.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_112.p2, IT_Equipment_112.p);
+          connect(MEL_Conv_IT_Equipment_112.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_112.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_112.p1, cable_rcpt_cktL3_1C.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_112.u);
+          connect(IT_Equipment_112.u, Gain_IT_Equipment_112.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_1C */
+          connect(cable_rcpt_cktL3_1C.n, cable_mels_L3_C.p);
+
+        /* MEL_Connect IT_Equipment_160 rcpt_ckt-L3_13C */
+          connect(IT_Equipment_160.n, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_160.p2, IT_Equipment_160.p);
+          connect(MEL_Conv_IT_Equipment_160.n1, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_160.n2, GndDC.p);
+          connect(MEL_Conv_IT_Equipment_160.p1, cable_rcpt_cktL3_13C.p);
+          connect(combiTimeTable_L3_IT_Equipment.y[1], Gain_IT_Equipment_160.u);
+          connect(IT_Equipment_160.u, Gain_IT_Equipment_160.y);
+
+        /* MEL_Connect Display_15 rcpt_ckt-L3_13C */
+          connect(Display_15.n, GndDC.p);
+          connect(MEL_Conv_Display_15.p2, Display_15.p);
+          connect(MEL_Conv_Display_15.n1, GndDC.p);
+          connect(MEL_Conv_Display_15.n2, GndDC.p);
+          connect(MEL_Conv_Display_15.p1, cable_rcpt_cktL3_13C.p);
+          connect(combiTimeTable_L3_Display.y[1], Gain_Display_15.u);
+          connect(Display_15.u, Gain_Display_15.y);
+
+        /* MEL_Connect  cable_rcpt_ckt-L3_13C */
+          connect(cable_rcpt_cktL3_13C.n, cable_mels_L3_C.p);
+
+          connect(cable_mels_L3_C.n, p) annotation (Line(points={{-58,2},{-74,2},{-74,0},
+                  {-104,0}}, color={0,0,255}));
+          annotation ();
+        end large_AC_MEL_Panel_L3C;
+      end Large_MELs;
+
+      package Small_MELs
+        model SmallDC_MEL_Panel_L1A
+          outer parameter Real PF;
+          outer parameter Real PF1;
+          /* parameter Real PF = 0.9; */
+
+          outer HPF.SystemDef systemDef;
+          Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+            Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Laptop(
+            tableOnFile=true,
+            tableName="L1-All-Laptops",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-60,72},{-40,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Monitor(
+            tableOnFile=true,
+            tableName="L1-All-Monitors",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{10,72},{30,92}})));
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_laptop(V = 19.5, alpha = 2.0773, beta = 0.025225, gamma = 0.0032425);
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_monitor(V = 19.5, alpha = 1.67642, beta = 0.025225, gamma = 0.0040178);
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 14.2661328, beta = -0.004643965, gamma = 0.0000295798);
+
+        /* Insert models here */
+
+        /* AC/DC Converter L1_Conv_8 */
+          HPF.DC.DC2DC_Converters.StepDown L1_Conv_8(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L1_Conv_8(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=12.48);
+
+        /* MEL_Model Monitor_8 - L1_Conv_8 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_8(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_8;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_8(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_8(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_10 - L1_Conv_8 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_10(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_10;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_10(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_10(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_9 - L1_Conv_8 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_9(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_9;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_9(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_9(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_7 - L1_Conv_8 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_7(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_7;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_7(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_7(modelData = modelData_monitor);
+
+        /* AC/DC Converter L1_Conv_7 */
+          HPF.DC.DC2DC_Converters.StepDown L1_Conv_7(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L1_Conv_7(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=15.32);
+
+        /* MEL_Model Monitor_3 - L1_Conv_7 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_3(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_3;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_3(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_3(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_4 - L1_Conv_7 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_4(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_4;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_4(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_4(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_3 - L1_Conv_7 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_3(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_3;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_3(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_3(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_2 - L1_Conv_7 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_2(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_2;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_2(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_2(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_6 - L1_Conv_7 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_6(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_6;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_6(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_6(modelData = modelData_laptop);
+
+        /* AC/DC Converter L1_Conv_6 */
+          HPF.DC.DC2DC_Converters.StepDown L1_Conv_6(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L1_Conv_6(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=20.21);
+
+        /* MEL_Model Laptop_5 - L1_Conv_6 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_5(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_5;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_5(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_5(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_4 - L1_Conv_6 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_4(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_4;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_4(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_4(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_13 - L1_Conv_6 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_13(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_13;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_13(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_13(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_11 - L1_Conv_6 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_11(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_11;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_11(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_11(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_12 - L1_Conv_6 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_12(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_12;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_12(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_12(modelData = modelData_laptop);
+
+        /* AC/DC Converter L1_Conv_5 */
+          HPF.DC.DC2DC_Converters.StepDown L1_Conv_5(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L1_Conv_5(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=23.06);
+
+        /* MEL_Model Laptop_19 - L1_Conv_5 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_19(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_19;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_19(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_19(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_20 - L1_Conv_5 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_20(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_20;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_20(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_20(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_18 - L1_Conv_5 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_18(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_18;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_18(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_18(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_17 - L1_Conv_5 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_17(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_17;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_17(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_17(modelData = modelData_laptop);
+
+        /* AC/DC Converter L1_Conv_4 */
+          HPF.DC.DC2DC_Converters.StepDown L1_Conv_4(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L1_Conv_4(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=19.63);
+
+        /* MEL_Model Monitor_11 - L1_Conv_4 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_11(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_11;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_11(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_11(modelData = modelData_monitor);
+
+        /* AC/DC Converter L1_Conv_3 */
+          HPF.DC.DC2DC_Converters.StepDown L1_Conv_3(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L1_Conv_3(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=19.6);
+
+        /* MEL_Model Laptop_16 - L1_Conv_3 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_16(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_16;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_16(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_16(modelData = modelData_laptop);
+
+        /* AC/DC Converter L1_Conv_2 */
+          HPF.DC.DC2DC_Converters.StepDown L1_Conv_2(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L1_Conv_2(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=21.04);
+
+        /* MEL_Model Monitor_10 - L1_Conv_2 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_10(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_10;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_10(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_10(modelData = modelData_monitor);
+
+        /* AC/DC Converter L1_Conv_1 */
+          HPF.DC.DC2DC_Converters.StepDown L1_Conv_1(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L1_Conv_1(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=27.79);
+
+        /* MEL_Model Laptop_14 - L1_Conv_1 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_14(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_14;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_14(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_14(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_15 - L1_Conv_1 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_15(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_15;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_15(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_15(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_9 - L1_Conv_1 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_9(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_9;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_9(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_9(modelData = modelData_monitor);
+
+          Modelica.Electrical.Analog.Interfaces.PositivePin p
+            "Positive electrical pin of port 1" annotation (Placement(transformation(
+                  extent={{-114,-36},{-94,-16}}),
+                                                iconTransformation(extent={{-110,90},{-90,
+                    110}})));
+          HPF.Cables.NEC_CableModelDC cable_mels_L1_A(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+              length=15) annotation (Placement(visible=true, transformation(
+                origin={-50,-22},
+                extent={{10,-10},{-10,10}},
+                rotation=0)));
+        equation
+
+        /* Insert equation here */
+
+        /* DC/DC Converter L1_Conv_8 */
+          connect(cable_L1_Conv_8.n,cable_mels_L1_A.p);
+          connect(L1_Conv_8.p1,  cable_L1_Conv_8.p);
+          connect(L1_Conv_8.n1, GndDC.p);
+          connect(L1_Conv_8.n2, GndDC.p);
+
+        /* MEL Connections Monitor_8 - L1_Conv_8 */
+          connect(MEL_Converter_Monitor_8.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_8.n1, GndDC.p);
+          connect(Monitor_8.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_8.u);
+          connect(Monitor_8.u, Gain_Monitor_8.y);
+          connect(Monitor_8.p, MEL_Converter_Monitor_8.p2);
+          connect(MEL_Converter_Monitor_8.p1, cable_MEL_Monitor_8.p);
+          connect(L1_Conv_8.p2, cable_MEL_Monitor_8.n);
+
+        /* MEL Connections Laptop_10 - L1_Conv_8 */
+          connect(MEL_Converter_Laptop_10.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_10.n1, GndDC.p);
+          connect(Laptop_10.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_10.u);
+          connect(Laptop_10.u, Gain_Laptop_10.y);
+          connect(Laptop_10.p, MEL_Converter_Laptop_10.p2);
+          connect(MEL_Converter_Laptop_10.p1, cable_MEL_Laptop_10.p);
+          connect(L1_Conv_8.p2, cable_MEL_Laptop_10.n);
+
+        /* MEL Connections Laptop_9 - L1_Conv_8 */
+          connect(MEL_Converter_Laptop_9.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_9.n1, GndDC.p);
+          connect(Laptop_9.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_9.u);
+          connect(Laptop_9.u, Gain_Laptop_9.y);
+          connect(Laptop_9.p, MEL_Converter_Laptop_9.p2);
+          connect(MEL_Converter_Laptop_9.p1, cable_MEL_Laptop_9.p);
+          connect(L1_Conv_8.p2, cable_MEL_Laptop_9.n);
+
+        /* MEL Connections Monitor_7 - L1_Conv_8 */
+          connect(MEL_Converter_Monitor_7.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_7.n1, GndDC.p);
+          connect(Monitor_7.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_7.u);
+          connect(Monitor_7.u, Gain_Monitor_7.y);
+          connect(Monitor_7.p, MEL_Converter_Monitor_7.p2);
+          connect(MEL_Converter_Monitor_7.p1, cable_MEL_Monitor_7.p);
+          connect(L1_Conv_8.p2, cable_MEL_Monitor_7.n);
+
+        /* DC/DC Converter L1_Conv_7 */
+          connect(cable_L1_Conv_7.n,cable_mels_L1_A.p);
+          connect(L1_Conv_7.p1,  cable_L1_Conv_7.p);
+          connect(L1_Conv_7.n1, GndDC.p);
+          connect(L1_Conv_7.n2, GndDC.p);
+
+        /* MEL Connections Monitor_3 - L1_Conv_7 */
+          connect(MEL_Converter_Monitor_3.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_3.n1, GndDC.p);
+          connect(Monitor_3.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_3.u);
+          connect(Monitor_3.u, Gain_Monitor_3.y);
+          connect(Monitor_3.p, MEL_Converter_Monitor_3.p2);
+          connect(MEL_Converter_Monitor_3.p1, cable_MEL_Monitor_3.p);
+          connect(L1_Conv_7.p2, cable_MEL_Monitor_3.n);
+
+        /* MEL Connections Laptop_4 - L1_Conv_7 */
+          connect(MEL_Converter_Laptop_4.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_4.n1, GndDC.p);
+          connect(Laptop_4.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_4.u);
+          connect(Laptop_4.u, Gain_Laptop_4.y);
+          connect(Laptop_4.p, MEL_Converter_Laptop_4.p2);
+          connect(MEL_Converter_Laptop_4.p1, cable_MEL_Laptop_4.p);
+          connect(L1_Conv_7.p2, cable_MEL_Laptop_4.n);
+
+        /* MEL Connections Laptop_3 - L1_Conv_7 */
+          connect(MEL_Converter_Laptop_3.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_3.n1, GndDC.p);
+          connect(Laptop_3.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_3.u);
+          connect(Laptop_3.u, Gain_Laptop_3.y);
+          connect(Laptop_3.p, MEL_Converter_Laptop_3.p2);
+          connect(MEL_Converter_Laptop_3.p1, cable_MEL_Laptop_3.p);
+          connect(L1_Conv_7.p2, cable_MEL_Laptop_3.n);
+
+        /* MEL Connections Monitor_2 - L1_Conv_7 */
+          connect(MEL_Converter_Monitor_2.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_2.n1, GndDC.p);
+          connect(Monitor_2.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_2.u);
+          connect(Monitor_2.u, Gain_Monitor_2.y);
+          connect(Monitor_2.p, MEL_Converter_Monitor_2.p2);
+          connect(MEL_Converter_Monitor_2.p1, cable_MEL_Monitor_2.p);
+          connect(L1_Conv_7.p2, cable_MEL_Monitor_2.n);
+
+        /* MEL Connections Laptop_6 - L1_Conv_7 */
+          connect(MEL_Converter_Laptop_6.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_6.n1, GndDC.p);
+          connect(Laptop_6.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_6.u);
+          connect(Laptop_6.u, Gain_Laptop_6.y);
+          connect(Laptop_6.p, MEL_Converter_Laptop_6.p2);
+          connect(MEL_Converter_Laptop_6.p1, cable_MEL_Laptop_6.p);
+          connect(L1_Conv_7.p2, cable_MEL_Laptop_6.n);
+
+        /* DC/DC Converter L1_Conv_6 */
+          connect(cable_L1_Conv_6.n,cable_mels_L1_A.p);
+          connect(L1_Conv_6.p1,  cable_L1_Conv_6.p);
+          connect(L1_Conv_6.n1, GndDC.p);
+          connect(L1_Conv_6.n2, GndDC.p);
+
+        /* MEL Connections Laptop_5 - L1_Conv_6 */
+          connect(MEL_Converter_Laptop_5.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_5.n1, GndDC.p);
+          connect(Laptop_5.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_5.u);
+          connect(Laptop_5.u, Gain_Laptop_5.y);
+          connect(Laptop_5.p, MEL_Converter_Laptop_5.p2);
+          connect(MEL_Converter_Laptop_5.p1, cable_MEL_Laptop_5.p);
+          connect(L1_Conv_6.p2, cable_MEL_Laptop_5.n);
+
+        /* MEL Connections Monitor_4 - L1_Conv_6 */
+          connect(MEL_Converter_Monitor_4.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_4.n1, GndDC.p);
+          connect(Monitor_4.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_4.u);
+          connect(Monitor_4.u, Gain_Monitor_4.y);
+          connect(Monitor_4.p, MEL_Converter_Monitor_4.p2);
+          connect(MEL_Converter_Monitor_4.p1, cable_MEL_Monitor_4.p);
+          connect(L1_Conv_6.p2, cable_MEL_Monitor_4.n);
+
+        /* MEL Connections Laptop_13 - L1_Conv_6 */
+          connect(MEL_Converter_Laptop_13.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_13.n1, GndDC.p);
+          connect(Laptop_13.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_13.u);
+          connect(Laptop_13.u, Gain_Laptop_13.y);
+          connect(Laptop_13.p, MEL_Converter_Laptop_13.p2);
+          connect(MEL_Converter_Laptop_13.p1, cable_MEL_Laptop_13.p);
+          connect(L1_Conv_6.p2, cable_MEL_Laptop_13.n);
+
+        /* MEL Connections Laptop_11 - L1_Conv_6 */
+          connect(MEL_Converter_Laptop_11.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_11.n1, GndDC.p);
+          connect(Laptop_11.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_11.u);
+          connect(Laptop_11.u, Gain_Laptop_11.y);
+          connect(Laptop_11.p, MEL_Converter_Laptop_11.p2);
+          connect(MEL_Converter_Laptop_11.p1, cable_MEL_Laptop_11.p);
+          connect(L1_Conv_6.p2, cable_MEL_Laptop_11.n);
+
+        /* MEL Connections Laptop_12 - L1_Conv_6 */
+          connect(MEL_Converter_Laptop_12.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_12.n1, GndDC.p);
+          connect(Laptop_12.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_12.u);
+          connect(Laptop_12.u, Gain_Laptop_12.y);
+          connect(Laptop_12.p, MEL_Converter_Laptop_12.p2);
+          connect(MEL_Converter_Laptop_12.p1, cable_MEL_Laptop_12.p);
+          connect(L1_Conv_6.p2, cable_MEL_Laptop_12.n);
+
+        /* DC/DC Converter L1_Conv_5 */
+          connect(cable_L1_Conv_5.n,cable_mels_L1_A.p);
+          connect(L1_Conv_5.p1,  cable_L1_Conv_5.p);
+          connect(L1_Conv_5.n1, GndDC.p);
+          connect(L1_Conv_5.n2, GndDC.p);
+
+        /* MEL Connections Laptop_19 - L1_Conv_5 */
+          connect(MEL_Converter_Laptop_19.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_19.n1, GndDC.p);
+          connect(Laptop_19.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_19.u);
+          connect(Laptop_19.u, Gain_Laptop_19.y);
+          connect(Laptop_19.p, MEL_Converter_Laptop_19.p2);
+          connect(MEL_Converter_Laptop_19.p1, cable_MEL_Laptop_19.p);
+          connect(L1_Conv_5.p2, cable_MEL_Laptop_19.n);
+
+        /* MEL Connections Laptop_20 - L1_Conv_5 */
+          connect(MEL_Converter_Laptop_20.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_20.n1, GndDC.p);
+          connect(Laptop_20.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_20.u);
+          connect(Laptop_20.u, Gain_Laptop_20.y);
+          connect(Laptop_20.p, MEL_Converter_Laptop_20.p2);
+          connect(MEL_Converter_Laptop_20.p1, cable_MEL_Laptop_20.p);
+          connect(L1_Conv_5.p2, cable_MEL_Laptop_20.n);
+
+        /* MEL Connections Laptop_18 - L1_Conv_5 */
+          connect(MEL_Converter_Laptop_18.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_18.n1, GndDC.p);
+          connect(Laptop_18.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_18.u);
+          connect(Laptop_18.u, Gain_Laptop_18.y);
+          connect(Laptop_18.p, MEL_Converter_Laptop_18.p2);
+          connect(MEL_Converter_Laptop_18.p1, cable_MEL_Laptop_18.p);
+          connect(L1_Conv_5.p2, cable_MEL_Laptop_18.n);
+
+        /* MEL Connections Laptop_17 - L1_Conv_5 */
+          connect(MEL_Converter_Laptop_17.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_17.n1, GndDC.p);
+          connect(Laptop_17.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_17.u);
+          connect(Laptop_17.u, Gain_Laptop_17.y);
+          connect(Laptop_17.p, MEL_Converter_Laptop_17.p2);
+          connect(MEL_Converter_Laptop_17.p1, cable_MEL_Laptop_17.p);
+          connect(L1_Conv_5.p2, cable_MEL_Laptop_17.n);
+
+        /* DC/DC Converter L1_Conv_4 */
+          connect(cable_L1_Conv_4.n,cable_mels_L1_A.p);
+          connect(L1_Conv_4.p1,  cable_L1_Conv_4.p);
+          connect(L1_Conv_4.n1, GndDC.p);
+          connect(L1_Conv_4.n2, GndDC.p);
+
+        /* MEL Connections Monitor_11 - L1_Conv_4 */
+          connect(MEL_Converter_Monitor_11.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_11.n1, GndDC.p);
+          connect(Monitor_11.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_11.u);
+          connect(Monitor_11.u, Gain_Monitor_11.y);
+          connect(Monitor_11.p, MEL_Converter_Monitor_11.p2);
+          connect(MEL_Converter_Monitor_11.p1, cable_MEL_Monitor_11.p);
+          connect(L1_Conv_4.p2, cable_MEL_Monitor_11.n);
+
+        /* DC/DC Converter L1_Conv_3 */
+          connect(cable_L1_Conv_3.n,cable_mels_L1_A.p);
+          connect(L1_Conv_3.p1,  cable_L1_Conv_3.p);
+          connect(L1_Conv_3.n1, GndDC.p);
+          connect(L1_Conv_3.n2, GndDC.p);
+
+        /* MEL Connections Laptop_16 - L1_Conv_3 */
+          connect(MEL_Converter_Laptop_16.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_16.n1, GndDC.p);
+          connect(Laptop_16.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_16.u);
+          connect(Laptop_16.u, Gain_Laptop_16.y);
+          connect(Laptop_16.p, MEL_Converter_Laptop_16.p2);
+          connect(MEL_Converter_Laptop_16.p1, cable_MEL_Laptop_16.p);
+          connect(L1_Conv_3.p2, cable_MEL_Laptop_16.n);
+
+        /* DC/DC Converter L1_Conv_2 */
+          connect(cable_L1_Conv_2.n,cable_mels_L1_A.p);
+          connect(L1_Conv_2.p1,  cable_L1_Conv_2.p);
+          connect(L1_Conv_2.n1, GndDC.p);
+          connect(L1_Conv_2.n2, GndDC.p);
+
+        /* MEL Connections Monitor_10 - L1_Conv_2 */
+          connect(MEL_Converter_Monitor_10.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_10.n1, GndDC.p);
+          connect(Monitor_10.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_10.u);
+          connect(Monitor_10.u, Gain_Monitor_10.y);
+          connect(Monitor_10.p, MEL_Converter_Monitor_10.p2);
+          connect(MEL_Converter_Monitor_10.p1, cable_MEL_Monitor_10.p);
+          connect(L1_Conv_2.p2, cable_MEL_Monitor_10.n);
+
+        /* DC/DC Converter L1_Conv_1 */
+          connect(cable_L1_Conv_1.n,cable_mels_L1_A.p);
+          connect(L1_Conv_1.p1,  cable_L1_Conv_1.p);
+          connect(L1_Conv_1.n1, GndDC.p);
+          connect(L1_Conv_1.n2, GndDC.p);
+
+        /* MEL Connections Laptop_14 - L1_Conv_1 */
+          connect(MEL_Converter_Laptop_14.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_14.n1, GndDC.p);
+          connect(Laptop_14.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_14.u);
+          connect(Laptop_14.u, Gain_Laptop_14.y);
+          connect(Laptop_14.p, MEL_Converter_Laptop_14.p2);
+          connect(MEL_Converter_Laptop_14.p1, cable_MEL_Laptop_14.p);
+          connect(L1_Conv_1.p2, cable_MEL_Laptop_14.n);
+
+        /* MEL Connections Laptop_15 - L1_Conv_1 */
+          connect(MEL_Converter_Laptop_15.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_15.n1, GndDC.p);
+          connect(Laptop_15.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_15.u);
+          connect(Laptop_15.u, Gain_Laptop_15.y);
+          connect(Laptop_15.p, MEL_Converter_Laptop_15.p2);
+          connect(MEL_Converter_Laptop_15.p1, cable_MEL_Laptop_15.p);
+          connect(L1_Conv_1.p2, cable_MEL_Laptop_15.n);
+
+        /* MEL Connections Monitor_9 - L1_Conv_1 */
+          connect(MEL_Converter_Monitor_9.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_9.n1, GndDC.p);
+          connect(Monitor_9.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_9.u);
+          connect(Monitor_9.u, Gain_Monitor_9.y);
+          connect(Monitor_9.p, MEL_Converter_Monitor_9.p2);
+          connect(MEL_Converter_Monitor_9.p1, cable_MEL_Monitor_9.p);
+          connect(L1_Conv_1.p2, cable_MEL_Monitor_9.n);
+
+          connect(cable_mels_L1_A.n, p) annotation (Line(points={{-60,-22},{-68,-22},{
+                  -68,-24},{-104,-24},{-104,-26}}, color={0,0,255}));
+          annotation ();
+        end SmallDC_MEL_Panel_L1A;
+
+        model SmallDC_MEL_Panel_L1B
+          outer parameter Real PF;
+          outer parameter Real PF1;
+          /* parameter Real PF = 0.9; */
+
+          outer HPF.SystemDef systemDef;
+          Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+            Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Laptop(
+            tableOnFile=true,
+            tableName="L1-All-Laptops",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-60,72},{-40,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Monitor(
+            tableOnFile=true,
+            tableName="L1-All-Monitors",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{10,72},{30,92}})));
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_laptop(V = 19.5, alpha = 2.0773, beta = 0.025225, gamma = 0.0032425);
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_monitor(V = 19.5, alpha = 1.67642, beta = 0.025225, gamma = 0.0040178);
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 14.2661328, beta = -0.004643965, gamma = 0.0000295798);
+
+        /* Insert models here */
+
+        /* AC/DC Converter L1_Conv_9 */
+          HPF.DC.DC2DC_Converters.StepDown L1_Conv_9(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L1_Conv_9(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=12.65);
+
+        /* MEL_Model Monitor_6 - L1_Conv_9 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_6(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_6;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_6(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_6(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_8 - L1_Conv_9 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_8(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_8;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_8(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_8(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_7 - L1_Conv_9 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_7(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_7;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_7(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_7(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_5 - L1_Conv_9 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_5(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_5;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_5(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_5(modelData = modelData_monitor);
+
+        /* AC/DC Converter L1_Conv_15 */
+          HPF.DC.DC2DC_Converters.StepDown L1_Conv_15(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L1_Conv_15(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=29.76);
+
+        /* MEL_Model Laptop_38 - L1_Conv_15 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_38(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_38;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_38(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_38(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_27 - L1_Conv_15 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_27(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_27;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_27(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_27(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_39 - L1_Conv_15 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_39(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_39;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_39(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_39(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_33 - L1_Conv_15 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_33(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_33;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_33(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_33(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_50 - L1_Conv_15 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_50(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_50;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_50(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_50(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_49 - L1_Conv_15 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_49(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_49;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_49(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_49(modelData = modelData_laptop);
+
+        /* AC/DC Converter L1_Conv_14 */
+          HPF.DC.DC2DC_Converters.StepDown L1_Conv_14(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L1_Conv_14(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=18.47);
+
+        /* MEL_Model Monitor_17 - L1_Conv_14 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_17(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_17;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_17(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_17(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_19 - L1_Conv_14 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_19(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_19;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_19(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_19(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_30 - L1_Conv_14 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_30(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_30;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_30(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_30(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_27 - L1_Conv_14 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_27(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_27;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_27(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_27(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_29 - L1_Conv_14 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_29(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_29;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_29(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_29(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_26 - L1_Conv_14 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_26(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_26;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_26(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_26(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_28 - L1_Conv_14 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_28(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_28;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_28(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_28(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_16 - L1_Conv_14 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_16(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_16;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_16(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_16(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_18 - L1_Conv_14 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_18(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_18;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_18(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_18(modelData = modelData_monitor);
+
+        /* AC/DC Converter L1_Conv_13 */
+          HPF.DC.DC2DC_Converters.StepDown L1_Conv_13(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L1_Conv_13(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=15.49);
+
+        /* MEL_Model Laptop_2 - L1_Conv_13 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_2(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_2;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_2(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_2(modelData = modelData_laptop);
+
+        /* AC/DC Converter L1_Conv_10 */
+          HPF.DC.DC2DC_Converters.StepDown L1_Conv_10(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L1_Conv_10(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=16.14);
+
+        /* MEL_Model Monitor_21 - L1_Conv_10 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_21(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_21;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_21(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_21(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_23 - L1_Conv_10 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_23(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_23;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_23(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_23(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_32 - L1_Conv_10 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_32(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_32;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_32(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_32(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_34 - L1_Conv_10 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_34(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_34;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_34(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_34(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_31 - L1_Conv_10 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_31(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_31;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_31(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_31(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_33 - L1_Conv_10 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_33(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_33;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_33(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_33(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_20 - L1_Conv_10 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_20(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_20;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_20(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_20(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_22 - L1_Conv_10 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_22(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_22;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_22(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_22(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_1 - L1_Conv_10 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_1(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_1;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_1(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_1(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_1 - L1_Conv_10 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_1(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_1;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_1(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_1(modelData = modelData_laptop);
+
+          Modelica.Electrical.Analog.Interfaces.PositivePin p
+            "Positive electrical pin of port 1" annotation (Placement(transformation(
+                  extent={{-114,-36},{-94,-16}}),
+                                                iconTransformation(extent={{-110,90},{-90,
+                    110}})));
+          HPF.Cables.NEC_CableModelDC cable_mels_L1_B(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+              length=15) annotation (Placement(visible=true, transformation(
+                origin={-50,-22},
+                extent={{10,-10},{-10,10}},
+                rotation=0)));
+        equation
+
+        /* Insert equation here */
+
+        /* DC/DC Converter L1_Conv_9 */
+          connect(cable_L1_Conv_9.n,cable_mels_L1_B.p);
+          connect(L1_Conv_9.p1,  cable_L1_Conv_9.p);
+          connect(L1_Conv_9.n1, GndDC.p);
+          connect(L1_Conv_9.n2, GndDC.p);
+
+        /* MEL Connections Monitor_6 - L1_Conv_9 */
+          connect(MEL_Converter_Monitor_6.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_6.n1, GndDC.p);
+          connect(Monitor_6.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_6.u);
+          connect(Monitor_6.u, Gain_Monitor_6.y);
+          connect(Monitor_6.p, MEL_Converter_Monitor_6.p2);
+          connect(MEL_Converter_Monitor_6.p1, cable_MEL_Monitor_6.p);
+          connect(L1_Conv_9.p2, cable_MEL_Monitor_6.n);
+
+        /* MEL Connections Laptop_8 - L1_Conv_9 */
+          connect(MEL_Converter_Laptop_8.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_8.n1, GndDC.p);
+          connect(Laptop_8.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_8.u);
+          connect(Laptop_8.u, Gain_Laptop_8.y);
+          connect(Laptop_8.p, MEL_Converter_Laptop_8.p2);
+          connect(MEL_Converter_Laptop_8.p1, cable_MEL_Laptop_8.p);
+          connect(L1_Conv_9.p2, cable_MEL_Laptop_8.n);
+
+        /* MEL Connections Laptop_7 - L1_Conv_9 */
+          connect(MEL_Converter_Laptop_7.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_7.n1, GndDC.p);
+          connect(Laptop_7.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_7.u);
+          connect(Laptop_7.u, Gain_Laptop_7.y);
+          connect(Laptop_7.p, MEL_Converter_Laptop_7.p2);
+          connect(MEL_Converter_Laptop_7.p1, cable_MEL_Laptop_7.p);
+          connect(L1_Conv_9.p2, cable_MEL_Laptop_7.n);
+
+        /* MEL Connections Monitor_5 - L1_Conv_9 */
+          connect(MEL_Converter_Monitor_5.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_5.n1, GndDC.p);
+          connect(Monitor_5.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_5.u);
+          connect(Monitor_5.u, Gain_Monitor_5.y);
+          connect(Monitor_5.p, MEL_Converter_Monitor_5.p2);
+          connect(MEL_Converter_Monitor_5.p1, cable_MEL_Monitor_5.p);
+          connect(L1_Conv_9.p2, cable_MEL_Monitor_5.n);
+
+        /* DC/DC Converter L1_Conv_15 */
+          connect(cable_L1_Conv_15.n,cable_mels_L1_B.p);
+          connect(L1_Conv_15.p1,  cable_L1_Conv_15.p);
+          connect(L1_Conv_15.n1, GndDC.p);
+          connect(L1_Conv_15.n2, GndDC.p);
+
+        /* MEL Connections Laptop_38 - L1_Conv_15 */
+          connect(MEL_Converter_Laptop_38.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_38.n1, GndDC.p);
+          connect(Laptop_38.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_38.u);
+          connect(Laptop_38.u, Gain_Laptop_38.y);
+          connect(Laptop_38.p, MEL_Converter_Laptop_38.p2);
+          connect(MEL_Converter_Laptop_38.p1, cable_MEL_Laptop_38.p);
+          connect(L1_Conv_15.p2, cable_MEL_Laptop_38.n);
+
+        /* MEL Connections Monitor_27 - L1_Conv_15 */
+          connect(MEL_Converter_Monitor_27.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_27.n1, GndDC.p);
+          connect(Monitor_27.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_27.u);
+          connect(Monitor_27.u, Gain_Monitor_27.y);
+          connect(Monitor_27.p, MEL_Converter_Monitor_27.p2);
+          connect(MEL_Converter_Monitor_27.p1, cable_MEL_Monitor_27.p);
+          connect(L1_Conv_15.p2, cable_MEL_Monitor_27.n);
+
+        /* MEL Connections Laptop_39 - L1_Conv_15 */
+          connect(MEL_Converter_Laptop_39.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_39.n1, GndDC.p);
+          connect(Laptop_39.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_39.u);
+          connect(Laptop_39.u, Gain_Laptop_39.y);
+          connect(Laptop_39.p, MEL_Converter_Laptop_39.p2);
+          connect(MEL_Converter_Laptop_39.p1, cable_MEL_Laptop_39.p);
+          connect(L1_Conv_15.p2, cable_MEL_Laptop_39.n);
+
+        /* MEL Connections Monitor_33 - L1_Conv_15 */
+          connect(MEL_Converter_Monitor_33.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_33.n1, GndDC.p);
+          connect(Monitor_33.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_33.u);
+          connect(Monitor_33.u, Gain_Monitor_33.y);
+          connect(Monitor_33.p, MEL_Converter_Monitor_33.p2);
+          connect(MEL_Converter_Monitor_33.p1, cable_MEL_Monitor_33.p);
+          connect(L1_Conv_15.p2, cable_MEL_Monitor_33.n);
+
+        /* MEL Connections Laptop_50 - L1_Conv_15 */
+          connect(MEL_Converter_Laptop_50.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_50.n1, GndDC.p);
+          connect(Laptop_50.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_50.u);
+          connect(Laptop_50.u, Gain_Laptop_50.y);
+          connect(Laptop_50.p, MEL_Converter_Laptop_50.p2);
+          connect(MEL_Converter_Laptop_50.p1, cable_MEL_Laptop_50.p);
+          connect(L1_Conv_15.p2, cable_MEL_Laptop_50.n);
+
+        /* MEL Connections Laptop_49 - L1_Conv_15 */
+          connect(MEL_Converter_Laptop_49.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_49.n1, GndDC.p);
+          connect(Laptop_49.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_49.u);
+          connect(Laptop_49.u, Gain_Laptop_49.y);
+          connect(Laptop_49.p, MEL_Converter_Laptop_49.p2);
+          connect(MEL_Converter_Laptop_49.p1, cable_MEL_Laptop_49.p);
+          connect(L1_Conv_15.p2, cable_MEL_Laptop_49.n);
+
+        /* DC/DC Converter L1_Conv_14 */
+          connect(cable_L1_Conv_14.n,cable_mels_L1_B.p);
+          connect(L1_Conv_14.p1,  cable_L1_Conv_14.p);
+          connect(L1_Conv_14.n1, GndDC.p);
+          connect(L1_Conv_14.n2, GndDC.p);
+
+        /* MEL Connections Monitor_17 - L1_Conv_14 */
+          connect(MEL_Converter_Monitor_17.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_17.n1, GndDC.p);
+          connect(Monitor_17.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_17.u);
+          connect(Monitor_17.u, Gain_Monitor_17.y);
+          connect(Monitor_17.p, MEL_Converter_Monitor_17.p2);
+          connect(MEL_Converter_Monitor_17.p1, cable_MEL_Monitor_17.p);
+          connect(L1_Conv_14.p2, cable_MEL_Monitor_17.n);
+
+        /* MEL Connections Monitor_19 - L1_Conv_14 */
+          connect(MEL_Converter_Monitor_19.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_19.n1, GndDC.p);
+          connect(Monitor_19.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_19.u);
+          connect(Monitor_19.u, Gain_Monitor_19.y);
+          connect(Monitor_19.p, MEL_Converter_Monitor_19.p2);
+          connect(MEL_Converter_Monitor_19.p1, cable_MEL_Monitor_19.p);
+          connect(L1_Conv_14.p2, cable_MEL_Monitor_19.n);
+
+        /* MEL Connections Laptop_30 - L1_Conv_14 */
+          connect(MEL_Converter_Laptop_30.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_30.n1, GndDC.p);
+          connect(Laptop_30.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_30.u);
+          connect(Laptop_30.u, Gain_Laptop_30.y);
+          connect(Laptop_30.p, MEL_Converter_Laptop_30.p2);
+          connect(MEL_Converter_Laptop_30.p1, cable_MEL_Laptop_30.p);
+          connect(L1_Conv_14.p2, cable_MEL_Laptop_30.n);
+
+        /* MEL Connections Laptop_27 - L1_Conv_14 */
+          connect(MEL_Converter_Laptop_27.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_27.n1, GndDC.p);
+          connect(Laptop_27.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_27.u);
+          connect(Laptop_27.u, Gain_Laptop_27.y);
+          connect(Laptop_27.p, MEL_Converter_Laptop_27.p2);
+          connect(MEL_Converter_Laptop_27.p1, cable_MEL_Laptop_27.p);
+          connect(L1_Conv_14.p2, cable_MEL_Laptop_27.n);
+
+        /* MEL Connections Laptop_29 - L1_Conv_14 */
+          connect(MEL_Converter_Laptop_29.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_29.n1, GndDC.p);
+          connect(Laptop_29.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_29.u);
+          connect(Laptop_29.u, Gain_Laptop_29.y);
+          connect(Laptop_29.p, MEL_Converter_Laptop_29.p2);
+          connect(MEL_Converter_Laptop_29.p1, cable_MEL_Laptop_29.p);
+          connect(L1_Conv_14.p2, cable_MEL_Laptop_29.n);
+
+        /* MEL Connections Laptop_26 - L1_Conv_14 */
+          connect(MEL_Converter_Laptop_26.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_26.n1, GndDC.p);
+          connect(Laptop_26.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_26.u);
+          connect(Laptop_26.u, Gain_Laptop_26.y);
+          connect(Laptop_26.p, MEL_Converter_Laptop_26.p2);
+          connect(MEL_Converter_Laptop_26.p1, cable_MEL_Laptop_26.p);
+          connect(L1_Conv_14.p2, cable_MEL_Laptop_26.n);
+
+        /* MEL Connections Laptop_28 - L1_Conv_14 */
+          connect(MEL_Converter_Laptop_28.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_28.n1, GndDC.p);
+          connect(Laptop_28.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_28.u);
+          connect(Laptop_28.u, Gain_Laptop_28.y);
+          connect(Laptop_28.p, MEL_Converter_Laptop_28.p2);
+          connect(MEL_Converter_Laptop_28.p1, cable_MEL_Laptop_28.p);
+          connect(L1_Conv_14.p2, cable_MEL_Laptop_28.n);
+
+        /* MEL Connections Monitor_16 - L1_Conv_14 */
+          connect(MEL_Converter_Monitor_16.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_16.n1, GndDC.p);
+          connect(Monitor_16.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_16.u);
+          connect(Monitor_16.u, Gain_Monitor_16.y);
+          connect(Monitor_16.p, MEL_Converter_Monitor_16.p2);
+          connect(MEL_Converter_Monitor_16.p1, cable_MEL_Monitor_16.p);
+          connect(L1_Conv_14.p2, cable_MEL_Monitor_16.n);
+
+        /* MEL Connections Monitor_18 - L1_Conv_14 */
+          connect(MEL_Converter_Monitor_18.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_18.n1, GndDC.p);
+          connect(Monitor_18.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_18.u);
+          connect(Monitor_18.u, Gain_Monitor_18.y);
+          connect(Monitor_18.p, MEL_Converter_Monitor_18.p2);
+          connect(MEL_Converter_Monitor_18.p1, cable_MEL_Monitor_18.p);
+          connect(L1_Conv_14.p2, cable_MEL_Monitor_18.n);
+
+        /* DC/DC Converter L1_Conv_13 */
+          connect(cable_L1_Conv_13.n,cable_mels_L1_B.p);
+          connect(L1_Conv_13.p1,  cable_L1_Conv_13.p);
+          connect(L1_Conv_13.n1, GndDC.p);
+          connect(L1_Conv_13.n2, GndDC.p);
+
+        /* MEL Connections Laptop_2 - L1_Conv_13 */
+          connect(MEL_Converter_Laptop_2.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_2.n1, GndDC.p);
+          connect(Laptop_2.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_2.u);
+          connect(Laptop_2.u, Gain_Laptop_2.y);
+          connect(Laptop_2.p, MEL_Converter_Laptop_2.p2);
+          connect(MEL_Converter_Laptop_2.p1, cable_MEL_Laptop_2.p);
+          connect(L1_Conv_13.p2, cable_MEL_Laptop_2.n);
+
+        /* DC/DC Converter L1_Conv_10 */
+          connect(cable_L1_Conv_10.n,cable_mels_L1_B.p);
+          connect(L1_Conv_10.p1,  cable_L1_Conv_10.p);
+          connect(L1_Conv_10.n1, GndDC.p);
+          connect(L1_Conv_10.n2, GndDC.p);
+
+        /* MEL Connections Monitor_21 - L1_Conv_10 */
+          connect(MEL_Converter_Monitor_21.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_21.n1, GndDC.p);
+          connect(Monitor_21.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_21.u);
+          connect(Monitor_21.u, Gain_Monitor_21.y);
+          connect(Monitor_21.p, MEL_Converter_Monitor_21.p2);
+          connect(MEL_Converter_Monitor_21.p1, cable_MEL_Monitor_21.p);
+          connect(L1_Conv_10.p2, cable_MEL_Monitor_21.n);
+
+        /* MEL Connections Monitor_23 - L1_Conv_10 */
+          connect(MEL_Converter_Monitor_23.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_23.n1, GndDC.p);
+          connect(Monitor_23.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_23.u);
+          connect(Monitor_23.u, Gain_Monitor_23.y);
+          connect(Monitor_23.p, MEL_Converter_Monitor_23.p2);
+          connect(MEL_Converter_Monitor_23.p1, cable_MEL_Monitor_23.p);
+          connect(L1_Conv_10.p2, cable_MEL_Monitor_23.n);
+
+        /* MEL Connections Laptop_32 - L1_Conv_10 */
+          connect(MEL_Converter_Laptop_32.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_32.n1, GndDC.p);
+          connect(Laptop_32.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_32.u);
+          connect(Laptop_32.u, Gain_Laptop_32.y);
+          connect(Laptop_32.p, MEL_Converter_Laptop_32.p2);
+          connect(MEL_Converter_Laptop_32.p1, cable_MEL_Laptop_32.p);
+          connect(L1_Conv_10.p2, cable_MEL_Laptop_32.n);
+
+        /* MEL Connections Laptop_34 - L1_Conv_10 */
+          connect(MEL_Converter_Laptop_34.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_34.n1, GndDC.p);
+          connect(Laptop_34.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_34.u);
+          connect(Laptop_34.u, Gain_Laptop_34.y);
+          connect(Laptop_34.p, MEL_Converter_Laptop_34.p2);
+          connect(MEL_Converter_Laptop_34.p1, cable_MEL_Laptop_34.p);
+          connect(L1_Conv_10.p2, cable_MEL_Laptop_34.n);
+
+        /* MEL Connections Laptop_31 - L1_Conv_10 */
+          connect(MEL_Converter_Laptop_31.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_31.n1, GndDC.p);
+          connect(Laptop_31.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_31.u);
+          connect(Laptop_31.u, Gain_Laptop_31.y);
+          connect(Laptop_31.p, MEL_Converter_Laptop_31.p2);
+          connect(MEL_Converter_Laptop_31.p1, cable_MEL_Laptop_31.p);
+          connect(L1_Conv_10.p2, cable_MEL_Laptop_31.n);
+
+        /* MEL Connections Laptop_33 - L1_Conv_10 */
+          connect(MEL_Converter_Laptop_33.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_33.n1, GndDC.p);
+          connect(Laptop_33.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_33.u);
+          connect(Laptop_33.u, Gain_Laptop_33.y);
+          connect(Laptop_33.p, MEL_Converter_Laptop_33.p2);
+          connect(MEL_Converter_Laptop_33.p1, cable_MEL_Laptop_33.p);
+          connect(L1_Conv_10.p2, cable_MEL_Laptop_33.n);
+
+        /* MEL Connections Monitor_20 - L1_Conv_10 */
+          connect(MEL_Converter_Monitor_20.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_20.n1, GndDC.p);
+          connect(Monitor_20.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_20.u);
+          connect(Monitor_20.u, Gain_Monitor_20.y);
+          connect(Monitor_20.p, MEL_Converter_Monitor_20.p2);
+          connect(MEL_Converter_Monitor_20.p1, cable_MEL_Monitor_20.p);
+          connect(L1_Conv_10.p2, cable_MEL_Monitor_20.n);
+
+        /* MEL Connections Monitor_22 - L1_Conv_10 */
+          connect(MEL_Converter_Monitor_22.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_22.n1, GndDC.p);
+          connect(Monitor_22.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_22.u);
+          connect(Monitor_22.u, Gain_Monitor_22.y);
+          connect(Monitor_22.p, MEL_Converter_Monitor_22.p2);
+          connect(MEL_Converter_Monitor_22.p1, cable_MEL_Monitor_22.p);
+          connect(L1_Conv_10.p2, cable_MEL_Monitor_22.n);
+
+        /* MEL Connections Monitor_1 - L1_Conv_10 */
+          connect(MEL_Converter_Monitor_1.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_1.n1, GndDC.p);
+          connect(Monitor_1.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_1.u);
+          connect(Monitor_1.u, Gain_Monitor_1.y);
+          connect(Monitor_1.p, MEL_Converter_Monitor_1.p2);
+          connect(MEL_Converter_Monitor_1.p1, cable_MEL_Monitor_1.p);
+          connect(L1_Conv_10.p2, cable_MEL_Monitor_1.n);
+
+        /* MEL Connections Laptop_1 - L1_Conv_10 */
+          connect(MEL_Converter_Laptop_1.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_1.n1, GndDC.p);
+          connect(Laptop_1.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_1.u);
+          connect(Laptop_1.u, Gain_Laptop_1.y);
+          connect(Laptop_1.p, MEL_Converter_Laptop_1.p2);
+          connect(MEL_Converter_Laptop_1.p1, cable_MEL_Laptop_1.p);
+          connect(L1_Conv_10.p2, cable_MEL_Laptop_1.n);
+
+          connect(cable_mels_L1_B.n, p) annotation (Line(points={{-60,-22},{-68,-22},{
+                  -68,-24},{-104,-24},{-104,-26}}, color={0,0,255}));
+          annotation ();
+        end SmallDC_MEL_Panel_L1B;
+
+        model SmallDC_MEL_Panel_L1C
+          outer parameter Real PF;
+          outer parameter Real PF1;
+          /* parameter Real PF = 0.9; */
+
+          outer HPF.SystemDef systemDef;
+          Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+            Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Laptop(
+            tableOnFile=true,
+            tableName="L1-All-Laptops",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-60,72},{-40,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Monitor(
+            tableOnFile=true,
+            tableName="L1-All-Monitors",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{10,72},{30,92}})));
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_laptop(V = 19.5, alpha = 2.0773, beta = 0.025225, gamma = 0.0032425);
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_monitor(V = 19.5, alpha = 1.67642, beta = 0.025225, gamma = 0.0040178);
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 14.2661328, beta = -0.004643965, gamma = 0.0000295798);
+
+        /* Insert models here */
+
+        /* AC/DC Converter L1_Conv_24 */
+          HPF.DC.DC2DC_Converters.StepDown L1_Conv_24(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L1_Conv_24(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=37.62);
+
+        /* MEL_Model Laptop_42 - L1_Conv_24 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_42(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_42;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_42(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_42(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_30 - L1_Conv_24 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_30(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_30;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_30(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_30(modelData = modelData_monitor);
+
+        /* AC/DC Converter L1_Conv_23 */
+          HPF.DC.DC2DC_Converters.StepDown L1_Conv_23(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L1_Conv_23(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=38.01);
+
+        /* MEL_Model Laptop_43 - L1_Conv_23 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_43(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_43;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_43(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_43(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_44 - L1_Conv_23 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_44(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_44;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_44(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_44(modelData = modelData_laptop);
+
+        /* AC/DC Converter L1_Conv_22 */
+          HPF.DC.DC2DC_Converters.StepDown L1_Conv_22(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L1_Conv_22(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=35.15);
+
+        /* MEL_Model Monitor_31 - L1_Conv_22 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_31(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_31;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_31(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_31(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_45 - L1_Conv_22 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_45(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_45;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_45(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_45(modelData = modelData_laptop);
+
+        /* AC/DC Converter L1_Conv_21 */
+          HPF.DC.DC2DC_Converters.StepDown L1_Conv_21(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L1_Conv_21(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=36.88);
+
+        /* MEL_Model Laptop_46 - L1_Conv_21 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_46(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_46;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_46(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_46(modelData = modelData_laptop);
+
+        /* AC/DC Converter L1_Conv_20 */
+          HPF.DC.DC2DC_Converters.StepDown L1_Conv_20(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L1_Conv_20(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=40.9);
+
+        /* MEL_Model Laptop_47 - L1_Conv_20 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_47(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_47;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_47(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_47(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_32 - L1_Conv_20 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_32(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_32;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_32(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_32(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_48 - L1_Conv_20 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_48(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_48;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_48(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_48(modelData = modelData_laptop);
+
+        /* AC/DC Converter L1_Conv_19 */
+          HPF.DC.DC2DC_Converters.StepDown L1_Conv_19(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L1_Conv_19(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=29.77);
+
+        /* MEL_Model Monitor_13 - L1_Conv_19 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_13(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_13;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_13(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_13(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_15 - L1_Conv_19 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_15(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_15;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_15(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_15(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_23 - L1_Conv_19 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_23(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_23;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_23(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_23(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_25 - L1_Conv_19 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_25(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_25;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_25(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_25(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_21 - L1_Conv_19 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_21(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_21;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_21(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_21(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_24 - L1_Conv_19 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_24(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_24;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_24(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_24(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_12 - L1_Conv_19 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_12(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_12;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_12(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_12(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_22 - L1_Conv_19 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_22(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_22;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_22(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_22(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_14 - L1_Conv_19 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_14(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_14;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_14(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_14(modelData = modelData_monitor);
+
+        /* AC/DC Converter L1_Conv_18 */
+          HPF.DC.DC2DC_Converters.StepDown L1_Conv_18(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L1_Conv_18(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=28.06);
+
+        /* MEL_Model Laptop_41 - L1_Conv_18 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_41(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_41;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_41(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_41(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_29 - L1_Conv_18 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_29(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_29;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_29(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_29(modelData = modelData_monitor);
+
+        /* AC/DC Converter L1_Conv_17 */
+          HPF.DC.DC2DC_Converters.StepDown L1_Conv_17(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L1_Conv_17(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=27.71);
+
+        /* MEL_Model Laptop_35 - L1_Conv_17 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_35(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_35;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_35(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_35(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_24 - L1_Conv_17 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_24(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_24;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_24(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_24(modelData = modelData_monitor);
+
+        /* AC/DC Converter L1_Conv_16 */
+          HPF.DC.DC2DC_Converters.StepDown L1_Conv_16(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L1_Conv_16(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=27.07);
+
+        /* MEL_Model Monitor_26 - L1_Conv_16 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_26(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_26;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_26(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_26(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_37 - L1_Conv_16 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_37(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_37;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_37(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_37(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_36 - L1_Conv_16 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_36(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_36;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_36(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_36(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_25 - L1_Conv_16 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_25(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_25;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_25(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_25(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_28 - L1_Conv_16 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_28(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_28;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_28(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_28(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_40 - L1_Conv_16 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_40(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_40;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_40(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_40(modelData = modelData_laptop);
+
+          Modelica.Electrical.Analog.Interfaces.PositivePin p
+            "Positive electrical pin of port 1" annotation (Placement(transformation(
+                  extent={{-114,-36},{-94,-16}}),
+                                                iconTransformation(extent={{-110,90},{-90,
+                    110}})));
+          HPF.Cables.NEC_CableModelDC cable_mels_L1_C(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+              length=15) annotation (Placement(visible=true, transformation(
+                origin={-50,-22},
+                extent={{10,-10},{-10,10}},
+                rotation=0)));
+        equation
+
+        /* Insert equation here */
+
+        /* DC/DC Converter L1_Conv_24 */
+          connect(cable_L1_Conv_24.n,cable_mels_L1_C.p);
+          connect(L1_Conv_24.p1,  cable_L1_Conv_24.p);
+          connect(L1_Conv_24.n1, GndDC.p);
+          connect(L1_Conv_24.n2, GndDC.p);
+
+        /* MEL Connections Laptop_42 - L1_Conv_24 */
+          connect(MEL_Converter_Laptop_42.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_42.n1, GndDC.p);
+          connect(Laptop_42.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_42.u);
+          connect(Laptop_42.u, Gain_Laptop_42.y);
+          connect(Laptop_42.p, MEL_Converter_Laptop_42.p2);
+          connect(MEL_Converter_Laptop_42.p1, cable_MEL_Laptop_42.p);
+          connect(L1_Conv_24.p2, cable_MEL_Laptop_42.n);
+
+        /* MEL Connections Monitor_30 - L1_Conv_24 */
+          connect(MEL_Converter_Monitor_30.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_30.n1, GndDC.p);
+          connect(Monitor_30.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_30.u);
+          connect(Monitor_30.u, Gain_Monitor_30.y);
+          connect(Monitor_30.p, MEL_Converter_Monitor_30.p2);
+          connect(MEL_Converter_Monitor_30.p1, cable_MEL_Monitor_30.p);
+          connect(L1_Conv_24.p2, cable_MEL_Monitor_30.n);
+
+        /* DC/DC Converter L1_Conv_23 */
+          connect(cable_L1_Conv_23.n,cable_mels_L1_C.p);
+          connect(L1_Conv_23.p1,  cable_L1_Conv_23.p);
+          connect(L1_Conv_23.n1, GndDC.p);
+          connect(L1_Conv_23.n2, GndDC.p);
+
+        /* MEL Connections Laptop_43 - L1_Conv_23 */
+          connect(MEL_Converter_Laptop_43.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_43.n1, GndDC.p);
+          connect(Laptop_43.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_43.u);
+          connect(Laptop_43.u, Gain_Laptop_43.y);
+          connect(Laptop_43.p, MEL_Converter_Laptop_43.p2);
+          connect(MEL_Converter_Laptop_43.p1, cable_MEL_Laptop_43.p);
+          connect(L1_Conv_23.p2, cable_MEL_Laptop_43.n);
+
+        /* MEL Connections Laptop_44 - L1_Conv_23 */
+          connect(MEL_Converter_Laptop_44.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_44.n1, GndDC.p);
+          connect(Laptop_44.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_44.u);
+          connect(Laptop_44.u, Gain_Laptop_44.y);
+          connect(Laptop_44.p, MEL_Converter_Laptop_44.p2);
+          connect(MEL_Converter_Laptop_44.p1, cable_MEL_Laptop_44.p);
+          connect(L1_Conv_23.p2, cable_MEL_Laptop_44.n);
+
+        /* DC/DC Converter L1_Conv_22 */
+          connect(cable_L1_Conv_22.n,cable_mels_L1_C.p);
+          connect(L1_Conv_22.p1,  cable_L1_Conv_22.p);
+          connect(L1_Conv_22.n1, GndDC.p);
+          connect(L1_Conv_22.n2, GndDC.p);
+
+        /* MEL Connections Monitor_31 - L1_Conv_22 */
+          connect(MEL_Converter_Monitor_31.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_31.n1, GndDC.p);
+          connect(Monitor_31.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_31.u);
+          connect(Monitor_31.u, Gain_Monitor_31.y);
+          connect(Monitor_31.p, MEL_Converter_Monitor_31.p2);
+          connect(MEL_Converter_Monitor_31.p1, cable_MEL_Monitor_31.p);
+          connect(L1_Conv_22.p2, cable_MEL_Monitor_31.n);
+
+        /* MEL Connections Laptop_45 - L1_Conv_22 */
+          connect(MEL_Converter_Laptop_45.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_45.n1, GndDC.p);
+          connect(Laptop_45.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_45.u);
+          connect(Laptop_45.u, Gain_Laptop_45.y);
+          connect(Laptop_45.p, MEL_Converter_Laptop_45.p2);
+          connect(MEL_Converter_Laptop_45.p1, cable_MEL_Laptop_45.p);
+          connect(L1_Conv_22.p2, cable_MEL_Laptop_45.n);
+
+        /* DC/DC Converter L1_Conv_21 */
+          connect(cable_L1_Conv_21.n,cable_mels_L1_C.p);
+          connect(L1_Conv_21.p1,  cable_L1_Conv_21.p);
+          connect(L1_Conv_21.n1, GndDC.p);
+          connect(L1_Conv_21.n2, GndDC.p);
+
+        /* MEL Connections Laptop_46 - L1_Conv_21 */
+          connect(MEL_Converter_Laptop_46.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_46.n1, GndDC.p);
+          connect(Laptop_46.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_46.u);
+          connect(Laptop_46.u, Gain_Laptop_46.y);
+          connect(Laptop_46.p, MEL_Converter_Laptop_46.p2);
+          connect(MEL_Converter_Laptop_46.p1, cable_MEL_Laptop_46.p);
+          connect(L1_Conv_21.p2, cable_MEL_Laptop_46.n);
+
+        /* DC/DC Converter L1_Conv_20 */
+          connect(cable_L1_Conv_20.n,cable_mels_L1_C.p);
+          connect(L1_Conv_20.p1,  cable_L1_Conv_20.p);
+          connect(L1_Conv_20.n1, GndDC.p);
+          connect(L1_Conv_20.n2, GndDC.p);
+
+        /* MEL Connections Laptop_47 - L1_Conv_20 */
+          connect(MEL_Converter_Laptop_47.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_47.n1, GndDC.p);
+          connect(Laptop_47.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_47.u);
+          connect(Laptop_47.u, Gain_Laptop_47.y);
+          connect(Laptop_47.p, MEL_Converter_Laptop_47.p2);
+          connect(MEL_Converter_Laptop_47.p1, cable_MEL_Laptop_47.p);
+          connect(L1_Conv_20.p2, cable_MEL_Laptop_47.n);
+
+        /* MEL Connections Monitor_32 - L1_Conv_20 */
+          connect(MEL_Converter_Monitor_32.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_32.n1, GndDC.p);
+          connect(Monitor_32.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_32.u);
+          connect(Monitor_32.u, Gain_Monitor_32.y);
+          connect(Monitor_32.p, MEL_Converter_Monitor_32.p2);
+          connect(MEL_Converter_Monitor_32.p1, cable_MEL_Monitor_32.p);
+          connect(L1_Conv_20.p2, cable_MEL_Monitor_32.n);
+
+        /* MEL Connections Laptop_48 - L1_Conv_20 */
+          connect(MEL_Converter_Laptop_48.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_48.n1, GndDC.p);
+          connect(Laptop_48.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_48.u);
+          connect(Laptop_48.u, Gain_Laptop_48.y);
+          connect(Laptop_48.p, MEL_Converter_Laptop_48.p2);
+          connect(MEL_Converter_Laptop_48.p1, cable_MEL_Laptop_48.p);
+          connect(L1_Conv_20.p2, cable_MEL_Laptop_48.n);
+
+        /* DC/DC Converter L1_Conv_19 */
+          connect(cable_L1_Conv_19.n,cable_mels_L1_C.p);
+          connect(L1_Conv_19.p1,  cable_L1_Conv_19.p);
+          connect(L1_Conv_19.n1, GndDC.p);
+          connect(L1_Conv_19.n2, GndDC.p);
+
+        /* MEL Connections Monitor_13 - L1_Conv_19 */
+          connect(MEL_Converter_Monitor_13.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_13.n1, GndDC.p);
+          connect(Monitor_13.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_13.u);
+          connect(Monitor_13.u, Gain_Monitor_13.y);
+          connect(Monitor_13.p, MEL_Converter_Monitor_13.p2);
+          connect(MEL_Converter_Monitor_13.p1, cable_MEL_Monitor_13.p);
+          connect(L1_Conv_19.p2, cable_MEL_Monitor_13.n);
+
+        /* MEL Connections Monitor_15 - L1_Conv_19 */
+          connect(MEL_Converter_Monitor_15.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_15.n1, GndDC.p);
+          connect(Monitor_15.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_15.u);
+          connect(Monitor_15.u, Gain_Monitor_15.y);
+          connect(Monitor_15.p, MEL_Converter_Monitor_15.p2);
+          connect(MEL_Converter_Monitor_15.p1, cable_MEL_Monitor_15.p);
+          connect(L1_Conv_19.p2, cable_MEL_Monitor_15.n);
+
+        /* MEL Connections Laptop_23 - L1_Conv_19 */
+          connect(MEL_Converter_Laptop_23.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_23.n1, GndDC.p);
+          connect(Laptop_23.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_23.u);
+          connect(Laptop_23.u, Gain_Laptop_23.y);
+          connect(Laptop_23.p, MEL_Converter_Laptop_23.p2);
+          connect(MEL_Converter_Laptop_23.p1, cable_MEL_Laptop_23.p);
+          connect(L1_Conv_19.p2, cable_MEL_Laptop_23.n);
+
+        /* MEL Connections Laptop_25 - L1_Conv_19 */
+          connect(MEL_Converter_Laptop_25.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_25.n1, GndDC.p);
+          connect(Laptop_25.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_25.u);
+          connect(Laptop_25.u, Gain_Laptop_25.y);
+          connect(Laptop_25.p, MEL_Converter_Laptop_25.p2);
+          connect(MEL_Converter_Laptop_25.p1, cable_MEL_Laptop_25.p);
+          connect(L1_Conv_19.p2, cable_MEL_Laptop_25.n);
+
+        /* MEL Connections Laptop_21 - L1_Conv_19 */
+          connect(MEL_Converter_Laptop_21.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_21.n1, GndDC.p);
+          connect(Laptop_21.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_21.u);
+          connect(Laptop_21.u, Gain_Laptop_21.y);
+          connect(Laptop_21.p, MEL_Converter_Laptop_21.p2);
+          connect(MEL_Converter_Laptop_21.p1, cable_MEL_Laptop_21.p);
+          connect(L1_Conv_19.p2, cable_MEL_Laptop_21.n);
+
+        /* MEL Connections Laptop_24 - L1_Conv_19 */
+          connect(MEL_Converter_Laptop_24.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_24.n1, GndDC.p);
+          connect(Laptop_24.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_24.u);
+          connect(Laptop_24.u, Gain_Laptop_24.y);
+          connect(Laptop_24.p, MEL_Converter_Laptop_24.p2);
+          connect(MEL_Converter_Laptop_24.p1, cable_MEL_Laptop_24.p);
+          connect(L1_Conv_19.p2, cable_MEL_Laptop_24.n);
+
+        /* MEL Connections Monitor_12 - L1_Conv_19 */
+          connect(MEL_Converter_Monitor_12.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_12.n1, GndDC.p);
+          connect(Monitor_12.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_12.u);
+          connect(Monitor_12.u, Gain_Monitor_12.y);
+          connect(Monitor_12.p, MEL_Converter_Monitor_12.p2);
+          connect(MEL_Converter_Monitor_12.p1, cable_MEL_Monitor_12.p);
+          connect(L1_Conv_19.p2, cable_MEL_Monitor_12.n);
+
+        /* MEL Connections Laptop_22 - L1_Conv_19 */
+          connect(MEL_Converter_Laptop_22.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_22.n1, GndDC.p);
+          connect(Laptop_22.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_22.u);
+          connect(Laptop_22.u, Gain_Laptop_22.y);
+          connect(Laptop_22.p, MEL_Converter_Laptop_22.p2);
+          connect(MEL_Converter_Laptop_22.p1, cable_MEL_Laptop_22.p);
+          connect(L1_Conv_19.p2, cable_MEL_Laptop_22.n);
+
+        /* MEL Connections Monitor_14 - L1_Conv_19 */
+          connect(MEL_Converter_Monitor_14.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_14.n1, GndDC.p);
+          connect(Monitor_14.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_14.u);
+          connect(Monitor_14.u, Gain_Monitor_14.y);
+          connect(Monitor_14.p, MEL_Converter_Monitor_14.p2);
+          connect(MEL_Converter_Monitor_14.p1, cable_MEL_Monitor_14.p);
+          connect(L1_Conv_19.p2, cable_MEL_Monitor_14.n);
+
+        /* DC/DC Converter L1_Conv_18 */
+          connect(cable_L1_Conv_18.n,cable_mels_L1_C.p);
+          connect(L1_Conv_18.p1,  cable_L1_Conv_18.p);
+          connect(L1_Conv_18.n1, GndDC.p);
+          connect(L1_Conv_18.n2, GndDC.p);
+
+        /* MEL Connections Laptop_41 - L1_Conv_18 */
+          connect(MEL_Converter_Laptop_41.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_41.n1, GndDC.p);
+          connect(Laptop_41.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_41.u);
+          connect(Laptop_41.u, Gain_Laptop_41.y);
+          connect(Laptop_41.p, MEL_Converter_Laptop_41.p2);
+          connect(MEL_Converter_Laptop_41.p1, cable_MEL_Laptop_41.p);
+          connect(L1_Conv_18.p2, cable_MEL_Laptop_41.n);
+
+        /* MEL Connections Monitor_29 - L1_Conv_18 */
+          connect(MEL_Converter_Monitor_29.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_29.n1, GndDC.p);
+          connect(Monitor_29.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_29.u);
+          connect(Monitor_29.u, Gain_Monitor_29.y);
+          connect(Monitor_29.p, MEL_Converter_Monitor_29.p2);
+          connect(MEL_Converter_Monitor_29.p1, cable_MEL_Monitor_29.p);
+          connect(L1_Conv_18.p2, cable_MEL_Monitor_29.n);
+
+        /* DC/DC Converter L1_Conv_17 */
+          connect(cable_L1_Conv_17.n,cable_mels_L1_C.p);
+          connect(L1_Conv_17.p1,  cable_L1_Conv_17.p);
+          connect(L1_Conv_17.n1, GndDC.p);
+          connect(L1_Conv_17.n2, GndDC.p);
+
+        /* MEL Connections Laptop_35 - L1_Conv_17 */
+          connect(MEL_Converter_Laptop_35.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_35.n1, GndDC.p);
+          connect(Laptop_35.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_35.u);
+          connect(Laptop_35.u, Gain_Laptop_35.y);
+          connect(Laptop_35.p, MEL_Converter_Laptop_35.p2);
+          connect(MEL_Converter_Laptop_35.p1, cable_MEL_Laptop_35.p);
+          connect(L1_Conv_17.p2, cable_MEL_Laptop_35.n);
+
+        /* MEL Connections Monitor_24 - L1_Conv_17 */
+          connect(MEL_Converter_Monitor_24.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_24.n1, GndDC.p);
+          connect(Monitor_24.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_24.u);
+          connect(Monitor_24.u, Gain_Monitor_24.y);
+          connect(Monitor_24.p, MEL_Converter_Monitor_24.p2);
+          connect(MEL_Converter_Monitor_24.p1, cable_MEL_Monitor_24.p);
+          connect(L1_Conv_17.p2, cable_MEL_Monitor_24.n);
+
+        /* DC/DC Converter L1_Conv_16 */
+          connect(cable_L1_Conv_16.n,cable_mels_L1_C.p);
+          connect(L1_Conv_16.p1,  cable_L1_Conv_16.p);
+          connect(L1_Conv_16.n1, GndDC.p);
+          connect(L1_Conv_16.n2, GndDC.p);
+
+        /* MEL Connections Monitor_26 - L1_Conv_16 */
+          connect(MEL_Converter_Monitor_26.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_26.n1, GndDC.p);
+          connect(Monitor_26.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_26.u);
+          connect(Monitor_26.u, Gain_Monitor_26.y);
+          connect(Monitor_26.p, MEL_Converter_Monitor_26.p2);
+          connect(MEL_Converter_Monitor_26.p1, cable_MEL_Monitor_26.p);
+          connect(L1_Conv_16.p2, cable_MEL_Monitor_26.n);
+
+        /* MEL Connections Laptop_37 - L1_Conv_16 */
+          connect(MEL_Converter_Laptop_37.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_37.n1, GndDC.p);
+          connect(Laptop_37.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_37.u);
+          connect(Laptop_37.u, Gain_Laptop_37.y);
+          connect(Laptop_37.p, MEL_Converter_Laptop_37.p2);
+          connect(MEL_Converter_Laptop_37.p1, cable_MEL_Laptop_37.p);
+          connect(L1_Conv_16.p2, cable_MEL_Laptop_37.n);
+
+        /* MEL Connections Laptop_36 - L1_Conv_16 */
+          connect(MEL_Converter_Laptop_36.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_36.n1, GndDC.p);
+          connect(Laptop_36.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_36.u);
+          connect(Laptop_36.u, Gain_Laptop_36.y);
+          connect(Laptop_36.p, MEL_Converter_Laptop_36.p2);
+          connect(MEL_Converter_Laptop_36.p1, cable_MEL_Laptop_36.p);
+          connect(L1_Conv_16.p2, cable_MEL_Laptop_36.n);
+
+        /* MEL Connections Monitor_25 - L1_Conv_16 */
+          connect(MEL_Converter_Monitor_25.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_25.n1, GndDC.p);
+          connect(Monitor_25.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_25.u);
+          connect(Monitor_25.u, Gain_Monitor_25.y);
+          connect(Monitor_25.p, MEL_Converter_Monitor_25.p2);
+          connect(MEL_Converter_Monitor_25.p1, cable_MEL_Monitor_25.p);
+          connect(L1_Conv_16.p2, cable_MEL_Monitor_25.n);
+
+        /* MEL Connections Monitor_28 - L1_Conv_16 */
+          connect(MEL_Converter_Monitor_28.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_28.n1, GndDC.p);
+          connect(Monitor_28.n, GndDC.p);
+          connect(combiTimeTable_L1_Monitor.y[1], Gain_Monitor_28.u);
+          connect(Monitor_28.u, Gain_Monitor_28.y);
+          connect(Monitor_28.p, MEL_Converter_Monitor_28.p2);
+          connect(MEL_Converter_Monitor_28.p1, cable_MEL_Monitor_28.p);
+          connect(L1_Conv_16.p2, cable_MEL_Monitor_28.n);
+
+        /* MEL Connections Laptop_40 - L1_Conv_16 */
+          connect(MEL_Converter_Laptop_40.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_40.n1, GndDC.p);
+          connect(Laptop_40.n, GndDC.p);
+          connect(combiTimeTable_L1_Laptop.y[1], Gain_Laptop_40.u);
+          connect(Laptop_40.u, Gain_Laptop_40.y);
+          connect(Laptop_40.p, MEL_Converter_Laptop_40.p2);
+          connect(MEL_Converter_Laptop_40.p1, cable_MEL_Laptop_40.p);
+          connect(L1_Conv_16.p2, cable_MEL_Laptop_40.n);
+
+          connect(cable_mels_L1_C.n, p) annotation (Line(points={{-60,-22},{-68,-22},{
+                  -68,-24},{-104,-24},{-104,-26}}, color={0,0,255}));
+          annotation ();
+        end SmallDC_MEL_Panel_L1C;
+
+        model SmallDC_MEL_Panel_L2A
+          outer parameter Real PF;
+          outer parameter Real PF1;
+          /* parameter Real PF = 0.9; */
+
+          outer HPF.SystemDef systemDef;
+          Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+            Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Laptop(
+            tableOnFile=true,
+            tableName="L2-All-Laptops",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-60,72},{-40,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Monitor(
+            tableOnFile=true,
+            tableName="L2-All-Monitors",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{10,72},{30,92}})));
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_laptop(V = 19.5, alpha = 2.0773, beta = 0.025225, gamma = 0.0032425);
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_monitor(V = 19.5, alpha = 1.67642, beta = 0.025225, gamma = 0.0040178);
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 14.2661328, beta = -0.004643965, gamma = 0.0000295798);
+
+        /* Insert models here */
+
+        /* AC/DC Converter L2_Conv_7 */
+          HPF.DC.DC2DC_Converters.StepDown L2_Conv_7(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L2_Conv_7(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=17.65);
+
+        /* MEL_Model Monitor_56 - L2_Conv_7 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_56(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_56;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_56(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_56(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_55 - L2_Conv_7 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_55(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_55;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_55(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_55(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_89 - L2_Conv_7 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_89(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_89;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_89(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_89(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_88 - L2_Conv_7 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_88(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_88;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_88(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_88(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_87 - L2_Conv_7 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_87(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_87;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_87(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_87(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_59 - L2_Conv_7 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_59(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_59;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_59(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_59(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_58 - L2_Conv_7 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_58(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_58;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_58(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_58(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_57 - L2_Conv_7 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_57(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_57;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_57(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_57(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_92 - L2_Conv_7 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_92(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_92;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_92(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_92(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_91 - L2_Conv_7 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_91(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_91;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_91(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_91(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_90 - L2_Conv_7 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_90(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_90;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_90(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_90(modelData = modelData_laptop);
+
+        /* AC/DC Converter L2_Conv_6 */
+          HPF.DC.DC2DC_Converters.StepDown L2_Conv_6(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L2_Conv_6(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=23.55);
+
+        /* MEL_Model Laptop_72 - L2_Conv_6 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_72(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_72;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_72(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_72(modelData = modelData_laptop);
+
+        /* AC/DC Converter L2_Conv_5 */
+          HPF.DC.DC2DC_Converters.StepDown L2_Conv_5(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L2_Conv_5(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=25.93);
+
+        /* MEL_Model Monitor_41 - L2_Conv_5 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_41(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_41;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_41(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_41(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_62 - L2_Conv_5 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_62(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_62;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_62(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_62(modelData = modelData_laptop);
+
+        /* AC/DC Converter L2_Conv_4 */
+          HPF.DC.DC2DC_Converters.StepDown L2_Conv_4(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L2_Conv_4(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=23.49);
+
+        /* MEL_Model Laptop_94 - L2_Conv_4 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_94(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_94;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_94(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_94(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_93 - L2_Conv_4 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_93(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_93;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_93(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_93(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_61 - L2_Conv_4 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_61(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_61;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_61(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_61(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_60 - L2_Conv_4 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_60(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_60;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_60(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_60(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_96 - L2_Conv_4 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_96(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_96;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_96(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_96(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_95 - L2_Conv_4 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_95(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_95;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_95(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_95(modelData = modelData_laptop);
+
+        /* AC/DC Converter L2_Conv_3 */
+          HPF.DC.DC2DC_Converters.StepDown L2_Conv_3(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L2_Conv_3(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=23.15);
+
+        /* MEL_Model Monitor_63 - L2_Conv_3 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_63(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_63;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_63(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_63(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_62 - L2_Conv_3 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_62(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_62;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_62(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_62(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_97 - L2_Conv_3 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_97(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_97;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_97(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_97(modelData = modelData_laptop);
+
+        /* AC/DC Converter L2_Conv_2 */
+          HPF.DC.DC2DC_Converters.StepDown L2_Conv_2(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L2_Conv_2(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=26.62);
+
+        /* MEL_Model Monitor_66 - L2_Conv_2 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_66(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_66;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_66(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_66(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_65 - L2_Conv_2 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_65(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_65;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_65(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_65(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_64 - L2_Conv_2 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_64(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_64;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_64(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_64(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_100 - L2_Conv_2 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_100(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_100;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_100(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_100(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_99 - L2_Conv_2 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_99(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_99;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_99(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_99(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_98 - L2_Conv_2 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_98(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_98;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_98(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_98(modelData = modelData_laptop);
+
+          Modelica.Electrical.Analog.Interfaces.PositivePin p
+            "Positive electrical pin of port 1" annotation (Placement(transformation(
+                  extent={{-114,-36},{-94,-16}}),
+                                                iconTransformation(extent={{-110,90},{-90,
+                    110}})));
+          HPF.Cables.NEC_CableModelDC cable_mels_L2_A(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+              length=15) annotation (Placement(visible=true, transformation(
+                origin={-50,-22},
+                extent={{10,-10},{-10,10}},
+                rotation=0)));
+        equation
+
+        /* Insert equation here */
+
+        /* DC/DC Converter L2_Conv_7 */
+          connect(cable_L2_Conv_7.n,cable_mels_L2_A.p);
+          connect(L2_Conv_7.p1,  cable_L2_Conv_7.p);
+          connect(L2_Conv_7.n1, GndDC.p);
+          connect(L2_Conv_7.n2, GndDC.p);
+
+        /* MEL Connections Monitor_56 - L2_Conv_7 */
+          connect(MEL_Converter_Monitor_56.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_56.n1, GndDC.p);
+          connect(Monitor_56.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_56.u);
+          connect(Monitor_56.u, Gain_Monitor_56.y);
+          connect(Monitor_56.p, MEL_Converter_Monitor_56.p2);
+          connect(MEL_Converter_Monitor_56.p1, cable_MEL_Monitor_56.p);
+          connect(L2_Conv_7.p2, cable_MEL_Monitor_56.n);
+
+        /* MEL Connections Monitor_55 - L2_Conv_7 */
+          connect(MEL_Converter_Monitor_55.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_55.n1, GndDC.p);
+          connect(Monitor_55.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_55.u);
+          connect(Monitor_55.u, Gain_Monitor_55.y);
+          connect(Monitor_55.p, MEL_Converter_Monitor_55.p2);
+          connect(MEL_Converter_Monitor_55.p1, cable_MEL_Monitor_55.p);
+          connect(L2_Conv_7.p2, cable_MEL_Monitor_55.n);
+
+        /* MEL Connections Laptop_89 - L2_Conv_7 */
+          connect(MEL_Converter_Laptop_89.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_89.n1, GndDC.p);
+          connect(Laptop_89.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_89.u);
+          connect(Laptop_89.u, Gain_Laptop_89.y);
+          connect(Laptop_89.p, MEL_Converter_Laptop_89.p2);
+          connect(MEL_Converter_Laptop_89.p1, cable_MEL_Laptop_89.p);
+          connect(L2_Conv_7.p2, cable_MEL_Laptop_89.n);
+
+        /* MEL Connections Laptop_88 - L2_Conv_7 */
+          connect(MEL_Converter_Laptop_88.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_88.n1, GndDC.p);
+          connect(Laptop_88.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_88.u);
+          connect(Laptop_88.u, Gain_Laptop_88.y);
+          connect(Laptop_88.p, MEL_Converter_Laptop_88.p2);
+          connect(MEL_Converter_Laptop_88.p1, cable_MEL_Laptop_88.p);
+          connect(L2_Conv_7.p2, cable_MEL_Laptop_88.n);
+
+        /* MEL Connections Laptop_87 - L2_Conv_7 */
+          connect(MEL_Converter_Laptop_87.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_87.n1, GndDC.p);
+          connect(Laptop_87.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_87.u);
+          connect(Laptop_87.u, Gain_Laptop_87.y);
+          connect(Laptop_87.p, MEL_Converter_Laptop_87.p2);
+          connect(MEL_Converter_Laptop_87.p1, cable_MEL_Laptop_87.p);
+          connect(L2_Conv_7.p2, cable_MEL_Laptop_87.n);
+
+        /* MEL Connections Monitor_59 - L2_Conv_7 */
+          connect(MEL_Converter_Monitor_59.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_59.n1, GndDC.p);
+          connect(Monitor_59.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_59.u);
+          connect(Monitor_59.u, Gain_Monitor_59.y);
+          connect(Monitor_59.p, MEL_Converter_Monitor_59.p2);
+          connect(MEL_Converter_Monitor_59.p1, cable_MEL_Monitor_59.p);
+          connect(L2_Conv_7.p2, cable_MEL_Monitor_59.n);
+
+        /* MEL Connections Monitor_58 - L2_Conv_7 */
+          connect(MEL_Converter_Monitor_58.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_58.n1, GndDC.p);
+          connect(Monitor_58.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_58.u);
+          connect(Monitor_58.u, Gain_Monitor_58.y);
+          connect(Monitor_58.p, MEL_Converter_Monitor_58.p2);
+          connect(MEL_Converter_Monitor_58.p1, cable_MEL_Monitor_58.p);
+          connect(L2_Conv_7.p2, cable_MEL_Monitor_58.n);
+
+        /* MEL Connections Monitor_57 - L2_Conv_7 */
+          connect(MEL_Converter_Monitor_57.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_57.n1, GndDC.p);
+          connect(Monitor_57.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_57.u);
+          connect(Monitor_57.u, Gain_Monitor_57.y);
+          connect(Monitor_57.p, MEL_Converter_Monitor_57.p2);
+          connect(MEL_Converter_Monitor_57.p1, cable_MEL_Monitor_57.p);
+          connect(L2_Conv_7.p2, cable_MEL_Monitor_57.n);
+
+        /* MEL Connections Laptop_92 - L2_Conv_7 */
+          connect(MEL_Converter_Laptop_92.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_92.n1, GndDC.p);
+          connect(Laptop_92.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_92.u);
+          connect(Laptop_92.u, Gain_Laptop_92.y);
+          connect(Laptop_92.p, MEL_Converter_Laptop_92.p2);
+          connect(MEL_Converter_Laptop_92.p1, cable_MEL_Laptop_92.p);
+          connect(L2_Conv_7.p2, cable_MEL_Laptop_92.n);
+
+        /* MEL Connections Laptop_91 - L2_Conv_7 */
+          connect(MEL_Converter_Laptop_91.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_91.n1, GndDC.p);
+          connect(Laptop_91.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_91.u);
+          connect(Laptop_91.u, Gain_Laptop_91.y);
+          connect(Laptop_91.p, MEL_Converter_Laptop_91.p2);
+          connect(MEL_Converter_Laptop_91.p1, cable_MEL_Laptop_91.p);
+          connect(L2_Conv_7.p2, cable_MEL_Laptop_91.n);
+
+        /* MEL Connections Laptop_90 - L2_Conv_7 */
+          connect(MEL_Converter_Laptop_90.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_90.n1, GndDC.p);
+          connect(Laptop_90.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_90.u);
+          connect(Laptop_90.u, Gain_Laptop_90.y);
+          connect(Laptop_90.p, MEL_Converter_Laptop_90.p2);
+          connect(MEL_Converter_Laptop_90.p1, cable_MEL_Laptop_90.p);
+          connect(L2_Conv_7.p2, cable_MEL_Laptop_90.n);
+
+        /* DC/DC Converter L2_Conv_6 */
+          connect(cable_L2_Conv_6.n,cable_mels_L2_A.p);
+          connect(L2_Conv_6.p1,  cable_L2_Conv_6.p);
+          connect(L2_Conv_6.n1, GndDC.p);
+          connect(L2_Conv_6.n2, GndDC.p);
+
+        /* MEL Connections Laptop_72 - L2_Conv_6 */
+          connect(MEL_Converter_Laptop_72.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_72.n1, GndDC.p);
+          connect(Laptop_72.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_72.u);
+          connect(Laptop_72.u, Gain_Laptop_72.y);
+          connect(Laptop_72.p, MEL_Converter_Laptop_72.p2);
+          connect(MEL_Converter_Laptop_72.p1, cable_MEL_Laptop_72.p);
+          connect(L2_Conv_6.p2, cable_MEL_Laptop_72.n);
+
+        /* DC/DC Converter L2_Conv_5 */
+          connect(cable_L2_Conv_5.n,cable_mels_L2_A.p);
+          connect(L2_Conv_5.p1,  cable_L2_Conv_5.p);
+          connect(L2_Conv_5.n1, GndDC.p);
+          connect(L2_Conv_5.n2, GndDC.p);
+
+        /* MEL Connections Monitor_41 - L2_Conv_5 */
+          connect(MEL_Converter_Monitor_41.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_41.n1, GndDC.p);
+          connect(Monitor_41.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_41.u);
+          connect(Monitor_41.u, Gain_Monitor_41.y);
+          connect(Monitor_41.p, MEL_Converter_Monitor_41.p2);
+          connect(MEL_Converter_Monitor_41.p1, cable_MEL_Monitor_41.p);
+          connect(L2_Conv_5.p2, cable_MEL_Monitor_41.n);
+
+        /* MEL Connections Laptop_62 - L2_Conv_5 */
+          connect(MEL_Converter_Laptop_62.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_62.n1, GndDC.p);
+          connect(Laptop_62.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_62.u);
+          connect(Laptop_62.u, Gain_Laptop_62.y);
+          connect(Laptop_62.p, MEL_Converter_Laptop_62.p2);
+          connect(MEL_Converter_Laptop_62.p1, cable_MEL_Laptop_62.p);
+          connect(L2_Conv_5.p2, cable_MEL_Laptop_62.n);
+
+        /* DC/DC Converter L2_Conv_4 */
+          connect(cable_L2_Conv_4.n,cable_mels_L2_A.p);
+          connect(L2_Conv_4.p1,  cable_L2_Conv_4.p);
+          connect(L2_Conv_4.n1, GndDC.p);
+          connect(L2_Conv_4.n2, GndDC.p);
+
+        /* MEL Connections Laptop_94 - L2_Conv_4 */
+          connect(MEL_Converter_Laptop_94.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_94.n1, GndDC.p);
+          connect(Laptop_94.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_94.u);
+          connect(Laptop_94.u, Gain_Laptop_94.y);
+          connect(Laptop_94.p, MEL_Converter_Laptop_94.p2);
+          connect(MEL_Converter_Laptop_94.p1, cable_MEL_Laptop_94.p);
+          connect(L2_Conv_4.p2, cable_MEL_Laptop_94.n);
+
+        /* MEL Connections Laptop_93 - L2_Conv_4 */
+          connect(MEL_Converter_Laptop_93.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_93.n1, GndDC.p);
+          connect(Laptop_93.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_93.u);
+          connect(Laptop_93.u, Gain_Laptop_93.y);
+          connect(Laptop_93.p, MEL_Converter_Laptop_93.p2);
+          connect(MEL_Converter_Laptop_93.p1, cable_MEL_Laptop_93.p);
+          connect(L2_Conv_4.p2, cable_MEL_Laptop_93.n);
+
+        /* MEL Connections Monitor_61 - L2_Conv_4 */
+          connect(MEL_Converter_Monitor_61.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_61.n1, GndDC.p);
+          connect(Monitor_61.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_61.u);
+          connect(Monitor_61.u, Gain_Monitor_61.y);
+          connect(Monitor_61.p, MEL_Converter_Monitor_61.p2);
+          connect(MEL_Converter_Monitor_61.p1, cable_MEL_Monitor_61.p);
+          connect(L2_Conv_4.p2, cable_MEL_Monitor_61.n);
+
+        /* MEL Connections Monitor_60 - L2_Conv_4 */
+          connect(MEL_Converter_Monitor_60.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_60.n1, GndDC.p);
+          connect(Monitor_60.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_60.u);
+          connect(Monitor_60.u, Gain_Monitor_60.y);
+          connect(Monitor_60.p, MEL_Converter_Monitor_60.p2);
+          connect(MEL_Converter_Monitor_60.p1, cable_MEL_Monitor_60.p);
+          connect(L2_Conv_4.p2, cable_MEL_Monitor_60.n);
+
+        /* MEL Connections Laptop_96 - L2_Conv_4 */
+          connect(MEL_Converter_Laptop_96.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_96.n1, GndDC.p);
+          connect(Laptop_96.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_96.u);
+          connect(Laptop_96.u, Gain_Laptop_96.y);
+          connect(Laptop_96.p, MEL_Converter_Laptop_96.p2);
+          connect(MEL_Converter_Laptop_96.p1, cable_MEL_Laptop_96.p);
+          connect(L2_Conv_4.p2, cable_MEL_Laptop_96.n);
+
+        /* MEL Connections Laptop_95 - L2_Conv_4 */
+          connect(MEL_Converter_Laptop_95.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_95.n1, GndDC.p);
+          connect(Laptop_95.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_95.u);
+          connect(Laptop_95.u, Gain_Laptop_95.y);
+          connect(Laptop_95.p, MEL_Converter_Laptop_95.p2);
+          connect(MEL_Converter_Laptop_95.p1, cable_MEL_Laptop_95.p);
+          connect(L2_Conv_4.p2, cable_MEL_Laptop_95.n);
+
+        /* DC/DC Converter L2_Conv_3 */
+          connect(cable_L2_Conv_3.n,cable_mels_L2_A.p);
+          connect(L2_Conv_3.p1,  cable_L2_Conv_3.p);
+          connect(L2_Conv_3.n1, GndDC.p);
+          connect(L2_Conv_3.n2, GndDC.p);
+
+        /* MEL Connections Monitor_63 - L2_Conv_3 */
+          connect(MEL_Converter_Monitor_63.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_63.n1, GndDC.p);
+          connect(Monitor_63.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_63.u);
+          connect(Monitor_63.u, Gain_Monitor_63.y);
+          connect(Monitor_63.p, MEL_Converter_Monitor_63.p2);
+          connect(MEL_Converter_Monitor_63.p1, cable_MEL_Monitor_63.p);
+          connect(L2_Conv_3.p2, cable_MEL_Monitor_63.n);
+
+        /* MEL Connections Monitor_62 - L2_Conv_3 */
+          connect(MEL_Converter_Monitor_62.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_62.n1, GndDC.p);
+          connect(Monitor_62.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_62.u);
+          connect(Monitor_62.u, Gain_Monitor_62.y);
+          connect(Monitor_62.p, MEL_Converter_Monitor_62.p2);
+          connect(MEL_Converter_Monitor_62.p1, cable_MEL_Monitor_62.p);
+          connect(L2_Conv_3.p2, cable_MEL_Monitor_62.n);
+
+        /* MEL Connections Laptop_97 - L2_Conv_3 */
+          connect(MEL_Converter_Laptop_97.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_97.n1, GndDC.p);
+          connect(Laptop_97.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_97.u);
+          connect(Laptop_97.u, Gain_Laptop_97.y);
+          connect(Laptop_97.p, MEL_Converter_Laptop_97.p2);
+          connect(MEL_Converter_Laptop_97.p1, cable_MEL_Laptop_97.p);
+          connect(L2_Conv_3.p2, cable_MEL_Laptop_97.n);
+
+        /* DC/DC Converter L2_Conv_2 */
+          connect(cable_L2_Conv_2.n,cable_mels_L2_A.p);
+          connect(L2_Conv_2.p1,  cable_L2_Conv_2.p);
+          connect(L2_Conv_2.n1, GndDC.p);
+          connect(L2_Conv_2.n2, GndDC.p);
+
+        /* MEL Connections Monitor_66 - L2_Conv_2 */
+          connect(MEL_Converter_Monitor_66.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_66.n1, GndDC.p);
+          connect(Monitor_66.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_66.u);
+          connect(Monitor_66.u, Gain_Monitor_66.y);
+          connect(Monitor_66.p, MEL_Converter_Monitor_66.p2);
+          connect(MEL_Converter_Monitor_66.p1, cable_MEL_Monitor_66.p);
+          connect(L2_Conv_2.p2, cable_MEL_Monitor_66.n);
+
+        /* MEL Connections Monitor_65 - L2_Conv_2 */
+          connect(MEL_Converter_Monitor_65.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_65.n1, GndDC.p);
+          connect(Monitor_65.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_65.u);
+          connect(Monitor_65.u, Gain_Monitor_65.y);
+          connect(Monitor_65.p, MEL_Converter_Monitor_65.p2);
+          connect(MEL_Converter_Monitor_65.p1, cable_MEL_Monitor_65.p);
+          connect(L2_Conv_2.p2, cable_MEL_Monitor_65.n);
+
+        /* MEL Connections Monitor_64 - L2_Conv_2 */
+          connect(MEL_Converter_Monitor_64.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_64.n1, GndDC.p);
+          connect(Monitor_64.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_64.u);
+          connect(Monitor_64.u, Gain_Monitor_64.y);
+          connect(Monitor_64.p, MEL_Converter_Monitor_64.p2);
+          connect(MEL_Converter_Monitor_64.p1, cable_MEL_Monitor_64.p);
+          connect(L2_Conv_2.p2, cable_MEL_Monitor_64.n);
+
+        /* MEL Connections Laptop_100 - L2_Conv_2 */
+          connect(MEL_Converter_Laptop_100.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_100.n1, GndDC.p);
+          connect(Laptop_100.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_100.u);
+          connect(Laptop_100.u, Gain_Laptop_100.y);
+          connect(Laptop_100.p, MEL_Converter_Laptop_100.p2);
+          connect(MEL_Converter_Laptop_100.p1, cable_MEL_Laptop_100.p);
+          connect(L2_Conv_2.p2, cable_MEL_Laptop_100.n);
+
+        /* MEL Connections Laptop_99 - L2_Conv_2 */
+          connect(MEL_Converter_Laptop_99.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_99.n1, GndDC.p);
+          connect(Laptop_99.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_99.u);
+          connect(Laptop_99.u, Gain_Laptop_99.y);
+          connect(Laptop_99.p, MEL_Converter_Laptop_99.p2);
+          connect(MEL_Converter_Laptop_99.p1, cable_MEL_Laptop_99.p);
+          connect(L2_Conv_2.p2, cable_MEL_Laptop_99.n);
+
+        /* MEL Connections Laptop_98 - L2_Conv_2 */
+          connect(MEL_Converter_Laptop_98.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_98.n1, GndDC.p);
+          connect(Laptop_98.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_98.u);
+          connect(Laptop_98.u, Gain_Laptop_98.y);
+          connect(Laptop_98.p, MEL_Converter_Laptop_98.p2);
+          connect(MEL_Converter_Laptop_98.p1, cable_MEL_Laptop_98.p);
+          connect(L2_Conv_2.p2, cable_MEL_Laptop_98.n);
+
+          connect(cable_mels_L2_A.n, p) annotation (Line(points={{-60,-22},{-68,-22},{
+                  -68,-24},{-104,-24},{-104,-26}}, color={0,0,255}));
+          annotation ();
+        end SmallDC_MEL_Panel_L2A;
+
+        model SmallDC_MEL_Panel_L2B
+          outer parameter Real PF;
+          outer parameter Real PF1;
+          /* parameter Real PF = 0.9; */
+
+          outer HPF.SystemDef systemDef;
+          Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+            Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Laptop(
+            tableOnFile=true,
+            tableName="L2-All-Laptops",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-60,72},{-40,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Monitor(
+            tableOnFile=true,
+            tableName="L2-All-Monitors",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{10,72},{30,92}})));
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_laptop(V = 19.5, alpha = 2.0773, beta = 0.025225, gamma = 0.0032425);
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_monitor(V = 19.5, alpha = 1.67642, beta = 0.025225, gamma = 0.0040178);
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 14.2661328, beta = -0.004643965, gamma = 0.0000295798);
+
+        /* Insert models here */
+
+        /* AC/DC Converter L2_Conv_15 */
+          HPF.DC.DC2DC_Converters.StepDown L2_Conv_15(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L2_Conv_15(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=34.47);
+
+        /* MEL_Model Laptop_70 - L2_Conv_15 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_70(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_70;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_70(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_70(modelData = modelData_laptop);
+
+        /* AC/DC Converter L2_Conv_14 */
+          HPF.DC.DC2DC_Converters.StepDown L2_Conv_14(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L2_Conv_14(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=19.74);
+
+        /* MEL_Model Monitor_37 - L2_Conv_14 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_37(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_37;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_37(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_37(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_55 - L2_Conv_14 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_55(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_55;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_55(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_55(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_38 - L2_Conv_14 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_38(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_38;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_38(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_38(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_57 - L2_Conv_14 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_57(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_57;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_57(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_57(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_56 - L2_Conv_14 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_56(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_56;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_56(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_56(modelData = modelData_laptop);
+
+        /* AC/DC Converter L2_Conv_12 */
+          HPF.DC.DC2DC_Converters.StepDown L2_Conv_12(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L2_Conv_12(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=20.6);
+
+        /* MEL_Model Monitor_52 - L2_Conv_12 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_52(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_52;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_52(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_52(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_51 - L2_Conv_12 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_51(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_51;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_51(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_51(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_50 - L2_Conv_12 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_50(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_50;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_50(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_50(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_83 - L2_Conv_12 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_83(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_83;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_83(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_83(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_82 - L2_Conv_12 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_82(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_82;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_82(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_82(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_81 - L2_Conv_12 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_81(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_81;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_81(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_81(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_80 - L2_Conv_12 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_80(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_80;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_80(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_80(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_54 - L2_Conv_12 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_54(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_54;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_54(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_54(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_53 - L2_Conv_12 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_53(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_53;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_53(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_53(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_86 - L2_Conv_12 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_86(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_86;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_86(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_86(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_85 - L2_Conv_12 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_85(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_85;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_85(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_85(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_84 - L2_Conv_12 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_84(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_84;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_84(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_84(modelData = modelData_laptop);
+
+        /* AC/DC Converter L2_Conv_11 */
+          HPF.DC.DC2DC_Converters.StepDown L2_Conv_11(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L2_Conv_11(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=26.15);
+
+        /* MEL_Model Laptop_71 - L2_Conv_11 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_71(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_71;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_71(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_71(modelData = modelData_laptop);
+
+        /* AC/DC Converter L2_Conv_10 */
+          HPF.DC.DC2DC_Converters.StepDown L2_Conv_10(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L2_Conv_10(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=16.59);
+
+        /* MEL_Model Monitor_39 - L2_Conv_10 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_39(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_39;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_39(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_39(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_59 - L2_Conv_10 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_59(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_59;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_59(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_59(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_58 - L2_Conv_10 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_58(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_58;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_58(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_58(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_40 - L2_Conv_10 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_40(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_40;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_40(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_40(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_61 - L2_Conv_10 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_61(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_61;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_61(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_61(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_60 - L2_Conv_10 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_60(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_60;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_60(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_60(modelData = modelData_laptop);
+
+          Modelica.Electrical.Analog.Interfaces.PositivePin p
+            "Positive electrical pin of port 1" annotation (Placement(transformation(
+                  extent={{-114,-36},{-94,-16}}),
+                                                iconTransformation(extent={{-110,90},{-90,
+                    110}})));
+          HPF.Cables.NEC_CableModelDC cable_mels_L2_B(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+              length=15) annotation (Placement(visible=true, transformation(
+                origin={-50,-22},
+                extent={{10,-10},{-10,10}},
+                rotation=0)));
+        equation
+
+        /* Insert equation here */
+
+        /* DC/DC Converter L2_Conv_15 */
+          connect(cable_L2_Conv_15.n,cable_mels_L2_B.p);
+          connect(L2_Conv_15.p1,  cable_L2_Conv_15.p);
+          connect(L2_Conv_15.n1, GndDC.p);
+          connect(L2_Conv_15.n2, GndDC.p);
+
+        /* MEL Connections Laptop_70 - L2_Conv_15 */
+          connect(MEL_Converter_Laptop_70.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_70.n1, GndDC.p);
+          connect(Laptop_70.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_70.u);
+          connect(Laptop_70.u, Gain_Laptop_70.y);
+          connect(Laptop_70.p, MEL_Converter_Laptop_70.p2);
+          connect(MEL_Converter_Laptop_70.p1, cable_MEL_Laptop_70.p);
+          connect(L2_Conv_15.p2, cable_MEL_Laptop_70.n);
+
+        /* DC/DC Converter L2_Conv_14 */
+          connect(cable_L2_Conv_14.n,cable_mels_L2_B.p);
+          connect(L2_Conv_14.p1,  cable_L2_Conv_14.p);
+          connect(L2_Conv_14.n1, GndDC.p);
+          connect(L2_Conv_14.n2, GndDC.p);
+
+        /* MEL Connections Monitor_37 - L2_Conv_14 */
+          connect(MEL_Converter_Monitor_37.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_37.n1, GndDC.p);
+          connect(Monitor_37.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_37.u);
+          connect(Monitor_37.u, Gain_Monitor_37.y);
+          connect(Monitor_37.p, MEL_Converter_Monitor_37.p2);
+          connect(MEL_Converter_Monitor_37.p1, cable_MEL_Monitor_37.p);
+          connect(L2_Conv_14.p2, cable_MEL_Monitor_37.n);
+
+        /* MEL Connections Laptop_55 - L2_Conv_14 */
+          connect(MEL_Converter_Laptop_55.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_55.n1, GndDC.p);
+          connect(Laptop_55.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_55.u);
+          connect(Laptop_55.u, Gain_Laptop_55.y);
+          connect(Laptop_55.p, MEL_Converter_Laptop_55.p2);
+          connect(MEL_Converter_Laptop_55.p1, cable_MEL_Laptop_55.p);
+          connect(L2_Conv_14.p2, cable_MEL_Laptop_55.n);
+
+        /* MEL Connections Monitor_38 - L2_Conv_14 */
+          connect(MEL_Converter_Monitor_38.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_38.n1, GndDC.p);
+          connect(Monitor_38.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_38.u);
+          connect(Monitor_38.u, Gain_Monitor_38.y);
+          connect(Monitor_38.p, MEL_Converter_Monitor_38.p2);
+          connect(MEL_Converter_Monitor_38.p1, cable_MEL_Monitor_38.p);
+          connect(L2_Conv_14.p2, cable_MEL_Monitor_38.n);
+
+        /* MEL Connections Laptop_57 - L2_Conv_14 */
+          connect(MEL_Converter_Laptop_57.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_57.n1, GndDC.p);
+          connect(Laptop_57.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_57.u);
+          connect(Laptop_57.u, Gain_Laptop_57.y);
+          connect(Laptop_57.p, MEL_Converter_Laptop_57.p2);
+          connect(MEL_Converter_Laptop_57.p1, cable_MEL_Laptop_57.p);
+          connect(L2_Conv_14.p2, cable_MEL_Laptop_57.n);
+
+        /* MEL Connections Laptop_56 - L2_Conv_14 */
+          connect(MEL_Converter_Laptop_56.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_56.n1, GndDC.p);
+          connect(Laptop_56.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_56.u);
+          connect(Laptop_56.u, Gain_Laptop_56.y);
+          connect(Laptop_56.p, MEL_Converter_Laptop_56.p2);
+          connect(MEL_Converter_Laptop_56.p1, cable_MEL_Laptop_56.p);
+          connect(L2_Conv_14.p2, cable_MEL_Laptop_56.n);
+
+        /* DC/DC Converter L2_Conv_12 */
+          connect(cable_L2_Conv_12.n,cable_mels_L2_B.p);
+          connect(L2_Conv_12.p1,  cable_L2_Conv_12.p);
+          connect(L2_Conv_12.n1, GndDC.p);
+          connect(L2_Conv_12.n2, GndDC.p);
+
+        /* MEL Connections Monitor_52 - L2_Conv_12 */
+          connect(MEL_Converter_Monitor_52.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_52.n1, GndDC.p);
+          connect(Monitor_52.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_52.u);
+          connect(Monitor_52.u, Gain_Monitor_52.y);
+          connect(Monitor_52.p, MEL_Converter_Monitor_52.p2);
+          connect(MEL_Converter_Monitor_52.p1, cable_MEL_Monitor_52.p);
+          connect(L2_Conv_12.p2, cable_MEL_Monitor_52.n);
+
+        /* MEL Connections Monitor_51 - L2_Conv_12 */
+          connect(MEL_Converter_Monitor_51.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_51.n1, GndDC.p);
+          connect(Monitor_51.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_51.u);
+          connect(Monitor_51.u, Gain_Monitor_51.y);
+          connect(Monitor_51.p, MEL_Converter_Monitor_51.p2);
+          connect(MEL_Converter_Monitor_51.p1, cable_MEL_Monitor_51.p);
+          connect(L2_Conv_12.p2, cable_MEL_Monitor_51.n);
+
+        /* MEL Connections Monitor_50 - L2_Conv_12 */
+          connect(MEL_Converter_Monitor_50.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_50.n1, GndDC.p);
+          connect(Monitor_50.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_50.u);
+          connect(Monitor_50.u, Gain_Monitor_50.y);
+          connect(Monitor_50.p, MEL_Converter_Monitor_50.p2);
+          connect(MEL_Converter_Monitor_50.p1, cable_MEL_Monitor_50.p);
+          connect(L2_Conv_12.p2, cable_MEL_Monitor_50.n);
+
+        /* MEL Connections Laptop_83 - L2_Conv_12 */
+          connect(MEL_Converter_Laptop_83.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_83.n1, GndDC.p);
+          connect(Laptop_83.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_83.u);
+          connect(Laptop_83.u, Gain_Laptop_83.y);
+          connect(Laptop_83.p, MEL_Converter_Laptop_83.p2);
+          connect(MEL_Converter_Laptop_83.p1, cable_MEL_Laptop_83.p);
+          connect(L2_Conv_12.p2, cable_MEL_Laptop_83.n);
+
+        /* MEL Connections Laptop_82 - L2_Conv_12 */
+          connect(MEL_Converter_Laptop_82.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_82.n1, GndDC.p);
+          connect(Laptop_82.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_82.u);
+          connect(Laptop_82.u, Gain_Laptop_82.y);
+          connect(Laptop_82.p, MEL_Converter_Laptop_82.p2);
+          connect(MEL_Converter_Laptop_82.p1, cable_MEL_Laptop_82.p);
+          connect(L2_Conv_12.p2, cable_MEL_Laptop_82.n);
+
+        /* MEL Connections Laptop_81 - L2_Conv_12 */
+          connect(MEL_Converter_Laptop_81.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_81.n1, GndDC.p);
+          connect(Laptop_81.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_81.u);
+          connect(Laptop_81.u, Gain_Laptop_81.y);
+          connect(Laptop_81.p, MEL_Converter_Laptop_81.p2);
+          connect(MEL_Converter_Laptop_81.p1, cable_MEL_Laptop_81.p);
+          connect(L2_Conv_12.p2, cable_MEL_Laptop_81.n);
+
+        /* MEL Connections Laptop_80 - L2_Conv_12 */
+          connect(MEL_Converter_Laptop_80.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_80.n1, GndDC.p);
+          connect(Laptop_80.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_80.u);
+          connect(Laptop_80.u, Gain_Laptop_80.y);
+          connect(Laptop_80.p, MEL_Converter_Laptop_80.p2);
+          connect(MEL_Converter_Laptop_80.p1, cable_MEL_Laptop_80.p);
+          connect(L2_Conv_12.p2, cable_MEL_Laptop_80.n);
+
+        /* MEL Connections Monitor_54 - L2_Conv_12 */
+          connect(MEL_Converter_Monitor_54.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_54.n1, GndDC.p);
+          connect(Monitor_54.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_54.u);
+          connect(Monitor_54.u, Gain_Monitor_54.y);
+          connect(Monitor_54.p, MEL_Converter_Monitor_54.p2);
+          connect(MEL_Converter_Monitor_54.p1, cable_MEL_Monitor_54.p);
+          connect(L2_Conv_12.p2, cable_MEL_Monitor_54.n);
+
+        /* MEL Connections Monitor_53 - L2_Conv_12 */
+          connect(MEL_Converter_Monitor_53.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_53.n1, GndDC.p);
+          connect(Monitor_53.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_53.u);
+          connect(Monitor_53.u, Gain_Monitor_53.y);
+          connect(Monitor_53.p, MEL_Converter_Monitor_53.p2);
+          connect(MEL_Converter_Monitor_53.p1, cable_MEL_Monitor_53.p);
+          connect(L2_Conv_12.p2, cable_MEL_Monitor_53.n);
+
+        /* MEL Connections Laptop_86 - L2_Conv_12 */
+          connect(MEL_Converter_Laptop_86.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_86.n1, GndDC.p);
+          connect(Laptop_86.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_86.u);
+          connect(Laptop_86.u, Gain_Laptop_86.y);
+          connect(Laptop_86.p, MEL_Converter_Laptop_86.p2);
+          connect(MEL_Converter_Laptop_86.p1, cable_MEL_Laptop_86.p);
+          connect(L2_Conv_12.p2, cable_MEL_Laptop_86.n);
+
+        /* MEL Connections Laptop_85 - L2_Conv_12 */
+          connect(MEL_Converter_Laptop_85.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_85.n1, GndDC.p);
+          connect(Laptop_85.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_85.u);
+          connect(Laptop_85.u, Gain_Laptop_85.y);
+          connect(Laptop_85.p, MEL_Converter_Laptop_85.p2);
+          connect(MEL_Converter_Laptop_85.p1, cable_MEL_Laptop_85.p);
+          connect(L2_Conv_12.p2, cable_MEL_Laptop_85.n);
+
+        /* MEL Connections Laptop_84 - L2_Conv_12 */
+          connect(MEL_Converter_Laptop_84.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_84.n1, GndDC.p);
+          connect(Laptop_84.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_84.u);
+          connect(Laptop_84.u, Gain_Laptop_84.y);
+          connect(Laptop_84.p, MEL_Converter_Laptop_84.p2);
+          connect(MEL_Converter_Laptop_84.p1, cable_MEL_Laptop_84.p);
+          connect(L2_Conv_12.p2, cable_MEL_Laptop_84.n);
+
+        /* DC/DC Converter L2_Conv_11 */
+          connect(cable_L2_Conv_11.n,cable_mels_L2_B.p);
+          connect(L2_Conv_11.p1,  cable_L2_Conv_11.p);
+          connect(L2_Conv_11.n1, GndDC.p);
+          connect(L2_Conv_11.n2, GndDC.p);
+
+        /* MEL Connections Laptop_71 - L2_Conv_11 */
+          connect(MEL_Converter_Laptop_71.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_71.n1, GndDC.p);
+          connect(Laptop_71.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_71.u);
+          connect(Laptop_71.u, Gain_Laptop_71.y);
+          connect(Laptop_71.p, MEL_Converter_Laptop_71.p2);
+          connect(MEL_Converter_Laptop_71.p1, cable_MEL_Laptop_71.p);
+          connect(L2_Conv_11.p2, cable_MEL_Laptop_71.n);
+
+        /* DC/DC Converter L2_Conv_10 */
+          connect(cable_L2_Conv_10.n,cable_mels_L2_B.p);
+          connect(L2_Conv_10.p1,  cable_L2_Conv_10.p);
+          connect(L2_Conv_10.n1, GndDC.p);
+          connect(L2_Conv_10.n2, GndDC.p);
+
+        /* MEL Connections Monitor_39 - L2_Conv_10 */
+          connect(MEL_Converter_Monitor_39.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_39.n1, GndDC.p);
+          connect(Monitor_39.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_39.u);
+          connect(Monitor_39.u, Gain_Monitor_39.y);
+          connect(Monitor_39.p, MEL_Converter_Monitor_39.p2);
+          connect(MEL_Converter_Monitor_39.p1, cable_MEL_Monitor_39.p);
+          connect(L2_Conv_10.p2, cable_MEL_Monitor_39.n);
+
+        /* MEL Connections Laptop_59 - L2_Conv_10 */
+          connect(MEL_Converter_Laptop_59.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_59.n1, GndDC.p);
+          connect(Laptop_59.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_59.u);
+          connect(Laptop_59.u, Gain_Laptop_59.y);
+          connect(Laptop_59.p, MEL_Converter_Laptop_59.p2);
+          connect(MEL_Converter_Laptop_59.p1, cable_MEL_Laptop_59.p);
+          connect(L2_Conv_10.p2, cable_MEL_Laptop_59.n);
+
+        /* MEL Connections Laptop_58 - L2_Conv_10 */
+          connect(MEL_Converter_Laptop_58.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_58.n1, GndDC.p);
+          connect(Laptop_58.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_58.u);
+          connect(Laptop_58.u, Gain_Laptop_58.y);
+          connect(Laptop_58.p, MEL_Converter_Laptop_58.p2);
+          connect(MEL_Converter_Laptop_58.p1, cable_MEL_Laptop_58.p);
+          connect(L2_Conv_10.p2, cable_MEL_Laptop_58.n);
+
+        /* MEL Connections Monitor_40 - L2_Conv_10 */
+          connect(MEL_Converter_Monitor_40.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_40.n1, GndDC.p);
+          connect(Monitor_40.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_40.u);
+          connect(Monitor_40.u, Gain_Monitor_40.y);
+          connect(Monitor_40.p, MEL_Converter_Monitor_40.p2);
+          connect(MEL_Converter_Monitor_40.p1, cable_MEL_Monitor_40.p);
+          connect(L2_Conv_10.p2, cable_MEL_Monitor_40.n);
+
+        /* MEL Connections Laptop_61 - L2_Conv_10 */
+          connect(MEL_Converter_Laptop_61.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_61.n1, GndDC.p);
+          connect(Laptop_61.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_61.u);
+          connect(Laptop_61.u, Gain_Laptop_61.y);
+          connect(Laptop_61.p, MEL_Converter_Laptop_61.p2);
+          connect(MEL_Converter_Laptop_61.p1, cable_MEL_Laptop_61.p);
+          connect(L2_Conv_10.p2, cable_MEL_Laptop_61.n);
+
+        /* MEL Connections Laptop_60 - L2_Conv_10 */
+          connect(MEL_Converter_Laptop_60.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_60.n1, GndDC.p);
+          connect(Laptop_60.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_60.u);
+          connect(Laptop_60.u, Gain_Laptop_60.y);
+          connect(Laptop_60.p, MEL_Converter_Laptop_60.p2);
+          connect(MEL_Converter_Laptop_60.p1, cable_MEL_Laptop_60.p);
+          connect(L2_Conv_10.p2, cable_MEL_Laptop_60.n);
+
+          connect(cable_mels_L2_B.n, p) annotation (Line(points={{-60,-22},{-68,-22},{
+                  -68,-24},{-104,-24},{-104,-26}}, color={0,0,255}));
+          annotation ();
+        end SmallDC_MEL_Panel_L2B;
+
+        model SmallDC_MEL_Panel_L2C
+          outer parameter Real PF;
+          outer parameter Real PF1;
+          /* parameter Real PF = 0.9; */
+
+          outer HPF.SystemDef systemDef;
+          Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+            Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Laptop(
+            tableOnFile=true,
+            tableName="L2-All-Laptops",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-60,72},{-40,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Monitor(
+            tableOnFile=true,
+            tableName="L2-All-Monitors",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{10,72},{30,92}})));
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_laptop(V = 19.5, alpha = 2.0773, beta = 0.025225, gamma = 0.0032425);
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_monitor(V = 19.5, alpha = 1.67642, beta = 0.025225, gamma = 0.0040178);
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 14.2661328, beta = -0.004643965, gamma = 0.0000295798);
+
+        /* Insert models here */
+
+        /* AC/DC Converter L2_Conv_24 */
+          HPF.DC.DC2DC_Converters.StepDown L2_Conv_24(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L2_Conv_24(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=38.79);
+
+        /* MEL_Model Monitor_34 - L2_Conv_24 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_34(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_34;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_34(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_34(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_51 - L2_Conv_24 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_51(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_51;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_51(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_51(modelData = modelData_laptop);
+
+        /* AC/DC Converter L2_Conv_23 */
+          HPF.DC.DC2DC_Converters.StepDown L2_Conv_23(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L2_Conv_23(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=37.0);
+
+        /* MEL_Model Laptop_64 - L2_Conv_23 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_64(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_64;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_64(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_64(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_63 - L2_Conv_23 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_63(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_63;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_63(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_63(modelData = modelData_laptop);
+
+        /* AC/DC Converter L2_Conv_22 */
+          HPF.DC.DC2DC_Converters.StepDown L2_Conv_22(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L2_Conv_22(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=36.79);
+
+        /* MEL_Model Monitor_42 - L2_Conv_22 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_42(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_42;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_42(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_42(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_66 - L2_Conv_22 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_66(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_66;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_66(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_66(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_65 - L2_Conv_22 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_65(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_65;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_65(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_65(modelData = modelData_laptop);
+
+        /* AC/DC Converter L2_Conv_21 */
+          HPF.DC.DC2DC_Converters.StepDown L2_Conv_21(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L2_Conv_21(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=39.11);
+
+        /* MEL_Model Monitor_44 - L2_Conv_21 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_44(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_44;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_44(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_44(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_43 - L2_Conv_21 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_43(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_43;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_43(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_43(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_69 - L2_Conv_21 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_69(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_69;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_69(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_69(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_68 - L2_Conv_21 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_68(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_68;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_68(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_68(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_67 - L2_Conv_21 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_67(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_67;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_67(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_67(modelData = modelData_laptop);
+
+        /* AC/DC Converter L2_Conv_19 */
+          HPF.DC.DC2DC_Converters.StepDown L2_Conv_19(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L2_Conv_19(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=31.53);
+
+        /* MEL_Model Monitor_35 - L2_Conv_19 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_35(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_35;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_35(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_35(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_52 - L2_Conv_19 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_52(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_52;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_52(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_52(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_36 - L2_Conv_19 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_36(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_36;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_36(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_36(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_54 - L2_Conv_19 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_54(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_54;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_54(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_54(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_53 - L2_Conv_19 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_53(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_53;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_53(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_53(modelData = modelData_laptop);
+
+        /* AC/DC Converter L2_Conv_16 */
+          HPF.DC.DC2DC_Converters.StepDown L2_Conv_16(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L2_Conv_16(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=32.15);
+
+        /* MEL_Model Monitor_46 - L2_Conv_16 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_46(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_46;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_46(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_46(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_45 - L2_Conv_16 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_45(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_45;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_45(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_45(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_76 - L2_Conv_16 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_76(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_76;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_76(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_76(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_75 - L2_Conv_16 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_75(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_75;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_75(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_75(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_74 - L2_Conv_16 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_74(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_74;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_74(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_74(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_73 - L2_Conv_16 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_73(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_73;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_73(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_73(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_49 - L2_Conv_16 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_49(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_49;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_49(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_49(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_48 - L2_Conv_16 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_48(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_48;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_48(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_48(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_47 - L2_Conv_16 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_47(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_47;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_47(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_47(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_79 - L2_Conv_16 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_79(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_79;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_79(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_79(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_78 - L2_Conv_16 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_78(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_78;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_78(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_78(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_77 - L2_Conv_16 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_77(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_77;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_77(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_77(modelData = modelData_laptop);
+
+          Modelica.Electrical.Analog.Interfaces.PositivePin p
+            "Positive electrical pin of port 1" annotation (Placement(transformation(
+                  extent={{-114,-36},{-94,-16}}),
+                                                iconTransformation(extent={{-110,90},{-90,
+                    110}})));
+          HPF.Cables.NEC_CableModelDC cable_mels_L2_C(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+              length=15) annotation (Placement(visible=true, transformation(
+                origin={-50,-22},
+                extent={{10,-10},{-10,10}},
+                rotation=0)));
+        equation
+
+        /* Insert equation here */
+
+        /* DC/DC Converter L2_Conv_24 */
+          connect(cable_L2_Conv_24.n,cable_mels_L2_C.p);
+          connect(L2_Conv_24.p1,  cable_L2_Conv_24.p);
+          connect(L2_Conv_24.n1, GndDC.p);
+          connect(L2_Conv_24.n2, GndDC.p);
+
+        /* MEL Connections Monitor_34 - L2_Conv_24 */
+          connect(MEL_Converter_Monitor_34.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_34.n1, GndDC.p);
+          connect(Monitor_34.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_34.u);
+          connect(Monitor_34.u, Gain_Monitor_34.y);
+          connect(Monitor_34.p, MEL_Converter_Monitor_34.p2);
+          connect(MEL_Converter_Monitor_34.p1, cable_MEL_Monitor_34.p);
+          connect(L2_Conv_24.p2, cable_MEL_Monitor_34.n);
+
+        /* MEL Connections Laptop_51 - L2_Conv_24 */
+          connect(MEL_Converter_Laptop_51.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_51.n1, GndDC.p);
+          connect(Laptop_51.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_51.u);
+          connect(Laptop_51.u, Gain_Laptop_51.y);
+          connect(Laptop_51.p, MEL_Converter_Laptop_51.p2);
+          connect(MEL_Converter_Laptop_51.p1, cable_MEL_Laptop_51.p);
+          connect(L2_Conv_24.p2, cable_MEL_Laptop_51.n);
+
+        /* DC/DC Converter L2_Conv_23 */
+          connect(cable_L2_Conv_23.n,cable_mels_L2_C.p);
+          connect(L2_Conv_23.p1,  cable_L2_Conv_23.p);
+          connect(L2_Conv_23.n1, GndDC.p);
+          connect(L2_Conv_23.n2, GndDC.p);
+
+        /* MEL Connections Laptop_64 - L2_Conv_23 */
+          connect(MEL_Converter_Laptop_64.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_64.n1, GndDC.p);
+          connect(Laptop_64.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_64.u);
+          connect(Laptop_64.u, Gain_Laptop_64.y);
+          connect(Laptop_64.p, MEL_Converter_Laptop_64.p2);
+          connect(MEL_Converter_Laptop_64.p1, cable_MEL_Laptop_64.p);
+          connect(L2_Conv_23.p2, cable_MEL_Laptop_64.n);
+
+        /* MEL Connections Laptop_63 - L2_Conv_23 */
+          connect(MEL_Converter_Laptop_63.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_63.n1, GndDC.p);
+          connect(Laptop_63.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_63.u);
+          connect(Laptop_63.u, Gain_Laptop_63.y);
+          connect(Laptop_63.p, MEL_Converter_Laptop_63.p2);
+          connect(MEL_Converter_Laptop_63.p1, cable_MEL_Laptop_63.p);
+          connect(L2_Conv_23.p2, cable_MEL_Laptop_63.n);
+
+        /* DC/DC Converter L2_Conv_22 */
+          connect(cable_L2_Conv_22.n,cable_mels_L2_C.p);
+          connect(L2_Conv_22.p1,  cable_L2_Conv_22.p);
+          connect(L2_Conv_22.n1, GndDC.p);
+          connect(L2_Conv_22.n2, GndDC.p);
+
+        /* MEL Connections Monitor_42 - L2_Conv_22 */
+          connect(MEL_Converter_Monitor_42.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_42.n1, GndDC.p);
+          connect(Monitor_42.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_42.u);
+          connect(Monitor_42.u, Gain_Monitor_42.y);
+          connect(Monitor_42.p, MEL_Converter_Monitor_42.p2);
+          connect(MEL_Converter_Monitor_42.p1, cable_MEL_Monitor_42.p);
+          connect(L2_Conv_22.p2, cable_MEL_Monitor_42.n);
+
+        /* MEL Connections Laptop_66 - L2_Conv_22 */
+          connect(MEL_Converter_Laptop_66.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_66.n1, GndDC.p);
+          connect(Laptop_66.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_66.u);
+          connect(Laptop_66.u, Gain_Laptop_66.y);
+          connect(Laptop_66.p, MEL_Converter_Laptop_66.p2);
+          connect(MEL_Converter_Laptop_66.p1, cable_MEL_Laptop_66.p);
+          connect(L2_Conv_22.p2, cable_MEL_Laptop_66.n);
+
+        /* MEL Connections Laptop_65 - L2_Conv_22 */
+          connect(MEL_Converter_Laptop_65.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_65.n1, GndDC.p);
+          connect(Laptop_65.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_65.u);
+          connect(Laptop_65.u, Gain_Laptop_65.y);
+          connect(Laptop_65.p, MEL_Converter_Laptop_65.p2);
+          connect(MEL_Converter_Laptop_65.p1, cable_MEL_Laptop_65.p);
+          connect(L2_Conv_22.p2, cable_MEL_Laptop_65.n);
+
+        /* DC/DC Converter L2_Conv_21 */
+          connect(cable_L2_Conv_21.n,cable_mels_L2_C.p);
+          connect(L2_Conv_21.p1,  cable_L2_Conv_21.p);
+          connect(L2_Conv_21.n1, GndDC.p);
+          connect(L2_Conv_21.n2, GndDC.p);
+
+        /* MEL Connections Monitor_44 - L2_Conv_21 */
+          connect(MEL_Converter_Monitor_44.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_44.n1, GndDC.p);
+          connect(Monitor_44.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_44.u);
+          connect(Monitor_44.u, Gain_Monitor_44.y);
+          connect(Monitor_44.p, MEL_Converter_Monitor_44.p2);
+          connect(MEL_Converter_Monitor_44.p1, cable_MEL_Monitor_44.p);
+          connect(L2_Conv_21.p2, cable_MEL_Monitor_44.n);
+
+        /* MEL Connections Monitor_43 - L2_Conv_21 */
+          connect(MEL_Converter_Monitor_43.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_43.n1, GndDC.p);
+          connect(Monitor_43.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_43.u);
+          connect(Monitor_43.u, Gain_Monitor_43.y);
+          connect(Monitor_43.p, MEL_Converter_Monitor_43.p2);
+          connect(MEL_Converter_Monitor_43.p1, cable_MEL_Monitor_43.p);
+          connect(L2_Conv_21.p2, cable_MEL_Monitor_43.n);
+
+        /* MEL Connections Laptop_69 - L2_Conv_21 */
+          connect(MEL_Converter_Laptop_69.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_69.n1, GndDC.p);
+          connect(Laptop_69.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_69.u);
+          connect(Laptop_69.u, Gain_Laptop_69.y);
+          connect(Laptop_69.p, MEL_Converter_Laptop_69.p2);
+          connect(MEL_Converter_Laptop_69.p1, cable_MEL_Laptop_69.p);
+          connect(L2_Conv_21.p2, cable_MEL_Laptop_69.n);
+
+        /* MEL Connections Laptop_68 - L2_Conv_21 */
+          connect(MEL_Converter_Laptop_68.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_68.n1, GndDC.p);
+          connect(Laptop_68.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_68.u);
+          connect(Laptop_68.u, Gain_Laptop_68.y);
+          connect(Laptop_68.p, MEL_Converter_Laptop_68.p2);
+          connect(MEL_Converter_Laptop_68.p1, cable_MEL_Laptop_68.p);
+          connect(L2_Conv_21.p2, cable_MEL_Laptop_68.n);
+
+        /* MEL Connections Laptop_67 - L2_Conv_21 */
+          connect(MEL_Converter_Laptop_67.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_67.n1, GndDC.p);
+          connect(Laptop_67.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_67.u);
+          connect(Laptop_67.u, Gain_Laptop_67.y);
+          connect(Laptop_67.p, MEL_Converter_Laptop_67.p2);
+          connect(MEL_Converter_Laptop_67.p1, cable_MEL_Laptop_67.p);
+          connect(L2_Conv_21.p2, cable_MEL_Laptop_67.n);
+
+        /* DC/DC Converter L2_Conv_19 */
+          connect(cable_L2_Conv_19.n,cable_mels_L2_C.p);
+          connect(L2_Conv_19.p1,  cable_L2_Conv_19.p);
+          connect(L2_Conv_19.n1, GndDC.p);
+          connect(L2_Conv_19.n2, GndDC.p);
+
+        /* MEL Connections Monitor_35 - L2_Conv_19 */
+          connect(MEL_Converter_Monitor_35.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_35.n1, GndDC.p);
+          connect(Monitor_35.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_35.u);
+          connect(Monitor_35.u, Gain_Monitor_35.y);
+          connect(Monitor_35.p, MEL_Converter_Monitor_35.p2);
+          connect(MEL_Converter_Monitor_35.p1, cable_MEL_Monitor_35.p);
+          connect(L2_Conv_19.p2, cable_MEL_Monitor_35.n);
+
+        /* MEL Connections Laptop_52 - L2_Conv_19 */
+          connect(MEL_Converter_Laptop_52.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_52.n1, GndDC.p);
+          connect(Laptop_52.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_52.u);
+          connect(Laptop_52.u, Gain_Laptop_52.y);
+          connect(Laptop_52.p, MEL_Converter_Laptop_52.p2);
+          connect(MEL_Converter_Laptop_52.p1, cable_MEL_Laptop_52.p);
+          connect(L2_Conv_19.p2, cable_MEL_Laptop_52.n);
+
+        /* MEL Connections Monitor_36 - L2_Conv_19 */
+          connect(MEL_Converter_Monitor_36.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_36.n1, GndDC.p);
+          connect(Monitor_36.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_36.u);
+          connect(Monitor_36.u, Gain_Monitor_36.y);
+          connect(Monitor_36.p, MEL_Converter_Monitor_36.p2);
+          connect(MEL_Converter_Monitor_36.p1, cable_MEL_Monitor_36.p);
+          connect(L2_Conv_19.p2, cable_MEL_Monitor_36.n);
+
+        /* MEL Connections Laptop_54 - L2_Conv_19 */
+          connect(MEL_Converter_Laptop_54.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_54.n1, GndDC.p);
+          connect(Laptop_54.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_54.u);
+          connect(Laptop_54.u, Gain_Laptop_54.y);
+          connect(Laptop_54.p, MEL_Converter_Laptop_54.p2);
+          connect(MEL_Converter_Laptop_54.p1, cable_MEL_Laptop_54.p);
+          connect(L2_Conv_19.p2, cable_MEL_Laptop_54.n);
+
+        /* MEL Connections Laptop_53 - L2_Conv_19 */
+          connect(MEL_Converter_Laptop_53.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_53.n1, GndDC.p);
+          connect(Laptop_53.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_53.u);
+          connect(Laptop_53.u, Gain_Laptop_53.y);
+          connect(Laptop_53.p, MEL_Converter_Laptop_53.p2);
+          connect(MEL_Converter_Laptop_53.p1, cable_MEL_Laptop_53.p);
+          connect(L2_Conv_19.p2, cable_MEL_Laptop_53.n);
+
+        /* DC/DC Converter L2_Conv_16 */
+          connect(cable_L2_Conv_16.n,cable_mels_L2_C.p);
+          connect(L2_Conv_16.p1,  cable_L2_Conv_16.p);
+          connect(L2_Conv_16.n1, GndDC.p);
+          connect(L2_Conv_16.n2, GndDC.p);
+
+        /* MEL Connections Monitor_46 - L2_Conv_16 */
+          connect(MEL_Converter_Monitor_46.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_46.n1, GndDC.p);
+          connect(Monitor_46.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_46.u);
+          connect(Monitor_46.u, Gain_Monitor_46.y);
+          connect(Monitor_46.p, MEL_Converter_Monitor_46.p2);
+          connect(MEL_Converter_Monitor_46.p1, cable_MEL_Monitor_46.p);
+          connect(L2_Conv_16.p2, cable_MEL_Monitor_46.n);
+
+        /* MEL Connections Monitor_45 - L2_Conv_16 */
+          connect(MEL_Converter_Monitor_45.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_45.n1, GndDC.p);
+          connect(Monitor_45.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_45.u);
+          connect(Monitor_45.u, Gain_Monitor_45.y);
+          connect(Monitor_45.p, MEL_Converter_Monitor_45.p2);
+          connect(MEL_Converter_Monitor_45.p1, cable_MEL_Monitor_45.p);
+          connect(L2_Conv_16.p2, cable_MEL_Monitor_45.n);
+
+        /* MEL Connections Laptop_76 - L2_Conv_16 */
+          connect(MEL_Converter_Laptop_76.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_76.n1, GndDC.p);
+          connect(Laptop_76.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_76.u);
+          connect(Laptop_76.u, Gain_Laptop_76.y);
+          connect(Laptop_76.p, MEL_Converter_Laptop_76.p2);
+          connect(MEL_Converter_Laptop_76.p1, cable_MEL_Laptop_76.p);
+          connect(L2_Conv_16.p2, cable_MEL_Laptop_76.n);
+
+        /* MEL Connections Laptop_75 - L2_Conv_16 */
+          connect(MEL_Converter_Laptop_75.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_75.n1, GndDC.p);
+          connect(Laptop_75.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_75.u);
+          connect(Laptop_75.u, Gain_Laptop_75.y);
+          connect(Laptop_75.p, MEL_Converter_Laptop_75.p2);
+          connect(MEL_Converter_Laptop_75.p1, cable_MEL_Laptop_75.p);
+          connect(L2_Conv_16.p2, cable_MEL_Laptop_75.n);
+
+        /* MEL Connections Laptop_74 - L2_Conv_16 */
+          connect(MEL_Converter_Laptop_74.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_74.n1, GndDC.p);
+          connect(Laptop_74.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_74.u);
+          connect(Laptop_74.u, Gain_Laptop_74.y);
+          connect(Laptop_74.p, MEL_Converter_Laptop_74.p2);
+          connect(MEL_Converter_Laptop_74.p1, cable_MEL_Laptop_74.p);
+          connect(L2_Conv_16.p2, cable_MEL_Laptop_74.n);
+
+        /* MEL Connections Laptop_73 - L2_Conv_16 */
+          connect(MEL_Converter_Laptop_73.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_73.n1, GndDC.p);
+          connect(Laptop_73.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_73.u);
+          connect(Laptop_73.u, Gain_Laptop_73.y);
+          connect(Laptop_73.p, MEL_Converter_Laptop_73.p2);
+          connect(MEL_Converter_Laptop_73.p1, cable_MEL_Laptop_73.p);
+          connect(L2_Conv_16.p2, cable_MEL_Laptop_73.n);
+
+        /* MEL Connections Monitor_49 - L2_Conv_16 */
+          connect(MEL_Converter_Monitor_49.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_49.n1, GndDC.p);
+          connect(Monitor_49.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_49.u);
+          connect(Monitor_49.u, Gain_Monitor_49.y);
+          connect(Monitor_49.p, MEL_Converter_Monitor_49.p2);
+          connect(MEL_Converter_Monitor_49.p1, cable_MEL_Monitor_49.p);
+          connect(L2_Conv_16.p2, cable_MEL_Monitor_49.n);
+
+        /* MEL Connections Monitor_48 - L2_Conv_16 */
+          connect(MEL_Converter_Monitor_48.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_48.n1, GndDC.p);
+          connect(Monitor_48.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_48.u);
+          connect(Monitor_48.u, Gain_Monitor_48.y);
+          connect(Monitor_48.p, MEL_Converter_Monitor_48.p2);
+          connect(MEL_Converter_Monitor_48.p1, cable_MEL_Monitor_48.p);
+          connect(L2_Conv_16.p2, cable_MEL_Monitor_48.n);
+
+        /* MEL Connections Monitor_47 - L2_Conv_16 */
+          connect(MEL_Converter_Monitor_47.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_47.n1, GndDC.p);
+          connect(Monitor_47.n, GndDC.p);
+          connect(combiTimeTable_L2_Monitor.y[1], Gain_Monitor_47.u);
+          connect(Monitor_47.u, Gain_Monitor_47.y);
+          connect(Monitor_47.p, MEL_Converter_Monitor_47.p2);
+          connect(MEL_Converter_Monitor_47.p1, cable_MEL_Monitor_47.p);
+          connect(L2_Conv_16.p2, cable_MEL_Monitor_47.n);
+
+        /* MEL Connections Laptop_79 - L2_Conv_16 */
+          connect(MEL_Converter_Laptop_79.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_79.n1, GndDC.p);
+          connect(Laptop_79.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_79.u);
+          connect(Laptop_79.u, Gain_Laptop_79.y);
+          connect(Laptop_79.p, MEL_Converter_Laptop_79.p2);
+          connect(MEL_Converter_Laptop_79.p1, cable_MEL_Laptop_79.p);
+          connect(L2_Conv_16.p2, cable_MEL_Laptop_79.n);
+
+        /* MEL Connections Laptop_78 - L2_Conv_16 */
+          connect(MEL_Converter_Laptop_78.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_78.n1, GndDC.p);
+          connect(Laptop_78.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_78.u);
+          connect(Laptop_78.u, Gain_Laptop_78.y);
+          connect(Laptop_78.p, MEL_Converter_Laptop_78.p2);
+          connect(MEL_Converter_Laptop_78.p1, cable_MEL_Laptop_78.p);
+          connect(L2_Conv_16.p2, cable_MEL_Laptop_78.n);
+
+        /* MEL Connections Laptop_77 - L2_Conv_16 */
+          connect(MEL_Converter_Laptop_77.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_77.n1, GndDC.p);
+          connect(Laptop_77.n, GndDC.p);
+          connect(combiTimeTable_L2_Laptop.y[1], Gain_Laptop_77.u);
+          connect(Laptop_77.u, Gain_Laptop_77.y);
+          connect(Laptop_77.p, MEL_Converter_Laptop_77.p2);
+          connect(MEL_Converter_Laptop_77.p1, cable_MEL_Laptop_77.p);
+          connect(L2_Conv_16.p2, cable_MEL_Laptop_77.n);
+
+          connect(cable_mels_L2_C.n, p) annotation (Line(points={{-60,-22},{-68,-22},{
+                  -68,-24},{-104,-24},{-104,-26}}, color={0,0,255}));
+          annotation ();
+        end SmallDC_MEL_Panel_L2C;
+
+        model SmallDC_MEL_Panel_L3A
+          outer parameter Real PF;
+          outer parameter Real PF1;
+          /* parameter Real PF = 0.9; */
+
+          outer HPF.SystemDef systemDef;
+          Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+            Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Laptop(
+            tableOnFile=true,
+            tableName="L3-All-Laptops",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-60,72},{-40,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Monitor(
+            tableOnFile=true,
+            tableName="L3-All-Monitors",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{10,72},{30,92}})));
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_laptop(V = 19.5, alpha = 2.0773, beta = 0.025225, gamma = 0.0032425);
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_monitor(V = 19.5, alpha = 1.67642, beta = 0.025225, gamma = 0.0040178);
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 14.2661328, beta = -0.004643965, gamma = 0.0000295798);
+
+        /* Insert models here */
+
+        /* AC/DC Converter L3_Conv_8 */
+          HPF.DC.DC2DC_Converters.StepDown L3_Conv_8(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L3_Conv_8(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=23.66);
+
+        /* MEL_Model Monitor_92 - L3_Conv_8 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_92(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_92;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_92(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_92(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_128 - L3_Conv_8 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_128(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_128;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_128(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_128(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_127 - L3_Conv_8 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_127(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_127;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_127(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_127(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_91 - L3_Conv_8 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_91(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_91;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_91(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_91(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_90 - L3_Conv_8 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_90(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_90;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_90(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_90(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_126 - L3_Conv_8 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_126(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_126;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_126(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_126(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_125 - L3_Conv_8 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_125(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_125;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_125(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_125(modelData = modelData_laptop);
+
+        /* AC/DC Converter L3_Conv_7 */
+          HPF.DC.DC2DC_Converters.StepDown L3_Conv_7(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L3_Conv_7(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=24.55);
+
+        /* MEL_Model Monitor_86 - L3_Conv_7 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_86(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_86;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_86(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_86(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_120 - L3_Conv_7 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_120(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_120;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_120(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_120(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_89 - L3_Conv_7 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_89(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_89;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_89(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_89(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_124 - L3_Conv_7 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_124(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_124;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_124(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_124(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_123 - L3_Conv_7 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_123(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_123;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_123(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_123(modelData = modelData_laptop);
+
+        /* AC/DC Converter L3_Conv_6 */
+          HPF.DC.DC2DC_Converters.StepDown L3_Conv_6(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L3_Conv_6(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=30.33);
+
+        /* MEL_Model Laptop_142 - L3_Conv_6 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_142(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_142;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_142(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_142(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_85 - L3_Conv_6 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_85(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_85;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_85(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_85(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_119 - L3_Conv_6 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_119(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_119;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_119(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_119(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_118 - L3_Conv_6 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_118(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_118;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_118(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_118(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_96 - L3_Conv_6 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_96(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_96;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_96(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_96(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_141 - L3_Conv_6 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_141(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_141;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_141(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_141(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_88 - L3_Conv_6 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_88(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_88;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_88(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_88(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_87 - L3_Conv_6 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_87(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_87;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_87(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_87(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_122 - L3_Conv_6 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_122(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_122;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_122(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_122(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_121 - L3_Conv_6 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_121(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_121;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_121(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_121(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_95 - L3_Conv_6 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_95(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_95;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_95(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_95(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_94 - L3_Conv_6 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_94(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_94;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_94(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_94(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_140 - L3_Conv_6 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_140(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_140;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_140(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_140(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_139 - L3_Conv_6 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_139(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_139;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_139(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_139(modelData = modelData_laptop);
+
+        /* AC/DC Converter L3_Conv_5 */
+          HPF.DC.DC2DC_Converters.StepDown L3_Conv_5(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L3_Conv_5(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=31.46);
+
+        /* MEL_Model Laptop_132 - L3_Conv_5 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_132(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_132;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_132(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_132(modelData = modelData_laptop);
+
+        /* AC/DC Converter L3_Conv_3 */
+          HPF.DC.DC2DC_Converters.StepDown L3_Conv_3(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L3_Conv_3(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=28.93);
+
+        /* MEL_Model Laptop_131 - L3_Conv_3 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_131(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_131;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_131(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_131(modelData = modelData_laptop);
+
+        /* AC/DC Converter L3_Conv_2 */
+          HPF.DC.DC2DC_Converters.StepDown L3_Conv_2(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L3_Conv_2(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=31.08);
+
+        /* MEL_Model Laptop_130 - L3_Conv_2 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_130(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_130;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_130(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_130(modelData = modelData_laptop);
+
+        /* AC/DC Converter L3_Conv_1 */
+          HPF.DC.DC2DC_Converters.StepDown L3_Conv_1(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L3_Conv_1(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=36.4);
+
+        /* MEL_Model Laptop_129 - L3_Conv_1 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_129(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_129;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_129(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_129(modelData = modelData_laptop);
+
+          Modelica.Electrical.Analog.Interfaces.PositivePin p
+            "Positive electrical pin of port 1" annotation (Placement(transformation(
+                  extent={{-114,-36},{-94,-16}}),
+                                                iconTransformation(extent={{-110,90},{-90,
+                    110}})));
+          HPF.Cables.NEC_CableModelDC cable_mels_L3_A(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+              length=15) annotation (Placement(visible=true, transformation(
+                origin={-50,-22},
+                extent={{10,-10},{-10,10}},
+                rotation=0)));
+        equation
+
+        /* Insert equation here */
+
+        /* DC/DC Converter L3_Conv_8 */
+          connect(cable_L3_Conv_8.n,cable_mels_L3_A.p);
+          connect(L3_Conv_8.p1,  cable_L3_Conv_8.p);
+          connect(L3_Conv_8.n1, GndDC.p);
+          connect(L3_Conv_8.n2, GndDC.p);
+
+        /* MEL Connections Monitor_92 - L3_Conv_8 */
+          connect(MEL_Converter_Monitor_92.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_92.n1, GndDC.p);
+          connect(Monitor_92.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_92.u);
+          connect(Monitor_92.u, Gain_Monitor_92.y);
+          connect(Monitor_92.p, MEL_Converter_Monitor_92.p2);
+          connect(MEL_Converter_Monitor_92.p1, cable_MEL_Monitor_92.p);
+          connect(L3_Conv_8.p2, cable_MEL_Monitor_92.n);
+
+        /* MEL Connections Laptop_128 - L3_Conv_8 */
+          connect(MEL_Converter_Laptop_128.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_128.n1, GndDC.p);
+          connect(Laptop_128.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_128.u);
+          connect(Laptop_128.u, Gain_Laptop_128.y);
+          connect(Laptop_128.p, MEL_Converter_Laptop_128.p2);
+          connect(MEL_Converter_Laptop_128.p1, cable_MEL_Laptop_128.p);
+          connect(L3_Conv_8.p2, cable_MEL_Laptop_128.n);
+
+        /* MEL Connections Laptop_127 - L3_Conv_8 */
+          connect(MEL_Converter_Laptop_127.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_127.n1, GndDC.p);
+          connect(Laptop_127.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_127.u);
+          connect(Laptop_127.u, Gain_Laptop_127.y);
+          connect(Laptop_127.p, MEL_Converter_Laptop_127.p2);
+          connect(MEL_Converter_Laptop_127.p1, cable_MEL_Laptop_127.p);
+          connect(L3_Conv_8.p2, cable_MEL_Laptop_127.n);
+
+        /* MEL Connections Monitor_91 - L3_Conv_8 */
+          connect(MEL_Converter_Monitor_91.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_91.n1, GndDC.p);
+          connect(Monitor_91.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_91.u);
+          connect(Monitor_91.u, Gain_Monitor_91.y);
+          connect(Monitor_91.p, MEL_Converter_Monitor_91.p2);
+          connect(MEL_Converter_Monitor_91.p1, cable_MEL_Monitor_91.p);
+          connect(L3_Conv_8.p2, cable_MEL_Monitor_91.n);
+
+        /* MEL Connections Monitor_90 - L3_Conv_8 */
+          connect(MEL_Converter_Monitor_90.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_90.n1, GndDC.p);
+          connect(Monitor_90.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_90.u);
+          connect(Monitor_90.u, Gain_Monitor_90.y);
+          connect(Monitor_90.p, MEL_Converter_Monitor_90.p2);
+          connect(MEL_Converter_Monitor_90.p1, cable_MEL_Monitor_90.p);
+          connect(L3_Conv_8.p2, cable_MEL_Monitor_90.n);
+
+        /* MEL Connections Laptop_126 - L3_Conv_8 */
+          connect(MEL_Converter_Laptop_126.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_126.n1, GndDC.p);
+          connect(Laptop_126.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_126.u);
+          connect(Laptop_126.u, Gain_Laptop_126.y);
+          connect(Laptop_126.p, MEL_Converter_Laptop_126.p2);
+          connect(MEL_Converter_Laptop_126.p1, cable_MEL_Laptop_126.p);
+          connect(L3_Conv_8.p2, cable_MEL_Laptop_126.n);
+
+        /* MEL Connections Laptop_125 - L3_Conv_8 */
+          connect(MEL_Converter_Laptop_125.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_125.n1, GndDC.p);
+          connect(Laptop_125.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_125.u);
+          connect(Laptop_125.u, Gain_Laptop_125.y);
+          connect(Laptop_125.p, MEL_Converter_Laptop_125.p2);
+          connect(MEL_Converter_Laptop_125.p1, cable_MEL_Laptop_125.p);
+          connect(L3_Conv_8.p2, cable_MEL_Laptop_125.n);
+
+        /* DC/DC Converter L3_Conv_7 */
+          connect(cable_L3_Conv_7.n,cable_mels_L3_A.p);
+          connect(L3_Conv_7.p1,  cable_L3_Conv_7.p);
+          connect(L3_Conv_7.n1, GndDC.p);
+          connect(L3_Conv_7.n2, GndDC.p);
+
+        /* MEL Connections Monitor_86 - L3_Conv_7 */
+          connect(MEL_Converter_Monitor_86.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_86.n1, GndDC.p);
+          connect(Monitor_86.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_86.u);
+          connect(Monitor_86.u, Gain_Monitor_86.y);
+          connect(Monitor_86.p, MEL_Converter_Monitor_86.p2);
+          connect(MEL_Converter_Monitor_86.p1, cable_MEL_Monitor_86.p);
+          connect(L3_Conv_7.p2, cable_MEL_Monitor_86.n);
+
+        /* MEL Connections Laptop_120 - L3_Conv_7 */
+          connect(MEL_Converter_Laptop_120.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_120.n1, GndDC.p);
+          connect(Laptop_120.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_120.u);
+          connect(Laptop_120.u, Gain_Laptop_120.y);
+          connect(Laptop_120.p, MEL_Converter_Laptop_120.p2);
+          connect(MEL_Converter_Laptop_120.p1, cable_MEL_Laptop_120.p);
+          connect(L3_Conv_7.p2, cable_MEL_Laptop_120.n);
+
+        /* MEL Connections Monitor_89 - L3_Conv_7 */
+          connect(MEL_Converter_Monitor_89.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_89.n1, GndDC.p);
+          connect(Monitor_89.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_89.u);
+          connect(Monitor_89.u, Gain_Monitor_89.y);
+          connect(Monitor_89.p, MEL_Converter_Monitor_89.p2);
+          connect(MEL_Converter_Monitor_89.p1, cable_MEL_Monitor_89.p);
+          connect(L3_Conv_7.p2, cable_MEL_Monitor_89.n);
+
+        /* MEL Connections Laptop_124 - L3_Conv_7 */
+          connect(MEL_Converter_Laptop_124.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_124.n1, GndDC.p);
+          connect(Laptop_124.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_124.u);
+          connect(Laptop_124.u, Gain_Laptop_124.y);
+          connect(Laptop_124.p, MEL_Converter_Laptop_124.p2);
+          connect(MEL_Converter_Laptop_124.p1, cable_MEL_Laptop_124.p);
+          connect(L3_Conv_7.p2, cable_MEL_Laptop_124.n);
+
+        /* MEL Connections Laptop_123 - L3_Conv_7 */
+          connect(MEL_Converter_Laptop_123.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_123.n1, GndDC.p);
+          connect(Laptop_123.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_123.u);
+          connect(Laptop_123.u, Gain_Laptop_123.y);
+          connect(Laptop_123.p, MEL_Converter_Laptop_123.p2);
+          connect(MEL_Converter_Laptop_123.p1, cable_MEL_Laptop_123.p);
+          connect(L3_Conv_7.p2, cable_MEL_Laptop_123.n);
+
+        /* DC/DC Converter L3_Conv_6 */
+          connect(cable_L3_Conv_6.n,cable_mels_L3_A.p);
+          connect(L3_Conv_6.p1,  cable_L3_Conv_6.p);
+          connect(L3_Conv_6.n1, GndDC.p);
+          connect(L3_Conv_6.n2, GndDC.p);
+
+        /* MEL Connections Laptop_142 - L3_Conv_6 */
+          connect(MEL_Converter_Laptop_142.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_142.n1, GndDC.p);
+          connect(Laptop_142.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_142.u);
+          connect(Laptop_142.u, Gain_Laptop_142.y);
+          connect(Laptop_142.p, MEL_Converter_Laptop_142.p2);
+          connect(MEL_Converter_Laptop_142.p1, cable_MEL_Laptop_142.p);
+          connect(L3_Conv_6.p2, cable_MEL_Laptop_142.n);
+
+        /* MEL Connections Monitor_85 - L3_Conv_6 */
+          connect(MEL_Converter_Monitor_85.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_85.n1, GndDC.p);
+          connect(Monitor_85.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_85.u);
+          connect(Monitor_85.u, Gain_Monitor_85.y);
+          connect(Monitor_85.p, MEL_Converter_Monitor_85.p2);
+          connect(MEL_Converter_Monitor_85.p1, cable_MEL_Monitor_85.p);
+          connect(L3_Conv_6.p2, cable_MEL_Monitor_85.n);
+
+        /* MEL Connections Laptop_119 - L3_Conv_6 */
+          connect(MEL_Converter_Laptop_119.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_119.n1, GndDC.p);
+          connect(Laptop_119.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_119.u);
+          connect(Laptop_119.u, Gain_Laptop_119.y);
+          connect(Laptop_119.p, MEL_Converter_Laptop_119.p2);
+          connect(MEL_Converter_Laptop_119.p1, cable_MEL_Laptop_119.p);
+          connect(L3_Conv_6.p2, cable_MEL_Laptop_119.n);
+
+        /* MEL Connections Laptop_118 - L3_Conv_6 */
+          connect(MEL_Converter_Laptop_118.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_118.n1, GndDC.p);
+          connect(Laptop_118.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_118.u);
+          connect(Laptop_118.u, Gain_Laptop_118.y);
+          connect(Laptop_118.p, MEL_Converter_Laptop_118.p2);
+          connect(MEL_Converter_Laptop_118.p1, cable_MEL_Laptop_118.p);
+          connect(L3_Conv_6.p2, cable_MEL_Laptop_118.n);
+
+        /* MEL Connections Monitor_96 - L3_Conv_6 */
+          connect(MEL_Converter_Monitor_96.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_96.n1, GndDC.p);
+          connect(Monitor_96.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_96.u);
+          connect(Monitor_96.u, Gain_Monitor_96.y);
+          connect(Monitor_96.p, MEL_Converter_Monitor_96.p2);
+          connect(MEL_Converter_Monitor_96.p1, cable_MEL_Monitor_96.p);
+          connect(L3_Conv_6.p2, cable_MEL_Monitor_96.n);
+
+        /* MEL Connections Laptop_141 - L3_Conv_6 */
+          connect(MEL_Converter_Laptop_141.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_141.n1, GndDC.p);
+          connect(Laptop_141.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_141.u);
+          connect(Laptop_141.u, Gain_Laptop_141.y);
+          connect(Laptop_141.p, MEL_Converter_Laptop_141.p2);
+          connect(MEL_Converter_Laptop_141.p1, cable_MEL_Laptop_141.p);
+          connect(L3_Conv_6.p2, cable_MEL_Laptop_141.n);
+
+        /* MEL Connections Monitor_88 - L3_Conv_6 */
+          connect(MEL_Converter_Monitor_88.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_88.n1, GndDC.p);
+          connect(Monitor_88.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_88.u);
+          connect(Monitor_88.u, Gain_Monitor_88.y);
+          connect(Monitor_88.p, MEL_Converter_Monitor_88.p2);
+          connect(MEL_Converter_Monitor_88.p1, cable_MEL_Monitor_88.p);
+          connect(L3_Conv_6.p2, cable_MEL_Monitor_88.n);
+
+        /* MEL Connections Monitor_87 - L3_Conv_6 */
+          connect(MEL_Converter_Monitor_87.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_87.n1, GndDC.p);
+          connect(Monitor_87.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_87.u);
+          connect(Monitor_87.u, Gain_Monitor_87.y);
+          connect(Monitor_87.p, MEL_Converter_Monitor_87.p2);
+          connect(MEL_Converter_Monitor_87.p1, cable_MEL_Monitor_87.p);
+          connect(L3_Conv_6.p2, cable_MEL_Monitor_87.n);
+
+        /* MEL Connections Laptop_122 - L3_Conv_6 */
+          connect(MEL_Converter_Laptop_122.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_122.n1, GndDC.p);
+          connect(Laptop_122.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_122.u);
+          connect(Laptop_122.u, Gain_Laptop_122.y);
+          connect(Laptop_122.p, MEL_Converter_Laptop_122.p2);
+          connect(MEL_Converter_Laptop_122.p1, cable_MEL_Laptop_122.p);
+          connect(L3_Conv_6.p2, cable_MEL_Laptop_122.n);
+
+        /* MEL Connections Laptop_121 - L3_Conv_6 */
+          connect(MEL_Converter_Laptop_121.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_121.n1, GndDC.p);
+          connect(Laptop_121.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_121.u);
+          connect(Laptop_121.u, Gain_Laptop_121.y);
+          connect(Laptop_121.p, MEL_Converter_Laptop_121.p2);
+          connect(MEL_Converter_Laptop_121.p1, cable_MEL_Laptop_121.p);
+          connect(L3_Conv_6.p2, cable_MEL_Laptop_121.n);
+
+        /* MEL Connections Monitor_95 - L3_Conv_6 */
+          connect(MEL_Converter_Monitor_95.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_95.n1, GndDC.p);
+          connect(Monitor_95.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_95.u);
+          connect(Monitor_95.u, Gain_Monitor_95.y);
+          connect(Monitor_95.p, MEL_Converter_Monitor_95.p2);
+          connect(MEL_Converter_Monitor_95.p1, cable_MEL_Monitor_95.p);
+          connect(L3_Conv_6.p2, cable_MEL_Monitor_95.n);
+
+        /* MEL Connections Monitor_94 - L3_Conv_6 */
+          connect(MEL_Converter_Monitor_94.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_94.n1, GndDC.p);
+          connect(Monitor_94.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_94.u);
+          connect(Monitor_94.u, Gain_Monitor_94.y);
+          connect(Monitor_94.p, MEL_Converter_Monitor_94.p2);
+          connect(MEL_Converter_Monitor_94.p1, cable_MEL_Monitor_94.p);
+          connect(L3_Conv_6.p2, cable_MEL_Monitor_94.n);
+
+        /* MEL Connections Laptop_140 - L3_Conv_6 */
+          connect(MEL_Converter_Laptop_140.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_140.n1, GndDC.p);
+          connect(Laptop_140.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_140.u);
+          connect(Laptop_140.u, Gain_Laptop_140.y);
+          connect(Laptop_140.p, MEL_Converter_Laptop_140.p2);
+          connect(MEL_Converter_Laptop_140.p1, cable_MEL_Laptop_140.p);
+          connect(L3_Conv_6.p2, cable_MEL_Laptop_140.n);
+
+        /* MEL Connections Laptop_139 - L3_Conv_6 */
+          connect(MEL_Converter_Laptop_139.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_139.n1, GndDC.p);
+          connect(Laptop_139.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_139.u);
+          connect(Laptop_139.u, Gain_Laptop_139.y);
+          connect(Laptop_139.p, MEL_Converter_Laptop_139.p2);
+          connect(MEL_Converter_Laptop_139.p1, cable_MEL_Laptop_139.p);
+          connect(L3_Conv_6.p2, cable_MEL_Laptop_139.n);
+
+        /* DC/DC Converter L3_Conv_5 */
+          connect(cable_L3_Conv_5.n,cable_mels_L3_A.p);
+          connect(L3_Conv_5.p1,  cable_L3_Conv_5.p);
+          connect(L3_Conv_5.n1, GndDC.p);
+          connect(L3_Conv_5.n2, GndDC.p);
+
+        /* MEL Connections Laptop_132 - L3_Conv_5 */
+          connect(MEL_Converter_Laptop_132.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_132.n1, GndDC.p);
+          connect(Laptop_132.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_132.u);
+          connect(Laptop_132.u, Gain_Laptop_132.y);
+          connect(Laptop_132.p, MEL_Converter_Laptop_132.p2);
+          connect(MEL_Converter_Laptop_132.p1, cable_MEL_Laptop_132.p);
+          connect(L3_Conv_5.p2, cable_MEL_Laptop_132.n);
+
+        /* DC/DC Converter L3_Conv_3 */
+          connect(cable_L3_Conv_3.n,cable_mels_L3_A.p);
+          connect(L3_Conv_3.p1,  cable_L3_Conv_3.p);
+          connect(L3_Conv_3.n1, GndDC.p);
+          connect(L3_Conv_3.n2, GndDC.p);
+
+        /* MEL Connections Laptop_131 - L3_Conv_3 */
+          connect(MEL_Converter_Laptop_131.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_131.n1, GndDC.p);
+          connect(Laptop_131.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_131.u);
+          connect(Laptop_131.u, Gain_Laptop_131.y);
+          connect(Laptop_131.p, MEL_Converter_Laptop_131.p2);
+          connect(MEL_Converter_Laptop_131.p1, cable_MEL_Laptop_131.p);
+          connect(L3_Conv_3.p2, cable_MEL_Laptop_131.n);
+
+        /* DC/DC Converter L3_Conv_2 */
+          connect(cable_L3_Conv_2.n,cable_mels_L3_A.p);
+          connect(L3_Conv_2.p1,  cable_L3_Conv_2.p);
+          connect(L3_Conv_2.n1, GndDC.p);
+          connect(L3_Conv_2.n2, GndDC.p);
+
+        /* MEL Connections Laptop_130 - L3_Conv_2 */
+          connect(MEL_Converter_Laptop_130.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_130.n1, GndDC.p);
+          connect(Laptop_130.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_130.u);
+          connect(Laptop_130.u, Gain_Laptop_130.y);
+          connect(Laptop_130.p, MEL_Converter_Laptop_130.p2);
+          connect(MEL_Converter_Laptop_130.p1, cable_MEL_Laptop_130.p);
+          connect(L3_Conv_2.p2, cable_MEL_Laptop_130.n);
+
+        /* DC/DC Converter L3_Conv_1 */
+          connect(cable_L3_Conv_1.n,cable_mels_L3_A.p);
+          connect(L3_Conv_1.p1,  cable_L3_Conv_1.p);
+          connect(L3_Conv_1.n1, GndDC.p);
+          connect(L3_Conv_1.n2, GndDC.p);
+
+        /* MEL Connections Laptop_129 - L3_Conv_1 */
+          connect(MEL_Converter_Laptop_129.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_129.n1, GndDC.p);
+          connect(Laptop_129.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_129.u);
+          connect(Laptop_129.u, Gain_Laptop_129.y);
+          connect(Laptop_129.p, MEL_Converter_Laptop_129.p2);
+          connect(MEL_Converter_Laptop_129.p1, cable_MEL_Laptop_129.p);
+          connect(L3_Conv_1.p2, cable_MEL_Laptop_129.n);
+
+          connect(cable_mels_L3_A.n, p) annotation (Line(points={{-60,-22},{-68,-22},{
+                  -68,-24},{-104,-24},{-104,-26}}, color={0,0,255}));
+          annotation ();
+        end SmallDC_MEL_Panel_L3A;
+
+        model SmallDC_MEL_Panel_L3B
+          outer parameter Real PF;
+          outer parameter Real PF1;
+          /* parameter Real PF = 0.9; */
+
+          outer HPF.SystemDef systemDef;
+          Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+            Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Laptop(
+            tableOnFile=true,
+            tableName="L3-All-Laptops",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-60,72},{-40,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Monitor(
+            tableOnFile=true,
+            tableName="L3-All-Monitors",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{10,72},{30,92}})));
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_laptop(V = 19.5, alpha = 2.0773, beta = 0.025225, gamma = 0.0032425);
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_monitor(V = 19.5, alpha = 1.67642, beta = 0.025225, gamma = 0.0040178);
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 14.2661328, beta = -0.004643965, gamma = 0.0000295798);
+
+        /* Insert models here */
+
+        /* AC/DC Converter L3_Conv_15 */
+          HPF.DC.DC2DC_Converters.StepDown L3_Conv_15(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L3_Conv_15(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=37.9);
+
+        /* MEL_Model Laptop_102 - L3_Conv_15 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_102(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_102;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_102(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_102(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_70 - L3_Conv_15 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_70(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_70;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_70(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_70(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_103 - L3_Conv_15 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_103(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_103;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_103(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_103(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_99 - L3_Conv_15 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_99(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_99;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_99(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_99(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_146 - L3_Conv_15 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_146(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_146;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_146(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_146(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_71 - L3_Conv_15 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_71(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_71;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_71(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_71(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_104 - L3_Conv_15 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_104(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_104;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_104(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_104(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_98 - L3_Conv_15 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_98(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_98;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_98(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_98(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_145 - L3_Conv_15 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_145(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_145;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_145(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_145(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_73 - L3_Conv_15 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_73(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_73;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_73(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_73(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_72 - L3_Conv_15 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_72(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_72;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_72(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_72(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_105 - L3_Conv_15 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_105(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_105;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_105(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_105(modelData = modelData_laptop);
+
+        /* AC/DC Converter L3_Conv_14 */
+          HPF.DC.DC2DC_Converters.StepDown L3_Conv_14(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L3_Conv_14(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=26.7);
+
+        /* MEL_Model Laptop_135 - L3_Conv_14 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_135(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_135;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_135(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_135(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_93 - L3_Conv_14 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_93(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_93;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_93(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_93(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_134 - L3_Conv_14 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_134(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_134;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_134(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_134(modelData = modelData_laptop);
+
+        /* AC/DC Converter L3_Conv_12 */
+          HPF.DC.DC2DC_Converters.StepDown L3_Conv_12(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L3_Conv_12(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=26.89);
+
+        /* MEL_Model Monitor_78 - L3_Conv_12 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_78(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_78;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_78(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_78(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_111 - L3_Conv_12 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_111(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_111;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_111(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_111(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_77 - L3_Conv_12 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_77(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_77;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_77(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_77(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_110 - L3_Conv_12 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_110(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_110;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_110(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_110(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_114 - L3_Conv_12 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_114(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_114;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_114(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_114(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_81 - L3_Conv_12 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_81(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_81;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_81(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_81(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_113 - L3_Conv_12 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_113(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_113;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_113(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_113(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_117 - L3_Conv_12 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_117(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_117;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_117(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_117(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_84 - L3_Conv_12 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_84(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_84;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_84(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_84(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_116 - L3_Conv_12 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_116(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_116;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_116(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_116(modelData = modelData_laptop);
+
+        /* AC/DC Converter L3_Conv_11 */
+          HPF.DC.DC2DC_Converters.StepDown L3_Conv_11(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L3_Conv_11(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=29.17);
+
+        /* MEL_Model Monitor_76 - L3_Conv_11 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_76(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_76;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_76(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_76(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_75 - L3_Conv_11 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_75(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_75;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_75(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_75(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_109 - L3_Conv_11 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_109(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_109;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_109(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_109(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_108 - L3_Conv_11 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_108(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_108;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_108(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_108(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_97 - L3_Conv_11 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_97(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_97;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_97(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_97(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_144 - L3_Conv_11 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_144(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_144;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_144(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_144(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_80 - L3_Conv_11 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_80(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_80;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_80(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_80(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_79 - L3_Conv_11 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_79(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_79;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_79(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_79(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_112 - L3_Conv_11 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_112(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_112;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_112(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_112(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_143 - L3_Conv_11 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_143(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_143;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_143(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_143(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_83 - L3_Conv_11 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_83(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_83;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_83(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_83(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_82 - L3_Conv_11 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_82(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_82;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_82(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_82(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_115 - L3_Conv_11 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_115(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_115;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_115(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_115(modelData = modelData_laptop);
+
+        /* AC/DC Converter L3_Conv_10 */
+          HPF.DC.DC2DC_Converters.StepDown L3_Conv_10(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L3_Conv_10(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=27.63);
+
+        /* MEL_Model Laptop_133 - L3_Conv_10 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_133(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_133;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_133(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_133(modelData = modelData_laptop);
+
+          Modelica.Electrical.Analog.Interfaces.PositivePin p
+            "Positive electrical pin of port 1" annotation (Placement(transformation(
+                  extent={{-114,-36},{-94,-16}}),
+                                                iconTransformation(extent={{-110,90},{-90,
+                    110}})));
+          HPF.Cables.NEC_CableModelDC cable_mels_L3_B(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+              length=15) annotation (Placement(visible=true, transformation(
+                origin={-50,-22},
+                extent={{10,-10},{-10,10}},
+                rotation=0)));
+        equation
+
+        /* Insert equation here */
+
+        /* DC/DC Converter L3_Conv_15 */
+          connect(cable_L3_Conv_15.n,cable_mels_L3_B.p);
+          connect(L3_Conv_15.p1,  cable_L3_Conv_15.p);
+          connect(L3_Conv_15.n1, GndDC.p);
+          connect(L3_Conv_15.n2, GndDC.p);
+
+        /* MEL Connections Laptop_102 - L3_Conv_15 */
+          connect(MEL_Converter_Laptop_102.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_102.n1, GndDC.p);
+          connect(Laptop_102.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_102.u);
+          connect(Laptop_102.u, Gain_Laptop_102.y);
+          connect(Laptop_102.p, MEL_Converter_Laptop_102.p2);
+          connect(MEL_Converter_Laptop_102.p1, cable_MEL_Laptop_102.p);
+          connect(L3_Conv_15.p2, cable_MEL_Laptop_102.n);
+
+        /* MEL Connections Monitor_70 - L3_Conv_15 */
+          connect(MEL_Converter_Monitor_70.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_70.n1, GndDC.p);
+          connect(Monitor_70.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_70.u);
+          connect(Monitor_70.u, Gain_Monitor_70.y);
+          connect(Monitor_70.p, MEL_Converter_Monitor_70.p2);
+          connect(MEL_Converter_Monitor_70.p1, cable_MEL_Monitor_70.p);
+          connect(L3_Conv_15.p2, cable_MEL_Monitor_70.n);
+
+        /* MEL Connections Laptop_103 - L3_Conv_15 */
+          connect(MEL_Converter_Laptop_103.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_103.n1, GndDC.p);
+          connect(Laptop_103.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_103.u);
+          connect(Laptop_103.u, Gain_Laptop_103.y);
+          connect(Laptop_103.p, MEL_Converter_Laptop_103.p2);
+          connect(MEL_Converter_Laptop_103.p1, cable_MEL_Laptop_103.p);
+          connect(L3_Conv_15.p2, cable_MEL_Laptop_103.n);
+
+        /* MEL Connections Monitor_99 - L3_Conv_15 */
+          connect(MEL_Converter_Monitor_99.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_99.n1, GndDC.p);
+          connect(Monitor_99.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_99.u);
+          connect(Monitor_99.u, Gain_Monitor_99.y);
+          connect(Monitor_99.p, MEL_Converter_Monitor_99.p2);
+          connect(MEL_Converter_Monitor_99.p1, cable_MEL_Monitor_99.p);
+          connect(L3_Conv_15.p2, cable_MEL_Monitor_99.n);
+
+        /* MEL Connections Laptop_146 - L3_Conv_15 */
+          connect(MEL_Converter_Laptop_146.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_146.n1, GndDC.p);
+          connect(Laptop_146.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_146.u);
+          connect(Laptop_146.u, Gain_Laptop_146.y);
+          connect(Laptop_146.p, MEL_Converter_Laptop_146.p2);
+          connect(MEL_Converter_Laptop_146.p1, cable_MEL_Laptop_146.p);
+          connect(L3_Conv_15.p2, cable_MEL_Laptop_146.n);
+
+        /* MEL Connections Monitor_71 - L3_Conv_15 */
+          connect(MEL_Converter_Monitor_71.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_71.n1, GndDC.p);
+          connect(Monitor_71.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_71.u);
+          connect(Monitor_71.u, Gain_Monitor_71.y);
+          connect(Monitor_71.p, MEL_Converter_Monitor_71.p2);
+          connect(MEL_Converter_Monitor_71.p1, cable_MEL_Monitor_71.p);
+          connect(L3_Conv_15.p2, cable_MEL_Monitor_71.n);
+
+        /* MEL Connections Laptop_104 - L3_Conv_15 */
+          connect(MEL_Converter_Laptop_104.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_104.n1, GndDC.p);
+          connect(Laptop_104.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_104.u);
+          connect(Laptop_104.u, Gain_Laptop_104.y);
+          connect(Laptop_104.p, MEL_Converter_Laptop_104.p2);
+          connect(MEL_Converter_Laptop_104.p1, cable_MEL_Laptop_104.p);
+          connect(L3_Conv_15.p2, cable_MEL_Laptop_104.n);
+
+        /* MEL Connections Monitor_98 - L3_Conv_15 */
+          connect(MEL_Converter_Monitor_98.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_98.n1, GndDC.p);
+          connect(Monitor_98.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_98.u);
+          connect(Monitor_98.u, Gain_Monitor_98.y);
+          connect(Monitor_98.p, MEL_Converter_Monitor_98.p2);
+          connect(MEL_Converter_Monitor_98.p1, cable_MEL_Monitor_98.p);
+          connect(L3_Conv_15.p2, cable_MEL_Monitor_98.n);
+
+        /* MEL Connections Laptop_145 - L3_Conv_15 */
+          connect(MEL_Converter_Laptop_145.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_145.n1, GndDC.p);
+          connect(Laptop_145.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_145.u);
+          connect(Laptop_145.u, Gain_Laptop_145.y);
+          connect(Laptop_145.p, MEL_Converter_Laptop_145.p2);
+          connect(MEL_Converter_Laptop_145.p1, cable_MEL_Laptop_145.p);
+          connect(L3_Conv_15.p2, cable_MEL_Laptop_145.n);
+
+        /* MEL Connections Monitor_73 - L3_Conv_15 */
+          connect(MEL_Converter_Monitor_73.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_73.n1, GndDC.p);
+          connect(Monitor_73.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_73.u);
+          connect(Monitor_73.u, Gain_Monitor_73.y);
+          connect(Monitor_73.p, MEL_Converter_Monitor_73.p2);
+          connect(MEL_Converter_Monitor_73.p1, cable_MEL_Monitor_73.p);
+          connect(L3_Conv_15.p2, cable_MEL_Monitor_73.n);
+
+        /* MEL Connections Monitor_72 - L3_Conv_15 */
+          connect(MEL_Converter_Monitor_72.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_72.n1, GndDC.p);
+          connect(Monitor_72.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_72.u);
+          connect(Monitor_72.u, Gain_Monitor_72.y);
+          connect(Monitor_72.p, MEL_Converter_Monitor_72.p2);
+          connect(MEL_Converter_Monitor_72.p1, cable_MEL_Monitor_72.p);
+          connect(L3_Conv_15.p2, cable_MEL_Monitor_72.n);
+
+        /* MEL Connections Laptop_105 - L3_Conv_15 */
+          connect(MEL_Converter_Laptop_105.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_105.n1, GndDC.p);
+          connect(Laptop_105.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_105.u);
+          connect(Laptop_105.u, Gain_Laptop_105.y);
+          connect(Laptop_105.p, MEL_Converter_Laptop_105.p2);
+          connect(MEL_Converter_Laptop_105.p1, cable_MEL_Laptop_105.p);
+          connect(L3_Conv_15.p2, cable_MEL_Laptop_105.n);
+
+        /* DC/DC Converter L3_Conv_14 */
+          connect(cable_L3_Conv_14.n,cable_mels_L3_B.p);
+          connect(L3_Conv_14.p1,  cable_L3_Conv_14.p);
+          connect(L3_Conv_14.n1, GndDC.p);
+          connect(L3_Conv_14.n2, GndDC.p);
+
+        /* MEL Connections Laptop_135 - L3_Conv_14 */
+          connect(MEL_Converter_Laptop_135.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_135.n1, GndDC.p);
+          connect(Laptop_135.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_135.u);
+          connect(Laptop_135.u, Gain_Laptop_135.y);
+          connect(Laptop_135.p, MEL_Converter_Laptop_135.p2);
+          connect(MEL_Converter_Laptop_135.p1, cable_MEL_Laptop_135.p);
+          connect(L3_Conv_14.p2, cable_MEL_Laptop_135.n);
+
+        /* MEL Connections Monitor_93 - L3_Conv_14 */
+          connect(MEL_Converter_Monitor_93.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_93.n1, GndDC.p);
+          connect(Monitor_93.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_93.u);
+          connect(Monitor_93.u, Gain_Monitor_93.y);
+          connect(Monitor_93.p, MEL_Converter_Monitor_93.p2);
+          connect(MEL_Converter_Monitor_93.p1, cable_MEL_Monitor_93.p);
+          connect(L3_Conv_14.p2, cable_MEL_Monitor_93.n);
+
+        /* MEL Connections Laptop_134 - L3_Conv_14 */
+          connect(MEL_Converter_Laptop_134.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_134.n1, GndDC.p);
+          connect(Laptop_134.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_134.u);
+          connect(Laptop_134.u, Gain_Laptop_134.y);
+          connect(Laptop_134.p, MEL_Converter_Laptop_134.p2);
+          connect(MEL_Converter_Laptop_134.p1, cable_MEL_Laptop_134.p);
+          connect(L3_Conv_14.p2, cable_MEL_Laptop_134.n);
+
+        /* DC/DC Converter L3_Conv_12 */
+          connect(cable_L3_Conv_12.n,cable_mels_L3_B.p);
+          connect(L3_Conv_12.p1,  cable_L3_Conv_12.p);
+          connect(L3_Conv_12.n1, GndDC.p);
+          connect(L3_Conv_12.n2, GndDC.p);
+
+        /* MEL Connections Monitor_78 - L3_Conv_12 */
+          connect(MEL_Converter_Monitor_78.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_78.n1, GndDC.p);
+          connect(Monitor_78.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_78.u);
+          connect(Monitor_78.u, Gain_Monitor_78.y);
+          connect(Monitor_78.p, MEL_Converter_Monitor_78.p2);
+          connect(MEL_Converter_Monitor_78.p1, cable_MEL_Monitor_78.p);
+          connect(L3_Conv_12.p2, cable_MEL_Monitor_78.n);
+
+        /* MEL Connections Laptop_111 - L3_Conv_12 */
+          connect(MEL_Converter_Laptop_111.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_111.n1, GndDC.p);
+          connect(Laptop_111.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_111.u);
+          connect(Laptop_111.u, Gain_Laptop_111.y);
+          connect(Laptop_111.p, MEL_Converter_Laptop_111.p2);
+          connect(MEL_Converter_Laptop_111.p1, cable_MEL_Laptop_111.p);
+          connect(L3_Conv_12.p2, cable_MEL_Laptop_111.n);
+
+        /* MEL Connections Monitor_77 - L3_Conv_12 */
+          connect(MEL_Converter_Monitor_77.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_77.n1, GndDC.p);
+          connect(Monitor_77.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_77.u);
+          connect(Monitor_77.u, Gain_Monitor_77.y);
+          connect(Monitor_77.p, MEL_Converter_Monitor_77.p2);
+          connect(MEL_Converter_Monitor_77.p1, cable_MEL_Monitor_77.p);
+          connect(L3_Conv_12.p2, cable_MEL_Monitor_77.n);
+
+        /* MEL Connections Laptop_110 - L3_Conv_12 */
+          connect(MEL_Converter_Laptop_110.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_110.n1, GndDC.p);
+          connect(Laptop_110.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_110.u);
+          connect(Laptop_110.u, Gain_Laptop_110.y);
+          connect(Laptop_110.p, MEL_Converter_Laptop_110.p2);
+          connect(MEL_Converter_Laptop_110.p1, cable_MEL_Laptop_110.p);
+          connect(L3_Conv_12.p2, cable_MEL_Laptop_110.n);
+
+        /* MEL Connections Laptop_114 - L3_Conv_12 */
+          connect(MEL_Converter_Laptop_114.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_114.n1, GndDC.p);
+          connect(Laptop_114.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_114.u);
+          connect(Laptop_114.u, Gain_Laptop_114.y);
+          connect(Laptop_114.p, MEL_Converter_Laptop_114.p2);
+          connect(MEL_Converter_Laptop_114.p1, cable_MEL_Laptop_114.p);
+          connect(L3_Conv_12.p2, cable_MEL_Laptop_114.n);
+
+        /* MEL Connections Monitor_81 - L3_Conv_12 */
+          connect(MEL_Converter_Monitor_81.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_81.n1, GndDC.p);
+          connect(Monitor_81.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_81.u);
+          connect(Monitor_81.u, Gain_Monitor_81.y);
+          connect(Monitor_81.p, MEL_Converter_Monitor_81.p2);
+          connect(MEL_Converter_Monitor_81.p1, cable_MEL_Monitor_81.p);
+          connect(L3_Conv_12.p2, cable_MEL_Monitor_81.n);
+
+        /* MEL Connections Laptop_113 - L3_Conv_12 */
+          connect(MEL_Converter_Laptop_113.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_113.n1, GndDC.p);
+          connect(Laptop_113.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_113.u);
+          connect(Laptop_113.u, Gain_Laptop_113.y);
+          connect(Laptop_113.p, MEL_Converter_Laptop_113.p2);
+          connect(MEL_Converter_Laptop_113.p1, cable_MEL_Laptop_113.p);
+          connect(L3_Conv_12.p2, cable_MEL_Laptop_113.n);
+
+        /* MEL Connections Laptop_117 - L3_Conv_12 */
+          connect(MEL_Converter_Laptop_117.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_117.n1, GndDC.p);
+          connect(Laptop_117.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_117.u);
+          connect(Laptop_117.u, Gain_Laptop_117.y);
+          connect(Laptop_117.p, MEL_Converter_Laptop_117.p2);
+          connect(MEL_Converter_Laptop_117.p1, cable_MEL_Laptop_117.p);
+          connect(L3_Conv_12.p2, cable_MEL_Laptop_117.n);
+
+        /* MEL Connections Monitor_84 - L3_Conv_12 */
+          connect(MEL_Converter_Monitor_84.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_84.n1, GndDC.p);
+          connect(Monitor_84.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_84.u);
+          connect(Monitor_84.u, Gain_Monitor_84.y);
+          connect(Monitor_84.p, MEL_Converter_Monitor_84.p2);
+          connect(MEL_Converter_Monitor_84.p1, cable_MEL_Monitor_84.p);
+          connect(L3_Conv_12.p2, cable_MEL_Monitor_84.n);
+
+        /* MEL Connections Laptop_116 - L3_Conv_12 */
+          connect(MEL_Converter_Laptop_116.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_116.n1, GndDC.p);
+          connect(Laptop_116.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_116.u);
+          connect(Laptop_116.u, Gain_Laptop_116.y);
+          connect(Laptop_116.p, MEL_Converter_Laptop_116.p2);
+          connect(MEL_Converter_Laptop_116.p1, cable_MEL_Laptop_116.p);
+          connect(L3_Conv_12.p2, cable_MEL_Laptop_116.n);
+
+        /* DC/DC Converter L3_Conv_11 */
+          connect(cable_L3_Conv_11.n,cable_mels_L3_B.p);
+          connect(L3_Conv_11.p1,  cable_L3_Conv_11.p);
+          connect(L3_Conv_11.n1, GndDC.p);
+          connect(L3_Conv_11.n2, GndDC.p);
+
+        /* MEL Connections Monitor_76 - L3_Conv_11 */
+          connect(MEL_Converter_Monitor_76.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_76.n1, GndDC.p);
+          connect(Monitor_76.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_76.u);
+          connect(Monitor_76.u, Gain_Monitor_76.y);
+          connect(Monitor_76.p, MEL_Converter_Monitor_76.p2);
+          connect(MEL_Converter_Monitor_76.p1, cable_MEL_Monitor_76.p);
+          connect(L3_Conv_11.p2, cable_MEL_Monitor_76.n);
+
+        /* MEL Connections Monitor_75 - L3_Conv_11 */
+          connect(MEL_Converter_Monitor_75.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_75.n1, GndDC.p);
+          connect(Monitor_75.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_75.u);
+          connect(Monitor_75.u, Gain_Monitor_75.y);
+          connect(Monitor_75.p, MEL_Converter_Monitor_75.p2);
+          connect(MEL_Converter_Monitor_75.p1, cable_MEL_Monitor_75.p);
+          connect(L3_Conv_11.p2, cable_MEL_Monitor_75.n);
+
+        /* MEL Connections Laptop_109 - L3_Conv_11 */
+          connect(MEL_Converter_Laptop_109.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_109.n1, GndDC.p);
+          connect(Laptop_109.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_109.u);
+          connect(Laptop_109.u, Gain_Laptop_109.y);
+          connect(Laptop_109.p, MEL_Converter_Laptop_109.p2);
+          connect(MEL_Converter_Laptop_109.p1, cable_MEL_Laptop_109.p);
+          connect(L3_Conv_11.p2, cable_MEL_Laptop_109.n);
+
+        /* MEL Connections Laptop_108 - L3_Conv_11 */
+          connect(MEL_Converter_Laptop_108.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_108.n1, GndDC.p);
+          connect(Laptop_108.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_108.u);
+          connect(Laptop_108.u, Gain_Laptop_108.y);
+          connect(Laptop_108.p, MEL_Converter_Laptop_108.p2);
+          connect(MEL_Converter_Laptop_108.p1, cable_MEL_Laptop_108.p);
+          connect(L3_Conv_11.p2, cable_MEL_Laptop_108.n);
+
+        /* MEL Connections Monitor_97 - L3_Conv_11 */
+          connect(MEL_Converter_Monitor_97.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_97.n1, GndDC.p);
+          connect(Monitor_97.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_97.u);
+          connect(Monitor_97.u, Gain_Monitor_97.y);
+          connect(Monitor_97.p, MEL_Converter_Monitor_97.p2);
+          connect(MEL_Converter_Monitor_97.p1, cable_MEL_Monitor_97.p);
+          connect(L3_Conv_11.p2, cable_MEL_Monitor_97.n);
+
+        /* MEL Connections Laptop_144 - L3_Conv_11 */
+          connect(MEL_Converter_Laptop_144.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_144.n1, GndDC.p);
+          connect(Laptop_144.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_144.u);
+          connect(Laptop_144.u, Gain_Laptop_144.y);
+          connect(Laptop_144.p, MEL_Converter_Laptop_144.p2);
+          connect(MEL_Converter_Laptop_144.p1, cable_MEL_Laptop_144.p);
+          connect(L3_Conv_11.p2, cable_MEL_Laptop_144.n);
+
+        /* MEL Connections Monitor_80 - L3_Conv_11 */
+          connect(MEL_Converter_Monitor_80.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_80.n1, GndDC.p);
+          connect(Monitor_80.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_80.u);
+          connect(Monitor_80.u, Gain_Monitor_80.y);
+          connect(Monitor_80.p, MEL_Converter_Monitor_80.p2);
+          connect(MEL_Converter_Monitor_80.p1, cable_MEL_Monitor_80.p);
+          connect(L3_Conv_11.p2, cable_MEL_Monitor_80.n);
+
+        /* MEL Connections Monitor_79 - L3_Conv_11 */
+          connect(MEL_Converter_Monitor_79.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_79.n1, GndDC.p);
+          connect(Monitor_79.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_79.u);
+          connect(Monitor_79.u, Gain_Monitor_79.y);
+          connect(Monitor_79.p, MEL_Converter_Monitor_79.p2);
+          connect(MEL_Converter_Monitor_79.p1, cable_MEL_Monitor_79.p);
+          connect(L3_Conv_11.p2, cable_MEL_Monitor_79.n);
+
+        /* MEL Connections Laptop_112 - L3_Conv_11 */
+          connect(MEL_Converter_Laptop_112.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_112.n1, GndDC.p);
+          connect(Laptop_112.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_112.u);
+          connect(Laptop_112.u, Gain_Laptop_112.y);
+          connect(Laptop_112.p, MEL_Converter_Laptop_112.p2);
+          connect(MEL_Converter_Laptop_112.p1, cable_MEL_Laptop_112.p);
+          connect(L3_Conv_11.p2, cable_MEL_Laptop_112.n);
+
+        /* MEL Connections Laptop_143 - L3_Conv_11 */
+          connect(MEL_Converter_Laptop_143.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_143.n1, GndDC.p);
+          connect(Laptop_143.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_143.u);
+          connect(Laptop_143.u, Gain_Laptop_143.y);
+          connect(Laptop_143.p, MEL_Converter_Laptop_143.p2);
+          connect(MEL_Converter_Laptop_143.p1, cable_MEL_Laptop_143.p);
+          connect(L3_Conv_11.p2, cable_MEL_Laptop_143.n);
+
+        /* MEL Connections Monitor_83 - L3_Conv_11 */
+          connect(MEL_Converter_Monitor_83.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_83.n1, GndDC.p);
+          connect(Monitor_83.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_83.u);
+          connect(Monitor_83.u, Gain_Monitor_83.y);
+          connect(Monitor_83.p, MEL_Converter_Monitor_83.p2);
+          connect(MEL_Converter_Monitor_83.p1, cable_MEL_Monitor_83.p);
+          connect(L3_Conv_11.p2, cable_MEL_Monitor_83.n);
+
+        /* MEL Connections Monitor_82 - L3_Conv_11 */
+          connect(MEL_Converter_Monitor_82.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_82.n1, GndDC.p);
+          connect(Monitor_82.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_82.u);
+          connect(Monitor_82.u, Gain_Monitor_82.y);
+          connect(Monitor_82.p, MEL_Converter_Monitor_82.p2);
+          connect(MEL_Converter_Monitor_82.p1, cable_MEL_Monitor_82.p);
+          connect(L3_Conv_11.p2, cable_MEL_Monitor_82.n);
+
+        /* MEL Connections Laptop_115 - L3_Conv_11 */
+          connect(MEL_Converter_Laptop_115.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_115.n1, GndDC.p);
+          connect(Laptop_115.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_115.u);
+          connect(Laptop_115.u, Gain_Laptop_115.y);
+          connect(Laptop_115.p, MEL_Converter_Laptop_115.p2);
+          connect(MEL_Converter_Laptop_115.p1, cable_MEL_Laptop_115.p);
+          connect(L3_Conv_11.p2, cable_MEL_Laptop_115.n);
+
+        /* DC/DC Converter L3_Conv_10 */
+          connect(cable_L3_Conv_10.n,cable_mels_L3_B.p);
+          connect(L3_Conv_10.p1,  cable_L3_Conv_10.p);
+          connect(L3_Conv_10.n1, GndDC.p);
+          connect(L3_Conv_10.n2, GndDC.p);
+
+        /* MEL Connections Laptop_133 - L3_Conv_10 */
+          connect(MEL_Converter_Laptop_133.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_133.n1, GndDC.p);
+          connect(Laptop_133.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_133.u);
+          connect(Laptop_133.u, Gain_Laptop_133.y);
+          connect(Laptop_133.p, MEL_Converter_Laptop_133.p2);
+          connect(MEL_Converter_Laptop_133.p1, cable_MEL_Laptop_133.p);
+          connect(L3_Conv_10.p2, cable_MEL_Laptop_133.n);
+
+          connect(cable_mels_L3_B.n, p) annotation (Line(points={{-60,-22},{-68,-22},{
+                  -68,-24},{-104,-24},{-104,-26}}, color={0,0,255}));
+          annotation ();
+        end SmallDC_MEL_Panel_L3B;
+
+        model SmallDC_MEL_Panel_L3C
+          outer parameter Real PF;
+          outer parameter Real PF1;
+          /* parameter Real PF = 0.9; */
+
+          outer HPF.SystemDef systemDef;
+          Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+            Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Laptop(
+            tableOnFile=true,
+            tableName="L3-All-Laptops",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{-60,72},{-40,92}})));
+
+          Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Monitor(
+            tableOnFile=true,
+            tableName="L3-All-Monitors",
+            fileName=ModelicaServices.ExternalReferences.loadResource(
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
+            smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+            extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+            timeScale(displayUnit="h") = 3600)
+            annotation (HideResult=true, Placement(transformation(extent={{10,72},{30,92}})));
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_laptop(V = 19.5, alpha = 2.0773, beta = 0.025225, gamma = 0.0032425);
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_monitor(V = 19.5, alpha = 1.67642, beta = 0.025225, gamma = 0.0040178);
+          parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 14.2661328, beta = -0.004643965, gamma = 0.0000295798);
+
+        /* Insert models here */
+
+        /* AC/DC Converter L3_Conv_24 */
+          HPF.DC.DC2DC_Converters.StepDown L3_Conv_24(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L3_Conv_24(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=42.7);
+
+        /* MEL_Model Laptop_137 - L3_Conv_24 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_137(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_137;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_137(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_137(modelData = modelData_laptop);
+
+        /* AC/DC Converter L3_Conv_23 */
+          HPF.DC.DC2DC_Converters.StepDown L3_Conv_23(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L3_Conv_23(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=40.73);
+
+        /* MEL_Model Laptop_138 - L3_Conv_23 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_138(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_138;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_138(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_138(modelData = modelData_laptop);
+
+        /* AC/DC Converter L3_Conv_21 */
+          HPF.DC.DC2DC_Converters.StepDown L3_Conv_21(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L3_Conv_21(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=43.17);
+
+        /* MEL_Model Laptop_148 - L3_Conv_21 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_148(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_148;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_148(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_148(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_149 - L3_Conv_21 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_149(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_149;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_149(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_149(modelData = modelData_laptop);
+
+        /* AC/DC Converter L3_Conv_20 */
+          HPF.DC.DC2DC_Converters.StepDown L3_Conv_20(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L3_Conv_20(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=44.57);
+
+        /* MEL_Model Laptop_150 - L3_Conv_20 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_150(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_150;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_150(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_150(modelData = modelData_laptop);
+
+        /* MEL_Model Laptop_147 - L3_Conv_20 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_147(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_147;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_147(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_147(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_67 - L3_Conv_20 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_67(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_67;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_67(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_67(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_101 - L3_Conv_20 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_101(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_101;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_101(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_101(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_69 - L3_Conv_20 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_69(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_69;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_69(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_69(modelData = modelData_monitor);
+
+        /* MEL_Model Monitor_68 - L3_Conv_20 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_68(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_68;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_68(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_68(modelData = modelData_monitor);
+
+        /* AC/DC Converter L3_Conv_19 */
+          HPF.DC.DC2DC_Converters.StepDown L3_Conv_19(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L3_Conv_19(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=32.83);
+
+        /* MEL_Model Laptop_136 - L3_Conv_19 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_136(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_136;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_136(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_136(modelData = modelData_laptop);
+
+        /* AC/DC Converter L3_Conv_16 */
+          HPF.DC.DC2DC_Converters.StepDown L3_Conv_16(modelData = modelData_DCDC);
+          HPF.Cables.NEC_CableModelDC cable_L3_Conv_16(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_12, length=30.02);
+
+        /* MEL_Model Laptop_107 - L3_Conv_16 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_107(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_107;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_107(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_107(modelData = modelData_laptop);
+
+        /* MEL_Model Monitor_74 - L3_Conv_16 */
+          Modelica.Blocks.Math.Gain Gain_Monitor_74(k=46) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Monitor_74;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Monitor_74(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Monitor_74(modelData = modelData_monitor);
+
+        /* MEL_Model Laptop_106 - L3_Conv_16 */
+          Modelica.Blocks.Math.Gain Gain_Laptop_106(k=57) annotation (HideResult=true);
+          HPF.DC.Variable_DC_Load Laptop_106;
+          HPF.Cables.NEC_CableModelDC cable_MEL_Laptop_106(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=10);
+          HPF.DC.DC2DC_Converters.StepDown MEL_Converter_Laptop_106(modelData = modelData_laptop);
+
+          Modelica.Electrical.Analog.Interfaces.PositivePin p
+            "Positive electrical pin of port 1" annotation (Placement(transformation(
+                  extent={{-114,-36},{-94,-16}}),
+                                                iconTransformation(extent={{-110,90},{-90,
+                    110}})));
+          HPF.Cables.NEC_CableModelDC cable_mels_L3_C(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+              length=15) annotation (Placement(visible=true, transformation(
+                origin={-50,-22},
+                extent={{10,-10},{-10,10}},
+                rotation=0)));
+        equation
+
+        /* Insert equation here */
+
+        /* DC/DC Converter L3_Conv_24 */
+          connect(cable_L3_Conv_24.n,cable_mels_L3_C.p);
+          connect(L3_Conv_24.p1,  cable_L3_Conv_24.p);
+          connect(L3_Conv_24.n1, GndDC.p);
+          connect(L3_Conv_24.n2, GndDC.p);
+
+        /* MEL Connections Laptop_137 - L3_Conv_24 */
+          connect(MEL_Converter_Laptop_137.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_137.n1, GndDC.p);
+          connect(Laptop_137.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_137.u);
+          connect(Laptop_137.u, Gain_Laptop_137.y);
+          connect(Laptop_137.p, MEL_Converter_Laptop_137.p2);
+          connect(MEL_Converter_Laptop_137.p1, cable_MEL_Laptop_137.p);
+          connect(L3_Conv_24.p2, cable_MEL_Laptop_137.n);
+
+        /* DC/DC Converter L3_Conv_23 */
+          connect(cable_L3_Conv_23.n,cable_mels_L3_C.p);
+          connect(L3_Conv_23.p1,  cable_L3_Conv_23.p);
+          connect(L3_Conv_23.n1, GndDC.p);
+          connect(L3_Conv_23.n2, GndDC.p);
+
+        /* MEL Connections Laptop_138 - L3_Conv_23 */
+          connect(MEL_Converter_Laptop_138.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_138.n1, GndDC.p);
+          connect(Laptop_138.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_138.u);
+          connect(Laptop_138.u, Gain_Laptop_138.y);
+          connect(Laptop_138.p, MEL_Converter_Laptop_138.p2);
+          connect(MEL_Converter_Laptop_138.p1, cable_MEL_Laptop_138.p);
+          connect(L3_Conv_23.p2, cable_MEL_Laptop_138.n);
+
+        /* DC/DC Converter L3_Conv_21 */
+          connect(cable_L3_Conv_21.n,cable_mels_L3_C.p);
+          connect(L3_Conv_21.p1,  cable_L3_Conv_21.p);
+          connect(L3_Conv_21.n1, GndDC.p);
+          connect(L3_Conv_21.n2, GndDC.p);
+
+        /* MEL Connections Laptop_148 - L3_Conv_21 */
+          connect(MEL_Converter_Laptop_148.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_148.n1, GndDC.p);
+          connect(Laptop_148.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_148.u);
+          connect(Laptop_148.u, Gain_Laptop_148.y);
+          connect(Laptop_148.p, MEL_Converter_Laptop_148.p2);
+          connect(MEL_Converter_Laptop_148.p1, cable_MEL_Laptop_148.p);
+          connect(L3_Conv_21.p2, cable_MEL_Laptop_148.n);
+
+        /* MEL Connections Laptop_149 - L3_Conv_21 */
+          connect(MEL_Converter_Laptop_149.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_149.n1, GndDC.p);
+          connect(Laptop_149.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_149.u);
+          connect(Laptop_149.u, Gain_Laptop_149.y);
+          connect(Laptop_149.p, MEL_Converter_Laptop_149.p2);
+          connect(MEL_Converter_Laptop_149.p1, cable_MEL_Laptop_149.p);
+          connect(L3_Conv_21.p2, cable_MEL_Laptop_149.n);
+
+        /* DC/DC Converter L3_Conv_20 */
+          connect(cable_L3_Conv_20.n,cable_mels_L3_C.p);
+          connect(L3_Conv_20.p1,  cable_L3_Conv_20.p);
+          connect(L3_Conv_20.n1, GndDC.p);
+          connect(L3_Conv_20.n2, GndDC.p);
+
+        /* MEL Connections Laptop_150 - L3_Conv_20 */
+          connect(MEL_Converter_Laptop_150.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_150.n1, GndDC.p);
+          connect(Laptop_150.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_150.u);
+          connect(Laptop_150.u, Gain_Laptop_150.y);
+          connect(Laptop_150.p, MEL_Converter_Laptop_150.p2);
+          connect(MEL_Converter_Laptop_150.p1, cable_MEL_Laptop_150.p);
+          connect(L3_Conv_20.p2, cable_MEL_Laptop_150.n);
+
+        /* MEL Connections Laptop_147 - L3_Conv_20 */
+          connect(MEL_Converter_Laptop_147.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_147.n1, GndDC.p);
+          connect(Laptop_147.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_147.u);
+          connect(Laptop_147.u, Gain_Laptop_147.y);
+          connect(Laptop_147.p, MEL_Converter_Laptop_147.p2);
+          connect(MEL_Converter_Laptop_147.p1, cable_MEL_Laptop_147.p);
+          connect(L3_Conv_20.p2, cable_MEL_Laptop_147.n);
+
+        /* MEL Connections Monitor_67 - L3_Conv_20 */
+          connect(MEL_Converter_Monitor_67.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_67.n1, GndDC.p);
+          connect(Monitor_67.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_67.u);
+          connect(Monitor_67.u, Gain_Monitor_67.y);
+          connect(Monitor_67.p, MEL_Converter_Monitor_67.p2);
+          connect(MEL_Converter_Monitor_67.p1, cable_MEL_Monitor_67.p);
+          connect(L3_Conv_20.p2, cable_MEL_Monitor_67.n);
+
+        /* MEL Connections Laptop_101 - L3_Conv_20 */
+          connect(MEL_Converter_Laptop_101.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_101.n1, GndDC.p);
+          connect(Laptop_101.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_101.u);
+          connect(Laptop_101.u, Gain_Laptop_101.y);
+          connect(Laptop_101.p, MEL_Converter_Laptop_101.p2);
+          connect(MEL_Converter_Laptop_101.p1, cable_MEL_Laptop_101.p);
+          connect(L3_Conv_20.p2, cable_MEL_Laptop_101.n);
+
+        /* MEL Connections Monitor_69 - L3_Conv_20 */
+          connect(MEL_Converter_Monitor_69.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_69.n1, GndDC.p);
+          connect(Monitor_69.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_69.u);
+          connect(Monitor_69.u, Gain_Monitor_69.y);
+          connect(Monitor_69.p, MEL_Converter_Monitor_69.p2);
+          connect(MEL_Converter_Monitor_69.p1, cable_MEL_Monitor_69.p);
+          connect(L3_Conv_20.p2, cable_MEL_Monitor_69.n);
+
+        /* MEL Connections Monitor_68 - L3_Conv_20 */
+          connect(MEL_Converter_Monitor_68.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_68.n1, GndDC.p);
+          connect(Monitor_68.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_68.u);
+          connect(Monitor_68.u, Gain_Monitor_68.y);
+          connect(Monitor_68.p, MEL_Converter_Monitor_68.p2);
+          connect(MEL_Converter_Monitor_68.p1, cable_MEL_Monitor_68.p);
+          connect(L3_Conv_20.p2, cable_MEL_Monitor_68.n);
+
+        /* DC/DC Converter L3_Conv_19 */
+          connect(cable_L3_Conv_19.n,cable_mels_L3_C.p);
+          connect(L3_Conv_19.p1,  cable_L3_Conv_19.p);
+          connect(L3_Conv_19.n1, GndDC.p);
+          connect(L3_Conv_19.n2, GndDC.p);
+
+        /* MEL Connections Laptop_136 - L3_Conv_19 */
+          connect(MEL_Converter_Laptop_136.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_136.n1, GndDC.p);
+          connect(Laptop_136.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_136.u);
+          connect(Laptop_136.u, Gain_Laptop_136.y);
+          connect(Laptop_136.p, MEL_Converter_Laptop_136.p2);
+          connect(MEL_Converter_Laptop_136.p1, cable_MEL_Laptop_136.p);
+          connect(L3_Conv_19.p2, cable_MEL_Laptop_136.n);
+
+        /* DC/DC Converter L3_Conv_16 */
+          connect(cable_L3_Conv_16.n,cable_mels_L3_C.p);
+          connect(L3_Conv_16.p1,  cable_L3_Conv_16.p);
+          connect(L3_Conv_16.n1, GndDC.p);
+          connect(L3_Conv_16.n2, GndDC.p);
+
+        /* MEL Connections Laptop_107 - L3_Conv_16 */
+          connect(MEL_Converter_Laptop_107.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_107.n1, GndDC.p);
+          connect(Laptop_107.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_107.u);
+          connect(Laptop_107.u, Gain_Laptop_107.y);
+          connect(Laptop_107.p, MEL_Converter_Laptop_107.p2);
+          connect(MEL_Converter_Laptop_107.p1, cable_MEL_Laptop_107.p);
+          connect(L3_Conv_16.p2, cable_MEL_Laptop_107.n);
+
+        /* MEL Connections Monitor_74 - L3_Conv_16 */
+          connect(MEL_Converter_Monitor_74.n2, GndDC.p);
+          connect(MEL_Converter_Monitor_74.n1, GndDC.p);
+          connect(Monitor_74.n, GndDC.p);
+          connect(combiTimeTable_L3_Monitor.y[1], Gain_Monitor_74.u);
+          connect(Monitor_74.u, Gain_Monitor_74.y);
+          connect(Monitor_74.p, MEL_Converter_Monitor_74.p2);
+          connect(MEL_Converter_Monitor_74.p1, cable_MEL_Monitor_74.p);
+          connect(L3_Conv_16.p2, cable_MEL_Monitor_74.n);
+
+        /* MEL Connections Laptop_106 - L3_Conv_16 */
+          connect(MEL_Converter_Laptop_106.n2, GndDC.p);
+          connect(MEL_Converter_Laptop_106.n1, GndDC.p);
+          connect(Laptop_106.n, GndDC.p);
+          connect(combiTimeTable_L3_Laptop.y[1], Gain_Laptop_106.u);
+          connect(Laptop_106.u, Gain_Laptop_106.y);
+          connect(Laptop_106.p, MEL_Converter_Laptop_106.p2);
+          connect(MEL_Converter_Laptop_106.p1, cable_MEL_Laptop_106.p);
+          connect(L3_Conv_16.p2, cable_MEL_Laptop_106.n);
+
+          connect(cable_mels_L3_C.n, p) annotation (Line(points={{-60,-22},{-68,-22},{
+                  -68,-24},{-104,-24},{-104,-26}}, color={0,0,255}));
+          annotation ();
+        end SmallDC_MEL_Panel_L3C;
+      end Small_MELs;
+    end DC_Central_SD;
   end San_Diego;
 end Receptacle_Panel;

@@ -2193,4 +2193,559 @@ package San_Diego
           __Dymola_Algorithm="Dassl"));
     end LocalDC_model_SD_PV_ZE;
   end Local_DC;
+
+  package Central_DC
+    model CentralDC_model_SD
+
+      inner parameter Real PF = 0.95;
+      inner parameter Real PF1 = tan(acos(PF));
+      parameter Real Vs = 7200;
+      parameter Real kp = 3;
+      parameter Real ks = 1;
+      parameter Real km = 3;
+
+      HPF.SinglePhase.Components.Ground GndAC annotation (
+        Placement(HideResult=true, visible = true, transformation(origin={-6,-142},   extent = {{-8, -8}, {8, 8}}, rotation=0)));
+      HPF.SinglePhase.Components.Ground GndAC1
+                                              annotation (
+        Placement(HideResult=true,visible = true, transformation(origin={-116,
+                -114},                                                               extent = {{-8, -8}, {8, 8}}, rotation=0)));
+      HPF.Transformers.ThreePhase.Symmetric.D1Y Dist_Xmer(
+        VPrimRated=12470,
+        VSecRated=480,
+        Rc=110450.1*km,
+        Rp=0.43785*kp,
+        Rs=0.0006488*ks,
+        Xm=10366.7*km,
+        Xp=4.4882*kp,
+        Xs=0.00665*ks)  annotation (Placement(visible=true,
+            transformation(extent={{-46,-90},{4,-50}},  rotation=0)));
+      Modelica.ComplexBlocks.ComplexMath.RealToComplex realToComplex1
+        annotation (Placement(transformation(extent={{-2,10},{8,20}})));
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Mechanical(
+        tableOnFile=true,
+        tableName="Mechanical",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-Mechanical_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600,
+        offset={0},
+        startTime(displayUnit="h") = 0)    annotation (HideResult=true, Placement(
+            transformation(extent={{-74,6},{-54,26}})));
+
+      Modelica.Blocks.Math.Gain gain2(k=PF1)
+        annotation (HideResult=true,Placement(transformation(extent={{-26,10},{
+                -14,22}})));
+      inner HPF.SystemDef systemDef(
+        fFund=60,
+        fs=5000,
+        hrms={1},
+        numPh=3) annotation (Placement(visible=true, transformation(
+            origin={-110,176.571},
+            extent={{-16,-16},{16,11.4286}},
+            rotation=0)));
+      HPF.Loads.ThreePhase.AC_LoadIdealWye aC_LoadIdealWye(
+        P_nom=100000,
+        Q_nom=25000,
+        vAngle_init(displayUnit="deg") = 0.5235987755983) annotation (
+          HideResult=true, Placement(transformation(
+            extent={{-13,-13},{13,13}},
+            rotation=90,
+            origin={23,-9})));
+      HPF.Sources.ThreePhase.VoltageSource voltageSource(
+        vArg_phA={0},
+        vArg_phB={-2.0944},
+        vArg_phC={2.0944},
+        vMag_phA={Vs},
+        vMag_phB={Vs},
+        vMag_phC={Vs}) annotation (Placement(visible=true, transformation(
+            origin={-94,-70},
+            extent={{-10,-10},{10,10}},
+            rotation=0)));
+      Modelica.ComplexBlocks.ComplexMath.RealToComplex realToComplex
+        annotation (Placement(transformation(extent={{160,158},{170,168}})));
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_All_Plugs_General(
+        tableOnFile=true,
+        tableName="L1-All-Plugs-General",
+        fileName=ModelicaServices.ExternalReferences.loadResource(
+            "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{100,180},
+                {120,200}})));
+      Modelica.Blocks.Math.Gain gain_gen_plugs_L1_A(k=2204.25)
+        annotation (Placement(transformation(extent={{128,184},{140,196}})));
+      Modelica.Blocks.Math.Gain gain1(k=PF1)
+        annotation (Placement(transformation(extent={{138,154},{150,166}})));
+      Modelica.ComplexBlocks.ComplexMath.RealToComplex realToComplex2
+        annotation (Placement(transformation(extent={{258,154},{268,164}})));
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_All_Plugs_General(
+        tableOnFile=true,
+        tableName="L2-All-Plugs-General",
+        fileName=ModelicaServices.ExternalReferences.loadResource(
+            "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{206,178},
+                {226,198}})));
+      Modelica.Blocks.Math.Gain gain_gen_plugs_L2_A(k=2204.25)
+        annotation (Placement(transformation(extent={{236,182},{248,194}})));
+      Modelica.Blocks.Math.Gain gain3(k=PF1)
+        annotation (Placement(transformation(extent={{236,150},{248,162}})));
+      Modelica.ComplexBlocks.ComplexMath.RealToComplex realToComplex3
+        annotation (Placement(transformation(extent={{366,146},{376,156}})));
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_All_Plugs_General(
+        tableOnFile=true,
+        tableName="L3-All-Plugs-General",
+        fileName=ModelicaServices.ExternalReferences.loadResource(
+            "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{306,168},
+                {326,188}})));
+      Modelica.Blocks.Math.Gain gain_gen_plugs_L3_A(k=2204.25)
+        annotation (Placement(transformation(extent={{334,172},{346,184}})));
+      Modelica.Blocks.Math.Gain gain4(k=PF1)
+        annotation (Placement(transformation(extent={{344,142},{356,154}})));
+      HPF.PowerConverters.ThreePhase.ACDC_3pBidirectionalSimple Simple_Bidirectional_3phase(
+        P_nom=100000,
+        VAC_nom=277,
+        VDC_nom=380,
+        vAngle=0,
+        alpha_ACDC=0.011660807,
+        alpha_DCAC=0.005765519,
+        beta_ACDC=-0.013106201,
+        beta_DCAC=0.01136924,
+        gamma_ACDC=0.033250334,
+        gamma_DCAC=0.013725159,
+        PF=+0.95,
+        Q1(start=0)) annotation (Placement(visible=true, transformation(
+            origin={89,-54},
+            extent={{-21,-20},{21,20}},
+            rotation=0)));
+      Modelica.Electrical.Analog.Basic.Ground Ground_DC annotation (
+        Placement(visible = true, transformation(origin={136,-106},  extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+      HPF.Loads.ThreePhase.AC_LoadIdealWye aC_LoadIdealWye1(
+        P_nom=2205*3,
+        Q_nom=1068*3,
+        V_nom=120,
+        vAngle_init(displayUnit="deg") = 0.5235987755983) annotation (HideResult=true,
+          Placement(transformation(
+            extent={{13,13},{-13,-13}},
+            rotation=270,
+            origin={151,119})));
+      HPF.Loads.ThreePhase.AC_LoadIdealWye aC_LoadIdealWye2(
+        P_nom=2205*3,
+        Q_nom=1068*3,
+        V_nom=120,
+        vAngle_init(displayUnit="deg") = 0.5235987755983) annotation (HideResult=true,
+          Placement(transformation(
+            extent={{13,13},{-13,-13}},
+            rotation=270,
+            origin={239,115})));
+      HPF.Loads.ThreePhase.AC_LoadIdealWye aC_LoadIdealWye3(
+        P_nom=2205*3,
+        Q_nom=1068*3,
+        V_nom=120,
+        vAngle_init(displayUnit="deg") = 0.5235987755983) annotation (HideResult=true,
+          Placement(transformation(
+            extent={{13,13},{-13,-13}},
+            rotation=270,
+            origin={349,111})));
+      HPF.SinglePhase.Components.Ground GndAC2 annotation (Placement(
+          HideResult=true,
+          visible=true,
+          transformation(
+            origin={298,46},
+            extent={{-8,-8},{8,8}},
+            rotation=0)));
+      Subsystems.LightingPanels.San_Diego.DC_Central_DC.DC_ACDC_Light_Panel_L1_1A
+        dC_ACDC_Light_Panel_L1_1A
+        annotation (Placement(transformation(extent={{190,-54},{210,-34}})));
+      Subsystems.LightingPanels.San_Diego.DC_Central_DC.DC_ACDC_Light_Panel_L1_1B
+        dC_ACDC_Light_Panel_L1_1B
+        annotation (Placement(transformation(extent={{224,-54},{244,-34}})));
+      Subsystems.LightingPanels.San_Diego.DC_Central_DC.DC_ACDC_Light_Panel_L1_1C
+        dC_ACDC_Light_Panel_L1_1C
+        annotation (Placement(transformation(extent={{256,-54},{276,-34}})));
+      Subsystems.LightingPanels.San_Diego.DC_Central_DC.DC_ACDC_Light_Panel_L1_2A
+        dC_ACDC_Light_Panel_L1_2A
+        annotation (Placement(transformation(extent={{288,-54},{308,-34}})));
+      Subsystems.LightingPanels.San_Diego.DC_Central_DC.DC_ACDC_Light_Panel_L1_2B
+        dC_ACDC_Light_Panel_L1_2B
+        annotation (Placement(transformation(extent={{322,-54},{342,-34}})));
+      Subsystems.LightingPanels.San_Diego.DC_Central_DC.DC_ACDC_Light_Panel_L1_2C
+        dC_ACDC_Light_Panel_L1_2C
+        annotation (Placement(transformation(extent={{356,-54},{376,-34}})));
+      Subsystems.LightingPanels.San_Diego.DC_Central_DC.DC_ACDC_Light_Panel_L2_1A
+        dC_ACDC_Light_Panel_L2_1A
+        annotation (Placement(transformation(extent={{190,-82},{210,-62}})));
+      Subsystems.LightingPanels.San_Diego.DC_Central_DC.DC_ACDC_Light_Panel_L2_1B
+        dC_ACDC_Light_Panel_L2_1B
+        annotation (Placement(transformation(extent={{224,-84},{244,-64}})));
+      Subsystems.LightingPanels.San_Diego.DC_Central_DC.DC_ACDC_Light_Panel_L2_1C
+        dC_ACDC_Light_Panel_L2_1C
+        annotation (Placement(transformation(extent={{256,-84},{276,-64}})));
+      Subsystems.LightingPanels.San_Diego.DC_Central_DC.DC_ACDC_Light_Panel_L2_2A
+        dC_ACDC_Light_Panel_L2_2A
+        annotation (Placement(transformation(extent={{290,-86},{310,-66}})));
+      Subsystems.LightingPanels.San_Diego.DC_Central_DC.DC_ACDC_Light_Panel_L2_2B
+        dC_ACDC_Light_Panel_L2_2B
+        annotation (Placement(transformation(extent={{324,-88},{344,-68}})));
+      Subsystems.LightingPanels.San_Diego.DC_Central_DC.DC_ACDC_Light_Panel_L2_2C
+        dC_ACDC_Light_Panel_L2_2C
+        annotation (Placement(transformation(extent={{358,-88},{378,-68}})));
+      Subsystems.LightingPanels.San_Diego.DC_Central_DC.DC_ACDC_Light_Panel_L3_1A
+        dC_ACDC_Light_Panel_L3_1A
+        annotation (Placement(transformation(extent={{190,-116},{210,-96}})));
+      Subsystems.LightingPanels.San_Diego.DC_Central_DC.DC_ACDC_Light_Panel_L3_1B
+        dC_ACDC_Light_Panel_L3_1B
+        annotation (Placement(transformation(extent={{222,-116},{242,-96}})));
+      Subsystems.LightingPanels.San_Diego.DC_Central_DC.DC_ACDC_Light_Panel_L3_1C
+        dC_ACDC_Light_Panel_L3_1C
+        annotation (Placement(transformation(extent={{256,-116},{276,-96}})));
+      Subsystems.LightingPanels.San_Diego.DC_Central_DC.DC_ACDC_Light_Panel_L3_2A
+        dC_ACDC_Light_Panel_L3_2A
+        annotation (Placement(transformation(extent={{290,-118},{310,-98}})));
+      Subsystems.LightingPanels.San_Diego.DC_Central_DC.DC_ACDC_Light_Panel_L3_2B
+        dC_ACDC_Light_Panel_L3_2B
+        annotation (Placement(transformation(extent={{324,-118},{344,-98}})));
+      Subsystems.LightingPanels.San_Diego.DC_Central_DC.DC_ACDC_Light_Panel_L3_2C
+        dC_ACDC_Light_Panel_L3_2C
+        annotation (Placement(transformation(extent={{360,-120},{380,-100}})));
+      Subsystems.Receptacle_Panel.San_Diego.DC_Central_SD.Small_MELs.SmallDC_MEL_Panel_L1A
+        smallDC_MEL_Panel_L1A
+        annotation (Placement(transformation(extent={{190,-154},{210,-134}})));
+      Subsystems.Receptacle_Panel.San_Diego.DC_Central_SD.Small_MELs.SmallDC_MEL_Panel_L1B
+        smallDC_MEL_Panel_L1B
+        annotation (Placement(transformation(extent={{224,-156},{244,-136}})));
+      Subsystems.Receptacle_Panel.San_Diego.DC_Central_SD.Small_MELs.SmallDC_MEL_Panel_L1C
+        smallDC_MEL_Panel_L1C
+        annotation (Placement(transformation(extent={{258,-158},{278,-138}})));
+      Subsystems.Receptacle_Panel.San_Diego.DC_Central_SD.Small_MELs.SmallDC_MEL_Panel_L2A
+        smallDC_MEL_Panel_L2A
+        annotation (Placement(transformation(extent={{292,-160},{312,-140}})));
+      Subsystems.Receptacle_Panel.San_Diego.DC_Central_SD.Small_MELs.SmallDC_MEL_Panel_L2B
+        smallDC_MEL_Panel_L2B
+        annotation (Placement(transformation(extent={{324,-162},{344,-142}})));
+      Subsystems.Receptacle_Panel.San_Diego.DC_Central_SD.Small_MELs.SmallDC_MEL_Panel_L2C
+        smallDC_MEL_Panel_L2C
+        annotation (Placement(transformation(extent={{360,-154},{380,-134}})));
+      Subsystems.Receptacle_Panel.San_Diego.DC_Central_SD.Small_MELs.SmallDC_MEL_Panel_L3A
+        smallDC_MEL_Panel_L3A
+        annotation (Placement(transformation(extent={{190,-194},{210,-174}})));
+      Subsystems.Receptacle_Panel.San_Diego.DC_Central_SD.Small_MELs.SmallDC_MEL_Panel_L3B
+        smallDC_MEL_Panel_L3B
+        annotation (Placement(transformation(extent={{224,-192},{244,-172}})));
+      Subsystems.Receptacle_Panel.San_Diego.DC_Central_SD.Small_MELs.SmallDC_MEL_Panel_L3C
+        smallDC_MEL_Panel_L3C
+        annotation (Placement(transformation(extent={{260,-194},{280,-174}})));
+      Subsystems.Receptacle_Panel.San_Diego.DC_Central_SD.Large_MELs.large_AC_MEL_Panel_L1A
+        large_AC_MEL_Panel_L1A
+        annotation (Placement(transformation(extent={{292,-196},{312,-176}})));
+      Subsystems.Receptacle_Panel.San_Diego.DC_Central_SD.Large_MELs.large_AC_MEL_Panel_L1B
+        large_AC_MEL_Panel_L1B
+        annotation (Placement(transformation(extent={{326,-196},{346,-176}})));
+      Subsystems.Receptacle_Panel.San_Diego.DC_Central_SD.Large_MELs.large_AC_MEL_Panel_L1C
+        large_AC_MEL_Panel_L1C
+        annotation (Placement(transformation(extent={{360,-188},{380,-168}})));
+      Subsystems.Receptacle_Panel.San_Diego.DC_Central_SD.Large_MELs.large_AC_MEL_Panel_L2A
+        large_AC_MEL_Panel_L2A
+        annotation (Placement(transformation(extent={{190,-230},{210,-210}})));
+      Subsystems.Receptacle_Panel.San_Diego.DC_Central_SD.Large_MELs.large_AC_MEL_Panel_L2B
+        large_AC_MEL_Panel_L2B
+        annotation (Placement(transformation(extent={{226,-232},{246,-212}})));
+      Subsystems.Receptacle_Panel.San_Diego.DC_Central_SD.Large_MELs.large_AC_MEL_Panel_L2C
+        large_AC_MEL_Panel_L2C
+        annotation (Placement(transformation(extent={{264,-232},{284,-212}})));
+      Subsystems.Receptacle_Panel.San_Diego.DC_Central_SD.Large_MELs.large_AC_MEL_Panel_L3A
+        large_AC_MEL_Panel_L3A
+        annotation (Placement(transformation(extent={{294,-234},{314,-214}})));
+      Subsystems.Receptacle_Panel.San_Diego.DC_Central_SD.Large_MELs.large_AC_MEL_Panel_L3B
+        large_AC_MEL_Panel_L3B
+        annotation (Placement(transformation(extent={{330,-234},{350,-214}})));
+      Subsystems.Receptacle_Panel.San_Diego.DC_Central_SD.Large_MELs.large_AC_MEL_Panel_L3C
+        large_AC_MEL_Panel_L3C
+        annotation (Placement(transformation(extent={{362,-228},{382,-208}})));
+      HPF.PowerConverters.ThreePhase.ACDC_3pInverterSimpleGridForming Simple_Inverter_Grid_Forming(
+        P_ACmin=26.26,
+        P_nom=2000,
+        P_stby=1.58,
+        VAC_nom=120,
+        VDC_nom=380,
+        alpha=0.006933206,
+        beta=0.013024277,
+        gamma=0.015653292,
+        vAngle=0,
+        vArg_ref=0,
+        vMag_ref=120)                                                                                                                                                                                                         annotation (
+        Placement(visible = true, transformation(origin={215,38},   extent={{17,-16},
+                {-17,16}},                                                                           rotation=90)));
+    equation
+      connect(Dist_Xmer.pinSec_N, GndAC.pin) annotation (Line(points={{4,-94},{
+              4,-134},{-6,-134}},color={117,80,123}));
+      connect(gain2.y, realToComplex1.im)
+        annotation (Line(points={{-13.4,16},{-10,16},{-10,10},{-6,10},{-6,12},{
+              -3,12}},                                   color={0,0,127}));
+      connect(gain2.u, realToComplex1.re) annotation (Line(points={{-27.2,16},{
+              -30,16},{-30,36},{-8,36},{-8,18},{-3,18}},
+                                              color={0,0,127}));
+      connect(realToComplex1.y, aC_LoadIdealWye.S_input) annotation (Line(points={{8.5,15},
+              {23,15},{23,4}},           color={85,170,255}));
+      connect(combiTimeTable_L1_Mechanical.y[1], gain2.u) annotation (Line(points={{-53,16},
+              {-27.2,16}},                               color={0,0,127}));
+      connect(aC_LoadIdealWye.hPin_A, Dist_Xmer.pinSec_A) annotation (Line(
+            points={{12.6,-22},{10,-22},{10,-46},{4,-46}},color={92,53,102}));
+      connect(aC_LoadIdealWye.hPin_B, Dist_Xmer.pinSec_B) annotation (Line(
+            points={{19.1,-22},{20,-22},{20,-62},{4,-62}},color={92,53,102}));
+      connect(aC_LoadIdealWye.hPin_C, Dist_Xmer.pinSec_C) annotation (Line(
+            points={{25.6,-22},{25.6,-78},{4,-78}}, color={92,53,102}));
+      connect(voltageSource.pinN, GndAC1.pin) annotation (Line(points={{-94,
+              -82.75},{-94,-106},{-116,-106}},color={117,80,123}));
+      connect(voltageSource.pinP_phA, Dist_Xmer.pinPrim_A) annotation (Line(
+            points={{-81.5,-60},{-66,-60},{-66,-50},{-46,-50}}, color={92,53,
+              102}));
+      connect(voltageSource.pinP_phB, Dist_Xmer.pinPrim_B)
+        annotation (Line(points={{-81.5,-70},{-46,-70}}, color={92,53,102}));
+      connect(voltageSource.pinP_phC, Dist_Xmer.pinPrim_C) annotation (Line(
+            points={{-81.5,-80},{-76,-80},{-76,-84},{-72,-84},{-72,-90},{-46,
+              -90}}, color={92,53,102}));
+      connect(combiTimeTable_L1_All_Plugs_General.y[1],gain_gen_plugs_L1_A. u)
+        annotation (Line(points={{121,190},{126.8,190}},
+                                                       color={0,0,127}));
+      connect(gain_gen_plugs_L1_A.y,realToComplex. re) annotation (Line(points={{140.6,
+              190},{146,190},{146,180},{159,180},{159,166}},
+                                                        color={0,0,127}));
+      connect(gain1.y,realToComplex. im)
+        annotation (Line(points={{150.6,160},{159,160}},
+                                                       color={0,0,127}));
+      connect(gain1.u,realToComplex. re) annotation (Line(points={{136.8,160},{
+              132,160},{132,176},{159,176},{159,166}},
+                                           color={0,0,127}));
+      connect(combiTimeTable_L2_All_Plugs_General.y[1],gain_gen_plugs_L2_A. u)
+        annotation (Line(points={{227,188},{234.8,188}},
+                                                       color={0,0,127}));
+      connect(gain_gen_plugs_L2_A.y, realToComplex2.re) annotation (Line(points={{248.6,
+              188},{244,188},{244,176},{257,176},{257,162}},        color={0,0,
+              127}));
+      connect(gain3.y, realToComplex2.im)
+        annotation (Line(points={{248.6,156},{257,156}}, color={0,0,127}));
+      connect(gain3.u, realToComplex2.re) annotation (Line(points={{234.8,156},
+              {230,156},{230,172},{257,172},{257,162}}, color={0,0,127}));
+      connect(combiTimeTable_L3_All_Plugs_General.y[1],gain_gen_plugs_L3_A. u)
+        annotation (Line(points={{327,178},{332.8,178}},
+                                                       color={0,0,127}));
+      connect(gain_gen_plugs_L3_A.y, realToComplex3.re) annotation (Line(points={{346.6,
+              178},{352,178},{352,168},{365,168},{365,154}},        color={0,0,
+              127}));
+      connect(gain4.y, realToComplex3.im)
+        annotation (Line(points={{356.6,148},{365,148}}, color={0,0,127}));
+      connect(gain4.u, realToComplex3.re) annotation (Line(points={{342.8,148},
+              {338,148},{338,164},{365,164},{365,154}}, color={0,0,127}));
+      connect(aC_LoadIdealWye.hPin_N, GndAC.pin) annotation (Line(points={{33.4,
+              -22},{34,-22},{34,-134},{-6,-134}}, color={117,80,123}));
+      connect(Simple_Bidirectional_3phase.hPin_N, GndAC.pin) annotation (Line(
+            points={{68,-70},{82,-70},{82,-90},{70,-90},{70,-134},{-6,-134}},
+            color={117,80,123}));
+      connect(Simple_Bidirectional_3phase.hPin_A, Dist_Xmer.pinSec_A)
+        annotation (Line(points={{68,-38},{64,-38},{64,-40},{4,-40},{4,-46}},
+            color={92,53,102}));
+      connect(Simple_Bidirectional_3phase.hPin_B, Dist_Xmer.pinSec_B)
+        annotation (Line(points={{68,-48},{56,-48},{56,-62},{4,-62}}, color={92,
+              53,102}));
+      connect(Simple_Bidirectional_3phase.hPin_C, Dist_Xmer.pinSec_C)
+        annotation (Line(points={{68,-58},{64,-58},{64,-78},{4,-78}}, color={92,
+              53,102}));
+      connect(Simple_Bidirectional_3phase.pin_n, Ground_DC.p) annotation (Line(
+            points={{110,-70},{116,-70},{116,-68},{136,-68},{136,-96}}, color={
+              0,0,255}));
+      connect(aC_LoadIdealWye1.S_input, realToComplex.y) annotation (Line(
+            points={{151,132},{180,132},{180,163},{170.5,163}},
+                                                            color={85,170,255}));
+      connect(realToComplex2.y, aC_LoadIdealWye2.S_input) annotation (Line(
+            points={{268.5,159},{268.5,158},{276,158},{276,130},{239,130},{239,
+              128}},
+            color={85,170,255}));
+      connect(aC_LoadIdealWye3.S_input, realToComplex3.y) annotation (Line(
+            points={{349,124},{382,124},{382,151},{376.5,151}},
+                                                            color={85,170,255}));
+      connect(dC_ACDC_Light_Panel_L1_2C.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{356,-34},{356,-24},{124,-24},{124,-38},{110,
+              -38}}, color={0,0,255}));
+      connect(dC_ACDC_Light_Panel_L1_1A.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{190,-34},{184,-34},{184,-32},{180,-32},{180,
+              -24},{124,-24},{124,-38},{110,-38}}, color={0,0,255}));
+      connect(dC_ACDC_Light_Panel_L1_1B.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{224,-34},{220,-34},{220,-30},{212,-30},{212,
+              -24},{124,-24},{124,-38},{110,-38}}, color={0,0,255}));
+      connect(dC_ACDC_Light_Panel_L1_1C.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{256,-34},{248,-34},{248,-24},{124,-24},{124,
+              -38},{110,-38}}, color={0,0,255}));
+      connect(dC_ACDC_Light_Panel_L1_2A.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{288,-34},{284,-34},{284,-26},{278,-26},{278,
+              -24},{124,-24},{124,-38},{110,-38}}, color={0,0,255}));
+      connect(dC_ACDC_Light_Panel_L1_2B.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{322,-34},{318,-34},{318,-28},{314,-28},{314,
+              -24},{124,-24},{124,-38},{110,-38}}, color={0,0,255}));
+      connect(dC_ACDC_Light_Panel_L2_2C.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{358,-68},{346,-68},{346,-60},{158,-60},{158,
+              -24},{124,-24},{124,-38},{110,-38}}, color={0,0,255}));
+      connect(dC_ACDC_Light_Panel_L2_1A.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{190,-62},{188,-62},{188,-58},{184,-58},{184,
+              -60},{158,-60},{158,-24},{124,-24},{124,-38},{110,-38}}, color={0,
+              0,255}));
+      connect(dC_ACDC_Light_Panel_L2_1B.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{224,-64},{218,-64},{218,-60},{158,-60},{158,
+              -24},{124,-24},{124,-38},{110,-38}}, color={0,0,255}));
+      connect(dC_ACDC_Light_Panel_L2_1C.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{256,-64},{252,-64},{252,-60},{158,-60},{158,
+              -24},{124,-24},{124,-38},{110,-38}}, color={0,0,255}));
+      connect(dC_ACDC_Light_Panel_L2_2A.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{290,-66},{284,-66},{284,-64},{280,-64},{280,
+              -60},{158,-60},{158,-24},{124,-24},{124,-38},{110,-38}}, color={0,
+              0,255}));
+      connect(dC_ACDC_Light_Panel_L2_2B.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{324,-68},{318,-68},{318,-62},{314,-62},{314,
+              -60},{158,-60},{158,-24},{124,-24},{124,-38},{110,-38}}, color={0,
+              0,255}));
+      connect(dC_ACDC_Light_Panel_L3_2C.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{360,-100},{358,-100},{358,-92},{158,-92},{158,
+              -24},{124,-24},{124,-38},{110,-38}}, color={0,0,255}));
+      connect(dC_ACDC_Light_Panel_L3_1A.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{190,-96},{176,-96},{176,-92},{158,-92},{158,
+              -24},{124,-24},{124,-38},{110,-38}}, color={0,0,255}));
+      connect(dC_ACDC_Light_Panel_L3_2B.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{324,-98},{320,-98},{320,-96},{314,-96},{314,
+              -92},{158,-92},{158,-24},{124,-24},{124,-38},{110,-38}}, color={0,
+              0,255}));
+      connect(dC_ACDC_Light_Panel_L3_2A.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{290,-98},{282,-98},{282,-92},{158,-92},{158,
+              -24},{124,-24},{124,-38},{110,-38}}, color={0,0,255}));
+      connect(dC_ACDC_Light_Panel_L3_1C.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{256,-96},{248,-96},{248,-92},{158,-92},{158,
+              -24},{124,-24},{124,-38},{110,-38}}, color={0,0,255}));
+      connect(dC_ACDC_Light_Panel_L3_1B.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{222,-96},{214,-96},{214,-92},{158,-92},{158,
+              -24},{124,-24},{124,-38},{110,-38}}, color={0,0,255}));
+      connect(smallDC_MEL_Panel_L2C.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{360,-134},{358,-134},{358,-128},{158,-128},{
+              158,-24},{124,-24},{124,-38},{110,-38}}, color={0,0,255}));
+      connect(smallDC_MEL_Panel_L1A.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{190,-134},{190,-128},{158,-128},{158,-24},{
+              124,-24},{124,-38},{110,-38}}, color={0,0,255}));
+      connect(smallDC_MEL_Panel_L1B.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{224,-136},{224,-128},{158,-128},{158,-24},{
+              124,-24},{124,-38},{110,-38}}, color={0,0,255}));
+      connect(smallDC_MEL_Panel_L1C.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{258,-138},{258,-128},{158,-128},{158,-24},{
+              124,-24},{124,-38},{110,-38}}, color={0,0,255}));
+      connect(smallDC_MEL_Panel_L2A.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{292,-140},{292,-128},{158,-128},{158,-24},{
+              124,-24},{124,-38},{110,-38}}, color={0,0,255}));
+      connect(smallDC_MEL_Panel_L2B.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{324,-142},{324,-136},{322,-136},{322,-128},{
+              158,-128},{158,-24},{124,-24},{124,-38},{110,-38}}, color={0,0,
+              255}));
+      connect(large_AC_MEL_Panel_L1C.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{360,-168},{306,-168},{306,-166},{158,-166},{
+              158,-24},{124,-24},{124,-38},{110,-38}}, color={0,0,255}));
+      connect(large_AC_MEL_Panel_L1B.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{326,-176},{324,-176},{324,-170},{320,-170},{
+              320,-168},{306,-168},{306,-166},{158,-166},{158,-24},{124,-24},{
+              124,-38},{110,-38}}, color={0,0,255}));
+      connect(large_AC_MEL_Panel_L1A.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{292,-176},{292,-170},{288,-170},{288,-166},{
+              158,-166},{158,-24},{124,-24},{124,-38},{110,-38}}, color={0,0,
+              255}));
+      connect(smallDC_MEL_Panel_L3C.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{260,-174},{258,-174},{258,-168},{256,-168},{
+              256,-166},{158,-166},{158,-24},{124,-24},{124,-38},{110,-38}},
+            color={0,0,255}));
+      connect(smallDC_MEL_Panel_L3A.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{190,-174},{186,-174},{186,-170},{180,-170},{
+              180,-166},{158,-166},{158,-24},{124,-24},{124,-38},{110,-38}},
+            color={0,0,255}));
+      connect(smallDC_MEL_Panel_L3B.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{224,-172},{220,-172},{220,-168},{214,-168},{
+              214,-166},{158,-166},{158,-24},{124,-24},{124,-38},{110,-38}},
+            color={0,0,255}));
+      connect(large_AC_MEL_Panel_L3C.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{362,-208},{292,-208},{292,-198},{158,-198},{
+              158,-24},{124,-24},{124,-38},{110,-38}}, color={0,0,255}));
+      connect(large_AC_MEL_Panel_L2A.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{190,-210},{188,-210},{188,-204},{184,-204},{
+              184,-198},{158,-198},{158,-24},{124,-24},{124,-38},{110,-38}},
+            color={0,0,255}));
+      connect(large_AC_MEL_Panel_L2B.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{226,-212},{226,-206},{222,-206},{222,-198},{
+              158,-198},{158,-24},{124,-24},{124,-38},{110,-38}}, color={0,0,
+              255}));
+      connect(large_AC_MEL_Panel_L2C.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{264,-212},{260,-212},{260,-208},{256,-208},{
+              256,-198},{158,-198},{158,-24},{124,-24},{124,-38},{110,-38}},
+            color={0,0,255}));
+      connect(large_AC_MEL_Panel_L3A.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{294,-214},{294,-206},{292,-206},{292,-198},{
+              158,-198},{158,-24},{124,-24},{124,-38},{110,-38}}, color={0,0,
+              255}));
+      connect(large_AC_MEL_Panel_L3B.p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{330,-214},{324,-214},{324,-212},{320,-212},{
+              320,-208},{292,-208},{292,-198},{158,-198},{158,-24},{124,-24},{
+              124,-38},{110,-38}}, color={0,0,255}));
+      connect(Simple_Inverter_Grid_Forming.pin_p, Simple_Bidirectional_3phase.pin_p)
+        annotation (Line(points={{202.2,21},{124,21},{124,-38},{110,-38}},
+            color={0,0,255}));
+      connect(Ground_DC.p, Simple_Inverter_Grid_Forming.pin_n) annotation (Line(
+            points={{136,-96},{144,-96},{144,-2},{227.8,-2},{227.8,21}}, color=
+              {0,0,255}));
+      connect(Simple_Inverter_Grid_Forming.hPin_N, GndAC2.pin) annotation (Line(
+            points={{227.8,55},{227.8,68},{298,68},{298,54}}, color={117,80,123}));
+      connect(aC_LoadIdealWye3.hPin_N, GndAC2.pin) annotation (Line(points={{
+              359.4,98},{360,98},{360,68},{298,68},{298,54}}, color={117,80,123}));
+      connect(aC_LoadIdealWye2.hPin_N, GndAC2.pin) annotation (Line(points={{
+              249.4,102},{250,102},{250,68},{298,68},{298,54}}, color={117,80,
+              123}));
+      connect(aC_LoadIdealWye1.hPin_N, GndAC2.pin) annotation (Line(points={{
+              161.4,106},{161.4,68},{298,68},{298,54}}, color={117,80,123}));
+      connect(aC_LoadIdealWye1.hPin_A, Simple_Inverter_Grid_Forming.hPin_A)
+        annotation (Line(points={{140.6,106},{140.6,88},{202.2,88},{202.2,55}},
+            color={92,53,102}));
+      connect(aC_LoadIdealWye3.hPin_A, Simple_Inverter_Grid_Forming.hPin_A)
+        annotation (Line(points={{338.6,98},{338.6,88},{202.2,88},{202.2,55}},
+            color={92,53,102}));
+      connect(aC_LoadIdealWye2.hPin_A, Simple_Inverter_Grid_Forming.hPin_A)
+        annotation (Line(points={{228.6,102},{228,102},{228,92},{226,92},{226,
+              88},{202.2,88},{202.2,55}}, color={92,53,102}));
+      connect(aC_LoadIdealWye1.hPin_B, Simple_Inverter_Grid_Forming.hPin_B)
+        annotation (Line(points={{147.1,106},{148,106},{148,92},{212,92},{212,
+              55},{210.2,55}}, color={92,53,102}));
+      connect(aC_LoadIdealWye3.hPin_B, Simple_Inverter_Grid_Forming.hPin_B)
+        annotation (Line(points={{345.1,98},{346,98},{346,80},{212,80},{212,55},
+              {210.2,55}}, color={92,53,102}));
+      connect(aC_LoadIdealWye2.hPin_B, Simple_Inverter_Grid_Forming.hPin_B)
+        annotation (Line(points={{235.1,102},{236,102},{236,80},{212,80},{212,
+              55},{210.2,55}}, color={92,53,102}));
+      connect(aC_LoadIdealWye1.hPin_C, Simple_Inverter_Grid_Forming.hPin_C)
+        annotation (Line(points={{153.6,106},{154,106},{154,76},{218.2,76},{
+              218.2,55}}, color={92,53,102}));
+      connect(aC_LoadIdealWye3.hPin_C, Simple_Inverter_Grid_Forming.hPin_C)
+        annotation (Line(points={{351.6,98},{351.6,76},{218.2,76},{218.2,55}},
+            color={92,53,102}));
+      connect(aC_LoadIdealWye2.hPin_C, Simple_Inverter_Grid_Forming.hPin_C)
+        annotation (Line(points={{241.6,102},{242,102},{242,92},{244,92},{244,
+              76},{218.2,76},{218.2,55}}, color={92,53,102}));
+      annotation (
+        Diagram(coordinateSystem(extent={{-140,-260},{420,260}})),
+        Icon(coordinateSystem(extent={{-140,-260},{420,260}})),
+        experiment(
+          StopTime=31536000,
+          Interval=900,
+          Tolerance=0.01,
+          __Dymola_fixedstepsize=900,
+          __Dymola_Algorithm="Euler"));
+    end CentralDC_model_SD;
+  end Central_DC;
 end San_Diego;
