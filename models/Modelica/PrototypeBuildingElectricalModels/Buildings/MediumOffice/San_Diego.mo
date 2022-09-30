@@ -1544,8 +1544,8 @@ package San_Diego
             origin={-42,-215},
             extent={{-12,-17},{12,17}},
             rotation=180)));
-      HPF.Sources.DC.FixedVoltage_VariablePower DC_Source(v_out(displayUnit="V")
-           = 660) annotation (Placement(visible=true, transformation(
+      HPF.Sources.DC.FixedVoltage_VariablePower DC_Source(v_out(displayUnit="V")=
+             660) annotation (Placement(visible=true, transformation(
             origin={-76,-218},
             extent={{-10,-10},{10,10}},
             rotation=90)));
@@ -1556,13 +1556,13 @@ package San_Diego
         tableName="pv_profile",
         fileName=ModelicaServices.ExternalReferences.loadResource(
             "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/pv_san_diego_roof.txt"),
-
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600,
         offset={0},
         startTime(displayUnit="h") = 0)    annotation (HideResult=true, Placement(
             transformation(extent={{-120,-228},{-100,-208}})));
+
       HPF.Cables.NEC_CableModel Cable_PV_C(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_500,
           length=100) annotation (Placement(visible=true, transformation(
             origin={-6,-214},
@@ -1969,8 +1969,8 @@ package San_Diego
             origin={-42,-215},
             extent={{-12,-17},{12,17}},
             rotation=180)));
-      HPF.Sources.DC.FixedVoltage_VariablePower DC_Source(v_out(displayUnit="V")
-           = 660) annotation (Placement(visible=true, transformation(
+      HPF.Sources.DC.FixedVoltage_VariablePower DC_Source(v_out(displayUnit="V")=
+             660) annotation (Placement(visible=true, transformation(
             origin={-76,-218},
             extent={{-10,-10},{10,10}},
             rotation=90)));
@@ -1981,13 +1981,13 @@ package San_Diego
         tableName="pv_profile",
         fileName=ModelicaServices.ExternalReferences.loadResource(
             "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/pv_san_diego_zero_energy.txt"),
-
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600,
         offset={0},
         startTime(displayUnit="h") = 0)    annotation (HideResult=true, Placement(
             transformation(extent={{-120,-228},{-100,-208}})));
+
       HPF.Cables.NEC_CableModel Cable_PV_C(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_500,
           length=100) annotation (Placement(visible=true, transformation(
             origin={-6,-214},

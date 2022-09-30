@@ -21,7 +21,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L1-All-ITEquipment",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -31,7 +31,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L1-All-Laptops",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -41,7 +41,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L1-All-MFDs",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -51,7 +51,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L1-All-Monitors",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -61,7 +61,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L1-All-Printers",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -77,7 +77,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L1-All-TVs",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -88,7 +88,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L1-All-Plugs-General",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -979,7 +979,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L1-All-ITEquipment",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -989,7 +989,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L1-All-Laptops",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -999,7 +999,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L1-All-MFDs",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -1009,7 +1009,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L1-All-Monitors",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -1019,7 +1019,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L1-All-Printers",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -1035,7 +1035,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L1-All-TVs",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -1046,7 +1046,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L1-All-Plugs-General",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -1867,7 +1867,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L1-All-ITEquipment",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -1877,7 +1877,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L1-All-Laptops",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -1887,7 +1887,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L1-All-MFDs",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -1897,7 +1897,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L1-All-Monitors",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -1907,7 +1907,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L1-All-Printers",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -1923,7 +1923,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L1-All-TVs",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -1934,7 +1934,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L1-All-Plugs-General",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -2755,7 +2755,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L2-All-ITEquipment",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -2765,7 +2765,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L2-All-Laptops",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -2775,7 +2775,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L2-All-MFDs",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -2785,7 +2785,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L2-All-Monitors",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -2795,7 +2795,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L2-All-Printers",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -2811,7 +2811,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L2-All-TVs",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -2822,7 +2822,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L2-All-Plugs-General",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -3665,7 +3665,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L2-All-ITEquipment",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -3675,7 +3675,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L2-All-Laptops",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -3685,7 +3685,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L2-All-MFDs",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -3695,7 +3695,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L2-All-Monitors",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -3705,7 +3705,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L2-All-Printers",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -3721,7 +3721,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L2-All-TVs",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -3732,7 +3732,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L2-All-Plugs-General",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -4589,7 +4589,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L2-All-ITEquipment",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -4599,7 +4599,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L2-All-Laptops",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -4609,7 +4609,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L2-All-MFDs",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -4619,7 +4619,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L2-All-Monitors",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -4629,7 +4629,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L2-All-Printers",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -4645,7 +4645,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L2-All-TVs",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -4656,7 +4656,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L2-All-Plugs-General",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -5597,7 +5597,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L3-All-ITEquipment",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -5607,7 +5607,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L3-All-Laptops",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -5617,7 +5617,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L3-All-MFDs",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -5627,7 +5627,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L3-All-Monitors",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -5637,7 +5637,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L3-All-Printers",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -5653,7 +5653,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L3-All-TVs",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -5664,7 +5664,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L3-All-Plugs-General",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -6545,7 +6545,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L3-All-ITEquipment",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -6555,7 +6555,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L3-All-Laptops",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -6565,7 +6565,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L3-All-MFDs",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -6575,7 +6575,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L3-All-Monitors",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -6585,7 +6585,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L3-All-Printers",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -6601,7 +6601,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L3-All-TVs",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -6612,7 +6612,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L3-All-Plugs-General",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -7507,7 +7507,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L3-All-ITEquipment",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -7517,7 +7517,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L3-All-Laptops",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -7527,7 +7527,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L3-All-MFDs",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -7537,7 +7537,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L3-All-Monitors",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -7547,7 +7547,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L3-All-Printers",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -7563,7 +7563,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L3-All-TVs",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -7574,7 +7574,7 @@ package Receptacle_Panel
           tableOnFile=true,
           tableName="L3-All-Plugs-General",
           fileName=ModelicaServices.ExternalReferences.loadResource(
-              "modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_MELs_LP.txt"),
+              "modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_MELs_LP.txt"),
           smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
           extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
           timeScale(displayUnit="h") = 3600)
@@ -8388,7 +8388,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L1-All-ITEquipment",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -8398,7 +8398,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L1-All-MFDs",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -8408,7 +8408,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L1-All-Printers",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -8424,7 +8424,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L1-All-TVs",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -8435,7 +8435,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L1-All-Plugs-General",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -8892,7 +8892,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L1-All-ITEquipment",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -8902,7 +8902,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L1-All-MFDs",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -8912,7 +8912,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L1-All-Printers",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -8928,7 +8928,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L1-All-TVs",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -8939,7 +8939,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L1-All-Plugs-General",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -9368,7 +9368,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L1-All-ITEquipment",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -9378,7 +9378,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L1-All-MFDs",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -9388,7 +9388,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L1-All-Printers",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -9404,7 +9404,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L1-All-TVs",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -9415,7 +9415,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L1-All-Plugs-General",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -9894,7 +9894,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L2-All-ITEquipment",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -9904,7 +9904,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L2-All-MFDs",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -9914,7 +9914,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L2-All-Printers",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -9930,7 +9930,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L2-All-TVs",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -9941,7 +9941,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L2-All-Plugs-General",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -10370,7 +10370,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L2-All-ITEquipment",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -10380,7 +10380,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L2-All-MFDs",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -10390,7 +10390,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L2-All-Printers",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -10406,7 +10406,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L2-All-TVs",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -10417,7 +10417,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L2-All-Plugs-General",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -10826,7 +10826,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L2-All-ITEquipment",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -10836,7 +10836,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L2-All-MFDs",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -10846,7 +10846,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L2-All-Printers",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -10862,7 +10862,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L2-All-TVs",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -10873,7 +10873,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L2-All-Plugs-General",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -11418,7 +11418,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L3-All-ITEquipment",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -11428,7 +11428,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L3-All-MFDs",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -11438,7 +11438,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L3-All-Printers",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -11454,7 +11454,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L3-All-TVs",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -11465,7 +11465,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L3-All-Plugs-General",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -11900,7 +11900,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L3-All-ITEquipment",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -11910,7 +11910,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L3-All-MFDs",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -11920,7 +11920,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L3-All-Printers",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -11936,7 +11936,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L3-All-TVs",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -11947,7 +11947,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L3-All-Plugs-General",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -12438,7 +12438,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L3-All-ITEquipment",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -12448,7 +12448,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L3-All-MFDs",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -12458,7 +12458,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L3-All-Printers",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -12474,7 +12474,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L3-All-TVs",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -12485,7 +12485,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L3-All-Plugs-General",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -12956,7 +12956,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L1-All-Laptops",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -12966,7 +12966,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L1-All-Monitors",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -13474,7 +13474,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L1-All-Laptops",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -13484,7 +13484,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L1-All-Monitors",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -14053,7 +14053,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L1-All-Laptops",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -14063,7 +14063,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L1-All-Monitors",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -14656,7 +14656,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L2-All-Laptops",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -14666,7 +14666,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L2-All-Monitors",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -15229,7 +15229,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L2-All-Laptops",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -15239,7 +15239,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L2-All-Monitors",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -15728,7 +15728,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L2-All-Laptops",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -15738,7 +15738,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L2-All-Monitors",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -16301,7 +16301,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L3-All-Laptops",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -16311,7 +16311,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L3-All-Monitors",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -16900,7 +16900,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L3-All-Laptops",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -16910,7 +16910,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L3-All-Monitors",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -17623,7 +17623,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L3-All-Laptops",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
@@ -17633,7 +17633,7 @@ package Receptacle_Panel
             tableOnFile=true,
             tableName="L3-All-Monitors",
             fileName=ModelicaServices.ExternalReferences.loadResource(
-                "modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_MELs_LP.txt"),
+                "modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_MELs_LP.txt"),
             smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
             extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
             timeScale(displayUnit="h") = 3600)
