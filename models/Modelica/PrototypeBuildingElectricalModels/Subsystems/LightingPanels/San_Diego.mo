@@ -16,7 +16,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Core_Lights(
         tableOnFile=true,
         tableName="L1-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -25,7 +25,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn1_Lights(
         tableOnFile=true,
         tableName="L1-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -34,7 +34,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn2_Lights(
         tableOnFile=true,
         tableName="L1-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -43,7 +43,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn3_Lights(
         tableOnFile=true,
         tableName="L1-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -52,7 +52,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn4_Lights(
         tableOnFile=true,
         tableName="L1-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -684,7 +684,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Core_Lights(
         tableOnFile=true,
         tableName="L1-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -693,7 +693,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn1_Lights(
         tableOnFile=true,
         tableName="L1-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -702,7 +702,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn2_Lights(
         tableOnFile=true,
         tableName="L1-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -711,7 +711,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn3_Lights(
         tableOnFile=true,
         tableName="L1-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -720,7 +720,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn4_Lights(
         tableOnFile=true,
         tableName="L1-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -1326,7 +1326,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Core_Lights(
         tableOnFile=true,
         tableName="L1-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -1335,7 +1335,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn1_Lights(
         tableOnFile=true,
         tableName="L1-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -1344,7 +1344,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn2_Lights(
         tableOnFile=true,
         tableName="L1-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -1353,7 +1353,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn3_Lights(
         tableOnFile=true,
         tableName="L1-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -1362,7 +1362,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn4_Lights(
         tableOnFile=true,
         tableName="L1-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -1994,7 +1994,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Core_Lights(
         tableOnFile=true,
         tableName="L1-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -2003,7 +2003,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn1_Lights(
         tableOnFile=true,
         tableName="L1-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -2012,7 +2012,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn2_Lights(
         tableOnFile=true,
         tableName="L1-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -2021,7 +2021,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn3_Lights(
         tableOnFile=true,
         tableName="L1-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -2030,7 +2030,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn4_Lights(
         tableOnFile=true,
         tableName="L1-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -2714,7 +2714,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Core_Lights(
         tableOnFile=true,
         tableName="L1-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -2723,7 +2723,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn1_Lights(
         tableOnFile=true,
         tableName="L1-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -2732,7 +2732,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn2_Lights(
         tableOnFile=true,
         tableName="L1-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -2741,7 +2741,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn3_Lights(
         tableOnFile=true,
         tableName="L1-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -2750,7 +2750,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn4_Lights(
         tableOnFile=true,
         tableName="L1-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -3434,7 +3434,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Core_Lights(
         tableOnFile=true,
         tableName="L1-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -3443,7 +3443,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn1_Lights(
         tableOnFile=true,
         tableName="L1-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -3452,7 +3452,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn2_Lights(
         tableOnFile=true,
         tableName="L1-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -3461,7 +3461,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn3_Lights(
         tableOnFile=true,
         tableName="L1-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -3470,7 +3470,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn4_Lights(
         tableOnFile=true,
         tableName="L1-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -4232,7 +4232,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Core_Lights(
         tableOnFile=true,
         tableName="L2-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -4241,7 +4241,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn1_Lights(
         tableOnFile=true,
         tableName="L2-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -4250,7 +4250,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn2_Lights(
         tableOnFile=true,
         tableName="L2-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -4259,7 +4259,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn3_Lights(
         tableOnFile=true,
         tableName="L2-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -4268,7 +4268,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn4_Lights(
         tableOnFile=true,
         tableName="L2-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -4900,7 +4900,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Core_Lights(
         tableOnFile=true,
         tableName="L2-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -4909,7 +4909,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn1_Lights(
         tableOnFile=true,
         tableName="L2-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -4918,7 +4918,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn2_Lights(
         tableOnFile=true,
         tableName="L2-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -4927,7 +4927,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn3_Lights(
         tableOnFile=true,
         tableName="L2-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -4936,7 +4936,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn4_Lights(
         tableOnFile=true,
         tableName="L2-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -5555,7 +5555,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Core_Lights(
         tableOnFile=true,
         tableName="L2-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -5564,7 +5564,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn1_Lights(
         tableOnFile=true,
         tableName="L2-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -5573,7 +5573,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn2_Lights(
         tableOnFile=true,
         tableName="L2-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -5582,7 +5582,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn3_Lights(
         tableOnFile=true,
         tableName="L2-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -5591,7 +5591,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn4_Lights(
         tableOnFile=true,
         tableName="L2-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -6197,7 +6197,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Core_Lights(
         tableOnFile=true,
         tableName="L2-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -6206,7 +6206,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn1_Lights(
         tableOnFile=true,
         tableName="L2-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -6215,7 +6215,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn2_Lights(
         tableOnFile=true,
         tableName="L2-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -6224,7 +6224,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn3_Lights(
         tableOnFile=true,
         tableName="L2-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -6233,7 +6233,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn4_Lights(
         tableOnFile=true,
         tableName="L2-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -6839,7 +6839,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Core_Lights(
         tableOnFile=true,
         tableName="L2-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -6848,7 +6848,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn1_Lights(
         tableOnFile=true,
         tableName="L2-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -6857,7 +6857,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn2_Lights(
         tableOnFile=true,
         tableName="L2-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -6866,7 +6866,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn3_Lights(
         tableOnFile=true,
         tableName="L2-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -6875,7 +6875,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn4_Lights(
         tableOnFile=true,
         tableName="L2-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -7494,7 +7494,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Core_Lights(
         tableOnFile=true,
         tableName="L2-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -7503,7 +7503,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn1_Lights(
         tableOnFile=true,
         tableName="L2-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -7512,7 +7512,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn2_Lights(
         tableOnFile=true,
         tableName="L2-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -7521,7 +7521,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn3_Lights(
         tableOnFile=true,
         tableName="L2-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -7530,7 +7530,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn4_Lights(
         tableOnFile=true,
         tableName="L2-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -8175,7 +8175,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Core_Lights(
         tableOnFile=true,
         tableName="L3-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -8184,7 +8184,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn1_Lights(
         tableOnFile=true,
         tableName="L3-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -8193,7 +8193,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn2_Lights(
         tableOnFile=true,
         tableName="L3-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -8202,7 +8202,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn3_Lights(
         tableOnFile=true,
         tableName="L3-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -8211,7 +8211,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn4_Lights(
         tableOnFile=true,
         tableName="L3-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -8869,7 +8869,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Core_Lights(
         tableOnFile=true,
         tableName="L3-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -8878,7 +8878,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn1_Lights(
         tableOnFile=true,
         tableName="L3-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -8887,7 +8887,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn2_Lights(
         tableOnFile=true,
         tableName="L3-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -8896,7 +8896,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn3_Lights(
         tableOnFile=true,
         tableName="L3-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -8905,7 +8905,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn4_Lights(
         tableOnFile=true,
         tableName="L3-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -9589,7 +9589,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Core_Lights(
         tableOnFile=true,
         tableName="L3-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -9598,7 +9598,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn1_Lights(
         tableOnFile=true,
         tableName="L3-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -9607,7 +9607,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn2_Lights(
         tableOnFile=true,
         tableName="L3-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -9616,7 +9616,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn3_Lights(
         tableOnFile=true,
         tableName="L3-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -9625,7 +9625,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn4_Lights(
         tableOnFile=true,
         tableName="L3-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -10296,7 +10296,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Core_Lights(
         tableOnFile=true,
         tableName="L3-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -10305,7 +10305,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn1_Lights(
         tableOnFile=true,
         tableName="L3-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -10314,7 +10314,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn2_Lights(
         tableOnFile=true,
         tableName="L3-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -10323,7 +10323,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn3_Lights(
         tableOnFile=true,
         tableName="L3-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -10332,7 +10332,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn4_Lights(
         tableOnFile=true,
         tableName="L3-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -10951,7 +10951,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Core_Lights(
         tableOnFile=true,
         tableName="L3-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -10960,7 +10960,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn1_Lights(
         tableOnFile=true,
         tableName="L3-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -10969,7 +10969,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn2_Lights(
         tableOnFile=true,
         tableName="L3-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -10978,7 +10978,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn3_Lights(
         tableOnFile=true,
         tableName="L3-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -10987,7 +10987,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn4_Lights(
         tableOnFile=true,
         tableName="L3-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -11592,7 +11592,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Core_Lights(
         tableOnFile=true,
         tableName="L3-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -11601,7 +11601,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn1_Lights(
         tableOnFile=true,
         tableName="L3-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -11610,7 +11610,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn2_Lights(
         tableOnFile=true,
         tableName="L3-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -11619,7 +11619,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn3_Lights(
         tableOnFile=true,
         tableName="L3-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -11628,7 +11628,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn4_Lights(
         tableOnFile=true,
         tableName="L3-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data//LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -12249,7 +12249,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Core_Lights(
         tableOnFile=true,
         tableName="L1-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -12258,7 +12258,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn1_Lights(
         tableOnFile=true,
         tableName="L1-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -12267,7 +12267,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn2_Lights(
         tableOnFile=true,
         tableName="L1-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -12276,7 +12276,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn3_Lights(
         tableOnFile=true,
         tableName="L1-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -12285,7 +12285,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn4_Lights(
         tableOnFile=true,
         tableName="L1-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -13270,7 +13270,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Core_Lights(
         tableOnFile=true,
         tableName="L1-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -13279,7 +13279,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn1_Lights(
         tableOnFile=true,
         tableName="L1-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -13288,7 +13288,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn2_Lights(
         tableOnFile=true,
         tableName="L1-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -13297,7 +13297,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn3_Lights(
         tableOnFile=true,
         tableName="L1-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -13306,7 +13306,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn4_Lights(
         tableOnFile=true,
         tableName="L1-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -14227,7 +14227,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Core_Lights(
         tableOnFile=true,
         tableName="L1-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -14236,7 +14236,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn1_Lights(
         tableOnFile=true,
         tableName="L1-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -14245,7 +14245,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn2_Lights(
         tableOnFile=true,
         tableName="L1-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -14254,7 +14254,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn3_Lights(
         tableOnFile=true,
         tableName="L1-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -14263,7 +14263,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn4_Lights(
         tableOnFile=true,
         tableName="L1-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -15162,7 +15162,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Core_Lights(
         tableOnFile=true,
         tableName="L1-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -15171,7 +15171,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn1_Lights(
         tableOnFile=true,
         tableName="L1-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -15180,7 +15180,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn2_Lights(
         tableOnFile=true,
         tableName="L1-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -15189,7 +15189,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn3_Lights(
         tableOnFile=true,
         tableName="L1-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -15198,7 +15198,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn4_Lights(
         tableOnFile=true,
         tableName="L1-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -16045,7 +16045,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Core_Lights(
         tableOnFile=true,
         tableName="L1-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -16054,7 +16054,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn1_Lights(
         tableOnFile=true,
         tableName="L1-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -16063,7 +16063,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn2_Lights(
         tableOnFile=true,
         tableName="L1-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -16072,7 +16072,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn3_Lights(
         tableOnFile=true,
         tableName="L1-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -16081,7 +16081,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn4_Lights(
         tableOnFile=true,
         tableName="L1-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -16896,7 +16896,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Core_Lights(
         tableOnFile=true,
         tableName="L1-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -16905,7 +16905,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn1_Lights(
         tableOnFile=true,
         tableName="L1-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -16914,7 +16914,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn2_Lights(
         tableOnFile=true,
         tableName="L1-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -16923,7 +16923,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn3_Lights(
         tableOnFile=true,
         tableName="L1-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -16932,7 +16932,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn4_Lights(
         tableOnFile=true,
         tableName="L1-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L1_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -17747,7 +17747,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Core_Lights(
         tableOnFile=true,
         tableName="L2-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -17756,7 +17756,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn1_Lights(
         tableOnFile=true,
         tableName="L2-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -17765,7 +17765,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn2_Lights(
         tableOnFile=true,
         tableName="L2-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -17774,7 +17774,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn3_Lights(
         tableOnFile=true,
         tableName="L2-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -17783,7 +17783,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn4_Lights(
         tableOnFile=true,
         tableName="L2-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -18614,7 +18614,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Core_Lights(
         tableOnFile=true,
         tableName="L2-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -18623,7 +18623,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn1_Lights(
         tableOnFile=true,
         tableName="L2-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -18632,7 +18632,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn2_Lights(
         tableOnFile=true,
         tableName="L2-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -18641,7 +18641,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn3_Lights(
         tableOnFile=true,
         tableName="L2-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -18650,7 +18650,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn4_Lights(
         tableOnFile=true,
         tableName="L2-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -19513,7 +19513,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Core_Lights(
         tableOnFile=true,
         tableName="L2-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -19522,7 +19522,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn1_Lights(
         tableOnFile=true,
         tableName="L2-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -19531,7 +19531,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn2_Lights(
         tableOnFile=true,
         tableName="L2-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -19540,7 +19540,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn3_Lights(
         tableOnFile=true,
         tableName="L2-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -19549,7 +19549,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn4_Lights(
         tableOnFile=true,
         tableName="L2-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -20380,7 +20380,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Core_Lights(
         tableOnFile=true,
         tableName="L2-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -20389,7 +20389,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn1_Lights(
         tableOnFile=true,
         tableName="L2-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -20398,7 +20398,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn2_Lights(
         tableOnFile=true,
         tableName="L2-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -20407,7 +20407,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn3_Lights(
         tableOnFile=true,
         tableName="L2-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -20416,7 +20416,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn4_Lights(
         tableOnFile=true,
         tableName="L2-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -21247,7 +21247,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Core_Lights(
         tableOnFile=true,
         tableName="L2-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -21256,7 +21256,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn1_Lights(
         tableOnFile=true,
         tableName="L2-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -21265,7 +21265,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn2_Lights(
         tableOnFile=true,
         tableName="L2-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -21274,7 +21274,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn3_Lights(
         tableOnFile=true,
         tableName="L2-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -21283,7 +21283,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn4_Lights(
         tableOnFile=true,
         tableName="L2-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -22098,7 +22098,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Core_Lights(
         tableOnFile=true,
         tableName="L2-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -22107,7 +22107,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn1_Lights(
         tableOnFile=true,
         tableName="L2-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -22116,7 +22116,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn2_Lights(
         tableOnFile=true,
         tableName="L2-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -22125,7 +22125,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn3_Lights(
         tableOnFile=true,
         tableName="L2-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -22134,7 +22134,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn4_Lights(
         tableOnFile=true,
         tableName="L2-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L2_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -22859,7 +22859,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Core_Lights(
         tableOnFile=true,
         tableName="L3-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -22868,7 +22868,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn1_Lights(
         tableOnFile=true,
         tableName="L3-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -22877,7 +22877,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn2_Lights(
         tableOnFile=true,
         tableName="L3-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -22886,7 +22886,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn3_Lights(
         tableOnFile=true,
         tableName="L3-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -22895,7 +22895,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn4_Lights(
         tableOnFile=true,
         tableName="L3-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -23816,7 +23816,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Core_Lights(
         tableOnFile=true,
         tableName="L3-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -23825,7 +23825,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn1_Lights(
         tableOnFile=true,
         tableName="L3-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -23834,7 +23834,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn2_Lights(
         tableOnFile=true,
         tableName="L3-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -23843,7 +23843,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn3_Lights(
         tableOnFile=true,
         tableName="L3-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -23852,7 +23852,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn4_Lights(
         tableOnFile=true,
         tableName="L3-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -24667,7 +24667,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Core_Lights(
         tableOnFile=true,
         tableName="L3-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -24676,7 +24676,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn1_Lights(
         tableOnFile=true,
         tableName="L3-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -24685,7 +24685,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn2_Lights(
         tableOnFile=true,
         tableName="L3-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -24694,7 +24694,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn3_Lights(
         tableOnFile=true,
         tableName="L3-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -24703,7 +24703,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn4_Lights(
         tableOnFile=true,
         tableName="L3-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -25534,7 +25534,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Core_Lights(
         tableOnFile=true,
         tableName="L3-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -25543,7 +25543,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn1_Lights(
         tableOnFile=true,
         tableName="L3-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -25552,7 +25552,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn2_Lights(
         tableOnFile=true,
         tableName="L3-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -25561,7 +25561,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn3_Lights(
         tableOnFile=true,
         tableName="L3-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -25570,7 +25570,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn4_Lights(
         tableOnFile=true,
         tableName="L3-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -26401,7 +26401,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Core_Lights(
         tableOnFile=true,
         tableName="L3-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -26410,7 +26410,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn1_Lights(
         tableOnFile=true,
         tableName="L3-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -26419,7 +26419,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn2_Lights(
         tableOnFile=true,
         tableName="L3-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -26428,7 +26428,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn3_Lights(
         tableOnFile=true,
         tableName="L3-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -26437,7 +26437,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn4_Lights(
         tableOnFile=true,
         tableName="L3-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -27268,7 +27268,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Core_Lights(
         tableOnFile=true,
         tableName="L3-Core-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -27277,7 +27277,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn1_Lights(
         tableOnFile=true,
         tableName="L3-Zn1-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -27286,7 +27286,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn2_Lights(
         tableOnFile=true,
         tableName="L3-Zn2-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -27295,7 +27295,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn3_Lights(
         tableOnFile=true,
         tableName="L3-Zn3-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -27304,7 +27304,7 @@ package San_Diego
       Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn4_Lights(
         tableOnFile=true,
         tableName="L3-Zn4-Lights",
-        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/load_profiles/San-Diego-L3_Light_LP.txt"),
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
         smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
         extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
         timeScale(displayUnit="h") = 3600)
@@ -28137,4 +28137,15962 @@ package San_Diego
       annotation ();
     end DC_ACDC_Light_Panel_L3_2C;
   end DC_Local_SD;
+
+  package DC_Central_DC
+    model DC_ACDC_Light_Panel_L1_1A
+      outer HPF.SystemDef systemDef;
+      Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+        Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Core_Lights(
+        tableOnFile=true,
+        tableName="L1-Core-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-74,70},{-54,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn1_Lights(
+        tableOnFile=true,
+        tableName="L1-Zn1-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-40,70},{-20,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn2_Lights(
+        tableOnFile=true,
+        tableName="L1-Zn2-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-8,70},{12,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn3_Lights(
+        tableOnFile=true,
+        tableName="L1-Zn3-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{28,70},{48,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn4_Lights(
+        tableOnFile=true,
+        tableName="L1-Zn4-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{64,70},{84,90}})));
+
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_30(V = 19.5, alpha = 0.26452, beta = 0.12526, gamma = 0.0020109);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_45(V = 19.5, alpha = 0.42081, beta = 0.12526, gamma = 0.001341);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 4.27984, beta = -0.004643965, gamma = 0.0000985992);
+
+    /* Insert models here */
+
+    /* AC/DC Converter Light_Conv_4 */
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_4(modelData = modelData_DCDC);
+
+    /* Light Model 121 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_4(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=27.04);
+      HPF.DC.Variable_DC_Load Light_121;
+
+    /* Light Model 120 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_121(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_121(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_121(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_120;
+
+    /* Light Model 119 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_120(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_120(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_120(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_119;
+
+    /* Light Model 118 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_119(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_119(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_119(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_118;
+
+    /* Light Model 117 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_118(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_118(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_118(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_117;
+
+    /* Light Model 116 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_117(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_117(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_117(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_116;
+
+    /* Light Model 114 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_116(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_116(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_116(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_114;
+
+    /* Light Model 100 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_114(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_114(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_114(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_100;
+
+    /* AC/DC Converter Light_Conv_7 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_100(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_100(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_100(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_7(modelData = modelData_DCDC);
+
+    /* Light Model 91 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_7(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=17.22);
+      HPF.DC.Variable_DC_Load Light_91;
+
+    /* Light Model 90 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_91(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_91(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_91(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_90;
+
+    /* Light Model 89 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_90(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_90(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_90(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_89;
+
+    /* Light Model 86 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_89(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_89(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_89(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_86;
+
+    /* Light Model 85 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_86(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_86(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_86(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_85;
+
+    /* Light Model 84 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_85(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_85(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_85(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_84;
+
+    /* Light Model 83 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_84(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_84(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_84(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_83;
+
+    /* Light Model 82 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_83(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_83(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_83(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_82;
+
+    /* AC/DC Converter Light_Conv_5 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_82(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_82(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_82(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_5(modelData = modelData_DCDC);
+
+    /* Light Model 292 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_5(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=15.53);
+      HPF.DC.Variable_DC_Load Light_292;
+
+    /* Light Model 291 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_292(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_292(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_292(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_291;
+
+    /* Light Model 290 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_291(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_291(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_291(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_290;
+
+    /* Light Model 289 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_290(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_290(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_290(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_289;
+
+    /* Light Model 288 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_289(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_289(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_289(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_288;
+
+    /* Light Model 36 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_288(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_288(k=22) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_288(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_36;
+
+    /* Light Model 35 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_36(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_36(k=35) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_36(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_35;
+
+    /* Light Model 34 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_35(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_35(k=35) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_35(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_34;
+
+    /* AC/DC Converter Light_Conv_3 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_34(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_34(k=35) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_34(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_3(modelData = modelData_DCDC);
+
+    /* Light Model 284 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_3(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=18.45);
+      HPF.DC.Variable_DC_Load Light_284;
+
+    /* Light Model 283 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_284(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_284(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_284(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_283;
+
+    /* Light Model 281 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_283(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_283(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_283(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_281;
+
+    /* Light Model 22 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_281(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_281(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_281(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_22;
+
+    /* Light Model 21 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_22(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_22(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_22(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_21;
+
+    /* Light Model 20 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_21(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_21(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_21(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_20;
+
+    /* Light Model 19 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_20(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_20(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_20(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_19;
+
+    /* AC/DC Converter Light_Conv_6 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_19(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_19(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_19(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_6(modelData = modelData_DCDC);
+
+    /* Light Model 50 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_6(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=8.52);
+      HPF.DC.Variable_DC_Load Light_50;
+
+    /* Light Model 45 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_50(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_50(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_50(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_45;
+
+    /* Light Model 44 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_45(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_45(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_45(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_44;
+
+    /* Light Model 33 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_44(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_44(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_44(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_33;
+
+    /* Light Model 18 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_33(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_33(k=35) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_33(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_18;
+
+    /* Light Model 17 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_18(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_18(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_18(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_17;
+
+    /* Light Model 12 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_17(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_17(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_17(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_12;
+
+    /* Light Model 11 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_12(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_12(k=20) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_12(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_11;
+
+    /* AC/DC Converter Light_Conv_1 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_11(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_11(k=20) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_11(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_1(modelData = modelData_DCDC);
+
+    /* Light Model 28 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_1(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=13.05);
+      HPF.DC.Variable_DC_Load Light_28;
+
+    /* Light Model 24 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_28(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_28(k=42) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_28(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_24;
+
+    /* Light Model 23 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_24(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_24(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_24(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_23;
+
+    /* Light Model 9 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_23(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_23(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_23(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_9;
+
+    /* Light Model 7 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_9(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_9(k=20) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_9(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_7;
+
+    /* Light Model 6 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_7(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_7(k=42) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_7(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_6;
+
+    /* Light Model 5 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_6(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_6(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_6(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_5;
+
+    /* Light Model 4 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_5(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_5(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_5(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_4;
+
+    /* AC/DC Converter Light_Conv_2 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_4(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_4(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_4(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_2(modelData = modelData_DCDC);
+
+    /* Light Model 110 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_2(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=18.96);
+      HPF.DC.Variable_DC_Load Light_110;
+
+    /* Light Model 47 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_110(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_110(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_110(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_47;
+
+    /* Light Model 16 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_47(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_47(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_47(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_16;
+
+    /* Light Model 15 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_16(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_16(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_16(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_15;
+
+    /* Light Model 14 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_15(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_15(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_15(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_14;
+
+    /* Light Model 13 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_14(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_14(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_14(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_13;
+
+    /* Light Model 8 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_13(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_13(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_13(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_8;
+
+    /* Light Model 2 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_8(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_8(k=42) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_8(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_2;
+
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_2(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_2(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_2(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+
+      Modelica.Electrical.Analog.Interfaces.PositivePin p
+        "Positive electrical pin of port 1" annotation (Placement(transformation(
+              extent={{-114,10},{-94,30}}), iconTransformation(extent={{-110,90},{-90,
+                110}})));
+      HPF.Cables.NEC_CableModelDC cable_light_L1_1A(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+          length=15) annotation (Placement(visible=true, transformation(
+            origin={-38,20},
+            extent={{10,-10},{-10,10}},
+            rotation=0)));
+    equation
+
+    /* Insert equation here */
+
+    /* AC/DC Converter Light_Conv_4 */
+      connect(cable_Light_Conv_4.n, cable_light_L1_1A.p);
+      connect(Light_Conv_4.p1,  cable_Light_Conv_4.p);
+      connect(Light_Conv_4.n1, GndDC.p);
+      connect(Light_Conv_4.n2, GndDC.p);
+
+    /* Light Connections 121 */
+      connect(Light_driver_121.n2, GndDC.p);
+      connect(Light_driver_121.n1, GndDC.p);
+      connect(Light_121.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn3_Lights.y[1], Gain_Light_driver_121.u);
+      connect(Gain_Light_driver_121.y, Light_121.u);
+      connect(Light_121.p, Light_driver_121.p2);
+      connect(Light_driver_121.p1,  cable_light_121.p);
+      connect(Light_Conv_4.p2, cable_light_121.n);
+
+    /* Light Connections 120 */
+      connect(Light_driver_120.n2, GndDC.p);
+      connect(Light_driver_120.n1, GndDC.p);
+      connect(Light_120.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn3_Lights.y[1], Gain_Light_driver_120.u);
+      connect(Gain_Light_driver_120.y, Light_120.u);
+      connect(Light_120.p, Light_driver_120.p2);
+      connect(Light_driver_120.p1,  cable_light_120.p);
+      connect(Light_Conv_4.p2, cable_light_120.n);
+
+    /* Light Connections 119 */
+      connect(Light_driver_119.n2, GndDC.p);
+      connect(Light_driver_119.n1, GndDC.p);
+      connect(Light_119.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn3_Lights.y[1], Gain_Light_driver_119.u);
+      connect(Gain_Light_driver_119.y, Light_119.u);
+      connect(Light_119.p, Light_driver_119.p2);
+      connect(Light_driver_119.p1,  cable_light_119.p);
+      connect(Light_Conv_4.p2, cable_light_119.n);
+
+    /* Light Connections 118 */
+      connect(Light_driver_118.n2, GndDC.p);
+      connect(Light_driver_118.n1, GndDC.p);
+      connect(Light_118.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn3_Lights.y[1], Gain_Light_driver_118.u);
+      connect(Gain_Light_driver_118.y, Light_118.u);
+      connect(Light_118.p, Light_driver_118.p2);
+      connect(Light_driver_118.p1,  cable_light_118.p);
+      connect(Light_Conv_4.p2, cable_light_118.n);
+
+    /* Light Connections 117 */
+      connect(Light_driver_117.n2, GndDC.p);
+      connect(Light_driver_117.n1, GndDC.p);
+      connect(Light_117.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_117.u);
+      connect(Gain_Light_driver_117.y, Light_117.u);
+      connect(Light_117.p, Light_driver_117.p2);
+      connect(Light_driver_117.p1,  cable_light_117.p);
+      connect(Light_Conv_4.p2, cable_light_117.n);
+
+    /* Light Connections 116 */
+      connect(Light_driver_116.n2, GndDC.p);
+      connect(Light_driver_116.n1, GndDC.p);
+      connect(Light_116.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_116.u);
+      connect(Gain_Light_driver_116.y, Light_116.u);
+      connect(Light_116.p, Light_driver_116.p2);
+      connect(Light_driver_116.p1,  cable_light_116.p);
+      connect(Light_Conv_4.p2, cable_light_116.n);
+
+    /* Light Connections 114 */
+      connect(Light_driver_114.n2, GndDC.p);
+      connect(Light_driver_114.n1, GndDC.p);
+      connect(Light_114.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn3_Lights.y[1], Gain_Light_driver_114.u);
+      connect(Gain_Light_driver_114.y, Light_114.u);
+      connect(Light_114.p, Light_driver_114.p2);
+      connect(Light_driver_114.p1,  cable_light_114.p);
+      connect(Light_Conv_4.p2, cable_light_114.n);
+
+    /* Light Connections 100 */
+      connect(Light_driver_100.n2, GndDC.p);
+      connect(Light_driver_100.n1, GndDC.p);
+      connect(Light_100.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_100.u);
+      connect(Gain_Light_driver_100.y, Light_100.u);
+      connect(Light_100.p, Light_driver_100.p2);
+      connect(Light_driver_100.p1,  cable_light_100.p);
+      connect(Light_Conv_4.p2, cable_light_100.n);
+
+    /* AC/DC Converter Light_Conv_7 */
+      connect(cable_Light_Conv_7.n, cable_light_L1_1A.p);
+      connect(Light_Conv_7.p1,  cable_Light_Conv_7.p);
+      connect(Light_Conv_7.n1, GndDC.p);
+      connect(Light_Conv_7.n2, GndDC.p);
+
+    /* Light Connections 91 */
+      connect(Light_driver_91.n2, GndDC.p);
+      connect(Light_driver_91.n1, GndDC.p);
+      connect(Light_91.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_91.u);
+      connect(Gain_Light_driver_91.y, Light_91.u);
+      connect(Light_91.p, Light_driver_91.p2);
+      connect(Light_driver_91.p1,  cable_light_91.p);
+      connect(Light_Conv_7.p2, cable_light_91.n);
+
+    /* Light Connections 90 */
+      connect(Light_driver_90.n2, GndDC.p);
+      connect(Light_driver_90.n1, GndDC.p);
+      connect(Light_90.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_90.u);
+      connect(Gain_Light_driver_90.y, Light_90.u);
+      connect(Light_90.p, Light_driver_90.p2);
+      connect(Light_driver_90.p1,  cable_light_90.p);
+      connect(Light_Conv_7.p2, cable_light_90.n);
+
+    /* Light Connections 89 */
+      connect(Light_driver_89.n2, GndDC.p);
+      connect(Light_driver_89.n1, GndDC.p);
+      connect(Light_89.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_89.u);
+      connect(Gain_Light_driver_89.y, Light_89.u);
+      connect(Light_89.p, Light_driver_89.p2);
+      connect(Light_driver_89.p1,  cable_light_89.p);
+      connect(Light_Conv_7.p2, cable_light_89.n);
+
+    /* Light Connections 86 */
+      connect(Light_driver_86.n2, GndDC.p);
+      connect(Light_driver_86.n1, GndDC.p);
+      connect(Light_86.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_86.u);
+      connect(Gain_Light_driver_86.y, Light_86.u);
+      connect(Light_86.p, Light_driver_86.p2);
+      connect(Light_driver_86.p1,  cable_light_86.p);
+      connect(Light_Conv_7.p2, cable_light_86.n);
+
+    /* Light Connections 85 */
+      connect(Light_driver_85.n2, GndDC.p);
+      connect(Light_driver_85.n1, GndDC.p);
+      connect(Light_85.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_85.u);
+      connect(Gain_Light_driver_85.y, Light_85.u);
+      connect(Light_85.p, Light_driver_85.p2);
+      connect(Light_driver_85.p1,  cable_light_85.p);
+      connect(Light_Conv_7.p2, cable_light_85.n);
+
+    /* Light Connections 84 */
+      connect(Light_driver_84.n2, GndDC.p);
+      connect(Light_driver_84.n1, GndDC.p);
+      connect(Light_84.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_84.u);
+      connect(Gain_Light_driver_84.y, Light_84.u);
+      connect(Light_84.p, Light_driver_84.p2);
+      connect(Light_driver_84.p1,  cable_light_84.p);
+      connect(Light_Conv_7.p2, cable_light_84.n);
+
+    /* Light Connections 83 */
+      connect(Light_driver_83.n2, GndDC.p);
+      connect(Light_driver_83.n1, GndDC.p);
+      connect(Light_83.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_83.u);
+      connect(Gain_Light_driver_83.y, Light_83.u);
+      connect(Light_83.p, Light_driver_83.p2);
+      connect(Light_driver_83.p1,  cable_light_83.p);
+      connect(Light_Conv_7.p2, cable_light_83.n);
+
+    /* Light Connections 82 */
+      connect(Light_driver_82.n2, GndDC.p);
+      connect(Light_driver_82.n1, GndDC.p);
+      connect(Light_82.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_82.u);
+      connect(Gain_Light_driver_82.y, Light_82.u);
+      connect(Light_82.p, Light_driver_82.p2);
+      connect(Light_driver_82.p1,  cable_light_82.p);
+      connect(Light_Conv_7.p2, cable_light_82.n);
+
+    /* AC/DC Converter Light_Conv_5 */
+      connect(cable_Light_Conv_5.n, cable_light_L1_1A.p);
+      connect(Light_Conv_5.p1,  cable_Light_Conv_5.p);
+      connect(Light_Conv_5.n1, GndDC.p);
+      connect(Light_Conv_5.n2, GndDC.p);
+
+    /* Light Connections 292 */
+      connect(Light_driver_292.n2, GndDC.p);
+      connect(Light_driver_292.n1, GndDC.p);
+      connect(Light_292.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_292.u);
+      connect(Gain_Light_driver_292.y, Light_292.u);
+      connect(Light_292.p, Light_driver_292.p2);
+      connect(Light_driver_292.p1,  cable_light_292.p);
+      connect(Light_Conv_5.p2, cable_light_292.n);
+
+    /* Light Connections 291 */
+      connect(Light_driver_291.n2, GndDC.p);
+      connect(Light_driver_291.n1, GndDC.p);
+      connect(Light_291.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_291.u);
+      connect(Gain_Light_driver_291.y, Light_291.u);
+      connect(Light_291.p, Light_driver_291.p2);
+      connect(Light_driver_291.p1,  cable_light_291.p);
+      connect(Light_Conv_5.p2, cable_light_291.n);
+
+    /* Light Connections 290 */
+      connect(Light_driver_290.n2, GndDC.p);
+      connect(Light_driver_290.n1, GndDC.p);
+      connect(Light_290.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_290.u);
+      connect(Gain_Light_driver_290.y, Light_290.u);
+      connect(Light_290.p, Light_driver_290.p2);
+      connect(Light_driver_290.p1,  cable_light_290.p);
+      connect(Light_Conv_5.p2, cable_light_290.n);
+
+    /* Light Connections 289 */
+      connect(Light_driver_289.n2, GndDC.p);
+      connect(Light_driver_289.n1, GndDC.p);
+      connect(Light_289.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_289.u);
+      connect(Gain_Light_driver_289.y, Light_289.u);
+      connect(Light_289.p, Light_driver_289.p2);
+      connect(Light_driver_289.p1,  cable_light_289.p);
+      connect(Light_Conv_5.p2, cable_light_289.n);
+
+    /* Light Connections 288 */
+      connect(Light_driver_288.n2, GndDC.p);
+      connect(Light_driver_288.n1, GndDC.p);
+      connect(Light_288.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_288.u);
+      connect(Gain_Light_driver_288.y, Light_288.u);
+      connect(Light_288.p, Light_driver_288.p2);
+      connect(Light_driver_288.p1,  cable_light_288.p);
+      connect(Light_Conv_5.p2, cable_light_288.n);
+
+    /* Light Connections 36 */
+      connect(Light_driver_36.n2, GndDC.p);
+      connect(Light_driver_36.n1, GndDC.p);
+      connect(Light_36.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_36.u);
+      connect(Gain_Light_driver_36.y, Light_36.u);
+      connect(Light_36.p, Light_driver_36.p2);
+      connect(Light_driver_36.p1,  cable_light_36.p);
+      connect(Light_Conv_5.p2, cable_light_36.n);
+
+    /* Light Connections 35 */
+      connect(Light_driver_35.n2, GndDC.p);
+      connect(Light_driver_35.n1, GndDC.p);
+      connect(Light_35.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_35.u);
+      connect(Gain_Light_driver_35.y, Light_35.u);
+      connect(Light_35.p, Light_driver_35.p2);
+      connect(Light_driver_35.p1,  cable_light_35.p);
+      connect(Light_Conv_5.p2, cable_light_35.n);
+
+    /* Light Connections 34 */
+      connect(Light_driver_34.n2, GndDC.p);
+      connect(Light_driver_34.n1, GndDC.p);
+      connect(Light_34.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_34.u);
+      connect(Gain_Light_driver_34.y, Light_34.u);
+      connect(Light_34.p, Light_driver_34.p2);
+      connect(Light_driver_34.p1,  cable_light_34.p);
+      connect(Light_Conv_5.p2, cable_light_34.n);
+
+    /* AC/DC Converter Light_Conv_3 */
+      connect(cable_Light_Conv_3.n, cable_light_L1_1A.p);
+      connect(Light_Conv_3.p1,  cable_Light_Conv_3.p);
+      connect(Light_Conv_3.n1, GndDC.p);
+      connect(Light_Conv_3.n2, GndDC.p);
+
+    /* Light Connections 284 */
+      connect(Light_driver_284.n2, GndDC.p);
+      connect(Light_driver_284.n1, GndDC.p);
+      connect(Light_284.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_284.u);
+      connect(Gain_Light_driver_284.y, Light_284.u);
+      connect(Light_284.p, Light_driver_284.p2);
+      connect(Light_driver_284.p1,  cable_light_284.p);
+      connect(Light_Conv_3.p2, cable_light_284.n);
+
+    /* Light Connections 283 */
+      connect(Light_driver_283.n2, GndDC.p);
+      connect(Light_driver_283.n1, GndDC.p);
+      connect(Light_283.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_283.u);
+      connect(Gain_Light_driver_283.y, Light_283.u);
+      connect(Light_283.p, Light_driver_283.p2);
+      connect(Light_driver_283.p1,  cable_light_283.p);
+      connect(Light_Conv_3.p2, cable_light_283.n);
+
+    /* Light Connections 281 */
+      connect(Light_driver_281.n2, GndDC.p);
+      connect(Light_driver_281.n1, GndDC.p);
+      connect(Light_281.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_281.u);
+      connect(Gain_Light_driver_281.y, Light_281.u);
+      connect(Light_281.p, Light_driver_281.p2);
+      connect(Light_driver_281.p1,  cable_light_281.p);
+      connect(Light_Conv_3.p2, cable_light_281.n);
+
+    /* Light Connections 22 */
+      connect(Light_driver_22.n2, GndDC.p);
+      connect(Light_driver_22.n1, GndDC.p);
+      connect(Light_22.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_22.u);
+      connect(Gain_Light_driver_22.y, Light_22.u);
+      connect(Light_22.p, Light_driver_22.p2);
+      connect(Light_driver_22.p1,  cable_light_22.p);
+      connect(Light_Conv_3.p2, cable_light_22.n);
+
+    /* Light Connections 21 */
+      connect(Light_driver_21.n2, GndDC.p);
+      connect(Light_driver_21.n1, GndDC.p);
+      connect(Light_21.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_21.u);
+      connect(Gain_Light_driver_21.y, Light_21.u);
+      connect(Light_21.p, Light_driver_21.p2);
+      connect(Light_driver_21.p1,  cable_light_21.p);
+      connect(Light_Conv_3.p2, cable_light_21.n);
+
+    /* Light Connections 20 */
+      connect(Light_driver_20.n2, GndDC.p);
+      connect(Light_driver_20.n1, GndDC.p);
+      connect(Light_20.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_20.u);
+      connect(Gain_Light_driver_20.y, Light_20.u);
+      connect(Light_20.p, Light_driver_20.p2);
+      connect(Light_driver_20.p1,  cable_light_20.p);
+      connect(Light_Conv_3.p2, cable_light_20.n);
+
+    /* Light Connections 19 */
+      connect(Light_driver_19.n2, GndDC.p);
+      connect(Light_driver_19.n1, GndDC.p);
+      connect(Light_19.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_19.u);
+      connect(Gain_Light_driver_19.y, Light_19.u);
+      connect(Light_19.p, Light_driver_19.p2);
+      connect(Light_driver_19.p1,  cable_light_19.p);
+      connect(Light_Conv_3.p2, cable_light_19.n);
+
+    /* AC/DC Converter Light_Conv_6 */
+      connect(cable_Light_Conv_6.n, cable_light_L1_1A.p);
+      connect(Light_Conv_6.p1,  cable_Light_Conv_6.p);
+      connect(Light_Conv_6.n1, GndDC.p);
+      connect(Light_Conv_6.n2, GndDC.p);
+
+    /* Light Connections 50 */
+      connect(Light_driver_50.n2, GndDC.p);
+      connect(Light_driver_50.n1, GndDC.p);
+      connect(Light_50.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_50.u);
+      connect(Gain_Light_driver_50.y, Light_50.u);
+      connect(Light_50.p, Light_driver_50.p2);
+      connect(Light_driver_50.p1,  cable_light_50.p);
+      connect(Light_Conv_6.p2, cable_light_50.n);
+
+    /* Light Connections 45 */
+      connect(Light_driver_45.n2, GndDC.p);
+      connect(Light_driver_45.n1, GndDC.p);
+      connect(Light_45.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_45.u);
+      connect(Gain_Light_driver_45.y, Light_45.u);
+      connect(Light_45.p, Light_driver_45.p2);
+      connect(Light_driver_45.p1,  cable_light_45.p);
+      connect(Light_Conv_6.p2, cable_light_45.n);
+
+    /* Light Connections 44 */
+      connect(Light_driver_44.n2, GndDC.p);
+      connect(Light_driver_44.n1, GndDC.p);
+      connect(Light_44.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_44.u);
+      connect(Gain_Light_driver_44.y, Light_44.u);
+      connect(Light_44.p, Light_driver_44.p2);
+      connect(Light_driver_44.p1,  cable_light_44.p);
+      connect(Light_Conv_6.p2, cable_light_44.n);
+
+    /* Light Connections 33 */
+      connect(Light_driver_33.n2, GndDC.p);
+      connect(Light_driver_33.n1, GndDC.p);
+      connect(Light_33.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_33.u);
+      connect(Gain_Light_driver_33.y, Light_33.u);
+      connect(Light_33.p, Light_driver_33.p2);
+      connect(Light_driver_33.p1,  cable_light_33.p);
+      connect(Light_Conv_6.p2, cable_light_33.n);
+
+    /* Light Connections 18 */
+      connect(Light_driver_18.n2, GndDC.p);
+      connect(Light_driver_18.n1, GndDC.p);
+      connect(Light_18.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_18.u);
+      connect(Gain_Light_driver_18.y, Light_18.u);
+      connect(Light_18.p, Light_driver_18.p2);
+      connect(Light_driver_18.p1,  cable_light_18.p);
+      connect(Light_Conv_6.p2, cable_light_18.n);
+
+    /* Light Connections 17 */
+      connect(Light_driver_17.n2, GndDC.p);
+      connect(Light_driver_17.n1, GndDC.p);
+      connect(Light_17.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_17.u);
+      connect(Gain_Light_driver_17.y, Light_17.u);
+      connect(Light_17.p, Light_driver_17.p2);
+      connect(Light_driver_17.p1,  cable_light_17.p);
+      connect(Light_Conv_6.p2, cable_light_17.n);
+
+    /* Light Connections 12 */
+      connect(Light_driver_12.n2, GndDC.p);
+      connect(Light_driver_12.n1, GndDC.p);
+      connect(Light_12.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_12.u);
+      connect(Gain_Light_driver_12.y, Light_12.u);
+      connect(Light_12.p, Light_driver_12.p2);
+      connect(Light_driver_12.p1,  cable_light_12.p);
+      connect(Light_Conv_6.p2, cable_light_12.n);
+
+    /* Light Connections 11 */
+      connect(Light_driver_11.n2, GndDC.p);
+      connect(Light_driver_11.n1, GndDC.p);
+      connect(Light_11.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_11.u);
+      connect(Gain_Light_driver_11.y, Light_11.u);
+      connect(Light_11.p, Light_driver_11.p2);
+      connect(Light_driver_11.p1,  cable_light_11.p);
+      connect(Light_Conv_6.p2, cable_light_11.n);
+
+    /* AC/DC Converter Light_Conv_1 */
+      connect(cable_Light_Conv_1.n, cable_light_L1_1A.p);
+      connect(Light_Conv_1.p1,  cable_Light_Conv_1.p);
+      connect(Light_Conv_1.n1, GndDC.p);
+      connect(Light_Conv_1.n2, GndDC.p);
+
+    /* Light Connections 28 */
+      connect(Light_driver_28.n2, GndDC.p);
+      connect(Light_driver_28.n1, GndDC.p);
+      connect(Light_28.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_28.u);
+      connect(Gain_Light_driver_28.y, Light_28.u);
+      connect(Light_28.p, Light_driver_28.p2);
+      connect(Light_driver_28.p1,  cable_light_28.p);
+      connect(Light_Conv_1.p2, cable_light_28.n);
+
+    /* Light Connections 24 */
+      connect(Light_driver_24.n2, GndDC.p);
+      connect(Light_driver_24.n1, GndDC.p);
+      connect(Light_24.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_24.u);
+      connect(Gain_Light_driver_24.y, Light_24.u);
+      connect(Light_24.p, Light_driver_24.p2);
+      connect(Light_driver_24.p1,  cable_light_24.p);
+      connect(Light_Conv_1.p2, cable_light_24.n);
+
+    /* Light Connections 23 */
+      connect(Light_driver_23.n2, GndDC.p);
+      connect(Light_driver_23.n1, GndDC.p);
+      connect(Light_23.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_23.u);
+      connect(Gain_Light_driver_23.y, Light_23.u);
+      connect(Light_23.p, Light_driver_23.p2);
+      connect(Light_driver_23.p1,  cable_light_23.p);
+      connect(Light_Conv_1.p2, cable_light_23.n);
+
+    /* Light Connections 9 */
+      connect(Light_driver_9.n2, GndDC.p);
+      connect(Light_driver_9.n1, GndDC.p);
+      connect(Light_9.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_9.u);
+      connect(Gain_Light_driver_9.y, Light_9.u);
+      connect(Light_9.p, Light_driver_9.p2);
+      connect(Light_driver_9.p1,  cable_light_9.p);
+      connect(Light_Conv_1.p2, cable_light_9.n);
+
+    /* Light Connections 7 */
+      connect(Light_driver_7.n2, GndDC.p);
+      connect(Light_driver_7.n1, GndDC.p);
+      connect(Light_7.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_7.u);
+      connect(Gain_Light_driver_7.y, Light_7.u);
+      connect(Light_7.p, Light_driver_7.p2);
+      connect(Light_driver_7.p1,  cable_light_7.p);
+      connect(Light_Conv_1.p2, cable_light_7.n);
+
+    /* Light Connections 6 */
+      connect(Light_driver_6.n2, GndDC.p);
+      connect(Light_driver_6.n1, GndDC.p);
+      connect(Light_6.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_6.u);
+      connect(Gain_Light_driver_6.y, Light_6.u);
+      connect(Light_6.p, Light_driver_6.p2);
+      connect(Light_driver_6.p1,  cable_light_6.p);
+      connect(Light_Conv_1.p2, cable_light_6.n);
+
+    /* Light Connections 5 */
+      connect(Light_driver_5.n2, GndDC.p);
+      connect(Light_driver_5.n1, GndDC.p);
+      connect(Light_5.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_5.u);
+      connect(Gain_Light_driver_5.y, Light_5.u);
+      connect(Light_5.p, Light_driver_5.p2);
+      connect(Light_driver_5.p1,  cable_light_5.p);
+      connect(Light_Conv_1.p2, cable_light_5.n);
+
+    /* Light Connections 4 */
+      connect(Light_driver_4.n2, GndDC.p);
+      connect(Light_driver_4.n1, GndDC.p);
+      connect(Light_4.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_4.u);
+      connect(Gain_Light_driver_4.y, Light_4.u);
+      connect(Light_4.p, Light_driver_4.p2);
+      connect(Light_driver_4.p1,  cable_light_4.p);
+      connect(Light_Conv_1.p2, cable_light_4.n);
+
+    /* AC/DC Converter Light_Conv_2 */
+      connect(cable_Light_Conv_2.n, cable_light_L1_1A.p);
+      connect(Light_Conv_2.p1,  cable_Light_Conv_2.p);
+      connect(Light_Conv_2.n1, GndDC.p);
+      connect(Light_Conv_2.n2, GndDC.p);
+
+    /* Light Connections 110 */
+      connect(Light_driver_110.n2, GndDC.p);
+      connect(Light_driver_110.n1, GndDC.p);
+      connect(Light_110.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn3_Lights.y[1], Gain_Light_driver_110.u);
+      connect(Gain_Light_driver_110.y, Light_110.u);
+      connect(Light_110.p, Light_driver_110.p2);
+      connect(Light_driver_110.p1,  cable_light_110.p);
+      connect(Light_Conv_2.p2, cable_light_110.n);
+
+    /* Light Connections 47 */
+      connect(Light_driver_47.n2, GndDC.p);
+      connect(Light_driver_47.n1, GndDC.p);
+      connect(Light_47.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_47.u);
+      connect(Gain_Light_driver_47.y, Light_47.u);
+      connect(Light_47.p, Light_driver_47.p2);
+      connect(Light_driver_47.p1,  cable_light_47.p);
+      connect(Light_Conv_2.p2, cable_light_47.n);
+
+    /* Light Connections 16 */
+      connect(Light_driver_16.n2, GndDC.p);
+      connect(Light_driver_16.n1, GndDC.p);
+      connect(Light_16.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_16.u);
+      connect(Gain_Light_driver_16.y, Light_16.u);
+      connect(Light_16.p, Light_driver_16.p2);
+      connect(Light_driver_16.p1,  cable_light_16.p);
+      connect(Light_Conv_2.p2, cable_light_16.n);
+
+    /* Light Connections 15 */
+      connect(Light_driver_15.n2, GndDC.p);
+      connect(Light_driver_15.n1, GndDC.p);
+      connect(Light_15.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_15.u);
+      connect(Gain_Light_driver_15.y, Light_15.u);
+      connect(Light_15.p, Light_driver_15.p2);
+      connect(Light_driver_15.p1,  cable_light_15.p);
+      connect(Light_Conv_2.p2, cable_light_15.n);
+
+    /* Light Connections 14 */
+      connect(Light_driver_14.n2, GndDC.p);
+      connect(Light_driver_14.n1, GndDC.p);
+      connect(Light_14.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_14.u);
+      connect(Gain_Light_driver_14.y, Light_14.u);
+      connect(Light_14.p, Light_driver_14.p2);
+      connect(Light_driver_14.p1,  cable_light_14.p);
+      connect(Light_Conv_2.p2, cable_light_14.n);
+
+    /* Light Connections 13 */
+      connect(Light_driver_13.n2, GndDC.p);
+      connect(Light_driver_13.n1, GndDC.p);
+      connect(Light_13.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_13.u);
+      connect(Gain_Light_driver_13.y, Light_13.u);
+      connect(Light_13.p, Light_driver_13.p2);
+      connect(Light_driver_13.p1,  cable_light_13.p);
+      connect(Light_Conv_2.p2, cable_light_13.n);
+
+    /* Light Connections 8 */
+      connect(Light_driver_8.n2, GndDC.p);
+      connect(Light_driver_8.n1, GndDC.p);
+      connect(Light_8.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_8.u);
+      connect(Gain_Light_driver_8.y, Light_8.u);
+      connect(Light_8.p, Light_driver_8.p2);
+      connect(Light_driver_8.p1,  cable_light_8.p);
+      connect(Light_Conv_2.p2, cable_light_8.n);
+
+    /* Light Connections 2 */
+      connect(Light_driver_2.n2, GndDC.p);
+      connect(Light_driver_2.n1, GndDC.p);
+      connect(Light_2.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn3_Lights.y[1], Gain_Light_driver_2.u);
+      connect(Gain_Light_driver_2.y, Light_2.u);
+      connect(Light_2.p, Light_driver_2.p2);
+      connect(Light_driver_2.p1,  cable_light_2.p);
+      connect(Light_Conv_2.p2, cable_light_2.n);
+
+      connect(cable_light_L1_1A.n, p)
+        annotation (Line(points={{-48,20},{-104,20}}, color={0,0,255}));
+      annotation ();
+    end DC_ACDC_Light_Panel_L1_1A;
+
+    model DC_ACDC_Light_Panel_L1_1B
+      outer HPF.SystemDef systemDef;
+      Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+        Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Core_Lights(
+        tableOnFile=true,
+        tableName="L1-Core-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-74,70},{-54,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn1_Lights(
+        tableOnFile=true,
+        tableName="L1-Zn1-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-40,70},{-20,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn2_Lights(
+        tableOnFile=true,
+        tableName="L1-Zn2-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-8,70},{12,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn3_Lights(
+        tableOnFile=true,
+        tableName="L1-Zn3-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{28,70},{48,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn4_Lights(
+        tableOnFile=true,
+        tableName="L1-Zn4-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{64,70},{84,90}})));
+
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_30(V = 19.5, alpha = 0.26452, beta = 0.12526, gamma = 0.0020109);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_45(V = 19.5, alpha = 0.42081, beta = 0.12526, gamma = 0.001341);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 4.27984, beta = -0.004643965, gamma = 0.0000985992);
+
+    /* Insert models here */
+
+    /* AC/DC Converter Light_Conv_14 */
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_14(modelData = modelData_DCDC);
+
+    /* Light Model 149 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_14(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=23.69);
+      HPF.DC.Variable_DC_Load Light_149;
+
+    /* Light Model 148 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_149(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_149(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_149(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_148;
+
+    /* Light Model 145 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_148(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_148(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_148(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_145;
+
+    /* Light Model 144 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_145(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_145(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_145(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_144;
+
+    /* Light Model 143 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_144(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_144(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_144(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_143;
+
+    /* Light Model 142 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_143(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_143(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_143(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_142;
+
+    /* Light Model 139 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_142(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_142(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_142(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_139;
+
+    /* AC/DC Converter Light_Conv_11 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_139(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_139(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_139(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_11(modelData = modelData_DCDC);
+
+    /* Light Model 137 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_11(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=20.31);
+      HPF.DC.Variable_DC_Load Light_137;
+
+    /* Light Model 136 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_137(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_137(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_137(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_136;
+
+    /* Light Model 134 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_136(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_136(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_136(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_134;
+
+    /* Light Model 133 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_134(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_134(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_134(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_133;
+
+    /* Light Model 132 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_133(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_133(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_133(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_132;
+
+    /* Light Model 131 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_132(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_132(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_132(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_131;
+
+    /* Light Model 130 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_131(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_131(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_131(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_130;
+
+    /* Light Model 104 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_130(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_130(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_130(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_104;
+
+    /* AC/DC Converter Light_Conv_10 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_104(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_104(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_104(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_10(modelData = modelData_DCDC);
+
+    /* Light Model 129 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_10(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=25.26);
+      HPF.DC.Variable_DC_Load Light_129;
+
+    /* Light Model 128 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_129(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_129(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_129(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_128;
+
+    /* Light Model 126 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_128(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_128(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_128(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_126;
+
+    /* Light Model 125 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_126(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_126(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_126(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_125;
+
+    /* Light Model 124 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_125(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_125(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_125(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_124;
+
+    /* Light Model 123 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_124(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_124(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_124(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_123;
+
+    /* Light Model 122 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_123(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_123(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_123(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_122;
+
+    /* Light Model 102 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_122(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_122(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_122(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_102;
+
+    /* AC/DC Converter Light_Conv_13 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_102(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_102(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_102(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_13(modelData = modelData_DCDC);
+
+    /* Light Model 141 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_13(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=18.05);
+      HPF.DC.Variable_DC_Load Light_141;
+
+    /* Light Model 140 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_141(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_141(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_141(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_140;
+
+    /* Light Model 138 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_140(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_140(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_140(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_138;
+
+    /* Light Model 135 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_138(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_138(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_138(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_135;
+
+    /* Light Model 107 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_135(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_135(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_135(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_107;
+
+    /* Light Model 106 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_107(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_107(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_107(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_106;
+
+    /* Light Model 71 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_106(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_106(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_106(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_71;
+
+    /* Light Model 70 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_71(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_71(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_71(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_70;
+
+    /* AC/DC Converter Light_Conv_8 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_70(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_70(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_70(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_8(modelData = modelData_DCDC);
+
+    /* Light Model 79 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_8(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=13.61);
+      HPF.DC.Variable_DC_Load Light_79;
+
+    /* Light Model 76 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_79(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_79(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_79(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_76;
+
+    /* Light Model 75 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_76(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_76(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_76(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_75;
+
+    /* Light Model 69 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_75(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_75(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_75(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_69;
+
+    /* Light Model 68 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_69(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_69(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_69(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_68;
+
+    /* Light Model 67 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_68(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_68(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_68(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_67;
+
+    /* Light Model 66 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_67(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_67(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_67(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_66;
+
+    /* Light Model 65 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_66(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_66(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_66(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_65;
+
+    /* AC/DC Converter Light_Conv_12 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_65(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_65(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_65(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_12(modelData = modelData_DCDC);
+
+    /* Light Model 127 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_12(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=17.86);
+      HPF.DC.Variable_DC_Load Light_127;
+
+    /* Light Model 105 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_127(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_127(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_127(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_105;
+
+    /* Light Model 103 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_105(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_105(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_105(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_103;
+
+    /* Light Model 64 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_103(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_103(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_103(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_64;
+
+    /* Light Model 63 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_64(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_64(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_64(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_63;
+
+    /* AC/DC Converter Light_Conv_15 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_63(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_63(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_63(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_15(modelData = modelData_DCDC);
+
+    /* Light Model 153 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_15(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=16.73);
+      HPF.DC.Variable_DC_Load Light_153;
+
+    /* Light Model 152 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_153(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_153(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_153(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_152;
+
+    /* Light Model 150 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_152(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_152(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_152(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_150;
+
+    /* Light Model 101 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_150(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_150(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_150(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_101;
+
+    /* Light Model 80 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_101(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_101(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_101(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_80;
+
+    /* Light Model 54 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_80(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_80(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_80(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_54;
+
+    /* Light Model 53 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_54(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_54(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_54(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_53;
+
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_53(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_53(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_53(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+
+      Modelica.Electrical.Analog.Interfaces.PositivePin p
+        "Positive electrical pin of port 1" annotation (Placement(transformation(
+              extent={{-114,10},{-94,30}}), iconTransformation(extent={{-110,90},{-90,
+                110}})));
+      HPF.Cables.NEC_CableModelDC cable_light_L1_1B(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+          length=15) annotation (Placement(visible=true, transformation(
+            origin={-38,20},
+            extent={{10,-10},{-10,10}},
+            rotation=0)));
+    equation
+
+    /* Insert equation here */
+
+    /* AC/DC Converter Light_Conv_14 */
+      connect(cable_Light_Conv_14.n, cable_light_L1_1B.p);
+      connect(Light_Conv_14.p1,  cable_Light_Conv_14.p);
+      connect(Light_Conv_14.n1, GndDC.p);
+      connect(Light_Conv_14.n2, GndDC.p);
+
+    /* Light Connections 149 */
+      connect(Light_driver_149.n2, GndDC.p);
+      connect(Light_driver_149.n1, GndDC.p);
+      connect(Light_149.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_149.u);
+      connect(Gain_Light_driver_149.y, Light_149.u);
+      connect(Light_149.p, Light_driver_149.p2);
+      connect(Light_driver_149.p1,  cable_light_149.p);
+      connect(Light_Conv_14.p2, cable_light_149.n);
+
+    /* Light Connections 148 */
+      connect(Light_driver_148.n2, GndDC.p);
+      connect(Light_driver_148.n1, GndDC.p);
+      connect(Light_148.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_148.u);
+      connect(Gain_Light_driver_148.y, Light_148.u);
+      connect(Light_148.p, Light_driver_148.p2);
+      connect(Light_driver_148.p1,  cable_light_148.p);
+      connect(Light_Conv_14.p2, cable_light_148.n);
+
+    /* Light Connections 145 */
+      connect(Light_driver_145.n2, GndDC.p);
+      connect(Light_driver_145.n1, GndDC.p);
+      connect(Light_145.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_145.u);
+      connect(Gain_Light_driver_145.y, Light_145.u);
+      connect(Light_145.p, Light_driver_145.p2);
+      connect(Light_driver_145.p1,  cable_light_145.p);
+      connect(Light_Conv_14.p2, cable_light_145.n);
+
+    /* Light Connections 144 */
+      connect(Light_driver_144.n2, GndDC.p);
+      connect(Light_driver_144.n1, GndDC.p);
+      connect(Light_144.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_144.u);
+      connect(Gain_Light_driver_144.y, Light_144.u);
+      connect(Light_144.p, Light_driver_144.p2);
+      connect(Light_driver_144.p1,  cable_light_144.p);
+      connect(Light_Conv_14.p2, cable_light_144.n);
+
+    /* Light Connections 143 */
+      connect(Light_driver_143.n2, GndDC.p);
+      connect(Light_driver_143.n1, GndDC.p);
+      connect(Light_143.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_143.u);
+      connect(Gain_Light_driver_143.y, Light_143.u);
+      connect(Light_143.p, Light_driver_143.p2);
+      connect(Light_driver_143.p1,  cable_light_143.p);
+      connect(Light_Conv_14.p2, cable_light_143.n);
+
+    /* Light Connections 142 */
+      connect(Light_driver_142.n2, GndDC.p);
+      connect(Light_driver_142.n1, GndDC.p);
+      connect(Light_142.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_142.u);
+      connect(Gain_Light_driver_142.y, Light_142.u);
+      connect(Light_142.p, Light_driver_142.p2);
+      connect(Light_driver_142.p1,  cable_light_142.p);
+      connect(Light_Conv_14.p2, cable_light_142.n);
+
+    /* Light Connections 139 */
+      connect(Light_driver_139.n2, GndDC.p);
+      connect(Light_driver_139.n1, GndDC.p);
+      connect(Light_139.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn4_Lights.y[1], Gain_Light_driver_139.u);
+      connect(Gain_Light_driver_139.y, Light_139.u);
+      connect(Light_139.p, Light_driver_139.p2);
+      connect(Light_driver_139.p1,  cable_light_139.p);
+      connect(Light_Conv_14.p2, cable_light_139.n);
+
+    /* AC/DC Converter Light_Conv_11 */
+      connect(cable_Light_Conv_11.n, cable_light_L1_1B.p);
+      connect(Light_Conv_11.p1,  cable_Light_Conv_11.p);
+      connect(Light_Conv_11.n1, GndDC.p);
+      connect(Light_Conv_11.n2, GndDC.p);
+
+    /* Light Connections 137 */
+      connect(Light_driver_137.n2, GndDC.p);
+      connect(Light_driver_137.n1, GndDC.p);
+      connect(Light_137.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_137.u);
+      connect(Gain_Light_driver_137.y, Light_137.u);
+      connect(Light_137.p, Light_driver_137.p2);
+      connect(Light_driver_137.p1,  cable_light_137.p);
+      connect(Light_Conv_11.p2, cable_light_137.n);
+
+    /* Light Connections 136 */
+      connect(Light_driver_136.n2, GndDC.p);
+      connect(Light_driver_136.n1, GndDC.p);
+      connect(Light_136.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_136.u);
+      connect(Gain_Light_driver_136.y, Light_136.u);
+      connect(Light_136.p, Light_driver_136.p2);
+      connect(Light_driver_136.p1,  cable_light_136.p);
+      connect(Light_Conv_11.p2, cable_light_136.n);
+
+    /* Light Connections 134 */
+      connect(Light_driver_134.n2, GndDC.p);
+      connect(Light_driver_134.n1, GndDC.p);
+      connect(Light_134.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn4_Lights.y[1], Gain_Light_driver_134.u);
+      connect(Gain_Light_driver_134.y, Light_134.u);
+      connect(Light_134.p, Light_driver_134.p2);
+      connect(Light_driver_134.p1,  cable_light_134.p);
+      connect(Light_Conv_11.p2, cable_light_134.n);
+
+    /* Light Connections 133 */
+      connect(Light_driver_133.n2, GndDC.p);
+      connect(Light_driver_133.n1, GndDC.p);
+      connect(Light_133.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_133.u);
+      connect(Gain_Light_driver_133.y, Light_133.u);
+      connect(Light_133.p, Light_driver_133.p2);
+      connect(Light_driver_133.p1,  cable_light_133.p);
+      connect(Light_Conv_11.p2, cable_light_133.n);
+
+    /* Light Connections 132 */
+      connect(Light_driver_132.n2, GndDC.p);
+      connect(Light_driver_132.n1, GndDC.p);
+      connect(Light_132.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_132.u);
+      connect(Gain_Light_driver_132.y, Light_132.u);
+      connect(Light_132.p, Light_driver_132.p2);
+      connect(Light_driver_132.p1,  cable_light_132.p);
+      connect(Light_Conv_11.p2, cable_light_132.n);
+
+    /* Light Connections 131 */
+      connect(Light_driver_131.n2, GndDC.p);
+      connect(Light_driver_131.n1, GndDC.p);
+      connect(Light_131.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn4_Lights.y[1], Gain_Light_driver_131.u);
+      connect(Gain_Light_driver_131.y, Light_131.u);
+      connect(Light_131.p, Light_driver_131.p2);
+      connect(Light_driver_131.p1,  cable_light_131.p);
+      connect(Light_Conv_11.p2, cable_light_131.n);
+
+    /* Light Connections 130 */
+      connect(Light_driver_130.n2, GndDC.p);
+      connect(Light_driver_130.n1, GndDC.p);
+      connect(Light_130.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn4_Lights.y[1], Gain_Light_driver_130.u);
+      connect(Gain_Light_driver_130.y, Light_130.u);
+      connect(Light_130.p, Light_driver_130.p2);
+      connect(Light_driver_130.p1,  cable_light_130.p);
+      connect(Light_Conv_11.p2, cable_light_130.n);
+
+    /* Light Connections 104 */
+      connect(Light_driver_104.n2, GndDC.p);
+      connect(Light_driver_104.n1, GndDC.p);
+      connect(Light_104.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_104.u);
+      connect(Gain_Light_driver_104.y, Light_104.u);
+      connect(Light_104.p, Light_driver_104.p2);
+      connect(Light_driver_104.p1,  cable_light_104.p);
+      connect(Light_Conv_11.p2, cable_light_104.n);
+
+    /* AC/DC Converter Light_Conv_10 */
+      connect(cable_Light_Conv_10.n, cable_light_L1_1B.p);
+      connect(Light_Conv_10.p1,  cable_Light_Conv_10.p);
+      connect(Light_Conv_10.n1, GndDC.p);
+      connect(Light_Conv_10.n2, GndDC.p);
+
+    /* Light Connections 129 */
+      connect(Light_driver_129.n2, GndDC.p);
+      connect(Light_driver_129.n1, GndDC.p);
+      connect(Light_129.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_129.u);
+      connect(Gain_Light_driver_129.y, Light_129.u);
+      connect(Light_129.p, Light_driver_129.p2);
+      connect(Light_driver_129.p1,  cable_light_129.p);
+      connect(Light_Conv_10.p2, cable_light_129.n);
+
+    /* Light Connections 128 */
+      connect(Light_driver_128.n2, GndDC.p);
+      connect(Light_driver_128.n1, GndDC.p);
+      connect(Light_128.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_128.u);
+      connect(Gain_Light_driver_128.y, Light_128.u);
+      connect(Light_128.p, Light_driver_128.p2);
+      connect(Light_driver_128.p1,  cable_light_128.p);
+      connect(Light_Conv_10.p2, cable_light_128.n);
+
+    /* Light Connections 126 */
+      connect(Light_driver_126.n2, GndDC.p);
+      connect(Light_driver_126.n1, GndDC.p);
+      connect(Light_126.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn4_Lights.y[1], Gain_Light_driver_126.u);
+      connect(Gain_Light_driver_126.y, Light_126.u);
+      connect(Light_126.p, Light_driver_126.p2);
+      connect(Light_driver_126.p1,  cable_light_126.p);
+      connect(Light_Conv_10.p2, cable_light_126.n);
+
+    /* Light Connections 125 */
+      connect(Light_driver_125.n2, GndDC.p);
+      connect(Light_driver_125.n1, GndDC.p);
+      connect(Light_125.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_125.u);
+      connect(Gain_Light_driver_125.y, Light_125.u);
+      connect(Light_125.p, Light_driver_125.p2);
+      connect(Light_driver_125.p1,  cable_light_125.p);
+      connect(Light_Conv_10.p2, cable_light_125.n);
+
+    /* Light Connections 124 */
+      connect(Light_driver_124.n2, GndDC.p);
+      connect(Light_driver_124.n1, GndDC.p);
+      connect(Light_124.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_124.u);
+      connect(Gain_Light_driver_124.y, Light_124.u);
+      connect(Light_124.p, Light_driver_124.p2);
+      connect(Light_driver_124.p1,  cable_light_124.p);
+      connect(Light_Conv_10.p2, cable_light_124.n);
+
+    /* Light Connections 123 */
+      connect(Light_driver_123.n2, GndDC.p);
+      connect(Light_driver_123.n1, GndDC.p);
+      connect(Light_123.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn4_Lights.y[1], Gain_Light_driver_123.u);
+      connect(Gain_Light_driver_123.y, Light_123.u);
+      connect(Light_123.p, Light_driver_123.p2);
+      connect(Light_driver_123.p1,  cable_light_123.p);
+      connect(Light_Conv_10.p2, cable_light_123.n);
+
+    /* Light Connections 122 */
+      connect(Light_driver_122.n2, GndDC.p);
+      connect(Light_driver_122.n1, GndDC.p);
+      connect(Light_122.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn4_Lights.y[1], Gain_Light_driver_122.u);
+      connect(Gain_Light_driver_122.y, Light_122.u);
+      connect(Light_122.p, Light_driver_122.p2);
+      connect(Light_driver_122.p1,  cable_light_122.p);
+      connect(Light_Conv_10.p2, cable_light_122.n);
+
+    /* Light Connections 102 */
+      connect(Light_driver_102.n2, GndDC.p);
+      connect(Light_driver_102.n1, GndDC.p);
+      connect(Light_102.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_102.u);
+      connect(Gain_Light_driver_102.y, Light_102.u);
+      connect(Light_102.p, Light_driver_102.p2);
+      connect(Light_driver_102.p1,  cable_light_102.p);
+      connect(Light_Conv_10.p2, cable_light_102.n);
+
+    /* AC/DC Converter Light_Conv_13 */
+      connect(cable_Light_Conv_13.n, cable_light_L1_1B.p);
+      connect(Light_Conv_13.p1,  cable_Light_Conv_13.p);
+      connect(Light_Conv_13.n1, GndDC.p);
+      connect(Light_Conv_13.n2, GndDC.p);
+
+    /* Light Connections 141 */
+      connect(Light_driver_141.n2, GndDC.p);
+      connect(Light_driver_141.n1, GndDC.p);
+      connect(Light_141.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_141.u);
+      connect(Gain_Light_driver_141.y, Light_141.u);
+      connect(Light_141.p, Light_driver_141.p2);
+      connect(Light_driver_141.p1,  cable_light_141.p);
+      connect(Light_Conv_13.p2, cable_light_141.n);
+
+    /* Light Connections 140 */
+      connect(Light_driver_140.n2, GndDC.p);
+      connect(Light_driver_140.n1, GndDC.p);
+      connect(Light_140.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_140.u);
+      connect(Gain_Light_driver_140.y, Light_140.u);
+      connect(Light_140.p, Light_driver_140.p2);
+      connect(Light_driver_140.p1,  cable_light_140.p);
+      connect(Light_Conv_13.p2, cable_light_140.n);
+
+    /* Light Connections 138 */
+      connect(Light_driver_138.n2, GndDC.p);
+      connect(Light_driver_138.n1, GndDC.p);
+      connect(Light_138.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn4_Lights.y[1], Gain_Light_driver_138.u);
+      connect(Gain_Light_driver_138.y, Light_138.u);
+      connect(Light_138.p, Light_driver_138.p2);
+      connect(Light_driver_138.p1,  cable_light_138.p);
+      connect(Light_Conv_13.p2, cable_light_138.n);
+
+    /* Light Connections 135 */
+      connect(Light_driver_135.n2, GndDC.p);
+      connect(Light_driver_135.n1, GndDC.p);
+      connect(Light_135.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn4_Lights.y[1], Gain_Light_driver_135.u);
+      connect(Gain_Light_driver_135.y, Light_135.u);
+      connect(Light_135.p, Light_driver_135.p2);
+      connect(Light_driver_135.p1,  cable_light_135.p);
+      connect(Light_Conv_13.p2, cable_light_135.n);
+
+    /* Light Connections 107 */
+      connect(Light_driver_107.n2, GndDC.p);
+      connect(Light_driver_107.n1, GndDC.p);
+      connect(Light_107.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_107.u);
+      connect(Gain_Light_driver_107.y, Light_107.u);
+      connect(Light_107.p, Light_driver_107.p2);
+      connect(Light_driver_107.p1,  cable_light_107.p);
+      connect(Light_Conv_13.p2, cable_light_107.n);
+
+    /* Light Connections 106 */
+      connect(Light_driver_106.n2, GndDC.p);
+      connect(Light_driver_106.n1, GndDC.p);
+      connect(Light_106.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_106.u);
+      connect(Gain_Light_driver_106.y, Light_106.u);
+      connect(Light_106.p, Light_driver_106.p2);
+      connect(Light_driver_106.p1,  cable_light_106.p);
+      connect(Light_Conv_13.p2, cable_light_106.n);
+
+    /* Light Connections 71 */
+      connect(Light_driver_71.n2, GndDC.p);
+      connect(Light_driver_71.n1, GndDC.p);
+      connect(Light_71.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_71.u);
+      connect(Gain_Light_driver_71.y, Light_71.u);
+      connect(Light_71.p, Light_driver_71.p2);
+      connect(Light_driver_71.p1,  cable_light_71.p);
+      connect(Light_Conv_13.p2, cable_light_71.n);
+
+    /* Light Connections 70 */
+      connect(Light_driver_70.n2, GndDC.p);
+      connect(Light_driver_70.n1, GndDC.p);
+      connect(Light_70.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_70.u);
+      connect(Gain_Light_driver_70.y, Light_70.u);
+      connect(Light_70.p, Light_driver_70.p2);
+      connect(Light_driver_70.p1,  cable_light_70.p);
+      connect(Light_Conv_13.p2, cable_light_70.n);
+
+    /* AC/DC Converter Light_Conv_8 */
+      connect(cable_Light_Conv_8.n, cable_light_L1_1B.p);
+      connect(Light_Conv_8.p1,  cable_Light_Conv_8.p);
+      connect(Light_Conv_8.n1, GndDC.p);
+      connect(Light_Conv_8.n2, GndDC.p);
+
+    /* Light Connections 79 */
+      connect(Light_driver_79.n2, GndDC.p);
+      connect(Light_driver_79.n1, GndDC.p);
+      connect(Light_79.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_79.u);
+      connect(Gain_Light_driver_79.y, Light_79.u);
+      connect(Light_79.p, Light_driver_79.p2);
+      connect(Light_driver_79.p1,  cable_light_79.p);
+      connect(Light_Conv_8.p2, cable_light_79.n);
+
+    /* Light Connections 76 */
+      connect(Light_driver_76.n2, GndDC.p);
+      connect(Light_driver_76.n1, GndDC.p);
+      connect(Light_76.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_76.u);
+      connect(Gain_Light_driver_76.y, Light_76.u);
+      connect(Light_76.p, Light_driver_76.p2);
+      connect(Light_driver_76.p1,  cable_light_76.p);
+      connect(Light_Conv_8.p2, cable_light_76.n);
+
+    /* Light Connections 75 */
+      connect(Light_driver_75.n2, GndDC.p);
+      connect(Light_driver_75.n1, GndDC.p);
+      connect(Light_75.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_75.u);
+      connect(Gain_Light_driver_75.y, Light_75.u);
+      connect(Light_75.p, Light_driver_75.p2);
+      connect(Light_driver_75.p1,  cable_light_75.p);
+      connect(Light_Conv_8.p2, cable_light_75.n);
+
+    /* Light Connections 69 */
+      connect(Light_driver_69.n2, GndDC.p);
+      connect(Light_driver_69.n1, GndDC.p);
+      connect(Light_69.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_69.u);
+      connect(Gain_Light_driver_69.y, Light_69.u);
+      connect(Light_69.p, Light_driver_69.p2);
+      connect(Light_driver_69.p1,  cable_light_69.p);
+      connect(Light_Conv_8.p2, cable_light_69.n);
+
+    /* Light Connections 68 */
+      connect(Light_driver_68.n2, GndDC.p);
+      connect(Light_driver_68.n1, GndDC.p);
+      connect(Light_68.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_68.u);
+      connect(Gain_Light_driver_68.y, Light_68.u);
+      connect(Light_68.p, Light_driver_68.p2);
+      connect(Light_driver_68.p1,  cable_light_68.p);
+      connect(Light_Conv_8.p2, cable_light_68.n);
+
+    /* Light Connections 67 */
+      connect(Light_driver_67.n2, GndDC.p);
+      connect(Light_driver_67.n1, GndDC.p);
+      connect(Light_67.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_67.u);
+      connect(Gain_Light_driver_67.y, Light_67.u);
+      connect(Light_67.p, Light_driver_67.p2);
+      connect(Light_driver_67.p1,  cable_light_67.p);
+      connect(Light_Conv_8.p2, cable_light_67.n);
+
+    /* Light Connections 66 */
+      connect(Light_driver_66.n2, GndDC.p);
+      connect(Light_driver_66.n1, GndDC.p);
+      connect(Light_66.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_66.u);
+      connect(Gain_Light_driver_66.y, Light_66.u);
+      connect(Light_66.p, Light_driver_66.p2);
+      connect(Light_driver_66.p1,  cable_light_66.p);
+      connect(Light_Conv_8.p2, cable_light_66.n);
+
+    /* Light Connections 65 */
+      connect(Light_driver_65.n2, GndDC.p);
+      connect(Light_driver_65.n1, GndDC.p);
+      connect(Light_65.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_65.u);
+      connect(Gain_Light_driver_65.y, Light_65.u);
+      connect(Light_65.p, Light_driver_65.p2);
+      connect(Light_driver_65.p1,  cable_light_65.p);
+      connect(Light_Conv_8.p2, cable_light_65.n);
+
+    /* AC/DC Converter Light_Conv_12 */
+      connect(cable_Light_Conv_12.n, cable_light_L1_1B.p);
+      connect(Light_Conv_12.p1,  cable_Light_Conv_12.p);
+      connect(Light_Conv_12.n1, GndDC.p);
+      connect(Light_Conv_12.n2, GndDC.p);
+
+    /* Light Connections 127 */
+      connect(Light_driver_127.n2, GndDC.p);
+      connect(Light_driver_127.n1, GndDC.p);
+      connect(Light_127.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn4_Lights.y[1], Gain_Light_driver_127.u);
+      connect(Gain_Light_driver_127.y, Light_127.u);
+      connect(Light_127.p, Light_driver_127.p2);
+      connect(Light_driver_127.p1,  cable_light_127.p);
+      connect(Light_Conv_12.p2, cable_light_127.n);
+
+    /* Light Connections 105 */
+      connect(Light_driver_105.n2, GndDC.p);
+      connect(Light_driver_105.n1, GndDC.p);
+      connect(Light_105.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_105.u);
+      connect(Gain_Light_driver_105.y, Light_105.u);
+      connect(Light_105.p, Light_driver_105.p2);
+      connect(Light_driver_105.p1,  cable_light_105.p);
+      connect(Light_Conv_12.p2, cable_light_105.n);
+
+    /* Light Connections 103 */
+      connect(Light_driver_103.n2, GndDC.p);
+      connect(Light_driver_103.n1, GndDC.p);
+      connect(Light_103.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_103.u);
+      connect(Gain_Light_driver_103.y, Light_103.u);
+      connect(Light_103.p, Light_driver_103.p2);
+      connect(Light_driver_103.p1,  cable_light_103.p);
+      connect(Light_Conv_12.p2, cable_light_103.n);
+
+    /* Light Connections 64 */
+      connect(Light_driver_64.n2, GndDC.p);
+      connect(Light_driver_64.n1, GndDC.p);
+      connect(Light_64.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_64.u);
+      connect(Gain_Light_driver_64.y, Light_64.u);
+      connect(Light_64.p, Light_driver_64.p2);
+      connect(Light_driver_64.p1,  cable_light_64.p);
+      connect(Light_Conv_12.p2, cable_light_64.n);
+
+    /* Light Connections 63 */
+      connect(Light_driver_63.n2, GndDC.p);
+      connect(Light_driver_63.n1, GndDC.p);
+      connect(Light_63.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_63.u);
+      connect(Gain_Light_driver_63.y, Light_63.u);
+      connect(Light_63.p, Light_driver_63.p2);
+      connect(Light_driver_63.p1,  cable_light_63.p);
+      connect(Light_Conv_12.p2, cable_light_63.n);
+
+    /* AC/DC Converter Light_Conv_15 */
+      connect(cable_Light_Conv_15.n, cable_light_L1_1B.p);
+      connect(Light_Conv_15.p1,  cable_Light_Conv_15.p);
+      connect(Light_Conv_15.n1, GndDC.p);
+      connect(Light_Conv_15.n2, GndDC.p);
+
+    /* Light Connections 153 */
+      connect(Light_driver_153.n2, GndDC.p);
+      connect(Light_driver_153.n1, GndDC.p);
+      connect(Light_153.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_153.u);
+      connect(Gain_Light_driver_153.y, Light_153.u);
+      connect(Light_153.p, Light_driver_153.p2);
+      connect(Light_driver_153.p1,  cable_light_153.p);
+      connect(Light_Conv_15.p2, cable_light_153.n);
+
+    /* Light Connections 152 */
+      connect(Light_driver_152.n2, GndDC.p);
+      connect(Light_driver_152.n1, GndDC.p);
+      connect(Light_152.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_152.u);
+      connect(Gain_Light_driver_152.y, Light_152.u);
+      connect(Light_152.p, Light_driver_152.p2);
+      connect(Light_driver_152.p1,  cable_light_152.p);
+      connect(Light_Conv_15.p2, cable_light_152.n);
+
+    /* Light Connections 150 */
+      connect(Light_driver_150.n2, GndDC.p);
+      connect(Light_driver_150.n1, GndDC.p);
+      connect(Light_150.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_150.u);
+      connect(Gain_Light_driver_150.y, Light_150.u);
+      connect(Light_150.p, Light_driver_150.p2);
+      connect(Light_driver_150.p1,  cable_light_150.p);
+      connect(Light_Conv_15.p2, cable_light_150.n);
+
+    /* Light Connections 101 */
+      connect(Light_driver_101.n2, GndDC.p);
+      connect(Light_driver_101.n1, GndDC.p);
+      connect(Light_101.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_101.u);
+      connect(Gain_Light_driver_101.y, Light_101.u);
+      connect(Light_101.p, Light_driver_101.p2);
+      connect(Light_driver_101.p1,  cable_light_101.p);
+      connect(Light_Conv_15.p2, cable_light_101.n);
+
+    /* Light Connections 80 */
+      connect(Light_driver_80.n2, GndDC.p);
+      connect(Light_driver_80.n1, GndDC.p);
+      connect(Light_80.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_80.u);
+      connect(Gain_Light_driver_80.y, Light_80.u);
+      connect(Light_80.p, Light_driver_80.p2);
+      connect(Light_driver_80.p1,  cable_light_80.p);
+      connect(Light_Conv_15.p2, cable_light_80.n);
+
+    /* Light Connections 54 */
+      connect(Light_driver_54.n2, GndDC.p);
+      connect(Light_driver_54.n1, GndDC.p);
+      connect(Light_54.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_54.u);
+      connect(Gain_Light_driver_54.y, Light_54.u);
+      connect(Light_54.p, Light_driver_54.p2);
+      connect(Light_driver_54.p1,  cable_light_54.p);
+      connect(Light_Conv_15.p2, cable_light_54.n);
+
+    /* Light Connections 53 */
+      connect(Light_driver_53.n2, GndDC.p);
+      connect(Light_driver_53.n1, GndDC.p);
+      connect(Light_53.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_53.u);
+      connect(Gain_Light_driver_53.y, Light_53.u);
+      connect(Light_53.p, Light_driver_53.p2);
+      connect(Light_driver_53.p1,  cable_light_53.p);
+      connect(Light_Conv_15.p2, cable_light_53.n);
+
+      connect(cable_light_L1_1B.n, p)
+        annotation (Line(points={{-48,20},{-104,20}}, color={0,0,255}));
+      annotation ();
+    end DC_ACDC_Light_Panel_L1_1B;
+
+    model DC_ACDC_Light_Panel_L1_1C
+      outer HPF.SystemDef systemDef;
+      Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+        Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Core_Lights(
+        tableOnFile=true,
+        tableName="L1-Core-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-74,70},{-54,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn1_Lights(
+        tableOnFile=true,
+        tableName="L1-Zn1-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-40,70},{-20,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn2_Lights(
+        tableOnFile=true,
+        tableName="L1-Zn2-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-8,70},{12,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn3_Lights(
+        tableOnFile=true,
+        tableName="L1-Zn3-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{28,70},{48,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn4_Lights(
+        tableOnFile=true,
+        tableName="L1-Zn4-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{64,70},{84,90}})));
+
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_30(V = 19.5, alpha = 0.26452, beta = 0.12526, gamma = 0.0020109);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_45(V = 19.5, alpha = 0.42081, beta = 0.12526, gamma = 0.001341);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 4.27984, beta = -0.004643965, gamma = 0.0000985992);
+
+    /* Insert models here */
+
+    /* AC/DC Converter Light_Conv_21 */
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_21(modelData = modelData_DCDC);
+
+    /* Light Model 98 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_21(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=17.35);
+      HPF.DC.Variable_DC_Load Light_98;
+
+    /* Light Model 97 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_98(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_98(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_98(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_97;
+
+    /* Light Model 96 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_97(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_97(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_97(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_96;
+
+    /* Light Model 88 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_96(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_96(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_96(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_88;
+
+    /* Light Model 87 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_88(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_88(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_88(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_87;
+
+    /* Light Model 81 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_87(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_87(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_87(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_81;
+
+    /* AC/DC Converter Light_Conv_20 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_81(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_81(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_81(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_20(modelData = modelData_DCDC);
+
+    /* Light Model 164 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_20(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=13.73);
+      HPF.DC.Variable_DC_Load Light_164;
+
+    /* Light Model 163 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_164(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_164(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_164(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_163;
+
+    /* Light Model 162 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_163(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_163(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_163(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_162;
+
+    /* Light Model 161 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_162(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_162(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_162(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_161;
+
+    /* Light Model 160 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_161(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_161(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_161(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_160;
+
+    /* Light Model 158 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_160(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_160(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_160(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_158;
+
+    /* Light Model 157 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_158(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_158(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_158(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_157;
+
+    /* Light Model 57 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_157(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_157(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_157(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_57;
+
+    /* AC/DC Converter Light_Conv_16 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_57(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_57(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_57(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_16(modelData = modelData_DCDC);
+
+    /* Light Model 159 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_16(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=13.59);
+      HPF.DC.Variable_DC_Load Light_159;
+
+    /* Light Model 156 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_159(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_159(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_159(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_156;
+
+    /* Light Model 155 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_156(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_156(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_156(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_155;
+
+    /* Light Model 154 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_155(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_155(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_155(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_154;
+
+    /* Light Model 151 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_154(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_154(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_154(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_151;
+
+    /* Light Model 95 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_151(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_151(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_151(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_95;
+
+    /* Light Model 56 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_95(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_95(k=42) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_95(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_56;
+
+    /* Light Model 55 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_56(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_56(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_56(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_55;
+
+    /* AC/DC Converter Light_Conv_19 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_55(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_55(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_55(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_19(modelData = modelData_DCDC);
+
+    /* Light Model 92 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_19(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=11.08);
+      HPF.DC.Variable_DC_Load Light_92;
+
+    /* Light Model 74 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_92(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_92(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_92(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_74;
+
+    /* Light Model 73 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_74(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_74(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_74(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_73;
+
+    /* Light Model 72 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_73(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_73(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_73(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_72;
+
+    /* Light Model 51 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_72(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_72(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_72(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_51;
+
+    /* AC/DC Converter Light_Conv_22 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_51(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_51(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_51(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_22(modelData = modelData_DCDC);
+
+    /* Light Model 62 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_22(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=14.1);
+      HPF.DC.Variable_DC_Load Light_62;
+
+    /* Light Model 61 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_62(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_62(k=22) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_62(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_61;
+
+    /* Light Model 49 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_61(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_61(k=22) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_61(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_49;
+
+    /* Light Model 48 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_49(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_49(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_49(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_48;
+
+    /* Light Model 46 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_48(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_48(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_48(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_46;
+
+    /* AC/DC Converter Light_Conv_17 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_46(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_46(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_46(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_17(modelData = modelData_DCDC);
+
+    /* Light Model 147 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_17(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=7.25);
+      HPF.DC.Variable_DC_Load Light_147;
+
+    /* Light Model 146 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_147(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_147(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_147(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_146;
+
+    /* Light Model 78 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_146(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_146(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_146(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_78;
+
+    /* Light Model 77 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_78(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_78(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_78(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_77;
+
+    /* Light Model 42 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_77(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_77(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_77(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_42;
+
+    /* Light Model 41 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_42(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_42(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_42(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_41;
+
+    /* Light Model 40 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_41(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_41(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_41(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_40;
+
+    /* Light Model 39 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_40(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_40(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_40(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_39;
+
+    /* AC/DC Converter Light_Conv_18 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_39(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_39(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_39(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_18(modelData = modelData_DCDC);
+
+    /* Light Model 52 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_18(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=5.26);
+      HPF.DC.Variable_DC_Load Light_52;
+
+    /* Light Model 43 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_52(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_52(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_52(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_43;
+
+    /* Light Model 38 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_43(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_43(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_43(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_38;
+
+    /* Light Model 37 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_38(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_38(k=22) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_38(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_37;
+
+    /* Light Model 32 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_37(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_37(k=22) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_37(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_32;
+
+    /* AC/DC Converter Light_Conv_24 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_32(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_32(k=35) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_32(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_24(modelData = modelData_DCDC);
+
+    /* Light Model 94 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_24(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=6.12);
+      HPF.DC.Variable_DC_Load Light_94;
+
+    /* Light Model 31 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_94(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_94(k=42) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_94(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_31;
+
+    /* Light Model 29 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_31(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_31(k=35) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_31(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_29;
+
+    /* Light Model 27 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_29(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_29(k=35) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_29(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_27;
+
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_27(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_27(k=42) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_27(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+
+      Modelica.Electrical.Analog.Interfaces.PositivePin p
+        "Positive electrical pin of port 1" annotation (Placement(transformation(
+              extent={{-114,10},{-94,30}}), iconTransformation(extent={{-110,90},{-90,
+                110}})));
+      HPF.Cables.NEC_CableModelDC cable_light_L1_1C(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+          length=15) annotation (Placement(visible=true, transformation(
+            origin={-38,20},
+            extent={{10,-10},{-10,10}},
+            rotation=0)));
+    equation
+
+    /* Insert equation here */
+
+    /* AC/DC Converter Light_Conv_21 */
+      connect(cable_Light_Conv_21.n, cable_light_L1_1C.p);
+      connect(Light_Conv_21.p1,  cable_Light_Conv_21.p);
+      connect(Light_Conv_21.n1, GndDC.p);
+      connect(Light_Conv_21.n2, GndDC.p);
+
+    /* Light Connections 98 */
+      connect(Light_driver_98.n2, GndDC.p);
+      connect(Light_driver_98.n1, GndDC.p);
+      connect(Light_98.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_98.u);
+      connect(Gain_Light_driver_98.y, Light_98.u);
+      connect(Light_98.p, Light_driver_98.p2);
+      connect(Light_driver_98.p1,  cable_light_98.p);
+      connect(Light_Conv_21.p2, cable_light_98.n);
+
+    /* Light Connections 97 */
+      connect(Light_driver_97.n2, GndDC.p);
+      connect(Light_driver_97.n1, GndDC.p);
+      connect(Light_97.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_97.u);
+      connect(Gain_Light_driver_97.y, Light_97.u);
+      connect(Light_97.p, Light_driver_97.p2);
+      connect(Light_driver_97.p1,  cable_light_97.p);
+      connect(Light_Conv_21.p2, cable_light_97.n);
+
+    /* Light Connections 96 */
+      connect(Light_driver_96.n2, GndDC.p);
+      connect(Light_driver_96.n1, GndDC.p);
+      connect(Light_96.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_96.u);
+      connect(Gain_Light_driver_96.y, Light_96.u);
+      connect(Light_96.p, Light_driver_96.p2);
+      connect(Light_driver_96.p1,  cable_light_96.p);
+      connect(Light_Conv_21.p2, cable_light_96.n);
+
+    /* Light Connections 88 */
+      connect(Light_driver_88.n2, GndDC.p);
+      connect(Light_driver_88.n1, GndDC.p);
+      connect(Light_88.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_88.u);
+      connect(Gain_Light_driver_88.y, Light_88.u);
+      connect(Light_88.p, Light_driver_88.p2);
+      connect(Light_driver_88.p1,  cable_light_88.p);
+      connect(Light_Conv_21.p2, cable_light_88.n);
+
+    /* Light Connections 87 */
+      connect(Light_driver_87.n2, GndDC.p);
+      connect(Light_driver_87.n1, GndDC.p);
+      connect(Light_87.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_87.u);
+      connect(Gain_Light_driver_87.y, Light_87.u);
+      connect(Light_87.p, Light_driver_87.p2);
+      connect(Light_driver_87.p1,  cable_light_87.p);
+      connect(Light_Conv_21.p2, cable_light_87.n);
+
+    /* Light Connections 81 */
+      connect(Light_driver_81.n2, GndDC.p);
+      connect(Light_driver_81.n1, GndDC.p);
+      connect(Light_81.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_81.u);
+      connect(Gain_Light_driver_81.y, Light_81.u);
+      connect(Light_81.p, Light_driver_81.p2);
+      connect(Light_driver_81.p1,  cable_light_81.p);
+      connect(Light_Conv_21.p2, cable_light_81.n);
+
+    /* AC/DC Converter Light_Conv_20 */
+      connect(cable_Light_Conv_20.n, cable_light_L1_1C.p);
+      connect(Light_Conv_20.p1,  cable_Light_Conv_20.p);
+      connect(Light_Conv_20.n1, GndDC.p);
+      connect(Light_Conv_20.n2, GndDC.p);
+
+    /* Light Connections 164 */
+      connect(Light_driver_164.n2, GndDC.p);
+      connect(Light_driver_164.n1, GndDC.p);
+      connect(Light_164.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_164.u);
+      connect(Gain_Light_driver_164.y, Light_164.u);
+      connect(Light_164.p, Light_driver_164.p2);
+      connect(Light_driver_164.p1,  cable_light_164.p);
+      connect(Light_Conv_20.p2, cable_light_164.n);
+
+    /* Light Connections 163 */
+      connect(Light_driver_163.n2, GndDC.p);
+      connect(Light_driver_163.n1, GndDC.p);
+      connect(Light_163.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_163.u);
+      connect(Gain_Light_driver_163.y, Light_163.u);
+      connect(Light_163.p, Light_driver_163.p2);
+      connect(Light_driver_163.p1,  cable_light_163.p);
+      connect(Light_Conv_20.p2, cable_light_163.n);
+
+    /* Light Connections 162 */
+      connect(Light_driver_162.n2, GndDC.p);
+      connect(Light_driver_162.n1, GndDC.p);
+      connect(Light_162.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_162.u);
+      connect(Gain_Light_driver_162.y, Light_162.u);
+      connect(Light_162.p, Light_driver_162.p2);
+      connect(Light_driver_162.p1,  cable_light_162.p);
+      connect(Light_Conv_20.p2, cable_light_162.n);
+
+    /* Light Connections 161 */
+      connect(Light_driver_161.n2, GndDC.p);
+      connect(Light_driver_161.n1, GndDC.p);
+      connect(Light_161.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_161.u);
+      connect(Gain_Light_driver_161.y, Light_161.u);
+      connect(Light_161.p, Light_driver_161.p2);
+      connect(Light_driver_161.p1,  cable_light_161.p);
+      connect(Light_Conv_20.p2, cable_light_161.n);
+
+    /* Light Connections 160 */
+      connect(Light_driver_160.n2, GndDC.p);
+      connect(Light_driver_160.n1, GndDC.p);
+      connect(Light_160.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_160.u);
+      connect(Gain_Light_driver_160.y, Light_160.u);
+      connect(Light_160.p, Light_driver_160.p2);
+      connect(Light_driver_160.p1,  cable_light_160.p);
+      connect(Light_Conv_20.p2, cable_light_160.n);
+
+    /* Light Connections 158 */
+      connect(Light_driver_158.n2, GndDC.p);
+      connect(Light_driver_158.n1, GndDC.p);
+      connect(Light_158.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_158.u);
+      connect(Gain_Light_driver_158.y, Light_158.u);
+      connect(Light_158.p, Light_driver_158.p2);
+      connect(Light_driver_158.p1,  cable_light_158.p);
+      connect(Light_Conv_20.p2, cable_light_158.n);
+
+    /* Light Connections 157 */
+      connect(Light_driver_157.n2, GndDC.p);
+      connect(Light_driver_157.n1, GndDC.p);
+      connect(Light_157.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_157.u);
+      connect(Gain_Light_driver_157.y, Light_157.u);
+      connect(Light_157.p, Light_driver_157.p2);
+      connect(Light_driver_157.p1,  cable_light_157.p);
+      connect(Light_Conv_20.p2, cable_light_157.n);
+
+    /* Light Connections 57 */
+      connect(Light_driver_57.n2, GndDC.p);
+      connect(Light_driver_57.n1, GndDC.p);
+      connect(Light_57.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_57.u);
+      connect(Gain_Light_driver_57.y, Light_57.u);
+      connect(Light_57.p, Light_driver_57.p2);
+      connect(Light_driver_57.p1,  cable_light_57.p);
+      connect(Light_Conv_20.p2, cable_light_57.n);
+
+    /* AC/DC Converter Light_Conv_16 */
+      connect(cable_Light_Conv_16.n, cable_light_L1_1C.p);
+      connect(Light_Conv_16.p1,  cable_Light_Conv_16.p);
+      connect(Light_Conv_16.n1, GndDC.p);
+      connect(Light_Conv_16.n2, GndDC.p);
+
+    /* Light Connections 159 */
+      connect(Light_driver_159.n2, GndDC.p);
+      connect(Light_driver_159.n1, GndDC.p);
+      connect(Light_159.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_159.u);
+      connect(Gain_Light_driver_159.y, Light_159.u);
+      connect(Light_159.p, Light_driver_159.p2);
+      connect(Light_driver_159.p1,  cable_light_159.p);
+      connect(Light_Conv_16.p2, cable_light_159.n);
+
+    /* Light Connections 156 */
+      connect(Light_driver_156.n2, GndDC.p);
+      connect(Light_driver_156.n1, GndDC.p);
+      connect(Light_156.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_156.u);
+      connect(Gain_Light_driver_156.y, Light_156.u);
+      connect(Light_156.p, Light_driver_156.p2);
+      connect(Light_driver_156.p1,  cable_light_156.p);
+      connect(Light_Conv_16.p2, cable_light_156.n);
+
+    /* Light Connections 155 */
+      connect(Light_driver_155.n2, GndDC.p);
+      connect(Light_driver_155.n1, GndDC.p);
+      connect(Light_155.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_155.u);
+      connect(Gain_Light_driver_155.y, Light_155.u);
+      connect(Light_155.p, Light_driver_155.p2);
+      connect(Light_driver_155.p1,  cable_light_155.p);
+      connect(Light_Conv_16.p2, cable_light_155.n);
+
+    /* Light Connections 154 */
+      connect(Light_driver_154.n2, GndDC.p);
+      connect(Light_driver_154.n1, GndDC.p);
+      connect(Light_154.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_154.u);
+      connect(Gain_Light_driver_154.y, Light_154.u);
+      connect(Light_154.p, Light_driver_154.p2);
+      connect(Light_driver_154.p1,  cable_light_154.p);
+      connect(Light_Conv_16.p2, cable_light_154.n);
+
+    /* Light Connections 151 */
+      connect(Light_driver_151.n2, GndDC.p);
+      connect(Light_driver_151.n1, GndDC.p);
+      connect(Light_151.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_151.u);
+      connect(Gain_Light_driver_151.y, Light_151.u);
+      connect(Light_151.p, Light_driver_151.p2);
+      connect(Light_driver_151.p1,  cable_light_151.p);
+      connect(Light_Conv_16.p2, cable_light_151.n);
+
+    /* Light Connections 95 */
+      connect(Light_driver_95.n2, GndDC.p);
+      connect(Light_driver_95.n1, GndDC.p);
+      connect(Light_95.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_95.u);
+      connect(Gain_Light_driver_95.y, Light_95.u);
+      connect(Light_95.p, Light_driver_95.p2);
+      connect(Light_driver_95.p1,  cable_light_95.p);
+      connect(Light_Conv_16.p2, cable_light_95.n);
+
+    /* Light Connections 56 */
+      connect(Light_driver_56.n2, GndDC.p);
+      connect(Light_driver_56.n1, GndDC.p);
+      connect(Light_56.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_56.u);
+      connect(Gain_Light_driver_56.y, Light_56.u);
+      connect(Light_56.p, Light_driver_56.p2);
+      connect(Light_driver_56.p1,  cable_light_56.p);
+      connect(Light_Conv_16.p2, cable_light_56.n);
+
+    /* Light Connections 55 */
+      connect(Light_driver_55.n2, GndDC.p);
+      connect(Light_driver_55.n1, GndDC.p);
+      connect(Light_55.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_55.u);
+      connect(Gain_Light_driver_55.y, Light_55.u);
+      connect(Light_55.p, Light_driver_55.p2);
+      connect(Light_driver_55.p1,  cable_light_55.p);
+      connect(Light_Conv_16.p2, cable_light_55.n);
+
+    /* AC/DC Converter Light_Conv_19 */
+      connect(cable_Light_Conv_19.n, cable_light_L1_1C.p);
+      connect(Light_Conv_19.p1,  cable_Light_Conv_19.p);
+      connect(Light_Conv_19.n1, GndDC.p);
+      connect(Light_Conv_19.n2, GndDC.p);
+
+    /* Light Connections 92 */
+      connect(Light_driver_92.n2, GndDC.p);
+      connect(Light_driver_92.n1, GndDC.p);
+      connect(Light_92.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_92.u);
+      connect(Gain_Light_driver_92.y, Light_92.u);
+      connect(Light_92.p, Light_driver_92.p2);
+      connect(Light_driver_92.p1,  cable_light_92.p);
+      connect(Light_Conv_19.p2, cable_light_92.n);
+
+    /* Light Connections 74 */
+      connect(Light_driver_74.n2, GndDC.p);
+      connect(Light_driver_74.n1, GndDC.p);
+      connect(Light_74.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_74.u);
+      connect(Gain_Light_driver_74.y, Light_74.u);
+      connect(Light_74.p, Light_driver_74.p2);
+      connect(Light_driver_74.p1,  cable_light_74.p);
+      connect(Light_Conv_19.p2, cable_light_74.n);
+
+    /* Light Connections 73 */
+      connect(Light_driver_73.n2, GndDC.p);
+      connect(Light_driver_73.n1, GndDC.p);
+      connect(Light_73.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_73.u);
+      connect(Gain_Light_driver_73.y, Light_73.u);
+      connect(Light_73.p, Light_driver_73.p2);
+      connect(Light_driver_73.p1,  cable_light_73.p);
+      connect(Light_Conv_19.p2, cable_light_73.n);
+
+    /* Light Connections 72 */
+      connect(Light_driver_72.n2, GndDC.p);
+      connect(Light_driver_72.n1, GndDC.p);
+      connect(Light_72.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_72.u);
+      connect(Gain_Light_driver_72.y, Light_72.u);
+      connect(Light_72.p, Light_driver_72.p2);
+      connect(Light_driver_72.p1,  cable_light_72.p);
+      connect(Light_Conv_19.p2, cable_light_72.n);
+
+    /* Light Connections 51 */
+      connect(Light_driver_51.n2, GndDC.p);
+      connect(Light_driver_51.n1, GndDC.p);
+      connect(Light_51.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_51.u);
+      connect(Gain_Light_driver_51.y, Light_51.u);
+      connect(Light_51.p, Light_driver_51.p2);
+      connect(Light_driver_51.p1,  cable_light_51.p);
+      connect(Light_Conv_19.p2, cable_light_51.n);
+
+    /* AC/DC Converter Light_Conv_22 */
+      connect(cable_Light_Conv_22.n, cable_light_L1_1C.p);
+      connect(Light_Conv_22.p1,  cable_Light_Conv_22.p);
+      connect(Light_Conv_22.n1, GndDC.p);
+      connect(Light_Conv_22.n2, GndDC.p);
+
+    /* Light Connections 62 */
+      connect(Light_driver_62.n2, GndDC.p);
+      connect(Light_driver_62.n1, GndDC.p);
+      connect(Light_62.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_62.u);
+      connect(Gain_Light_driver_62.y, Light_62.u);
+      connect(Light_62.p, Light_driver_62.p2);
+      connect(Light_driver_62.p1,  cable_light_62.p);
+      connect(Light_Conv_22.p2, cable_light_62.n);
+
+    /* Light Connections 61 */
+      connect(Light_driver_61.n2, GndDC.p);
+      connect(Light_driver_61.n1, GndDC.p);
+      connect(Light_61.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_61.u);
+      connect(Gain_Light_driver_61.y, Light_61.u);
+      connect(Light_61.p, Light_driver_61.p2);
+      connect(Light_driver_61.p1,  cable_light_61.p);
+      connect(Light_Conv_22.p2, cable_light_61.n);
+
+    /* Light Connections 49 */
+      connect(Light_driver_49.n2, GndDC.p);
+      connect(Light_driver_49.n1, GndDC.p);
+      connect(Light_49.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_49.u);
+      connect(Gain_Light_driver_49.y, Light_49.u);
+      connect(Light_49.p, Light_driver_49.p2);
+      connect(Light_driver_49.p1,  cable_light_49.p);
+      connect(Light_Conv_22.p2, cable_light_49.n);
+
+    /* Light Connections 48 */
+      connect(Light_driver_48.n2, GndDC.p);
+      connect(Light_driver_48.n1, GndDC.p);
+      connect(Light_48.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_48.u);
+      connect(Gain_Light_driver_48.y, Light_48.u);
+      connect(Light_48.p, Light_driver_48.p2);
+      connect(Light_driver_48.p1,  cable_light_48.p);
+      connect(Light_Conv_22.p2, cable_light_48.n);
+
+    /* Light Connections 46 */
+      connect(Light_driver_46.n2, GndDC.p);
+      connect(Light_driver_46.n1, GndDC.p);
+      connect(Light_46.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_46.u);
+      connect(Gain_Light_driver_46.y, Light_46.u);
+      connect(Light_46.p, Light_driver_46.p2);
+      connect(Light_driver_46.p1,  cable_light_46.p);
+      connect(Light_Conv_22.p2, cable_light_46.n);
+
+    /* AC/DC Converter Light_Conv_17 */
+      connect(cable_Light_Conv_17.n, cable_light_L1_1C.p);
+      connect(Light_Conv_17.p1,  cable_Light_Conv_17.p);
+      connect(Light_Conv_17.n1, GndDC.p);
+      connect(Light_Conv_17.n2, GndDC.p);
+
+    /* Light Connections 147 */
+      connect(Light_driver_147.n2, GndDC.p);
+      connect(Light_driver_147.n1, GndDC.p);
+      connect(Light_147.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_147.u);
+      connect(Gain_Light_driver_147.y, Light_147.u);
+      connect(Light_147.p, Light_driver_147.p2);
+      connect(Light_driver_147.p1,  cable_light_147.p);
+      connect(Light_Conv_17.p2, cable_light_147.n);
+
+    /* Light Connections 146 */
+      connect(Light_driver_146.n2, GndDC.p);
+      connect(Light_driver_146.n1, GndDC.p);
+      connect(Light_146.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_146.u);
+      connect(Gain_Light_driver_146.y, Light_146.u);
+      connect(Light_146.p, Light_driver_146.p2);
+      connect(Light_driver_146.p1,  cable_light_146.p);
+      connect(Light_Conv_17.p2, cable_light_146.n);
+
+    /* Light Connections 78 */
+      connect(Light_driver_78.n2, GndDC.p);
+      connect(Light_driver_78.n1, GndDC.p);
+      connect(Light_78.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_78.u);
+      connect(Gain_Light_driver_78.y, Light_78.u);
+      connect(Light_78.p, Light_driver_78.p2);
+      connect(Light_driver_78.p1,  cable_light_78.p);
+      connect(Light_Conv_17.p2, cable_light_78.n);
+
+    /* Light Connections 77 */
+      connect(Light_driver_77.n2, GndDC.p);
+      connect(Light_driver_77.n1, GndDC.p);
+      connect(Light_77.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_77.u);
+      connect(Gain_Light_driver_77.y, Light_77.u);
+      connect(Light_77.p, Light_driver_77.p2);
+      connect(Light_driver_77.p1,  cable_light_77.p);
+      connect(Light_Conv_17.p2, cable_light_77.n);
+
+    /* Light Connections 42 */
+      connect(Light_driver_42.n2, GndDC.p);
+      connect(Light_driver_42.n1, GndDC.p);
+      connect(Light_42.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_42.u);
+      connect(Gain_Light_driver_42.y, Light_42.u);
+      connect(Light_42.p, Light_driver_42.p2);
+      connect(Light_driver_42.p1,  cable_light_42.p);
+      connect(Light_Conv_17.p2, cable_light_42.n);
+
+    /* Light Connections 41 */
+      connect(Light_driver_41.n2, GndDC.p);
+      connect(Light_driver_41.n1, GndDC.p);
+      connect(Light_41.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_41.u);
+      connect(Gain_Light_driver_41.y, Light_41.u);
+      connect(Light_41.p, Light_driver_41.p2);
+      connect(Light_driver_41.p1,  cable_light_41.p);
+      connect(Light_Conv_17.p2, cable_light_41.n);
+
+    /* Light Connections 40 */
+      connect(Light_driver_40.n2, GndDC.p);
+      connect(Light_driver_40.n1, GndDC.p);
+      connect(Light_40.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_40.u);
+      connect(Gain_Light_driver_40.y, Light_40.u);
+      connect(Light_40.p, Light_driver_40.p2);
+      connect(Light_driver_40.p1,  cable_light_40.p);
+      connect(Light_Conv_17.p2, cable_light_40.n);
+
+    /* Light Connections 39 */
+      connect(Light_driver_39.n2, GndDC.p);
+      connect(Light_driver_39.n1, GndDC.p);
+      connect(Light_39.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_39.u);
+      connect(Gain_Light_driver_39.y, Light_39.u);
+      connect(Light_39.p, Light_driver_39.p2);
+      connect(Light_driver_39.p1,  cable_light_39.p);
+      connect(Light_Conv_17.p2, cable_light_39.n);
+
+    /* AC/DC Converter Light_Conv_18 */
+      connect(cable_Light_Conv_18.n, cable_light_L1_1C.p);
+      connect(Light_Conv_18.p1,  cable_Light_Conv_18.p);
+      connect(Light_Conv_18.n1, GndDC.p);
+      connect(Light_Conv_18.n2, GndDC.p);
+
+    /* Light Connections 52 */
+      connect(Light_driver_52.n2, GndDC.p);
+      connect(Light_driver_52.n1, GndDC.p);
+      connect(Light_52.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_52.u);
+      connect(Gain_Light_driver_52.y, Light_52.u);
+      connect(Light_52.p, Light_driver_52.p2);
+      connect(Light_driver_52.p1,  cable_light_52.p);
+      connect(Light_Conv_18.p2, cable_light_52.n);
+
+    /* Light Connections 43 */
+      connect(Light_driver_43.n2, GndDC.p);
+      connect(Light_driver_43.n1, GndDC.p);
+      connect(Light_43.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_43.u);
+      connect(Gain_Light_driver_43.y, Light_43.u);
+      connect(Light_43.p, Light_driver_43.p2);
+      connect(Light_driver_43.p1,  cable_light_43.p);
+      connect(Light_Conv_18.p2, cable_light_43.n);
+
+    /* Light Connections 38 */
+      connect(Light_driver_38.n2, GndDC.p);
+      connect(Light_driver_38.n1, GndDC.p);
+      connect(Light_38.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_38.u);
+      connect(Gain_Light_driver_38.y, Light_38.u);
+      connect(Light_38.p, Light_driver_38.p2);
+      connect(Light_driver_38.p1,  cable_light_38.p);
+      connect(Light_Conv_18.p2, cable_light_38.n);
+
+    /* Light Connections 37 */
+      connect(Light_driver_37.n2, GndDC.p);
+      connect(Light_driver_37.n1, GndDC.p);
+      connect(Light_37.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_37.u);
+      connect(Gain_Light_driver_37.y, Light_37.u);
+      connect(Light_37.p, Light_driver_37.p2);
+      connect(Light_driver_37.p1,  cable_light_37.p);
+      connect(Light_Conv_18.p2, cable_light_37.n);
+
+    /* Light Connections 32 */
+      connect(Light_driver_32.n2, GndDC.p);
+      connect(Light_driver_32.n1, GndDC.p);
+      connect(Light_32.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_32.u);
+      connect(Gain_Light_driver_32.y, Light_32.u);
+      connect(Light_32.p, Light_driver_32.p2);
+      connect(Light_driver_32.p1,  cable_light_32.p);
+      connect(Light_Conv_18.p2, cable_light_32.n);
+
+    /* AC/DC Converter Light_Conv_24 */
+      connect(cable_Light_Conv_24.n, cable_light_L1_1C.p);
+      connect(Light_Conv_24.p1,  cable_Light_Conv_24.p);
+      connect(Light_Conv_24.n1, GndDC.p);
+      connect(Light_Conv_24.n2, GndDC.p);
+
+    /* Light Connections 94 */
+      connect(Light_driver_94.n2, GndDC.p);
+      connect(Light_driver_94.n1, GndDC.p);
+      connect(Light_94.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_94.u);
+      connect(Gain_Light_driver_94.y, Light_94.u);
+      connect(Light_94.p, Light_driver_94.p2);
+      connect(Light_driver_94.p1,  cable_light_94.p);
+      connect(Light_Conv_24.p2, cable_light_94.n);
+
+    /* Light Connections 31 */
+      connect(Light_driver_31.n2, GndDC.p);
+      connect(Light_driver_31.n1, GndDC.p);
+      connect(Light_31.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_31.u);
+      connect(Gain_Light_driver_31.y, Light_31.u);
+      connect(Light_31.p, Light_driver_31.p2);
+      connect(Light_driver_31.p1,  cable_light_31.p);
+      connect(Light_Conv_24.p2, cable_light_31.n);
+
+    /* Light Connections 29 */
+      connect(Light_driver_29.n2, GndDC.p);
+      connect(Light_driver_29.n1, GndDC.p);
+      connect(Light_29.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_29.u);
+      connect(Gain_Light_driver_29.y, Light_29.u);
+      connect(Light_29.p, Light_driver_29.p2);
+      connect(Light_driver_29.p1,  cable_light_29.p);
+      connect(Light_Conv_24.p2, cable_light_29.n);
+
+    /* Light Connections 27 */
+      connect(Light_driver_27.n2, GndDC.p);
+      connect(Light_driver_27.n1, GndDC.p);
+      connect(Light_27.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_27.u);
+      connect(Gain_Light_driver_27.y, Light_27.u);
+      connect(Light_27.p, Light_driver_27.p2);
+      connect(Light_driver_27.p1,  cable_light_27.p);
+      connect(Light_Conv_24.p2, cable_light_27.n);
+
+      connect(cable_light_L1_1C.n, p)
+        annotation (Line(points={{-48,20},{-104,20}}, color={0,0,255}));
+      annotation ();
+    end DC_ACDC_Light_Panel_L1_1C;
+
+    model DC_ACDC_Light_Panel_L1_2A
+      outer HPF.SystemDef systemDef;
+      Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+        Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Core_Lights(
+        tableOnFile=true,
+        tableName="L1-Core-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-74,70},{-54,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn1_Lights(
+        tableOnFile=true,
+        tableName="L1-Zn1-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-40,70},{-20,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn2_Lights(
+        tableOnFile=true,
+        tableName="L1-Zn2-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-8,70},{12,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn3_Lights(
+        tableOnFile=true,
+        tableName="L1-Zn3-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{28,70},{48,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn4_Lights(
+        tableOnFile=true,
+        tableName="L1-Zn4-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{64,70},{84,90}})));
+
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_30(V = 19.5, alpha = 0.26452, beta = 0.12526, gamma = 0.0020109);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_45(V = 19.5, alpha = 0.42081, beta = 0.12526, gamma = 0.001341);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 4.27984, beta = -0.004643965, gamma = 0.0000985992);
+
+    /* Insert models here */
+
+    /* AC/DC Converter Light_Conv_28 */
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_28(modelData = modelData_DCDC);
+
+    /* Light Model 277 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_28(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=27.73);
+      HPF.DC.Variable_DC_Load Light_277;
+
+    /* Light Model 274 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_277(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_277(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_277(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_274;
+
+    /* Light Model 273 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_274(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_274(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_274(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_273;
+
+    /* Light Model 230 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_273(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_273(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_273(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_230;
+
+    /* Light Model 229 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_230(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_230(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_230(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_229;
+
+    /* Light Model 228 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_229(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_229(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_229(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_228;
+
+    /* Light Model 227 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_228(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_228(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_228(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_227;
+
+    /* Light Model 210 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_227(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_227(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_227(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_210;
+
+    /* AC/DC Converter Light_Conv_29 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_210(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_210(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_210(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_29(modelData = modelData_DCDC);
+
+    /* Light Model 232 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_29(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=24.91);
+      HPF.DC.Variable_DC_Load Light_232;
+
+    /* Light Model 231 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_232(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_232(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_232(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_231;
+
+    /* Light Model 177 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_231(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_231(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_231(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_177;
+
+    /* Light Model 176 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_177(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_177(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_177(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_176;
+
+    /* Light Model 175 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_176(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_176(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_176(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_175;
+
+    /* Light Model 174 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_175(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_175(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_175(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_174;
+
+    /* Light Model 173 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_174(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_174(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_174(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_173;
+
+    /* Light Model 172 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_173(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_173(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_173(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_172;
+
+    /* AC/DC Converter Light_Conv_23 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_172(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_172(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_172(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_23(modelData = modelData_DCDC);
+
+    /* Light Model 115 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_23(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=21.18);
+      HPF.DC.Variable_DC_Load Light_115;
+
+    /* Light Model 113 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_115(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_115(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_115(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_113;
+
+    /* Light Model 112 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_113(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_113(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_113(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_112;
+
+    /* Light Model 111 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_112(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_112(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_112(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_111;
+
+    /* Light Model 109 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_111(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_111(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_111(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_109;
+
+    /* Light Model 108 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_109(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_109(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_109(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_108;
+
+    /* Light Model 99 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_108(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_108(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_108(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_99;
+
+    /* AC/DC Converter Light_Conv_26 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_99(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_99(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_99(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_26(modelData = modelData_DCDC);
+
+    /* Light Model 171 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_26(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=16.43);
+      HPF.DC.Variable_DC_Load Light_171;
+
+    /* Light Model 170 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_171(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_171(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_171(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_170;
+
+    /* Light Model 169 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_170(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_170(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_170(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_169;
+
+    /* Light Model 168 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_169(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_169(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_169(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_168;
+
+    /* Light Model 167 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_168(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_168(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_168(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_167;
+
+    /* Light Model 166 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_167(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_167(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_167(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_166;
+
+    /* Light Model 165 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_166(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_166(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_166(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_165;
+
+    /* Light Model 58 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_165(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_165(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_165(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_58;
+
+    /* AC/DC Converter Light_Conv_25 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_58(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_58(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_58(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_25(modelData = modelData_DCDC);
+
+    /* Light Model 185 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_25(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=12.61);
+      HPF.DC.Variable_DC_Load Light_185;
+
+    /* Light Model 184 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_185(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_185(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_185(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_184;
+
+    /* Light Model 93 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_184(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_184(k=42) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_184(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_93;
+
+    /* Light Model 60 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_93(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_93(k=42) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_93(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_60;
+
+    /* Light Model 59 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_60(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_60(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_60(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_59;
+
+    /* Light Model 30 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_59(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_59(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_59(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_30;
+
+    /* Light Model 26 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_30(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_30(k=35) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_30(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_26;
+
+    /* Light Model 25 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_26(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_26(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_26(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_25;
+
+    /* AC/DC Converter Light_Conv_27 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_25(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_25(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_25(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_27(modelData = modelData_DCDC);
+
+    /* Light Model 285 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_27(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=26.11);
+      HPF.DC.Variable_DC_Load Light_285;
+
+    /* Light Model 280 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_285(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_285(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_285(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_280;
+
+    /* Light Model 279 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_280(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_280(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_280(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_279;
+
+    /* Light Model 278 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_279(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_279(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_279(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_278;
+
+    /* Light Model 276 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_278(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_278(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_278(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_276;
+
+    /* Light Model 275 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_276(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_276(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_276(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_275;
+
+    /* Light Model 3 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_275(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_275(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_275(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_3;
+
+    /* Light Model 1 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_3(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_3(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_3(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_1;
+
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_1(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_1(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_1(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+
+      Modelica.Electrical.Analog.Interfaces.PositivePin p
+        "Positive electrical pin of port 1" annotation (Placement(transformation(
+              extent={{-114,10},{-94,30}}), iconTransformation(extent={{-110,90},{-90,
+                110}})));
+      HPF.Cables.NEC_CableModelDC cable_light_L1_2A(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+          length=15) annotation (Placement(visible=true, transformation(
+            origin={-38,20},
+            extent={{10,-10},{-10,10}},
+            rotation=0)));
+    equation
+
+    /* Insert equation here */
+
+    /* AC/DC Converter Light_Conv_28 */
+      connect(cable_Light_Conv_28.n, cable_light_L1_2A.p);
+      connect(Light_Conv_28.p1,  cable_Light_Conv_28.p);
+      connect(Light_Conv_28.n1, GndDC.p);
+      connect(Light_Conv_28.n2, GndDC.p);
+
+    /* Light Connections 277 */
+      connect(Light_driver_277.n2, GndDC.p);
+      connect(Light_driver_277.n1, GndDC.p);
+      connect(Light_277.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn3_Lights.y[1], Gain_Light_driver_277.u);
+      connect(Gain_Light_driver_277.y, Light_277.u);
+      connect(Light_277.p, Light_driver_277.p2);
+      connect(Light_driver_277.p1,  cable_light_277.p);
+      connect(Light_Conv_28.p2, cable_light_277.n);
+
+    /* Light Connections 274 */
+      connect(Light_driver_274.n2, GndDC.p);
+      connect(Light_driver_274.n1, GndDC.p);
+      connect(Light_274.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_274.u);
+      connect(Gain_Light_driver_274.y, Light_274.u);
+      connect(Light_274.p, Light_driver_274.p2);
+      connect(Light_driver_274.p1,  cable_light_274.p);
+      connect(Light_Conv_28.p2, cable_light_274.n);
+
+    /* Light Connections 273 */
+      connect(Light_driver_273.n2, GndDC.p);
+      connect(Light_driver_273.n1, GndDC.p);
+      connect(Light_273.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_273.u);
+      connect(Gain_Light_driver_273.y, Light_273.u);
+      connect(Light_273.p, Light_driver_273.p2);
+      connect(Light_driver_273.p1,  cable_light_273.p);
+      connect(Light_Conv_28.p2, cable_light_273.n);
+
+    /* Light Connections 230 */
+      connect(Light_driver_230.n2, GndDC.p);
+      connect(Light_driver_230.n1, GndDC.p);
+      connect(Light_230.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_230.u);
+      connect(Gain_Light_driver_230.y, Light_230.u);
+      connect(Light_230.p, Light_driver_230.p2);
+      connect(Light_driver_230.p1,  cable_light_230.p);
+      connect(Light_Conv_28.p2, cable_light_230.n);
+
+    /* Light Connections 229 */
+      connect(Light_driver_229.n2, GndDC.p);
+      connect(Light_driver_229.n1, GndDC.p);
+      connect(Light_229.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_229.u);
+      connect(Gain_Light_driver_229.y, Light_229.u);
+      connect(Light_229.p, Light_driver_229.p2);
+      connect(Light_driver_229.p1,  cable_light_229.p);
+      connect(Light_Conv_28.p2, cable_light_229.n);
+
+    /* Light Connections 228 */
+      connect(Light_driver_228.n2, GndDC.p);
+      connect(Light_driver_228.n1, GndDC.p);
+      connect(Light_228.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_228.u);
+      connect(Gain_Light_driver_228.y, Light_228.u);
+      connect(Light_228.p, Light_driver_228.p2);
+      connect(Light_driver_228.p1,  cable_light_228.p);
+      connect(Light_Conv_28.p2, cable_light_228.n);
+
+    /* Light Connections 227 */
+      connect(Light_driver_227.n2, GndDC.p);
+      connect(Light_driver_227.n1, GndDC.p);
+      connect(Light_227.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_227.u);
+      connect(Gain_Light_driver_227.y, Light_227.u);
+      connect(Light_227.p, Light_driver_227.p2);
+      connect(Light_driver_227.p1,  cable_light_227.p);
+      connect(Light_Conv_28.p2, cable_light_227.n);
+
+    /* Light Connections 210 */
+      connect(Light_driver_210.n2, GndDC.p);
+      connect(Light_driver_210.n1, GndDC.p);
+      connect(Light_210.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_210.u);
+      connect(Gain_Light_driver_210.y, Light_210.u);
+      connect(Light_210.p, Light_driver_210.p2);
+      connect(Light_driver_210.p1,  cable_light_210.p);
+      connect(Light_Conv_28.p2, cable_light_210.n);
+
+    /* AC/DC Converter Light_Conv_29 */
+      connect(cable_Light_Conv_29.n, cable_light_L1_2A.p);
+      connect(Light_Conv_29.p1,  cable_Light_Conv_29.p);
+      connect(Light_Conv_29.n1, GndDC.p);
+      connect(Light_Conv_29.n2, GndDC.p);
+
+    /* Light Connections 232 */
+      connect(Light_driver_232.n2, GndDC.p);
+      connect(Light_driver_232.n1, GndDC.p);
+      connect(Light_232.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_232.u);
+      connect(Gain_Light_driver_232.y, Light_232.u);
+      connect(Light_232.p, Light_driver_232.p2);
+      connect(Light_driver_232.p1,  cable_light_232.p);
+      connect(Light_Conv_29.p2, cable_light_232.n);
+
+    /* Light Connections 231 */
+      connect(Light_driver_231.n2, GndDC.p);
+      connect(Light_driver_231.n1, GndDC.p);
+      connect(Light_231.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_231.u);
+      connect(Gain_Light_driver_231.y, Light_231.u);
+      connect(Light_231.p, Light_driver_231.p2);
+      connect(Light_driver_231.p1,  cable_light_231.p);
+      connect(Light_Conv_29.p2, cable_light_231.n);
+
+    /* Light Connections 177 */
+      connect(Light_driver_177.n2, GndDC.p);
+      connect(Light_driver_177.n1, GndDC.p);
+      connect(Light_177.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_177.u);
+      connect(Gain_Light_driver_177.y, Light_177.u);
+      connect(Light_177.p, Light_driver_177.p2);
+      connect(Light_driver_177.p1,  cable_light_177.p);
+      connect(Light_Conv_29.p2, cable_light_177.n);
+
+    /* Light Connections 176 */
+      connect(Light_driver_176.n2, GndDC.p);
+      connect(Light_driver_176.n1, GndDC.p);
+      connect(Light_176.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_176.u);
+      connect(Gain_Light_driver_176.y, Light_176.u);
+      connect(Light_176.p, Light_driver_176.p2);
+      connect(Light_driver_176.p1,  cable_light_176.p);
+      connect(Light_Conv_29.p2, cable_light_176.n);
+
+    /* Light Connections 175 */
+      connect(Light_driver_175.n2, GndDC.p);
+      connect(Light_driver_175.n1, GndDC.p);
+      connect(Light_175.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_175.u);
+      connect(Gain_Light_driver_175.y, Light_175.u);
+      connect(Light_175.p, Light_driver_175.p2);
+      connect(Light_driver_175.p1,  cable_light_175.p);
+      connect(Light_Conv_29.p2, cable_light_175.n);
+
+    /* Light Connections 174 */
+      connect(Light_driver_174.n2, GndDC.p);
+      connect(Light_driver_174.n1, GndDC.p);
+      connect(Light_174.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_174.u);
+      connect(Gain_Light_driver_174.y, Light_174.u);
+      connect(Light_174.p, Light_driver_174.p2);
+      connect(Light_driver_174.p1,  cable_light_174.p);
+      connect(Light_Conv_29.p2, cable_light_174.n);
+
+    /* Light Connections 173 */
+      connect(Light_driver_173.n2, GndDC.p);
+      connect(Light_driver_173.n1, GndDC.p);
+      connect(Light_173.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_173.u);
+      connect(Gain_Light_driver_173.y, Light_173.u);
+      connect(Light_173.p, Light_driver_173.p2);
+      connect(Light_driver_173.p1,  cable_light_173.p);
+      connect(Light_Conv_29.p2, cable_light_173.n);
+
+    /* Light Connections 172 */
+      connect(Light_driver_172.n2, GndDC.p);
+      connect(Light_driver_172.n1, GndDC.p);
+      connect(Light_172.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_172.u);
+      connect(Gain_Light_driver_172.y, Light_172.u);
+      connect(Light_172.p, Light_driver_172.p2);
+      connect(Light_driver_172.p1,  cable_light_172.p);
+      connect(Light_Conv_29.p2, cable_light_172.n);
+
+    /* AC/DC Converter Light_Conv_23 */
+      connect(cable_Light_Conv_23.n, cable_light_L1_2A.p);
+      connect(Light_Conv_23.p1,  cable_Light_Conv_23.p);
+      connect(Light_Conv_23.n1, GndDC.p);
+      connect(Light_Conv_23.n2, GndDC.p);
+
+    /* Light Connections 115 */
+      connect(Light_driver_115.n2, GndDC.p);
+      connect(Light_driver_115.n1, GndDC.p);
+      connect(Light_115.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn3_Lights.y[1], Gain_Light_driver_115.u);
+      connect(Gain_Light_driver_115.y, Light_115.u);
+      connect(Light_115.p, Light_driver_115.p2);
+      connect(Light_driver_115.p1,  cable_light_115.p);
+      connect(Light_Conv_23.p2, cable_light_115.n);
+
+    /* Light Connections 113 */
+      connect(Light_driver_113.n2, GndDC.p);
+      connect(Light_driver_113.n1, GndDC.p);
+      connect(Light_113.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_113.u);
+      connect(Gain_Light_driver_113.y, Light_113.u);
+      connect(Light_113.p, Light_driver_113.p2);
+      connect(Light_driver_113.p1,  cable_light_113.p);
+      connect(Light_Conv_23.p2, cable_light_113.n);
+
+    /* Light Connections 112 */
+      connect(Light_driver_112.n2, GndDC.p);
+      connect(Light_driver_112.n1, GndDC.p);
+      connect(Light_112.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_112.u);
+      connect(Gain_Light_driver_112.y, Light_112.u);
+      connect(Light_112.p, Light_driver_112.p2);
+      connect(Light_driver_112.p1,  cable_light_112.p);
+      connect(Light_Conv_23.p2, cable_light_112.n);
+
+    /* Light Connections 111 */
+      connect(Light_driver_111.n2, GndDC.p);
+      connect(Light_driver_111.n1, GndDC.p);
+      connect(Light_111.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn3_Lights.y[1], Gain_Light_driver_111.u);
+      connect(Gain_Light_driver_111.y, Light_111.u);
+      connect(Light_111.p, Light_driver_111.p2);
+      connect(Light_driver_111.p1,  cable_light_111.p);
+      connect(Light_Conv_23.p2, cable_light_111.n);
+
+    /* Light Connections 109 */
+      connect(Light_driver_109.n2, GndDC.p);
+      connect(Light_driver_109.n1, GndDC.p);
+      connect(Light_109.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn3_Lights.y[1], Gain_Light_driver_109.u);
+      connect(Gain_Light_driver_109.y, Light_109.u);
+      connect(Light_109.p, Light_driver_109.p2);
+      connect(Light_driver_109.p1,  cable_light_109.p);
+      connect(Light_Conv_23.p2, cable_light_109.n);
+
+    /* Light Connections 108 */
+      connect(Light_driver_108.n2, GndDC.p);
+      connect(Light_driver_108.n1, GndDC.p);
+      connect(Light_108.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn3_Lights.y[1], Gain_Light_driver_108.u);
+      connect(Gain_Light_driver_108.y, Light_108.u);
+      connect(Light_108.p, Light_driver_108.p2);
+      connect(Light_driver_108.p1,  cable_light_108.p);
+      connect(Light_Conv_23.p2, cable_light_108.n);
+
+    /* Light Connections 99 */
+      connect(Light_driver_99.n2, GndDC.p);
+      connect(Light_driver_99.n1, GndDC.p);
+      connect(Light_99.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_99.u);
+      connect(Gain_Light_driver_99.y, Light_99.u);
+      connect(Light_99.p, Light_driver_99.p2);
+      connect(Light_driver_99.p1,  cable_light_99.p);
+      connect(Light_Conv_23.p2, cable_light_99.n);
+
+    /* AC/DC Converter Light_Conv_26 */
+      connect(cable_Light_Conv_26.n, cable_light_L1_2A.p);
+      connect(Light_Conv_26.p1,  cable_Light_Conv_26.p);
+      connect(Light_Conv_26.n1, GndDC.p);
+      connect(Light_Conv_26.n2, GndDC.p);
+
+    /* Light Connections 171 */
+      connect(Light_driver_171.n2, GndDC.p);
+      connect(Light_driver_171.n1, GndDC.p);
+      connect(Light_171.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_171.u);
+      connect(Gain_Light_driver_171.y, Light_171.u);
+      connect(Light_171.p, Light_driver_171.p2);
+      connect(Light_driver_171.p1,  cable_light_171.p);
+      connect(Light_Conv_26.p2, cable_light_171.n);
+
+    /* Light Connections 170 */
+      connect(Light_driver_170.n2, GndDC.p);
+      connect(Light_driver_170.n1, GndDC.p);
+      connect(Light_170.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_170.u);
+      connect(Gain_Light_driver_170.y, Light_170.u);
+      connect(Light_170.p, Light_driver_170.p2);
+      connect(Light_driver_170.p1,  cable_light_170.p);
+      connect(Light_Conv_26.p2, cable_light_170.n);
+
+    /* Light Connections 169 */
+      connect(Light_driver_169.n2, GndDC.p);
+      connect(Light_driver_169.n1, GndDC.p);
+      connect(Light_169.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_169.u);
+      connect(Gain_Light_driver_169.y, Light_169.u);
+      connect(Light_169.p, Light_driver_169.p2);
+      connect(Light_driver_169.p1,  cable_light_169.p);
+      connect(Light_Conv_26.p2, cable_light_169.n);
+
+    /* Light Connections 168 */
+      connect(Light_driver_168.n2, GndDC.p);
+      connect(Light_driver_168.n1, GndDC.p);
+      connect(Light_168.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_168.u);
+      connect(Gain_Light_driver_168.y, Light_168.u);
+      connect(Light_168.p, Light_driver_168.p2);
+      connect(Light_driver_168.p1,  cable_light_168.p);
+      connect(Light_Conv_26.p2, cable_light_168.n);
+
+    /* Light Connections 167 */
+      connect(Light_driver_167.n2, GndDC.p);
+      connect(Light_driver_167.n1, GndDC.p);
+      connect(Light_167.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_167.u);
+      connect(Gain_Light_driver_167.y, Light_167.u);
+      connect(Light_167.p, Light_driver_167.p2);
+      connect(Light_driver_167.p1,  cable_light_167.p);
+      connect(Light_Conv_26.p2, cable_light_167.n);
+
+    /* Light Connections 166 */
+      connect(Light_driver_166.n2, GndDC.p);
+      connect(Light_driver_166.n1, GndDC.p);
+      connect(Light_166.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_166.u);
+      connect(Gain_Light_driver_166.y, Light_166.u);
+      connect(Light_166.p, Light_driver_166.p2);
+      connect(Light_driver_166.p1,  cable_light_166.p);
+      connect(Light_Conv_26.p2, cable_light_166.n);
+
+    /* Light Connections 165 */
+      connect(Light_driver_165.n2, GndDC.p);
+      connect(Light_driver_165.n1, GndDC.p);
+      connect(Light_165.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_165.u);
+      connect(Gain_Light_driver_165.y, Light_165.u);
+      connect(Light_165.p, Light_driver_165.p2);
+      connect(Light_driver_165.p1,  cable_light_165.p);
+      connect(Light_Conv_26.p2, cable_light_165.n);
+
+    /* Light Connections 58 */
+      connect(Light_driver_58.n2, GndDC.p);
+      connect(Light_driver_58.n1, GndDC.p);
+      connect(Light_58.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_58.u);
+      connect(Gain_Light_driver_58.y, Light_58.u);
+      connect(Light_58.p, Light_driver_58.p2);
+      connect(Light_driver_58.p1,  cable_light_58.p);
+      connect(Light_Conv_26.p2, cable_light_58.n);
+
+    /* AC/DC Converter Light_Conv_25 */
+      connect(cable_Light_Conv_25.n, cable_light_L1_2A.p);
+      connect(Light_Conv_25.p1,  cable_Light_Conv_25.p);
+      connect(Light_Conv_25.n1, GndDC.p);
+      connect(Light_Conv_25.n2, GndDC.p);
+
+    /* Light Connections 185 */
+      connect(Light_driver_185.n2, GndDC.p);
+      connect(Light_driver_185.n1, GndDC.p);
+      connect(Light_185.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_185.u);
+      connect(Gain_Light_driver_185.y, Light_185.u);
+      connect(Light_185.p, Light_driver_185.p2);
+      connect(Light_driver_185.p1,  cable_light_185.p);
+      connect(Light_Conv_25.p2, cable_light_185.n);
+
+    /* Light Connections 184 */
+      connect(Light_driver_184.n2, GndDC.p);
+      connect(Light_driver_184.n1, GndDC.p);
+      connect(Light_184.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_184.u);
+      connect(Gain_Light_driver_184.y, Light_184.u);
+      connect(Light_184.p, Light_driver_184.p2);
+      connect(Light_driver_184.p1,  cable_light_184.p);
+      connect(Light_Conv_25.p2, cable_light_184.n);
+
+    /* Light Connections 93 */
+      connect(Light_driver_93.n2, GndDC.p);
+      connect(Light_driver_93.n1, GndDC.p);
+      connect(Light_93.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_93.u);
+      connect(Gain_Light_driver_93.y, Light_93.u);
+      connect(Light_93.p, Light_driver_93.p2);
+      connect(Light_driver_93.p1,  cable_light_93.p);
+      connect(Light_Conv_25.p2, cable_light_93.n);
+
+    /* Light Connections 60 */
+      connect(Light_driver_60.n2, GndDC.p);
+      connect(Light_driver_60.n1, GndDC.p);
+      connect(Light_60.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_60.u);
+      connect(Gain_Light_driver_60.y, Light_60.u);
+      connect(Light_60.p, Light_driver_60.p2);
+      connect(Light_driver_60.p1,  cable_light_60.p);
+      connect(Light_Conv_25.p2, cable_light_60.n);
+
+    /* Light Connections 59 */
+      connect(Light_driver_59.n2, GndDC.p);
+      connect(Light_driver_59.n1, GndDC.p);
+      connect(Light_59.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_59.u);
+      connect(Gain_Light_driver_59.y, Light_59.u);
+      connect(Light_59.p, Light_driver_59.p2);
+      connect(Light_driver_59.p1,  cable_light_59.p);
+      connect(Light_Conv_25.p2, cable_light_59.n);
+
+    /* Light Connections 30 */
+      connect(Light_driver_30.n2, GndDC.p);
+      connect(Light_driver_30.n1, GndDC.p);
+      connect(Light_30.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_30.u);
+      connect(Gain_Light_driver_30.y, Light_30.u);
+      connect(Light_30.p, Light_driver_30.p2);
+      connect(Light_driver_30.p1,  cable_light_30.p);
+      connect(Light_Conv_25.p2, cable_light_30.n);
+
+    /* Light Connections 26 */
+      connect(Light_driver_26.n2, GndDC.p);
+      connect(Light_driver_26.n1, GndDC.p);
+      connect(Light_26.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_26.u);
+      connect(Gain_Light_driver_26.y, Light_26.u);
+      connect(Light_26.p, Light_driver_26.p2);
+      connect(Light_driver_26.p1,  cable_light_26.p);
+      connect(Light_Conv_25.p2, cable_light_26.n);
+
+    /* Light Connections 25 */
+      connect(Light_driver_25.n2, GndDC.p);
+      connect(Light_driver_25.n1, GndDC.p);
+      connect(Light_25.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_25.u);
+      connect(Gain_Light_driver_25.y, Light_25.u);
+      connect(Light_25.p, Light_driver_25.p2);
+      connect(Light_driver_25.p1,  cable_light_25.p);
+      connect(Light_Conv_25.p2, cable_light_25.n);
+
+    /* AC/DC Converter Light_Conv_27 */
+      connect(cable_Light_Conv_27.n, cable_light_L1_2A.p);
+      connect(Light_Conv_27.p1,  cable_Light_Conv_27.p);
+      connect(Light_Conv_27.n1, GndDC.p);
+      connect(Light_Conv_27.n2, GndDC.p);
+
+    /* Light Connections 285 */
+      connect(Light_driver_285.n2, GndDC.p);
+      connect(Light_driver_285.n1, GndDC.p);
+      connect(Light_285.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_285.u);
+      connect(Gain_Light_driver_285.y, Light_285.u);
+      connect(Light_285.p, Light_driver_285.p2);
+      connect(Light_driver_285.p1,  cable_light_285.p);
+      connect(Light_Conv_27.p2, cable_light_285.n);
+
+    /* Light Connections 280 */
+      connect(Light_driver_280.n2, GndDC.p);
+      connect(Light_driver_280.n1, GndDC.p);
+      connect(Light_280.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_280.u);
+      connect(Gain_Light_driver_280.y, Light_280.u);
+      connect(Light_280.p, Light_driver_280.p2);
+      connect(Light_driver_280.p1,  cable_light_280.p);
+      connect(Light_Conv_27.p2, cable_light_280.n);
+
+    /* Light Connections 279 */
+      connect(Light_driver_279.n2, GndDC.p);
+      connect(Light_driver_279.n1, GndDC.p);
+      connect(Light_279.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_279.u);
+      connect(Gain_Light_driver_279.y, Light_279.u);
+      connect(Light_279.p, Light_driver_279.p2);
+      connect(Light_driver_279.p1,  cable_light_279.p);
+      connect(Light_Conv_27.p2, cable_light_279.n);
+
+    /* Light Connections 278 */
+      connect(Light_driver_278.n2, GndDC.p);
+      connect(Light_driver_278.n1, GndDC.p);
+      connect(Light_278.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn3_Lights.y[1], Gain_Light_driver_278.u);
+      connect(Gain_Light_driver_278.y, Light_278.u);
+      connect(Light_278.p, Light_driver_278.p2);
+      connect(Light_driver_278.p1,  cable_light_278.p);
+      connect(Light_Conv_27.p2, cable_light_278.n);
+
+    /* Light Connections 276 */
+      connect(Light_driver_276.n2, GndDC.p);
+      connect(Light_driver_276.n1, GndDC.p);
+      connect(Light_276.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn3_Lights.y[1], Gain_Light_driver_276.u);
+      connect(Gain_Light_driver_276.y, Light_276.u);
+      connect(Light_276.p, Light_driver_276.p2);
+      connect(Light_driver_276.p1,  cable_light_276.p);
+      connect(Light_Conv_27.p2, cable_light_276.n);
+
+    /* Light Connections 275 */
+      connect(Light_driver_275.n2, GndDC.p);
+      connect(Light_driver_275.n1, GndDC.p);
+      connect(Light_275.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn3_Lights.y[1], Gain_Light_driver_275.u);
+      connect(Gain_Light_driver_275.y, Light_275.u);
+      connect(Light_275.p, Light_driver_275.p2);
+      connect(Light_driver_275.p1,  cable_light_275.p);
+      connect(Light_Conv_27.p2, cable_light_275.n);
+
+    /* Light Connections 3 */
+      connect(Light_driver_3.n2, GndDC.p);
+      connect(Light_driver_3.n1, GndDC.p);
+      connect(Light_3.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn3_Lights.y[1], Gain_Light_driver_3.u);
+      connect(Gain_Light_driver_3.y, Light_3.u);
+      connect(Light_3.p, Light_driver_3.p2);
+      connect(Light_driver_3.p1,  cable_light_3.p);
+      connect(Light_Conv_27.p2, cable_light_3.n);
+
+    /* Light Connections 1 */
+      connect(Light_driver_1.n2, GndDC.p);
+      connect(Light_driver_1.n1, GndDC.p);
+      connect(Light_1.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn3_Lights.y[1], Gain_Light_driver_1.u);
+      connect(Gain_Light_driver_1.y, Light_1.u);
+      connect(Light_1.p, Light_driver_1.p2);
+      connect(Light_driver_1.p1,  cable_light_1.p);
+      connect(Light_Conv_27.p2, cable_light_1.n);
+
+      connect(cable_light_L1_2A.n, p)
+        annotation (Line(points={{-48,20},{-104,20}}, color={0,0,255}));
+      annotation ();
+    end DC_ACDC_Light_Panel_L1_2A;
+
+    model DC_ACDC_Light_Panel_L1_2B
+      outer HPF.SystemDef systemDef;
+      Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+        Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Core_Lights(
+        tableOnFile=true,
+        tableName="L1-Core-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-74,70},{-54,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn1_Lights(
+        tableOnFile=true,
+        tableName="L1-Zn1-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-40,70},{-20,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn2_Lights(
+        tableOnFile=true,
+        tableName="L1-Zn2-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-8,70},{12,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn3_Lights(
+        tableOnFile=true,
+        tableName="L1-Zn3-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{28,70},{48,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn4_Lights(
+        tableOnFile=true,
+        tableName="L1-Zn4-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{64,70},{84,90}})));
+
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_30(V = 19.5, alpha = 0.26452, beta = 0.12526, gamma = 0.0020109);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_45(V = 19.5, alpha = 0.42081, beta = 0.12526, gamma = 0.001341);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 4.27984, beta = -0.004643965, gamma = 0.0000985992);
+
+    /* Insert models here */
+
+    /* AC/DC Converter Light_Conv_35 */
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_35(modelData = modelData_DCDC);
+
+    /* Light Model 256 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_35(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=35.74);
+      HPF.DC.Variable_DC_Load Light_256;
+
+    /* Light Model 255 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_256(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_256(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_256(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_255;
+
+    /* Light Model 254 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_255(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_255(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_255(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_254;
+
+    /* Light Model 252 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_254(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_254(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_254(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_252;
+
+    /* Light Model 251 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_252(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_252(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_252(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_251;
+
+    /* Light Model 241 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_251(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_251(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_251(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_241;
+
+    /* Light Model 239 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_241(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_241(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_241(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_239;
+
+    /* AC/DC Converter Light_Conv_32 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_239(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_239(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_239(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_32(modelData = modelData_DCDC);
+
+    /* Light Model 225 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_32(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=26.15);
+      HPF.DC.Variable_DC_Load Light_225;
+
+    /* Light Model 224 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_225(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_225(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_225(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_224;
+
+    /* Light Model 223 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_224(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_224(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_224(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_223;
+
+    /* Light Model 203 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_223(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_223(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_223(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_203;
+
+    /* Light Model 202 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_203(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_203(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_203(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_202;
+
+    /* Light Model 201 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_202(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_202(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_202(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_201;
+
+    /* Light Model 200 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_201(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_201(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_201(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_200;
+
+    /* Light Model 199 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_200(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_200(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_200(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_199;
+
+    /* AC/DC Converter Light_Conv_31 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_199(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_199(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_199(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_31(modelData = modelData_DCDC);
+
+    /* Light Model 287 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_31(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=26.15);
+      HPF.DC.Variable_DC_Load Light_287;
+
+    /* Light Model 222 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_287(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_287(k=22) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_287(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_222;
+
+    /* Light Model 221 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_222(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_222(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_222(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_221;
+
+    /* Light Model 220 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_221(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_221(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_221(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_220;
+
+    /* Light Model 219 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_220(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_220(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_220(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_219;
+
+    /* Light Model 189 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_219(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_219(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_219(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_189;
+
+    /* Light Model 187 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_189(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_189(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_189(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_187;
+
+    /* Light Model 186 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_187(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_187(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_187(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_186;
+
+    /* AC/DC Converter Light_Conv_34 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_186(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_186(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_186(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_34(modelData = modelData_DCDC);
+
+    /* Light Model 246 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_34(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=33.62);
+      HPF.DC.Variable_DC_Load Light_246;
+
+    /* Light Model 245 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_246(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_246(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_246(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_245;
+
+    /* Light Model 244 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_245(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_245(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_245(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_244;
+
+    /* Light Model 243 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_244(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_244(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_244(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_243;
+
+    /* Light Model 235 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_243(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_243(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_243(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_235;
+
+    /* Light Model 181 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_235(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_235(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_235(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_181;
+
+    /* AC/DC Converter Light_Conv_33 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_181(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_181(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_181(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_33(modelData = modelData_DCDC);
+
+    /* Light Model 234 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_33(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=27.29);
+      HPF.DC.Variable_DC_Load Light_234;
+
+    /* Light Model 233 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_234(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_234(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_234(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_233;
+
+    /* Light Model 226 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_233(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_233(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_233(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_226;
+
+    /* Light Model 183 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_226(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_226(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_226(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_183;
+
+    /* Light Model 182 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_183(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_183(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_183(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_182;
+
+    /* Light Model 180 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_182(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_182(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_182(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_180;
+
+    /* Light Model 179 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_180(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_180(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_180(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_179;
+
+    /* Light Model 178 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_179(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_179(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_179(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_178;
+
+    /* AC/DC Converter Light_Conv_30 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_178(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_178(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_178(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_30(modelData = modelData_DCDC);
+
+    /* Light Model 286 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_30(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=21.93);
+      HPF.DC.Variable_DC_Load Light_286;
+
+    /* Light Model 282 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_286(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_286(k=22) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_286(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_282;
+
+    /* Light Model 195 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_282(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_282(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_282(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_195;
+
+    /* Light Model 194 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_195(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_195(k=22) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_195(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_194;
+
+    /* Light Model 193 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_194(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_194(k=22) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_194(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_193;
+
+    /* Light Model 192 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_193(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_193(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_193(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_192;
+
+    /* Light Model 191 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_192(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_192(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_192(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_191;
+
+    /* Light Model 10 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_191(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_191(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_191(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_10;
+
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_10(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_10(k=20) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_10(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+
+      Modelica.Electrical.Analog.Interfaces.PositivePin p
+        "Positive electrical pin of port 1" annotation (Placement(transformation(
+              extent={{-114,10},{-94,30}}), iconTransformation(extent={{-110,90},{-90,
+                110}})));
+      HPF.Cables.NEC_CableModelDC cable_light_L1_2B(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+          length=15) annotation (Placement(visible=true, transformation(
+            origin={-38,20},
+            extent={{10,-10},{-10,10}},
+            rotation=0)));
+    equation
+
+    /* Insert equation here */
+
+    /* AC/DC Converter Light_Conv_35 */
+      connect(cable_Light_Conv_35.n, cable_light_L1_2B.p);
+      connect(Light_Conv_35.p1,  cable_Light_Conv_35.p);
+      connect(Light_Conv_35.n1, GndDC.p);
+      connect(Light_Conv_35.n2, GndDC.p);
+
+    /* Light Connections 256 */
+      connect(Light_driver_256.n2, GndDC.p);
+      connect(Light_driver_256.n1, GndDC.p);
+      connect(Light_256.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn2_Lights.y[1], Gain_Light_driver_256.u);
+      connect(Gain_Light_driver_256.y, Light_256.u);
+      connect(Light_256.p, Light_driver_256.p2);
+      connect(Light_driver_256.p1,  cable_light_256.p);
+      connect(Light_Conv_35.p2, cable_light_256.n);
+
+    /* Light Connections 255 */
+      connect(Light_driver_255.n2, GndDC.p);
+      connect(Light_driver_255.n1, GndDC.p);
+      connect(Light_255.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn2_Lights.y[1], Gain_Light_driver_255.u);
+      connect(Gain_Light_driver_255.y, Light_255.u);
+      connect(Light_255.p, Light_driver_255.p2);
+      connect(Light_driver_255.p1,  cable_light_255.p);
+      connect(Light_Conv_35.p2, cable_light_255.n);
+
+    /* Light Connections 254 */
+      connect(Light_driver_254.n2, GndDC.p);
+      connect(Light_driver_254.n1, GndDC.p);
+      connect(Light_254.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_254.u);
+      connect(Gain_Light_driver_254.y, Light_254.u);
+      connect(Light_254.p, Light_driver_254.p2);
+      connect(Light_driver_254.p1,  cable_light_254.p);
+      connect(Light_Conv_35.p2, cable_light_254.n);
+
+    /* Light Connections 252 */
+      connect(Light_driver_252.n2, GndDC.p);
+      connect(Light_driver_252.n1, GndDC.p);
+      connect(Light_252.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn2_Lights.y[1], Gain_Light_driver_252.u);
+      connect(Gain_Light_driver_252.y, Light_252.u);
+      connect(Light_252.p, Light_driver_252.p2);
+      connect(Light_driver_252.p1,  cable_light_252.p);
+      connect(Light_Conv_35.p2, cable_light_252.n);
+
+    /* Light Connections 251 */
+      connect(Light_driver_251.n2, GndDC.p);
+      connect(Light_driver_251.n1, GndDC.p);
+      connect(Light_251.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn2_Lights.y[1], Gain_Light_driver_251.u);
+      connect(Gain_Light_driver_251.y, Light_251.u);
+      connect(Light_251.p, Light_driver_251.p2);
+      connect(Light_driver_251.p1,  cable_light_251.p);
+      connect(Light_Conv_35.p2, cable_light_251.n);
+
+    /* Light Connections 241 */
+      connect(Light_driver_241.n2, GndDC.p);
+      connect(Light_driver_241.n1, GndDC.p);
+      connect(Light_241.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_241.u);
+      connect(Gain_Light_driver_241.y, Light_241.u);
+      connect(Light_241.p, Light_driver_241.p2);
+      connect(Light_driver_241.p1,  cable_light_241.p);
+      connect(Light_Conv_35.p2, cable_light_241.n);
+
+    /* Light Connections 239 */
+      connect(Light_driver_239.n2, GndDC.p);
+      connect(Light_driver_239.n1, GndDC.p);
+      connect(Light_239.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_239.u);
+      connect(Gain_Light_driver_239.y, Light_239.u);
+      connect(Light_239.p, Light_driver_239.p2);
+      connect(Light_driver_239.p1,  cable_light_239.p);
+      connect(Light_Conv_35.p2, cable_light_239.n);
+
+    /* AC/DC Converter Light_Conv_32 */
+      connect(cable_Light_Conv_32.n, cable_light_L1_2B.p);
+      connect(Light_Conv_32.p1,  cable_Light_Conv_32.p);
+      connect(Light_Conv_32.n1, GndDC.p);
+      connect(Light_Conv_32.n2, GndDC.p);
+
+    /* Light Connections 225 */
+      connect(Light_driver_225.n2, GndDC.p);
+      connect(Light_driver_225.n1, GndDC.p);
+      connect(Light_225.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_225.u);
+      connect(Gain_Light_driver_225.y, Light_225.u);
+      connect(Light_225.p, Light_driver_225.p2);
+      connect(Light_driver_225.p1,  cable_light_225.p);
+      connect(Light_Conv_32.p2, cable_light_225.n);
+
+    /* Light Connections 224 */
+      connect(Light_driver_224.n2, GndDC.p);
+      connect(Light_driver_224.n1, GndDC.p);
+      connect(Light_224.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_224.u);
+      connect(Gain_Light_driver_224.y, Light_224.u);
+      connect(Light_224.p, Light_driver_224.p2);
+      connect(Light_driver_224.p1,  cable_light_224.p);
+      connect(Light_Conv_32.p2, cable_light_224.n);
+
+    /* Light Connections 223 */
+      connect(Light_driver_223.n2, GndDC.p);
+      connect(Light_driver_223.n1, GndDC.p);
+      connect(Light_223.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_223.u);
+      connect(Gain_Light_driver_223.y, Light_223.u);
+      connect(Light_223.p, Light_driver_223.p2);
+      connect(Light_driver_223.p1,  cable_light_223.p);
+      connect(Light_Conv_32.p2, cable_light_223.n);
+
+    /* Light Connections 203 */
+      connect(Light_driver_203.n2, GndDC.p);
+      connect(Light_driver_203.n1, GndDC.p);
+      connect(Light_203.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_203.u);
+      connect(Gain_Light_driver_203.y, Light_203.u);
+      connect(Light_203.p, Light_driver_203.p2);
+      connect(Light_driver_203.p1,  cable_light_203.p);
+      connect(Light_Conv_32.p2, cable_light_203.n);
+
+    /* Light Connections 202 */
+      connect(Light_driver_202.n2, GndDC.p);
+      connect(Light_driver_202.n1, GndDC.p);
+      connect(Light_202.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_202.u);
+      connect(Gain_Light_driver_202.y, Light_202.u);
+      connect(Light_202.p, Light_driver_202.p2);
+      connect(Light_driver_202.p1,  cable_light_202.p);
+      connect(Light_Conv_32.p2, cable_light_202.n);
+
+    /* Light Connections 201 */
+      connect(Light_driver_201.n2, GndDC.p);
+      connect(Light_driver_201.n1, GndDC.p);
+      connect(Light_201.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_201.u);
+      connect(Gain_Light_driver_201.y, Light_201.u);
+      connect(Light_201.p, Light_driver_201.p2);
+      connect(Light_driver_201.p1,  cable_light_201.p);
+      connect(Light_Conv_32.p2, cable_light_201.n);
+
+    /* Light Connections 200 */
+      connect(Light_driver_200.n2, GndDC.p);
+      connect(Light_driver_200.n1, GndDC.p);
+      connect(Light_200.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_200.u);
+      connect(Gain_Light_driver_200.y, Light_200.u);
+      connect(Light_200.p, Light_driver_200.p2);
+      connect(Light_driver_200.p1,  cable_light_200.p);
+      connect(Light_Conv_32.p2, cable_light_200.n);
+
+    /* Light Connections 199 */
+      connect(Light_driver_199.n2, GndDC.p);
+      connect(Light_driver_199.n1, GndDC.p);
+      connect(Light_199.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_199.u);
+      connect(Gain_Light_driver_199.y, Light_199.u);
+      connect(Light_199.p, Light_driver_199.p2);
+      connect(Light_driver_199.p1,  cable_light_199.p);
+      connect(Light_Conv_32.p2, cable_light_199.n);
+
+    /* AC/DC Converter Light_Conv_31 */
+      connect(cable_Light_Conv_31.n, cable_light_L1_2B.p);
+      connect(Light_Conv_31.p1,  cable_Light_Conv_31.p);
+      connect(Light_Conv_31.n1, GndDC.p);
+      connect(Light_Conv_31.n2, GndDC.p);
+
+    /* Light Connections 287 */
+      connect(Light_driver_287.n2, GndDC.p);
+      connect(Light_driver_287.n1, GndDC.p);
+      connect(Light_287.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_287.u);
+      connect(Gain_Light_driver_287.y, Light_287.u);
+      connect(Light_287.p, Light_driver_287.p2);
+      connect(Light_driver_287.p1,  cable_light_287.p);
+      connect(Light_Conv_31.p2, cable_light_287.n);
+
+    /* Light Connections 222 */
+      connect(Light_driver_222.n2, GndDC.p);
+      connect(Light_driver_222.n1, GndDC.p);
+      connect(Light_222.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_222.u);
+      connect(Gain_Light_driver_222.y, Light_222.u);
+      connect(Light_222.p, Light_driver_222.p2);
+      connect(Light_driver_222.p1,  cable_light_222.p);
+      connect(Light_Conv_31.p2, cable_light_222.n);
+
+    /* Light Connections 221 */
+      connect(Light_driver_221.n2, GndDC.p);
+      connect(Light_driver_221.n1, GndDC.p);
+      connect(Light_221.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_221.u);
+      connect(Gain_Light_driver_221.y, Light_221.u);
+      connect(Light_221.p, Light_driver_221.p2);
+      connect(Light_driver_221.p1,  cable_light_221.p);
+      connect(Light_Conv_31.p2, cable_light_221.n);
+
+    /* Light Connections 220 */
+      connect(Light_driver_220.n2, GndDC.p);
+      connect(Light_driver_220.n1, GndDC.p);
+      connect(Light_220.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_220.u);
+      connect(Gain_Light_driver_220.y, Light_220.u);
+      connect(Light_220.p, Light_driver_220.p2);
+      connect(Light_driver_220.p1,  cable_light_220.p);
+      connect(Light_Conv_31.p2, cable_light_220.n);
+
+    /* Light Connections 219 */
+      connect(Light_driver_219.n2, GndDC.p);
+      connect(Light_driver_219.n1, GndDC.p);
+      connect(Light_219.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_219.u);
+      connect(Gain_Light_driver_219.y, Light_219.u);
+      connect(Light_219.p, Light_driver_219.p2);
+      connect(Light_driver_219.p1,  cable_light_219.p);
+      connect(Light_Conv_31.p2, cable_light_219.n);
+
+    /* Light Connections 189 */
+      connect(Light_driver_189.n2, GndDC.p);
+      connect(Light_driver_189.n1, GndDC.p);
+      connect(Light_189.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_189.u);
+      connect(Gain_Light_driver_189.y, Light_189.u);
+      connect(Light_189.p, Light_driver_189.p2);
+      connect(Light_driver_189.p1,  cable_light_189.p);
+      connect(Light_Conv_31.p2, cable_light_189.n);
+
+    /* Light Connections 187 */
+      connect(Light_driver_187.n2, GndDC.p);
+      connect(Light_driver_187.n1, GndDC.p);
+      connect(Light_187.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_187.u);
+      connect(Gain_Light_driver_187.y, Light_187.u);
+      connect(Light_187.p, Light_driver_187.p2);
+      connect(Light_driver_187.p1,  cable_light_187.p);
+      connect(Light_Conv_31.p2, cable_light_187.n);
+
+    /* Light Connections 186 */
+      connect(Light_driver_186.n2, GndDC.p);
+      connect(Light_driver_186.n1, GndDC.p);
+      connect(Light_186.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_186.u);
+      connect(Gain_Light_driver_186.y, Light_186.u);
+      connect(Light_186.p, Light_driver_186.p2);
+      connect(Light_driver_186.p1,  cable_light_186.p);
+      connect(Light_Conv_31.p2, cable_light_186.n);
+
+    /* AC/DC Converter Light_Conv_34 */
+      connect(cable_Light_Conv_34.n, cable_light_L1_2B.p);
+      connect(Light_Conv_34.p1,  cable_Light_Conv_34.p);
+      connect(Light_Conv_34.n1, GndDC.p);
+      connect(Light_Conv_34.n2, GndDC.p);
+
+    /* Light Connections 246 */
+      connect(Light_driver_246.n2, GndDC.p);
+      connect(Light_driver_246.n1, GndDC.p);
+      connect(Light_246.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_246.u);
+      connect(Gain_Light_driver_246.y, Light_246.u);
+      connect(Light_246.p, Light_driver_246.p2);
+      connect(Light_driver_246.p1,  cable_light_246.p);
+      connect(Light_Conv_34.p2, cable_light_246.n);
+
+    /* Light Connections 245 */
+      connect(Light_driver_245.n2, GndDC.p);
+      connect(Light_driver_245.n1, GndDC.p);
+      connect(Light_245.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_245.u);
+      connect(Gain_Light_driver_245.y, Light_245.u);
+      connect(Light_245.p, Light_driver_245.p2);
+      connect(Light_driver_245.p1,  cable_light_245.p);
+      connect(Light_Conv_34.p2, cable_light_245.n);
+
+    /* Light Connections 244 */
+      connect(Light_driver_244.n2, GndDC.p);
+      connect(Light_driver_244.n1, GndDC.p);
+      connect(Light_244.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_244.u);
+      connect(Gain_Light_driver_244.y, Light_244.u);
+      connect(Light_244.p, Light_driver_244.p2);
+      connect(Light_driver_244.p1,  cable_light_244.p);
+      connect(Light_Conv_34.p2, cable_light_244.n);
+
+    /* Light Connections 243 */
+      connect(Light_driver_243.n2, GndDC.p);
+      connect(Light_driver_243.n1, GndDC.p);
+      connect(Light_243.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_243.u);
+      connect(Gain_Light_driver_243.y, Light_243.u);
+      connect(Light_243.p, Light_driver_243.p2);
+      connect(Light_driver_243.p1,  cable_light_243.p);
+      connect(Light_Conv_34.p2, cable_light_243.n);
+
+    /* Light Connections 235 */
+      connect(Light_driver_235.n2, GndDC.p);
+      connect(Light_driver_235.n1, GndDC.p);
+      connect(Light_235.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_235.u);
+      connect(Gain_Light_driver_235.y, Light_235.u);
+      connect(Light_235.p, Light_driver_235.p2);
+      connect(Light_driver_235.p1,  cable_light_235.p);
+      connect(Light_Conv_34.p2, cable_light_235.n);
+
+    /* Light Connections 181 */
+      connect(Light_driver_181.n2, GndDC.p);
+      connect(Light_driver_181.n1, GndDC.p);
+      connect(Light_181.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_181.u);
+      connect(Gain_Light_driver_181.y, Light_181.u);
+      connect(Light_181.p, Light_driver_181.p2);
+      connect(Light_driver_181.p1,  cable_light_181.p);
+      connect(Light_Conv_34.p2, cable_light_181.n);
+
+    /* AC/DC Converter Light_Conv_33 */
+      connect(cable_Light_Conv_33.n, cable_light_L1_2B.p);
+      connect(Light_Conv_33.p1,  cable_Light_Conv_33.p);
+      connect(Light_Conv_33.n1, GndDC.p);
+      connect(Light_Conv_33.n2, GndDC.p);
+
+    /* Light Connections 234 */
+      connect(Light_driver_234.n2, GndDC.p);
+      connect(Light_driver_234.n1, GndDC.p);
+      connect(Light_234.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_234.u);
+      connect(Gain_Light_driver_234.y, Light_234.u);
+      connect(Light_234.p, Light_driver_234.p2);
+      connect(Light_driver_234.p1,  cable_light_234.p);
+      connect(Light_Conv_33.p2, cable_light_234.n);
+
+    /* Light Connections 233 */
+      connect(Light_driver_233.n2, GndDC.p);
+      connect(Light_driver_233.n1, GndDC.p);
+      connect(Light_233.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_233.u);
+      connect(Gain_Light_driver_233.y, Light_233.u);
+      connect(Light_233.p, Light_driver_233.p2);
+      connect(Light_driver_233.p1,  cable_light_233.p);
+      connect(Light_Conv_33.p2, cable_light_233.n);
+
+    /* Light Connections 226 */
+      connect(Light_driver_226.n2, GndDC.p);
+      connect(Light_driver_226.n1, GndDC.p);
+      connect(Light_226.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_226.u);
+      connect(Gain_Light_driver_226.y, Light_226.u);
+      connect(Light_226.p, Light_driver_226.p2);
+      connect(Light_driver_226.p1,  cable_light_226.p);
+      connect(Light_Conv_33.p2, cable_light_226.n);
+
+    /* Light Connections 183 */
+      connect(Light_driver_183.n2, GndDC.p);
+      connect(Light_driver_183.n1, GndDC.p);
+      connect(Light_183.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_183.u);
+      connect(Gain_Light_driver_183.y, Light_183.u);
+      connect(Light_183.p, Light_driver_183.p2);
+      connect(Light_driver_183.p1,  cable_light_183.p);
+      connect(Light_Conv_33.p2, cable_light_183.n);
+
+    /* Light Connections 182 */
+      connect(Light_driver_182.n2, GndDC.p);
+      connect(Light_driver_182.n1, GndDC.p);
+      connect(Light_182.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_182.u);
+      connect(Gain_Light_driver_182.y, Light_182.u);
+      connect(Light_182.p, Light_driver_182.p2);
+      connect(Light_driver_182.p1,  cable_light_182.p);
+      connect(Light_Conv_33.p2, cable_light_182.n);
+
+    /* Light Connections 180 */
+      connect(Light_driver_180.n2, GndDC.p);
+      connect(Light_driver_180.n1, GndDC.p);
+      connect(Light_180.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_180.u);
+      connect(Gain_Light_driver_180.y, Light_180.u);
+      connect(Light_180.p, Light_driver_180.p2);
+      connect(Light_driver_180.p1,  cable_light_180.p);
+      connect(Light_Conv_33.p2, cable_light_180.n);
+
+    /* Light Connections 179 */
+      connect(Light_driver_179.n2, GndDC.p);
+      connect(Light_driver_179.n1, GndDC.p);
+      connect(Light_179.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_179.u);
+      connect(Gain_Light_driver_179.y, Light_179.u);
+      connect(Light_179.p, Light_driver_179.p2);
+      connect(Light_driver_179.p1,  cable_light_179.p);
+      connect(Light_Conv_33.p2, cable_light_179.n);
+
+    /* Light Connections 178 */
+      connect(Light_driver_178.n2, GndDC.p);
+      connect(Light_driver_178.n1, GndDC.p);
+      connect(Light_178.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn1_Lights.y[1], Gain_Light_driver_178.u);
+      connect(Gain_Light_driver_178.y, Light_178.u);
+      connect(Light_178.p, Light_driver_178.p2);
+      connect(Light_driver_178.p1,  cable_light_178.p);
+      connect(Light_Conv_33.p2, cable_light_178.n);
+
+    /* AC/DC Converter Light_Conv_30 */
+      connect(cable_Light_Conv_30.n, cable_light_L1_2B.p);
+      connect(Light_Conv_30.p1,  cable_Light_Conv_30.p);
+      connect(Light_Conv_30.n1, GndDC.p);
+      connect(Light_Conv_30.n2, GndDC.p);
+
+    /* Light Connections 286 */
+      connect(Light_driver_286.n2, GndDC.p);
+      connect(Light_driver_286.n1, GndDC.p);
+      connect(Light_286.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_286.u);
+      connect(Gain_Light_driver_286.y, Light_286.u);
+      connect(Light_286.p, Light_driver_286.p2);
+      connect(Light_driver_286.p1,  cable_light_286.p);
+      connect(Light_Conv_30.p2, cable_light_286.n);
+
+    /* Light Connections 282 */
+      connect(Light_driver_282.n2, GndDC.p);
+      connect(Light_driver_282.n1, GndDC.p);
+      connect(Light_282.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_282.u);
+      connect(Gain_Light_driver_282.y, Light_282.u);
+      connect(Light_282.p, Light_driver_282.p2);
+      connect(Light_driver_282.p1,  cable_light_282.p);
+      connect(Light_Conv_30.p2, cable_light_282.n);
+
+    /* Light Connections 195 */
+      connect(Light_driver_195.n2, GndDC.p);
+      connect(Light_driver_195.n1, GndDC.p);
+      connect(Light_195.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_195.u);
+      connect(Gain_Light_driver_195.y, Light_195.u);
+      connect(Light_195.p, Light_driver_195.p2);
+      connect(Light_driver_195.p1,  cable_light_195.p);
+      connect(Light_Conv_30.p2, cable_light_195.n);
+
+    /* Light Connections 194 */
+      connect(Light_driver_194.n2, GndDC.p);
+      connect(Light_driver_194.n1, GndDC.p);
+      connect(Light_194.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_194.u);
+      connect(Gain_Light_driver_194.y, Light_194.u);
+      connect(Light_194.p, Light_driver_194.p2);
+      connect(Light_driver_194.p1,  cable_light_194.p);
+      connect(Light_Conv_30.p2, cable_light_194.n);
+
+    /* Light Connections 193 */
+      connect(Light_driver_193.n2, GndDC.p);
+      connect(Light_driver_193.n1, GndDC.p);
+      connect(Light_193.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_193.u);
+      connect(Gain_Light_driver_193.y, Light_193.u);
+      connect(Light_193.p, Light_driver_193.p2);
+      connect(Light_driver_193.p1,  cable_light_193.p);
+      connect(Light_Conv_30.p2, cable_light_193.n);
+
+    /* Light Connections 192 */
+      connect(Light_driver_192.n2, GndDC.p);
+      connect(Light_driver_192.n1, GndDC.p);
+      connect(Light_192.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_192.u);
+      connect(Gain_Light_driver_192.y, Light_192.u);
+      connect(Light_192.p, Light_driver_192.p2);
+      connect(Light_driver_192.p1,  cable_light_192.p);
+      connect(Light_Conv_30.p2, cable_light_192.n);
+
+    /* Light Connections 191 */
+      connect(Light_driver_191.n2, GndDC.p);
+      connect(Light_driver_191.n1, GndDC.p);
+      connect(Light_191.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_191.u);
+      connect(Gain_Light_driver_191.y, Light_191.u);
+      connect(Light_191.p, Light_driver_191.p2);
+      connect(Light_driver_191.p1,  cable_light_191.p);
+      connect(Light_Conv_30.p2, cable_light_191.n);
+
+    /* Light Connections 10 */
+      connect(Light_driver_10.n2, GndDC.p);
+      connect(Light_driver_10.n1, GndDC.p);
+      connect(Light_10.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_10.u);
+      connect(Gain_Light_driver_10.y, Light_10.u);
+      connect(Light_10.p, Light_driver_10.p2);
+      connect(Light_driver_10.p1,  cable_light_10.p);
+      connect(Light_Conv_30.p2, cable_light_10.n);
+
+      connect(cable_light_L1_2B.n, p)
+        annotation (Line(points={{-48,20},{-104,20}}, color={0,0,255}));
+      annotation ();
+    end DC_ACDC_Light_Panel_L1_2B;
+
+    model DC_ACDC_Light_Panel_L1_2C
+      outer HPF.SystemDef systemDef;
+      Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+        Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Core_Lights(
+        tableOnFile=true,
+        tableName="L1-Core-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-74,70},{-54,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn1_Lights(
+        tableOnFile=true,
+        tableName="L1-Zn1-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-40,70},{-20,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn2_Lights(
+        tableOnFile=true,
+        tableName="L1-Zn2-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-8,70},{12,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn3_Lights(
+        tableOnFile=true,
+        tableName="L1-Zn3-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{28,70},{48,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Zn4_Lights(
+        tableOnFile=true,
+        tableName="L1-Zn4-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{64,70},{84,90}})));
+
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_30(V = 19.5, alpha = 0.26452, beta = 0.12526, gamma = 0.0020109);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_45(V = 19.5, alpha = 0.42081, beta = 0.12526, gamma = 0.001341);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 4.27984, beta = -0.004643965, gamma = 0.0000985992);
+
+    /* Insert models here */
+
+    /* AC/DC Converter Light_Conv_40 */
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_40(modelData = modelData_DCDC);
+
+    /* Light Model 272 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_40(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=38.77);
+      HPF.DC.Variable_DC_Load Light_272;
+
+    /* Light Model 271 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_272(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_272(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_272(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_271;
+
+    /* Light Model 270 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_271(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_271(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_271(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_270;
+
+    /* Light Model 269 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_270(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_270(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_270(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_269;
+
+    /* Light Model 268 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_269(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_269(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_269(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_268;
+
+    /* Light Model 267 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_268(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_268(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_268(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_267;
+
+    /* AC/DC Converter Light_Conv_37 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_267(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_267(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_267(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_37(modelData = modelData_DCDC);
+
+    /* Light Model 262 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_37(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=36.68);
+      HPF.DC.Variable_DC_Load Light_262;
+
+    /* Light Model 261 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_262(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_262(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_262(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_261;
+
+    /* Light Model 260 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_261(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_261(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_261(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_260;
+
+    /* Light Model 259 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_260(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_260(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_260(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_259;
+
+    /* Light Model 258 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_259(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_259(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_259(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_258;
+
+    /* Light Model 257 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_258(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_258(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_258(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_257;
+
+    /* Light Model 240 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_257(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_257(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_257(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_240;
+
+    /* Light Model 238 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_240(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_240(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_240(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_238;
+
+    /* AC/DC Converter Light_Conv_39 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_238(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_238(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_238(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_39(modelData = modelData_DCDC);
+
+    /* Light Model 266 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_39(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=36.15);
+      HPF.DC.Variable_DC_Load Light_266;
+
+    /* Light Model 265 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_266(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_266(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_266(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_265;
+
+    /* Light Model 264 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_265(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_265(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_265(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_264;
+
+    /* Light Model 263 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_264(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_264(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_264(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_263;
+
+    /* Light Model 237 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_263(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_263(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_263(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_237;
+
+    /* Light Model 236 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_237(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_237(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_237(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_236;
+
+    /* Light Model 212 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_236(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_236(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_236(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_212;
+
+    /* Light Model 211 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_212(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_212(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_212(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_211;
+
+    /* AC/DC Converter Light_Conv_38 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_211(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_211(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_211(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_38(modelData = modelData_DCDC);
+
+    /* Light Model 215 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_38(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=27.75);
+      HPF.DC.Variable_DC_Load Light_215;
+
+    /* Light Model 214 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_215(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_215(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_215(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_214;
+
+    /* Light Model 213 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_214(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_214(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_214(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_213;
+
+    /* Light Model 209 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_213(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_213(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_213(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_209;
+
+    /* Light Model 208 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_209(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_209(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_209(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_208;
+
+    /* Light Model 207 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_208(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_208(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_208(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_207;
+
+    /* Light Model 206 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_207(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_207(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_207(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_206;
+
+    /* AC/DC Converter Light_Conv_41 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_206(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_206(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_206(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_41(modelData = modelData_DCDC);
+
+    /* Light Model 253 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_41(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=32.26);
+      HPF.DC.Variable_DC_Load Light_253;
+
+    /* Light Model 250 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_253(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_253(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_253(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_250;
+
+    /* Light Model 249 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_250(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_250(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_250(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_249;
+
+    /* Light Model 248 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_249(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_249(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_249(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_248;
+
+    /* Light Model 247 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_248(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_248(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_248(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_247;
+
+    /* Light Model 242 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_247(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_247(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_247(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_242;
+
+    /* Light Model 204 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_242(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_242(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_242(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_204;
+
+    /* Light Model 190 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_204(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_204(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_204(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_190;
+
+    /* AC/DC Converter Light_Conv_36 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_190(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_190(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_190(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_36(modelData = modelData_DCDC);
+
+    /* Light Model 218 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_36(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=29.12);
+      HPF.DC.Variable_DC_Load Light_218;
+
+    /* Light Model 217 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_218(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_218(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_218(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_217;
+
+    /* Light Model 216 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_217(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_217(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_217(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_216;
+
+    /* Light Model 205 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_216(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_216(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_216(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_205;
+
+    /* Light Model 198 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_205(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_205(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_205(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_198;
+
+    /* Light Model 197 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_198(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_198(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_198(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_197;
+
+    /* Light Model 196 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_197(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_197(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_197(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_196;
+
+    /* Light Model 188 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_196(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_196(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_196(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_188;
+
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_188(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_188(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_188(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+
+      Modelica.Electrical.Analog.Interfaces.PositivePin p
+        "Positive electrical pin of port 1" annotation (Placement(transformation(
+              extent={{-114,10},{-94,30}}), iconTransformation(extent={{-110,90},{-90,
+                110}})));
+      HPF.Cables.NEC_CableModelDC cable_light_L1_2C(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+          length=15) annotation (Placement(visible=true, transformation(
+            origin={-38,20},
+            extent={{10,-10},{-10,10}},
+            rotation=0)));
+    equation
+
+    /* Insert equation here */
+
+    /* AC/DC Converter Light_Conv_40 */
+      connect(cable_Light_Conv_40.n, cable_light_L1_2C.p);
+      connect(Light_Conv_40.p1,  cable_Light_Conv_40.p);
+      connect(Light_Conv_40.n1, GndDC.p);
+      connect(Light_Conv_40.n2, GndDC.p);
+
+    /* Light Connections 272 */
+      connect(Light_driver_272.n2, GndDC.p);
+      connect(Light_driver_272.n1, GndDC.p);
+      connect(Light_272.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn3_Lights.y[1], Gain_Light_driver_272.u);
+      connect(Gain_Light_driver_272.y, Light_272.u);
+      connect(Light_272.p, Light_driver_272.p2);
+      connect(Light_driver_272.p1,  cable_light_272.p);
+      connect(Light_Conv_40.p2, cable_light_272.n);
+
+    /* Light Connections 271 */
+      connect(Light_driver_271.n2, GndDC.p);
+      connect(Light_driver_271.n1, GndDC.p);
+      connect(Light_271.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn3_Lights.y[1], Gain_Light_driver_271.u);
+      connect(Gain_Light_driver_271.y, Light_271.u);
+      connect(Light_271.p, Light_driver_271.p2);
+      connect(Light_driver_271.p1,  cable_light_271.p);
+      connect(Light_Conv_40.p2, cable_light_271.n);
+
+    /* Light Connections 270 */
+      connect(Light_driver_270.n2, GndDC.p);
+      connect(Light_driver_270.n1, GndDC.p);
+      connect(Light_270.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn3_Lights.y[1], Gain_Light_driver_270.u);
+      connect(Gain_Light_driver_270.y, Light_270.u);
+      connect(Light_270.p, Light_driver_270.p2);
+      connect(Light_driver_270.p1,  cable_light_270.p);
+      connect(Light_Conv_40.p2, cable_light_270.n);
+
+    /* Light Connections 269 */
+      connect(Light_driver_269.n2, GndDC.p);
+      connect(Light_driver_269.n1, GndDC.p);
+      connect(Light_269.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn3_Lights.y[1], Gain_Light_driver_269.u);
+      connect(Gain_Light_driver_269.y, Light_269.u);
+      connect(Light_269.p, Light_driver_269.p2);
+      connect(Light_driver_269.p1,  cable_light_269.p);
+      connect(Light_Conv_40.p2, cable_light_269.n);
+
+    /* Light Connections 268 */
+      connect(Light_driver_268.n2, GndDC.p);
+      connect(Light_driver_268.n1, GndDC.p);
+      connect(Light_268.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn3_Lights.y[1], Gain_Light_driver_268.u);
+      connect(Gain_Light_driver_268.y, Light_268.u);
+      connect(Light_268.p, Light_driver_268.p2);
+      connect(Light_driver_268.p1,  cable_light_268.p);
+      connect(Light_Conv_40.p2, cable_light_268.n);
+
+    /* Light Connections 267 */
+      connect(Light_driver_267.n2, GndDC.p);
+      connect(Light_driver_267.n1, GndDC.p);
+      connect(Light_267.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn3_Lights.y[1], Gain_Light_driver_267.u);
+      connect(Gain_Light_driver_267.y, Light_267.u);
+      connect(Light_267.p, Light_driver_267.p2);
+      connect(Light_driver_267.p1,  cable_light_267.p);
+      connect(Light_Conv_40.p2, cable_light_267.n);
+
+    /* AC/DC Converter Light_Conv_37 */
+      connect(cable_Light_Conv_37.n, cable_light_L1_2C.p);
+      connect(Light_Conv_37.p1,  cable_Light_Conv_37.p);
+      connect(Light_Conv_37.n1, GndDC.p);
+      connect(Light_Conv_37.n2, GndDC.p);
+
+    /* Light Connections 262 */
+      connect(Light_driver_262.n2, GndDC.p);
+      connect(Light_driver_262.n1, GndDC.p);
+      connect(Light_262.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_262.u);
+      connect(Gain_Light_driver_262.y, Light_262.u);
+      connect(Light_262.p, Light_driver_262.p2);
+      connect(Light_driver_262.p1,  cable_light_262.p);
+      connect(Light_Conv_37.p2, cable_light_262.n);
+
+    /* Light Connections 261 */
+      connect(Light_driver_261.n2, GndDC.p);
+      connect(Light_driver_261.n1, GndDC.p);
+      connect(Light_261.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_261.u);
+      connect(Gain_Light_driver_261.y, Light_261.u);
+      connect(Light_261.p, Light_driver_261.p2);
+      connect(Light_driver_261.p1,  cable_light_261.p);
+      connect(Light_Conv_37.p2, cable_light_261.n);
+
+    /* Light Connections 260 */
+      connect(Light_driver_260.n2, GndDC.p);
+      connect(Light_driver_260.n1, GndDC.p);
+      connect(Light_260.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn2_Lights.y[1], Gain_Light_driver_260.u);
+      connect(Gain_Light_driver_260.y, Light_260.u);
+      connect(Light_260.p, Light_driver_260.p2);
+      connect(Light_driver_260.p1,  cable_light_260.p);
+      connect(Light_Conv_37.p2, cable_light_260.n);
+
+    /* Light Connections 259 */
+      connect(Light_driver_259.n2, GndDC.p);
+      connect(Light_driver_259.n1, GndDC.p);
+      connect(Light_259.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn2_Lights.y[1], Gain_Light_driver_259.u);
+      connect(Gain_Light_driver_259.y, Light_259.u);
+      connect(Light_259.p, Light_driver_259.p2);
+      connect(Light_driver_259.p1,  cable_light_259.p);
+      connect(Light_Conv_37.p2, cable_light_259.n);
+
+    /* Light Connections 258 */
+      connect(Light_driver_258.n2, GndDC.p);
+      connect(Light_driver_258.n1, GndDC.p);
+      connect(Light_258.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_258.u);
+      connect(Gain_Light_driver_258.y, Light_258.u);
+      connect(Light_258.p, Light_driver_258.p2);
+      connect(Light_driver_258.p1,  cable_light_258.p);
+      connect(Light_Conv_37.p2, cable_light_258.n);
+
+    /* Light Connections 257 */
+      connect(Light_driver_257.n2, GndDC.p);
+      connect(Light_driver_257.n1, GndDC.p);
+      connect(Light_257.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_257.u);
+      connect(Gain_Light_driver_257.y, Light_257.u);
+      connect(Light_257.p, Light_driver_257.p2);
+      connect(Light_driver_257.p1,  cable_light_257.p);
+      connect(Light_Conv_37.p2, cable_light_257.n);
+
+    /* Light Connections 240 */
+      connect(Light_driver_240.n2, GndDC.p);
+      connect(Light_driver_240.n1, GndDC.p);
+      connect(Light_240.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_240.u);
+      connect(Gain_Light_driver_240.y, Light_240.u);
+      connect(Light_240.p, Light_driver_240.p2);
+      connect(Light_driver_240.p1,  cable_light_240.p);
+      connect(Light_Conv_37.p2, cable_light_240.n);
+
+    /* Light Connections 238 */
+      connect(Light_driver_238.n2, GndDC.p);
+      connect(Light_driver_238.n1, GndDC.p);
+      connect(Light_238.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_238.u);
+      connect(Gain_Light_driver_238.y, Light_238.u);
+      connect(Light_238.p, Light_driver_238.p2);
+      connect(Light_driver_238.p1,  cable_light_238.p);
+      connect(Light_Conv_37.p2, cable_light_238.n);
+
+    /* AC/DC Converter Light_Conv_39 */
+      connect(cable_Light_Conv_39.n, cable_light_L1_2C.p);
+      connect(Light_Conv_39.p1,  cable_Light_Conv_39.p);
+      connect(Light_Conv_39.n1, GndDC.p);
+      connect(Light_Conv_39.n2, GndDC.p);
+
+    /* Light Connections 266 */
+      connect(Light_driver_266.n2, GndDC.p);
+      connect(Light_driver_266.n1, GndDC.p);
+      connect(Light_266.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_266.u);
+      connect(Gain_Light_driver_266.y, Light_266.u);
+      connect(Light_266.p, Light_driver_266.p2);
+      connect(Light_driver_266.p1,  cable_light_266.p);
+      connect(Light_Conv_39.p2, cable_light_266.n);
+
+    /* Light Connections 265 */
+      connect(Light_driver_265.n2, GndDC.p);
+      connect(Light_driver_265.n1, GndDC.p);
+      connect(Light_265.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_265.u);
+      connect(Gain_Light_driver_265.y, Light_265.u);
+      connect(Light_265.p, Light_driver_265.p2);
+      connect(Light_driver_265.p1,  cable_light_265.p);
+      connect(Light_Conv_39.p2, cable_light_265.n);
+
+    /* Light Connections 264 */
+      connect(Light_driver_264.n2, GndDC.p);
+      connect(Light_driver_264.n1, GndDC.p);
+      connect(Light_264.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn2_Lights.y[1], Gain_Light_driver_264.u);
+      connect(Gain_Light_driver_264.y, Light_264.u);
+      connect(Light_264.p, Light_driver_264.p2);
+      connect(Light_driver_264.p1,  cable_light_264.p);
+      connect(Light_Conv_39.p2, cable_light_264.n);
+
+    /* Light Connections 263 */
+      connect(Light_driver_263.n2, GndDC.p);
+      connect(Light_driver_263.n1, GndDC.p);
+      connect(Light_263.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn2_Lights.y[1], Gain_Light_driver_263.u);
+      connect(Gain_Light_driver_263.y, Light_263.u);
+      connect(Light_263.p, Light_driver_263.p2);
+      connect(Light_driver_263.p1,  cable_light_263.p);
+      connect(Light_Conv_39.p2, cable_light_263.n);
+
+    /* Light Connections 237 */
+      connect(Light_driver_237.n2, GndDC.p);
+      connect(Light_driver_237.n1, GndDC.p);
+      connect(Light_237.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_237.u);
+      connect(Gain_Light_driver_237.y, Light_237.u);
+      connect(Light_237.p, Light_driver_237.p2);
+      connect(Light_driver_237.p1,  cable_light_237.p);
+      connect(Light_Conv_39.p2, cable_light_237.n);
+
+    /* Light Connections 236 */
+      connect(Light_driver_236.n2, GndDC.p);
+      connect(Light_driver_236.n1, GndDC.p);
+      connect(Light_236.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_236.u);
+      connect(Gain_Light_driver_236.y, Light_236.u);
+      connect(Light_236.p, Light_driver_236.p2);
+      connect(Light_driver_236.p1,  cable_light_236.p);
+      connect(Light_Conv_39.p2, cable_light_236.n);
+
+    /* Light Connections 212 */
+      connect(Light_driver_212.n2, GndDC.p);
+      connect(Light_driver_212.n1, GndDC.p);
+      connect(Light_212.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_212.u);
+      connect(Gain_Light_driver_212.y, Light_212.u);
+      connect(Light_212.p, Light_driver_212.p2);
+      connect(Light_driver_212.p1,  cable_light_212.p);
+      connect(Light_Conv_39.p2, cable_light_212.n);
+
+    /* Light Connections 211 */
+      connect(Light_driver_211.n2, GndDC.p);
+      connect(Light_driver_211.n1, GndDC.p);
+      connect(Light_211.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_211.u);
+      connect(Gain_Light_driver_211.y, Light_211.u);
+      connect(Light_211.p, Light_driver_211.p2);
+      connect(Light_driver_211.p1,  cable_light_211.p);
+      connect(Light_Conv_39.p2, cable_light_211.n);
+
+    /* AC/DC Converter Light_Conv_38 */
+      connect(cable_Light_Conv_38.n, cable_light_L1_2C.p);
+      connect(Light_Conv_38.p1,  cable_Light_Conv_38.p);
+      connect(Light_Conv_38.n1, GndDC.p);
+      connect(Light_Conv_38.n2, GndDC.p);
+
+    /* Light Connections 215 */
+      connect(Light_driver_215.n2, GndDC.p);
+      connect(Light_driver_215.n1, GndDC.p);
+      connect(Light_215.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_215.u);
+      connect(Gain_Light_driver_215.y, Light_215.u);
+      connect(Light_215.p, Light_driver_215.p2);
+      connect(Light_driver_215.p1,  cable_light_215.p);
+      connect(Light_Conv_38.p2, cable_light_215.n);
+
+    /* Light Connections 214 */
+      connect(Light_driver_214.n2, GndDC.p);
+      connect(Light_driver_214.n1, GndDC.p);
+      connect(Light_214.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_214.u);
+      connect(Gain_Light_driver_214.y, Light_214.u);
+      connect(Light_214.p, Light_driver_214.p2);
+      connect(Light_driver_214.p1,  cable_light_214.p);
+      connect(Light_Conv_38.p2, cable_light_214.n);
+
+    /* Light Connections 213 */
+      connect(Light_driver_213.n2, GndDC.p);
+      connect(Light_driver_213.n1, GndDC.p);
+      connect(Light_213.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_213.u);
+      connect(Gain_Light_driver_213.y, Light_213.u);
+      connect(Light_213.p, Light_driver_213.p2);
+      connect(Light_driver_213.p1,  cable_light_213.p);
+      connect(Light_Conv_38.p2, cable_light_213.n);
+
+    /* Light Connections 209 */
+      connect(Light_driver_209.n2, GndDC.p);
+      connect(Light_driver_209.n1, GndDC.p);
+      connect(Light_209.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_209.u);
+      connect(Gain_Light_driver_209.y, Light_209.u);
+      connect(Light_209.p, Light_driver_209.p2);
+      connect(Light_driver_209.p1,  cable_light_209.p);
+      connect(Light_Conv_38.p2, cable_light_209.n);
+
+    /* Light Connections 208 */
+      connect(Light_driver_208.n2, GndDC.p);
+      connect(Light_driver_208.n1, GndDC.p);
+      connect(Light_208.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_208.u);
+      connect(Gain_Light_driver_208.y, Light_208.u);
+      connect(Light_208.p, Light_driver_208.p2);
+      connect(Light_driver_208.p1,  cable_light_208.p);
+      connect(Light_Conv_38.p2, cable_light_208.n);
+
+    /* Light Connections 207 */
+      connect(Light_driver_207.n2, GndDC.p);
+      connect(Light_driver_207.n1, GndDC.p);
+      connect(Light_207.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_207.u);
+      connect(Gain_Light_driver_207.y, Light_207.u);
+      connect(Light_207.p, Light_driver_207.p2);
+      connect(Light_driver_207.p1,  cable_light_207.p);
+      connect(Light_Conv_38.p2, cable_light_207.n);
+
+    /* Light Connections 206 */
+      connect(Light_driver_206.n2, GndDC.p);
+      connect(Light_driver_206.n1, GndDC.p);
+      connect(Light_206.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_206.u);
+      connect(Gain_Light_driver_206.y, Light_206.u);
+      connect(Light_206.p, Light_driver_206.p2);
+      connect(Light_driver_206.p1,  cable_light_206.p);
+      connect(Light_Conv_38.p2, cable_light_206.n);
+
+    /* AC/DC Converter Light_Conv_41 */
+      connect(cable_Light_Conv_41.n, cable_light_L1_2C.p);
+      connect(Light_Conv_41.p1,  cable_Light_Conv_41.p);
+      connect(Light_Conv_41.n1, GndDC.p);
+      connect(Light_Conv_41.n2, GndDC.p);
+
+    /* Light Connections 253 */
+      connect(Light_driver_253.n2, GndDC.p);
+      connect(Light_driver_253.n1, GndDC.p);
+      connect(Light_253.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_253.u);
+      connect(Gain_Light_driver_253.y, Light_253.u);
+      connect(Light_253.p, Light_driver_253.p2);
+      connect(Light_driver_253.p1,  cable_light_253.p);
+      connect(Light_Conv_41.p2, cable_light_253.n);
+
+    /* Light Connections 250 */
+      connect(Light_driver_250.n2, GndDC.p);
+      connect(Light_driver_250.n1, GndDC.p);
+      connect(Light_250.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_250.u);
+      connect(Gain_Light_driver_250.y, Light_250.u);
+      connect(Light_250.p, Light_driver_250.p2);
+      connect(Light_driver_250.p1,  cable_light_250.p);
+      connect(Light_Conv_41.p2, cable_light_250.n);
+
+    /* Light Connections 249 */
+      connect(Light_driver_249.n2, GndDC.p);
+      connect(Light_driver_249.n1, GndDC.p);
+      connect(Light_249.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_249.u);
+      connect(Gain_Light_driver_249.y, Light_249.u);
+      connect(Light_249.p, Light_driver_249.p2);
+      connect(Light_driver_249.p1,  cable_light_249.p);
+      connect(Light_Conv_41.p2, cable_light_249.n);
+
+    /* Light Connections 248 */
+      connect(Light_driver_248.n2, GndDC.p);
+      connect(Light_driver_248.n1, GndDC.p);
+      connect(Light_248.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn2_Lights.y[1], Gain_Light_driver_248.u);
+      connect(Gain_Light_driver_248.y, Light_248.u);
+      connect(Light_248.p, Light_driver_248.p2);
+      connect(Light_driver_248.p1,  cable_light_248.p);
+      connect(Light_Conv_41.p2, cable_light_248.n);
+
+    /* Light Connections 247 */
+      connect(Light_driver_247.n2, GndDC.p);
+      connect(Light_driver_247.n1, GndDC.p);
+      connect(Light_247.n, GndDC.p);
+      connect(combiTimeTable_L1_Zn2_Lights.y[1], Gain_Light_driver_247.u);
+      connect(Gain_Light_driver_247.y, Light_247.u);
+      connect(Light_247.p, Light_driver_247.p2);
+      connect(Light_driver_247.p1,  cable_light_247.p);
+      connect(Light_Conv_41.p2, cable_light_247.n);
+
+    /* Light Connections 242 */
+      connect(Light_driver_242.n2, GndDC.p);
+      connect(Light_driver_242.n1, GndDC.p);
+      connect(Light_242.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_242.u);
+      connect(Gain_Light_driver_242.y, Light_242.u);
+      connect(Light_242.p, Light_driver_242.p2);
+      connect(Light_driver_242.p1,  cable_light_242.p);
+      connect(Light_Conv_41.p2, cable_light_242.n);
+
+    /* Light Connections 204 */
+      connect(Light_driver_204.n2, GndDC.p);
+      connect(Light_driver_204.n1, GndDC.p);
+      connect(Light_204.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_204.u);
+      connect(Gain_Light_driver_204.y, Light_204.u);
+      connect(Light_204.p, Light_driver_204.p2);
+      connect(Light_driver_204.p1,  cable_light_204.p);
+      connect(Light_Conv_41.p2, cable_light_204.n);
+
+    /* Light Connections 190 */
+      connect(Light_driver_190.n2, GndDC.p);
+      connect(Light_driver_190.n1, GndDC.p);
+      connect(Light_190.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_190.u);
+      connect(Gain_Light_driver_190.y, Light_190.u);
+      connect(Light_190.p, Light_driver_190.p2);
+      connect(Light_driver_190.p1,  cable_light_190.p);
+      connect(Light_Conv_41.p2, cable_light_190.n);
+
+    /* AC/DC Converter Light_Conv_36 */
+      connect(cable_Light_Conv_36.n, cable_light_L1_2C.p);
+      connect(Light_Conv_36.p1,  cable_Light_Conv_36.p);
+      connect(Light_Conv_36.n1, GndDC.p);
+      connect(Light_Conv_36.n2, GndDC.p);
+
+    /* Light Connections 218 */
+      connect(Light_driver_218.n2, GndDC.p);
+      connect(Light_driver_218.n1, GndDC.p);
+      connect(Light_218.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_218.u);
+      connect(Gain_Light_driver_218.y, Light_218.u);
+      connect(Light_218.p, Light_driver_218.p2);
+      connect(Light_driver_218.p1,  cable_light_218.p);
+      connect(Light_Conv_36.p2, cable_light_218.n);
+
+    /* Light Connections 217 */
+      connect(Light_driver_217.n2, GndDC.p);
+      connect(Light_driver_217.n1, GndDC.p);
+      connect(Light_217.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_217.u);
+      connect(Gain_Light_driver_217.y, Light_217.u);
+      connect(Light_217.p, Light_driver_217.p2);
+      connect(Light_driver_217.p1,  cable_light_217.p);
+      connect(Light_Conv_36.p2, cable_light_217.n);
+
+    /* Light Connections 216 */
+      connect(Light_driver_216.n2, GndDC.p);
+      connect(Light_driver_216.n1, GndDC.p);
+      connect(Light_216.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_216.u);
+      connect(Gain_Light_driver_216.y, Light_216.u);
+      connect(Light_216.p, Light_driver_216.p2);
+      connect(Light_driver_216.p1,  cable_light_216.p);
+      connect(Light_Conv_36.p2, cable_light_216.n);
+
+    /* Light Connections 205 */
+      connect(Light_driver_205.n2, GndDC.p);
+      connect(Light_driver_205.n1, GndDC.p);
+      connect(Light_205.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_205.u);
+      connect(Gain_Light_driver_205.y, Light_205.u);
+      connect(Light_205.p, Light_driver_205.p2);
+      connect(Light_driver_205.p1,  cable_light_205.p);
+      connect(Light_Conv_36.p2, cable_light_205.n);
+
+    /* Light Connections 198 */
+      connect(Light_driver_198.n2, GndDC.p);
+      connect(Light_driver_198.n1, GndDC.p);
+      connect(Light_198.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_198.u);
+      connect(Gain_Light_driver_198.y, Light_198.u);
+      connect(Light_198.p, Light_driver_198.p2);
+      connect(Light_driver_198.p1,  cable_light_198.p);
+      connect(Light_Conv_36.p2, cable_light_198.n);
+
+    /* Light Connections 197 */
+      connect(Light_driver_197.n2, GndDC.p);
+      connect(Light_driver_197.n1, GndDC.p);
+      connect(Light_197.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_197.u);
+      connect(Gain_Light_driver_197.y, Light_197.u);
+      connect(Light_197.p, Light_driver_197.p2);
+      connect(Light_driver_197.p1,  cable_light_197.p);
+      connect(Light_Conv_36.p2, cable_light_197.n);
+
+    /* Light Connections 196 */
+      connect(Light_driver_196.n2, GndDC.p);
+      connect(Light_driver_196.n1, GndDC.p);
+      connect(Light_196.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_196.u);
+      connect(Gain_Light_driver_196.y, Light_196.u);
+      connect(Light_196.p, Light_driver_196.p2);
+      connect(Light_driver_196.p1,  cable_light_196.p);
+      connect(Light_Conv_36.p2, cable_light_196.n);
+
+    /* Light Connections 188 */
+      connect(Light_driver_188.n2, GndDC.p);
+      connect(Light_driver_188.n1, GndDC.p);
+      connect(Light_188.n, GndDC.p);
+      connect(combiTimeTable_L1_Core_Lights.y[1], Gain_Light_driver_188.u);
+      connect(Gain_Light_driver_188.y, Light_188.u);
+      connect(Light_188.p, Light_driver_188.p2);
+      connect(Light_driver_188.p1,  cable_light_188.p);
+      connect(Light_Conv_36.p2, cable_light_188.n);
+
+      connect(cable_light_L1_2C.n, p)
+        annotation (Line(points={{-48,20},{-104,20}}, color={0,0,255}));
+      annotation ();
+    end DC_ACDC_Light_Panel_L1_2C;
+
+    model DC_ACDC_Light_Panel_L2_1A
+      outer HPF.SystemDef systemDef;
+      Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+        Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Core_Lights(
+        tableOnFile=true,
+        tableName="L2-Core-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-74,70},{-54,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn1_Lights(
+        tableOnFile=true,
+        tableName="L2-Zn1-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-40,70},{-20,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn2_Lights(
+        tableOnFile=true,
+        tableName="L2-Zn2-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-8,70},{12,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn3_Lights(
+        tableOnFile=true,
+        tableName="L2-Zn3-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{28,70},{48,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn4_Lights(
+        tableOnFile=true,
+        tableName="L2-Zn4-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{64,70},{84,90}})));
+
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_30(V = 19.5, alpha = 0.26452, beta = 0.12526, gamma = 0.0020109);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_45(V = 19.5, alpha = 0.42081, beta = 0.12526, gamma = 0.001341);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 4.27984, beta = -0.004643965, gamma = 0.0000985992);
+
+    /* Insert models here */
+
+    /* AC/DC Converter Light_Conv_43 */
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_43(modelData = modelData_DCDC);
+
+    /* Light Model 542 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_43(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=23.19);
+      HPF.DC.Variable_DC_Load Light_542;
+
+    /* Light Model 541 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_542(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_542(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_542(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_541;
+
+    /* Light Model 540 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_541(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_541(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_541(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_540;
+
+    /* Light Model 539 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_540(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_540(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_540(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_539;
+
+    /* Light Model 538 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_539(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_539(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_539(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_538;
+
+    /* Light Model 537 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_538(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_538(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_538(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_537;
+
+    /* Light Model 536 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_537(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_537(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_537(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_536;
+
+    /* Light Model 535 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_536(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_536(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_536(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_535;
+
+    /* AC/DC Converter Light_Conv_46 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_535(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_535(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_535(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_46(modelData = modelData_DCDC);
+
+    /* Light Model 533 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_46(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=19.58);
+      HPF.DC.Variable_DC_Load Light_533;
+
+    /* Light Model 532 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_533(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_533(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_533(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_532;
+
+    /* Light Model 531 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_532(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_532(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_532(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_531;
+
+    /* Light Model 530 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_531(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_531(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_531(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_530;
+
+    /* Light Model 528 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_530(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_530(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_530(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_528;
+
+    /* Light Model 527 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_528(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_528(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_528(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_527;
+
+    /* Light Model 526 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_527(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_527(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_527(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_526;
+
+    /* Light Model 525 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_526(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_526(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_526(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_525;
+
+    /* AC/DC Converter Light_Conv_45 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_525(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_525(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_525(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_45(modelData = modelData_DCDC);
+
+    /* Light Model 476 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_45(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=17.32);
+      HPF.DC.Variable_DC_Load Light_476;
+
+    /* Light Model 474 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_476(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_476(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_476(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_474;
+
+    /* Light Model 473 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_474(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_474(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_474(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_473;
+
+    /* Light Model 472 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_473(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_473(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_473(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_472;
+
+    /* Light Model 470 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_472(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_472(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_472(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_470;
+
+    /* Light Model 469 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_470(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_470(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_470(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_469;
+
+    /* Light Model 468 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_469(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_469(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_469(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_468;
+
+    /* Light Model 467 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_468(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_468(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_468(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_467;
+
+    /* AC/DC Converter Light_Conv_42 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_467(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_467(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_467(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_42(modelData = modelData_DCDC);
+
+    /* Light Model 466 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_42(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=27.38);
+      HPF.DC.Variable_DC_Load Light_466;
+
+    /* Light Model 465 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_466(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_466(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_466(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_465;
+
+    /* Light Model 464 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_465(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_465(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_465(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_464;
+
+    /* Light Model 463 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_464(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_464(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_464(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_463;
+
+    /* Light Model 462 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_463(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_463(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_463(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_462;
+
+    /* Light Model 461 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_462(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_462(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_462(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_461;
+
+    /* Light Model 460 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_461(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_461(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_461(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_460;
+
+    /* Light Model 459 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_460(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_460(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_460(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_459;
+
+    /* AC/DC Converter Light_Conv_44 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_459(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_459(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_459(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_44(modelData = modelData_DCDC);
+
+    /* Light Model 475 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_44(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=22.29);
+      HPF.DC.Variable_DC_Load Light_475;
+
+    /* Light Model 471 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_475(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_475(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_475(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_471;
+
+    /* Light Model 458 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_471(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_471(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_471(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_458;
+
+    /* Light Model 457 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_458(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_458(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_458(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_457;
+
+    /* Light Model 456 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_457(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_457(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_457(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_456;
+
+    /* Light Model 455 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_456(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_456(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_456(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_455;
+
+    /* Light Model 454 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_455(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_455(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_455(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_454;
+
+    /* Light Model 453 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_454(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_454(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_454(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_453;
+
+    /* AC/DC Converter Light_Conv_56 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_453(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_453(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_453(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_56(modelData = modelData_DCDC);
+
+    /* Light Model 321 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_56(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=4.88);
+      HPF.DC.Variable_DC_Load Light_321;
+
+    /* Light Model 320 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_321(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_321(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_321(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_320;
+
+    /* Light Model 308 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_320(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_320(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_320(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_308;
+
+    /* Light Model 307 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_308(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_308(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_308(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_307;
+
+    /* Light Model 300 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_307(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_307(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_307(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_300;
+
+    /* Light Model 299 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_300(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_300(k=35) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_300(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_299;
+
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_299(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_299(k=35) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_299(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+
+      Modelica.Electrical.Analog.Interfaces.PositivePin p
+        "Positive electrical pin of port 1" annotation (Placement(transformation(
+              extent={{-114,10},{-94,30}}), iconTransformation(extent={{-110,90},{-90,
+                110}})));
+      HPF.Cables.NEC_CableModelDC cable_light_L2_1A(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+          length=15) annotation (Placement(visible=true, transformation(
+            origin={-38,20},
+            extent={{10,-10},{-10,10}},
+            rotation=0)));
+    equation
+
+    /* Insert equation here */
+
+    /* AC/DC Converter Light_Conv_43 */
+      connect(cable_Light_Conv_43.n, cable_light_L2_1A.p);
+      connect(Light_Conv_43.p1,  cable_Light_Conv_43.p);
+      connect(Light_Conv_43.n1, GndDC.p);
+      connect(Light_Conv_43.n2, GndDC.p);
+
+    /* Light Connections 542 */
+      connect(Light_driver_542.n2, GndDC.p);
+      connect(Light_driver_542.n1, GndDC.p);
+      connect(Light_542.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_542.u);
+      connect(Gain_Light_driver_542.y, Light_542.u);
+      connect(Light_542.p, Light_driver_542.p2);
+      connect(Light_driver_542.p1,  cable_light_542.p);
+      connect(Light_Conv_43.p2, cable_light_542.n);
+
+    /* Light Connections 541 */
+      connect(Light_driver_541.n2, GndDC.p);
+      connect(Light_driver_541.n1, GndDC.p);
+      connect(Light_541.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_541.u);
+      connect(Gain_Light_driver_541.y, Light_541.u);
+      connect(Light_541.p, Light_driver_541.p2);
+      connect(Light_driver_541.p1,  cable_light_541.p);
+      connect(Light_Conv_43.p2, cable_light_541.n);
+
+    /* Light Connections 540 */
+      connect(Light_driver_540.n2, GndDC.p);
+      connect(Light_driver_540.n1, GndDC.p);
+      connect(Light_540.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_540.u);
+      connect(Gain_Light_driver_540.y, Light_540.u);
+      connect(Light_540.p, Light_driver_540.p2);
+      connect(Light_driver_540.p1,  cable_light_540.p);
+      connect(Light_Conv_43.p2, cable_light_540.n);
+
+    /* Light Connections 539 */
+      connect(Light_driver_539.n2, GndDC.p);
+      connect(Light_driver_539.n1, GndDC.p);
+      connect(Light_539.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_539.u);
+      connect(Gain_Light_driver_539.y, Light_539.u);
+      connect(Light_539.p, Light_driver_539.p2);
+      connect(Light_driver_539.p1,  cable_light_539.p);
+      connect(Light_Conv_43.p2, cable_light_539.n);
+
+    /* Light Connections 538 */
+      connect(Light_driver_538.n2, GndDC.p);
+      connect(Light_driver_538.n1, GndDC.p);
+      connect(Light_538.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_538.u);
+      connect(Gain_Light_driver_538.y, Light_538.u);
+      connect(Light_538.p, Light_driver_538.p2);
+      connect(Light_driver_538.p1,  cable_light_538.p);
+      connect(Light_Conv_43.p2, cable_light_538.n);
+
+    /* Light Connections 537 */
+      connect(Light_driver_537.n2, GndDC.p);
+      connect(Light_driver_537.n1, GndDC.p);
+      connect(Light_537.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_537.u);
+      connect(Gain_Light_driver_537.y, Light_537.u);
+      connect(Light_537.p, Light_driver_537.p2);
+      connect(Light_driver_537.p1,  cable_light_537.p);
+      connect(Light_Conv_43.p2, cable_light_537.n);
+
+    /* Light Connections 536 */
+      connect(Light_driver_536.n2, GndDC.p);
+      connect(Light_driver_536.n1, GndDC.p);
+      connect(Light_536.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_536.u);
+      connect(Gain_Light_driver_536.y, Light_536.u);
+      connect(Light_536.p, Light_driver_536.p2);
+      connect(Light_driver_536.p1,  cable_light_536.p);
+      connect(Light_Conv_43.p2, cable_light_536.n);
+
+    /* Light Connections 535 */
+      connect(Light_driver_535.n2, GndDC.p);
+      connect(Light_driver_535.n1, GndDC.p);
+      connect(Light_535.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_535.u);
+      connect(Gain_Light_driver_535.y, Light_535.u);
+      connect(Light_535.p, Light_driver_535.p2);
+      connect(Light_driver_535.p1,  cable_light_535.p);
+      connect(Light_Conv_43.p2, cable_light_535.n);
+
+    /* AC/DC Converter Light_Conv_46 */
+      connect(cable_Light_Conv_46.n, cable_light_L2_1A.p);
+      connect(Light_Conv_46.p1,  cable_Light_Conv_46.p);
+      connect(Light_Conv_46.n1, GndDC.p);
+      connect(Light_Conv_46.n2, GndDC.p);
+
+    /* Light Connections 533 */
+      connect(Light_driver_533.n2, GndDC.p);
+      connect(Light_driver_533.n1, GndDC.p);
+      connect(Light_533.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_533.u);
+      connect(Gain_Light_driver_533.y, Light_533.u);
+      connect(Light_533.p, Light_driver_533.p2);
+      connect(Light_driver_533.p1,  cable_light_533.p);
+      connect(Light_Conv_46.p2, cable_light_533.n);
+
+    /* Light Connections 532 */
+      connect(Light_driver_532.n2, GndDC.p);
+      connect(Light_driver_532.n1, GndDC.p);
+      connect(Light_532.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_532.u);
+      connect(Gain_Light_driver_532.y, Light_532.u);
+      connect(Light_532.p, Light_driver_532.p2);
+      connect(Light_driver_532.p1,  cable_light_532.p);
+      connect(Light_Conv_46.p2, cable_light_532.n);
+
+    /* Light Connections 531 */
+      connect(Light_driver_531.n2, GndDC.p);
+      connect(Light_driver_531.n1, GndDC.p);
+      connect(Light_531.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_531.u);
+      connect(Gain_Light_driver_531.y, Light_531.u);
+      connect(Light_531.p, Light_driver_531.p2);
+      connect(Light_driver_531.p1,  cable_light_531.p);
+      connect(Light_Conv_46.p2, cable_light_531.n);
+
+    /* Light Connections 530 */
+      connect(Light_driver_530.n2, GndDC.p);
+      connect(Light_driver_530.n1, GndDC.p);
+      connect(Light_530.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_530.u);
+      connect(Gain_Light_driver_530.y, Light_530.u);
+      connect(Light_530.p, Light_driver_530.p2);
+      connect(Light_driver_530.p1,  cable_light_530.p);
+      connect(Light_Conv_46.p2, cable_light_530.n);
+
+    /* Light Connections 528 */
+      connect(Light_driver_528.n2, GndDC.p);
+      connect(Light_driver_528.n1, GndDC.p);
+      connect(Light_528.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_528.u);
+      connect(Gain_Light_driver_528.y, Light_528.u);
+      connect(Light_528.p, Light_driver_528.p2);
+      connect(Light_driver_528.p1,  cable_light_528.p);
+      connect(Light_Conv_46.p2, cable_light_528.n);
+
+    /* Light Connections 527 */
+      connect(Light_driver_527.n2, GndDC.p);
+      connect(Light_driver_527.n1, GndDC.p);
+      connect(Light_527.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_527.u);
+      connect(Gain_Light_driver_527.y, Light_527.u);
+      connect(Light_527.p, Light_driver_527.p2);
+      connect(Light_driver_527.p1,  cable_light_527.p);
+      connect(Light_Conv_46.p2, cable_light_527.n);
+
+    /* Light Connections 526 */
+      connect(Light_driver_526.n2, GndDC.p);
+      connect(Light_driver_526.n1, GndDC.p);
+      connect(Light_526.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_526.u);
+      connect(Gain_Light_driver_526.y, Light_526.u);
+      connect(Light_526.p, Light_driver_526.p2);
+      connect(Light_driver_526.p1,  cable_light_526.p);
+      connect(Light_Conv_46.p2, cable_light_526.n);
+
+    /* Light Connections 525 */
+      connect(Light_driver_525.n2, GndDC.p);
+      connect(Light_driver_525.n1, GndDC.p);
+      connect(Light_525.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_525.u);
+      connect(Gain_Light_driver_525.y, Light_525.u);
+      connect(Light_525.p, Light_driver_525.p2);
+      connect(Light_driver_525.p1,  cable_light_525.p);
+      connect(Light_Conv_46.p2, cable_light_525.n);
+
+    /* AC/DC Converter Light_Conv_45 */
+      connect(cable_Light_Conv_45.n, cable_light_L2_1A.p);
+      connect(Light_Conv_45.p1,  cable_Light_Conv_45.p);
+      connect(Light_Conv_45.n1, GndDC.p);
+      connect(Light_Conv_45.n2, GndDC.p);
+
+    /* Light Connections 476 */
+      connect(Light_driver_476.n2, GndDC.p);
+      connect(Light_driver_476.n1, GndDC.p);
+      connect(Light_476.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_476.u);
+      connect(Gain_Light_driver_476.y, Light_476.u);
+      connect(Light_476.p, Light_driver_476.p2);
+      connect(Light_driver_476.p1,  cable_light_476.p);
+      connect(Light_Conv_45.p2, cable_light_476.n);
+
+    /* Light Connections 474 */
+      connect(Light_driver_474.n2, GndDC.p);
+      connect(Light_driver_474.n1, GndDC.p);
+      connect(Light_474.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_474.u);
+      connect(Gain_Light_driver_474.y, Light_474.u);
+      connect(Light_474.p, Light_driver_474.p2);
+      connect(Light_driver_474.p1,  cable_light_474.p);
+      connect(Light_Conv_45.p2, cable_light_474.n);
+
+    /* Light Connections 473 */
+      connect(Light_driver_473.n2, GndDC.p);
+      connect(Light_driver_473.n1, GndDC.p);
+      connect(Light_473.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_473.u);
+      connect(Gain_Light_driver_473.y, Light_473.u);
+      connect(Light_473.p, Light_driver_473.p2);
+      connect(Light_driver_473.p1,  cable_light_473.p);
+      connect(Light_Conv_45.p2, cable_light_473.n);
+
+    /* Light Connections 472 */
+      connect(Light_driver_472.n2, GndDC.p);
+      connect(Light_driver_472.n1, GndDC.p);
+      connect(Light_472.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_472.u);
+      connect(Gain_Light_driver_472.y, Light_472.u);
+      connect(Light_472.p, Light_driver_472.p2);
+      connect(Light_driver_472.p1,  cable_light_472.p);
+      connect(Light_Conv_45.p2, cable_light_472.n);
+
+    /* Light Connections 470 */
+      connect(Light_driver_470.n2, GndDC.p);
+      connect(Light_driver_470.n1, GndDC.p);
+      connect(Light_470.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_470.u);
+      connect(Gain_Light_driver_470.y, Light_470.u);
+      connect(Light_470.p, Light_driver_470.p2);
+      connect(Light_driver_470.p1,  cable_light_470.p);
+      connect(Light_Conv_45.p2, cable_light_470.n);
+
+    /* Light Connections 469 */
+      connect(Light_driver_469.n2, GndDC.p);
+      connect(Light_driver_469.n1, GndDC.p);
+      connect(Light_469.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_469.u);
+      connect(Gain_Light_driver_469.y, Light_469.u);
+      connect(Light_469.p, Light_driver_469.p2);
+      connect(Light_driver_469.p1,  cable_light_469.p);
+      connect(Light_Conv_45.p2, cable_light_469.n);
+
+    /* Light Connections 468 */
+      connect(Light_driver_468.n2, GndDC.p);
+      connect(Light_driver_468.n1, GndDC.p);
+      connect(Light_468.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_468.u);
+      connect(Gain_Light_driver_468.y, Light_468.u);
+      connect(Light_468.p, Light_driver_468.p2);
+      connect(Light_driver_468.p1,  cable_light_468.p);
+      connect(Light_Conv_45.p2, cable_light_468.n);
+
+    /* Light Connections 467 */
+      connect(Light_driver_467.n2, GndDC.p);
+      connect(Light_driver_467.n1, GndDC.p);
+      connect(Light_467.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_467.u);
+      connect(Gain_Light_driver_467.y, Light_467.u);
+      connect(Light_467.p, Light_driver_467.p2);
+      connect(Light_driver_467.p1,  cable_light_467.p);
+      connect(Light_Conv_45.p2, cable_light_467.n);
+
+    /* AC/DC Converter Light_Conv_42 */
+      connect(cable_Light_Conv_42.n, cable_light_L2_1A.p);
+      connect(Light_Conv_42.p1,  cable_Light_Conv_42.p);
+      connect(Light_Conv_42.n1, GndDC.p);
+      connect(Light_Conv_42.n2, GndDC.p);
+
+    /* Light Connections 466 */
+      connect(Light_driver_466.n2, GndDC.p);
+      connect(Light_driver_466.n1, GndDC.p);
+      connect(Light_466.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_466.u);
+      connect(Gain_Light_driver_466.y, Light_466.u);
+      connect(Light_466.p, Light_driver_466.p2);
+      connect(Light_driver_466.p1,  cable_light_466.p);
+      connect(Light_Conv_42.p2, cable_light_466.n);
+
+    /* Light Connections 465 */
+      connect(Light_driver_465.n2, GndDC.p);
+      connect(Light_driver_465.n1, GndDC.p);
+      connect(Light_465.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_465.u);
+      connect(Gain_Light_driver_465.y, Light_465.u);
+      connect(Light_465.p, Light_driver_465.p2);
+      connect(Light_driver_465.p1,  cable_light_465.p);
+      connect(Light_Conv_42.p2, cable_light_465.n);
+
+    /* Light Connections 464 */
+      connect(Light_driver_464.n2, GndDC.p);
+      connect(Light_driver_464.n1, GndDC.p);
+      connect(Light_464.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn3_Lights.y[1], Gain_Light_driver_464.u);
+      connect(Gain_Light_driver_464.y, Light_464.u);
+      connect(Light_464.p, Light_driver_464.p2);
+      connect(Light_driver_464.p1,  cable_light_464.p);
+      connect(Light_Conv_42.p2, cable_light_464.n);
+
+    /* Light Connections 463 */
+      connect(Light_driver_463.n2, GndDC.p);
+      connect(Light_driver_463.n1, GndDC.p);
+      connect(Light_463.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn3_Lights.y[1], Gain_Light_driver_463.u);
+      connect(Gain_Light_driver_463.y, Light_463.u);
+      connect(Light_463.p, Light_driver_463.p2);
+      connect(Light_driver_463.p1,  cable_light_463.p);
+      connect(Light_Conv_42.p2, cable_light_463.n);
+
+    /* Light Connections 462 */
+      connect(Light_driver_462.n2, GndDC.p);
+      connect(Light_driver_462.n1, GndDC.p);
+      connect(Light_462.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn3_Lights.y[1], Gain_Light_driver_462.u);
+      connect(Gain_Light_driver_462.y, Light_462.u);
+      connect(Light_462.p, Light_driver_462.p2);
+      connect(Light_driver_462.p1,  cable_light_462.p);
+      connect(Light_Conv_42.p2, cable_light_462.n);
+
+    /* Light Connections 461 */
+      connect(Light_driver_461.n2, GndDC.p);
+      connect(Light_driver_461.n1, GndDC.p);
+      connect(Light_461.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn3_Lights.y[1], Gain_Light_driver_461.u);
+      connect(Gain_Light_driver_461.y, Light_461.u);
+      connect(Light_461.p, Light_driver_461.p2);
+      connect(Light_driver_461.p1,  cable_light_461.p);
+      connect(Light_Conv_42.p2, cable_light_461.n);
+
+    /* Light Connections 460 */
+      connect(Light_driver_460.n2, GndDC.p);
+      connect(Light_driver_460.n1, GndDC.p);
+      connect(Light_460.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_460.u);
+      connect(Gain_Light_driver_460.y, Light_460.u);
+      connect(Light_460.p, Light_driver_460.p2);
+      connect(Light_driver_460.p1,  cable_light_460.p);
+      connect(Light_Conv_42.p2, cable_light_460.n);
+
+    /* Light Connections 459 */
+      connect(Light_driver_459.n2, GndDC.p);
+      connect(Light_driver_459.n1, GndDC.p);
+      connect(Light_459.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_459.u);
+      connect(Gain_Light_driver_459.y, Light_459.u);
+      connect(Light_459.p, Light_driver_459.p2);
+      connect(Light_driver_459.p1,  cable_light_459.p);
+      connect(Light_Conv_42.p2, cable_light_459.n);
+
+    /* AC/DC Converter Light_Conv_44 */
+      connect(cable_Light_Conv_44.n, cable_light_L2_1A.p);
+      connect(Light_Conv_44.p1,  cable_Light_Conv_44.p);
+      connect(Light_Conv_44.n1, GndDC.p);
+      connect(Light_Conv_44.n2, GndDC.p);
+
+    /* Light Connections 475 */
+      connect(Light_driver_475.n2, GndDC.p);
+      connect(Light_driver_475.n1, GndDC.p);
+      connect(Light_475.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_475.u);
+      connect(Gain_Light_driver_475.y, Light_475.u);
+      connect(Light_475.p, Light_driver_475.p2);
+      connect(Light_driver_475.p1,  cable_light_475.p);
+      connect(Light_Conv_44.p2, cable_light_475.n);
+
+    /* Light Connections 471 */
+      connect(Light_driver_471.n2, GndDC.p);
+      connect(Light_driver_471.n1, GndDC.p);
+      connect(Light_471.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_471.u);
+      connect(Gain_Light_driver_471.y, Light_471.u);
+      connect(Light_471.p, Light_driver_471.p2);
+      connect(Light_driver_471.p1,  cable_light_471.p);
+      connect(Light_Conv_44.p2, cable_light_471.n);
+
+    /* Light Connections 458 */
+      connect(Light_driver_458.n2, GndDC.p);
+      connect(Light_driver_458.n1, GndDC.p);
+      connect(Light_458.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn3_Lights.y[1], Gain_Light_driver_458.u);
+      connect(Gain_Light_driver_458.y, Light_458.u);
+      connect(Light_458.p, Light_driver_458.p2);
+      connect(Light_driver_458.p1,  cable_light_458.p);
+      connect(Light_Conv_44.p2, cable_light_458.n);
+
+    /* Light Connections 457 */
+      connect(Light_driver_457.n2, GndDC.p);
+      connect(Light_driver_457.n1, GndDC.p);
+      connect(Light_457.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn3_Lights.y[1], Gain_Light_driver_457.u);
+      connect(Gain_Light_driver_457.y, Light_457.u);
+      connect(Light_457.p, Light_driver_457.p2);
+      connect(Light_driver_457.p1,  cable_light_457.p);
+      connect(Light_Conv_44.p2, cable_light_457.n);
+
+    /* Light Connections 456 */
+      connect(Light_driver_456.n2, GndDC.p);
+      connect(Light_driver_456.n1, GndDC.p);
+      connect(Light_456.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_456.u);
+      connect(Gain_Light_driver_456.y, Light_456.u);
+      connect(Light_456.p, Light_driver_456.p2);
+      connect(Light_driver_456.p1,  cable_light_456.p);
+      connect(Light_Conv_44.p2, cable_light_456.n);
+
+    /* Light Connections 455 */
+      connect(Light_driver_455.n2, GndDC.p);
+      connect(Light_driver_455.n1, GndDC.p);
+      connect(Light_455.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_455.u);
+      connect(Gain_Light_driver_455.y, Light_455.u);
+      connect(Light_455.p, Light_driver_455.p2);
+      connect(Light_driver_455.p1,  cable_light_455.p);
+      connect(Light_Conv_44.p2, cable_light_455.n);
+
+    /* Light Connections 454 */
+      connect(Light_driver_454.n2, GndDC.p);
+      connect(Light_driver_454.n1, GndDC.p);
+      connect(Light_454.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn3_Lights.y[1], Gain_Light_driver_454.u);
+      connect(Gain_Light_driver_454.y, Light_454.u);
+      connect(Light_454.p, Light_driver_454.p2);
+      connect(Light_driver_454.p1,  cable_light_454.p);
+      connect(Light_Conv_44.p2, cable_light_454.n);
+
+    /* Light Connections 453 */
+      connect(Light_driver_453.n2, GndDC.p);
+      connect(Light_driver_453.n1, GndDC.p);
+      connect(Light_453.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn3_Lights.y[1], Gain_Light_driver_453.u);
+      connect(Gain_Light_driver_453.y, Light_453.u);
+      connect(Light_453.p, Light_driver_453.p2);
+      connect(Light_driver_453.p1,  cable_light_453.p);
+      connect(Light_Conv_44.p2, cable_light_453.n);
+
+    /* AC/DC Converter Light_Conv_56 */
+      connect(cable_Light_Conv_56.n, cable_light_L2_1A.p);
+      connect(Light_Conv_56.p1,  cable_Light_Conv_56.p);
+      connect(Light_Conv_56.n1, GndDC.p);
+      connect(Light_Conv_56.n2, GndDC.p);
+
+    /* Light Connections 321 */
+      connect(Light_driver_321.n2, GndDC.p);
+      connect(Light_driver_321.n1, GndDC.p);
+      connect(Light_321.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_321.u);
+      connect(Gain_Light_driver_321.y, Light_321.u);
+      connect(Light_321.p, Light_driver_321.p2);
+      connect(Light_driver_321.p1,  cable_light_321.p);
+      connect(Light_Conv_56.p2, cable_light_321.n);
+
+    /* Light Connections 320 */
+      connect(Light_driver_320.n2, GndDC.p);
+      connect(Light_driver_320.n1, GndDC.p);
+      connect(Light_320.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_320.u);
+      connect(Gain_Light_driver_320.y, Light_320.u);
+      connect(Light_320.p, Light_driver_320.p2);
+      connect(Light_driver_320.p1,  cable_light_320.p);
+      connect(Light_Conv_56.p2, cable_light_320.n);
+
+    /* Light Connections 308 */
+      connect(Light_driver_308.n2, GndDC.p);
+      connect(Light_driver_308.n1, GndDC.p);
+      connect(Light_308.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_308.u);
+      connect(Gain_Light_driver_308.y, Light_308.u);
+      connect(Light_308.p, Light_driver_308.p2);
+      connect(Light_driver_308.p1,  cable_light_308.p);
+      connect(Light_Conv_56.p2, cable_light_308.n);
+
+    /* Light Connections 307 */
+      connect(Light_driver_307.n2, GndDC.p);
+      connect(Light_driver_307.n1, GndDC.p);
+      connect(Light_307.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_307.u);
+      connect(Gain_Light_driver_307.y, Light_307.u);
+      connect(Light_307.p, Light_driver_307.p2);
+      connect(Light_driver_307.p1,  cable_light_307.p);
+      connect(Light_Conv_56.p2, cable_light_307.n);
+
+    /* Light Connections 300 */
+      connect(Light_driver_300.n2, GndDC.p);
+      connect(Light_driver_300.n1, GndDC.p);
+      connect(Light_300.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_300.u);
+      connect(Gain_Light_driver_300.y, Light_300.u);
+      connect(Light_300.p, Light_driver_300.p2);
+      connect(Light_driver_300.p1,  cable_light_300.p);
+      connect(Light_Conv_56.p2, cable_light_300.n);
+
+    /* Light Connections 299 */
+      connect(Light_driver_299.n2, GndDC.p);
+      connect(Light_driver_299.n1, GndDC.p);
+      connect(Light_299.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_299.u);
+      connect(Gain_Light_driver_299.y, Light_299.u);
+      connect(Light_299.p, Light_driver_299.p2);
+      connect(Light_driver_299.p1,  cable_light_299.p);
+      connect(Light_Conv_56.p2, cable_light_299.n);
+
+      connect(cable_light_L2_1A.n, p)
+        annotation (Line(points={{-48,20},{-104,20}}, color={0,0,255}));
+      annotation ();
+    end DC_ACDC_Light_Panel_L2_1A;
+
+    model DC_ACDC_Light_Panel_L2_1B
+      outer HPF.SystemDef systemDef;
+      Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+        Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Core_Lights(
+        tableOnFile=true,
+        tableName="L2-Core-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-74,70},{-54,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn1_Lights(
+        tableOnFile=true,
+        tableName="L2-Zn1-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-40,70},{-20,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn2_Lights(
+        tableOnFile=true,
+        tableName="L2-Zn2-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-8,70},{12,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn3_Lights(
+        tableOnFile=true,
+        tableName="L2-Zn3-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{28,70},{48,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn4_Lights(
+        tableOnFile=true,
+        tableName="L2-Zn4-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{64,70},{84,90}})));
+
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_30(V = 19.5, alpha = 0.26452, beta = 0.12526, gamma = 0.0020109);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_45(V = 19.5, alpha = 0.42081, beta = 0.12526, gamma = 0.001341);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 4.27984, beta = -0.004643965, gamma = 0.0000985992);
+
+    /* Insert models here */
+
+    /* AC/DC Converter Light_Conv_48 */
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_48(modelData = modelData_DCDC);
+
+    /* Light Model 534 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_48(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=18.78);
+      HPF.DC.Variable_DC_Load Light_534;
+
+    /* Light Model 529 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_534(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_534(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_534(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_529;
+
+    /* Light Model 522 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_529(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_529(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_529(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_522;
+
+    /* Light Model 521 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_522(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_522(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_522(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_521;
+
+    /* Light Model 520 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_521(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_521(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_521(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_520;
+
+    /* Light Model 517 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_520(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_520(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_520(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_517;
+
+    /* Light Model 516 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_517(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_517(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_517(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_516;
+
+    /* Light Model 515 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_516(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_516(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_516(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_515;
+
+    /* AC/DC Converter Light_Conv_53 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_515(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_515(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_515(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_53(modelData = modelData_DCDC);
+
+    /* Light Model 486 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_53(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=14.17);
+      HPF.DC.Variable_DC_Load Light_486;
+
+    /* Light Model 485 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_486(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_486(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_486(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_485;
+
+    /* Light Model 482 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_485(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_485(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_485(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_482;
+
+    /* Light Model 481 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_482(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_482(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_482(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_481;
+
+    /* Light Model 480 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_481(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_481(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_481(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_480;
+
+    /* Light Model 479 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_480(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_480(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_480(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_479;
+
+    /* Light Model 478 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_479(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_479(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_479(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_478;
+
+    /* Light Model 477 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_478(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_478(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_478(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_477;
+
+    /* AC/DC Converter Light_Conv_50 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_477(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_477(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_477(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_50(modelData = modelData_DCDC);
+
+    /* Light Model 372 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_50(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=17.39);
+      HPF.DC.Variable_DC_Load Light_372;
+
+    /* Light Model 371 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_372(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_372(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_372(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_371;
+
+    /* Light Model 366 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_371(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_371(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_371(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_366;
+
+    /* Light Model 365 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_366(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_366(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_366(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_365;
+
+    /* Light Model 364 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_365(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_365(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_365(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_364;
+
+    /* Light Model 363 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_364(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_364(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_364(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_363;
+
+    /* Light Model 358 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_363(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_363(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_363(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_358;
+
+    /* Light Model 357 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_358(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_358(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_358(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_357;
+
+    /* AC/DC Converter Light_Conv_49 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_357(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_357(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_357(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_49(modelData = modelData_DCDC);
+
+    /* Light Model 519 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_49(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=24.87);
+      HPF.DC.Variable_DC_Load Light_519;
+
+    /* Light Model 518 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_519(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_519(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_519(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_518;
+
+    /* Light Model 362 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_518(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_518(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_518(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_362;
+
+    /* Light Model 361 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_362(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_362(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_362(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_361;
+
+    /* Light Model 360 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_361(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_361(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_361(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_360;
+
+    /* Light Model 359 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_360(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_360(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_360(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_359;
+
+    /* Light Model 356 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_359(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_359(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_359(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_356;
+
+    /* Light Model 355 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_356(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_356(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_356(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_355;
+
+    /* AC/DC Converter Light_Conv_51 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_355(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_355(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_355(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_51(modelData = modelData_DCDC);
+
+    /* Light Model 550 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_51(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=14.59);
+      HPF.DC.Variable_DC_Load Light_550;
+
+    /* Light Model 549 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_550(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_550(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_550(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_549;
+
+    /* Light Model 548 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_549(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_549(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_549(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_548;
+
+    /* Light Model 547 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_548(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_548(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_548(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_547;
+
+    /* Light Model 545 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_547(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_547(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_547(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_545;
+
+    /* Light Model 524 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_545(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_545(k=42) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_545(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_524;
+
+    /* Light Model 523 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_524(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_524(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_524(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_523;
+
+    /* Light Model 313 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_523(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_523(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_523(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_313;
+
+    /* AC/DC Converter Light_Conv_52 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_313(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_313(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_313(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_52(modelData = modelData_DCDC);
+
+    /* Light Model 551 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_52(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=7.56);
+      HPF.DC.Variable_DC_Load Light_551;
+
+    /* Light Model 316 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_551(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_551(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_551(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_316;
+
+    /* Light Model 315 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_316(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_316(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_316(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_315;
+
+    /* Light Model 314 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_315(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_315(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_315(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_314;
+
+    /* Light Model 311 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_314(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_314(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_314(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_311;
+
+    /* Light Model 305 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_311(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_311(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_311(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_305;
+
+    /* Light Model 304 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_305(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_305(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_305(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_304;
+
+    /* Light Model 303 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_304(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_304(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_304(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_303;
+
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_303(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_303(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_303(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+
+      Modelica.Electrical.Analog.Interfaces.PositivePin p
+        "Positive electrical pin of port 1" annotation (Placement(transformation(
+              extent={{-114,10},{-94,30}}), iconTransformation(extent={{-110,90},{-90,
+                110}})));
+      HPF.Cables.NEC_CableModelDC cable_light_L2_1B(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+          length=15) annotation (Placement(visible=true, transformation(
+            origin={-38,20},
+            extent={{10,-10},{-10,10}},
+            rotation=0)));
+    equation
+
+    /* Insert equation here */
+
+    /* AC/DC Converter Light_Conv_48 */
+      connect(cable_Light_Conv_48.n, cable_light_L2_1B.p);
+      connect(Light_Conv_48.p1,  cable_Light_Conv_48.p);
+      connect(Light_Conv_48.n1, GndDC.p);
+      connect(Light_Conv_48.n2, GndDC.p);
+
+    /* Light Connections 534 */
+      connect(Light_driver_534.n2, GndDC.p);
+      connect(Light_driver_534.n1, GndDC.p);
+      connect(Light_534.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_534.u);
+      connect(Gain_Light_driver_534.y, Light_534.u);
+      connect(Light_534.p, Light_driver_534.p2);
+      connect(Light_driver_534.p1,  cable_light_534.p);
+      connect(Light_Conv_48.p2, cable_light_534.n);
+
+    /* Light Connections 529 */
+      connect(Light_driver_529.n2, GndDC.p);
+      connect(Light_driver_529.n1, GndDC.p);
+      connect(Light_529.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_529.u);
+      connect(Gain_Light_driver_529.y, Light_529.u);
+      connect(Light_529.p, Light_driver_529.p2);
+      connect(Light_driver_529.p1,  cable_light_529.p);
+      connect(Light_Conv_48.p2, cable_light_529.n);
+
+    /* Light Connections 522 */
+      connect(Light_driver_522.n2, GndDC.p);
+      connect(Light_driver_522.n1, GndDC.p);
+      connect(Light_522.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_522.u);
+      connect(Gain_Light_driver_522.y, Light_522.u);
+      connect(Light_522.p, Light_driver_522.p2);
+      connect(Light_driver_522.p1,  cable_light_522.p);
+      connect(Light_Conv_48.p2, cable_light_522.n);
+
+    /* Light Connections 521 */
+      connect(Light_driver_521.n2, GndDC.p);
+      connect(Light_driver_521.n1, GndDC.p);
+      connect(Light_521.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_521.u);
+      connect(Gain_Light_driver_521.y, Light_521.u);
+      connect(Light_521.p, Light_driver_521.p2);
+      connect(Light_driver_521.p1,  cable_light_521.p);
+      connect(Light_Conv_48.p2, cable_light_521.n);
+
+    /* Light Connections 520 */
+      connect(Light_driver_520.n2, GndDC.p);
+      connect(Light_driver_520.n1, GndDC.p);
+      connect(Light_520.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_520.u);
+      connect(Gain_Light_driver_520.y, Light_520.u);
+      connect(Light_520.p, Light_driver_520.p2);
+      connect(Light_driver_520.p1,  cable_light_520.p);
+      connect(Light_Conv_48.p2, cable_light_520.n);
+
+    /* Light Connections 517 */
+      connect(Light_driver_517.n2, GndDC.p);
+      connect(Light_driver_517.n1, GndDC.p);
+      connect(Light_517.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_517.u);
+      connect(Gain_Light_driver_517.y, Light_517.u);
+      connect(Light_517.p, Light_driver_517.p2);
+      connect(Light_driver_517.p1,  cable_light_517.p);
+      connect(Light_Conv_48.p2, cable_light_517.n);
+
+    /* Light Connections 516 */
+      connect(Light_driver_516.n2, GndDC.p);
+      connect(Light_driver_516.n1, GndDC.p);
+      connect(Light_516.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_516.u);
+      connect(Gain_Light_driver_516.y, Light_516.u);
+      connect(Light_516.p, Light_driver_516.p2);
+      connect(Light_driver_516.p1,  cable_light_516.p);
+      connect(Light_Conv_48.p2, cable_light_516.n);
+
+    /* Light Connections 515 */
+      connect(Light_driver_515.n2, GndDC.p);
+      connect(Light_driver_515.n1, GndDC.p);
+      connect(Light_515.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_515.u);
+      connect(Gain_Light_driver_515.y, Light_515.u);
+      connect(Light_515.p, Light_driver_515.p2);
+      connect(Light_driver_515.p1,  cable_light_515.p);
+      connect(Light_Conv_48.p2, cable_light_515.n);
+
+    /* AC/DC Converter Light_Conv_53 */
+      connect(cable_Light_Conv_53.n, cable_light_L2_1B.p);
+      connect(Light_Conv_53.p1,  cable_Light_Conv_53.p);
+      connect(Light_Conv_53.n1, GndDC.p);
+      connect(Light_Conv_53.n2, GndDC.p);
+
+    /* Light Connections 486 */
+      connect(Light_driver_486.n2, GndDC.p);
+      connect(Light_driver_486.n1, GndDC.p);
+      connect(Light_486.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_486.u);
+      connect(Gain_Light_driver_486.y, Light_486.u);
+      connect(Light_486.p, Light_driver_486.p2);
+      connect(Light_driver_486.p1,  cable_light_486.p);
+      connect(Light_Conv_53.p2, cable_light_486.n);
+
+    /* Light Connections 485 */
+      connect(Light_driver_485.n2, GndDC.p);
+      connect(Light_driver_485.n1, GndDC.p);
+      connect(Light_485.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_485.u);
+      connect(Gain_Light_driver_485.y, Light_485.u);
+      connect(Light_485.p, Light_driver_485.p2);
+      connect(Light_driver_485.p1,  cable_light_485.p);
+      connect(Light_Conv_53.p2, cable_light_485.n);
+
+    /* Light Connections 482 */
+      connect(Light_driver_482.n2, GndDC.p);
+      connect(Light_driver_482.n1, GndDC.p);
+      connect(Light_482.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_482.u);
+      connect(Gain_Light_driver_482.y, Light_482.u);
+      connect(Light_482.p, Light_driver_482.p2);
+      connect(Light_driver_482.p1,  cable_light_482.p);
+      connect(Light_Conv_53.p2, cable_light_482.n);
+
+    /* Light Connections 481 */
+      connect(Light_driver_481.n2, GndDC.p);
+      connect(Light_driver_481.n1, GndDC.p);
+      connect(Light_481.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_481.u);
+      connect(Gain_Light_driver_481.y, Light_481.u);
+      connect(Light_481.p, Light_driver_481.p2);
+      connect(Light_driver_481.p1,  cable_light_481.p);
+      connect(Light_Conv_53.p2, cable_light_481.n);
+
+    /* Light Connections 480 */
+      connect(Light_driver_480.n2, GndDC.p);
+      connect(Light_driver_480.n1, GndDC.p);
+      connect(Light_480.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_480.u);
+      connect(Gain_Light_driver_480.y, Light_480.u);
+      connect(Light_480.p, Light_driver_480.p2);
+      connect(Light_driver_480.p1,  cable_light_480.p);
+      connect(Light_Conv_53.p2, cable_light_480.n);
+
+    /* Light Connections 479 */
+      connect(Light_driver_479.n2, GndDC.p);
+      connect(Light_driver_479.n1, GndDC.p);
+      connect(Light_479.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_479.u);
+      connect(Gain_Light_driver_479.y, Light_479.u);
+      connect(Light_479.p, Light_driver_479.p2);
+      connect(Light_driver_479.p1,  cable_light_479.p);
+      connect(Light_Conv_53.p2, cable_light_479.n);
+
+    /* Light Connections 478 */
+      connect(Light_driver_478.n2, GndDC.p);
+      connect(Light_driver_478.n1, GndDC.p);
+      connect(Light_478.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_478.u);
+      connect(Gain_Light_driver_478.y, Light_478.u);
+      connect(Light_478.p, Light_driver_478.p2);
+      connect(Light_driver_478.p1,  cable_light_478.p);
+      connect(Light_Conv_53.p2, cable_light_478.n);
+
+    /* Light Connections 477 */
+      connect(Light_driver_477.n2, GndDC.p);
+      connect(Light_driver_477.n1, GndDC.p);
+      connect(Light_477.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_477.u);
+      connect(Gain_Light_driver_477.y, Light_477.u);
+      connect(Light_477.p, Light_driver_477.p2);
+      connect(Light_driver_477.p1,  cable_light_477.p);
+      connect(Light_Conv_53.p2, cable_light_477.n);
+
+    /* AC/DC Converter Light_Conv_50 */
+      connect(cable_Light_Conv_50.n, cable_light_L2_1B.p);
+      connect(Light_Conv_50.p1,  cable_Light_Conv_50.p);
+      connect(Light_Conv_50.n1, GndDC.p);
+      connect(Light_Conv_50.n2, GndDC.p);
+
+    /* Light Connections 372 */
+      connect(Light_driver_372.n2, GndDC.p);
+      connect(Light_driver_372.n1, GndDC.p);
+      connect(Light_372.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_372.u);
+      connect(Gain_Light_driver_372.y, Light_372.u);
+      connect(Light_372.p, Light_driver_372.p2);
+      connect(Light_driver_372.p1,  cable_light_372.p);
+      connect(Light_Conv_50.p2, cable_light_372.n);
+
+    /* Light Connections 371 */
+      connect(Light_driver_371.n2, GndDC.p);
+      connect(Light_driver_371.n1, GndDC.p);
+      connect(Light_371.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_371.u);
+      connect(Gain_Light_driver_371.y, Light_371.u);
+      connect(Light_371.p, Light_driver_371.p2);
+      connect(Light_driver_371.p1,  cable_light_371.p);
+      connect(Light_Conv_50.p2, cable_light_371.n);
+
+    /* Light Connections 366 */
+      connect(Light_driver_366.n2, GndDC.p);
+      connect(Light_driver_366.n1, GndDC.p);
+      connect(Light_366.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_366.u);
+      connect(Gain_Light_driver_366.y, Light_366.u);
+      connect(Light_366.p, Light_driver_366.p2);
+      connect(Light_driver_366.p1,  cable_light_366.p);
+      connect(Light_Conv_50.p2, cable_light_366.n);
+
+    /* Light Connections 365 */
+      connect(Light_driver_365.n2, GndDC.p);
+      connect(Light_driver_365.n1, GndDC.p);
+      connect(Light_365.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_365.u);
+      connect(Gain_Light_driver_365.y, Light_365.u);
+      connect(Light_365.p, Light_driver_365.p2);
+      connect(Light_driver_365.p1,  cable_light_365.p);
+      connect(Light_Conv_50.p2, cable_light_365.n);
+
+    /* Light Connections 364 */
+      connect(Light_driver_364.n2, GndDC.p);
+      connect(Light_driver_364.n1, GndDC.p);
+      connect(Light_364.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_364.u);
+      connect(Gain_Light_driver_364.y, Light_364.u);
+      connect(Light_364.p, Light_driver_364.p2);
+      connect(Light_driver_364.p1,  cable_light_364.p);
+      connect(Light_Conv_50.p2, cable_light_364.n);
+
+    /* Light Connections 363 */
+      connect(Light_driver_363.n2, GndDC.p);
+      connect(Light_driver_363.n1, GndDC.p);
+      connect(Light_363.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_363.u);
+      connect(Gain_Light_driver_363.y, Light_363.u);
+      connect(Light_363.p, Light_driver_363.p2);
+      connect(Light_driver_363.p1,  cable_light_363.p);
+      connect(Light_Conv_50.p2, cable_light_363.n);
+
+    /* Light Connections 358 */
+      connect(Light_driver_358.n2, GndDC.p);
+      connect(Light_driver_358.n1, GndDC.p);
+      connect(Light_358.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_358.u);
+      connect(Gain_Light_driver_358.y, Light_358.u);
+      connect(Light_358.p, Light_driver_358.p2);
+      connect(Light_driver_358.p1,  cable_light_358.p);
+      connect(Light_Conv_50.p2, cable_light_358.n);
+
+    /* Light Connections 357 */
+      connect(Light_driver_357.n2, GndDC.p);
+      connect(Light_driver_357.n1, GndDC.p);
+      connect(Light_357.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_357.u);
+      connect(Gain_Light_driver_357.y, Light_357.u);
+      connect(Light_357.p, Light_driver_357.p2);
+      connect(Light_driver_357.p1,  cable_light_357.p);
+      connect(Light_Conv_50.p2, cable_light_357.n);
+
+    /* AC/DC Converter Light_Conv_49 */
+      connect(cable_Light_Conv_49.n, cable_light_L2_1B.p);
+      connect(Light_Conv_49.p1,  cable_Light_Conv_49.p);
+      connect(Light_Conv_49.n1, GndDC.p);
+      connect(Light_Conv_49.n2, GndDC.p);
+
+    /* Light Connections 519 */
+      connect(Light_driver_519.n2, GndDC.p);
+      connect(Light_driver_519.n1, GndDC.p);
+      connect(Light_519.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_519.u);
+      connect(Gain_Light_driver_519.y, Light_519.u);
+      connect(Light_519.p, Light_driver_519.p2);
+      connect(Light_driver_519.p1,  cable_light_519.p);
+      connect(Light_Conv_49.p2, cable_light_519.n);
+
+    /* Light Connections 518 */
+      connect(Light_driver_518.n2, GndDC.p);
+      connect(Light_driver_518.n1, GndDC.p);
+      connect(Light_518.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_518.u);
+      connect(Gain_Light_driver_518.y, Light_518.u);
+      connect(Light_518.p, Light_driver_518.p2);
+      connect(Light_driver_518.p1,  cable_light_518.p);
+      connect(Light_Conv_49.p2, cable_light_518.n);
+
+    /* Light Connections 362 */
+      connect(Light_driver_362.n2, GndDC.p);
+      connect(Light_driver_362.n1, GndDC.p);
+      connect(Light_362.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_362.u);
+      connect(Gain_Light_driver_362.y, Light_362.u);
+      connect(Light_362.p, Light_driver_362.p2);
+      connect(Light_driver_362.p1,  cable_light_362.p);
+      connect(Light_Conv_49.p2, cable_light_362.n);
+
+    /* Light Connections 361 */
+      connect(Light_driver_361.n2, GndDC.p);
+      connect(Light_driver_361.n1, GndDC.p);
+      connect(Light_361.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_361.u);
+      connect(Gain_Light_driver_361.y, Light_361.u);
+      connect(Light_361.p, Light_driver_361.p2);
+      connect(Light_driver_361.p1,  cable_light_361.p);
+      connect(Light_Conv_49.p2, cable_light_361.n);
+
+    /* Light Connections 360 */
+      connect(Light_driver_360.n2, GndDC.p);
+      connect(Light_driver_360.n1, GndDC.p);
+      connect(Light_360.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_360.u);
+      connect(Gain_Light_driver_360.y, Light_360.u);
+      connect(Light_360.p, Light_driver_360.p2);
+      connect(Light_driver_360.p1,  cable_light_360.p);
+      connect(Light_Conv_49.p2, cable_light_360.n);
+
+    /* Light Connections 359 */
+      connect(Light_driver_359.n2, GndDC.p);
+      connect(Light_driver_359.n1, GndDC.p);
+      connect(Light_359.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_359.u);
+      connect(Gain_Light_driver_359.y, Light_359.u);
+      connect(Light_359.p, Light_driver_359.p2);
+      connect(Light_driver_359.p1,  cable_light_359.p);
+      connect(Light_Conv_49.p2, cable_light_359.n);
+
+    /* Light Connections 356 */
+      connect(Light_driver_356.n2, GndDC.p);
+      connect(Light_driver_356.n1, GndDC.p);
+      connect(Light_356.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_356.u);
+      connect(Gain_Light_driver_356.y, Light_356.u);
+      connect(Light_356.p, Light_driver_356.p2);
+      connect(Light_driver_356.p1,  cable_light_356.p);
+      connect(Light_Conv_49.p2, cable_light_356.n);
+
+    /* Light Connections 355 */
+      connect(Light_driver_355.n2, GndDC.p);
+      connect(Light_driver_355.n1, GndDC.p);
+      connect(Light_355.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_355.u);
+      connect(Gain_Light_driver_355.y, Light_355.u);
+      connect(Light_355.p, Light_driver_355.p2);
+      connect(Light_driver_355.p1,  cable_light_355.p);
+      connect(Light_Conv_49.p2, cable_light_355.n);
+
+    /* AC/DC Converter Light_Conv_51 */
+      connect(cable_Light_Conv_51.n, cable_light_L2_1B.p);
+      connect(Light_Conv_51.p1,  cable_Light_Conv_51.p);
+      connect(Light_Conv_51.n1, GndDC.p);
+      connect(Light_Conv_51.n2, GndDC.p);
+
+    /* Light Connections 550 */
+      connect(Light_driver_550.n2, GndDC.p);
+      connect(Light_driver_550.n1, GndDC.p);
+      connect(Light_550.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_550.u);
+      connect(Gain_Light_driver_550.y, Light_550.u);
+      connect(Light_550.p, Light_driver_550.p2);
+      connect(Light_driver_550.p1,  cable_light_550.p);
+      connect(Light_Conv_51.p2, cable_light_550.n);
+
+    /* Light Connections 549 */
+      connect(Light_driver_549.n2, GndDC.p);
+      connect(Light_driver_549.n1, GndDC.p);
+      connect(Light_549.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_549.u);
+      connect(Gain_Light_driver_549.y, Light_549.u);
+      connect(Light_549.p, Light_driver_549.p2);
+      connect(Light_driver_549.p1,  cable_light_549.p);
+      connect(Light_Conv_51.p2, cable_light_549.n);
+
+    /* Light Connections 548 */
+      connect(Light_driver_548.n2, GndDC.p);
+      connect(Light_driver_548.n1, GndDC.p);
+      connect(Light_548.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_548.u);
+      connect(Gain_Light_driver_548.y, Light_548.u);
+      connect(Light_548.p, Light_driver_548.p2);
+      connect(Light_driver_548.p1,  cable_light_548.p);
+      connect(Light_Conv_51.p2, cable_light_548.n);
+
+    /* Light Connections 547 */
+      connect(Light_driver_547.n2, GndDC.p);
+      connect(Light_driver_547.n1, GndDC.p);
+      connect(Light_547.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_547.u);
+      connect(Gain_Light_driver_547.y, Light_547.u);
+      connect(Light_547.p, Light_driver_547.p2);
+      connect(Light_driver_547.p1,  cable_light_547.p);
+      connect(Light_Conv_51.p2, cable_light_547.n);
+
+    /* Light Connections 545 */
+      connect(Light_driver_545.n2, GndDC.p);
+      connect(Light_driver_545.n1, GndDC.p);
+      connect(Light_545.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_545.u);
+      connect(Gain_Light_driver_545.y, Light_545.u);
+      connect(Light_545.p, Light_driver_545.p2);
+      connect(Light_driver_545.p1,  cable_light_545.p);
+      connect(Light_Conv_51.p2, cable_light_545.n);
+
+    /* Light Connections 524 */
+      connect(Light_driver_524.n2, GndDC.p);
+      connect(Light_driver_524.n1, GndDC.p);
+      connect(Light_524.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_524.u);
+      connect(Gain_Light_driver_524.y, Light_524.u);
+      connect(Light_524.p, Light_driver_524.p2);
+      connect(Light_driver_524.p1,  cable_light_524.p);
+      connect(Light_Conv_51.p2, cable_light_524.n);
+
+    /* Light Connections 523 */
+      connect(Light_driver_523.n2, GndDC.p);
+      connect(Light_driver_523.n1, GndDC.p);
+      connect(Light_523.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn4_Lights.y[1], Gain_Light_driver_523.u);
+      connect(Gain_Light_driver_523.y, Light_523.u);
+      connect(Light_523.p, Light_driver_523.p2);
+      connect(Light_driver_523.p1,  cable_light_523.p);
+      connect(Light_Conv_51.p2, cable_light_523.n);
+
+    /* Light Connections 313 */
+      connect(Light_driver_313.n2, GndDC.p);
+      connect(Light_driver_313.n1, GndDC.p);
+      connect(Light_313.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_313.u);
+      connect(Gain_Light_driver_313.y, Light_313.u);
+      connect(Light_313.p, Light_driver_313.p2);
+      connect(Light_driver_313.p1,  cable_light_313.p);
+      connect(Light_Conv_51.p2, cable_light_313.n);
+
+    /* AC/DC Converter Light_Conv_52 */
+      connect(cable_Light_Conv_52.n, cable_light_L2_1B.p);
+      connect(Light_Conv_52.p1,  cable_Light_Conv_52.p);
+      connect(Light_Conv_52.n1, GndDC.p);
+      connect(Light_Conv_52.n2, GndDC.p);
+
+    /* Light Connections 551 */
+      connect(Light_driver_551.n2, GndDC.p);
+      connect(Light_driver_551.n1, GndDC.p);
+      connect(Light_551.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_551.u);
+      connect(Gain_Light_driver_551.y, Light_551.u);
+      connect(Light_551.p, Light_driver_551.p2);
+      connect(Light_driver_551.p1,  cable_light_551.p);
+      connect(Light_Conv_52.p2, cable_light_551.n);
+
+    /* Light Connections 316 */
+      connect(Light_driver_316.n2, GndDC.p);
+      connect(Light_driver_316.n1, GndDC.p);
+      connect(Light_316.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_316.u);
+      connect(Gain_Light_driver_316.y, Light_316.u);
+      connect(Light_316.p, Light_driver_316.p2);
+      connect(Light_driver_316.p1,  cable_light_316.p);
+      connect(Light_Conv_52.p2, cable_light_316.n);
+
+    /* Light Connections 315 */
+      connect(Light_driver_315.n2, GndDC.p);
+      connect(Light_driver_315.n1, GndDC.p);
+      connect(Light_315.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_315.u);
+      connect(Gain_Light_driver_315.y, Light_315.u);
+      connect(Light_315.p, Light_driver_315.p2);
+      connect(Light_driver_315.p1,  cable_light_315.p);
+      connect(Light_Conv_52.p2, cable_light_315.n);
+
+    /* Light Connections 314 */
+      connect(Light_driver_314.n2, GndDC.p);
+      connect(Light_driver_314.n1, GndDC.p);
+      connect(Light_314.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_314.u);
+      connect(Gain_Light_driver_314.y, Light_314.u);
+      connect(Light_314.p, Light_driver_314.p2);
+      connect(Light_driver_314.p1,  cable_light_314.p);
+      connect(Light_Conv_52.p2, cable_light_314.n);
+
+    /* Light Connections 311 */
+      connect(Light_driver_311.n2, GndDC.p);
+      connect(Light_driver_311.n1, GndDC.p);
+      connect(Light_311.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_311.u);
+      connect(Gain_Light_driver_311.y, Light_311.u);
+      connect(Light_311.p, Light_driver_311.p2);
+      connect(Light_driver_311.p1,  cable_light_311.p);
+      connect(Light_Conv_52.p2, cable_light_311.n);
+
+    /* Light Connections 305 */
+      connect(Light_driver_305.n2, GndDC.p);
+      connect(Light_driver_305.n1, GndDC.p);
+      connect(Light_305.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_305.u);
+      connect(Gain_Light_driver_305.y, Light_305.u);
+      connect(Light_305.p, Light_driver_305.p2);
+      connect(Light_driver_305.p1,  cable_light_305.p);
+      connect(Light_Conv_52.p2, cable_light_305.n);
+
+    /* Light Connections 304 */
+      connect(Light_driver_304.n2, GndDC.p);
+      connect(Light_driver_304.n1, GndDC.p);
+      connect(Light_304.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_304.u);
+      connect(Gain_Light_driver_304.y, Light_304.u);
+      connect(Light_304.p, Light_driver_304.p2);
+      connect(Light_driver_304.p1,  cable_light_304.p);
+      connect(Light_Conv_52.p2, cable_light_304.n);
+
+    /* Light Connections 303 */
+      connect(Light_driver_303.n2, GndDC.p);
+      connect(Light_driver_303.n1, GndDC.p);
+      connect(Light_303.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_303.u);
+      connect(Gain_Light_driver_303.y, Light_303.u);
+      connect(Light_303.p, Light_driver_303.p2);
+      connect(Light_driver_303.p1,  cable_light_303.p);
+      connect(Light_Conv_52.p2, cable_light_303.n);
+
+      connect(cable_light_L2_1B.n, p)
+        annotation (Line(points={{-48,20},{-104,20}}, color={0,0,255}));
+      annotation ();
+    end DC_ACDC_Light_Panel_L2_1B;
+
+    model DC_ACDC_Light_Panel_L2_1C
+      outer HPF.SystemDef systemDef;
+      Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+        Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Core_Lights(
+        tableOnFile=true,
+        tableName="L2-Core-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-74,70},{-54,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn1_Lights(
+        tableOnFile=true,
+        tableName="L2-Zn1-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-40,70},{-20,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn2_Lights(
+        tableOnFile=true,
+        tableName="L2-Zn2-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-8,70},{12,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn3_Lights(
+        tableOnFile=true,
+        tableName="L2-Zn3-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{28,70},{48,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn4_Lights(
+        tableOnFile=true,
+        tableName="L2-Zn4-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{64,70},{84,90}})));
+
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_30(V = 19.5, alpha = 0.26452, beta = 0.12526, gamma = 0.0020109);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_45(V = 19.5, alpha = 0.42081, beta = 0.12526, gamma = 0.001341);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 4.27984, beta = -0.004643965, gamma = 0.0000985992);
+
+    /* Insert models here */
+
+    /* AC/DC Converter Light_Conv_55 */
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_55(modelData = modelData_DCDC);
+
+    /* Light Model 494 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_55(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=15.02);
+      HPF.DC.Variable_DC_Load Light_494;
+
+    /* Light Model 493 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_494(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_494(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_494(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_493;
+
+    /* Light Model 492 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_493(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_493(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_493(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_492;
+
+    /* Light Model 491 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_492(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_492(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_492(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_491;
+
+    /* Light Model 490 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_491(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_491(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_491(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_490;
+
+    /* Light Model 489 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_490(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_490(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_490(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_489;
+
+    /* Light Model 488 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_489(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_489(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_489(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_488;
+
+    /* Light Model 484 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_488(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_488(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_488(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_484;
+
+    /* AC/DC Converter Light_Conv_54 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_484(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_484(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_484(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_54(modelData = modelData_DCDC);
+
+    /* Light Model 487 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_54(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=21.89);
+      HPF.DC.Variable_DC_Load Light_487;
+
+    /* Light Model 483 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_487(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_487(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_487(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_483;
+
+    /* Light Model 452 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_483(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_483(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_483(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_452;
+
+    /* Light Model 451 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_452(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_452(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_452(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_451;
+
+    /* Light Model 450 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_451(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_451(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_451(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_450;
+
+    /* Light Model 449 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_450(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_450(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_450(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_449;
+
+    /* Light Model 448 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_449(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_449(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_449(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_448;
+
+    /* Light Model 447 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_448(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_448(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_448(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_447;
+
+    /* AC/DC Converter Light_Conv_57 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_447(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_447(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_447(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_57(modelData = modelData_DCDC);
+
+    /* Light Model 553 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_57(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=11.32);
+      HPF.DC.Variable_DC_Load Light_553;
+
+    /* Light Model 552 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_553(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_553(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_553(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_552;
+
+    /* Light Model 376 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_552(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_552(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_552(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_376;
+
+    /* Light Model 375 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_376(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_376(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_376(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_375;
+
+    /* Light Model 374 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_375(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_375(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_375(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_374;
+
+    /* Light Model 373 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_374(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_374(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_374(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_373;
+
+    /* Light Model 368 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_373(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_373(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_373(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_368;
+
+    /* Light Model 367 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_368(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_368(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_368(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_367;
+
+    /* AC/DC Converter Light_Conv_47 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_367(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_367(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_367(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_47(modelData = modelData_DCDC);
+
+    /* Light Model 319 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_47(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=11.11);
+      HPF.DC.Variable_DC_Load Light_319;
+
+    /* Light Model 318 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_319(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_319(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_319(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_318;
+
+    /* Light Model 317 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_318(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_318(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_318(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_317;
+
+    /* Light Model 312 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_317(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_317(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_317(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_312;
+
+    /* Light Model 310 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_312(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_312(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_312(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_310;
+
+    /* Light Model 309 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_310(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_310(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_310(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_309;
+
+    /* Light Model 302 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_309(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_309(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_309(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_302;
+
+    /* Light Model 301 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_302(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_302(k=22) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_302(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_301;
+
+    /* AC/DC Converter Light_Conv_58 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_301(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_301(k=22) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_301(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_58(modelData = modelData_DCDC);
+
+    /* Light Model 556 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_58(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=6.52);
+      HPF.DC.Variable_DC_Load Light_556;
+
+    /* Light Model 555 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_556(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_556(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_556(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_555;
+
+    /* Light Model 554 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_555(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_555(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_555(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_554;
+
+    /* Light Model 546 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_554(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_554(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_554(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_546;
+
+    /* Light Model 369 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_546(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_546(k=42) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_546(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_369;
+
+    /* Light Model 306 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_369(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_369(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_369(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_306;
+
+    /* Light Model 298 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_306(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_306(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_306(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_298;
+
+    /* Light Model 297 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_298(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_298(k=35) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_298(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_297;
+
+    /* AC/DC Converter Light_Conv_59 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_297(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_297(k=35) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_297(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_59(modelData = modelData_DCDC);
+
+    /* Light Model 324 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_59(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=8.81);
+      HPF.DC.Variable_DC_Load Light_324;
+
+    /* Light Model 323 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_324(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_324(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_324(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_323;
+
+    /* Light Model 322 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_323(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_323(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_323(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_322;
+
+    /* Light Model 296 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_322(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_322(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_322(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_296;
+
+    /* Light Model 294 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_296(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_296(k=42) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_296(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_294;
+
+    /* Light Model 293 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_294(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_294(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_294(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_293;
+
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_293(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_293(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_293(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+
+      Modelica.Electrical.Analog.Interfaces.PositivePin p
+        "Positive electrical pin of port 1" annotation (Placement(transformation(
+              extent={{-114,10},{-94,30}}), iconTransformation(extent={{-110,90},{-90,
+                110}})));
+      HPF.Cables.NEC_CableModelDC cable_light_L2_1C(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+          length=15) annotation (Placement(visible=true, transformation(
+            origin={-38,20},
+            extent={{10,-10},{-10,10}},
+            rotation=0)));
+    equation
+
+    /* Insert equation here */
+
+    /* AC/DC Converter Light_Conv_55 */
+      connect(cable_Light_Conv_55.n, cable_light_L2_1C.p);
+      connect(Light_Conv_55.p1,  cable_Light_Conv_55.p);
+      connect(Light_Conv_55.n1, GndDC.p);
+      connect(Light_Conv_55.n2, GndDC.p);
+
+    /* Light Connections 494 */
+      connect(Light_driver_494.n2, GndDC.p);
+      connect(Light_driver_494.n1, GndDC.p);
+      connect(Light_494.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_494.u);
+      connect(Gain_Light_driver_494.y, Light_494.u);
+      connect(Light_494.p, Light_driver_494.p2);
+      connect(Light_driver_494.p1,  cable_light_494.p);
+      connect(Light_Conv_55.p2, cable_light_494.n);
+
+    /* Light Connections 493 */
+      connect(Light_driver_493.n2, GndDC.p);
+      connect(Light_driver_493.n1, GndDC.p);
+      connect(Light_493.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_493.u);
+      connect(Gain_Light_driver_493.y, Light_493.u);
+      connect(Light_493.p, Light_driver_493.p2);
+      connect(Light_driver_493.p1,  cable_light_493.p);
+      connect(Light_Conv_55.p2, cable_light_493.n);
+
+    /* Light Connections 492 */
+      connect(Light_driver_492.n2, GndDC.p);
+      connect(Light_driver_492.n1, GndDC.p);
+      connect(Light_492.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_492.u);
+      connect(Gain_Light_driver_492.y, Light_492.u);
+      connect(Light_492.p, Light_driver_492.p2);
+      connect(Light_driver_492.p1,  cable_light_492.p);
+      connect(Light_Conv_55.p2, cable_light_492.n);
+
+    /* Light Connections 491 */
+      connect(Light_driver_491.n2, GndDC.p);
+      connect(Light_driver_491.n1, GndDC.p);
+      connect(Light_491.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_491.u);
+      connect(Gain_Light_driver_491.y, Light_491.u);
+      connect(Light_491.p, Light_driver_491.p2);
+      connect(Light_driver_491.p1,  cable_light_491.p);
+      connect(Light_Conv_55.p2, cable_light_491.n);
+
+    /* Light Connections 490 */
+      connect(Light_driver_490.n2, GndDC.p);
+      connect(Light_driver_490.n1, GndDC.p);
+      connect(Light_490.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_490.u);
+      connect(Gain_Light_driver_490.y, Light_490.u);
+      connect(Light_490.p, Light_driver_490.p2);
+      connect(Light_driver_490.p1,  cable_light_490.p);
+      connect(Light_Conv_55.p2, cable_light_490.n);
+
+    /* Light Connections 489 */
+      connect(Light_driver_489.n2, GndDC.p);
+      connect(Light_driver_489.n1, GndDC.p);
+      connect(Light_489.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_489.u);
+      connect(Gain_Light_driver_489.y, Light_489.u);
+      connect(Light_489.p, Light_driver_489.p2);
+      connect(Light_driver_489.p1,  cable_light_489.p);
+      connect(Light_Conv_55.p2, cable_light_489.n);
+
+    /* Light Connections 488 */
+      connect(Light_driver_488.n2, GndDC.p);
+      connect(Light_driver_488.n1, GndDC.p);
+      connect(Light_488.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_488.u);
+      connect(Gain_Light_driver_488.y, Light_488.u);
+      connect(Light_488.p, Light_driver_488.p2);
+      connect(Light_driver_488.p1,  cable_light_488.p);
+      connect(Light_Conv_55.p2, cable_light_488.n);
+
+    /* Light Connections 484 */
+      connect(Light_driver_484.n2, GndDC.p);
+      connect(Light_driver_484.n1, GndDC.p);
+      connect(Light_484.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_484.u);
+      connect(Gain_Light_driver_484.y, Light_484.u);
+      connect(Light_484.p, Light_driver_484.p2);
+      connect(Light_driver_484.p1,  cable_light_484.p);
+      connect(Light_Conv_55.p2, cable_light_484.n);
+
+    /* AC/DC Converter Light_Conv_54 */
+      connect(cable_Light_Conv_54.n, cable_light_L2_1C.p);
+      connect(Light_Conv_54.p1,  cable_Light_Conv_54.p);
+      connect(Light_Conv_54.n1, GndDC.p);
+      connect(Light_Conv_54.n2, GndDC.p);
+
+    /* Light Connections 487 */
+      connect(Light_driver_487.n2, GndDC.p);
+      connect(Light_driver_487.n1, GndDC.p);
+      connect(Light_487.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_487.u);
+      connect(Gain_Light_driver_487.y, Light_487.u);
+      connect(Light_487.p, Light_driver_487.p2);
+      connect(Light_driver_487.p1,  cable_light_487.p);
+      connect(Light_Conv_54.p2, cable_light_487.n);
+
+    /* Light Connections 483 */
+      connect(Light_driver_483.n2, GndDC.p);
+      connect(Light_driver_483.n1, GndDC.p);
+      connect(Light_483.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_483.u);
+      connect(Gain_Light_driver_483.y, Light_483.u);
+      connect(Light_483.p, Light_driver_483.p2);
+      connect(Light_driver_483.p1,  cable_light_483.p);
+      connect(Light_Conv_54.p2, cable_light_483.n);
+
+    /* Light Connections 452 */
+      connect(Light_driver_452.n2, GndDC.p);
+      connect(Light_driver_452.n1, GndDC.p);
+      connect(Light_452.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_452.u);
+      connect(Gain_Light_driver_452.y, Light_452.u);
+      connect(Light_452.p, Light_driver_452.p2);
+      connect(Light_driver_452.p1,  cable_light_452.p);
+      connect(Light_Conv_54.p2, cable_light_452.n);
+
+    /* Light Connections 451 */
+      connect(Light_driver_451.n2, GndDC.p);
+      connect(Light_driver_451.n1, GndDC.p);
+      connect(Light_451.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_451.u);
+      connect(Gain_Light_driver_451.y, Light_451.u);
+      connect(Light_451.p, Light_driver_451.p2);
+      connect(Light_driver_451.p1,  cable_light_451.p);
+      connect(Light_Conv_54.p2, cable_light_451.n);
+
+    /* Light Connections 450 */
+      connect(Light_driver_450.n2, GndDC.p);
+      connect(Light_driver_450.n1, GndDC.p);
+      connect(Light_450.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn3_Lights.y[1], Gain_Light_driver_450.u);
+      connect(Gain_Light_driver_450.y, Light_450.u);
+      connect(Light_450.p, Light_driver_450.p2);
+      connect(Light_driver_450.p1,  cable_light_450.p);
+      connect(Light_Conv_54.p2, cable_light_450.n);
+
+    /* Light Connections 449 */
+      connect(Light_driver_449.n2, GndDC.p);
+      connect(Light_driver_449.n1, GndDC.p);
+      connect(Light_449.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn3_Lights.y[1], Gain_Light_driver_449.u);
+      connect(Gain_Light_driver_449.y, Light_449.u);
+      connect(Light_449.p, Light_driver_449.p2);
+      connect(Light_driver_449.p1,  cable_light_449.p);
+      connect(Light_Conv_54.p2, cable_light_449.n);
+
+    /* Light Connections 448 */
+      connect(Light_driver_448.n2, GndDC.p);
+      connect(Light_driver_448.n1, GndDC.p);
+      connect(Light_448.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_448.u);
+      connect(Gain_Light_driver_448.y, Light_448.u);
+      connect(Light_448.p, Light_driver_448.p2);
+      connect(Light_driver_448.p1,  cable_light_448.p);
+      connect(Light_Conv_54.p2, cable_light_448.n);
+
+    /* Light Connections 447 */
+      connect(Light_driver_447.n2, GndDC.p);
+      connect(Light_driver_447.n1, GndDC.p);
+      connect(Light_447.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_447.u);
+      connect(Gain_Light_driver_447.y, Light_447.u);
+      connect(Light_447.p, Light_driver_447.p2);
+      connect(Light_driver_447.p1,  cable_light_447.p);
+      connect(Light_Conv_54.p2, cable_light_447.n);
+
+    /* AC/DC Converter Light_Conv_57 */
+      connect(cable_Light_Conv_57.n, cable_light_L2_1C.p);
+      connect(Light_Conv_57.p1,  cable_Light_Conv_57.p);
+      connect(Light_Conv_57.n1, GndDC.p);
+      connect(Light_Conv_57.n2, GndDC.p);
+
+    /* Light Connections 553 */
+      connect(Light_driver_553.n2, GndDC.p);
+      connect(Light_driver_553.n1, GndDC.p);
+      connect(Light_553.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_553.u);
+      connect(Gain_Light_driver_553.y, Light_553.u);
+      connect(Light_553.p, Light_driver_553.p2);
+      connect(Light_driver_553.p1,  cable_light_553.p);
+      connect(Light_Conv_57.p2, cable_light_553.n);
+
+    /* Light Connections 552 */
+      connect(Light_driver_552.n2, GndDC.p);
+      connect(Light_driver_552.n1, GndDC.p);
+      connect(Light_552.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_552.u);
+      connect(Gain_Light_driver_552.y, Light_552.u);
+      connect(Light_552.p, Light_driver_552.p2);
+      connect(Light_driver_552.p1,  cable_light_552.p);
+      connect(Light_Conv_57.p2, cable_light_552.n);
+
+    /* Light Connections 376 */
+      connect(Light_driver_376.n2, GndDC.p);
+      connect(Light_driver_376.n1, GndDC.p);
+      connect(Light_376.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_376.u);
+      connect(Gain_Light_driver_376.y, Light_376.u);
+      connect(Light_376.p, Light_driver_376.p2);
+      connect(Light_driver_376.p1,  cable_light_376.p);
+      connect(Light_Conv_57.p2, cable_light_376.n);
+
+    /* Light Connections 375 */
+      connect(Light_driver_375.n2, GndDC.p);
+      connect(Light_driver_375.n1, GndDC.p);
+      connect(Light_375.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_375.u);
+      connect(Gain_Light_driver_375.y, Light_375.u);
+      connect(Light_375.p, Light_driver_375.p2);
+      connect(Light_driver_375.p1,  cable_light_375.p);
+      connect(Light_Conv_57.p2, cable_light_375.n);
+
+    /* Light Connections 374 */
+      connect(Light_driver_374.n2, GndDC.p);
+      connect(Light_driver_374.n1, GndDC.p);
+      connect(Light_374.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_374.u);
+      connect(Gain_Light_driver_374.y, Light_374.u);
+      connect(Light_374.p, Light_driver_374.p2);
+      connect(Light_driver_374.p1,  cable_light_374.p);
+      connect(Light_Conv_57.p2, cable_light_374.n);
+
+    /* Light Connections 373 */
+      connect(Light_driver_373.n2, GndDC.p);
+      connect(Light_driver_373.n1, GndDC.p);
+      connect(Light_373.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_373.u);
+      connect(Gain_Light_driver_373.y, Light_373.u);
+      connect(Light_373.p, Light_driver_373.p2);
+      connect(Light_driver_373.p1,  cable_light_373.p);
+      connect(Light_Conv_57.p2, cable_light_373.n);
+
+    /* Light Connections 368 */
+      connect(Light_driver_368.n2, GndDC.p);
+      connect(Light_driver_368.n1, GndDC.p);
+      connect(Light_368.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_368.u);
+      connect(Gain_Light_driver_368.y, Light_368.u);
+      connect(Light_368.p, Light_driver_368.p2);
+      connect(Light_driver_368.p1,  cable_light_368.p);
+      connect(Light_Conv_57.p2, cable_light_368.n);
+
+    /* Light Connections 367 */
+      connect(Light_driver_367.n2, GndDC.p);
+      connect(Light_driver_367.n1, GndDC.p);
+      connect(Light_367.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_367.u);
+      connect(Gain_Light_driver_367.y, Light_367.u);
+      connect(Light_367.p, Light_driver_367.p2);
+      connect(Light_driver_367.p1,  cable_light_367.p);
+      connect(Light_Conv_57.p2, cable_light_367.n);
+
+    /* AC/DC Converter Light_Conv_47 */
+      connect(cable_Light_Conv_47.n, cable_light_L2_1C.p);
+      connect(Light_Conv_47.p1,  cable_Light_Conv_47.p);
+      connect(Light_Conv_47.n1, GndDC.p);
+      connect(Light_Conv_47.n2, GndDC.p);
+
+    /* Light Connections 319 */
+      connect(Light_driver_319.n2, GndDC.p);
+      connect(Light_driver_319.n1, GndDC.p);
+      connect(Light_319.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_319.u);
+      connect(Gain_Light_driver_319.y, Light_319.u);
+      connect(Light_319.p, Light_driver_319.p2);
+      connect(Light_driver_319.p1,  cable_light_319.p);
+      connect(Light_Conv_47.p2, cable_light_319.n);
+
+    /* Light Connections 318 */
+      connect(Light_driver_318.n2, GndDC.p);
+      connect(Light_driver_318.n1, GndDC.p);
+      connect(Light_318.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_318.u);
+      connect(Gain_Light_driver_318.y, Light_318.u);
+      connect(Light_318.p, Light_driver_318.p2);
+      connect(Light_driver_318.p1,  cable_light_318.p);
+      connect(Light_Conv_47.p2, cable_light_318.n);
+
+    /* Light Connections 317 */
+      connect(Light_driver_317.n2, GndDC.p);
+      connect(Light_driver_317.n1, GndDC.p);
+      connect(Light_317.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_317.u);
+      connect(Gain_Light_driver_317.y, Light_317.u);
+      connect(Light_317.p, Light_driver_317.p2);
+      connect(Light_driver_317.p1,  cable_light_317.p);
+      connect(Light_Conv_47.p2, cable_light_317.n);
+
+    /* Light Connections 312 */
+      connect(Light_driver_312.n2, GndDC.p);
+      connect(Light_driver_312.n1, GndDC.p);
+      connect(Light_312.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_312.u);
+      connect(Gain_Light_driver_312.y, Light_312.u);
+      connect(Light_312.p, Light_driver_312.p2);
+      connect(Light_driver_312.p1,  cable_light_312.p);
+      connect(Light_Conv_47.p2, cable_light_312.n);
+
+    /* Light Connections 310 */
+      connect(Light_driver_310.n2, GndDC.p);
+      connect(Light_driver_310.n1, GndDC.p);
+      connect(Light_310.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_310.u);
+      connect(Gain_Light_driver_310.y, Light_310.u);
+      connect(Light_310.p, Light_driver_310.p2);
+      connect(Light_driver_310.p1,  cable_light_310.p);
+      connect(Light_Conv_47.p2, cable_light_310.n);
+
+    /* Light Connections 309 */
+      connect(Light_driver_309.n2, GndDC.p);
+      connect(Light_driver_309.n1, GndDC.p);
+      connect(Light_309.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_309.u);
+      connect(Gain_Light_driver_309.y, Light_309.u);
+      connect(Light_309.p, Light_driver_309.p2);
+      connect(Light_driver_309.p1,  cable_light_309.p);
+      connect(Light_Conv_47.p2, cable_light_309.n);
+
+    /* Light Connections 302 */
+      connect(Light_driver_302.n2, GndDC.p);
+      connect(Light_driver_302.n1, GndDC.p);
+      connect(Light_302.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_302.u);
+      connect(Gain_Light_driver_302.y, Light_302.u);
+      connect(Light_302.p, Light_driver_302.p2);
+      connect(Light_driver_302.p1,  cable_light_302.p);
+      connect(Light_Conv_47.p2, cable_light_302.n);
+
+    /* Light Connections 301 */
+      connect(Light_driver_301.n2, GndDC.p);
+      connect(Light_driver_301.n1, GndDC.p);
+      connect(Light_301.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_301.u);
+      connect(Gain_Light_driver_301.y, Light_301.u);
+      connect(Light_301.p, Light_driver_301.p2);
+      connect(Light_driver_301.p1,  cable_light_301.p);
+      connect(Light_Conv_47.p2, cable_light_301.n);
+
+    /* AC/DC Converter Light_Conv_58 */
+      connect(cable_Light_Conv_58.n, cable_light_L2_1C.p);
+      connect(Light_Conv_58.p1,  cable_Light_Conv_58.p);
+      connect(Light_Conv_58.n1, GndDC.p);
+      connect(Light_Conv_58.n2, GndDC.p);
+
+    /* Light Connections 556 */
+      connect(Light_driver_556.n2, GndDC.p);
+      connect(Light_driver_556.n1, GndDC.p);
+      connect(Light_556.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_556.u);
+      connect(Gain_Light_driver_556.y, Light_556.u);
+      connect(Light_556.p, Light_driver_556.p2);
+      connect(Light_driver_556.p1,  cable_light_556.p);
+      connect(Light_Conv_58.p2, cable_light_556.n);
+
+    /* Light Connections 555 */
+      connect(Light_driver_555.n2, GndDC.p);
+      connect(Light_driver_555.n1, GndDC.p);
+      connect(Light_555.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_555.u);
+      connect(Gain_Light_driver_555.y, Light_555.u);
+      connect(Light_555.p, Light_driver_555.p2);
+      connect(Light_driver_555.p1,  cable_light_555.p);
+      connect(Light_Conv_58.p2, cable_light_555.n);
+
+    /* Light Connections 554 */
+      connect(Light_driver_554.n2, GndDC.p);
+      connect(Light_driver_554.n1, GndDC.p);
+      connect(Light_554.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_554.u);
+      connect(Gain_Light_driver_554.y, Light_554.u);
+      connect(Light_554.p, Light_driver_554.p2);
+      connect(Light_driver_554.p1,  cable_light_554.p);
+      connect(Light_Conv_58.p2, cable_light_554.n);
+
+    /* Light Connections 546 */
+      connect(Light_driver_546.n2, GndDC.p);
+      connect(Light_driver_546.n1, GndDC.p);
+      connect(Light_546.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_546.u);
+      connect(Gain_Light_driver_546.y, Light_546.u);
+      connect(Light_546.p, Light_driver_546.p2);
+      connect(Light_driver_546.p1,  cable_light_546.p);
+      connect(Light_Conv_58.p2, cable_light_546.n);
+
+    /* Light Connections 369 */
+      connect(Light_driver_369.n2, GndDC.p);
+      connect(Light_driver_369.n1, GndDC.p);
+      connect(Light_369.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_369.u);
+      connect(Gain_Light_driver_369.y, Light_369.u);
+      connect(Light_369.p, Light_driver_369.p2);
+      connect(Light_driver_369.p1,  cable_light_369.p);
+      connect(Light_Conv_58.p2, cable_light_369.n);
+
+    /* Light Connections 306 */
+      connect(Light_driver_306.n2, GndDC.p);
+      connect(Light_driver_306.n1, GndDC.p);
+      connect(Light_306.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_306.u);
+      connect(Gain_Light_driver_306.y, Light_306.u);
+      connect(Light_306.p, Light_driver_306.p2);
+      connect(Light_driver_306.p1,  cable_light_306.p);
+      connect(Light_Conv_58.p2, cable_light_306.n);
+
+    /* Light Connections 298 */
+      connect(Light_driver_298.n2, GndDC.p);
+      connect(Light_driver_298.n1, GndDC.p);
+      connect(Light_298.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_298.u);
+      connect(Gain_Light_driver_298.y, Light_298.u);
+      connect(Light_298.p, Light_driver_298.p2);
+      connect(Light_driver_298.p1,  cable_light_298.p);
+      connect(Light_Conv_58.p2, cable_light_298.n);
+
+    /* Light Connections 297 */
+      connect(Light_driver_297.n2, GndDC.p);
+      connect(Light_driver_297.n1, GndDC.p);
+      connect(Light_297.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_297.u);
+      connect(Gain_Light_driver_297.y, Light_297.u);
+      connect(Light_297.p, Light_driver_297.p2);
+      connect(Light_driver_297.p1,  cable_light_297.p);
+      connect(Light_Conv_58.p2, cable_light_297.n);
+
+    /* AC/DC Converter Light_Conv_59 */
+      connect(cable_Light_Conv_59.n, cable_light_L2_1C.p);
+      connect(Light_Conv_59.p1,  cable_Light_Conv_59.p);
+      connect(Light_Conv_59.n1, GndDC.p);
+      connect(Light_Conv_59.n2, GndDC.p);
+
+    /* Light Connections 324 */
+      connect(Light_driver_324.n2, GndDC.p);
+      connect(Light_driver_324.n1, GndDC.p);
+      connect(Light_324.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_324.u);
+      connect(Gain_Light_driver_324.y, Light_324.u);
+      connect(Light_324.p, Light_driver_324.p2);
+      connect(Light_driver_324.p1,  cable_light_324.p);
+      connect(Light_Conv_59.p2, cable_light_324.n);
+
+    /* Light Connections 323 */
+      connect(Light_driver_323.n2, GndDC.p);
+      connect(Light_driver_323.n1, GndDC.p);
+      connect(Light_323.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_323.u);
+      connect(Gain_Light_driver_323.y, Light_323.u);
+      connect(Light_323.p, Light_driver_323.p2);
+      connect(Light_driver_323.p1,  cable_light_323.p);
+      connect(Light_Conv_59.p2, cable_light_323.n);
+
+    /* Light Connections 322 */
+      connect(Light_driver_322.n2, GndDC.p);
+      connect(Light_driver_322.n1, GndDC.p);
+      connect(Light_322.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_322.u);
+      connect(Gain_Light_driver_322.y, Light_322.u);
+      connect(Light_322.p, Light_driver_322.p2);
+      connect(Light_driver_322.p1,  cable_light_322.p);
+      connect(Light_Conv_59.p2, cable_light_322.n);
+
+    /* Light Connections 296 */
+      connect(Light_driver_296.n2, GndDC.p);
+      connect(Light_driver_296.n1, GndDC.p);
+      connect(Light_296.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_296.u);
+      connect(Gain_Light_driver_296.y, Light_296.u);
+      connect(Light_296.p, Light_driver_296.p2);
+      connect(Light_driver_296.p1,  cable_light_296.p);
+      connect(Light_Conv_59.p2, cable_light_296.n);
+
+    /* Light Connections 294 */
+      connect(Light_driver_294.n2, GndDC.p);
+      connect(Light_driver_294.n1, GndDC.p);
+      connect(Light_294.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_294.u);
+      connect(Gain_Light_driver_294.y, Light_294.u);
+      connect(Light_294.p, Light_driver_294.p2);
+      connect(Light_driver_294.p1,  cable_light_294.p);
+      connect(Light_Conv_59.p2, cable_light_294.n);
+
+    /* Light Connections 293 */
+      connect(Light_driver_293.n2, GndDC.p);
+      connect(Light_driver_293.n1, GndDC.p);
+      connect(Light_293.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_293.u);
+      connect(Gain_Light_driver_293.y, Light_293.u);
+      connect(Light_293.p, Light_driver_293.p2);
+      connect(Light_driver_293.p1,  cable_light_293.p);
+      connect(Light_Conv_59.p2, cable_light_293.n);
+
+      connect(cable_light_L2_1C.n, p)
+        annotation (Line(points={{-48,20},{-104,20}}, color={0,0,255}));
+      annotation ();
+    end DC_ACDC_Light_Panel_L2_1C;
+
+    model DC_ACDC_Light_Panel_L2_2A
+      outer HPF.SystemDef systemDef;
+      Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+        Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Core_Lights(
+        tableOnFile=true,
+        tableName="L2-Core-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-74,70},{-54,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn1_Lights(
+        tableOnFile=true,
+        tableName="L2-Zn1-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-40,70},{-20,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn2_Lights(
+        tableOnFile=true,
+        tableName="L2-Zn2-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-8,70},{12,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn3_Lights(
+        tableOnFile=true,
+        tableName="L2-Zn3-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{28,70},{48,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn4_Lights(
+        tableOnFile=true,
+        tableName="L2-Zn4-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{64,70},{84,90}})));
+
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_30(V = 19.5, alpha = 0.26452, beta = 0.12526, gamma = 0.0020109);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_45(V = 19.5, alpha = 0.42081, beta = 0.12526, gamma = 0.001341);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 4.27984, beta = -0.004643965, gamma = 0.0000985992);
+
+    /* Insert models here */
+
+    /* AC/DC Converter Light_Conv_65 */
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_65(modelData = modelData_DCDC);
+
+    /* Light Model 506 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_65(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=22.4);
+      HPF.DC.Variable_DC_Load Light_506;
+
+    /* Light Model 505 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_506(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_506(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_506(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_505;
+
+    /* Light Model 502 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_505(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_505(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_505(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_502;
+
+    /* Light Model 501 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_502(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_502(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_502(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_501;
+
+    /* Light Model 500 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_501(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_501(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_501(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_500;
+
+    /* Light Model 498 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_500(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_500(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_500(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_498;
+
+    /* Light Model 497 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_498(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_498(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_498(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_497;
+
+    /* Light Model 496 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_497(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_497(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_497(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_496;
+
+    /* AC/DC Converter Light_Conv_64 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_496(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_496(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_496(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_64(modelData = modelData_DCDC);
+
+    /* Light Model 499 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_64(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=26.02);
+      HPF.DC.Variable_DC_Load Light_499;
+
+    /* Light Model 495 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_499(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_499(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_499(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_495;
+
+    /* Light Model 446 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_495(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_495(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_495(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_446;
+
+    /* Light Model 445 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_446(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_446(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_446(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_445;
+
+    /* Light Model 444 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_445(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_445(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_445(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_444;
+
+    /* Light Model 443 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_444(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_444(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_444(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_443;
+
+    /* Light Model 442 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_443(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_443(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_443(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_442;
+
+    /* Light Model 441 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_442(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_442(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_442(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_441;
+
+    /* AC/DC Converter Light_Conv_60 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_441(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_441(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_441(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_60(modelData = modelData_DCDC);
+
+    /* Light Model 386 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_60(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=15.82);
+      HPF.DC.Variable_DC_Load Light_386;
+
+    /* Light Model 385 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_386(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_386(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_386(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_385;
+
+    /* Light Model 384 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_385(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_385(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_385(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_384;
+
+    /* Light Model 383 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_384(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_384(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_384(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_383;
+
+    /* Light Model 379 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_383(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_383(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_383(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_379;
+
+    /* Light Model 378 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_379(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_379(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_379(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_378;
+
+    /* Light Model 377 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_378(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_378(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_378(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_377;
+
+    /* Light Model 370 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_377(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_377(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_377(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_370;
+
+    /* AC/DC Converter Light_Conv_63 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_370(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_370(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_370(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_63(modelData = modelData_DCDC);
+
+    /* Light Model 353 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_63(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=17.55);
+      HPF.DC.Variable_DC_Load Light_353;
+
+    /* Light Model 350 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_353(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_353(k=35) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_353(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_350;
+
+    /* Light Model 349 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_350(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_350(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_350(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_349;
+
+    /* Light Model 348 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_349(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_349(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_349(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_348;
+
+    /* Light Model 347 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_348(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_348(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_348(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_347;
+
+    /* Light Model 332 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_347(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_347(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_347(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_332;
+
+    /* Light Model 331 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_332(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_332(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_332(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_331;
+
+    /* Light Model 330 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_331(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_331(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_331(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_330;
+
+    /* AC/DC Converter Light_Conv_62 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_330(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_330(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_330(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_62(modelData = modelData_DCDC);
+
+    /* Light Model 390 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_62(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=20.72);
+      HPF.DC.Variable_DC_Load Light_390;
+
+    /* Light Model 389 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_390(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_390(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_390(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_389;
+
+    /* Light Model 388 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_389(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_389(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_389(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_388;
+
+    /* Light Model 387 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_388(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_388(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_388(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_387;
+
+    /* Light Model 382 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_387(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_387(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_387(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_382;
+
+    /* Light Model 381 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_382(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_382(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_382(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_381;
+
+    /* Light Model 380 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_381(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_381(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_381(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_380;
+
+    /* Light Model 328 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_380(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_380(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_380(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_328;
+
+    /* AC/DC Converter Light_Conv_61 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_328(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_328(k=42) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_328(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_61(modelData = modelData_DCDC);
+
+    /* Light Model 544 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_61(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=12.73);
+      HPF.DC.Variable_DC_Load Light_544;
+
+    /* Light Model 543 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_544(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_544(k=22) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_544(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_543;
+
+    /* Light Model 354 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_543(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_543(k=22) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_543(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_354;
+
+    /* Light Model 351 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_354(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_354(k=35) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_354(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_351;
+
+    /* Light Model 329 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_351(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_351(k=35) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_351(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_329;
+
+    /* Light Model 295 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_329(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_329(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_329(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_295;
+
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_295(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_295(k=42) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_295(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+
+      Modelica.Electrical.Analog.Interfaces.PositivePin p
+        "Positive electrical pin of port 1" annotation (Placement(transformation(
+              extent={{-114,10},{-94,30}}), iconTransformation(extent={{-110,90},{-90,
+                110}})));
+      HPF.Cables.NEC_CableModelDC cable_light_L2_2A(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+          length=15) annotation (Placement(visible=true, transformation(
+            origin={-38,20},
+            extent={{10,-10},{-10,10}},
+            rotation=0)));
+    equation
+
+    /* Insert equation here */
+
+    /* AC/DC Converter Light_Conv_65 */
+      connect(cable_Light_Conv_65.n, cable_light_L2_2A.p);
+      connect(Light_Conv_65.p1,  cable_Light_Conv_65.p);
+      connect(Light_Conv_65.n1, GndDC.p);
+      connect(Light_Conv_65.n2, GndDC.p);
+
+    /* Light Connections 506 */
+      connect(Light_driver_506.n2, GndDC.p);
+      connect(Light_driver_506.n1, GndDC.p);
+      connect(Light_506.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_506.u);
+      connect(Gain_Light_driver_506.y, Light_506.u);
+      connect(Light_506.p, Light_driver_506.p2);
+      connect(Light_driver_506.p1,  cable_light_506.p);
+      connect(Light_Conv_65.p2, cable_light_506.n);
+
+    /* Light Connections 505 */
+      connect(Light_driver_505.n2, GndDC.p);
+      connect(Light_driver_505.n1, GndDC.p);
+      connect(Light_505.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_505.u);
+      connect(Gain_Light_driver_505.y, Light_505.u);
+      connect(Light_505.p, Light_driver_505.p2);
+      connect(Light_driver_505.p1,  cable_light_505.p);
+      connect(Light_Conv_65.p2, cable_light_505.n);
+
+    /* Light Connections 502 */
+      connect(Light_driver_502.n2, GndDC.p);
+      connect(Light_driver_502.n1, GndDC.p);
+      connect(Light_502.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_502.u);
+      connect(Gain_Light_driver_502.y, Light_502.u);
+      connect(Light_502.p, Light_driver_502.p2);
+      connect(Light_driver_502.p1,  cable_light_502.p);
+      connect(Light_Conv_65.p2, cable_light_502.n);
+
+    /* Light Connections 501 */
+      connect(Light_driver_501.n2, GndDC.p);
+      connect(Light_driver_501.n1, GndDC.p);
+      connect(Light_501.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_501.u);
+      connect(Gain_Light_driver_501.y, Light_501.u);
+      connect(Light_501.p, Light_driver_501.p2);
+      connect(Light_driver_501.p1,  cable_light_501.p);
+      connect(Light_Conv_65.p2, cable_light_501.n);
+
+    /* Light Connections 500 */
+      connect(Light_driver_500.n2, GndDC.p);
+      connect(Light_driver_500.n1, GndDC.p);
+      connect(Light_500.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_500.u);
+      connect(Gain_Light_driver_500.y, Light_500.u);
+      connect(Light_500.p, Light_driver_500.p2);
+      connect(Light_driver_500.p1,  cable_light_500.p);
+      connect(Light_Conv_65.p2, cable_light_500.n);
+
+    /* Light Connections 498 */
+      connect(Light_driver_498.n2, GndDC.p);
+      connect(Light_driver_498.n1, GndDC.p);
+      connect(Light_498.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_498.u);
+      connect(Gain_Light_driver_498.y, Light_498.u);
+      connect(Light_498.p, Light_driver_498.p2);
+      connect(Light_driver_498.p1,  cable_light_498.p);
+      connect(Light_Conv_65.p2, cable_light_498.n);
+
+    /* Light Connections 497 */
+      connect(Light_driver_497.n2, GndDC.p);
+      connect(Light_driver_497.n1, GndDC.p);
+      connect(Light_497.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_497.u);
+      connect(Gain_Light_driver_497.y, Light_497.u);
+      connect(Light_497.p, Light_driver_497.p2);
+      connect(Light_driver_497.p1,  cable_light_497.p);
+      connect(Light_Conv_65.p2, cable_light_497.n);
+
+    /* Light Connections 496 */
+      connect(Light_driver_496.n2, GndDC.p);
+      connect(Light_driver_496.n1, GndDC.p);
+      connect(Light_496.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_496.u);
+      connect(Gain_Light_driver_496.y, Light_496.u);
+      connect(Light_496.p, Light_driver_496.p2);
+      connect(Light_driver_496.p1,  cable_light_496.p);
+      connect(Light_Conv_65.p2, cable_light_496.n);
+
+    /* AC/DC Converter Light_Conv_64 */
+      connect(cable_Light_Conv_64.n, cable_light_L2_2A.p);
+      connect(Light_Conv_64.p1,  cable_Light_Conv_64.p);
+      connect(Light_Conv_64.n1, GndDC.p);
+      connect(Light_Conv_64.n2, GndDC.p);
+
+    /* Light Connections 499 */
+      connect(Light_driver_499.n2, GndDC.p);
+      connect(Light_driver_499.n1, GndDC.p);
+      connect(Light_499.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_499.u);
+      connect(Gain_Light_driver_499.y, Light_499.u);
+      connect(Light_499.p, Light_driver_499.p2);
+      connect(Light_driver_499.p1,  cable_light_499.p);
+      connect(Light_Conv_64.p2, cable_light_499.n);
+
+    /* Light Connections 495 */
+      connect(Light_driver_495.n2, GndDC.p);
+      connect(Light_driver_495.n1, GndDC.p);
+      connect(Light_495.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_495.u);
+      connect(Gain_Light_driver_495.y, Light_495.u);
+      connect(Light_495.p, Light_driver_495.p2);
+      connect(Light_driver_495.p1,  cable_light_495.p);
+      connect(Light_Conv_64.p2, cable_light_495.n);
+
+    /* Light Connections 446 */
+      connect(Light_driver_446.n2, GndDC.p);
+      connect(Light_driver_446.n1, GndDC.p);
+      connect(Light_446.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn3_Lights.y[1], Gain_Light_driver_446.u);
+      connect(Gain_Light_driver_446.y, Light_446.u);
+      connect(Light_446.p, Light_driver_446.p2);
+      connect(Light_driver_446.p1,  cable_light_446.p);
+      connect(Light_Conv_64.p2, cable_light_446.n);
+
+    /* Light Connections 445 */
+      connect(Light_driver_445.n2, GndDC.p);
+      connect(Light_driver_445.n1, GndDC.p);
+      connect(Light_445.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn3_Lights.y[1], Gain_Light_driver_445.u);
+      connect(Gain_Light_driver_445.y, Light_445.u);
+      connect(Light_445.p, Light_driver_445.p2);
+      connect(Light_driver_445.p1,  cable_light_445.p);
+      connect(Light_Conv_64.p2, cable_light_445.n);
+
+    /* Light Connections 444 */
+      connect(Light_driver_444.n2, GndDC.p);
+      connect(Light_driver_444.n1, GndDC.p);
+      connect(Light_444.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_444.u);
+      connect(Gain_Light_driver_444.y, Light_444.u);
+      connect(Light_444.p, Light_driver_444.p2);
+      connect(Light_driver_444.p1,  cable_light_444.p);
+      connect(Light_Conv_64.p2, cable_light_444.n);
+
+    /* Light Connections 443 */
+      connect(Light_driver_443.n2, GndDC.p);
+      connect(Light_driver_443.n1, GndDC.p);
+      connect(Light_443.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_443.u);
+      connect(Gain_Light_driver_443.y, Light_443.u);
+      connect(Light_443.p, Light_driver_443.p2);
+      connect(Light_driver_443.p1,  cable_light_443.p);
+      connect(Light_Conv_64.p2, cable_light_443.n);
+
+    /* Light Connections 442 */
+      connect(Light_driver_442.n2, GndDC.p);
+      connect(Light_driver_442.n1, GndDC.p);
+      connect(Light_442.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn3_Lights.y[1], Gain_Light_driver_442.u);
+      connect(Gain_Light_driver_442.y, Light_442.u);
+      connect(Light_442.p, Light_driver_442.p2);
+      connect(Light_driver_442.p1,  cable_light_442.p);
+      connect(Light_Conv_64.p2, cable_light_442.n);
+
+    /* Light Connections 441 */
+      connect(Light_driver_441.n2, GndDC.p);
+      connect(Light_driver_441.n1, GndDC.p);
+      connect(Light_441.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn3_Lights.y[1], Gain_Light_driver_441.u);
+      connect(Gain_Light_driver_441.y, Light_441.u);
+      connect(Light_441.p, Light_driver_441.p2);
+      connect(Light_driver_441.p1,  cable_light_441.p);
+      connect(Light_Conv_64.p2, cable_light_441.n);
+
+    /* AC/DC Converter Light_Conv_60 */
+      connect(cable_Light_Conv_60.n, cable_light_L2_2A.p);
+      connect(Light_Conv_60.p1,  cable_Light_Conv_60.p);
+      connect(Light_Conv_60.n1, GndDC.p);
+      connect(Light_Conv_60.n2, GndDC.p);
+
+    /* Light Connections 386 */
+      connect(Light_driver_386.n2, GndDC.p);
+      connect(Light_driver_386.n1, GndDC.p);
+      connect(Light_386.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_386.u);
+      connect(Gain_Light_driver_386.y, Light_386.u);
+      connect(Light_386.p, Light_driver_386.p2);
+      connect(Light_driver_386.p1,  cable_light_386.p);
+      connect(Light_Conv_60.p2, cable_light_386.n);
+
+    /* Light Connections 385 */
+      connect(Light_driver_385.n2, GndDC.p);
+      connect(Light_driver_385.n1, GndDC.p);
+      connect(Light_385.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_385.u);
+      connect(Gain_Light_driver_385.y, Light_385.u);
+      connect(Light_385.p, Light_driver_385.p2);
+      connect(Light_driver_385.p1,  cable_light_385.p);
+      connect(Light_Conv_60.p2, cable_light_385.n);
+
+    /* Light Connections 384 */
+      connect(Light_driver_384.n2, GndDC.p);
+      connect(Light_driver_384.n1, GndDC.p);
+      connect(Light_384.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_384.u);
+      connect(Gain_Light_driver_384.y, Light_384.u);
+      connect(Light_384.p, Light_driver_384.p2);
+      connect(Light_driver_384.p1,  cable_light_384.p);
+      connect(Light_Conv_60.p2, cable_light_384.n);
+
+    /* Light Connections 383 */
+      connect(Light_driver_383.n2, GndDC.p);
+      connect(Light_driver_383.n1, GndDC.p);
+      connect(Light_383.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_383.u);
+      connect(Gain_Light_driver_383.y, Light_383.u);
+      connect(Light_383.p, Light_driver_383.p2);
+      connect(Light_driver_383.p1,  cable_light_383.p);
+      connect(Light_Conv_60.p2, cable_light_383.n);
+
+    /* Light Connections 379 */
+      connect(Light_driver_379.n2, GndDC.p);
+      connect(Light_driver_379.n1, GndDC.p);
+      connect(Light_379.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_379.u);
+      connect(Gain_Light_driver_379.y, Light_379.u);
+      connect(Light_379.p, Light_driver_379.p2);
+      connect(Light_driver_379.p1,  cable_light_379.p);
+      connect(Light_Conv_60.p2, cable_light_379.n);
+
+    /* Light Connections 378 */
+      connect(Light_driver_378.n2, GndDC.p);
+      connect(Light_driver_378.n1, GndDC.p);
+      connect(Light_378.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_378.u);
+      connect(Gain_Light_driver_378.y, Light_378.u);
+      connect(Light_378.p, Light_driver_378.p2);
+      connect(Light_driver_378.p1,  cable_light_378.p);
+      connect(Light_Conv_60.p2, cable_light_378.n);
+
+    /* Light Connections 377 */
+      connect(Light_driver_377.n2, GndDC.p);
+      connect(Light_driver_377.n1, GndDC.p);
+      connect(Light_377.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_377.u);
+      connect(Gain_Light_driver_377.y, Light_377.u);
+      connect(Light_377.p, Light_driver_377.p2);
+      connect(Light_driver_377.p1,  cable_light_377.p);
+      connect(Light_Conv_60.p2, cable_light_377.n);
+
+    /* Light Connections 370 */
+      connect(Light_driver_370.n2, GndDC.p);
+      connect(Light_driver_370.n1, GndDC.p);
+      connect(Light_370.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_370.u);
+      connect(Gain_Light_driver_370.y, Light_370.u);
+      connect(Light_370.p, Light_driver_370.p2);
+      connect(Light_driver_370.p1,  cable_light_370.p);
+      connect(Light_Conv_60.p2, cable_light_370.n);
+
+    /* AC/DC Converter Light_Conv_63 */
+      connect(cable_Light_Conv_63.n, cable_light_L2_2A.p);
+      connect(Light_Conv_63.p1,  cable_Light_Conv_63.p);
+      connect(Light_Conv_63.n1, GndDC.p);
+      connect(Light_Conv_63.n2, GndDC.p);
+
+    /* Light Connections 353 */
+      connect(Light_driver_353.n2, GndDC.p);
+      connect(Light_driver_353.n1, GndDC.p);
+      connect(Light_353.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_353.u);
+      connect(Gain_Light_driver_353.y, Light_353.u);
+      connect(Light_353.p, Light_driver_353.p2);
+      connect(Light_driver_353.p1,  cable_light_353.p);
+      connect(Light_Conv_63.p2, cable_light_353.n);
+
+    /* Light Connections 350 */
+      connect(Light_driver_350.n2, GndDC.p);
+      connect(Light_driver_350.n1, GndDC.p);
+      connect(Light_350.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_350.u);
+      connect(Gain_Light_driver_350.y, Light_350.u);
+      connect(Light_350.p, Light_driver_350.p2);
+      connect(Light_driver_350.p1,  cable_light_350.p);
+      connect(Light_Conv_63.p2, cable_light_350.n);
+
+    /* Light Connections 349 */
+      connect(Light_driver_349.n2, GndDC.p);
+      connect(Light_driver_349.n1, GndDC.p);
+      connect(Light_349.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_349.u);
+      connect(Gain_Light_driver_349.y, Light_349.u);
+      connect(Light_349.p, Light_driver_349.p2);
+      connect(Light_driver_349.p1,  cable_light_349.p);
+      connect(Light_Conv_63.p2, cable_light_349.n);
+
+    /* Light Connections 348 */
+      connect(Light_driver_348.n2, GndDC.p);
+      connect(Light_driver_348.n1, GndDC.p);
+      connect(Light_348.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_348.u);
+      connect(Gain_Light_driver_348.y, Light_348.u);
+      connect(Light_348.p, Light_driver_348.p2);
+      connect(Light_driver_348.p1,  cable_light_348.p);
+      connect(Light_Conv_63.p2, cable_light_348.n);
+
+    /* Light Connections 347 */
+      connect(Light_driver_347.n2, GndDC.p);
+      connect(Light_driver_347.n1, GndDC.p);
+      connect(Light_347.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_347.u);
+      connect(Gain_Light_driver_347.y, Light_347.u);
+      connect(Light_347.p, Light_driver_347.p2);
+      connect(Light_driver_347.p1,  cable_light_347.p);
+      connect(Light_Conv_63.p2, cable_light_347.n);
+
+    /* Light Connections 332 */
+      connect(Light_driver_332.n2, GndDC.p);
+      connect(Light_driver_332.n1, GndDC.p);
+      connect(Light_332.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_332.u);
+      connect(Gain_Light_driver_332.y, Light_332.u);
+      connect(Light_332.p, Light_driver_332.p2);
+      connect(Light_driver_332.p1,  cable_light_332.p);
+      connect(Light_Conv_63.p2, cable_light_332.n);
+
+    /* Light Connections 331 */
+      connect(Light_driver_331.n2, GndDC.p);
+      connect(Light_driver_331.n1, GndDC.p);
+      connect(Light_331.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_331.u);
+      connect(Gain_Light_driver_331.y, Light_331.u);
+      connect(Light_331.p, Light_driver_331.p2);
+      connect(Light_driver_331.p1,  cable_light_331.p);
+      connect(Light_Conv_63.p2, cable_light_331.n);
+
+    /* Light Connections 330 */
+      connect(Light_driver_330.n2, GndDC.p);
+      connect(Light_driver_330.n1, GndDC.p);
+      connect(Light_330.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_330.u);
+      connect(Gain_Light_driver_330.y, Light_330.u);
+      connect(Light_330.p, Light_driver_330.p2);
+      connect(Light_driver_330.p1,  cable_light_330.p);
+      connect(Light_Conv_63.p2, cable_light_330.n);
+
+    /* AC/DC Converter Light_Conv_62 */
+      connect(cable_Light_Conv_62.n, cable_light_L2_2A.p);
+      connect(Light_Conv_62.p1,  cable_Light_Conv_62.p);
+      connect(Light_Conv_62.n1, GndDC.p);
+      connect(Light_Conv_62.n2, GndDC.p);
+
+    /* Light Connections 390 */
+      connect(Light_driver_390.n2, GndDC.p);
+      connect(Light_driver_390.n1, GndDC.p);
+      connect(Light_390.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_390.u);
+      connect(Gain_Light_driver_390.y, Light_390.u);
+      connect(Light_390.p, Light_driver_390.p2);
+      connect(Light_driver_390.p1,  cable_light_390.p);
+      connect(Light_Conv_62.p2, cable_light_390.n);
+
+    /* Light Connections 389 */
+      connect(Light_driver_389.n2, GndDC.p);
+      connect(Light_driver_389.n1, GndDC.p);
+      connect(Light_389.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_389.u);
+      connect(Gain_Light_driver_389.y, Light_389.u);
+      connect(Light_389.p, Light_driver_389.p2);
+      connect(Light_driver_389.p1,  cable_light_389.p);
+      connect(Light_Conv_62.p2, cable_light_389.n);
+
+    /* Light Connections 388 */
+      connect(Light_driver_388.n2, GndDC.p);
+      connect(Light_driver_388.n1, GndDC.p);
+      connect(Light_388.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_388.u);
+      connect(Gain_Light_driver_388.y, Light_388.u);
+      connect(Light_388.p, Light_driver_388.p2);
+      connect(Light_driver_388.p1,  cable_light_388.p);
+      connect(Light_Conv_62.p2, cable_light_388.n);
+
+    /* Light Connections 387 */
+      connect(Light_driver_387.n2, GndDC.p);
+      connect(Light_driver_387.n1, GndDC.p);
+      connect(Light_387.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_387.u);
+      connect(Gain_Light_driver_387.y, Light_387.u);
+      connect(Light_387.p, Light_driver_387.p2);
+      connect(Light_driver_387.p1,  cable_light_387.p);
+      connect(Light_Conv_62.p2, cable_light_387.n);
+
+    /* Light Connections 382 */
+      connect(Light_driver_382.n2, GndDC.p);
+      connect(Light_driver_382.n1, GndDC.p);
+      connect(Light_382.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_382.u);
+      connect(Gain_Light_driver_382.y, Light_382.u);
+      connect(Light_382.p, Light_driver_382.p2);
+      connect(Light_driver_382.p1,  cable_light_382.p);
+      connect(Light_Conv_62.p2, cable_light_382.n);
+
+    /* Light Connections 381 */
+      connect(Light_driver_381.n2, GndDC.p);
+      connect(Light_driver_381.n1, GndDC.p);
+      connect(Light_381.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_381.u);
+      connect(Gain_Light_driver_381.y, Light_381.u);
+      connect(Light_381.p, Light_driver_381.p2);
+      connect(Light_driver_381.p1,  cable_light_381.p);
+      connect(Light_Conv_62.p2, cable_light_381.n);
+
+    /* Light Connections 380 */
+      connect(Light_driver_380.n2, GndDC.p);
+      connect(Light_driver_380.n1, GndDC.p);
+      connect(Light_380.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_380.u);
+      connect(Gain_Light_driver_380.y, Light_380.u);
+      connect(Light_380.p, Light_driver_380.p2);
+      connect(Light_driver_380.p1,  cable_light_380.p);
+      connect(Light_Conv_62.p2, cable_light_380.n);
+
+    /* Light Connections 328 */
+      connect(Light_driver_328.n2, GndDC.p);
+      connect(Light_driver_328.n1, GndDC.p);
+      connect(Light_328.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_328.u);
+      connect(Gain_Light_driver_328.y, Light_328.u);
+      connect(Light_328.p, Light_driver_328.p2);
+      connect(Light_driver_328.p1,  cable_light_328.p);
+      connect(Light_Conv_62.p2, cable_light_328.n);
+
+    /* AC/DC Converter Light_Conv_61 */
+      connect(cable_Light_Conv_61.n, cable_light_L2_2A.p);
+      connect(Light_Conv_61.p1,  cable_Light_Conv_61.p);
+      connect(Light_Conv_61.n1, GndDC.p);
+      connect(Light_Conv_61.n2, GndDC.p);
+
+    /* Light Connections 544 */
+      connect(Light_driver_544.n2, GndDC.p);
+      connect(Light_driver_544.n1, GndDC.p);
+      connect(Light_544.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_544.u);
+      connect(Gain_Light_driver_544.y, Light_544.u);
+      connect(Light_544.p, Light_driver_544.p2);
+      connect(Light_driver_544.p1,  cable_light_544.p);
+      connect(Light_Conv_61.p2, cable_light_544.n);
+
+    /* Light Connections 543 */
+      connect(Light_driver_543.n2, GndDC.p);
+      connect(Light_driver_543.n1, GndDC.p);
+      connect(Light_543.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_543.u);
+      connect(Gain_Light_driver_543.y, Light_543.u);
+      connect(Light_543.p, Light_driver_543.p2);
+      connect(Light_driver_543.p1,  cable_light_543.p);
+      connect(Light_Conv_61.p2, cable_light_543.n);
+
+    /* Light Connections 354 */
+      connect(Light_driver_354.n2, GndDC.p);
+      connect(Light_driver_354.n1, GndDC.p);
+      connect(Light_354.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_354.u);
+      connect(Gain_Light_driver_354.y, Light_354.u);
+      connect(Light_354.p, Light_driver_354.p2);
+      connect(Light_driver_354.p1,  cable_light_354.p);
+      connect(Light_Conv_61.p2, cable_light_354.n);
+
+    /* Light Connections 351 */
+      connect(Light_driver_351.n2, GndDC.p);
+      connect(Light_driver_351.n1, GndDC.p);
+      connect(Light_351.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_351.u);
+      connect(Gain_Light_driver_351.y, Light_351.u);
+      connect(Light_351.p, Light_driver_351.p2);
+      connect(Light_driver_351.p1,  cable_light_351.p);
+      connect(Light_Conv_61.p2, cable_light_351.n);
+
+    /* Light Connections 329 */
+      connect(Light_driver_329.n2, GndDC.p);
+      connect(Light_driver_329.n1, GndDC.p);
+      connect(Light_329.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_329.u);
+      connect(Gain_Light_driver_329.y, Light_329.u);
+      connect(Light_329.p, Light_driver_329.p2);
+      connect(Light_driver_329.p1,  cable_light_329.p);
+      connect(Light_Conv_61.p2, cable_light_329.n);
+
+    /* Light Connections 295 */
+      connect(Light_driver_295.n2, GndDC.p);
+      connect(Light_driver_295.n1, GndDC.p);
+      connect(Light_295.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_295.u);
+      connect(Gain_Light_driver_295.y, Light_295.u);
+      connect(Light_295.p, Light_driver_295.p2);
+      connect(Light_driver_295.p1,  cable_light_295.p);
+      connect(Light_Conv_61.p2, cable_light_295.n);
+
+      connect(cable_light_L2_2A.n, p)
+        annotation (Line(points={{-48,20},{-104,20}}, color={0,0,255}));
+      annotation ();
+    end DC_ACDC_Light_Panel_L2_2A;
+
+    model DC_ACDC_Light_Panel_L2_2B
+      outer HPF.SystemDef systemDef;
+      Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+        Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Core_Lights(
+        tableOnFile=true,
+        tableName="L2-Core-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-74,70},{-54,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn1_Lights(
+        tableOnFile=true,
+        tableName="L2-Zn1-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-40,70},{-20,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn2_Lights(
+        tableOnFile=true,
+        tableName="L2-Zn2-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-8,70},{12,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn3_Lights(
+        tableOnFile=true,
+        tableName="L2-Zn3-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{28,70},{48,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn4_Lights(
+        tableOnFile=true,
+        tableName="L2-Zn4-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{64,70},{84,90}})));
+
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_30(V = 19.5, alpha = 0.26452, beta = 0.12526, gamma = 0.0020109);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_45(V = 19.5, alpha = 0.42081, beta = 0.12526, gamma = 0.001341);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 4.27984, beta = -0.004643965, gamma = 0.0000985992);
+
+    /* Insert models here */
+
+    /* AC/DC Converter Light_Conv_66 */
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_66(modelData = modelData_DCDC);
+
+    /* Light Model 510 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_66(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=30.54);
+      HPF.DC.Variable_DC_Load Light_510;
+
+    /* Light Model 509 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_510(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_510(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_510(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_509;
+
+    /* Light Model 508 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_509(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_509(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_509(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_508;
+
+    /* Light Model 507 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_508(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_508(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_508(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_507;
+
+    /* Light Model 504 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_507(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_507(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_507(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_504;
+
+    /* Light Model 503 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_504(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_504(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_504(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_503;
+
+    /* Light Model 439 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_503(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_503(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_503(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_439;
+
+    /* Light Model 437 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_439(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_439(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_439(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_437;
+
+    /* AC/DC Converter Light_Conv_70 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_437(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_437(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_437(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_70(modelData = modelData_DCDC);
+
+    /* Light Model 513 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_70(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=36.69);
+      HPF.DC.Variable_DC_Load Light_513;
+
+    /* Light Model 512 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_513(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_513(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_513(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_512;
+
+    /* Light Model 511 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_512(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_512(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_512(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_511;
+
+    /* Light Model 436 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_511(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_511(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_511(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_436;
+
+    /* Light Model 428 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_436(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_436(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_436(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_428;
+
+    /* Light Model 427 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_428(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_428(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_428(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_427;
+
+    /* Light Model 425 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_427(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_427(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_427(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_425;
+
+    /* Light Model 424 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_425(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_425(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_425(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_424;
+
+    /* AC/DC Converter Light_Conv_71 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_424(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_424(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_424(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_71(modelData = modelData_DCDC);
+
+    /* Light Model 563 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_71(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=27.99);
+      HPF.DC.Variable_DC_Load Light_563;
+
+    /* Light Model 400 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_563(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_563(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_563(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_400;
+
+    /* Light Model 399 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_400(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_400(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_400(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_399;
+
+    /* Light Model 394 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_399(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_399(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_399(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_394;
+
+    /* Light Model 393 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_394(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_394(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_394(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_393;
+
+    /* Light Model 392 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_393(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_393(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_393(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_392;
+
+    /* Light Model 391 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_392(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_392(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_392(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_391;
+
+    /* AC/DC Converter Light_Conv_75 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_391(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_391(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_391(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_75(modelData = modelData_DCDC);
+
+    /* Light Model 422 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_75(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=33.65);
+      HPF.DC.Variable_DC_Load Light_422;
+
+    /* Light Model 421 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_422(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_422(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_422(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_421;
+
+    /* Light Model 420 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_421(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_421(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_421(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_420;
+
+    /* Light Model 417 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_420(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_420(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_420(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_417;
+
+    /* Light Model 416 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_417(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_417(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_417(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_416;
+
+    /* Light Model 415 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_416(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_416(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_416(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_415;
+
+    /* Light Model 340 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_415(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_415(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_415(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_340;
+
+    /* AC/DC Converter Light_Conv_69 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_340(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_340(k=42) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_340(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_69(modelData = modelData_DCDC);
+
+    /* Light Model 344 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_69(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=25.57);
+      HPF.DC.Variable_DC_Load Light_344;
+
+    /* Light Model 341 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_344(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_344(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_344(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_341;
+
+    /* Light Model 339 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_341(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_341(k=42) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_341(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_339;
+
+    /* Light Model 338 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_339(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_339(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_339(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_338;
+
+    /* Light Model 337 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_338(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_338(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_338(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_337;
+
+    /* Light Model 336 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_337(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_337(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_337(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_336;
+
+    /* Light Model 335 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_336(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_336(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_336(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_335;
+
+    /* AC/DC Converter Light_Conv_67 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_335(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_335(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_335(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_67(modelData = modelData_DCDC);
+
+    /* Light Model 352 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_67(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=19.0);
+      HPF.DC.Variable_DC_Load Light_352;
+
+    /* Light Model 346 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_352(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_352(k=35) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_352(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_346;
+
+    /* Light Model 345 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_346(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_346(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_346(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_345;
+
+    /* Light Model 343 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_345(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_345(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_345(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_343;
+
+    /* Light Model 342 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_343(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_343(k=22) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_343(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_342;
+
+    /* Light Model 327 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_342(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_342(k=22) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_342(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_327;
+
+    /* Light Model 326 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_327(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_327(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_327(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_326;
+
+    /* Light Model 325 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_326(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_326(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_326(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_325;
+
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_325(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_325(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_325(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+
+      Modelica.Electrical.Analog.Interfaces.PositivePin p
+        "Positive electrical pin of port 1" annotation (Placement(transformation(
+              extent={{-114,10},{-94,30}}), iconTransformation(extent={{-110,90},{-90,
+                110}})));
+      HPF.Cables.NEC_CableModelDC cable_light_L2_2B(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+          length=15) annotation (Placement(visible=true, transformation(
+            origin={-38,20},
+            extent={{10,-10},{-10,10}},
+            rotation=0)));
+    equation
+
+    /* Insert equation here */
+
+    /* AC/DC Converter Light_Conv_66 */
+      connect(cable_Light_Conv_66.n, cable_light_L2_2B.p);
+      connect(Light_Conv_66.p1,  cable_Light_Conv_66.p);
+      connect(Light_Conv_66.n1, GndDC.p);
+      connect(Light_Conv_66.n2, GndDC.p);
+
+    /* Light Connections 510 */
+      connect(Light_driver_510.n2, GndDC.p);
+      connect(Light_driver_510.n1, GndDC.p);
+      connect(Light_510.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_510.u);
+      connect(Gain_Light_driver_510.y, Light_510.u);
+      connect(Light_510.p, Light_driver_510.p2);
+      connect(Light_driver_510.p1,  cable_light_510.p);
+      connect(Light_Conv_66.p2, cable_light_510.n);
+
+    /* Light Connections 509 */
+      connect(Light_driver_509.n2, GndDC.p);
+      connect(Light_driver_509.n1, GndDC.p);
+      connect(Light_509.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_509.u);
+      connect(Gain_Light_driver_509.y, Light_509.u);
+      connect(Light_509.p, Light_driver_509.p2);
+      connect(Light_driver_509.p1,  cable_light_509.p);
+      connect(Light_Conv_66.p2, cable_light_509.n);
+
+    /* Light Connections 508 */
+      connect(Light_driver_508.n2, GndDC.p);
+      connect(Light_driver_508.n1, GndDC.p);
+      connect(Light_508.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_508.u);
+      connect(Gain_Light_driver_508.y, Light_508.u);
+      connect(Light_508.p, Light_driver_508.p2);
+      connect(Light_driver_508.p1,  cable_light_508.p);
+      connect(Light_Conv_66.p2, cable_light_508.n);
+
+    /* Light Connections 507 */
+      connect(Light_driver_507.n2, GndDC.p);
+      connect(Light_driver_507.n1, GndDC.p);
+      connect(Light_507.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_507.u);
+      connect(Gain_Light_driver_507.y, Light_507.u);
+      connect(Light_507.p, Light_driver_507.p2);
+      connect(Light_driver_507.p1,  cable_light_507.p);
+      connect(Light_Conv_66.p2, cable_light_507.n);
+
+    /* Light Connections 504 */
+      connect(Light_driver_504.n2, GndDC.p);
+      connect(Light_driver_504.n1, GndDC.p);
+      connect(Light_504.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_504.u);
+      connect(Gain_Light_driver_504.y, Light_504.u);
+      connect(Light_504.p, Light_driver_504.p2);
+      connect(Light_driver_504.p1,  cable_light_504.p);
+      connect(Light_Conv_66.p2, cable_light_504.n);
+
+    /* Light Connections 503 */
+      connect(Light_driver_503.n2, GndDC.p);
+      connect(Light_driver_503.n1, GndDC.p);
+      connect(Light_503.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_503.u);
+      connect(Gain_Light_driver_503.y, Light_503.u);
+      connect(Light_503.p, Light_driver_503.p2);
+      connect(Light_driver_503.p1,  cable_light_503.p);
+      connect(Light_Conv_66.p2, cable_light_503.n);
+
+    /* Light Connections 439 */
+      connect(Light_driver_439.n2, GndDC.p);
+      connect(Light_driver_439.n1, GndDC.p);
+      connect(Light_439.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_439.u);
+      connect(Gain_Light_driver_439.y, Light_439.u);
+      connect(Light_439.p, Light_driver_439.p2);
+      connect(Light_driver_439.p1,  cable_light_439.p);
+      connect(Light_Conv_66.p2, cable_light_439.n);
+
+    /* Light Connections 437 */
+      connect(Light_driver_437.n2, GndDC.p);
+      connect(Light_driver_437.n1, GndDC.p);
+      connect(Light_437.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn3_Lights.y[1], Gain_Light_driver_437.u);
+      connect(Gain_Light_driver_437.y, Light_437.u);
+      connect(Light_437.p, Light_driver_437.p2);
+      connect(Light_driver_437.p1,  cable_light_437.p);
+      connect(Light_Conv_66.p2, cable_light_437.n);
+
+    /* AC/DC Converter Light_Conv_70 */
+      connect(cable_Light_Conv_70.n, cable_light_L2_2B.p);
+      connect(Light_Conv_70.p1,  cable_Light_Conv_70.p);
+      connect(Light_Conv_70.n1, GndDC.p);
+      connect(Light_Conv_70.n2, GndDC.p);
+
+    /* Light Connections 513 */
+      connect(Light_driver_513.n2, GndDC.p);
+      connect(Light_driver_513.n1, GndDC.p);
+      connect(Light_513.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_513.u);
+      connect(Gain_Light_driver_513.y, Light_513.u);
+      connect(Light_513.p, Light_driver_513.p2);
+      connect(Light_driver_513.p1,  cable_light_513.p);
+      connect(Light_Conv_70.p2, cable_light_513.n);
+
+    /* Light Connections 512 */
+      connect(Light_driver_512.n2, GndDC.p);
+      connect(Light_driver_512.n1, GndDC.p);
+      connect(Light_512.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_512.u);
+      connect(Gain_Light_driver_512.y, Light_512.u);
+      connect(Light_512.p, Light_driver_512.p2);
+      connect(Light_driver_512.p1,  cable_light_512.p);
+      connect(Light_Conv_70.p2, cable_light_512.n);
+
+    /* Light Connections 511 */
+      connect(Light_driver_511.n2, GndDC.p);
+      connect(Light_driver_511.n1, GndDC.p);
+      connect(Light_511.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_511.u);
+      connect(Gain_Light_driver_511.y, Light_511.u);
+      connect(Light_511.p, Light_driver_511.p2);
+      connect(Light_driver_511.p1,  cable_light_511.p);
+      connect(Light_Conv_70.p2, cable_light_511.n);
+
+    /* Light Connections 436 */
+      connect(Light_driver_436.n2, GndDC.p);
+      connect(Light_driver_436.n1, GndDC.p);
+      connect(Light_436.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_436.u);
+      connect(Gain_Light_driver_436.y, Light_436.u);
+      connect(Light_436.p, Light_driver_436.p2);
+      connect(Light_driver_436.p1,  cable_light_436.p);
+      connect(Light_Conv_70.p2, cable_light_436.n);
+
+    /* Light Connections 428 */
+      connect(Light_driver_428.n2, GndDC.p);
+      connect(Light_driver_428.n1, GndDC.p);
+      connect(Light_428.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_428.u);
+      connect(Gain_Light_driver_428.y, Light_428.u);
+      connect(Light_428.p, Light_driver_428.p2);
+      connect(Light_driver_428.p1,  cable_light_428.p);
+      connect(Light_Conv_70.p2, cable_light_428.n);
+
+    /* Light Connections 427 */
+      connect(Light_driver_427.n2, GndDC.p);
+      connect(Light_driver_427.n1, GndDC.p);
+      connect(Light_427.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_427.u);
+      connect(Gain_Light_driver_427.y, Light_427.u);
+      connect(Light_427.p, Light_driver_427.p2);
+      connect(Light_driver_427.p1,  cable_light_427.p);
+      connect(Light_Conv_70.p2, cable_light_427.n);
+
+    /* Light Connections 425 */
+      connect(Light_driver_425.n2, GndDC.p);
+      connect(Light_driver_425.n1, GndDC.p);
+      connect(Light_425.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_425.u);
+      connect(Gain_Light_driver_425.y, Light_425.u);
+      connect(Light_425.p, Light_driver_425.p2);
+      connect(Light_driver_425.p1,  cable_light_425.p);
+      connect(Light_Conv_70.p2, cable_light_425.n);
+
+    /* Light Connections 424 */
+      connect(Light_driver_424.n2, GndDC.p);
+      connect(Light_driver_424.n1, GndDC.p);
+      connect(Light_424.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_424.u);
+      connect(Gain_Light_driver_424.y, Light_424.u);
+      connect(Light_424.p, Light_driver_424.p2);
+      connect(Light_driver_424.p1,  cable_light_424.p);
+      connect(Light_Conv_70.p2, cable_light_424.n);
+
+    /* AC/DC Converter Light_Conv_71 */
+      connect(cable_Light_Conv_71.n, cable_light_L2_2B.p);
+      connect(Light_Conv_71.p1,  cable_Light_Conv_71.p);
+      connect(Light_Conv_71.n1, GndDC.p);
+      connect(Light_Conv_71.n2, GndDC.p);
+
+    /* Light Connections 563 */
+      connect(Light_driver_563.n2, GndDC.p);
+      connect(Light_driver_563.n1, GndDC.p);
+      connect(Light_563.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_563.u);
+      connect(Gain_Light_driver_563.y, Light_563.u);
+      connect(Light_563.p, Light_driver_563.p2);
+      connect(Light_driver_563.p1,  cable_light_563.p);
+      connect(Light_Conv_71.p2, cable_light_563.n);
+
+    /* Light Connections 400 */
+      connect(Light_driver_400.n2, GndDC.p);
+      connect(Light_driver_400.n1, GndDC.p);
+      connect(Light_400.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_400.u);
+      connect(Gain_Light_driver_400.y, Light_400.u);
+      connect(Light_400.p, Light_driver_400.p2);
+      connect(Light_driver_400.p1,  cable_light_400.p);
+      connect(Light_Conv_71.p2, cable_light_400.n);
+
+    /* Light Connections 399 */
+      connect(Light_driver_399.n2, GndDC.p);
+      connect(Light_driver_399.n1, GndDC.p);
+      connect(Light_399.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_399.u);
+      connect(Gain_Light_driver_399.y, Light_399.u);
+      connect(Light_399.p, Light_driver_399.p2);
+      connect(Light_driver_399.p1,  cable_light_399.p);
+      connect(Light_Conv_71.p2, cable_light_399.n);
+
+    /* Light Connections 394 */
+      connect(Light_driver_394.n2, GndDC.p);
+      connect(Light_driver_394.n1, GndDC.p);
+      connect(Light_394.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_394.u);
+      connect(Gain_Light_driver_394.y, Light_394.u);
+      connect(Light_394.p, Light_driver_394.p2);
+      connect(Light_driver_394.p1,  cable_light_394.p);
+      connect(Light_Conv_71.p2, cable_light_394.n);
+
+    /* Light Connections 393 */
+      connect(Light_driver_393.n2, GndDC.p);
+      connect(Light_driver_393.n1, GndDC.p);
+      connect(Light_393.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_393.u);
+      connect(Gain_Light_driver_393.y, Light_393.u);
+      connect(Light_393.p, Light_driver_393.p2);
+      connect(Light_driver_393.p1,  cable_light_393.p);
+      connect(Light_Conv_71.p2, cable_light_393.n);
+
+    /* Light Connections 392 */
+      connect(Light_driver_392.n2, GndDC.p);
+      connect(Light_driver_392.n1, GndDC.p);
+      connect(Light_392.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_392.u);
+      connect(Gain_Light_driver_392.y, Light_392.u);
+      connect(Light_392.p, Light_driver_392.p2);
+      connect(Light_driver_392.p1,  cable_light_392.p);
+      connect(Light_Conv_71.p2, cable_light_392.n);
+
+    /* Light Connections 391 */
+      connect(Light_driver_391.n2, GndDC.p);
+      connect(Light_driver_391.n1, GndDC.p);
+      connect(Light_391.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_391.u);
+      connect(Gain_Light_driver_391.y, Light_391.u);
+      connect(Light_391.p, Light_driver_391.p2);
+      connect(Light_driver_391.p1,  cable_light_391.p);
+      connect(Light_Conv_71.p2, cable_light_391.n);
+
+    /* AC/DC Converter Light_Conv_75 */
+      connect(cable_Light_Conv_75.n, cable_light_L2_2B.p);
+      connect(Light_Conv_75.p1,  cable_Light_Conv_75.p);
+      connect(Light_Conv_75.n1, GndDC.p);
+      connect(Light_Conv_75.n2, GndDC.p);
+
+    /* Light Connections 422 */
+      connect(Light_driver_422.n2, GndDC.p);
+      connect(Light_driver_422.n1, GndDC.p);
+      connect(Light_422.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_422.u);
+      connect(Gain_Light_driver_422.y, Light_422.u);
+      connect(Light_422.p, Light_driver_422.p2);
+      connect(Light_driver_422.p1,  cable_light_422.p);
+      connect(Light_Conv_75.p2, cable_light_422.n);
+
+    /* Light Connections 421 */
+      connect(Light_driver_421.n2, GndDC.p);
+      connect(Light_driver_421.n1, GndDC.p);
+      connect(Light_421.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_421.u);
+      connect(Gain_Light_driver_421.y, Light_421.u);
+      connect(Light_421.p, Light_driver_421.p2);
+      connect(Light_driver_421.p1,  cable_light_421.p);
+      connect(Light_Conv_75.p2, cable_light_421.n);
+
+    /* Light Connections 420 */
+      connect(Light_driver_420.n2, GndDC.p);
+      connect(Light_driver_420.n1, GndDC.p);
+      connect(Light_420.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_420.u);
+      connect(Gain_Light_driver_420.y, Light_420.u);
+      connect(Light_420.p, Light_driver_420.p2);
+      connect(Light_driver_420.p1,  cable_light_420.p);
+      connect(Light_Conv_75.p2, cable_light_420.n);
+
+    /* Light Connections 417 */
+      connect(Light_driver_417.n2, GndDC.p);
+      connect(Light_driver_417.n1, GndDC.p);
+      connect(Light_417.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_417.u);
+      connect(Gain_Light_driver_417.y, Light_417.u);
+      connect(Light_417.p, Light_driver_417.p2);
+      connect(Light_driver_417.p1,  cable_light_417.p);
+      connect(Light_Conv_75.p2, cable_light_417.n);
+
+    /* Light Connections 416 */
+      connect(Light_driver_416.n2, GndDC.p);
+      connect(Light_driver_416.n1, GndDC.p);
+      connect(Light_416.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_416.u);
+      connect(Gain_Light_driver_416.y, Light_416.u);
+      connect(Light_416.p, Light_driver_416.p2);
+      connect(Light_driver_416.p1,  cable_light_416.p);
+      connect(Light_Conv_75.p2, cable_light_416.n);
+
+    /* Light Connections 415 */
+      connect(Light_driver_415.n2, GndDC.p);
+      connect(Light_driver_415.n1, GndDC.p);
+      connect(Light_415.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_415.u);
+      connect(Gain_Light_driver_415.y, Light_415.u);
+      connect(Light_415.p, Light_driver_415.p2);
+      connect(Light_driver_415.p1,  cable_light_415.p);
+      connect(Light_Conv_75.p2, cable_light_415.n);
+
+    /* Light Connections 340 */
+      connect(Light_driver_340.n2, GndDC.p);
+      connect(Light_driver_340.n1, GndDC.p);
+      connect(Light_340.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_340.u);
+      connect(Gain_Light_driver_340.y, Light_340.u);
+      connect(Light_340.p, Light_driver_340.p2);
+      connect(Light_driver_340.p1,  cable_light_340.p);
+      connect(Light_Conv_75.p2, cable_light_340.n);
+
+    /* AC/DC Converter Light_Conv_69 */
+      connect(cable_Light_Conv_69.n, cable_light_L2_2B.p);
+      connect(Light_Conv_69.p1,  cable_Light_Conv_69.p);
+      connect(Light_Conv_69.n1, GndDC.p);
+      connect(Light_Conv_69.n2, GndDC.p);
+
+    /* Light Connections 344 */
+      connect(Light_driver_344.n2, GndDC.p);
+      connect(Light_driver_344.n1, GndDC.p);
+      connect(Light_344.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_344.u);
+      connect(Gain_Light_driver_344.y, Light_344.u);
+      connect(Light_344.p, Light_driver_344.p2);
+      connect(Light_driver_344.p1,  cable_light_344.p);
+      connect(Light_Conv_69.p2, cable_light_344.n);
+
+    /* Light Connections 341 */
+      connect(Light_driver_341.n2, GndDC.p);
+      connect(Light_driver_341.n1, GndDC.p);
+      connect(Light_341.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_341.u);
+      connect(Gain_Light_driver_341.y, Light_341.u);
+      connect(Light_341.p, Light_driver_341.p2);
+      connect(Light_driver_341.p1,  cable_light_341.p);
+      connect(Light_Conv_69.p2, cable_light_341.n);
+
+    /* Light Connections 339 */
+      connect(Light_driver_339.n2, GndDC.p);
+      connect(Light_driver_339.n1, GndDC.p);
+      connect(Light_339.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_339.u);
+      connect(Gain_Light_driver_339.y, Light_339.u);
+      connect(Light_339.p, Light_driver_339.p2);
+      connect(Light_driver_339.p1,  cable_light_339.p);
+      connect(Light_Conv_69.p2, cable_light_339.n);
+
+    /* Light Connections 338 */
+      connect(Light_driver_338.n2, GndDC.p);
+      connect(Light_driver_338.n1, GndDC.p);
+      connect(Light_338.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_338.u);
+      connect(Gain_Light_driver_338.y, Light_338.u);
+      connect(Light_338.p, Light_driver_338.p2);
+      connect(Light_driver_338.p1,  cable_light_338.p);
+      connect(Light_Conv_69.p2, cable_light_338.n);
+
+    /* Light Connections 337 */
+      connect(Light_driver_337.n2, GndDC.p);
+      connect(Light_driver_337.n1, GndDC.p);
+      connect(Light_337.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_337.u);
+      connect(Gain_Light_driver_337.y, Light_337.u);
+      connect(Light_337.p, Light_driver_337.p2);
+      connect(Light_driver_337.p1,  cable_light_337.p);
+      connect(Light_Conv_69.p2, cable_light_337.n);
+
+    /* Light Connections 336 */
+      connect(Light_driver_336.n2, GndDC.p);
+      connect(Light_driver_336.n1, GndDC.p);
+      connect(Light_336.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_336.u);
+      connect(Gain_Light_driver_336.y, Light_336.u);
+      connect(Light_336.p, Light_driver_336.p2);
+      connect(Light_driver_336.p1,  cable_light_336.p);
+      connect(Light_Conv_69.p2, cable_light_336.n);
+
+    /* Light Connections 335 */
+      connect(Light_driver_335.n2, GndDC.p);
+      connect(Light_driver_335.n1, GndDC.p);
+      connect(Light_335.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_335.u);
+      connect(Gain_Light_driver_335.y, Light_335.u);
+      connect(Light_335.p, Light_driver_335.p2);
+      connect(Light_driver_335.p1,  cable_light_335.p);
+      connect(Light_Conv_69.p2, cable_light_335.n);
+
+    /* AC/DC Converter Light_Conv_67 */
+      connect(cable_Light_Conv_67.n, cable_light_L2_2B.p);
+      connect(Light_Conv_67.p1,  cable_Light_Conv_67.p);
+      connect(Light_Conv_67.n1, GndDC.p);
+      connect(Light_Conv_67.n2, GndDC.p);
+
+    /* Light Connections 352 */
+      connect(Light_driver_352.n2, GndDC.p);
+      connect(Light_driver_352.n1, GndDC.p);
+      connect(Light_352.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_352.u);
+      connect(Gain_Light_driver_352.y, Light_352.u);
+      connect(Light_352.p, Light_driver_352.p2);
+      connect(Light_driver_352.p1,  cable_light_352.p);
+      connect(Light_Conv_67.p2, cable_light_352.n);
+
+    /* Light Connections 346 */
+      connect(Light_driver_346.n2, GndDC.p);
+      connect(Light_driver_346.n1, GndDC.p);
+      connect(Light_346.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_346.u);
+      connect(Gain_Light_driver_346.y, Light_346.u);
+      connect(Light_346.p, Light_driver_346.p2);
+      connect(Light_driver_346.p1,  cable_light_346.p);
+      connect(Light_Conv_67.p2, cable_light_346.n);
+
+    /* Light Connections 345 */
+      connect(Light_driver_345.n2, GndDC.p);
+      connect(Light_driver_345.n1, GndDC.p);
+      connect(Light_345.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_345.u);
+      connect(Gain_Light_driver_345.y, Light_345.u);
+      connect(Light_345.p, Light_driver_345.p2);
+      connect(Light_driver_345.p1,  cable_light_345.p);
+      connect(Light_Conv_67.p2, cable_light_345.n);
+
+    /* Light Connections 343 */
+      connect(Light_driver_343.n2, GndDC.p);
+      connect(Light_driver_343.n1, GndDC.p);
+      connect(Light_343.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_343.u);
+      connect(Gain_Light_driver_343.y, Light_343.u);
+      connect(Light_343.p, Light_driver_343.p2);
+      connect(Light_driver_343.p1,  cable_light_343.p);
+      connect(Light_Conv_67.p2, cable_light_343.n);
+
+    /* Light Connections 342 */
+      connect(Light_driver_342.n2, GndDC.p);
+      connect(Light_driver_342.n1, GndDC.p);
+      connect(Light_342.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_342.u);
+      connect(Gain_Light_driver_342.y, Light_342.u);
+      connect(Light_342.p, Light_driver_342.p2);
+      connect(Light_driver_342.p1,  cable_light_342.p);
+      connect(Light_Conv_67.p2, cable_light_342.n);
+
+    /* Light Connections 327 */
+      connect(Light_driver_327.n2, GndDC.p);
+      connect(Light_driver_327.n1, GndDC.p);
+      connect(Light_327.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_327.u);
+      connect(Gain_Light_driver_327.y, Light_327.u);
+      connect(Light_327.p, Light_driver_327.p2);
+      connect(Light_driver_327.p1,  cable_light_327.p);
+      connect(Light_Conv_67.p2, cable_light_327.n);
+
+    /* Light Connections 326 */
+      connect(Light_driver_326.n2, GndDC.p);
+      connect(Light_driver_326.n1, GndDC.p);
+      connect(Light_326.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_326.u);
+      connect(Gain_Light_driver_326.y, Light_326.u);
+      connect(Light_326.p, Light_driver_326.p2);
+      connect(Light_driver_326.p1,  cable_light_326.p);
+      connect(Light_Conv_67.p2, cable_light_326.n);
+
+    /* Light Connections 325 */
+      connect(Light_driver_325.n2, GndDC.p);
+      connect(Light_driver_325.n1, GndDC.p);
+      connect(Light_325.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_325.u);
+      connect(Gain_Light_driver_325.y, Light_325.u);
+      connect(Light_325.p, Light_driver_325.p2);
+      connect(Light_driver_325.p1,  cable_light_325.p);
+      connect(Light_Conv_67.p2, cable_light_325.n);
+
+      connect(cable_light_L2_2B.n, p)
+        annotation (Line(points={{-48,20},{-104,20}}, color={0,0,255}));
+      annotation ();
+    end DC_ACDC_Light_Panel_L2_2B;
+
+    model DC_ACDC_Light_Panel_L2_2C
+      outer HPF.SystemDef systemDef;
+      Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+        Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Core_Lights(
+        tableOnFile=true,
+        tableName="L2-Core-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-74,70},{-54,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn1_Lights(
+        tableOnFile=true,
+        tableName="L2-Zn1-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-40,70},{-20,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn2_Lights(
+        tableOnFile=true,
+        tableName="L2-Zn2-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-8,70},{12,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn3_Lights(
+        tableOnFile=true,
+        tableName="L2-Zn3-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{28,70},{48,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L2_Zn4_Lights(
+        tableOnFile=true,
+        tableName="L2-Zn4-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L2_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{64,70},{84,90}})));
+
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_30(V = 19.5, alpha = 0.26452, beta = 0.12526, gamma = 0.0020109);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_45(V = 19.5, alpha = 0.42081, beta = 0.12526, gamma = 0.001341);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 4.27984, beta = -0.004643965, gamma = 0.0000985992);
+
+    /* Insert models here */
+
+    /* AC/DC Converter Light_Conv_68 */
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_68(modelData = modelData_DCDC);
+
+    /* Light Model 440 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_68(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=37.48);
+      HPF.DC.Variable_DC_Load Light_440;
+
+    /* Light Model 438 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_440(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_440(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_440(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_438;
+
+    /* Light Model 435 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_438(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_438(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_438(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_435;
+
+    /* Light Model 434 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_435(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_435(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_435(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_434;
+
+    /* Light Model 433 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_434(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_434(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_434(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_433;
+
+    /* Light Model 432 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_433(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_433(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_433(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_432;
+
+    /* Light Model 431 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_432(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_432(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_432(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_431;
+
+    /* Light Model 423 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_431(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_431(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_431(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_423;
+
+    /* AC/DC Converter Light_Conv_76 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_423(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_423(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_423(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_76(modelData = modelData_DCDC);
+
+    /* Light Model 514 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_76(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=34.54);
+      HPF.DC.Variable_DC_Load Light_514;
+
+    /* Light Model 430 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_514(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_514(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_514(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_430;
+
+    /* Light Model 429 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_430(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_430(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_430(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_429;
+
+    /* Light Model 426 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_429(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_429(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_429(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_426;
+
+    /* Light Model 419 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_426(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_426(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_426(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_419;
+
+    /* Light Model 418 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_419(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_419(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_419(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_418;
+
+    /* Light Model 414 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_418(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_418(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_418(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_414;
+
+    /* Light Model 413 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_414(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_414(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_414(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_413;
+
+    /* AC/DC Converter Light_Conv_74 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_413(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_413(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_413(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_74(modelData = modelData_DCDC);
+
+    /* Light Model 411 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_74(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=33.43);
+      HPF.DC.Variable_DC_Load Light_411;
+
+    /* Light Model 410 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_411(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_411(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_411(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_410;
+
+    /* Light Model 409 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_410(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_410(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_410(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_409;
+
+    /* Light Model 408 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_409(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_409(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_409(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_408;
+
+    /* Light Model 406 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_408(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_408(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_408(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_406;
+
+    /* Light Model 405 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_406(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_406(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_406(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_405;
+
+    /* Light Model 404 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_405(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_405(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_405(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_404;
+
+    /* Light Model 403 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_404(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_404(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_404(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_403;
+
+    /* AC/DC Converter Light_Conv_73 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_403(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_403(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_403(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_73(modelData = modelData_DCDC);
+
+    /* Light Model 412 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_73(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=35.06);
+      HPF.DC.Variable_DC_Load Light_412;
+
+    /* Light Model 407 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_412(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_412(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_412(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_407;
+
+    /* Light Model 402 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_407(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_407(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_407(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_402;
+
+    /* Light Model 401 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_402(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_402(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_402(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_401;
+
+    /* Light Model 398 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_401(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_401(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_401(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_398;
+
+    /* Light Model 397 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_398(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_398(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_398(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_397;
+
+    /* Light Model 396 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_397(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_397(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_397(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_396;
+
+    /* Light Model 395 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_396(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_396(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_396(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_395;
+
+    /* AC/DC Converter Light_Conv_72 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_395(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_395(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_395(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_72(modelData = modelData_DCDC);
+
+    /* Light Model 562 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_72(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=27.99);
+      HPF.DC.Variable_DC_Load Light_562;
+
+    /* Light Model 561 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_562(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_562(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_562(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_561;
+
+    /* Light Model 560 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_561(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_561(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_561(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_560;
+
+    /* Light Model 559 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_560(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_560(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_560(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_559;
+
+    /* Light Model 558 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_559(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_559(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_559(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_558;
+
+    /* Light Model 557 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_558(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_558(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_558(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_557;
+
+    /* Light Model 334 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_557(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_557(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_557(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_334;
+
+    /* Light Model 333 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_334(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_334(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_334(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_333;
+
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_333(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_333(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_333(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+
+      Modelica.Electrical.Analog.Interfaces.PositivePin p
+        "Positive electrical pin of port 1" annotation (Placement(transformation(
+              extent={{-114,10},{-94,30}}), iconTransformation(extent={{-110,90},{-90,
+                110}})));
+      HPF.Cables.NEC_CableModelDC cable_light_L2_2C(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+          length=15) annotation (Placement(visible=true, transformation(
+            origin={-38,20},
+            extent={{10,-10},{-10,10}},
+            rotation=0)));
+    equation
+
+    /* Insert equation here */
+
+    /* AC/DC Converter Light_Conv_68 */
+      connect(cable_Light_Conv_68.n, cable_light_L2_2C.p);
+      connect(Light_Conv_68.p1,  cable_Light_Conv_68.p);
+      connect(Light_Conv_68.n1, GndDC.p);
+      connect(Light_Conv_68.n2, GndDC.p);
+
+    /* Light Connections 440 */
+      connect(Light_driver_440.n2, GndDC.p);
+      connect(Light_driver_440.n1, GndDC.p);
+      connect(Light_440.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_440.u);
+      connect(Gain_Light_driver_440.y, Light_440.u);
+      connect(Light_440.p, Light_driver_440.p2);
+      connect(Light_driver_440.p1,  cable_light_440.p);
+      connect(Light_Conv_68.p2, cable_light_440.n);
+
+    /* Light Connections 438 */
+      connect(Light_driver_438.n2, GndDC.p);
+      connect(Light_driver_438.n1, GndDC.p);
+      connect(Light_438.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn3_Lights.y[1], Gain_Light_driver_438.u);
+      connect(Gain_Light_driver_438.y, Light_438.u);
+      connect(Light_438.p, Light_driver_438.p2);
+      connect(Light_driver_438.p1,  cable_light_438.p);
+      connect(Light_Conv_68.p2, cable_light_438.n);
+
+    /* Light Connections 435 */
+      connect(Light_driver_435.n2, GndDC.p);
+      connect(Light_driver_435.n1, GndDC.p);
+      connect(Light_435.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_435.u);
+      connect(Gain_Light_driver_435.y, Light_435.u);
+      connect(Light_435.p, Light_driver_435.p2);
+      connect(Light_driver_435.p1,  cable_light_435.p);
+      connect(Light_Conv_68.p2, cable_light_435.n);
+
+    /* Light Connections 434 */
+      connect(Light_driver_434.n2, GndDC.p);
+      connect(Light_driver_434.n1, GndDC.p);
+      connect(Light_434.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn3_Lights.y[1], Gain_Light_driver_434.u);
+      connect(Gain_Light_driver_434.y, Light_434.u);
+      connect(Light_434.p, Light_driver_434.p2);
+      connect(Light_driver_434.p1,  cable_light_434.p);
+      connect(Light_Conv_68.p2, cable_light_434.n);
+
+    /* Light Connections 433 */
+      connect(Light_driver_433.n2, GndDC.p);
+      connect(Light_driver_433.n1, GndDC.p);
+      connect(Light_433.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn3_Lights.y[1], Gain_Light_driver_433.u);
+      connect(Gain_Light_driver_433.y, Light_433.u);
+      connect(Light_433.p, Light_driver_433.p2);
+      connect(Light_driver_433.p1,  cable_light_433.p);
+      connect(Light_Conv_68.p2, cable_light_433.n);
+
+    /* Light Connections 432 */
+      connect(Light_driver_432.n2, GndDC.p);
+      connect(Light_driver_432.n1, GndDC.p);
+      connect(Light_432.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn3_Lights.y[1], Gain_Light_driver_432.u);
+      connect(Gain_Light_driver_432.y, Light_432.u);
+      connect(Light_432.p, Light_driver_432.p2);
+      connect(Light_driver_432.p1,  cable_light_432.p);
+      connect(Light_Conv_68.p2, cable_light_432.n);
+
+    /* Light Connections 431 */
+      connect(Light_driver_431.n2, GndDC.p);
+      connect(Light_driver_431.n1, GndDC.p);
+      connect(Light_431.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn3_Lights.y[1], Gain_Light_driver_431.u);
+      connect(Gain_Light_driver_431.y, Light_431.u);
+      connect(Light_431.p, Light_driver_431.p2);
+      connect(Light_driver_431.p1,  cable_light_431.p);
+      connect(Light_Conv_68.p2, cable_light_431.n);
+
+    /* Light Connections 423 */
+      connect(Light_driver_423.n2, GndDC.p);
+      connect(Light_driver_423.n1, GndDC.p);
+      connect(Light_423.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_423.u);
+      connect(Gain_Light_driver_423.y, Light_423.u);
+      connect(Light_423.p, Light_driver_423.p2);
+      connect(Light_driver_423.p1,  cable_light_423.p);
+      connect(Light_Conv_68.p2, cable_light_423.n);
+
+    /* AC/DC Converter Light_Conv_76 */
+      connect(cable_Light_Conv_76.n, cable_light_L2_2C.p);
+      connect(Light_Conv_76.p1,  cable_Light_Conv_76.p);
+      connect(Light_Conv_76.n1, GndDC.p);
+      connect(Light_Conv_76.n2, GndDC.p);
+
+    /* Light Connections 514 */
+      connect(Light_driver_514.n2, GndDC.p);
+      connect(Light_driver_514.n1, GndDC.p);
+      connect(Light_514.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_514.u);
+      connect(Gain_Light_driver_514.y, Light_514.u);
+      connect(Light_514.p, Light_driver_514.p2);
+      connect(Light_driver_514.p1,  cable_light_514.p);
+      connect(Light_Conv_76.p2, cable_light_514.n);
+
+    /* Light Connections 430 */
+      connect(Light_driver_430.n2, GndDC.p);
+      connect(Light_driver_430.n1, GndDC.p);
+      connect(Light_430.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_430.u);
+      connect(Gain_Light_driver_430.y, Light_430.u);
+      connect(Light_430.p, Light_driver_430.p2);
+      connect(Light_driver_430.p1,  cable_light_430.p);
+      connect(Light_Conv_76.p2, cable_light_430.n);
+
+    /* Light Connections 429 */
+      connect(Light_driver_429.n2, GndDC.p);
+      connect(Light_driver_429.n1, GndDC.p);
+      connect(Light_429.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_429.u);
+      connect(Gain_Light_driver_429.y, Light_429.u);
+      connect(Light_429.p, Light_driver_429.p2);
+      connect(Light_driver_429.p1,  cable_light_429.p);
+      connect(Light_Conv_76.p2, cable_light_429.n);
+
+    /* Light Connections 426 */
+      connect(Light_driver_426.n2, GndDC.p);
+      connect(Light_driver_426.n1, GndDC.p);
+      connect(Light_426.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_426.u);
+      connect(Gain_Light_driver_426.y, Light_426.u);
+      connect(Light_426.p, Light_driver_426.p2);
+      connect(Light_driver_426.p1,  cable_light_426.p);
+      connect(Light_Conv_76.p2, cable_light_426.n);
+
+    /* Light Connections 419 */
+      connect(Light_driver_419.n2, GndDC.p);
+      connect(Light_driver_419.n1, GndDC.p);
+      connect(Light_419.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_419.u);
+      connect(Gain_Light_driver_419.y, Light_419.u);
+      connect(Light_419.p, Light_driver_419.p2);
+      connect(Light_driver_419.p1,  cable_light_419.p);
+      connect(Light_Conv_76.p2, cable_light_419.n);
+
+    /* Light Connections 418 */
+      connect(Light_driver_418.n2, GndDC.p);
+      connect(Light_driver_418.n1, GndDC.p);
+      connect(Light_418.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_418.u);
+      connect(Gain_Light_driver_418.y, Light_418.u);
+      connect(Light_418.p, Light_driver_418.p2);
+      connect(Light_driver_418.p1,  cable_light_418.p);
+      connect(Light_Conv_76.p2, cable_light_418.n);
+
+    /* Light Connections 414 */
+      connect(Light_driver_414.n2, GndDC.p);
+      connect(Light_driver_414.n1, GndDC.p);
+      connect(Light_414.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_414.u);
+      connect(Gain_Light_driver_414.y, Light_414.u);
+      connect(Light_414.p, Light_driver_414.p2);
+      connect(Light_driver_414.p1,  cable_light_414.p);
+      connect(Light_Conv_76.p2, cable_light_414.n);
+
+    /* Light Connections 413 */
+      connect(Light_driver_413.n2, GndDC.p);
+      connect(Light_driver_413.n1, GndDC.p);
+      connect(Light_413.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_413.u);
+      connect(Gain_Light_driver_413.y, Light_413.u);
+      connect(Light_413.p, Light_driver_413.p2);
+      connect(Light_driver_413.p1,  cable_light_413.p);
+      connect(Light_Conv_76.p2, cable_light_413.n);
+
+    /* AC/DC Converter Light_Conv_74 */
+      connect(cable_Light_Conv_74.n, cable_light_L2_2C.p);
+      connect(Light_Conv_74.p1,  cable_Light_Conv_74.p);
+      connect(Light_Conv_74.n1, GndDC.p);
+      connect(Light_Conv_74.n2, GndDC.p);
+
+    /* Light Connections 411 */
+      connect(Light_driver_411.n2, GndDC.p);
+      connect(Light_driver_411.n1, GndDC.p);
+      connect(Light_411.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_411.u);
+      connect(Gain_Light_driver_411.y, Light_411.u);
+      connect(Light_411.p, Light_driver_411.p2);
+      connect(Light_driver_411.p1,  cable_light_411.p);
+      connect(Light_Conv_74.p2, cable_light_411.n);
+
+    /* Light Connections 410 */
+      connect(Light_driver_410.n2, GndDC.p);
+      connect(Light_driver_410.n1, GndDC.p);
+      connect(Light_410.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_410.u);
+      connect(Gain_Light_driver_410.y, Light_410.u);
+      connect(Light_410.p, Light_driver_410.p2);
+      connect(Light_driver_410.p1,  cable_light_410.p);
+      connect(Light_Conv_74.p2, cable_light_410.n);
+
+    /* Light Connections 409 */
+      connect(Light_driver_409.n2, GndDC.p);
+      connect(Light_driver_409.n1, GndDC.p);
+      connect(Light_409.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_409.u);
+      connect(Gain_Light_driver_409.y, Light_409.u);
+      connect(Light_409.p, Light_driver_409.p2);
+      connect(Light_driver_409.p1,  cable_light_409.p);
+      connect(Light_Conv_74.p2, cable_light_409.n);
+
+    /* Light Connections 408 */
+      connect(Light_driver_408.n2, GndDC.p);
+      connect(Light_driver_408.n1, GndDC.p);
+      connect(Light_408.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_408.u);
+      connect(Gain_Light_driver_408.y, Light_408.u);
+      connect(Light_408.p, Light_driver_408.p2);
+      connect(Light_driver_408.p1,  cable_light_408.p);
+      connect(Light_Conv_74.p2, cable_light_408.n);
+
+    /* Light Connections 406 */
+      connect(Light_driver_406.n2, GndDC.p);
+      connect(Light_driver_406.n1, GndDC.p);
+      connect(Light_406.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_406.u);
+      connect(Gain_Light_driver_406.y, Light_406.u);
+      connect(Light_406.p, Light_driver_406.p2);
+      connect(Light_driver_406.p1,  cable_light_406.p);
+      connect(Light_Conv_74.p2, cable_light_406.n);
+
+    /* Light Connections 405 */
+      connect(Light_driver_405.n2, GndDC.p);
+      connect(Light_driver_405.n1, GndDC.p);
+      connect(Light_405.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_405.u);
+      connect(Gain_Light_driver_405.y, Light_405.u);
+      connect(Light_405.p, Light_driver_405.p2);
+      connect(Light_driver_405.p1,  cable_light_405.p);
+      connect(Light_Conv_74.p2, cable_light_405.n);
+
+    /* Light Connections 404 */
+      connect(Light_driver_404.n2, GndDC.p);
+      connect(Light_driver_404.n1, GndDC.p);
+      connect(Light_404.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_404.u);
+      connect(Gain_Light_driver_404.y, Light_404.u);
+      connect(Light_404.p, Light_driver_404.p2);
+      connect(Light_driver_404.p1,  cable_light_404.p);
+      connect(Light_Conv_74.p2, cable_light_404.n);
+
+    /* Light Connections 403 */
+      connect(Light_driver_403.n2, GndDC.p);
+      connect(Light_driver_403.n1, GndDC.p);
+      connect(Light_403.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_403.u);
+      connect(Gain_Light_driver_403.y, Light_403.u);
+      connect(Light_403.p, Light_driver_403.p2);
+      connect(Light_driver_403.p1,  cable_light_403.p);
+      connect(Light_Conv_74.p2, cable_light_403.n);
+
+    /* AC/DC Converter Light_Conv_73 */
+      connect(cable_Light_Conv_73.n, cable_light_L2_2C.p);
+      connect(Light_Conv_73.p1,  cable_Light_Conv_73.p);
+      connect(Light_Conv_73.n1, GndDC.p);
+      connect(Light_Conv_73.n2, GndDC.p);
+
+    /* Light Connections 412 */
+      connect(Light_driver_412.n2, GndDC.p);
+      connect(Light_driver_412.n1, GndDC.p);
+      connect(Light_412.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_412.u);
+      connect(Gain_Light_driver_412.y, Light_412.u);
+      connect(Light_412.p, Light_driver_412.p2);
+      connect(Light_driver_412.p1,  cable_light_412.p);
+      connect(Light_Conv_73.p2, cable_light_412.n);
+
+    /* Light Connections 407 */
+      connect(Light_driver_407.n2, GndDC.p);
+      connect(Light_driver_407.n1, GndDC.p);
+      connect(Light_407.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn2_Lights.y[1], Gain_Light_driver_407.u);
+      connect(Gain_Light_driver_407.y, Light_407.u);
+      connect(Light_407.p, Light_driver_407.p2);
+      connect(Light_driver_407.p1,  cable_light_407.p);
+      connect(Light_Conv_73.p2, cable_light_407.n);
+
+    /* Light Connections 402 */
+      connect(Light_driver_402.n2, GndDC.p);
+      connect(Light_driver_402.n1, GndDC.p);
+      connect(Light_402.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_402.u);
+      connect(Gain_Light_driver_402.y, Light_402.u);
+      connect(Light_402.p, Light_driver_402.p2);
+      connect(Light_driver_402.p1,  cable_light_402.p);
+      connect(Light_Conv_73.p2, cable_light_402.n);
+
+    /* Light Connections 401 */
+      connect(Light_driver_401.n2, GndDC.p);
+      connect(Light_driver_401.n1, GndDC.p);
+      connect(Light_401.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_401.u);
+      connect(Gain_Light_driver_401.y, Light_401.u);
+      connect(Light_401.p, Light_driver_401.p2);
+      connect(Light_driver_401.p1,  cable_light_401.p);
+      connect(Light_Conv_73.p2, cable_light_401.n);
+
+    /* Light Connections 398 */
+      connect(Light_driver_398.n2, GndDC.p);
+      connect(Light_driver_398.n1, GndDC.p);
+      connect(Light_398.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_398.u);
+      connect(Gain_Light_driver_398.y, Light_398.u);
+      connect(Light_398.p, Light_driver_398.p2);
+      connect(Light_driver_398.p1,  cable_light_398.p);
+      connect(Light_Conv_73.p2, cable_light_398.n);
+
+    /* Light Connections 397 */
+      connect(Light_driver_397.n2, GndDC.p);
+      connect(Light_driver_397.n1, GndDC.p);
+      connect(Light_397.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_397.u);
+      connect(Gain_Light_driver_397.y, Light_397.u);
+      connect(Light_397.p, Light_driver_397.p2);
+      connect(Light_driver_397.p1,  cable_light_397.p);
+      connect(Light_Conv_73.p2, cable_light_397.n);
+
+    /* Light Connections 396 */
+      connect(Light_driver_396.n2, GndDC.p);
+      connect(Light_driver_396.n1, GndDC.p);
+      connect(Light_396.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_396.u);
+      connect(Gain_Light_driver_396.y, Light_396.u);
+      connect(Light_396.p, Light_driver_396.p2);
+      connect(Light_driver_396.p1,  cable_light_396.p);
+      connect(Light_Conv_73.p2, cable_light_396.n);
+
+    /* Light Connections 395 */
+      connect(Light_driver_395.n2, GndDC.p);
+      connect(Light_driver_395.n1, GndDC.p);
+      connect(Light_395.n, GndDC.p);
+      connect(combiTimeTable_L2_Zn1_Lights.y[1], Gain_Light_driver_395.u);
+      connect(Gain_Light_driver_395.y, Light_395.u);
+      connect(Light_395.p, Light_driver_395.p2);
+      connect(Light_driver_395.p1,  cable_light_395.p);
+      connect(Light_Conv_73.p2, cable_light_395.n);
+
+    /* AC/DC Converter Light_Conv_72 */
+      connect(cable_Light_Conv_72.n, cable_light_L2_2C.p);
+      connect(Light_Conv_72.p1,  cable_Light_Conv_72.p);
+      connect(Light_Conv_72.n1, GndDC.p);
+      connect(Light_Conv_72.n2, GndDC.p);
+
+    /* Light Connections 562 */
+      connect(Light_driver_562.n2, GndDC.p);
+      connect(Light_driver_562.n1, GndDC.p);
+      connect(Light_562.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_562.u);
+      connect(Gain_Light_driver_562.y, Light_562.u);
+      connect(Light_562.p, Light_driver_562.p2);
+      connect(Light_driver_562.p1,  cable_light_562.p);
+      connect(Light_Conv_72.p2, cable_light_562.n);
+
+    /* Light Connections 561 */
+      connect(Light_driver_561.n2, GndDC.p);
+      connect(Light_driver_561.n1, GndDC.p);
+      connect(Light_561.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_561.u);
+      connect(Gain_Light_driver_561.y, Light_561.u);
+      connect(Light_561.p, Light_driver_561.p2);
+      connect(Light_driver_561.p1,  cable_light_561.p);
+      connect(Light_Conv_72.p2, cable_light_561.n);
+
+    /* Light Connections 560 */
+      connect(Light_driver_560.n2, GndDC.p);
+      connect(Light_driver_560.n1, GndDC.p);
+      connect(Light_560.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_560.u);
+      connect(Gain_Light_driver_560.y, Light_560.u);
+      connect(Light_560.p, Light_driver_560.p2);
+      connect(Light_driver_560.p1,  cable_light_560.p);
+      connect(Light_Conv_72.p2, cable_light_560.n);
+
+    /* Light Connections 559 */
+      connect(Light_driver_559.n2, GndDC.p);
+      connect(Light_driver_559.n1, GndDC.p);
+      connect(Light_559.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_559.u);
+      connect(Gain_Light_driver_559.y, Light_559.u);
+      connect(Light_559.p, Light_driver_559.p2);
+      connect(Light_driver_559.p1,  cable_light_559.p);
+      connect(Light_Conv_72.p2, cable_light_559.n);
+
+    /* Light Connections 558 */
+      connect(Light_driver_558.n2, GndDC.p);
+      connect(Light_driver_558.n1, GndDC.p);
+      connect(Light_558.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_558.u);
+      connect(Gain_Light_driver_558.y, Light_558.u);
+      connect(Light_558.p, Light_driver_558.p2);
+      connect(Light_driver_558.p1,  cable_light_558.p);
+      connect(Light_Conv_72.p2, cable_light_558.n);
+
+    /* Light Connections 557 */
+      connect(Light_driver_557.n2, GndDC.p);
+      connect(Light_driver_557.n1, GndDC.p);
+      connect(Light_557.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_557.u);
+      connect(Gain_Light_driver_557.y, Light_557.u);
+      connect(Light_557.p, Light_driver_557.p2);
+      connect(Light_driver_557.p1,  cable_light_557.p);
+      connect(Light_Conv_72.p2, cable_light_557.n);
+
+    /* Light Connections 334 */
+      connect(Light_driver_334.n2, GndDC.p);
+      connect(Light_driver_334.n1, GndDC.p);
+      connect(Light_334.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_334.u);
+      connect(Gain_Light_driver_334.y, Light_334.u);
+      connect(Light_334.p, Light_driver_334.p2);
+      connect(Light_driver_334.p1,  cable_light_334.p);
+      connect(Light_Conv_72.p2, cable_light_334.n);
+
+    /* Light Connections 333 */
+      connect(Light_driver_333.n2, GndDC.p);
+      connect(Light_driver_333.n1, GndDC.p);
+      connect(Light_333.n, GndDC.p);
+      connect(combiTimeTable_L2_Core_Lights.y[1], Gain_Light_driver_333.u);
+      connect(Gain_Light_driver_333.y, Light_333.u);
+      connect(Light_333.p, Light_driver_333.p2);
+      connect(Light_driver_333.p1,  cable_light_333.p);
+      connect(Light_Conv_72.p2, cable_light_333.n);
+
+      connect(cable_light_L2_2C.n, p)
+        annotation (Line(points={{-48,20},{-104,20}}, color={0,0,255}));
+      annotation ();
+    end DC_ACDC_Light_Panel_L2_2C;
+
+    model DC_ACDC_Light_Panel_L3_1A
+      outer HPF.SystemDef systemDef;
+      Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+        Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Core_Lights(
+        tableOnFile=true,
+        tableName="L3-Core-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-74,70},{-54,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn1_Lights(
+        tableOnFile=true,
+        tableName="L3-Zn1-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-40,70},{-20,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn2_Lights(
+        tableOnFile=true,
+        tableName="L3-Zn2-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-8,70},{12,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn3_Lights(
+        tableOnFile=true,
+        tableName="L3-Zn3-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{28,70},{48,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn4_Lights(
+        tableOnFile=true,
+        tableName="L3-Zn4-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{64,70},{84,90}})));
+
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_30(V = 19.5, alpha = 0.26452, beta = 0.12526, gamma = 0.0020109);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_45(V = 19.5, alpha = 0.42081, beta = 0.12526, gamma = 0.001341);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 4.27984, beta = -0.004643965, gamma = 0.0000985992);
+
+    /* Insert models here */
+
+    /* AC/DC Converter Light_Conv_110 */
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_110(modelData = modelData_DCDC);
+
+    /* Light Model 787 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_110(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=26.44);
+      HPF.DC.Variable_DC_Load Light_787;
+
+    /* Light Model 780 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_787(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_787(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_787(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_780;
+
+    /* Light Model 779 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_780(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_780(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_780(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_779;
+
+    /* Light Model 778 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_779(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_779(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_779(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_778;
+
+    /* Light Model 777 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_778(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_778(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_778(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_777;
+
+    /* Light Model 776 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_777(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_777(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_777(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_776;
+
+    /* AC/DC Converter Light_Conv_83 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_776(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_776(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_776(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_83(modelData = modelData_DCDC);
+
+    /* Light Model 698 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_83(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=17.66);
+      HPF.DC.Variable_DC_Load Light_698;
+
+    /* Light Model 697 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_698(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_698(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_698(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_697;
+
+    /* Light Model 694 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_697(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_697(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_697(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_694;
+
+    /* Light Model 693 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_694(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_694(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_694(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_693;
+
+    /* Light Model 691 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_693(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_693(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_693(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_691;
+
+    /* Light Model 688 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_691(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_691(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_691(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_688;
+
+    /* AC/DC Converter Light_Conv_81 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_688(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_688(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_688(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_81(modelData = modelData_DCDC);
+
+    /* Light Model 739 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_81(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=23.59);
+      HPF.DC.Variable_DC_Load Light_739;
+
+    /* Light Model 690 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_739(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_739(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_739(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_690;
+
+    /* Light Model 687 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_690(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_690(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_690(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_687;
+
+    /* Light Model 686 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_687(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_687(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_687(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_686;
+
+    /* Light Model 685 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_686(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_686(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_686(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_685;
+
+    /* Light Model 684 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_685(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_685(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_685(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_684;
+
+    /* Light Model 683 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_684(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_684(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_684(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_683;
+
+    /* AC/DC Converter Light_Conv_80 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_683(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_683(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_683(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_80(modelData = modelData_DCDC);
+
+    /* Light Model 682 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_80(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=20.66);
+      HPF.DC.Variable_DC_Load Light_682;
+
+    /* Light Model 681 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_682(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_682(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_682(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_681;
+
+    /* Light Model 680 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_681(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_681(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_681(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_680;
+
+    /* Light Model 679 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_680(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_680(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_680(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_679;
+
+    /* Light Model 678 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_679(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_679(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_679(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_678;
+
+    /* Light Model 677 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_678(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_678(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_678(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_677;
+
+    /* Light Model 676 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_677(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_677(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_677(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_676;
+
+    /* Light Model 675 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_676(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_676(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_676(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_675;
+
+    /* AC/DC Converter Light_Conv_79 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_675(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_675(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_675(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_79(modelData = modelData_DCDC);
+
+    /* Light Model 674 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_79(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=21.31);
+      HPF.DC.Variable_DC_Load Light_674;
+
+    /* Light Model 673 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_674(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_674(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_674(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_673;
+
+    /* Light Model 672 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_673(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_673(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_673(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_672;
+
+    /* Light Model 671 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_672(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_672(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_672(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_671;
+
+    /* Light Model 670 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_671(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_671(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_671(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_670;
+
+    /* Light Model 669 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_670(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_670(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_670(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_669;
+
+    /* Light Model 668 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_669(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_669(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_669(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_668;
+
+    /* Light Model 667 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_668(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_668(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_668(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_667;
+
+    /* AC/DC Converter Light_Conv_77 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_667(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_667(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_667(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_77(modelData = modelData_DCDC);
+
+    /* Light Model 666 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_77(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=27.23);
+      HPF.DC.Variable_DC_Load Light_666;
+
+    /* Light Model 665 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_666(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_666(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_666(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_665;
+
+    /* Light Model 664 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_665(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_665(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_665(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_664;
+
+    /* Light Model 663 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_664(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_664(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_664(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_663;
+
+    /* Light Model 662 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_663(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_663(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_663(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_662;
+
+    /* Light Model 661 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_662(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_662(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_662(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_661;
+
+    /* Light Model 660 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_661(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_661(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_661(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_660;
+
+    /* Light Model 659 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_660(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_660(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_660(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_659;
+
+    /* AC/DC Converter Light_Conv_78 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_659(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_659(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_659(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_78(modelData = modelData_DCDC);
+
+    /* Light Model 799 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_78(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=22.88);
+      HPF.DC.Variable_DC_Load Light_799;
+
+    /* Light Model 798 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_799(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_799(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_799(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_798;
+
+    /* Light Model 797 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_798(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_798(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_798(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_797;
+
+    /* Light Model 796 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_797(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_797(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_797(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_796;
+
+    /* Light Model 795 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_796(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_796(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_796(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_795;
+
+    /* Light Model 794 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_795(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_795(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_795(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_794;
+
+    /* Light Model 751 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_794(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_794(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_794(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_751;
+
+    /* Light Model 583 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_751(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_751(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_751(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_583;
+
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_583(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_583(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_583(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+
+      Modelica.Electrical.Analog.Interfaces.PositivePin p
+        "Positive electrical pin of port 1" annotation (Placement(transformation(
+              extent={{-114,10},{-94,30}}), iconTransformation(extent={{-110,90},{-90,
+                110}})));
+      HPF.Cables.NEC_CableModelDC cable_light_L3_1A(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+          length=15) annotation (Placement(visible=true, transformation(
+            origin={-38,20},
+            extent={{10,-10},{-10,10}},
+            rotation=0)));
+    equation
+
+    /* Insert equation here */
+
+    /* AC/DC Converter Light_Conv_110 */
+      connect(cable_Light_Conv_110.n, cable_light_L3_1A.p);
+      connect(Light_Conv_110.p1,  cable_Light_Conv_110.p);
+      connect(Light_Conv_110.n1, GndDC.p);
+      connect(Light_Conv_110.n2, GndDC.p);
+
+    /* Light Connections 787 */
+      connect(Light_driver_787.n2, GndDC.p);
+      connect(Light_driver_787.n1, GndDC.p);
+      connect(Light_787.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_787.u);
+      connect(Gain_Light_driver_787.y, Light_787.u);
+      connect(Light_787.p, Light_driver_787.p2);
+      connect(Light_driver_787.p1,  cable_light_787.p);
+      connect(Light_Conv_110.p2, cable_light_787.n);
+
+    /* Light Connections 780 */
+      connect(Light_driver_780.n2, GndDC.p);
+      connect(Light_driver_780.n1, GndDC.p);
+      connect(Light_780.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_780.u);
+      connect(Gain_Light_driver_780.y, Light_780.u);
+      connect(Light_780.p, Light_driver_780.p2);
+      connect(Light_driver_780.p1,  cable_light_780.p);
+      connect(Light_Conv_110.p2, cable_light_780.n);
+
+    /* Light Connections 779 */
+      connect(Light_driver_779.n2, GndDC.p);
+      connect(Light_driver_779.n1, GndDC.p);
+      connect(Light_779.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_779.u);
+      connect(Gain_Light_driver_779.y, Light_779.u);
+      connect(Light_779.p, Light_driver_779.p2);
+      connect(Light_driver_779.p1,  cable_light_779.p);
+      connect(Light_Conv_110.p2, cable_light_779.n);
+
+    /* Light Connections 778 */
+      connect(Light_driver_778.n2, GndDC.p);
+      connect(Light_driver_778.n1, GndDC.p);
+      connect(Light_778.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_778.u);
+      connect(Gain_Light_driver_778.y, Light_778.u);
+      connect(Light_778.p, Light_driver_778.p2);
+      connect(Light_driver_778.p1,  cable_light_778.p);
+      connect(Light_Conv_110.p2, cable_light_778.n);
+
+    /* Light Connections 777 */
+      connect(Light_driver_777.n2, GndDC.p);
+      connect(Light_driver_777.n1, GndDC.p);
+      connect(Light_777.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_777.u);
+      connect(Gain_Light_driver_777.y, Light_777.u);
+      connect(Light_777.p, Light_driver_777.p2);
+      connect(Light_driver_777.p1,  cable_light_777.p);
+      connect(Light_Conv_110.p2, cable_light_777.n);
+
+    /* Light Connections 776 */
+      connect(Light_driver_776.n2, GndDC.p);
+      connect(Light_driver_776.n1, GndDC.p);
+      connect(Light_776.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_776.u);
+      connect(Gain_Light_driver_776.y, Light_776.u);
+      connect(Light_776.p, Light_driver_776.p2);
+      connect(Light_driver_776.p1,  cable_light_776.p);
+      connect(Light_Conv_110.p2, cable_light_776.n);
+
+    /* AC/DC Converter Light_Conv_83 */
+      connect(cable_Light_Conv_83.n, cable_light_L3_1A.p);
+      connect(Light_Conv_83.p1,  cable_Light_Conv_83.p);
+      connect(Light_Conv_83.n1, GndDC.p);
+      connect(Light_Conv_83.n2, GndDC.p);
+
+    /* Light Connections 698 */
+      connect(Light_driver_698.n2, GndDC.p);
+      connect(Light_driver_698.n1, GndDC.p);
+      connect(Light_698.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_698.u);
+      connect(Gain_Light_driver_698.y, Light_698.u);
+      connect(Light_698.p, Light_driver_698.p2);
+      connect(Light_driver_698.p1,  cable_light_698.p);
+      connect(Light_Conv_83.p2, cable_light_698.n);
+
+    /* Light Connections 697 */
+      connect(Light_driver_697.n2, GndDC.p);
+      connect(Light_driver_697.n1, GndDC.p);
+      connect(Light_697.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_697.u);
+      connect(Gain_Light_driver_697.y, Light_697.u);
+      connect(Light_697.p, Light_driver_697.p2);
+      connect(Light_driver_697.p1,  cable_light_697.p);
+      connect(Light_Conv_83.p2, cable_light_697.n);
+
+    /* Light Connections 694 */
+      connect(Light_driver_694.n2, GndDC.p);
+      connect(Light_driver_694.n1, GndDC.p);
+      connect(Light_694.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_694.u);
+      connect(Gain_Light_driver_694.y, Light_694.u);
+      connect(Light_694.p, Light_driver_694.p2);
+      connect(Light_driver_694.p1,  cable_light_694.p);
+      connect(Light_Conv_83.p2, cable_light_694.n);
+
+    /* Light Connections 693 */
+      connect(Light_driver_693.n2, GndDC.p);
+      connect(Light_driver_693.n1, GndDC.p);
+      connect(Light_693.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_693.u);
+      connect(Gain_Light_driver_693.y, Light_693.u);
+      connect(Light_693.p, Light_driver_693.p2);
+      connect(Light_driver_693.p1,  cable_light_693.p);
+      connect(Light_Conv_83.p2, cable_light_693.n);
+
+    /* Light Connections 691 */
+      connect(Light_driver_691.n2, GndDC.p);
+      connect(Light_driver_691.n1, GndDC.p);
+      connect(Light_691.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn1_Lights.y[1], Gain_Light_driver_691.u);
+      connect(Gain_Light_driver_691.y, Light_691.u);
+      connect(Light_691.p, Light_driver_691.p2);
+      connect(Light_driver_691.p1,  cable_light_691.p);
+      connect(Light_Conv_83.p2, cable_light_691.n);
+
+    /* Light Connections 688 */
+      connect(Light_driver_688.n2, GndDC.p);
+      connect(Light_driver_688.n1, GndDC.p);
+      connect(Light_688.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn1_Lights.y[1], Gain_Light_driver_688.u);
+      connect(Gain_Light_driver_688.y, Light_688.u);
+      connect(Light_688.p, Light_driver_688.p2);
+      connect(Light_driver_688.p1,  cable_light_688.p);
+      connect(Light_Conv_83.p2, cable_light_688.n);
+
+    /* AC/DC Converter Light_Conv_81 */
+      connect(cable_Light_Conv_81.n, cable_light_L3_1A.p);
+      connect(Light_Conv_81.p1,  cable_Light_Conv_81.p);
+      connect(Light_Conv_81.n1, GndDC.p);
+      connect(Light_Conv_81.n2, GndDC.p);
+
+    /* Light Connections 739 */
+      connect(Light_driver_739.n2, GndDC.p);
+      connect(Light_driver_739.n1, GndDC.p);
+      connect(Light_739.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_739.u);
+      connect(Gain_Light_driver_739.y, Light_739.u);
+      connect(Light_739.p, Light_driver_739.p2);
+      connect(Light_driver_739.p1,  cable_light_739.p);
+      connect(Light_Conv_81.p2, cable_light_739.n);
+
+    /* Light Connections 690 */
+      connect(Light_driver_690.n2, GndDC.p);
+      connect(Light_driver_690.n1, GndDC.p);
+      connect(Light_690.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_690.u);
+      connect(Gain_Light_driver_690.y, Light_690.u);
+      connect(Light_690.p, Light_driver_690.p2);
+      connect(Light_driver_690.p1,  cable_light_690.p);
+      connect(Light_Conv_81.p2, cable_light_690.n);
+
+    /* Light Connections 687 */
+      connect(Light_driver_687.n2, GndDC.p);
+      connect(Light_driver_687.n1, GndDC.p);
+      connect(Light_687.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_687.u);
+      connect(Gain_Light_driver_687.y, Light_687.u);
+      connect(Light_687.p, Light_driver_687.p2);
+      connect(Light_driver_687.p1,  cable_light_687.p);
+      connect(Light_Conv_81.p2, cable_light_687.n);
+
+    /* Light Connections 686 */
+      connect(Light_driver_686.n2, GndDC.p);
+      connect(Light_driver_686.n1, GndDC.p);
+      connect(Light_686.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_686.u);
+      connect(Gain_Light_driver_686.y, Light_686.u);
+      connect(Light_686.p, Light_driver_686.p2);
+      connect(Light_driver_686.p1,  cable_light_686.p);
+      connect(Light_Conv_81.p2, cable_light_686.n);
+
+    /* Light Connections 685 */
+      connect(Light_driver_685.n2, GndDC.p);
+      connect(Light_driver_685.n1, GndDC.p);
+      connect(Light_685.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_685.u);
+      connect(Gain_Light_driver_685.y, Light_685.u);
+      connect(Light_685.p, Light_driver_685.p2);
+      connect(Light_driver_685.p1,  cable_light_685.p);
+      connect(Light_Conv_81.p2, cable_light_685.n);
+
+    /* Light Connections 684 */
+      connect(Light_driver_684.n2, GndDC.p);
+      connect(Light_driver_684.n1, GndDC.p);
+      connect(Light_684.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn1_Lights.y[1], Gain_Light_driver_684.u);
+      connect(Gain_Light_driver_684.y, Light_684.u);
+      connect(Light_684.p, Light_driver_684.p2);
+      connect(Light_driver_684.p1,  cable_light_684.p);
+      connect(Light_Conv_81.p2, cable_light_684.n);
+
+    /* Light Connections 683 */
+      connect(Light_driver_683.n2, GndDC.p);
+      connect(Light_driver_683.n1, GndDC.p);
+      connect(Light_683.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn1_Lights.y[1], Gain_Light_driver_683.u);
+      connect(Gain_Light_driver_683.y, Light_683.u);
+      connect(Light_683.p, Light_driver_683.p2);
+      connect(Light_driver_683.p1,  cable_light_683.p);
+      connect(Light_Conv_81.p2, cable_light_683.n);
+
+    /* AC/DC Converter Light_Conv_80 */
+      connect(cable_Light_Conv_80.n, cable_light_L3_1A.p);
+      connect(Light_Conv_80.p1,  cable_Light_Conv_80.p);
+      connect(Light_Conv_80.n1, GndDC.p);
+      connect(Light_Conv_80.n2, GndDC.p);
+
+    /* Light Connections 682 */
+      connect(Light_driver_682.n2, GndDC.p);
+      connect(Light_driver_682.n1, GndDC.p);
+      connect(Light_682.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_682.u);
+      connect(Gain_Light_driver_682.y, Light_682.u);
+      connect(Light_682.p, Light_driver_682.p2);
+      connect(Light_driver_682.p1,  cable_light_682.p);
+      connect(Light_Conv_80.p2, cable_light_682.n);
+
+    /* Light Connections 681 */
+      connect(Light_driver_681.n2, GndDC.p);
+      connect(Light_driver_681.n1, GndDC.p);
+      connect(Light_681.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_681.u);
+      connect(Gain_Light_driver_681.y, Light_681.u);
+      connect(Light_681.p, Light_driver_681.p2);
+      connect(Light_driver_681.p1,  cable_light_681.p);
+      connect(Light_Conv_80.p2, cable_light_681.n);
+
+    /* Light Connections 680 */
+      connect(Light_driver_680.n2, GndDC.p);
+      connect(Light_driver_680.n1, GndDC.p);
+      connect(Light_680.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn4_Lights.y[1], Gain_Light_driver_680.u);
+      connect(Gain_Light_driver_680.y, Light_680.u);
+      connect(Light_680.p, Light_driver_680.p2);
+      connect(Light_driver_680.p1,  cable_light_680.p);
+      connect(Light_Conv_80.p2, cable_light_680.n);
+
+    /* Light Connections 679 */
+      connect(Light_driver_679.n2, GndDC.p);
+      connect(Light_driver_679.n1, GndDC.p);
+      connect(Light_679.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn4_Lights.y[1], Gain_Light_driver_679.u);
+      connect(Gain_Light_driver_679.y, Light_679.u);
+      connect(Light_679.p, Light_driver_679.p2);
+      connect(Light_driver_679.p1,  cable_light_679.p);
+      connect(Light_Conv_80.p2, cable_light_679.n);
+
+    /* Light Connections 678 */
+      connect(Light_driver_678.n2, GndDC.p);
+      connect(Light_driver_678.n1, GndDC.p);
+      connect(Light_678.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_678.u);
+      connect(Gain_Light_driver_678.y, Light_678.u);
+      connect(Light_678.p, Light_driver_678.p2);
+      connect(Light_driver_678.p1,  cable_light_678.p);
+      connect(Light_Conv_80.p2, cable_light_678.n);
+
+    /* Light Connections 677 */
+      connect(Light_driver_677.n2, GndDC.p);
+      connect(Light_driver_677.n1, GndDC.p);
+      connect(Light_677.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_677.u);
+      connect(Gain_Light_driver_677.y, Light_677.u);
+      connect(Light_677.p, Light_driver_677.p2);
+      connect(Light_driver_677.p1,  cable_light_677.p);
+      connect(Light_Conv_80.p2, cable_light_677.n);
+
+    /* Light Connections 676 */
+      connect(Light_driver_676.n2, GndDC.p);
+      connect(Light_driver_676.n1, GndDC.p);
+      connect(Light_676.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn4_Lights.y[1], Gain_Light_driver_676.u);
+      connect(Gain_Light_driver_676.y, Light_676.u);
+      connect(Light_676.p, Light_driver_676.p2);
+      connect(Light_driver_676.p1,  cable_light_676.p);
+      connect(Light_Conv_80.p2, cable_light_676.n);
+
+    /* Light Connections 675 */
+      connect(Light_driver_675.n2, GndDC.p);
+      connect(Light_driver_675.n1, GndDC.p);
+      connect(Light_675.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn4_Lights.y[1], Gain_Light_driver_675.u);
+      connect(Gain_Light_driver_675.y, Light_675.u);
+      connect(Light_675.p, Light_driver_675.p2);
+      connect(Light_driver_675.p1,  cable_light_675.p);
+      connect(Light_Conv_80.p2, cable_light_675.n);
+
+    /* AC/DC Converter Light_Conv_79 */
+      connect(cable_Light_Conv_79.n, cable_light_L3_1A.p);
+      connect(Light_Conv_79.p1,  cable_Light_Conv_79.p);
+      connect(Light_Conv_79.n1, GndDC.p);
+      connect(Light_Conv_79.n2, GndDC.p);
+
+    /* Light Connections 674 */
+      connect(Light_driver_674.n2, GndDC.p);
+      connect(Light_driver_674.n1, GndDC.p);
+      connect(Light_674.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_674.u);
+      connect(Gain_Light_driver_674.y, Light_674.u);
+      connect(Light_674.p, Light_driver_674.p2);
+      connect(Light_driver_674.p1,  cable_light_674.p);
+      connect(Light_Conv_79.p2, cable_light_674.n);
+
+    /* Light Connections 673 */
+      connect(Light_driver_673.n2, GndDC.p);
+      connect(Light_driver_673.n1, GndDC.p);
+      connect(Light_673.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_673.u);
+      connect(Gain_Light_driver_673.y, Light_673.u);
+      connect(Light_673.p, Light_driver_673.p2);
+      connect(Light_driver_673.p1,  cable_light_673.p);
+      connect(Light_Conv_79.p2, cable_light_673.n);
+
+    /* Light Connections 672 */
+      connect(Light_driver_672.n2, GndDC.p);
+      connect(Light_driver_672.n1, GndDC.p);
+      connect(Light_672.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn4_Lights.y[1], Gain_Light_driver_672.u);
+      connect(Gain_Light_driver_672.y, Light_672.u);
+      connect(Light_672.p, Light_driver_672.p2);
+      connect(Light_driver_672.p1,  cable_light_672.p);
+      connect(Light_Conv_79.p2, cable_light_672.n);
+
+    /* Light Connections 671 */
+      connect(Light_driver_671.n2, GndDC.p);
+      connect(Light_driver_671.n1, GndDC.p);
+      connect(Light_671.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn4_Lights.y[1], Gain_Light_driver_671.u);
+      connect(Gain_Light_driver_671.y, Light_671.u);
+      connect(Light_671.p, Light_driver_671.p2);
+      connect(Light_driver_671.p1,  cable_light_671.p);
+      connect(Light_Conv_79.p2, cable_light_671.n);
+
+    /* Light Connections 670 */
+      connect(Light_driver_670.n2, GndDC.p);
+      connect(Light_driver_670.n1, GndDC.p);
+      connect(Light_670.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_670.u);
+      connect(Gain_Light_driver_670.y, Light_670.u);
+      connect(Light_670.p, Light_driver_670.p2);
+      connect(Light_driver_670.p1,  cable_light_670.p);
+      connect(Light_Conv_79.p2, cable_light_670.n);
+
+    /* Light Connections 669 */
+      connect(Light_driver_669.n2, GndDC.p);
+      connect(Light_driver_669.n1, GndDC.p);
+      connect(Light_669.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_669.u);
+      connect(Gain_Light_driver_669.y, Light_669.u);
+      connect(Light_669.p, Light_driver_669.p2);
+      connect(Light_driver_669.p1,  cable_light_669.p);
+      connect(Light_Conv_79.p2, cable_light_669.n);
+
+    /* Light Connections 668 */
+      connect(Light_driver_668.n2, GndDC.p);
+      connect(Light_driver_668.n1, GndDC.p);
+      connect(Light_668.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn4_Lights.y[1], Gain_Light_driver_668.u);
+      connect(Gain_Light_driver_668.y, Light_668.u);
+      connect(Light_668.p, Light_driver_668.p2);
+      connect(Light_driver_668.p1,  cable_light_668.p);
+      connect(Light_Conv_79.p2, cable_light_668.n);
+
+    /* Light Connections 667 */
+      connect(Light_driver_667.n2, GndDC.p);
+      connect(Light_driver_667.n1, GndDC.p);
+      connect(Light_667.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn4_Lights.y[1], Gain_Light_driver_667.u);
+      connect(Gain_Light_driver_667.y, Light_667.u);
+      connect(Light_667.p, Light_driver_667.p2);
+      connect(Light_driver_667.p1,  cable_light_667.p);
+      connect(Light_Conv_79.p2, cable_light_667.n);
+
+    /* AC/DC Converter Light_Conv_77 */
+      connect(cable_Light_Conv_77.n, cable_light_L3_1A.p);
+      connect(Light_Conv_77.p1,  cable_Light_Conv_77.p);
+      connect(Light_Conv_77.n1, GndDC.p);
+      connect(Light_Conv_77.n2, GndDC.p);
+
+    /* Light Connections 666 */
+      connect(Light_driver_666.n2, GndDC.p);
+      connect(Light_driver_666.n1, GndDC.p);
+      connect(Light_666.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_666.u);
+      connect(Gain_Light_driver_666.y, Light_666.u);
+      connect(Light_666.p, Light_driver_666.p2);
+      connect(Light_driver_666.p1,  cable_light_666.p);
+      connect(Light_Conv_77.p2, cable_light_666.n);
+
+    /* Light Connections 665 */
+      connect(Light_driver_665.n2, GndDC.p);
+      connect(Light_driver_665.n1, GndDC.p);
+      connect(Light_665.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_665.u);
+      connect(Gain_Light_driver_665.y, Light_665.u);
+      connect(Light_665.p, Light_driver_665.p2);
+      connect(Light_driver_665.p1,  cable_light_665.p);
+      connect(Light_Conv_77.p2, cable_light_665.n);
+
+    /* Light Connections 664 */
+      connect(Light_driver_664.n2, GndDC.p);
+      connect(Light_driver_664.n1, GndDC.p);
+      connect(Light_664.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn4_Lights.y[1], Gain_Light_driver_664.u);
+      connect(Gain_Light_driver_664.y, Light_664.u);
+      connect(Light_664.p, Light_driver_664.p2);
+      connect(Light_driver_664.p1,  cable_light_664.p);
+      connect(Light_Conv_77.p2, cable_light_664.n);
+
+    /* Light Connections 663 */
+      connect(Light_driver_663.n2, GndDC.p);
+      connect(Light_driver_663.n1, GndDC.p);
+      connect(Light_663.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn4_Lights.y[1], Gain_Light_driver_663.u);
+      connect(Gain_Light_driver_663.y, Light_663.u);
+      connect(Light_663.p, Light_driver_663.p2);
+      connect(Light_driver_663.p1,  cable_light_663.p);
+      connect(Light_Conv_77.p2, cable_light_663.n);
+
+    /* Light Connections 662 */
+      connect(Light_driver_662.n2, GndDC.p);
+      connect(Light_driver_662.n1, GndDC.p);
+      connect(Light_662.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_662.u);
+      connect(Gain_Light_driver_662.y, Light_662.u);
+      connect(Light_662.p, Light_driver_662.p2);
+      connect(Light_driver_662.p1,  cable_light_662.p);
+      connect(Light_Conv_77.p2, cable_light_662.n);
+
+    /* Light Connections 661 */
+      connect(Light_driver_661.n2, GndDC.p);
+      connect(Light_driver_661.n1, GndDC.p);
+      connect(Light_661.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_661.u);
+      connect(Gain_Light_driver_661.y, Light_661.u);
+      connect(Light_661.p, Light_driver_661.p2);
+      connect(Light_driver_661.p1,  cable_light_661.p);
+      connect(Light_Conv_77.p2, cable_light_661.n);
+
+    /* Light Connections 660 */
+      connect(Light_driver_660.n2, GndDC.p);
+      connect(Light_driver_660.n1, GndDC.p);
+      connect(Light_660.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn4_Lights.y[1], Gain_Light_driver_660.u);
+      connect(Gain_Light_driver_660.y, Light_660.u);
+      connect(Light_660.p, Light_driver_660.p2);
+      connect(Light_driver_660.p1,  cable_light_660.p);
+      connect(Light_Conv_77.p2, cable_light_660.n);
+
+    /* Light Connections 659 */
+      connect(Light_driver_659.n2, GndDC.p);
+      connect(Light_driver_659.n1, GndDC.p);
+      connect(Light_659.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn4_Lights.y[1], Gain_Light_driver_659.u);
+      connect(Gain_Light_driver_659.y, Light_659.u);
+      connect(Light_659.p, Light_driver_659.p2);
+      connect(Light_driver_659.p1,  cable_light_659.p);
+      connect(Light_Conv_77.p2, cable_light_659.n);
+
+    /* AC/DC Converter Light_Conv_78 */
+      connect(cable_Light_Conv_78.n, cable_light_L3_1A.p);
+      connect(Light_Conv_78.p1,  cable_Light_Conv_78.p);
+      connect(Light_Conv_78.n1, GndDC.p);
+      connect(Light_Conv_78.n2, GndDC.p);
+
+    /* Light Connections 799 */
+      connect(Light_driver_799.n2, GndDC.p);
+      connect(Light_driver_799.n1, GndDC.p);
+      connect(Light_799.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_799.u);
+      connect(Gain_Light_driver_799.y, Light_799.u);
+      connect(Light_799.p, Light_driver_799.p2);
+      connect(Light_driver_799.p1,  cable_light_799.p);
+      connect(Light_Conv_78.p2, cable_light_799.n);
+
+    /* Light Connections 798 */
+      connect(Light_driver_798.n2, GndDC.p);
+      connect(Light_driver_798.n1, GndDC.p);
+      connect(Light_798.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_798.u);
+      connect(Gain_Light_driver_798.y, Light_798.u);
+      connect(Light_798.p, Light_driver_798.p2);
+      connect(Light_driver_798.p1,  cable_light_798.p);
+      connect(Light_Conv_78.p2, cable_light_798.n);
+
+    /* Light Connections 797 */
+      connect(Light_driver_797.n2, GndDC.p);
+      connect(Light_driver_797.n1, GndDC.p);
+      connect(Light_797.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_797.u);
+      connect(Gain_Light_driver_797.y, Light_797.u);
+      connect(Light_797.p, Light_driver_797.p2);
+      connect(Light_driver_797.p1,  cable_light_797.p);
+      connect(Light_Conv_78.p2, cable_light_797.n);
+
+    /* Light Connections 796 */
+      connect(Light_driver_796.n2, GndDC.p);
+      connect(Light_driver_796.n1, GndDC.p);
+      connect(Light_796.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_796.u);
+      connect(Gain_Light_driver_796.y, Light_796.u);
+      connect(Light_796.p, Light_driver_796.p2);
+      connect(Light_driver_796.p1,  cable_light_796.p);
+      connect(Light_Conv_78.p2, cable_light_796.n);
+
+    /* Light Connections 795 */
+      connect(Light_driver_795.n2, GndDC.p);
+      connect(Light_driver_795.n1, GndDC.p);
+      connect(Light_795.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_795.u);
+      connect(Gain_Light_driver_795.y, Light_795.u);
+      connect(Light_795.p, Light_driver_795.p2);
+      connect(Light_driver_795.p1,  cable_light_795.p);
+      connect(Light_Conv_78.p2, cable_light_795.n);
+
+    /* Light Connections 794 */
+      connect(Light_driver_794.n2, GndDC.p);
+      connect(Light_driver_794.n1, GndDC.p);
+      connect(Light_794.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_794.u);
+      connect(Gain_Light_driver_794.y, Light_794.u);
+      connect(Light_794.p, Light_driver_794.p2);
+      connect(Light_driver_794.p1,  cable_light_794.p);
+      connect(Light_Conv_78.p2, cable_light_794.n);
+
+    /* Light Connections 751 */
+      connect(Light_driver_751.n2, GndDC.p);
+      connect(Light_driver_751.n1, GndDC.p);
+      connect(Light_751.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_751.u);
+      connect(Gain_Light_driver_751.y, Light_751.u);
+      connect(Light_751.p, Light_driver_751.p2);
+      connect(Light_driver_751.p1,  cable_light_751.p);
+      connect(Light_Conv_78.p2, cable_light_751.n);
+
+    /* Light Connections 583 */
+      connect(Light_driver_583.n2, GndDC.p);
+      connect(Light_driver_583.n1, GndDC.p);
+      connect(Light_583.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_583.u);
+      connect(Gain_Light_driver_583.y, Light_583.u);
+      connect(Light_583.p, Light_driver_583.p2);
+      connect(Light_driver_583.p1,  cable_light_583.p);
+      connect(Light_Conv_78.p2, cable_light_583.n);
+
+      connect(cable_light_L3_1A.n, p)
+        annotation (Line(points={{-48,20},{-104,20}}, color={0,0,255}));
+      annotation ();
+    end DC_ACDC_Light_Panel_L3_1A;
+
+    model DC_ACDC_Light_Panel_L3_1B
+      outer HPF.SystemDef systemDef;
+      Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+        Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Core_Lights(
+        tableOnFile=true,
+        tableName="L3-Core-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-74,70},{-54,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn1_Lights(
+        tableOnFile=true,
+        tableName="L3-Zn1-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-40,70},{-20,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn2_Lights(
+        tableOnFile=true,
+        tableName="L3-Zn2-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-8,70},{12,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn3_Lights(
+        tableOnFile=true,
+        tableName="L3-Zn3-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{28,70},{48,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn4_Lights(
+        tableOnFile=true,
+        tableName="L3-Zn4-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{64,70},{84,90}})));
+
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_30(V = 19.5, alpha = 0.26452, beta = 0.12526, gamma = 0.0020109);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_45(V = 19.5, alpha = 0.42081, beta = 0.12526, gamma = 0.001341);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 4.27984, beta = -0.004643965, gamma = 0.0000985992);
+
+    /* Insert models here */
+
+    /* AC/DC Converter Light_Conv_97 */
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_97(modelData = modelData_DCDC);
+
+    /* Light Model 746 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_97(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=19.17);
+      HPF.DC.Variable_DC_Load Light_746;
+
+    /* Light Model 745 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_746(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_746(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_746(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_745;
+
+    /* Light Model 724 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_745(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_745(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_745(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_724;
+
+    /* Light Model 723 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_724(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_724(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_724(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_723;
+
+    /* Light Model 716 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_723(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_723(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_723(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_716;
+
+    /* Light Model 715 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_716(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_716(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_716(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_715;
+
+    /* Light Model 714 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_715(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_715(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_715(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_714;
+
+    /* Light Model 713 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_714(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_714(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_714(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_713;
+
+    /* AC/DC Converter Light_Conv_82 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_713(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_713(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_713(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_82(modelData = modelData_DCDC);
+
+    /* Light Model 741 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_82(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=15.88);
+      HPF.DC.Variable_DC_Load Light_741;
+
+    /* Light Model 740 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_741(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_741(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_741(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_740;
+
+    /* Light Model 692 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_740(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_740(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_740(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_692;
+
+    /* Light Model 689 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_692(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_692(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_692(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_689;
+
+    /* Light Model 658 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_689(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_689(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_689(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_658;
+
+    /* Light Model 657 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_658(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_658(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_658(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_657;
+
+    /* Light Model 656 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_657(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_657(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_657(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_656;
+
+    /* Light Model 654 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_656(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_656(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_656(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_654;
+
+    /* AC/DC Converter Light_Conv_85 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_654(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_654(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_654(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_85(modelData = modelData_DCDC);
+
+    /* Light Model 736 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_85(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=14.41);
+      HPF.DC.Variable_DC_Load Light_736;
+
+    /* Light Model 735 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_736(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_736(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_736(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_735;
+
+    /* Light Model 642 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_735(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_735(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_735(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_642;
+
+    /* Light Model 641 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_642(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_642(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_642(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_641;
+
+    /* Light Model 640 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_641(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_641(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_641(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_640;
+
+    /* Light Model 639 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_640(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_640(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_640(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_639;
+
+    /* Light Model 638 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_639(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_639(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_639(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_638;
+
+    /* Light Model 637 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_638(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_638(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_638(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_637;
+
+    /* AC/DC Converter Light_Conv_87 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_637(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_637(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_637(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_87(modelData = modelData_DCDC);
+
+    /* Light Model 805 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_87(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=19.53);
+      HPF.DC.Variable_DC_Load Light_805;
+
+    /* Light Model 804 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_805(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_805(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_805(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_804;
+
+    /* Light Model 802 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_804(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_804(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_804(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_802;
+
+    /* Light Model 801 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_802(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_802(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_802(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_801;
+
+    /* Light Model 800 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_801(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_801(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_801(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_800;
+
+    /* Light Model 594 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_800(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_800(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_800(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_594;
+
+    /* Light Model 593 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_594(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_594(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_594(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_593;
+
+    /* Light Model 588 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_593(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_593(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_593(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_588;
+
+    /* AC/DC Converter Light_Conv_86 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_588(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_588(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_588(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_86(modelData = modelData_DCDC);
+
+    /* Light Model 750 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_86(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=19.33);
+      HPF.DC.Variable_DC_Load Light_750;
+
+    /* Light Model 734 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_750(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_750(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_750(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_734;
+
+    /* Light Model 582 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_734(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_734(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_734(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_582;
+
+    /* Light Model 581 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_582(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_582(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_582(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_581;
+
+    /* Light Model 580 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_581(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_581(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_581(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_580;
+
+    /* Light Model 579 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_580(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_580(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_580(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_579;
+
+    /* Light Model 578 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_579(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_579(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_579(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_578;
+
+    /* AC/DC Converter Light_Conv_84 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_578(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_578(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_578(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_84(modelData = modelData_DCDC);
+
+    /* Light Model 738 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_84(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=14.07);
+      HPF.DC.Variable_DC_Load Light_738;
+
+    /* Light Model 737 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_738(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_738(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_738(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_737;
+
+    /* Light Model 655 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_737(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_737(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_737(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_655;
+
+    /* Light Model 653 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_655(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_655(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_655(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_653;
+
+    /* Light Model 577 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_653(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_653(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_653(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_577;
+
+    /* Light Model 576 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_577(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_577(k=22) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_577(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_576;
+
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_576(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_576(k=22) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_576(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+
+      Modelica.Electrical.Analog.Interfaces.PositivePin p
+        "Positive electrical pin of port 1" annotation (Placement(transformation(
+              extent={{-114,10},{-94,30}}), iconTransformation(extent={{-110,90},{-90,
+                110}})));
+      HPF.Cables.NEC_CableModelDC cable_light_L3_1B(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+          length=15) annotation (Placement(visible=true, transformation(
+            origin={-38,20},
+            extent={{10,-10},{-10,10}},
+            rotation=0)));
+    equation
+
+    /* Insert equation here */
+
+    /* AC/DC Converter Light_Conv_97 */
+      connect(cable_Light_Conv_97.n, cable_light_L3_1B.p);
+      connect(Light_Conv_97.p1,  cable_Light_Conv_97.p);
+      connect(Light_Conv_97.n1, GndDC.p);
+      connect(Light_Conv_97.n2, GndDC.p);
+
+    /* Light Connections 746 */
+      connect(Light_driver_746.n2, GndDC.p);
+      connect(Light_driver_746.n1, GndDC.p);
+      connect(Light_746.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_746.u);
+      connect(Gain_Light_driver_746.y, Light_746.u);
+      connect(Light_746.p, Light_driver_746.p2);
+      connect(Light_driver_746.p1,  cable_light_746.p);
+      connect(Light_Conv_97.p2, cable_light_746.n);
+
+    /* Light Connections 745 */
+      connect(Light_driver_745.n2, GndDC.p);
+      connect(Light_driver_745.n1, GndDC.p);
+      connect(Light_745.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_745.u);
+      connect(Gain_Light_driver_745.y, Light_745.u);
+      connect(Light_745.p, Light_driver_745.p2);
+      connect(Light_driver_745.p1,  cable_light_745.p);
+      connect(Light_Conv_97.p2, cable_light_745.n);
+
+    /* Light Connections 724 */
+      connect(Light_driver_724.n2, GndDC.p);
+      connect(Light_driver_724.n1, GndDC.p);
+      connect(Light_724.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_724.u);
+      connect(Gain_Light_driver_724.y, Light_724.u);
+      connect(Light_724.p, Light_driver_724.p2);
+      connect(Light_driver_724.p1,  cable_light_724.p);
+      connect(Light_Conv_97.p2, cable_light_724.n);
+
+    /* Light Connections 723 */
+      connect(Light_driver_723.n2, GndDC.p);
+      connect(Light_driver_723.n1, GndDC.p);
+      connect(Light_723.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_723.u);
+      connect(Gain_Light_driver_723.y, Light_723.u);
+      connect(Light_723.p, Light_driver_723.p2);
+      connect(Light_driver_723.p1,  cable_light_723.p);
+      connect(Light_Conv_97.p2, cable_light_723.n);
+
+    /* Light Connections 716 */
+      connect(Light_driver_716.n2, GndDC.p);
+      connect(Light_driver_716.n1, GndDC.p);
+      connect(Light_716.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_716.u);
+      connect(Gain_Light_driver_716.y, Light_716.u);
+      connect(Light_716.p, Light_driver_716.p2);
+      connect(Light_driver_716.p1,  cable_light_716.p);
+      connect(Light_Conv_97.p2, cable_light_716.n);
+
+    /* Light Connections 715 */
+      connect(Light_driver_715.n2, GndDC.p);
+      connect(Light_driver_715.n1, GndDC.p);
+      connect(Light_715.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_715.u);
+      connect(Gain_Light_driver_715.y, Light_715.u);
+      connect(Light_715.p, Light_driver_715.p2);
+      connect(Light_driver_715.p1,  cable_light_715.p);
+      connect(Light_Conv_97.p2, cable_light_715.n);
+
+    /* Light Connections 714 */
+      connect(Light_driver_714.n2, GndDC.p);
+      connect(Light_driver_714.n1, GndDC.p);
+      connect(Light_714.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn1_Lights.y[1], Gain_Light_driver_714.u);
+      connect(Gain_Light_driver_714.y, Light_714.u);
+      connect(Light_714.p, Light_driver_714.p2);
+      connect(Light_driver_714.p1,  cable_light_714.p);
+      connect(Light_Conv_97.p2, cable_light_714.n);
+
+    /* Light Connections 713 */
+      connect(Light_driver_713.n2, GndDC.p);
+      connect(Light_driver_713.n1, GndDC.p);
+      connect(Light_713.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn1_Lights.y[1], Gain_Light_driver_713.u);
+      connect(Gain_Light_driver_713.y, Light_713.u);
+      connect(Light_713.p, Light_driver_713.p2);
+      connect(Light_driver_713.p1,  cable_light_713.p);
+      connect(Light_Conv_97.p2, cable_light_713.n);
+
+    /* AC/DC Converter Light_Conv_82 */
+      connect(cable_Light_Conv_82.n, cable_light_L3_1B.p);
+      connect(Light_Conv_82.p1,  cable_Light_Conv_82.p);
+      connect(Light_Conv_82.n1, GndDC.p);
+      connect(Light_Conv_82.n2, GndDC.p);
+
+    /* Light Connections 741 */
+      connect(Light_driver_741.n2, GndDC.p);
+      connect(Light_driver_741.n1, GndDC.p);
+      connect(Light_741.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_741.u);
+      connect(Gain_Light_driver_741.y, Light_741.u);
+      connect(Light_741.p, Light_driver_741.p2);
+      connect(Light_driver_741.p1,  cable_light_741.p);
+      connect(Light_Conv_82.p2, cable_light_741.n);
+
+    /* Light Connections 740 */
+      connect(Light_driver_740.n2, GndDC.p);
+      connect(Light_driver_740.n1, GndDC.p);
+      connect(Light_740.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_740.u);
+      connect(Gain_Light_driver_740.y, Light_740.u);
+      connect(Light_740.p, Light_driver_740.p2);
+      connect(Light_driver_740.p1,  cable_light_740.p);
+      connect(Light_Conv_82.p2, cable_light_740.n);
+
+    /* Light Connections 692 */
+      connect(Light_driver_692.n2, GndDC.p);
+      connect(Light_driver_692.n1, GndDC.p);
+      connect(Light_692.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn1_Lights.y[1], Gain_Light_driver_692.u);
+      connect(Gain_Light_driver_692.y, Light_692.u);
+      connect(Light_692.p, Light_driver_692.p2);
+      connect(Light_driver_692.p1,  cable_light_692.p);
+      connect(Light_Conv_82.p2, cable_light_692.n);
+
+    /* Light Connections 689 */
+      connect(Light_driver_689.n2, GndDC.p);
+      connect(Light_driver_689.n1, GndDC.p);
+      connect(Light_689.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn1_Lights.y[1], Gain_Light_driver_689.u);
+      connect(Gain_Light_driver_689.y, Light_689.u);
+      connect(Light_689.p, Light_driver_689.p2);
+      connect(Light_driver_689.p1,  cable_light_689.p);
+      connect(Light_Conv_82.p2, cable_light_689.n);
+
+    /* Light Connections 658 */
+      connect(Light_driver_658.n2, GndDC.p);
+      connect(Light_driver_658.n1, GndDC.p);
+      connect(Light_658.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_658.u);
+      connect(Gain_Light_driver_658.y, Light_658.u);
+      connect(Light_658.p, Light_driver_658.p2);
+      connect(Light_driver_658.p1,  cable_light_658.p);
+      connect(Light_Conv_82.p2, cable_light_658.n);
+
+    /* Light Connections 657 */
+      connect(Light_driver_657.n2, GndDC.p);
+      connect(Light_driver_657.n1, GndDC.p);
+      connect(Light_657.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_657.u);
+      connect(Gain_Light_driver_657.y, Light_657.u);
+      connect(Light_657.p, Light_driver_657.p2);
+      connect(Light_driver_657.p1,  cable_light_657.p);
+      connect(Light_Conv_82.p2, cable_light_657.n);
+
+    /* Light Connections 656 */
+      connect(Light_driver_656.n2, GndDC.p);
+      connect(Light_driver_656.n1, GndDC.p);
+      connect(Light_656.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_656.u);
+      connect(Gain_Light_driver_656.y, Light_656.u);
+      connect(Light_656.p, Light_driver_656.p2);
+      connect(Light_driver_656.p1,  cable_light_656.p);
+      connect(Light_Conv_82.p2, cable_light_656.n);
+
+    /* Light Connections 654 */
+      connect(Light_driver_654.n2, GndDC.p);
+      connect(Light_driver_654.n1, GndDC.p);
+      connect(Light_654.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_654.u);
+      connect(Gain_Light_driver_654.y, Light_654.u);
+      connect(Light_654.p, Light_driver_654.p2);
+      connect(Light_driver_654.p1,  cable_light_654.p);
+      connect(Light_Conv_82.p2, cable_light_654.n);
+
+    /* AC/DC Converter Light_Conv_85 */
+      connect(cable_Light_Conv_85.n, cable_light_L3_1B.p);
+      connect(Light_Conv_85.p1,  cable_Light_Conv_85.p);
+      connect(Light_Conv_85.n1, GndDC.p);
+      connect(Light_Conv_85.n2, GndDC.p);
+
+    /* Light Connections 736 */
+      connect(Light_driver_736.n2, GndDC.p);
+      connect(Light_driver_736.n1, GndDC.p);
+      connect(Light_736.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_736.u);
+      connect(Gain_Light_driver_736.y, Light_736.u);
+      connect(Light_736.p, Light_driver_736.p2);
+      connect(Light_driver_736.p1,  cable_light_736.p);
+      connect(Light_Conv_85.p2, cable_light_736.n);
+
+    /* Light Connections 735 */
+      connect(Light_driver_735.n2, GndDC.p);
+      connect(Light_driver_735.n1, GndDC.p);
+      connect(Light_735.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_735.u);
+      connect(Gain_Light_driver_735.y, Light_735.u);
+      connect(Light_735.p, Light_driver_735.p2);
+      connect(Light_driver_735.p1,  cable_light_735.p);
+      connect(Light_Conv_85.p2, cable_light_735.n);
+
+    /* Light Connections 642 */
+      connect(Light_driver_642.n2, GndDC.p);
+      connect(Light_driver_642.n1, GndDC.p);
+      connect(Light_642.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_642.u);
+      connect(Gain_Light_driver_642.y, Light_642.u);
+      connect(Light_642.p, Light_driver_642.p2);
+      connect(Light_driver_642.p1,  cable_light_642.p);
+      connect(Light_Conv_85.p2, cable_light_642.n);
+
+    /* Light Connections 641 */
+      connect(Light_driver_641.n2, GndDC.p);
+      connect(Light_driver_641.n1, GndDC.p);
+      connect(Light_641.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_641.u);
+      connect(Gain_Light_driver_641.y, Light_641.u);
+      connect(Light_641.p, Light_driver_641.p2);
+      connect(Light_driver_641.p1,  cable_light_641.p);
+      connect(Light_Conv_85.p2, cable_light_641.n);
+
+    /* Light Connections 640 */
+      connect(Light_driver_640.n2, GndDC.p);
+      connect(Light_driver_640.n1, GndDC.p);
+      connect(Light_640.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_640.u);
+      connect(Gain_Light_driver_640.y, Light_640.u);
+      connect(Light_640.p, Light_driver_640.p2);
+      connect(Light_driver_640.p1,  cable_light_640.p);
+      connect(Light_Conv_85.p2, cable_light_640.n);
+
+    /* Light Connections 639 */
+      connect(Light_driver_639.n2, GndDC.p);
+      connect(Light_driver_639.n1, GndDC.p);
+      connect(Light_639.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_639.u);
+      connect(Gain_Light_driver_639.y, Light_639.u);
+      connect(Light_639.p, Light_driver_639.p2);
+      connect(Light_driver_639.p1,  cable_light_639.p);
+      connect(Light_Conv_85.p2, cable_light_639.n);
+
+    /* Light Connections 638 */
+      connect(Light_driver_638.n2, GndDC.p);
+      connect(Light_driver_638.n1, GndDC.p);
+      connect(Light_638.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_638.u);
+      connect(Gain_Light_driver_638.y, Light_638.u);
+      connect(Light_638.p, Light_driver_638.p2);
+      connect(Light_driver_638.p1,  cable_light_638.p);
+      connect(Light_Conv_85.p2, cable_light_638.n);
+
+    /* Light Connections 637 */
+      connect(Light_driver_637.n2, GndDC.p);
+      connect(Light_driver_637.n1, GndDC.p);
+      connect(Light_637.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_637.u);
+      connect(Gain_Light_driver_637.y, Light_637.u);
+      connect(Light_637.p, Light_driver_637.p2);
+      connect(Light_driver_637.p1,  cable_light_637.p);
+      connect(Light_Conv_85.p2, cable_light_637.n);
+
+    /* AC/DC Converter Light_Conv_87 */
+      connect(cable_Light_Conv_87.n, cable_light_L3_1B.p);
+      connect(Light_Conv_87.p1,  cable_Light_Conv_87.p);
+      connect(Light_Conv_87.n1, GndDC.p);
+      connect(Light_Conv_87.n2, GndDC.p);
+
+    /* Light Connections 805 */
+      connect(Light_driver_805.n2, GndDC.p);
+      connect(Light_driver_805.n1, GndDC.p);
+      connect(Light_805.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_805.u);
+      connect(Gain_Light_driver_805.y, Light_805.u);
+      connect(Light_805.p, Light_driver_805.p2);
+      connect(Light_driver_805.p1,  cable_light_805.p);
+      connect(Light_Conv_87.p2, cable_light_805.n);
+
+    /* Light Connections 804 */
+      connect(Light_driver_804.n2, GndDC.p);
+      connect(Light_driver_804.n1, GndDC.p);
+      connect(Light_804.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_804.u);
+      connect(Gain_Light_driver_804.y, Light_804.u);
+      connect(Light_804.p, Light_driver_804.p2);
+      connect(Light_driver_804.p1,  cable_light_804.p);
+      connect(Light_Conv_87.p2, cable_light_804.n);
+
+    /* Light Connections 802 */
+      connect(Light_driver_802.n2, GndDC.p);
+      connect(Light_driver_802.n1, GndDC.p);
+      connect(Light_802.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_802.u);
+      connect(Gain_Light_driver_802.y, Light_802.u);
+      connect(Light_802.p, Light_driver_802.p2);
+      connect(Light_driver_802.p1,  cable_light_802.p);
+      connect(Light_Conv_87.p2, cable_light_802.n);
+
+    /* Light Connections 801 */
+      connect(Light_driver_801.n2, GndDC.p);
+      connect(Light_driver_801.n1, GndDC.p);
+      connect(Light_801.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_801.u);
+      connect(Gain_Light_driver_801.y, Light_801.u);
+      connect(Light_801.p, Light_driver_801.p2);
+      connect(Light_driver_801.p1,  cable_light_801.p);
+      connect(Light_Conv_87.p2, cable_light_801.n);
+
+    /* Light Connections 800 */
+      connect(Light_driver_800.n2, GndDC.p);
+      connect(Light_driver_800.n1, GndDC.p);
+      connect(Light_800.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_800.u);
+      connect(Gain_Light_driver_800.y, Light_800.u);
+      connect(Light_800.p, Light_driver_800.p2);
+      connect(Light_driver_800.p1,  cable_light_800.p);
+      connect(Light_Conv_87.p2, cable_light_800.n);
+
+    /* Light Connections 594 */
+      connect(Light_driver_594.n2, GndDC.p);
+      connect(Light_driver_594.n1, GndDC.p);
+      connect(Light_594.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_594.u);
+      connect(Gain_Light_driver_594.y, Light_594.u);
+      connect(Light_594.p, Light_driver_594.p2);
+      connect(Light_driver_594.p1,  cable_light_594.p);
+      connect(Light_Conv_87.p2, cable_light_594.n);
+
+    /* Light Connections 593 */
+      connect(Light_driver_593.n2, GndDC.p);
+      connect(Light_driver_593.n1, GndDC.p);
+      connect(Light_593.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_593.u);
+      connect(Gain_Light_driver_593.y, Light_593.u);
+      connect(Light_593.p, Light_driver_593.p2);
+      connect(Light_driver_593.p1,  cable_light_593.p);
+      connect(Light_Conv_87.p2, cable_light_593.n);
+
+    /* Light Connections 588 */
+      connect(Light_driver_588.n2, GndDC.p);
+      connect(Light_driver_588.n1, GndDC.p);
+      connect(Light_588.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_588.u);
+      connect(Gain_Light_driver_588.y, Light_588.u);
+      connect(Light_588.p, Light_driver_588.p2);
+      connect(Light_driver_588.p1,  cable_light_588.p);
+      connect(Light_Conv_87.p2, cable_light_588.n);
+
+    /* AC/DC Converter Light_Conv_86 */
+      connect(cable_Light_Conv_86.n, cable_light_L3_1B.p);
+      connect(Light_Conv_86.p1,  cable_Light_Conv_86.p);
+      connect(Light_Conv_86.n1, GndDC.p);
+      connect(Light_Conv_86.n2, GndDC.p);
+
+    /* Light Connections 750 */
+      connect(Light_driver_750.n2, GndDC.p);
+      connect(Light_driver_750.n1, GndDC.p);
+      connect(Light_750.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_750.u);
+      connect(Gain_Light_driver_750.y, Light_750.u);
+      connect(Light_750.p, Light_driver_750.p2);
+      connect(Light_driver_750.p1,  cable_light_750.p);
+      connect(Light_Conv_86.p2, cable_light_750.n);
+
+    /* Light Connections 734 */
+      connect(Light_driver_734.n2, GndDC.p);
+      connect(Light_driver_734.n1, GndDC.p);
+      connect(Light_734.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_734.u);
+      connect(Gain_Light_driver_734.y, Light_734.u);
+      connect(Light_734.p, Light_driver_734.p2);
+      connect(Light_driver_734.p1,  cable_light_734.p);
+      connect(Light_Conv_86.p2, cable_light_734.n);
+
+    /* Light Connections 582 */
+      connect(Light_driver_582.n2, GndDC.p);
+      connect(Light_driver_582.n1, GndDC.p);
+      connect(Light_582.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_582.u);
+      connect(Gain_Light_driver_582.y, Light_582.u);
+      connect(Light_582.p, Light_driver_582.p2);
+      connect(Light_driver_582.p1,  cable_light_582.p);
+      connect(Light_Conv_86.p2, cable_light_582.n);
+
+    /* Light Connections 581 */
+      connect(Light_driver_581.n2, GndDC.p);
+      connect(Light_driver_581.n1, GndDC.p);
+      connect(Light_581.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_581.u);
+      connect(Gain_Light_driver_581.y, Light_581.u);
+      connect(Light_581.p, Light_driver_581.p2);
+      connect(Light_driver_581.p1,  cable_light_581.p);
+      connect(Light_Conv_86.p2, cable_light_581.n);
+
+    /* Light Connections 580 */
+      connect(Light_driver_580.n2, GndDC.p);
+      connect(Light_driver_580.n1, GndDC.p);
+      connect(Light_580.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_580.u);
+      connect(Gain_Light_driver_580.y, Light_580.u);
+      connect(Light_580.p, Light_driver_580.p2);
+      connect(Light_driver_580.p1,  cable_light_580.p);
+      connect(Light_Conv_86.p2, cable_light_580.n);
+
+    /* Light Connections 579 */
+      connect(Light_driver_579.n2, GndDC.p);
+      connect(Light_driver_579.n1, GndDC.p);
+      connect(Light_579.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_579.u);
+      connect(Gain_Light_driver_579.y, Light_579.u);
+      connect(Light_579.p, Light_driver_579.p2);
+      connect(Light_driver_579.p1,  cable_light_579.p);
+      connect(Light_Conv_86.p2, cable_light_579.n);
+
+    /* Light Connections 578 */
+      connect(Light_driver_578.n2, GndDC.p);
+      connect(Light_driver_578.n1, GndDC.p);
+      connect(Light_578.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_578.u);
+      connect(Gain_Light_driver_578.y, Light_578.u);
+      connect(Light_578.p, Light_driver_578.p2);
+      connect(Light_driver_578.p1,  cable_light_578.p);
+      connect(Light_Conv_86.p2, cable_light_578.n);
+
+    /* AC/DC Converter Light_Conv_84 */
+      connect(cable_Light_Conv_84.n, cable_light_L3_1B.p);
+      connect(Light_Conv_84.p1,  cable_Light_Conv_84.p);
+      connect(Light_Conv_84.n1, GndDC.p);
+      connect(Light_Conv_84.n2, GndDC.p);
+
+    /* Light Connections 738 */
+      connect(Light_driver_738.n2, GndDC.p);
+      connect(Light_driver_738.n1, GndDC.p);
+      connect(Light_738.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_738.u);
+      connect(Gain_Light_driver_738.y, Light_738.u);
+      connect(Light_738.p, Light_driver_738.p2);
+      connect(Light_driver_738.p1,  cable_light_738.p);
+      connect(Light_Conv_84.p2, cable_light_738.n);
+
+    /* Light Connections 737 */
+      connect(Light_driver_737.n2, GndDC.p);
+      connect(Light_driver_737.n1, GndDC.p);
+      connect(Light_737.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_737.u);
+      connect(Gain_Light_driver_737.y, Light_737.u);
+      connect(Light_737.p, Light_driver_737.p2);
+      connect(Light_driver_737.p1,  cable_light_737.p);
+      connect(Light_Conv_84.p2, cable_light_737.n);
+
+    /* Light Connections 655 */
+      connect(Light_driver_655.n2, GndDC.p);
+      connect(Light_driver_655.n1, GndDC.p);
+      connect(Light_655.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_655.u);
+      connect(Gain_Light_driver_655.y, Light_655.u);
+      connect(Light_655.p, Light_driver_655.p2);
+      connect(Light_driver_655.p1,  cable_light_655.p);
+      connect(Light_Conv_84.p2, cable_light_655.n);
+
+    /* Light Connections 653 */
+      connect(Light_driver_653.n2, GndDC.p);
+      connect(Light_driver_653.n1, GndDC.p);
+      connect(Light_653.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_653.u);
+      connect(Gain_Light_driver_653.y, Light_653.u);
+      connect(Light_653.p, Light_driver_653.p2);
+      connect(Light_driver_653.p1,  cable_light_653.p);
+      connect(Light_Conv_84.p2, cable_light_653.n);
+
+    /* Light Connections 577 */
+      connect(Light_driver_577.n2, GndDC.p);
+      connect(Light_driver_577.n1, GndDC.p);
+      connect(Light_577.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_577.u);
+      connect(Gain_Light_driver_577.y, Light_577.u);
+      connect(Light_577.p, Light_driver_577.p2);
+      connect(Light_driver_577.p1,  cable_light_577.p);
+      connect(Light_Conv_84.p2, cable_light_577.n);
+
+    /* Light Connections 576 */
+      connect(Light_driver_576.n2, GndDC.p);
+      connect(Light_driver_576.n1, GndDC.p);
+      connect(Light_576.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_576.u);
+      connect(Gain_Light_driver_576.y, Light_576.u);
+      connect(Light_576.p, Light_driver_576.p2);
+      connect(Light_driver_576.p1,  cable_light_576.p);
+      connect(Light_Conv_84.p2, cable_light_576.n);
+
+      connect(cable_light_L3_1B.n, p)
+        annotation (Line(points={{-48,20},{-104,20}}, color={0,0,255}));
+      annotation ();
+    end DC_ACDC_Light_Panel_L3_1B;
+
+    model DC_ACDC_Light_Panel_L3_1C
+      outer HPF.SystemDef systemDef;
+      Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+        Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Core_Lights(
+        tableOnFile=true,
+        tableName="L3-Core-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-74,70},{-54,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn1_Lights(
+        tableOnFile=true,
+        tableName="L3-Zn1-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-40,70},{-20,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn2_Lights(
+        tableOnFile=true,
+        tableName="L3-Zn2-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-8,70},{12,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn3_Lights(
+        tableOnFile=true,
+        tableName="L3-Zn3-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{28,70},{48,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn4_Lights(
+        tableOnFile=true,
+        tableName="L3-Zn4-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{64,70},{84,90}})));
+
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_30(V = 19.5, alpha = 0.26452, beta = 0.12526, gamma = 0.0020109);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_45(V = 19.5, alpha = 0.42081, beta = 0.12526, gamma = 0.001341);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 4.27984, beta = -0.004643965, gamma = 0.0000985992);
+
+    /* Insert models here */
+
+    /* AC/DC Converter Light_Conv_93 */
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_93(modelData = modelData_DCDC);
+
+    /* Light Model 744 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_93(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=11.41);
+      HPF.DC.Variable_DC_Load Light_744;
+
+    /* Light Model 710 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_744(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_744(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_744(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_710;
+
+    /* Light Model 709 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_710(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_710(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_710(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_709;
+
+    /* Light Model 708 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_709(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_709(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_709(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_708;
+
+    /* Light Model 707 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_708(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_708(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_708(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_707;
+
+    /* Light Model 706 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_707(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_707(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_707(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_706;
+
+    /* Light Model 705 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_706(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_706(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_706(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_705;
+
+    /* Light Model 704 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_705(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_705(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_705(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_704;
+
+    /* AC/DC Converter Light_Conv_91 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_704(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_704(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_704(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_91(modelData = modelData_DCDC);
+
+    /* Light Model 743 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_91(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=13.41);
+      HPF.DC.Variable_DC_Load Light_743;
+
+    /* Light Model 742 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_743(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_743(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_743(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_742;
+
+    /* Light Model 703 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_742(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_742(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_742(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_703;
+
+    /* Light Model 702 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_703(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_703(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_703(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_702;
+
+    /* Light Model 700 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_702(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_702(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_702(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_700;
+
+    /* Light Model 699 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_700(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_700(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_700(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_699;
+
+    /* Light Model 696 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_699(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_699(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_699(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_696;
+
+    /* Light Model 695 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_696(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_696(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_696(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_695;
+
+    /* AC/DC Converter Light_Conv_94 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_695(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_695(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_695(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_94(modelData = modelData_DCDC);
+
+    /* Light Model 601 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_94(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=11.35);
+      HPF.DC.Variable_DC_Load Light_601;
+
+    /* Light Model 600 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_601(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_601(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_601(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_600;
+
+    /* Light Model 599 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_600(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_600(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_600(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_599;
+
+    /* Light Model 598 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_599(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_599(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_599(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_598;
+
+    /* Light Model 597 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_598(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_598(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_598(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_597;
+
+    /* Light Model 596 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_597(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_597(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_597(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_596;
+
+    /* Light Model 595 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_596(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_596(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_596(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_595;
+
+    /* AC/DC Converter Light_Conv_89 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_595(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_595(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_595(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_89(modelData = modelData_DCDC);
+
+    /* Light Model 592 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_89(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=13.82);
+      HPF.DC.Variable_DC_Load Light_592;
+
+    /* Light Model 591 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_592(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_592(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_592(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_591;
+
+    /* Light Model 590 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_591(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_591(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_591(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_590;
+
+    /* Light Model 589 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_590(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_590(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_590(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_589;
+
+    /* Light Model 587 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_589(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_589(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_589(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_587;
+
+    /* Light Model 586 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_587(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_587(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_587(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_586;
+
+    /* Light Model 585 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_586(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_586(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_586(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_585;
+
+    /* Light Model 584 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_585(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_585(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_585(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_584;
+
+    /* AC/DC Converter Light_Conv_90 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_584(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_584(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_584(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_90(modelData = modelData_DCDC);
+
+    /* Light Model 793 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_90(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=6.06);
+      HPF.DC.Variable_DC_Load Light_793;
+
+    /* Light Model 648 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_793(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_793(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_793(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_648;
+
+    /* Light Model 647 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_648(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_648(k=22) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_648(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_647;
+
+    /* Light Model 646 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_647(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_647(k=22) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_647(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_646;
+
+    /* Light Model 645 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_646(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_646(k=22) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_646(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_645;
+
+    /* Light Model 644 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_645(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_645(k=35) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_645(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_644;
+
+    /* Light Model 570 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_644(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_644(k=35) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_644(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_570;
+
+    /* Light Model 569 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_570(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_570(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_570(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_569;
+
+    /* AC/DC Converter Light_Conv_92 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_569(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_569(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_569(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_92(modelData = modelData_DCDC);
+
+    /* Light Model 701 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_92(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=4.56);
+      HPF.DC.Variable_DC_Load Light_701;
+
+    /* Light Model 652 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_701(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_701(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_701(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_652;
+
+    /* Light Model 651 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_652(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_652(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_652(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_651;
+
+    /* Light Model 650 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_651(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_651(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_651(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_650;
+
+    /* Light Model 649 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_650(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_650(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_650(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_649;
+
+    /* Light Model 643 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_649(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_649(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_649(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_643;
+
+    /* Light Model 568 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_643(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_643(k=35) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_643(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_568;
+
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_568(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_568(k=35) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_568(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+
+      Modelica.Electrical.Analog.Interfaces.PositivePin p
+        "Positive electrical pin of port 1" annotation (Placement(transformation(
+              extent={{-114,10},{-94,30}}), iconTransformation(extent={{-110,90},{-90,
+                110}})));
+      HPF.Cables.NEC_CableModelDC cable_light_L3_1C(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+          length=15) annotation (Placement(visible=true, transformation(
+            origin={-38,20},
+            extent={{10,-10},{-10,10}},
+            rotation=0)));
+    equation
+
+    /* Insert equation here */
+
+    /* AC/DC Converter Light_Conv_93 */
+      connect(cable_Light_Conv_93.n, cable_light_L3_1C.p);
+      connect(Light_Conv_93.p1,  cable_Light_Conv_93.p);
+      connect(Light_Conv_93.n1, GndDC.p);
+      connect(Light_Conv_93.n2, GndDC.p);
+
+    /* Light Connections 744 */
+      connect(Light_driver_744.n2, GndDC.p);
+      connect(Light_driver_744.n1, GndDC.p);
+      connect(Light_744.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_744.u);
+      connect(Gain_Light_driver_744.y, Light_744.u);
+      connect(Light_744.p, Light_driver_744.p2);
+      connect(Light_driver_744.p1,  cable_light_744.p);
+      connect(Light_Conv_93.p2, cable_light_744.n);
+
+    /* Light Connections 710 */
+      connect(Light_driver_710.n2, GndDC.p);
+      connect(Light_driver_710.n1, GndDC.p);
+      connect(Light_710.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_710.u);
+      connect(Gain_Light_driver_710.y, Light_710.u);
+      connect(Light_710.p, Light_driver_710.p2);
+      connect(Light_driver_710.p1,  cable_light_710.p);
+      connect(Light_Conv_93.p2, cable_light_710.n);
+
+    /* Light Connections 709 */
+      connect(Light_driver_709.n2, GndDC.p);
+      connect(Light_driver_709.n1, GndDC.p);
+      connect(Light_709.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_709.u);
+      connect(Gain_Light_driver_709.y, Light_709.u);
+      connect(Light_709.p, Light_driver_709.p2);
+      connect(Light_driver_709.p1,  cable_light_709.p);
+      connect(Light_Conv_93.p2, cable_light_709.n);
+
+    /* Light Connections 708 */
+      connect(Light_driver_708.n2, GndDC.p);
+      connect(Light_driver_708.n1, GndDC.p);
+      connect(Light_708.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn1_Lights.y[1], Gain_Light_driver_708.u);
+      connect(Gain_Light_driver_708.y, Light_708.u);
+      connect(Light_708.p, Light_driver_708.p2);
+      connect(Light_driver_708.p1,  cable_light_708.p);
+      connect(Light_Conv_93.p2, cable_light_708.n);
+
+    /* Light Connections 707 */
+      connect(Light_driver_707.n2, GndDC.p);
+      connect(Light_driver_707.n1, GndDC.p);
+      connect(Light_707.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn1_Lights.y[1], Gain_Light_driver_707.u);
+      connect(Gain_Light_driver_707.y, Light_707.u);
+      connect(Light_707.p, Light_driver_707.p2);
+      connect(Light_driver_707.p1,  cable_light_707.p);
+      connect(Light_Conv_93.p2, cable_light_707.n);
+
+    /* Light Connections 706 */
+      connect(Light_driver_706.n2, GndDC.p);
+      connect(Light_driver_706.n1, GndDC.p);
+      connect(Light_706.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_706.u);
+      connect(Gain_Light_driver_706.y, Light_706.u);
+      connect(Light_706.p, Light_driver_706.p2);
+      connect(Light_driver_706.p1,  cable_light_706.p);
+      connect(Light_Conv_93.p2, cable_light_706.n);
+
+    /* Light Connections 705 */
+      connect(Light_driver_705.n2, GndDC.p);
+      connect(Light_driver_705.n1, GndDC.p);
+      connect(Light_705.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_705.u);
+      connect(Gain_Light_driver_705.y, Light_705.u);
+      connect(Light_705.p, Light_driver_705.p2);
+      connect(Light_driver_705.p1,  cable_light_705.p);
+      connect(Light_Conv_93.p2, cable_light_705.n);
+
+    /* Light Connections 704 */
+      connect(Light_driver_704.n2, GndDC.p);
+      connect(Light_driver_704.n1, GndDC.p);
+      connect(Light_704.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_704.u);
+      connect(Gain_Light_driver_704.y, Light_704.u);
+      connect(Light_704.p, Light_driver_704.p2);
+      connect(Light_driver_704.p1,  cable_light_704.p);
+      connect(Light_Conv_93.p2, cable_light_704.n);
+
+    /* AC/DC Converter Light_Conv_91 */
+      connect(cable_Light_Conv_91.n, cable_light_L3_1C.p);
+      connect(Light_Conv_91.p1,  cable_Light_Conv_91.p);
+      connect(Light_Conv_91.n1, GndDC.p);
+      connect(Light_Conv_91.n2, GndDC.p);
+
+    /* Light Connections 743 */
+      connect(Light_driver_743.n2, GndDC.p);
+      connect(Light_driver_743.n1, GndDC.p);
+      connect(Light_743.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_743.u);
+      connect(Gain_Light_driver_743.y, Light_743.u);
+      connect(Light_743.p, Light_driver_743.p2);
+      connect(Light_driver_743.p1,  cable_light_743.p);
+      connect(Light_Conv_91.p2, cable_light_743.n);
+
+    /* Light Connections 742 */
+      connect(Light_driver_742.n2, GndDC.p);
+      connect(Light_driver_742.n1, GndDC.p);
+      connect(Light_742.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_742.u);
+      connect(Gain_Light_driver_742.y, Light_742.u);
+      connect(Light_742.p, Light_driver_742.p2);
+      connect(Light_driver_742.p1,  cable_light_742.p);
+      connect(Light_Conv_91.p2, cable_light_742.n);
+
+    /* Light Connections 703 */
+      connect(Light_driver_703.n2, GndDC.p);
+      connect(Light_driver_703.n1, GndDC.p);
+      connect(Light_703.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn1_Lights.y[1], Gain_Light_driver_703.u);
+      connect(Gain_Light_driver_703.y, Light_703.u);
+      connect(Light_703.p, Light_driver_703.p2);
+      connect(Light_driver_703.p1,  cable_light_703.p);
+      connect(Light_Conv_91.p2, cable_light_703.n);
+
+    /* Light Connections 702 */
+      connect(Light_driver_702.n2, GndDC.p);
+      connect(Light_driver_702.n1, GndDC.p);
+      connect(Light_702.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn1_Lights.y[1], Gain_Light_driver_702.u);
+      connect(Gain_Light_driver_702.y, Light_702.u);
+      connect(Light_702.p, Light_driver_702.p2);
+      connect(Light_driver_702.p1,  cable_light_702.p);
+      connect(Light_Conv_91.p2, cable_light_702.n);
+
+    /* Light Connections 700 */
+      connect(Light_driver_700.n2, GndDC.p);
+      connect(Light_driver_700.n1, GndDC.p);
+      connect(Light_700.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_700.u);
+      connect(Gain_Light_driver_700.y, Light_700.u);
+      connect(Light_700.p, Light_driver_700.p2);
+      connect(Light_driver_700.p1,  cable_light_700.p);
+      connect(Light_Conv_91.p2, cable_light_700.n);
+
+    /* Light Connections 699 */
+      connect(Light_driver_699.n2, GndDC.p);
+      connect(Light_driver_699.n1, GndDC.p);
+      connect(Light_699.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_699.u);
+      connect(Gain_Light_driver_699.y, Light_699.u);
+      connect(Light_699.p, Light_driver_699.p2);
+      connect(Light_driver_699.p1,  cable_light_699.p);
+      connect(Light_Conv_91.p2, cable_light_699.n);
+
+    /* Light Connections 696 */
+      connect(Light_driver_696.n2, GndDC.p);
+      connect(Light_driver_696.n1, GndDC.p);
+      connect(Light_696.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn1_Lights.y[1], Gain_Light_driver_696.u);
+      connect(Gain_Light_driver_696.y, Light_696.u);
+      connect(Light_696.p, Light_driver_696.p2);
+      connect(Light_driver_696.p1,  cable_light_696.p);
+      connect(Light_Conv_91.p2, cable_light_696.n);
+
+    /* Light Connections 695 */
+      connect(Light_driver_695.n2, GndDC.p);
+      connect(Light_driver_695.n1, GndDC.p);
+      connect(Light_695.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn1_Lights.y[1], Gain_Light_driver_695.u);
+      connect(Gain_Light_driver_695.y, Light_695.u);
+      connect(Light_695.p, Light_driver_695.p2);
+      connect(Light_driver_695.p1,  cable_light_695.p);
+      connect(Light_Conv_91.p2, cable_light_695.n);
+
+    /* AC/DC Converter Light_Conv_94 */
+      connect(cable_Light_Conv_94.n, cable_light_L3_1C.p);
+      connect(Light_Conv_94.p1,  cable_Light_Conv_94.p);
+      connect(Light_Conv_94.n1, GndDC.p);
+      connect(Light_Conv_94.n2, GndDC.p);
+
+    /* Light Connections 601 */
+      connect(Light_driver_601.n2, GndDC.p);
+      connect(Light_driver_601.n1, GndDC.p);
+      connect(Light_601.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_601.u);
+      connect(Gain_Light_driver_601.y, Light_601.u);
+      connect(Light_601.p, Light_driver_601.p2);
+      connect(Light_driver_601.p1,  cable_light_601.p);
+      connect(Light_Conv_94.p2, cable_light_601.n);
+
+    /* Light Connections 600 */
+      connect(Light_driver_600.n2, GndDC.p);
+      connect(Light_driver_600.n1, GndDC.p);
+      connect(Light_600.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_600.u);
+      connect(Gain_Light_driver_600.y, Light_600.u);
+      connect(Light_600.p, Light_driver_600.p2);
+      connect(Light_driver_600.p1,  cable_light_600.p);
+      connect(Light_Conv_94.p2, cable_light_600.n);
+
+    /* Light Connections 599 */
+      connect(Light_driver_599.n2, GndDC.p);
+      connect(Light_driver_599.n1, GndDC.p);
+      connect(Light_599.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_599.u);
+      connect(Gain_Light_driver_599.y, Light_599.u);
+      connect(Light_599.p, Light_driver_599.p2);
+      connect(Light_driver_599.p1,  cable_light_599.p);
+      connect(Light_Conv_94.p2, cable_light_599.n);
+
+    /* Light Connections 598 */
+      connect(Light_driver_598.n2, GndDC.p);
+      connect(Light_driver_598.n1, GndDC.p);
+      connect(Light_598.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_598.u);
+      connect(Gain_Light_driver_598.y, Light_598.u);
+      connect(Light_598.p, Light_driver_598.p2);
+      connect(Light_driver_598.p1,  cable_light_598.p);
+      connect(Light_Conv_94.p2, cable_light_598.n);
+
+    /* Light Connections 597 */
+      connect(Light_driver_597.n2, GndDC.p);
+      connect(Light_driver_597.n1, GndDC.p);
+      connect(Light_597.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_597.u);
+      connect(Gain_Light_driver_597.y, Light_597.u);
+      connect(Light_597.p, Light_driver_597.p2);
+      connect(Light_driver_597.p1,  cable_light_597.p);
+      connect(Light_Conv_94.p2, cable_light_597.n);
+
+    /* Light Connections 596 */
+      connect(Light_driver_596.n2, GndDC.p);
+      connect(Light_driver_596.n1, GndDC.p);
+      connect(Light_596.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_596.u);
+      connect(Gain_Light_driver_596.y, Light_596.u);
+      connect(Light_596.p, Light_driver_596.p2);
+      connect(Light_driver_596.p1,  cable_light_596.p);
+      connect(Light_Conv_94.p2, cable_light_596.n);
+
+    /* Light Connections 595 */
+      connect(Light_driver_595.n2, GndDC.p);
+      connect(Light_driver_595.n1, GndDC.p);
+      connect(Light_595.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_595.u);
+      connect(Gain_Light_driver_595.y, Light_595.u);
+      connect(Light_595.p, Light_driver_595.p2);
+      connect(Light_driver_595.p1,  cable_light_595.p);
+      connect(Light_Conv_94.p2, cable_light_595.n);
+
+    /* AC/DC Converter Light_Conv_89 */
+      connect(cable_Light_Conv_89.n, cable_light_L3_1C.p);
+      connect(Light_Conv_89.p1,  cable_Light_Conv_89.p);
+      connect(Light_Conv_89.n1, GndDC.p);
+      connect(Light_Conv_89.n2, GndDC.p);
+
+    /* Light Connections 592 */
+      connect(Light_driver_592.n2, GndDC.p);
+      connect(Light_driver_592.n1, GndDC.p);
+      connect(Light_592.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_592.u);
+      connect(Gain_Light_driver_592.y, Light_592.u);
+      connect(Light_592.p, Light_driver_592.p2);
+      connect(Light_driver_592.p1,  cable_light_592.p);
+      connect(Light_Conv_89.p2, cable_light_592.n);
+
+    /* Light Connections 591 */
+      connect(Light_driver_591.n2, GndDC.p);
+      connect(Light_driver_591.n1, GndDC.p);
+      connect(Light_591.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_591.u);
+      connect(Gain_Light_driver_591.y, Light_591.u);
+      connect(Light_591.p, Light_driver_591.p2);
+      connect(Light_driver_591.p1,  cable_light_591.p);
+      connect(Light_Conv_89.p2, cable_light_591.n);
+
+    /* Light Connections 590 */
+      connect(Light_driver_590.n2, GndDC.p);
+      connect(Light_driver_590.n1, GndDC.p);
+      connect(Light_590.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_590.u);
+      connect(Gain_Light_driver_590.y, Light_590.u);
+      connect(Light_590.p, Light_driver_590.p2);
+      connect(Light_driver_590.p1,  cable_light_590.p);
+      connect(Light_Conv_89.p2, cable_light_590.n);
+
+    /* Light Connections 589 */
+      connect(Light_driver_589.n2, GndDC.p);
+      connect(Light_driver_589.n1, GndDC.p);
+      connect(Light_589.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_589.u);
+      connect(Gain_Light_driver_589.y, Light_589.u);
+      connect(Light_589.p, Light_driver_589.p2);
+      connect(Light_driver_589.p1,  cable_light_589.p);
+      connect(Light_Conv_89.p2, cable_light_589.n);
+
+    /* Light Connections 587 */
+      connect(Light_driver_587.n2, GndDC.p);
+      connect(Light_driver_587.n1, GndDC.p);
+      connect(Light_587.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_587.u);
+      connect(Gain_Light_driver_587.y, Light_587.u);
+      connect(Light_587.p, Light_driver_587.p2);
+      connect(Light_driver_587.p1,  cable_light_587.p);
+      connect(Light_Conv_89.p2, cable_light_587.n);
+
+    /* Light Connections 586 */
+      connect(Light_driver_586.n2, GndDC.p);
+      connect(Light_driver_586.n1, GndDC.p);
+      connect(Light_586.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_586.u);
+      connect(Gain_Light_driver_586.y, Light_586.u);
+      connect(Light_586.p, Light_driver_586.p2);
+      connect(Light_driver_586.p1,  cable_light_586.p);
+      connect(Light_Conv_89.p2, cable_light_586.n);
+
+    /* Light Connections 585 */
+      connect(Light_driver_585.n2, GndDC.p);
+      connect(Light_driver_585.n1, GndDC.p);
+      connect(Light_585.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_585.u);
+      connect(Gain_Light_driver_585.y, Light_585.u);
+      connect(Light_585.p, Light_driver_585.p2);
+      connect(Light_driver_585.p1,  cable_light_585.p);
+      connect(Light_Conv_89.p2, cable_light_585.n);
+
+    /* Light Connections 584 */
+      connect(Light_driver_584.n2, GndDC.p);
+      connect(Light_driver_584.n1, GndDC.p);
+      connect(Light_584.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_584.u);
+      connect(Gain_Light_driver_584.y, Light_584.u);
+      connect(Light_584.p, Light_driver_584.p2);
+      connect(Light_driver_584.p1,  cable_light_584.p);
+      connect(Light_Conv_89.p2, cable_light_584.n);
+
+    /* AC/DC Converter Light_Conv_90 */
+      connect(cable_Light_Conv_90.n, cable_light_L3_1C.p);
+      connect(Light_Conv_90.p1,  cable_Light_Conv_90.p);
+      connect(Light_Conv_90.n1, GndDC.p);
+      connect(Light_Conv_90.n2, GndDC.p);
+
+    /* Light Connections 793 */
+      connect(Light_driver_793.n2, GndDC.p);
+      connect(Light_driver_793.n1, GndDC.p);
+      connect(Light_793.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_793.u);
+      connect(Gain_Light_driver_793.y, Light_793.u);
+      connect(Light_793.p, Light_driver_793.p2);
+      connect(Light_driver_793.p1,  cable_light_793.p);
+      connect(Light_Conv_90.p2, cable_light_793.n);
+
+    /* Light Connections 648 */
+      connect(Light_driver_648.n2, GndDC.p);
+      connect(Light_driver_648.n1, GndDC.p);
+      connect(Light_648.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_648.u);
+      connect(Gain_Light_driver_648.y, Light_648.u);
+      connect(Light_648.p, Light_driver_648.p2);
+      connect(Light_driver_648.p1,  cable_light_648.p);
+      connect(Light_Conv_90.p2, cable_light_648.n);
+
+    /* Light Connections 647 */
+      connect(Light_driver_647.n2, GndDC.p);
+      connect(Light_driver_647.n1, GndDC.p);
+      connect(Light_647.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_647.u);
+      connect(Gain_Light_driver_647.y, Light_647.u);
+      connect(Light_647.p, Light_driver_647.p2);
+      connect(Light_driver_647.p1,  cable_light_647.p);
+      connect(Light_Conv_90.p2, cable_light_647.n);
+
+    /* Light Connections 646 */
+      connect(Light_driver_646.n2, GndDC.p);
+      connect(Light_driver_646.n1, GndDC.p);
+      connect(Light_646.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_646.u);
+      connect(Gain_Light_driver_646.y, Light_646.u);
+      connect(Light_646.p, Light_driver_646.p2);
+      connect(Light_driver_646.p1,  cable_light_646.p);
+      connect(Light_Conv_90.p2, cable_light_646.n);
+
+    /* Light Connections 645 */
+      connect(Light_driver_645.n2, GndDC.p);
+      connect(Light_driver_645.n1, GndDC.p);
+      connect(Light_645.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_645.u);
+      connect(Gain_Light_driver_645.y, Light_645.u);
+      connect(Light_645.p, Light_driver_645.p2);
+      connect(Light_driver_645.p1,  cable_light_645.p);
+      connect(Light_Conv_90.p2, cable_light_645.n);
+
+    /* Light Connections 644 */
+      connect(Light_driver_644.n2, GndDC.p);
+      connect(Light_driver_644.n1, GndDC.p);
+      connect(Light_644.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_644.u);
+      connect(Gain_Light_driver_644.y, Light_644.u);
+      connect(Light_644.p, Light_driver_644.p2);
+      connect(Light_driver_644.p1,  cable_light_644.p);
+      connect(Light_Conv_90.p2, cable_light_644.n);
+
+    /* Light Connections 570 */
+      connect(Light_driver_570.n2, GndDC.p);
+      connect(Light_driver_570.n1, GndDC.p);
+      connect(Light_570.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_570.u);
+      connect(Gain_Light_driver_570.y, Light_570.u);
+      connect(Light_570.p, Light_driver_570.p2);
+      connect(Light_driver_570.p1,  cable_light_570.p);
+      connect(Light_Conv_90.p2, cable_light_570.n);
+
+    /* Light Connections 569 */
+      connect(Light_driver_569.n2, GndDC.p);
+      connect(Light_driver_569.n1, GndDC.p);
+      connect(Light_569.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_569.u);
+      connect(Gain_Light_driver_569.y, Light_569.u);
+      connect(Light_569.p, Light_driver_569.p2);
+      connect(Light_driver_569.p1,  cable_light_569.p);
+      connect(Light_Conv_90.p2, cable_light_569.n);
+
+    /* AC/DC Converter Light_Conv_92 */
+      connect(cable_Light_Conv_92.n, cable_light_L3_1C.p);
+      connect(Light_Conv_92.p1,  cable_Light_Conv_92.p);
+      connect(Light_Conv_92.n1, GndDC.p);
+      connect(Light_Conv_92.n2, GndDC.p);
+
+    /* Light Connections 701 */
+      connect(Light_driver_701.n2, GndDC.p);
+      connect(Light_driver_701.n1, GndDC.p);
+      connect(Light_701.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_701.u);
+      connect(Gain_Light_driver_701.y, Light_701.u);
+      connect(Light_701.p, Light_driver_701.p2);
+      connect(Light_driver_701.p1,  cable_light_701.p);
+      connect(Light_Conv_92.p2, cable_light_701.n);
+
+    /* Light Connections 652 */
+      connect(Light_driver_652.n2, GndDC.p);
+      connect(Light_driver_652.n1, GndDC.p);
+      connect(Light_652.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_652.u);
+      connect(Gain_Light_driver_652.y, Light_652.u);
+      connect(Light_652.p, Light_driver_652.p2);
+      connect(Light_driver_652.p1,  cable_light_652.p);
+      connect(Light_Conv_92.p2, cable_light_652.n);
+
+    /* Light Connections 651 */
+      connect(Light_driver_651.n2, GndDC.p);
+      connect(Light_driver_651.n1, GndDC.p);
+      connect(Light_651.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_651.u);
+      connect(Gain_Light_driver_651.y, Light_651.u);
+      connect(Light_651.p, Light_driver_651.p2);
+      connect(Light_driver_651.p1,  cable_light_651.p);
+      connect(Light_Conv_92.p2, cable_light_651.n);
+
+    /* Light Connections 650 */
+      connect(Light_driver_650.n2, GndDC.p);
+      connect(Light_driver_650.n1, GndDC.p);
+      connect(Light_650.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_650.u);
+      connect(Gain_Light_driver_650.y, Light_650.u);
+      connect(Light_650.p, Light_driver_650.p2);
+      connect(Light_driver_650.p1,  cable_light_650.p);
+      connect(Light_Conv_92.p2, cable_light_650.n);
+
+    /* Light Connections 649 */
+      connect(Light_driver_649.n2, GndDC.p);
+      connect(Light_driver_649.n1, GndDC.p);
+      connect(Light_649.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_649.u);
+      connect(Gain_Light_driver_649.y, Light_649.u);
+      connect(Light_649.p, Light_driver_649.p2);
+      connect(Light_driver_649.p1,  cable_light_649.p);
+      connect(Light_Conv_92.p2, cable_light_649.n);
+
+    /* Light Connections 643 */
+      connect(Light_driver_643.n2, GndDC.p);
+      connect(Light_driver_643.n1, GndDC.p);
+      connect(Light_643.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_643.u);
+      connect(Gain_Light_driver_643.y, Light_643.u);
+      connect(Light_643.p, Light_driver_643.p2);
+      connect(Light_driver_643.p1,  cable_light_643.p);
+      connect(Light_Conv_92.p2, cable_light_643.n);
+
+    /* Light Connections 568 */
+      connect(Light_driver_568.n2, GndDC.p);
+      connect(Light_driver_568.n1, GndDC.p);
+      connect(Light_568.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_568.u);
+      connect(Gain_Light_driver_568.y, Light_568.u);
+      connect(Light_568.p, Light_driver_568.p2);
+      connect(Light_driver_568.p1,  cable_light_568.p);
+      connect(Light_Conv_92.p2, cable_light_568.n);
+
+      connect(cable_light_L3_1C.n, p)
+        annotation (Line(points={{-48,20},{-104,20}}, color={0,0,255}));
+      annotation ();
+    end DC_ACDC_Light_Panel_L3_1C;
+
+    model DC_ACDC_Light_Panel_L3_2A
+      outer HPF.SystemDef systemDef;
+      Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+        Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Core_Lights(
+        tableOnFile=true,
+        tableName="L3-Core-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-74,70},{-54,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn1_Lights(
+        tableOnFile=true,
+        tableName="L3-Zn1-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-40,70},{-20,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn2_Lights(
+        tableOnFile=true,
+        tableName="L3-Zn2-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-8,70},{12,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn3_Lights(
+        tableOnFile=true,
+        tableName="L3-Zn3-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{28,70},{48,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn4_Lights(
+        tableOnFile=true,
+        tableName="L3-Zn4-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{64,70},{84,90}})));
+
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_30(V = 19.5, alpha = 0.26452, beta = 0.12526, gamma = 0.0020109);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_45(V = 19.5, alpha = 0.42081, beta = 0.12526, gamma = 0.001341);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 4.27984, beta = -0.004643965, gamma = 0.0000985992);
+
+    /* Insert models here */
+
+    /* AC/DC Converter Light_Conv_88 */
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_88(modelData = modelData_DCDC);
+
+    /* Light Model 811 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_88(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=21.88);
+      HPF.DC.Variable_DC_Load Light_811;
+
+    /* Light Model 810 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_811(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_811(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_811(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_810;
+
+    /* Light Model 809 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_810(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_810(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_810(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_809;
+
+    /* Light Model 808 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_809(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_809(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_809(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_808;
+
+    /* Light Model 807 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_808(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_808(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_808(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_807;
+
+    /* Light Model 806 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_807(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_807(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_807(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_806;
+
+    /* Light Model 803 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_806(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_806(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_806(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_803;
+
+    /* AC/DC Converter Light_Conv_100 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_803(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_803(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_803(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_100(modelData = modelData_DCDC);
+
+    /* Light Model 823 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_100(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=25.53);
+      HPF.DC.Variable_DC_Load Light_823;
+
+    /* Light Model 822 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_823(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_823(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_823(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_822;
+
+    /* Light Model 821 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_822(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_822(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_822(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_821;
+
+    /* Light Model 820 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_821(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_821(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_821(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_820;
+
+    /* Light Model 819 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_820(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_820(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_820(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_819;
+
+    /* Light Model 818 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_819(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_819(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_819(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_818;
+
+    /* Light Model 618 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_818(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_818(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_818(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_618;
+
+    /* Light Model 613 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_618(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_618(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_618(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_613;
+
+    /* AC/DC Converter Light_Conv_98 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_613(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_613(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_613(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_98(modelData = modelData_DCDC);
+
+    /* Light Model 817 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_98(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=21.11);
+      HPF.DC.Variable_DC_Load Light_817;
+
+    /* Light Model 816 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_817(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_817(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_817(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_816;
+
+    /* Light Model 815 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_816(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_816(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_816(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_815;
+
+    /* Light Model 814 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_815(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_815(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_815(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_814;
+
+    /* Light Model 813 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_814(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_814(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_814(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_813;
+
+    /* Light Model 812 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_813(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_813(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_813(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_812;
+
+    /* Light Model 609 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_812(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_812(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_812(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_609;
+
+    /* Light Model 608 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_609(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_609(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_609(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_608;
+
+    /* AC/DC Converter Light_Conv_99 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_608(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_608(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_608(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_99(modelData = modelData_DCDC);
+
+    /* Light Model 617 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_99(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=17.23);
+      HPF.DC.Variable_DC_Load Light_617;
+
+    /* Light Model 616 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_617(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_617(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_617(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_616;
+
+    /* Light Model 615 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_616(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_616(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_616(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_615;
+
+    /* Light Model 614 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_615(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_615(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_615(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_614;
+
+    /* Light Model 612 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_614(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_614(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_614(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_612;
+
+    /* Light Model 611 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_612(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_612(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_612(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_611;
+
+    /* Light Model 610 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_611(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_611(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_611(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_610;
+
+    /* Light Model 573 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_610(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_610(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_610(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_573;
+
+    /* AC/DC Converter Light_Conv_95 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_573(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_573(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_573(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_95(modelData = modelData_DCDC);
+
+    /* Light Model 607 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_95(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=13.82);
+      HPF.DC.Variable_DC_Load Light_607;
+
+    /* Light Model 606 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_607(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_607(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_607(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_606;
+
+    /* Light Model 605 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_606(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_606(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_606(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_605;
+
+    /* Light Model 604 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_605(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_605(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_605(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_604;
+
+    /* Light Model 603 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_604(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_604(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_604(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_603;
+
+    /* Light Model 602 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_603(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_603(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_603(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_602;
+
+    /* Light Model 572 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_602(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_602(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_602(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_572;
+
+    /* Light Model 571 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_572(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_572(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_572(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_571;
+
+    /* AC/DC Converter Light_Conv_96 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_571(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_571(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_571(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_96(modelData = modelData_DCDC);
+
+    /* Light Model 792 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_96(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=8.2);
+      HPF.DC.Variable_DC_Load Light_792;
+
+    /* Light Model 712 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_792(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_792(k=35) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_792(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_712;
+
+    /* Light Model 711 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_712(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_712(k=22) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_712(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_711;
+
+    /* Light Model 567 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_711(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_711(k=22) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_711(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_567;
+
+    /* Light Model 566 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_567(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_567(k=42) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_567(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_566;
+
+    /* Light Model 565 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_566(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_566(k=42) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_566(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_565;
+
+    /* Light Model 564 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_565(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_565(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_565(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_564;
+
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_564(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_564(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_564(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+
+      Modelica.Electrical.Analog.Interfaces.PositivePin p
+        "Positive electrical pin of port 1" annotation (Placement(transformation(
+              extent={{-114,10},{-94,30}}), iconTransformation(extent={{-110,90},{-90,
+                110}})));
+      HPF.Cables.NEC_CableModelDC cable_light_L3_2A(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+          length=15) annotation (Placement(visible=true, transformation(
+            origin={-38,20},
+            extent={{10,-10},{-10,10}},
+            rotation=0)));
+    equation
+
+    /* Insert equation here */
+
+    /* AC/DC Converter Light_Conv_88 */
+      connect(cable_Light_Conv_88.n, cable_light_L3_2A.p);
+      connect(Light_Conv_88.p1,  cable_Light_Conv_88.p);
+      connect(Light_Conv_88.n1, GndDC.p);
+      connect(Light_Conv_88.n2, GndDC.p);
+
+    /* Light Connections 811 */
+      connect(Light_driver_811.n2, GndDC.p);
+      connect(Light_driver_811.n1, GndDC.p);
+      connect(Light_811.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_811.u);
+      connect(Gain_Light_driver_811.y, Light_811.u);
+      connect(Light_811.p, Light_driver_811.p2);
+      connect(Light_driver_811.p1,  cable_light_811.p);
+      connect(Light_Conv_88.p2, cable_light_811.n);
+
+    /* Light Connections 810 */
+      connect(Light_driver_810.n2, GndDC.p);
+      connect(Light_driver_810.n1, GndDC.p);
+      connect(Light_810.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_810.u);
+      connect(Gain_Light_driver_810.y, Light_810.u);
+      connect(Light_810.p, Light_driver_810.p2);
+      connect(Light_driver_810.p1,  cable_light_810.p);
+      connect(Light_Conv_88.p2, cable_light_810.n);
+
+    /* Light Connections 809 */
+      connect(Light_driver_809.n2, GndDC.p);
+      connect(Light_driver_809.n1, GndDC.p);
+      connect(Light_809.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_809.u);
+      connect(Gain_Light_driver_809.y, Light_809.u);
+      connect(Light_809.p, Light_driver_809.p2);
+      connect(Light_driver_809.p1,  cable_light_809.p);
+      connect(Light_Conv_88.p2, cable_light_809.n);
+
+    /* Light Connections 808 */
+      connect(Light_driver_808.n2, GndDC.p);
+      connect(Light_driver_808.n1, GndDC.p);
+      connect(Light_808.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_808.u);
+      connect(Gain_Light_driver_808.y, Light_808.u);
+      connect(Light_808.p, Light_driver_808.p2);
+      connect(Light_driver_808.p1,  cable_light_808.p);
+      connect(Light_Conv_88.p2, cable_light_808.n);
+
+    /* Light Connections 807 */
+      connect(Light_driver_807.n2, GndDC.p);
+      connect(Light_driver_807.n1, GndDC.p);
+      connect(Light_807.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_807.u);
+      connect(Gain_Light_driver_807.y, Light_807.u);
+      connect(Light_807.p, Light_driver_807.p2);
+      connect(Light_driver_807.p1,  cable_light_807.p);
+      connect(Light_Conv_88.p2, cable_light_807.n);
+
+    /* Light Connections 806 */
+      connect(Light_driver_806.n2, GndDC.p);
+      connect(Light_driver_806.n1, GndDC.p);
+      connect(Light_806.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_806.u);
+      connect(Gain_Light_driver_806.y, Light_806.u);
+      connect(Light_806.p, Light_driver_806.p2);
+      connect(Light_driver_806.p1,  cable_light_806.p);
+      connect(Light_Conv_88.p2, cable_light_806.n);
+
+    /* Light Connections 803 */
+      connect(Light_driver_803.n2, GndDC.p);
+      connect(Light_driver_803.n1, GndDC.p);
+      connect(Light_803.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_803.u);
+      connect(Gain_Light_driver_803.y, Light_803.u);
+      connect(Light_803.p, Light_driver_803.p2);
+      connect(Light_driver_803.p1,  cable_light_803.p);
+      connect(Light_Conv_88.p2, cable_light_803.n);
+
+    /* AC/DC Converter Light_Conv_100 */
+      connect(cable_Light_Conv_100.n, cable_light_L3_2A.p);
+      connect(Light_Conv_100.p1,  cable_Light_Conv_100.p);
+      connect(Light_Conv_100.n1, GndDC.p);
+      connect(Light_Conv_100.n2, GndDC.p);
+
+    /* Light Connections 823 */
+      connect(Light_driver_823.n2, GndDC.p);
+      connect(Light_driver_823.n1, GndDC.p);
+      connect(Light_823.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_823.u);
+      connect(Gain_Light_driver_823.y, Light_823.u);
+      connect(Light_823.p, Light_driver_823.p2);
+      connect(Light_driver_823.p1,  cable_light_823.p);
+      connect(Light_Conv_100.p2, cable_light_823.n);
+
+    /* Light Connections 822 */
+      connect(Light_driver_822.n2, GndDC.p);
+      connect(Light_driver_822.n1, GndDC.p);
+      connect(Light_822.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_822.u);
+      connect(Gain_Light_driver_822.y, Light_822.u);
+      connect(Light_822.p, Light_driver_822.p2);
+      connect(Light_driver_822.p1,  cable_light_822.p);
+      connect(Light_Conv_100.p2, cable_light_822.n);
+
+    /* Light Connections 821 */
+      connect(Light_driver_821.n2, GndDC.p);
+      connect(Light_driver_821.n1, GndDC.p);
+      connect(Light_821.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_821.u);
+      connect(Gain_Light_driver_821.y, Light_821.u);
+      connect(Light_821.p, Light_driver_821.p2);
+      connect(Light_driver_821.p1,  cable_light_821.p);
+      connect(Light_Conv_100.p2, cable_light_821.n);
+
+    /* Light Connections 820 */
+      connect(Light_driver_820.n2, GndDC.p);
+      connect(Light_driver_820.n1, GndDC.p);
+      connect(Light_820.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_820.u);
+      connect(Gain_Light_driver_820.y, Light_820.u);
+      connect(Light_820.p, Light_driver_820.p2);
+      connect(Light_driver_820.p1,  cable_light_820.p);
+      connect(Light_Conv_100.p2, cable_light_820.n);
+
+    /* Light Connections 819 */
+      connect(Light_driver_819.n2, GndDC.p);
+      connect(Light_driver_819.n1, GndDC.p);
+      connect(Light_819.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_819.u);
+      connect(Gain_Light_driver_819.y, Light_819.u);
+      connect(Light_819.p, Light_driver_819.p2);
+      connect(Light_driver_819.p1,  cable_light_819.p);
+      connect(Light_Conv_100.p2, cable_light_819.n);
+
+    /* Light Connections 818 */
+      connect(Light_driver_818.n2, GndDC.p);
+      connect(Light_driver_818.n1, GndDC.p);
+      connect(Light_818.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_818.u);
+      connect(Gain_Light_driver_818.y, Light_818.u);
+      connect(Light_818.p, Light_driver_818.p2);
+      connect(Light_driver_818.p1,  cable_light_818.p);
+      connect(Light_Conv_100.p2, cable_light_818.n);
+
+    /* Light Connections 618 */
+      connect(Light_driver_618.n2, GndDC.p);
+      connect(Light_driver_618.n1, GndDC.p);
+      connect(Light_618.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_618.u);
+      connect(Gain_Light_driver_618.y, Light_618.u);
+      connect(Light_618.p, Light_driver_618.p2);
+      connect(Light_driver_618.p1,  cable_light_618.p);
+      connect(Light_Conv_100.p2, cable_light_618.n);
+
+    /* Light Connections 613 */
+      connect(Light_driver_613.n2, GndDC.p);
+      connect(Light_driver_613.n1, GndDC.p);
+      connect(Light_613.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_613.u);
+      connect(Gain_Light_driver_613.y, Light_613.u);
+      connect(Light_613.p, Light_driver_613.p2);
+      connect(Light_driver_613.p1,  cable_light_613.p);
+      connect(Light_Conv_100.p2, cable_light_613.n);
+
+    /* AC/DC Converter Light_Conv_98 */
+      connect(cable_Light_Conv_98.n, cable_light_L3_2A.p);
+      connect(Light_Conv_98.p1,  cable_Light_Conv_98.p);
+      connect(Light_Conv_98.n1, GndDC.p);
+      connect(Light_Conv_98.n2, GndDC.p);
+
+    /* Light Connections 817 */
+      connect(Light_driver_817.n2, GndDC.p);
+      connect(Light_driver_817.n1, GndDC.p);
+      connect(Light_817.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_817.u);
+      connect(Gain_Light_driver_817.y, Light_817.u);
+      connect(Light_817.p, Light_driver_817.p2);
+      connect(Light_driver_817.p1,  cable_light_817.p);
+      connect(Light_Conv_98.p2, cable_light_817.n);
+
+    /* Light Connections 816 */
+      connect(Light_driver_816.n2, GndDC.p);
+      connect(Light_driver_816.n1, GndDC.p);
+      connect(Light_816.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_816.u);
+      connect(Gain_Light_driver_816.y, Light_816.u);
+      connect(Light_816.p, Light_driver_816.p2);
+      connect(Light_driver_816.p1,  cable_light_816.p);
+      connect(Light_Conv_98.p2, cable_light_816.n);
+
+    /* Light Connections 815 */
+      connect(Light_driver_815.n2, GndDC.p);
+      connect(Light_driver_815.n1, GndDC.p);
+      connect(Light_815.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_815.u);
+      connect(Gain_Light_driver_815.y, Light_815.u);
+      connect(Light_815.p, Light_driver_815.p2);
+      connect(Light_driver_815.p1,  cable_light_815.p);
+      connect(Light_Conv_98.p2, cable_light_815.n);
+
+    /* Light Connections 814 */
+      connect(Light_driver_814.n2, GndDC.p);
+      connect(Light_driver_814.n1, GndDC.p);
+      connect(Light_814.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_814.u);
+      connect(Gain_Light_driver_814.y, Light_814.u);
+      connect(Light_814.p, Light_driver_814.p2);
+      connect(Light_driver_814.p1,  cable_light_814.p);
+      connect(Light_Conv_98.p2, cable_light_814.n);
+
+    /* Light Connections 813 */
+      connect(Light_driver_813.n2, GndDC.p);
+      connect(Light_driver_813.n1, GndDC.p);
+      connect(Light_813.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_813.u);
+      connect(Gain_Light_driver_813.y, Light_813.u);
+      connect(Light_813.p, Light_driver_813.p2);
+      connect(Light_driver_813.p1,  cable_light_813.p);
+      connect(Light_Conv_98.p2, cable_light_813.n);
+
+    /* Light Connections 812 */
+      connect(Light_driver_812.n2, GndDC.p);
+      connect(Light_driver_812.n1, GndDC.p);
+      connect(Light_812.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_812.u);
+      connect(Gain_Light_driver_812.y, Light_812.u);
+      connect(Light_812.p, Light_driver_812.p2);
+      connect(Light_driver_812.p1,  cable_light_812.p);
+      connect(Light_Conv_98.p2, cable_light_812.n);
+
+    /* Light Connections 609 */
+      connect(Light_driver_609.n2, GndDC.p);
+      connect(Light_driver_609.n1, GndDC.p);
+      connect(Light_609.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_609.u);
+      connect(Gain_Light_driver_609.y, Light_609.u);
+      connect(Light_609.p, Light_driver_609.p2);
+      connect(Light_driver_609.p1,  cable_light_609.p);
+      connect(Light_Conv_98.p2, cable_light_609.n);
+
+    /* Light Connections 608 */
+      connect(Light_driver_608.n2, GndDC.p);
+      connect(Light_driver_608.n1, GndDC.p);
+      connect(Light_608.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_608.u);
+      connect(Gain_Light_driver_608.y, Light_608.u);
+      connect(Light_608.p, Light_driver_608.p2);
+      connect(Light_driver_608.p1,  cable_light_608.p);
+      connect(Light_Conv_98.p2, cable_light_608.n);
+
+    /* AC/DC Converter Light_Conv_99 */
+      connect(cable_Light_Conv_99.n, cable_light_L3_2A.p);
+      connect(Light_Conv_99.p1,  cable_Light_Conv_99.p);
+      connect(Light_Conv_99.n1, GndDC.p);
+      connect(Light_Conv_99.n2, GndDC.p);
+
+    /* Light Connections 617 */
+      connect(Light_driver_617.n2, GndDC.p);
+      connect(Light_driver_617.n1, GndDC.p);
+      connect(Light_617.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_617.u);
+      connect(Gain_Light_driver_617.y, Light_617.u);
+      connect(Light_617.p, Light_driver_617.p2);
+      connect(Light_driver_617.p1,  cable_light_617.p);
+      connect(Light_Conv_99.p2, cable_light_617.n);
+
+    /* Light Connections 616 */
+      connect(Light_driver_616.n2, GndDC.p);
+      connect(Light_driver_616.n1, GndDC.p);
+      connect(Light_616.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_616.u);
+      connect(Gain_Light_driver_616.y, Light_616.u);
+      connect(Light_616.p, Light_driver_616.p2);
+      connect(Light_driver_616.p1,  cable_light_616.p);
+      connect(Light_Conv_99.p2, cable_light_616.n);
+
+    /* Light Connections 615 */
+      connect(Light_driver_615.n2, GndDC.p);
+      connect(Light_driver_615.n1, GndDC.p);
+      connect(Light_615.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_615.u);
+      connect(Gain_Light_driver_615.y, Light_615.u);
+      connect(Light_615.p, Light_driver_615.p2);
+      connect(Light_driver_615.p1,  cable_light_615.p);
+      connect(Light_Conv_99.p2, cable_light_615.n);
+
+    /* Light Connections 614 */
+      connect(Light_driver_614.n2, GndDC.p);
+      connect(Light_driver_614.n1, GndDC.p);
+      connect(Light_614.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_614.u);
+      connect(Gain_Light_driver_614.y, Light_614.u);
+      connect(Light_614.p, Light_driver_614.p2);
+      connect(Light_driver_614.p1,  cable_light_614.p);
+      connect(Light_Conv_99.p2, cable_light_614.n);
+
+    /* Light Connections 612 */
+      connect(Light_driver_612.n2, GndDC.p);
+      connect(Light_driver_612.n1, GndDC.p);
+      connect(Light_612.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_612.u);
+      connect(Gain_Light_driver_612.y, Light_612.u);
+      connect(Light_612.p, Light_driver_612.p2);
+      connect(Light_driver_612.p1,  cable_light_612.p);
+      connect(Light_Conv_99.p2, cable_light_612.n);
+
+    /* Light Connections 611 */
+      connect(Light_driver_611.n2, GndDC.p);
+      connect(Light_driver_611.n1, GndDC.p);
+      connect(Light_611.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_611.u);
+      connect(Gain_Light_driver_611.y, Light_611.u);
+      connect(Light_611.p, Light_driver_611.p2);
+      connect(Light_driver_611.p1,  cable_light_611.p);
+      connect(Light_Conv_99.p2, cable_light_611.n);
+
+    /* Light Connections 610 */
+      connect(Light_driver_610.n2, GndDC.p);
+      connect(Light_driver_610.n1, GndDC.p);
+      connect(Light_610.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_610.u);
+      connect(Gain_Light_driver_610.y, Light_610.u);
+      connect(Light_610.p, Light_driver_610.p2);
+      connect(Light_driver_610.p1,  cable_light_610.p);
+      connect(Light_Conv_99.p2, cable_light_610.n);
+
+    /* Light Connections 573 */
+      connect(Light_driver_573.n2, GndDC.p);
+      connect(Light_driver_573.n1, GndDC.p);
+      connect(Light_573.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_573.u);
+      connect(Gain_Light_driver_573.y, Light_573.u);
+      connect(Light_573.p, Light_driver_573.p2);
+      connect(Light_driver_573.p1,  cable_light_573.p);
+      connect(Light_Conv_99.p2, cable_light_573.n);
+
+    /* AC/DC Converter Light_Conv_95 */
+      connect(cable_Light_Conv_95.n, cable_light_L3_2A.p);
+      connect(Light_Conv_95.p1,  cable_Light_Conv_95.p);
+      connect(Light_Conv_95.n1, GndDC.p);
+      connect(Light_Conv_95.n2, GndDC.p);
+
+    /* Light Connections 607 */
+      connect(Light_driver_607.n2, GndDC.p);
+      connect(Light_driver_607.n1, GndDC.p);
+      connect(Light_607.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_607.u);
+      connect(Gain_Light_driver_607.y, Light_607.u);
+      connect(Light_607.p, Light_driver_607.p2);
+      connect(Light_driver_607.p1,  cable_light_607.p);
+      connect(Light_Conv_95.p2, cable_light_607.n);
+
+    /* Light Connections 606 */
+      connect(Light_driver_606.n2, GndDC.p);
+      connect(Light_driver_606.n1, GndDC.p);
+      connect(Light_606.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_606.u);
+      connect(Gain_Light_driver_606.y, Light_606.u);
+      connect(Light_606.p, Light_driver_606.p2);
+      connect(Light_driver_606.p1,  cable_light_606.p);
+      connect(Light_Conv_95.p2, cable_light_606.n);
+
+    /* Light Connections 605 */
+      connect(Light_driver_605.n2, GndDC.p);
+      connect(Light_driver_605.n1, GndDC.p);
+      connect(Light_605.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_605.u);
+      connect(Gain_Light_driver_605.y, Light_605.u);
+      connect(Light_605.p, Light_driver_605.p2);
+      connect(Light_driver_605.p1,  cable_light_605.p);
+      connect(Light_Conv_95.p2, cable_light_605.n);
+
+    /* Light Connections 604 */
+      connect(Light_driver_604.n2, GndDC.p);
+      connect(Light_driver_604.n1, GndDC.p);
+      connect(Light_604.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_604.u);
+      connect(Gain_Light_driver_604.y, Light_604.u);
+      connect(Light_604.p, Light_driver_604.p2);
+      connect(Light_driver_604.p1,  cable_light_604.p);
+      connect(Light_Conv_95.p2, cable_light_604.n);
+
+    /* Light Connections 603 */
+      connect(Light_driver_603.n2, GndDC.p);
+      connect(Light_driver_603.n1, GndDC.p);
+      connect(Light_603.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_603.u);
+      connect(Gain_Light_driver_603.y, Light_603.u);
+      connect(Light_603.p, Light_driver_603.p2);
+      connect(Light_driver_603.p1,  cable_light_603.p);
+      connect(Light_Conv_95.p2, cable_light_603.n);
+
+    /* Light Connections 602 */
+      connect(Light_driver_602.n2, GndDC.p);
+      connect(Light_driver_602.n1, GndDC.p);
+      connect(Light_602.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_602.u);
+      connect(Gain_Light_driver_602.y, Light_602.u);
+      connect(Light_602.p, Light_driver_602.p2);
+      connect(Light_driver_602.p1,  cable_light_602.p);
+      connect(Light_Conv_95.p2, cable_light_602.n);
+
+    /* Light Connections 572 */
+      connect(Light_driver_572.n2, GndDC.p);
+      connect(Light_driver_572.n1, GndDC.p);
+      connect(Light_572.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_572.u);
+      connect(Gain_Light_driver_572.y, Light_572.u);
+      connect(Light_572.p, Light_driver_572.p2);
+      connect(Light_driver_572.p1,  cable_light_572.p);
+      connect(Light_Conv_95.p2, cable_light_572.n);
+
+    /* Light Connections 571 */
+      connect(Light_driver_571.n2, GndDC.p);
+      connect(Light_driver_571.n1, GndDC.p);
+      connect(Light_571.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_571.u);
+      connect(Gain_Light_driver_571.y, Light_571.u);
+      connect(Light_571.p, Light_driver_571.p2);
+      connect(Light_driver_571.p1,  cable_light_571.p);
+      connect(Light_Conv_95.p2, cable_light_571.n);
+
+    /* AC/DC Converter Light_Conv_96 */
+      connect(cable_Light_Conv_96.n, cable_light_L3_2A.p);
+      connect(Light_Conv_96.p1,  cable_Light_Conv_96.p);
+      connect(Light_Conv_96.n1, GndDC.p);
+      connect(Light_Conv_96.n2, GndDC.p);
+
+    /* Light Connections 792 */
+      connect(Light_driver_792.n2, GndDC.p);
+      connect(Light_driver_792.n1, GndDC.p);
+      connect(Light_792.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_792.u);
+      connect(Gain_Light_driver_792.y, Light_792.u);
+      connect(Light_792.p, Light_driver_792.p2);
+      connect(Light_driver_792.p1,  cable_light_792.p);
+      connect(Light_Conv_96.p2, cable_light_792.n);
+
+    /* Light Connections 712 */
+      connect(Light_driver_712.n2, GndDC.p);
+      connect(Light_driver_712.n1, GndDC.p);
+      connect(Light_712.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_712.u);
+      connect(Gain_Light_driver_712.y, Light_712.u);
+      connect(Light_712.p, Light_driver_712.p2);
+      connect(Light_driver_712.p1,  cable_light_712.p);
+      connect(Light_Conv_96.p2, cable_light_712.n);
+
+    /* Light Connections 711 */
+      connect(Light_driver_711.n2, GndDC.p);
+      connect(Light_driver_711.n1, GndDC.p);
+      connect(Light_711.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_711.u);
+      connect(Gain_Light_driver_711.y, Light_711.u);
+      connect(Light_711.p, Light_driver_711.p2);
+      connect(Light_driver_711.p1,  cable_light_711.p);
+      connect(Light_Conv_96.p2, cable_light_711.n);
+
+    /* Light Connections 567 */
+      connect(Light_driver_567.n2, GndDC.p);
+      connect(Light_driver_567.n1, GndDC.p);
+      connect(Light_567.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_567.u);
+      connect(Gain_Light_driver_567.y, Light_567.u);
+      connect(Light_567.p, Light_driver_567.p2);
+      connect(Light_driver_567.p1,  cable_light_567.p);
+      connect(Light_Conv_96.p2, cable_light_567.n);
+
+    /* Light Connections 566 */
+      connect(Light_driver_566.n2, GndDC.p);
+      connect(Light_driver_566.n1, GndDC.p);
+      connect(Light_566.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_566.u);
+      connect(Gain_Light_driver_566.y, Light_566.u);
+      connect(Light_566.p, Light_driver_566.p2);
+      connect(Light_driver_566.p1,  cable_light_566.p);
+      connect(Light_Conv_96.p2, cable_light_566.n);
+
+    /* Light Connections 565 */
+      connect(Light_driver_565.n2, GndDC.p);
+      connect(Light_driver_565.n1, GndDC.p);
+      connect(Light_565.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_565.u);
+      connect(Gain_Light_driver_565.y, Light_565.u);
+      connect(Light_565.p, Light_driver_565.p2);
+      connect(Light_driver_565.p1,  cable_light_565.p);
+      connect(Light_Conv_96.p2, cable_light_565.n);
+
+    /* Light Connections 564 */
+      connect(Light_driver_564.n2, GndDC.p);
+      connect(Light_driver_564.n1, GndDC.p);
+      connect(Light_564.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_564.u);
+      connect(Gain_Light_driver_564.y, Light_564.u);
+      connect(Light_564.p, Light_driver_564.p2);
+      connect(Light_driver_564.p1,  cable_light_564.p);
+      connect(Light_Conv_96.p2, cable_light_564.n);
+
+      connect(cable_light_L3_2A.n, p)
+        annotation (Line(points={{-48,20},{-104,20}}, color={0,0,255}));
+      annotation ();
+    end DC_ACDC_Light_Panel_L3_2A;
+
+    model DC_ACDC_Light_Panel_L3_2B
+      outer HPF.SystemDef systemDef;
+      Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+        Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Core_Lights(
+        tableOnFile=true,
+        tableName="L3-Core-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-74,70},{-54,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn1_Lights(
+        tableOnFile=true,
+        tableName="L3-Zn1-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-40,70},{-20,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn2_Lights(
+        tableOnFile=true,
+        tableName="L3-Zn2-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-8,70},{12,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn3_Lights(
+        tableOnFile=true,
+        tableName="L3-Zn3-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{28,70},{48,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn4_Lights(
+        tableOnFile=true,
+        tableName="L3-Zn4-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{64,70},{84,90}})));
+
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_30(V = 19.5, alpha = 0.26452, beta = 0.12526, gamma = 0.0020109);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_45(V = 19.5, alpha = 0.42081, beta = 0.12526, gamma = 0.001341);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 4.27984, beta = -0.004643965, gamma = 0.0000985992);
+
+    /* Insert models here */
+
+    /* AC/DC Converter Light_Conv_101 */
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_101(modelData = modelData_DCDC);
+
+    /* Light Model 758 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_101(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=23.71);
+      HPF.DC.Variable_DC_Load Light_758;
+
+    /* Light Model 757 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_758(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_758(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_758(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_757;
+
+    /* Light Model 756 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_757(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_757(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_757(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_756;
+
+    /* Light Model 748 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_756(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_756(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_756(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_748;
+
+    /* Light Model 747 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_748(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_748(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_748(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_747;
+
+    /* Light Model 725 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_747(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_747(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_747(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_725;
+
+    /* Light Model 722 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_725(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_725(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_725(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_722;
+
+    /* Light Model 721 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_722(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_722(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_722(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_721;
+
+    /* AC/DC Converter Light_Conv_102 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_721(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_721(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_721(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_102(modelData = modelData_DCDC);
+
+    /* Light Model 789 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_102(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=16.45);
+      HPF.DC.Variable_DC_Load Light_789;
+
+    /* Light Model 784 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_789(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_789(k=35) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_789(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_784;
+
+    /* Light Model 783 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_784(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_784(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_784(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_783;
+
+    /* Light Model 720 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_783(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_783(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_783(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_720;
+
+    /* Light Model 719 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_720(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_720(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_720(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_719;
+
+    /* Light Model 718 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_719(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_719(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_719(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_718;
+
+    /* Light Model 717 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_718(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_718(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_718(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_717;
+
+    /* AC/DC Converter Light_Conv_105 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_717(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_717(k=42) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_717(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_105(modelData = modelData_DCDC);
+
+    /* Light Model 835 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_105(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=39.17);
+      HPF.DC.Variable_DC_Load Light_835;
+
+    /* Light Model 834 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_835(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_835(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_835(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_834;
+
+    /* Light Model 833 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_834(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_834(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_834(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_833;
+
+    /* Light Model 832 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_833(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_833(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_833(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_832;
+
+    /* Light Model 831 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_832(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_832(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_832(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_831;
+
+    /* Light Model 830 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_831(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_831(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_831(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_830;
+
+    /* Light Model 827 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_830(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_830(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_830(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_827;
+
+    /* Light Model 634 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_827(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_827(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_827(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_634;
+
+    /* AC/DC Converter Light_Conv_104 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_634(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_634(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_634(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_104(modelData = modelData_DCDC);
+
+    /* Light Model 829 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_104(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=31.21);
+      HPF.DC.Variable_DC_Load Light_829;
+
+    /* Light Model 828 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_829(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_829(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_829(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_828;
+
+    /* Light Model 826 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_828(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_828(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_828(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_826;
+
+    /* Light Model 825 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_826(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_826(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_826(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_825;
+
+    /* Light Model 824 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_825(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_825(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_825(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_824;
+
+    /* Light Model 629 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_824(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_824(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_824(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_629;
+
+    /* Light Model 628 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_629(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_629(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_629(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_628;
+
+    /* Light Model 623 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_628(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_628(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_628(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_623;
+
+    /* AC/DC Converter Light_Conv_106 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_623(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_623(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_623(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_106(modelData = modelData_DCDC);
+
+    /* Light Model 630 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_106(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=24.31);
+      HPF.DC.Variable_DC_Load Light_630;
+
+    /* Light Model 627 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_630(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_630(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_630(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_627;
+
+    /* Light Model 626 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_627(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_627(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_627(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_626;
+
+    /* Light Model 625 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_626(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_626(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_626(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_625;
+
+    /* Light Model 624 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_625(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_625(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_625(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_624;
+
+    /* Light Model 621 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_624(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_624(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_624(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_621;
+
+    /* Light Model 620 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_621(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_621(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_621(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_620;
+
+    /* Light Model 619 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_620(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_620(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_620(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_619;
+
+    /* AC/DC Converter Light_Conv_103 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_619(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_619(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_619(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_103(modelData = modelData_DCDC);
+
+    /* Light Model 791 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_103(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=19.19);
+      HPF.DC.Variable_DC_Load Light_791;
+
+    /* Light Model 790 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_791(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_791(k=35) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_791(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_790;
+
+    /* Light Model 782 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_790(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_790(k=35) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_790(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_782;
+
+    /* Light Model 781 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_782(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_782(k=22) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_782(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_781;
+
+    /* Light Model 622 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_781(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_781(k=22) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_781(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_622;
+
+    /* Light Model 575 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_622(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_622(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_622(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_575;
+
+    /* Light Model 574 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_575(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_575(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_575(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_574;
+
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_574(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_574(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_574(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+
+      Modelica.Electrical.Analog.Interfaces.PositivePin p
+        "Positive electrical pin of port 1" annotation (Placement(transformation(
+              extent={{-114,10},{-94,30}}), iconTransformation(extent={{-110,90},{-90,
+                110}})));
+      HPF.Cables.NEC_CableModelDC cable_light_L3_2B(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+          length=15) annotation (Placement(visible=true, transformation(
+            origin={-38,20},
+            extent={{10,-10},{-10,10}},
+            rotation=0)));
+    equation
+
+    /* Insert equation here */
+
+    /* AC/DC Converter Light_Conv_101 */
+      connect(cable_Light_Conv_101.n, cable_light_L3_2B.p);
+      connect(Light_Conv_101.p1,  cable_Light_Conv_101.p);
+      connect(Light_Conv_101.n1, GndDC.p);
+      connect(Light_Conv_101.n2, GndDC.p);
+
+    /* Light Connections 758 */
+      connect(Light_driver_758.n2, GndDC.p);
+      connect(Light_driver_758.n1, GndDC.p);
+      connect(Light_758.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_758.u);
+      connect(Gain_Light_driver_758.y, Light_758.u);
+      connect(Light_758.p, Light_driver_758.p2);
+      connect(Light_driver_758.p1,  cable_light_758.p);
+      connect(Light_Conv_101.p2, cable_light_758.n);
+
+    /* Light Connections 757 */
+      connect(Light_driver_757.n2, GndDC.p);
+      connect(Light_driver_757.n1, GndDC.p);
+      connect(Light_757.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn1_Lights.y[1], Gain_Light_driver_757.u);
+      connect(Gain_Light_driver_757.y, Light_757.u);
+      connect(Light_757.p, Light_driver_757.p2);
+      connect(Light_driver_757.p1,  cable_light_757.p);
+      connect(Light_Conv_101.p2, cable_light_757.n);
+
+    /* Light Connections 756 */
+      connect(Light_driver_756.n2, GndDC.p);
+      connect(Light_driver_756.n1, GndDC.p);
+      connect(Light_756.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn1_Lights.y[1], Gain_Light_driver_756.u);
+      connect(Gain_Light_driver_756.y, Light_756.u);
+      connect(Light_756.p, Light_driver_756.p2);
+      connect(Light_driver_756.p1,  cable_light_756.p);
+      connect(Light_Conv_101.p2, cable_light_756.n);
+
+    /* Light Connections 748 */
+      connect(Light_driver_748.n2, GndDC.p);
+      connect(Light_driver_748.n1, GndDC.p);
+      connect(Light_748.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_748.u);
+      connect(Gain_Light_driver_748.y, Light_748.u);
+      connect(Light_748.p, Light_driver_748.p2);
+      connect(Light_driver_748.p1,  cable_light_748.p);
+      connect(Light_Conv_101.p2, cable_light_748.n);
+
+    /* Light Connections 747 */
+      connect(Light_driver_747.n2, GndDC.p);
+      connect(Light_driver_747.n1, GndDC.p);
+      connect(Light_747.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_747.u);
+      connect(Gain_Light_driver_747.y, Light_747.u);
+      connect(Light_747.p, Light_driver_747.p2);
+      connect(Light_driver_747.p1,  cable_light_747.p);
+      connect(Light_Conv_101.p2, cable_light_747.n);
+
+    /* Light Connections 725 */
+      connect(Light_driver_725.n2, GndDC.p);
+      connect(Light_driver_725.n1, GndDC.p);
+      connect(Light_725.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_725.u);
+      connect(Gain_Light_driver_725.y, Light_725.u);
+      connect(Light_725.p, Light_driver_725.p2);
+      connect(Light_driver_725.p1,  cable_light_725.p);
+      connect(Light_Conv_101.p2, cable_light_725.n);
+
+    /* Light Connections 722 */
+      connect(Light_driver_722.n2, GndDC.p);
+      connect(Light_driver_722.n1, GndDC.p);
+      connect(Light_722.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn1_Lights.y[1], Gain_Light_driver_722.u);
+      connect(Gain_Light_driver_722.y, Light_722.u);
+      connect(Light_722.p, Light_driver_722.p2);
+      connect(Light_driver_722.p1,  cable_light_722.p);
+      connect(Light_Conv_101.p2, cable_light_722.n);
+
+    /* Light Connections 721 */
+      connect(Light_driver_721.n2, GndDC.p);
+      connect(Light_driver_721.n1, GndDC.p);
+      connect(Light_721.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn1_Lights.y[1], Gain_Light_driver_721.u);
+      connect(Gain_Light_driver_721.y, Light_721.u);
+      connect(Light_721.p, Light_driver_721.p2);
+      connect(Light_driver_721.p1,  cable_light_721.p);
+      connect(Light_Conv_101.p2, cable_light_721.n);
+
+    /* AC/DC Converter Light_Conv_102 */
+      connect(cable_Light_Conv_102.n, cable_light_L3_2B.p);
+      connect(Light_Conv_102.p1,  cable_Light_Conv_102.p);
+      connect(Light_Conv_102.n1, GndDC.p);
+      connect(Light_Conv_102.n2, GndDC.p);
+
+    /* Light Connections 789 */
+      connect(Light_driver_789.n2, GndDC.p);
+      connect(Light_driver_789.n1, GndDC.p);
+      connect(Light_789.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_789.u);
+      connect(Gain_Light_driver_789.y, Light_789.u);
+      connect(Light_789.p, Light_driver_789.p2);
+      connect(Light_driver_789.p1,  cable_light_789.p);
+      connect(Light_Conv_102.p2, cable_light_789.n);
+
+    /* Light Connections 784 */
+      connect(Light_driver_784.n2, GndDC.p);
+      connect(Light_driver_784.n1, GndDC.p);
+      connect(Light_784.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_784.u);
+      connect(Gain_Light_driver_784.y, Light_784.u);
+      connect(Light_784.p, Light_driver_784.p2);
+      connect(Light_driver_784.p1,  cable_light_784.p);
+      connect(Light_Conv_102.p2, cable_light_784.n);
+
+    /* Light Connections 783 */
+      connect(Light_driver_783.n2, GndDC.p);
+      connect(Light_driver_783.n1, GndDC.p);
+      connect(Light_783.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_783.u);
+      connect(Gain_Light_driver_783.y, Light_783.u);
+      connect(Light_783.p, Light_driver_783.p2);
+      connect(Light_driver_783.p1,  cable_light_783.p);
+      connect(Light_Conv_102.p2, cable_light_783.n);
+
+    /* Light Connections 720 */
+      connect(Light_driver_720.n2, GndDC.p);
+      connect(Light_driver_720.n1, GndDC.p);
+      connect(Light_720.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_720.u);
+      connect(Gain_Light_driver_720.y, Light_720.u);
+      connect(Light_720.p, Light_driver_720.p2);
+      connect(Light_driver_720.p1,  cable_light_720.p);
+      connect(Light_Conv_102.p2, cable_light_720.n);
+
+    /* Light Connections 719 */
+      connect(Light_driver_719.n2, GndDC.p);
+      connect(Light_driver_719.n1, GndDC.p);
+      connect(Light_719.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_719.u);
+      connect(Gain_Light_driver_719.y, Light_719.u);
+      connect(Light_719.p, Light_driver_719.p2);
+      connect(Light_driver_719.p1,  cable_light_719.p);
+      connect(Light_Conv_102.p2, cable_light_719.n);
+
+    /* Light Connections 718 */
+      connect(Light_driver_718.n2, GndDC.p);
+      connect(Light_driver_718.n1, GndDC.p);
+      connect(Light_718.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_718.u);
+      connect(Gain_Light_driver_718.y, Light_718.u);
+      connect(Light_718.p, Light_driver_718.p2);
+      connect(Light_driver_718.p1,  cable_light_718.p);
+      connect(Light_Conv_102.p2, cable_light_718.n);
+
+    /* Light Connections 717 */
+      connect(Light_driver_717.n2, GndDC.p);
+      connect(Light_driver_717.n1, GndDC.p);
+      connect(Light_717.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_717.u);
+      connect(Gain_Light_driver_717.y, Light_717.u);
+      connect(Light_717.p, Light_driver_717.p2);
+      connect(Light_driver_717.p1,  cable_light_717.p);
+      connect(Light_Conv_102.p2, cable_light_717.n);
+
+    /* AC/DC Converter Light_Conv_105 */
+      connect(cable_Light_Conv_105.n, cable_light_L3_2B.p);
+      connect(Light_Conv_105.p1,  cable_Light_Conv_105.p);
+      connect(Light_Conv_105.n1, GndDC.p);
+      connect(Light_Conv_105.n2, GndDC.p);
+
+    /* Light Connections 835 */
+      connect(Light_driver_835.n2, GndDC.p);
+      connect(Light_driver_835.n1, GndDC.p);
+      connect(Light_835.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn2_Lights.y[1], Gain_Light_driver_835.u);
+      connect(Gain_Light_driver_835.y, Light_835.u);
+      connect(Light_835.p, Light_driver_835.p2);
+      connect(Light_driver_835.p1,  cable_light_835.p);
+      connect(Light_Conv_105.p2, cable_light_835.n);
+
+    /* Light Connections 834 */
+      connect(Light_driver_834.n2, GndDC.p);
+      connect(Light_driver_834.n1, GndDC.p);
+      connect(Light_834.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn2_Lights.y[1], Gain_Light_driver_834.u);
+      connect(Gain_Light_driver_834.y, Light_834.u);
+      connect(Light_834.p, Light_driver_834.p2);
+      connect(Light_driver_834.p1,  cable_light_834.p);
+      connect(Light_Conv_105.p2, cable_light_834.n);
+
+    /* Light Connections 833 */
+      connect(Light_driver_833.n2, GndDC.p);
+      connect(Light_driver_833.n1, GndDC.p);
+      connect(Light_833.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn2_Lights.y[1], Gain_Light_driver_833.u);
+      connect(Gain_Light_driver_833.y, Light_833.u);
+      connect(Light_833.p, Light_driver_833.p2);
+      connect(Light_driver_833.p1,  cable_light_833.p);
+      connect(Light_Conv_105.p2, cable_light_833.n);
+
+    /* Light Connections 832 */
+      connect(Light_driver_832.n2, GndDC.p);
+      connect(Light_driver_832.n1, GndDC.p);
+      connect(Light_832.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_832.u);
+      connect(Gain_Light_driver_832.y, Light_832.u);
+      connect(Light_832.p, Light_driver_832.p2);
+      connect(Light_driver_832.p1,  cable_light_832.p);
+      connect(Light_Conv_105.p2, cable_light_832.n);
+
+    /* Light Connections 831 */
+      connect(Light_driver_831.n2, GndDC.p);
+      connect(Light_driver_831.n1, GndDC.p);
+      connect(Light_831.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_831.u);
+      connect(Gain_Light_driver_831.y, Light_831.u);
+      connect(Light_831.p, Light_driver_831.p2);
+      connect(Light_driver_831.p1,  cable_light_831.p);
+      connect(Light_Conv_105.p2, cable_light_831.n);
+
+    /* Light Connections 830 */
+      connect(Light_driver_830.n2, GndDC.p);
+      connect(Light_driver_830.n1, GndDC.p);
+      connect(Light_830.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_830.u);
+      connect(Gain_Light_driver_830.y, Light_830.u);
+      connect(Light_830.p, Light_driver_830.p2);
+      connect(Light_driver_830.p1,  cable_light_830.p);
+      connect(Light_Conv_105.p2, cable_light_830.n);
+
+    /* Light Connections 827 */
+      connect(Light_driver_827.n2, GndDC.p);
+      connect(Light_driver_827.n1, GndDC.p);
+      connect(Light_827.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_827.u);
+      connect(Gain_Light_driver_827.y, Light_827.u);
+      connect(Light_827.p, Light_driver_827.p2);
+      connect(Light_driver_827.p1,  cable_light_827.p);
+      connect(Light_Conv_105.p2, cable_light_827.n);
+
+    /* Light Connections 634 */
+      connect(Light_driver_634.n2, GndDC.p);
+      connect(Light_driver_634.n1, GndDC.p);
+      connect(Light_634.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_634.u);
+      connect(Gain_Light_driver_634.y, Light_634.u);
+      connect(Light_634.p, Light_driver_634.p2);
+      connect(Light_driver_634.p1,  cable_light_634.p);
+      connect(Light_Conv_105.p2, cable_light_634.n);
+
+    /* AC/DC Converter Light_Conv_104 */
+      connect(cable_Light_Conv_104.n, cable_light_L3_2B.p);
+      connect(Light_Conv_104.p1,  cable_Light_Conv_104.p);
+      connect(Light_Conv_104.n1, GndDC.p);
+      connect(Light_Conv_104.n2, GndDC.p);
+
+    /* Light Connections 829 */
+      connect(Light_driver_829.n2, GndDC.p);
+      connect(Light_driver_829.n1, GndDC.p);
+      connect(Light_829.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_829.u);
+      connect(Gain_Light_driver_829.y, Light_829.u);
+      connect(Light_829.p, Light_driver_829.p2);
+      connect(Light_driver_829.p1,  cable_light_829.p);
+      connect(Light_Conv_104.p2, cable_light_829.n);
+
+    /* Light Connections 828 */
+      connect(Light_driver_828.n2, GndDC.p);
+      connect(Light_driver_828.n1, GndDC.p);
+      connect(Light_828.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_828.u);
+      connect(Gain_Light_driver_828.y, Light_828.u);
+      connect(Light_828.p, Light_driver_828.p2);
+      connect(Light_driver_828.p1,  cable_light_828.p);
+      connect(Light_Conv_104.p2, cable_light_828.n);
+
+    /* Light Connections 826 */
+      connect(Light_driver_826.n2, GndDC.p);
+      connect(Light_driver_826.n1, GndDC.p);
+      connect(Light_826.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_826.u);
+      connect(Gain_Light_driver_826.y, Light_826.u);
+      connect(Light_826.p, Light_driver_826.p2);
+      connect(Light_driver_826.p1,  cable_light_826.p);
+      connect(Light_Conv_104.p2, cable_light_826.n);
+
+    /* Light Connections 825 */
+      connect(Light_driver_825.n2, GndDC.p);
+      connect(Light_driver_825.n1, GndDC.p);
+      connect(Light_825.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_825.u);
+      connect(Gain_Light_driver_825.y, Light_825.u);
+      connect(Light_825.p, Light_driver_825.p2);
+      connect(Light_driver_825.p1,  cable_light_825.p);
+      connect(Light_Conv_104.p2, cable_light_825.n);
+
+    /* Light Connections 824 */
+      connect(Light_driver_824.n2, GndDC.p);
+      connect(Light_driver_824.n1, GndDC.p);
+      connect(Light_824.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn3_Lights.y[1], Gain_Light_driver_824.u);
+      connect(Gain_Light_driver_824.y, Light_824.u);
+      connect(Light_824.p, Light_driver_824.p2);
+      connect(Light_driver_824.p1,  cable_light_824.p);
+      connect(Light_Conv_104.p2, cable_light_824.n);
+
+    /* Light Connections 629 */
+      connect(Light_driver_629.n2, GndDC.p);
+      connect(Light_driver_629.n1, GndDC.p);
+      connect(Light_629.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_629.u);
+      connect(Gain_Light_driver_629.y, Light_629.u);
+      connect(Light_629.p, Light_driver_629.p2);
+      connect(Light_driver_629.p1,  cable_light_629.p);
+      connect(Light_Conv_104.p2, cable_light_629.n);
+
+    /* Light Connections 628 */
+      connect(Light_driver_628.n2, GndDC.p);
+      connect(Light_driver_628.n1, GndDC.p);
+      connect(Light_628.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_628.u);
+      connect(Gain_Light_driver_628.y, Light_628.u);
+      connect(Light_628.p, Light_driver_628.p2);
+      connect(Light_driver_628.p1,  cable_light_628.p);
+      connect(Light_Conv_104.p2, cable_light_628.n);
+
+    /* Light Connections 623 */
+      connect(Light_driver_623.n2, GndDC.p);
+      connect(Light_driver_623.n1, GndDC.p);
+      connect(Light_623.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_623.u);
+      connect(Gain_Light_driver_623.y, Light_623.u);
+      connect(Light_623.p, Light_driver_623.p2);
+      connect(Light_driver_623.p1,  cable_light_623.p);
+      connect(Light_Conv_104.p2, cable_light_623.n);
+
+    /* AC/DC Converter Light_Conv_106 */
+      connect(cable_Light_Conv_106.n, cable_light_L3_2B.p);
+      connect(Light_Conv_106.p1,  cable_Light_Conv_106.p);
+      connect(Light_Conv_106.n1, GndDC.p);
+      connect(Light_Conv_106.n2, GndDC.p);
+
+    /* Light Connections 630 */
+      connect(Light_driver_630.n2, GndDC.p);
+      connect(Light_driver_630.n1, GndDC.p);
+      connect(Light_630.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_630.u);
+      connect(Gain_Light_driver_630.y, Light_630.u);
+      connect(Light_630.p, Light_driver_630.p2);
+      connect(Light_driver_630.p1,  cable_light_630.p);
+      connect(Light_Conv_106.p2, cable_light_630.n);
+
+    /* Light Connections 627 */
+      connect(Light_driver_627.n2, GndDC.p);
+      connect(Light_driver_627.n1, GndDC.p);
+      connect(Light_627.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_627.u);
+      connect(Gain_Light_driver_627.y, Light_627.u);
+      connect(Light_627.p, Light_driver_627.p2);
+      connect(Light_driver_627.p1,  cable_light_627.p);
+      connect(Light_Conv_106.p2, cable_light_627.n);
+
+    /* Light Connections 626 */
+      connect(Light_driver_626.n2, GndDC.p);
+      connect(Light_driver_626.n1, GndDC.p);
+      connect(Light_626.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_626.u);
+      connect(Gain_Light_driver_626.y, Light_626.u);
+      connect(Light_626.p, Light_driver_626.p2);
+      connect(Light_driver_626.p1,  cable_light_626.p);
+      connect(Light_Conv_106.p2, cable_light_626.n);
+
+    /* Light Connections 625 */
+      connect(Light_driver_625.n2, GndDC.p);
+      connect(Light_driver_625.n1, GndDC.p);
+      connect(Light_625.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_625.u);
+      connect(Gain_Light_driver_625.y, Light_625.u);
+      connect(Light_625.p, Light_driver_625.p2);
+      connect(Light_driver_625.p1,  cable_light_625.p);
+      connect(Light_Conv_106.p2, cable_light_625.n);
+
+    /* Light Connections 624 */
+      connect(Light_driver_624.n2, GndDC.p);
+      connect(Light_driver_624.n1, GndDC.p);
+      connect(Light_624.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_624.u);
+      connect(Gain_Light_driver_624.y, Light_624.u);
+      connect(Light_624.p, Light_driver_624.p2);
+      connect(Light_driver_624.p1,  cable_light_624.p);
+      connect(Light_Conv_106.p2, cable_light_624.n);
+
+    /* Light Connections 621 */
+      connect(Light_driver_621.n2, GndDC.p);
+      connect(Light_driver_621.n1, GndDC.p);
+      connect(Light_621.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_621.u);
+      connect(Gain_Light_driver_621.y, Light_621.u);
+      connect(Light_621.p, Light_driver_621.p2);
+      connect(Light_driver_621.p1,  cable_light_621.p);
+      connect(Light_Conv_106.p2, cable_light_621.n);
+
+    /* Light Connections 620 */
+      connect(Light_driver_620.n2, GndDC.p);
+      connect(Light_driver_620.n1, GndDC.p);
+      connect(Light_620.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_620.u);
+      connect(Gain_Light_driver_620.y, Light_620.u);
+      connect(Light_620.p, Light_driver_620.p2);
+      connect(Light_driver_620.p1,  cable_light_620.p);
+      connect(Light_Conv_106.p2, cable_light_620.n);
+
+    /* Light Connections 619 */
+      connect(Light_driver_619.n2, GndDC.p);
+      connect(Light_driver_619.n1, GndDC.p);
+      connect(Light_619.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_619.u);
+      connect(Gain_Light_driver_619.y, Light_619.u);
+      connect(Light_619.p, Light_driver_619.p2);
+      connect(Light_driver_619.p1,  cable_light_619.p);
+      connect(Light_Conv_106.p2, cable_light_619.n);
+
+    /* AC/DC Converter Light_Conv_103 */
+      connect(cable_Light_Conv_103.n, cable_light_L3_2B.p);
+      connect(Light_Conv_103.p1,  cable_Light_Conv_103.p);
+      connect(Light_Conv_103.n1, GndDC.p);
+      connect(Light_Conv_103.n2, GndDC.p);
+
+    /* Light Connections 791 */
+      connect(Light_driver_791.n2, GndDC.p);
+      connect(Light_driver_791.n1, GndDC.p);
+      connect(Light_791.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_791.u);
+      connect(Gain_Light_driver_791.y, Light_791.u);
+      connect(Light_791.p, Light_driver_791.p2);
+      connect(Light_driver_791.p1,  cable_light_791.p);
+      connect(Light_Conv_103.p2, cable_light_791.n);
+
+    /* Light Connections 790 */
+      connect(Light_driver_790.n2, GndDC.p);
+      connect(Light_driver_790.n1, GndDC.p);
+      connect(Light_790.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_790.u);
+      connect(Gain_Light_driver_790.y, Light_790.u);
+      connect(Light_790.p, Light_driver_790.p2);
+      connect(Light_driver_790.p1,  cable_light_790.p);
+      connect(Light_Conv_103.p2, cable_light_790.n);
+
+    /* Light Connections 782 */
+      connect(Light_driver_782.n2, GndDC.p);
+      connect(Light_driver_782.n1, GndDC.p);
+      connect(Light_782.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_782.u);
+      connect(Gain_Light_driver_782.y, Light_782.u);
+      connect(Light_782.p, Light_driver_782.p2);
+      connect(Light_driver_782.p1,  cable_light_782.p);
+      connect(Light_Conv_103.p2, cable_light_782.n);
+
+    /* Light Connections 781 */
+      connect(Light_driver_781.n2, GndDC.p);
+      connect(Light_driver_781.n1, GndDC.p);
+      connect(Light_781.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_781.u);
+      connect(Gain_Light_driver_781.y, Light_781.u);
+      connect(Light_781.p, Light_driver_781.p2);
+      connect(Light_driver_781.p1,  cable_light_781.p);
+      connect(Light_Conv_103.p2, cable_light_781.n);
+
+    /* Light Connections 622 */
+      connect(Light_driver_622.n2, GndDC.p);
+      connect(Light_driver_622.n1, GndDC.p);
+      connect(Light_622.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_622.u);
+      connect(Gain_Light_driver_622.y, Light_622.u);
+      connect(Light_622.p, Light_driver_622.p2);
+      connect(Light_driver_622.p1,  cable_light_622.p);
+      connect(Light_Conv_103.p2, cable_light_622.n);
+
+    /* Light Connections 575 */
+      connect(Light_driver_575.n2, GndDC.p);
+      connect(Light_driver_575.n1, GndDC.p);
+      connect(Light_575.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_575.u);
+      connect(Gain_Light_driver_575.y, Light_575.u);
+      connect(Light_575.p, Light_driver_575.p2);
+      connect(Light_driver_575.p1,  cable_light_575.p);
+      connect(Light_Conv_103.p2, cable_light_575.n);
+
+    /* Light Connections 574 */
+      connect(Light_driver_574.n2, GndDC.p);
+      connect(Light_driver_574.n1, GndDC.p);
+      connect(Light_574.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_574.u);
+      connect(Gain_Light_driver_574.y, Light_574.u);
+      connect(Light_574.p, Light_driver_574.p2);
+      connect(Light_driver_574.p1,  cable_light_574.p);
+      connect(Light_Conv_103.p2, cable_light_574.n);
+
+      connect(cable_light_L3_2B.n, p)
+        annotation (Line(points={{-48,20},{-104,20}}, color={0,0,255}));
+      annotation ();
+    end DC_ACDC_Light_Panel_L3_2B;
+
+    model DC_ACDC_Light_Panel_L3_2C
+      outer HPF.SystemDef systemDef;
+      Modelica.Electrical.Analog.Basic.Ground GndDC annotation (
+        Placement(visible = true, transformation(origin={86,-10},     extent = {{-10, -10}, {10, 10}}, rotation = 90)));
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Core_Lights(
+        tableOnFile=true,
+        tableName="L3-Core-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-74,70},{-54,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn1_Lights(
+        tableOnFile=true,
+        tableName="L3-Zn1-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-40,70},{-20,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn2_Lights(
+        tableOnFile=true,
+        tableName="L3-Zn2-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{-8,70},{12,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn3_Lights(
+        tableOnFile=true,
+        tableName="L3-Zn3-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{28,70},{48,90}})));
+
+      Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L3_Zn4_Lights(
+        tableOnFile=true,
+        tableName="L3-Zn4-Lights",
+        fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L3_Light_LP.txt"),
+        smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
+        extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
+        timeScale(displayUnit="h") = 3600)
+        annotation (HideResult=true, Placement(transformation(extent={{64,70},{84,90}})));
+
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_30(V = 19.5, alpha = 0.26452, beta = 0.12526, gamma = 0.0020109);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_45(V = 19.5, alpha = 0.42081, beta = 0.12526, gamma = 0.001341);
+      parameter HPF.Data.ConverterModels.DC2DC_StepDown.ModelData modelData_DCDC(V = 48, alpha = 4.27984, beta = -0.004643965, gamma = 0.0000985992);
+
+    /* Insert models here */
+
+    /* AC/DC Converter Light_Conv_113 */
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_113(modelData = modelData_DCDC);
+
+    /* Light Model 770 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_113(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=36.02);
+      HPF.DC.Variable_DC_Load Light_770;
+
+    /* Light Model 767 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_770(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_770(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_770(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_767;
+
+    /* Light Model 766 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_767(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_767(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_767(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_766;
+
+    /* Light Model 765 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_766(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_766(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_766(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_765;
+
+    /* Light Model 764 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_765(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_765(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_765(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_764;
+
+    /* Light Model 762 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_764(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_764(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_764(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_762;
+
+    /* Light Model 753 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_762(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_762(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_762(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_753;
+
+    /* Light Model 752 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_753(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_753(k=42) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_753(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_752;
+
+    /* AC/DC Converter Light_Conv_108 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_752(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_752(k=42) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_752(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_108(modelData = modelData_DCDC);
+
+    /* Light Model 763 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_108(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=31.95);
+      HPF.DC.Variable_DC_Load Light_763;
+
+    /* Light Model 761 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_763(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_763(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_763(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_761;
+
+    /* Light Model 760 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_761(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_761(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_761(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_760;
+
+    /* Light Model 759 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_760(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_760(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_760(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_759;
+
+    /* Light Model 755 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_759(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_759(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_759(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_755;
+
+    /* Light Model 754 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_755(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_755(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_755(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_754;
+
+    /* Light Model 749 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_754(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_754(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_754(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_749;
+
+    /* Light Model 732 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_749(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_749(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_749(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_732;
+
+    /* AC/DC Converter Light_Conv_111 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_732(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_732(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_732(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_111(modelData = modelData_DCDC);
+
+    /* Light Model 844 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_111(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=36.9);
+      HPF.DC.Variable_DC_Load Light_844;
+
+    /* Light Model 843 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_844(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_844(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_844(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_843;
+
+    /* Light Model 842 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_843(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_843(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_843(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_842;
+
+    /* Light Model 841 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_842(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_842(k=25) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_842(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_841;
+
+    /* Light Model 840 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_841(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_841(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_841(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_840;
+
+    /* Light Model 839 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_840(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_840(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_840(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_839;
+
+    /* Light Model 729 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_839(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_839(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_839(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_729;
+
+    /* AC/DC Converter Light_Conv_112 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_729(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_729(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_729(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_112(modelData = modelData_DCDC);
+
+    /* Light Model 774 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_112(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=31.89);
+      HPF.DC.Variable_DC_Load Light_774;
+
+    /* Light Model 773 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_774(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_774(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_774(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_773;
+
+    /* Light Model 772 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_773(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_773(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_773(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_772;
+
+    /* Light Model 771 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_772(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_772(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_772(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_771;
+
+    /* Light Model 768 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_771(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_771(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_771(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_768;
+
+    /* Light Model 731 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_768(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_768(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_768(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_731;
+
+    /* Light Model 730 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_731(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_731(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_731(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_730;
+
+    /* Light Model 728 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_730(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_730(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_730(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_728;
+
+    /* AC/DC Converter Light_Conv_109 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_728(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_728(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_728(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_109(modelData = modelData_DCDC);
+
+    /* Light Model 788 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_109(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=25.05);
+      HPF.DC.Variable_DC_Load Light_788;
+
+    /* Light Model 786 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_788(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_788(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_788(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_786;
+
+    /* Light Model 785 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_786(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_786(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_786(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_785;
+
+    /* Light Model 775 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_785(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_785(k=28) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_785(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_775;
+
+    /* Light Model 769 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_775(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_775(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_775(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_769;
+
+    /* Light Model 733 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_769(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_769(k=40) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_769(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_733;
+
+    /* Light Model 727 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_733(modelData = modelData_30);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_733(k=21) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_733(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_727;
+
+    /* Light Model 726 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_727(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_727(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_727(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_726;
+
+    /* AC/DC Converter Light_Conv_107 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_726(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_726(k=34) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_726(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.DC2DC_Converters.StepDown Light_Conv_107(modelData = modelData_DCDC);
+
+    /* Light Model 838 */
+      HPF.Cables.NEC_CableModelDC cable_Light_Conv_107(wireGaugeDC = HPF.Types.WireGaugeDC.gauge_14, length=36.15);
+      HPF.DC.Variable_DC_Load Light_838;
+
+    /* Light Model 837 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_838(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_838(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_838(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_837;
+
+    /* Light Model 836 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_837(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_837(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_837(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_836;
+
+    /* Light Model 636 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_836(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_836(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_836(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_636;
+
+    /* Light Model 635 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_636(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_636(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_636(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_635;
+
+    /* Light Model 633 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_635(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_635(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_635(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_633;
+
+    /* Light Model 632 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_633(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_633(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_633(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_632;
+
+    /* Light Model 631 */
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_632(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_632(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_632(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+      HPF.DC.Variable_DC_Load Light_631;
+
+      HPF.DC.DC2DC_Converters.StepDown Light_driver_631(modelData = modelData_45);
+      Modelica.Blocks.Math.Gain Gain_Light_driver_631(k=31) annotation (HideResult=true);
+      HPF.Cables.NEC_CableModelDC cable_light_631(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_POE, length=4);
+
+      Modelica.Electrical.Analog.Interfaces.PositivePin p
+        "Positive electrical pin of port 1" annotation (Placement(transformation(
+              extent={{-114,10},{-94,30}}), iconTransformation(extent={{-110,90},{-90,
+                110}})));
+      HPF.Cables.NEC_CableModelDC cable_light_L3_2C(wireGaugeDC=HPF.Types.WireGaugeDC.gauge_12,
+          length=15) annotation (Placement(visible=true, transformation(
+            origin={-38,20},
+            extent={{10,-10},{-10,10}},
+            rotation=0)));
+    equation
+
+    /* Insert equation here */
+
+    /* AC/DC Converter Light_Conv_113 */
+      connect(cable_Light_Conv_113.n, cable_light_L3_2C.p);
+      connect(Light_Conv_113.p1,  cable_Light_Conv_113.p);
+      connect(Light_Conv_113.n1, GndDC.p);
+      connect(Light_Conv_113.n2, GndDC.p);
+
+    /* Light Connections 770 */
+      connect(Light_driver_770.n2, GndDC.p);
+      connect(Light_driver_770.n1, GndDC.p);
+      connect(Light_770.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_770.u);
+      connect(Gain_Light_driver_770.y, Light_770.u);
+      connect(Light_770.p, Light_driver_770.p2);
+      connect(Light_driver_770.p1,  cable_light_770.p);
+      connect(Light_Conv_113.p2, cable_light_770.n);
+
+    /* Light Connections 767 */
+      connect(Light_driver_767.n2, GndDC.p);
+      connect(Light_driver_767.n1, GndDC.p);
+      connect(Light_767.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_767.u);
+      connect(Gain_Light_driver_767.y, Light_767.u);
+      connect(Light_767.p, Light_driver_767.p2);
+      connect(Light_driver_767.p1,  cable_light_767.p);
+      connect(Light_Conv_113.p2, cable_light_767.n);
+
+    /* Light Connections 766 */
+      connect(Light_driver_766.n2, GndDC.p);
+      connect(Light_driver_766.n1, GndDC.p);
+      connect(Light_766.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn2_Lights.y[1], Gain_Light_driver_766.u);
+      connect(Gain_Light_driver_766.y, Light_766.u);
+      connect(Light_766.p, Light_driver_766.p2);
+      connect(Light_driver_766.p1,  cable_light_766.p);
+      connect(Light_Conv_113.p2, cable_light_766.n);
+
+    /* Light Connections 765 */
+      connect(Light_driver_765.n2, GndDC.p);
+      connect(Light_driver_765.n1, GndDC.p);
+      connect(Light_765.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn2_Lights.y[1], Gain_Light_driver_765.u);
+      connect(Gain_Light_driver_765.y, Light_765.u);
+      connect(Light_765.p, Light_driver_765.p2);
+      connect(Light_driver_765.p1,  cable_light_765.p);
+      connect(Light_Conv_113.p2, cable_light_765.n);
+
+    /* Light Connections 764 */
+      connect(Light_driver_764.n2, GndDC.p);
+      connect(Light_driver_764.n1, GndDC.p);
+      connect(Light_764.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn2_Lights.y[1], Gain_Light_driver_764.u);
+      connect(Gain_Light_driver_764.y, Light_764.u);
+      connect(Light_764.p, Light_driver_764.p2);
+      connect(Light_driver_764.p1,  cable_light_764.p);
+      connect(Light_Conv_113.p2, cable_light_764.n);
+
+    /* Light Connections 762 */
+      connect(Light_driver_762.n2, GndDC.p);
+      connect(Light_driver_762.n1, GndDC.p);
+      connect(Light_762.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn2_Lights.y[1], Gain_Light_driver_762.u);
+      connect(Gain_Light_driver_762.y, Light_762.u);
+      connect(Light_762.p, Light_driver_762.p2);
+      connect(Light_driver_762.p1,  cable_light_762.p);
+      connect(Light_Conv_113.p2, cable_light_762.n);
+
+    /* Light Connections 753 */
+      connect(Light_driver_753.n2, GndDC.p);
+      connect(Light_driver_753.n1, GndDC.p);
+      connect(Light_753.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_753.u);
+      connect(Gain_Light_driver_753.y, Light_753.u);
+      connect(Light_753.p, Light_driver_753.p2);
+      connect(Light_driver_753.p1,  cable_light_753.p);
+      connect(Light_Conv_113.p2, cable_light_753.n);
+
+    /* Light Connections 752 */
+      connect(Light_driver_752.n2, GndDC.p);
+      connect(Light_driver_752.n1, GndDC.p);
+      connect(Light_752.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_752.u);
+      connect(Gain_Light_driver_752.y, Light_752.u);
+      connect(Light_752.p, Light_driver_752.p2);
+      connect(Light_driver_752.p1,  cable_light_752.p);
+      connect(Light_Conv_113.p2, cable_light_752.n);
+
+    /* AC/DC Converter Light_Conv_108 */
+      connect(cable_Light_Conv_108.n, cable_light_L3_2C.p);
+      connect(Light_Conv_108.p1,  cable_Light_Conv_108.p);
+      connect(Light_Conv_108.n1, GndDC.p);
+      connect(Light_Conv_108.n2, GndDC.p);
+
+    /* Light Connections 763 */
+      connect(Light_driver_763.n2, GndDC.p);
+      connect(Light_driver_763.n1, GndDC.p);
+      connect(Light_763.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn2_Lights.y[1], Gain_Light_driver_763.u);
+      connect(Gain_Light_driver_763.y, Light_763.u);
+      connect(Light_763.p, Light_driver_763.p2);
+      connect(Light_driver_763.p1,  cable_light_763.p);
+      connect(Light_Conv_108.p2, cable_light_763.n);
+
+    /* Light Connections 761 */
+      connect(Light_driver_761.n2, GndDC.p);
+      connect(Light_driver_761.n1, GndDC.p);
+      connect(Light_761.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_761.u);
+      connect(Gain_Light_driver_761.y, Light_761.u);
+      connect(Light_761.p, Light_driver_761.p2);
+      connect(Light_driver_761.p1,  cable_light_761.p);
+      connect(Light_Conv_108.p2, cable_light_761.n);
+
+    /* Light Connections 760 */
+      connect(Light_driver_760.n2, GndDC.p);
+      connect(Light_driver_760.n1, GndDC.p);
+      connect(Light_760.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_760.u);
+      connect(Gain_Light_driver_760.y, Light_760.u);
+      connect(Light_760.p, Light_driver_760.p2);
+      connect(Light_driver_760.p1,  cable_light_760.p);
+      connect(Light_Conv_108.p2, cable_light_760.n);
+
+    /* Light Connections 759 */
+      connect(Light_driver_759.n2, GndDC.p);
+      connect(Light_driver_759.n1, GndDC.p);
+      connect(Light_759.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_759.u);
+      connect(Gain_Light_driver_759.y, Light_759.u);
+      connect(Light_759.p, Light_driver_759.p2);
+      connect(Light_driver_759.p1,  cable_light_759.p);
+      connect(Light_Conv_108.p2, cable_light_759.n);
+
+    /* Light Connections 755 */
+      connect(Light_driver_755.n2, GndDC.p);
+      connect(Light_driver_755.n1, GndDC.p);
+      connect(Light_755.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn1_Lights.y[1], Gain_Light_driver_755.u);
+      connect(Gain_Light_driver_755.y, Light_755.u);
+      connect(Light_755.p, Light_driver_755.p2);
+      connect(Light_driver_755.p1,  cable_light_755.p);
+      connect(Light_Conv_108.p2, cable_light_755.n);
+
+    /* Light Connections 754 */
+      connect(Light_driver_754.n2, GndDC.p);
+      connect(Light_driver_754.n1, GndDC.p);
+      connect(Light_754.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn1_Lights.y[1], Gain_Light_driver_754.u);
+      connect(Gain_Light_driver_754.y, Light_754.u);
+      connect(Light_754.p, Light_driver_754.p2);
+      connect(Light_driver_754.p1,  cable_light_754.p);
+      connect(Light_Conv_108.p2, cable_light_754.n);
+
+    /* Light Connections 749 */
+      connect(Light_driver_749.n2, GndDC.p);
+      connect(Light_driver_749.n1, GndDC.p);
+      connect(Light_749.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_749.u);
+      connect(Gain_Light_driver_749.y, Light_749.u);
+      connect(Light_749.p, Light_driver_749.p2);
+      connect(Light_driver_749.p1,  cable_light_749.p);
+      connect(Light_Conv_108.p2, cable_light_749.n);
+
+    /* Light Connections 732 */
+      connect(Light_driver_732.n2, GndDC.p);
+      connect(Light_driver_732.n1, GndDC.p);
+      connect(Light_732.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_732.u);
+      connect(Gain_Light_driver_732.y, Light_732.u);
+      connect(Light_732.p, Light_driver_732.p2);
+      connect(Light_driver_732.p1,  cable_light_732.p);
+      connect(Light_Conv_108.p2, cable_light_732.n);
+
+    /* AC/DC Converter Light_Conv_111 */
+      connect(cable_Light_Conv_111.n, cable_light_L3_2C.p);
+      connect(Light_Conv_111.p1,  cable_Light_Conv_111.p);
+      connect(Light_Conv_111.n1, GndDC.p);
+      connect(Light_Conv_111.n2, GndDC.p);
+
+    /* Light Connections 844 */
+      connect(Light_driver_844.n2, GndDC.p);
+      connect(Light_driver_844.n1, GndDC.p);
+      connect(Light_844.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_844.u);
+      connect(Gain_Light_driver_844.y, Light_844.u);
+      connect(Light_844.p, Light_driver_844.p2);
+      connect(Light_driver_844.p1,  cable_light_844.p);
+      connect(Light_Conv_111.p2, cable_light_844.n);
+
+    /* Light Connections 843 */
+      connect(Light_driver_843.n2, GndDC.p);
+      connect(Light_driver_843.n1, GndDC.p);
+      connect(Light_843.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_843.u);
+      connect(Gain_Light_driver_843.y, Light_843.u);
+      connect(Light_843.p, Light_driver_843.p2);
+      connect(Light_driver_843.p1,  cable_light_843.p);
+      connect(Light_Conv_111.p2, cable_light_843.n);
+
+    /* Light Connections 842 */
+      connect(Light_driver_842.n2, GndDC.p);
+      connect(Light_driver_842.n1, GndDC.p);
+      connect(Light_842.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_842.u);
+      connect(Gain_Light_driver_842.y, Light_842.u);
+      connect(Light_842.p, Light_driver_842.p2);
+      connect(Light_driver_842.p1,  cable_light_842.p);
+      connect(Light_Conv_111.p2, cable_light_842.n);
+
+    /* Light Connections 841 */
+      connect(Light_driver_841.n2, GndDC.p);
+      connect(Light_driver_841.n1, GndDC.p);
+      connect(Light_841.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn2_Lights.y[1], Gain_Light_driver_841.u);
+      connect(Gain_Light_driver_841.y, Light_841.u);
+      connect(Light_841.p, Light_driver_841.p2);
+      connect(Light_driver_841.p1,  cable_light_841.p);
+      connect(Light_Conv_111.p2, cable_light_841.n);
+
+    /* Light Connections 840 */
+      connect(Light_driver_840.n2, GndDC.p);
+      connect(Light_driver_840.n1, GndDC.p);
+      connect(Light_840.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn2_Lights.y[1], Gain_Light_driver_840.u);
+      connect(Gain_Light_driver_840.y, Light_840.u);
+      connect(Light_840.p, Light_driver_840.p2);
+      connect(Light_driver_840.p1,  cable_light_840.p);
+      connect(Light_Conv_111.p2, cable_light_840.n);
+
+    /* Light Connections 839 */
+      connect(Light_driver_839.n2, GndDC.p);
+      connect(Light_driver_839.n1, GndDC.p);
+      connect(Light_839.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn2_Lights.y[1], Gain_Light_driver_839.u);
+      connect(Gain_Light_driver_839.y, Light_839.u);
+      connect(Light_839.p, Light_driver_839.p2);
+      connect(Light_driver_839.p1,  cable_light_839.p);
+      connect(Light_Conv_111.p2, cable_light_839.n);
+
+    /* Light Connections 729 */
+      connect(Light_driver_729.n2, GndDC.p);
+      connect(Light_driver_729.n1, GndDC.p);
+      connect(Light_729.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_729.u);
+      connect(Gain_Light_driver_729.y, Light_729.u);
+      connect(Light_729.p, Light_driver_729.p2);
+      connect(Light_driver_729.p1,  cable_light_729.p);
+      connect(Light_Conv_111.p2, cable_light_729.n);
+
+    /* AC/DC Converter Light_Conv_112 */
+      connect(cable_Light_Conv_112.n, cable_light_L3_2C.p);
+      connect(Light_Conv_112.p1,  cable_Light_Conv_112.p);
+      connect(Light_Conv_112.n1, GndDC.p);
+      connect(Light_Conv_112.n2, GndDC.p);
+
+    /* Light Connections 774 */
+      connect(Light_driver_774.n2, GndDC.p);
+      connect(Light_driver_774.n1, GndDC.p);
+      connect(Light_774.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_774.u);
+      connect(Gain_Light_driver_774.y, Light_774.u);
+      connect(Light_774.p, Light_driver_774.p2);
+      connect(Light_driver_774.p1,  cable_light_774.p);
+      connect(Light_Conv_112.p2, cable_light_774.n);
+
+    /* Light Connections 773 */
+      connect(Light_driver_773.n2, GndDC.p);
+      connect(Light_driver_773.n1, GndDC.p);
+      connect(Light_773.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_773.u);
+      connect(Gain_Light_driver_773.y, Light_773.u);
+      connect(Light_773.p, Light_driver_773.p2);
+      connect(Light_driver_773.p1,  cable_light_773.p);
+      connect(Light_Conv_112.p2, cable_light_773.n);
+
+    /* Light Connections 772 */
+      connect(Light_driver_772.n2, GndDC.p);
+      connect(Light_driver_772.n1, GndDC.p);
+      connect(Light_772.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn2_Lights.y[1], Gain_Light_driver_772.u);
+      connect(Gain_Light_driver_772.y, Light_772.u);
+      connect(Light_772.p, Light_driver_772.p2);
+      connect(Light_driver_772.p1,  cable_light_772.p);
+      connect(Light_Conv_112.p2, cable_light_772.n);
+
+    /* Light Connections 771 */
+      connect(Light_driver_771.n2, GndDC.p);
+      connect(Light_driver_771.n1, GndDC.p);
+      connect(Light_771.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn2_Lights.y[1], Gain_Light_driver_771.u);
+      connect(Gain_Light_driver_771.y, Light_771.u);
+      connect(Light_771.p, Light_driver_771.p2);
+      connect(Light_driver_771.p1,  cable_light_771.p);
+      connect(Light_Conv_112.p2, cable_light_771.n);
+
+    /* Light Connections 768 */
+      connect(Light_driver_768.n2, GndDC.p);
+      connect(Light_driver_768.n1, GndDC.p);
+      connect(Light_768.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_768.u);
+      connect(Gain_Light_driver_768.y, Light_768.u);
+      connect(Light_768.p, Light_driver_768.p2);
+      connect(Light_driver_768.p1,  cable_light_768.p);
+      connect(Light_Conv_112.p2, cable_light_768.n);
+
+    /* Light Connections 731 */
+      connect(Light_driver_731.n2, GndDC.p);
+      connect(Light_driver_731.n1, GndDC.p);
+      connect(Light_731.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_731.u);
+      connect(Gain_Light_driver_731.y, Light_731.u);
+      connect(Light_731.p, Light_driver_731.p2);
+      connect(Light_driver_731.p1,  cable_light_731.p);
+      connect(Light_Conv_112.p2, cable_light_731.n);
+
+    /* Light Connections 730 */
+      connect(Light_driver_730.n2, GndDC.p);
+      connect(Light_driver_730.n1, GndDC.p);
+      connect(Light_730.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_730.u);
+      connect(Gain_Light_driver_730.y, Light_730.u);
+      connect(Light_730.p, Light_driver_730.p2);
+      connect(Light_driver_730.p1,  cable_light_730.p);
+      connect(Light_Conv_112.p2, cable_light_730.n);
+
+    /* Light Connections 728 */
+      connect(Light_driver_728.n2, GndDC.p);
+      connect(Light_driver_728.n1, GndDC.p);
+      connect(Light_728.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_728.u);
+      connect(Gain_Light_driver_728.y, Light_728.u);
+      connect(Light_728.p, Light_driver_728.p2);
+      connect(Light_driver_728.p1,  cable_light_728.p);
+      connect(Light_Conv_112.p2, cable_light_728.n);
+
+    /* AC/DC Converter Light_Conv_109 */
+      connect(cable_Light_Conv_109.n, cable_light_L3_2C.p);
+      connect(Light_Conv_109.p1,  cable_Light_Conv_109.p);
+      connect(Light_Conv_109.n1, GndDC.p);
+      connect(Light_Conv_109.n2, GndDC.p);
+
+    /* Light Connections 788 */
+      connect(Light_driver_788.n2, GndDC.p);
+      connect(Light_driver_788.n1, GndDC.p);
+      connect(Light_788.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_788.u);
+      connect(Gain_Light_driver_788.y, Light_788.u);
+      connect(Light_788.p, Light_driver_788.p2);
+      connect(Light_driver_788.p1,  cable_light_788.p);
+      connect(Light_Conv_109.p2, cable_light_788.n);
+
+    /* Light Connections 786 */
+      connect(Light_driver_786.n2, GndDC.p);
+      connect(Light_driver_786.n1, GndDC.p);
+      connect(Light_786.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_786.u);
+      connect(Gain_Light_driver_786.y, Light_786.u);
+      connect(Light_786.p, Light_driver_786.p2);
+      connect(Light_driver_786.p1,  cable_light_786.p);
+      connect(Light_Conv_109.p2, cable_light_786.n);
+
+    /* Light Connections 785 */
+      connect(Light_driver_785.n2, GndDC.p);
+      connect(Light_driver_785.n1, GndDC.p);
+      connect(Light_785.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_785.u);
+      connect(Gain_Light_driver_785.y, Light_785.u);
+      connect(Light_785.p, Light_driver_785.p2);
+      connect(Light_driver_785.p1,  cable_light_785.p);
+      connect(Light_Conv_109.p2, cable_light_785.n);
+
+    /* Light Connections 775 */
+      connect(Light_driver_775.n2, GndDC.p);
+      connect(Light_driver_775.n1, GndDC.p);
+      connect(Light_775.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_775.u);
+      connect(Gain_Light_driver_775.y, Light_775.u);
+      connect(Light_775.p, Light_driver_775.p2);
+      connect(Light_driver_775.p1,  cable_light_775.p);
+      connect(Light_Conv_109.p2, cable_light_775.n);
+
+    /* Light Connections 769 */
+      connect(Light_driver_769.n2, GndDC.p);
+      connect(Light_driver_769.n1, GndDC.p);
+      connect(Light_769.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_769.u);
+      connect(Gain_Light_driver_769.y, Light_769.u);
+      connect(Light_769.p, Light_driver_769.p2);
+      connect(Light_driver_769.p1,  cable_light_769.p);
+      connect(Light_Conv_109.p2, cable_light_769.n);
+
+    /* Light Connections 733 */
+      connect(Light_driver_733.n2, GndDC.p);
+      connect(Light_driver_733.n1, GndDC.p);
+      connect(Light_733.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_733.u);
+      connect(Gain_Light_driver_733.y, Light_733.u);
+      connect(Light_733.p, Light_driver_733.p2);
+      connect(Light_driver_733.p1,  cable_light_733.p);
+      connect(Light_Conv_109.p2, cable_light_733.n);
+
+    /* Light Connections 727 */
+      connect(Light_driver_727.n2, GndDC.p);
+      connect(Light_driver_727.n1, GndDC.p);
+      connect(Light_727.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_727.u);
+      connect(Gain_Light_driver_727.y, Light_727.u);
+      connect(Light_727.p, Light_driver_727.p2);
+      connect(Light_driver_727.p1,  cable_light_727.p);
+      connect(Light_Conv_109.p2, cable_light_727.n);
+
+    /* Light Connections 726 */
+      connect(Light_driver_726.n2, GndDC.p);
+      connect(Light_driver_726.n1, GndDC.p);
+      connect(Light_726.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_726.u);
+      connect(Gain_Light_driver_726.y, Light_726.u);
+      connect(Light_726.p, Light_driver_726.p2);
+      connect(Light_driver_726.p1,  cable_light_726.p);
+      connect(Light_Conv_109.p2, cable_light_726.n);
+
+    /* AC/DC Converter Light_Conv_107 */
+      connect(cable_Light_Conv_107.n, cable_light_L3_2C.p);
+      connect(Light_Conv_107.p1,  cable_Light_Conv_107.p);
+      connect(Light_Conv_107.n1, GndDC.p);
+      connect(Light_Conv_107.n2, GndDC.p);
+
+    /* Light Connections 838 */
+      connect(Light_driver_838.n2, GndDC.p);
+      connect(Light_driver_838.n1, GndDC.p);
+      connect(Light_838.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn2_Lights.y[1], Gain_Light_driver_838.u);
+      connect(Gain_Light_driver_838.y, Light_838.u);
+      connect(Light_838.p, Light_driver_838.p2);
+      connect(Light_driver_838.p1,  cable_light_838.p);
+      connect(Light_Conv_107.p2, cable_light_838.n);
+
+    /* Light Connections 837 */
+      connect(Light_driver_837.n2, GndDC.p);
+      connect(Light_driver_837.n1, GndDC.p);
+      connect(Light_837.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn2_Lights.y[1], Gain_Light_driver_837.u);
+      connect(Gain_Light_driver_837.y, Light_837.u);
+      connect(Light_837.p, Light_driver_837.p2);
+      connect(Light_driver_837.p1,  cable_light_837.p);
+      connect(Light_Conv_107.p2, cable_light_837.n);
+
+    /* Light Connections 836 */
+      connect(Light_driver_836.n2, GndDC.p);
+      connect(Light_driver_836.n1, GndDC.p);
+      connect(Light_836.n, GndDC.p);
+      connect(combiTimeTable_L3_Zn2_Lights.y[1], Gain_Light_driver_836.u);
+      connect(Gain_Light_driver_836.y, Light_836.u);
+      connect(Light_836.p, Light_driver_836.p2);
+      connect(Light_driver_836.p1,  cable_light_836.p);
+      connect(Light_Conv_107.p2, cable_light_836.n);
+
+    /* Light Connections 636 */
+      connect(Light_driver_636.n2, GndDC.p);
+      connect(Light_driver_636.n1, GndDC.p);
+      connect(Light_636.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_636.u);
+      connect(Gain_Light_driver_636.y, Light_636.u);
+      connect(Light_636.p, Light_driver_636.p2);
+      connect(Light_driver_636.p1,  cable_light_636.p);
+      connect(Light_Conv_107.p2, cable_light_636.n);
+
+    /* Light Connections 635 */
+      connect(Light_driver_635.n2, GndDC.p);
+      connect(Light_driver_635.n1, GndDC.p);
+      connect(Light_635.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_635.u);
+      connect(Gain_Light_driver_635.y, Light_635.u);
+      connect(Light_635.p, Light_driver_635.p2);
+      connect(Light_driver_635.p1,  cable_light_635.p);
+      connect(Light_Conv_107.p2, cable_light_635.n);
+
+    /* Light Connections 633 */
+      connect(Light_driver_633.n2, GndDC.p);
+      connect(Light_driver_633.n1, GndDC.p);
+      connect(Light_633.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_633.u);
+      connect(Gain_Light_driver_633.y, Light_633.u);
+      connect(Light_633.p, Light_driver_633.p2);
+      connect(Light_driver_633.p1,  cable_light_633.p);
+      connect(Light_Conv_107.p2, cable_light_633.n);
+
+    /* Light Connections 632 */
+      connect(Light_driver_632.n2, GndDC.p);
+      connect(Light_driver_632.n1, GndDC.p);
+      connect(Light_632.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_632.u);
+      connect(Gain_Light_driver_632.y, Light_632.u);
+      connect(Light_632.p, Light_driver_632.p2);
+      connect(Light_driver_632.p1,  cable_light_632.p);
+      connect(Light_Conv_107.p2, cable_light_632.n);
+
+    /* Light Connections 631 */
+      connect(Light_driver_631.n2, GndDC.p);
+      connect(Light_driver_631.n1, GndDC.p);
+      connect(Light_631.n, GndDC.p);
+      connect(combiTimeTable_L3_Core_Lights.y[1], Gain_Light_driver_631.u);
+      connect(Gain_Light_driver_631.y, Light_631.u);
+      connect(Light_631.p, Light_driver_631.p2);
+      connect(Light_driver_631.p1,  cable_light_631.p);
+      connect(Light_Conv_107.p2, cable_light_631.n);
+
+      connect(cable_light_L3_2C.n, p)
+        annotation (Line(points={{-48,20},{-104,20}}, color={0,0,255}));
+      annotation ();
+    end DC_ACDC_Light_Panel_L3_2C;
+  end DC_Central_DC;
 end San_Diego;
