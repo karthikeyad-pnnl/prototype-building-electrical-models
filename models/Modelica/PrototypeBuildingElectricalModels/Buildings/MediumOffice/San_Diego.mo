@@ -2345,7 +2345,7 @@ package San_Diego
           Placement(transformation(
             extent={{13,13},{-13,-13}},
             rotation=270,
-            origin={239,115})));
+            origin={237,115})));
       HPF.Loads.ThreePhase.AC_LoadIdealWye aC_LoadIdealWye3(
         P_nom=2205*3,
         Q_nom=1068*3,
@@ -2479,8 +2479,8 @@ package San_Diego
         alpha=0.006933206,
         beta=0.013024277,
         gamma=0.015653292,
-        vAngle=0,
-        vArg_ref=0,
+        vAngle=0.5235987755983,
+        vArg_ref=0.5235987755983,
         vMag_ref=120)                                                                                                                                                                                                         annotation (
         Placement(visible = true, transformation(origin={215,38},   extent={{17,-16},
                 {-17,16}},                                                                           rotation=90)));
@@ -2566,7 +2566,7 @@ package San_Diego
             points={{151,132},{180,132},{180,163},{170.5,163}},
                                                             color={85,170,255}));
       connect(realToComplex2.y, aC_LoadIdealWye2.S_input) annotation (Line(
-            points={{268.5,159},{268.5,158},{276,158},{276,130},{239,130},{239,
+            points={{268.5,159},{268.5,158},{276,158},{276,130},{237,130},{237,
               128}},
             color={85,170,255}));
       connect(aC_LoadIdealWye3.S_input, realToComplex3.y) annotation (Line(
@@ -2706,7 +2706,7 @@ package San_Diego
       connect(aC_LoadIdealWye3.hPin_N, GndAC2.pin) annotation (Line(points={{
               359.4,98},{360,98},{360,68},{298,68},{298,54}}, color={117,80,123}));
       connect(aC_LoadIdealWye2.hPin_N, GndAC2.pin) annotation (Line(points={{
-              249.4,102},{250,102},{250,68},{298,68},{298,54}}, color={117,80,
+              247.4,102},{250,102},{250,68},{298,68},{298,54}}, color={117,80,
               123}));
       connect(aC_LoadIdealWye1.hPin_N, GndAC2.pin) annotation (Line(points={{
               161.4,106},{161.4,68},{298,68},{298,54}}, color={117,80,123}));
@@ -2717,7 +2717,7 @@ package San_Diego
         annotation (Line(points={{338.6,98},{338.6,88},{202.2,88},{202.2,55}},
             color={92,53,102}));
       connect(aC_LoadIdealWye2.hPin_A, Simple_Inverter_Grid_Forming.hPin_A)
-        annotation (Line(points={{228.6,102},{228,102},{228,92},{226,92},{226,
+        annotation (Line(points={{226.6,102},{228,102},{228,92},{226,92},{226,
               88},{202.2,88},{202.2,55}}, color={92,53,102}));
       connect(aC_LoadIdealWye1.hPin_B, Simple_Inverter_Grid_Forming.hPin_B)
         annotation (Line(points={{147.1,106},{148,106},{148,92},{212,92},{212,
@@ -2726,7 +2726,7 @@ package San_Diego
         annotation (Line(points={{345.1,98},{346,98},{346,80},{212,80},{212,55},
               {210.2,55}}, color={92,53,102}));
       connect(aC_LoadIdealWye2.hPin_B, Simple_Inverter_Grid_Forming.hPin_B)
-        annotation (Line(points={{235.1,102},{236,102},{236,80},{212,80},{212,
+        annotation (Line(points={{233.1,102},{236,102},{236,80},{212,80},{212,
               55},{210.2,55}}, color={92,53,102}));
       connect(aC_LoadIdealWye1.hPin_C, Simple_Inverter_Grid_Forming.hPin_C)
         annotation (Line(points={{153.6,106},{154,106},{154,76},{218.2,76},{
@@ -2735,7 +2735,7 @@ package San_Diego
         annotation (Line(points={{351.6,98},{351.6,76},{218.2,76},{218.2,55}},
             color={92,53,102}));
       connect(aC_LoadIdealWye2.hPin_C, Simple_Inverter_Grid_Forming.hPin_C)
-        annotation (Line(points={{241.6,102},{242,102},{242,92},{244,92},{244,
+        annotation (Line(points={{239.6,102},{242,102},{242,92},{244,92},{244,
               76},{218.2,76},{218.2,55}}, color={92,53,102}));
       annotation (
         Diagram(coordinateSystem(extent={{-140,-260},{420,260}})),
