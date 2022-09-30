@@ -11,7 +11,6 @@ model Light_Panel_L1_1A
       length=16.1)
     annotation (Placement(transformation(extent={{-20,12},{-40,32}})));
   Modelica.Blocks.Sources.CombiTimeTable combiTimeTable_L1_Core_Lights(
-    
     extrapolation=Modelica.Blocks.Types.Extrapolation.HoldLastPoint,
     fileName=ModelicaServices.ExternalReferences.loadResource("modelica://PrototypeBuildingElectricalModels/Data/LoadProfiles/San-Diego-L1_Light_LP.txt"),
     smoothness=Modelica.Blocks.Types.Smoothness.ConstantSegments,
@@ -57,337 +56,337 @@ model Light_Panel_L1_1A
 
 /* Insert models here */
 
-  
+
 /* Light Model 130 */
   HPF.DC.Variable_DC_Load Light_130;
   HPF.Cables.NEC_CableModel cable_light_130(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=21.48);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_130(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_130(k=40);
-  
+
 /* Light Model 129 */
   HPF.DC.Variable_DC_Load Light_129;
   HPF.Cables.NEC_CableModel cable_light_129(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=23.43);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_129(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=30,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_129(k=28);
-  
+
 /* Light Model 128 */
   HPF.DC.Variable_DC_Load Light_128;
   HPF.Cables.NEC_CableModel cable_light_128(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=24.75);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_128(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=30,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_128(k=28);
-  
+
 /* Light Model 127 */
   HPF.DC.Variable_DC_Load Light_127;
   HPF.Cables.NEC_CableModel cable_light_127(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=22.5);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_127(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_127(k=40);
-  
+
 /* Light Model 126 */
   HPF.DC.Variable_DC_Load Light_126;
   HPF.Cables.NEC_CableModel cable_light_126(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=23.44);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_126(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_126(k=40);
-  
+
 /* Light Model 125 */
   HPF.DC.Variable_DC_Load Light_125;
   HPF.Cables.NEC_CableModel cable_light_125(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=23.76);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_125(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=30,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_125(k=28);
-  
+
 /* Light Model 124 */
   HPF.DC.Variable_DC_Load Light_124;
   HPF.Cables.NEC_CableModel cable_light_124(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=25.07);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_124(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=30,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_124(k=28);
-  
+
 /* Light Model 123 */
   HPF.DC.Variable_DC_Load Light_123;
   HPF.Cables.NEC_CableModel cable_light_123(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=25.17);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_123(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_123(k=40);
-  
+
 /* Light Model 122 */
   HPF.DC.Variable_DC_Load Light_122;
   HPF.Cables.NEC_CableModel cable_light_122(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=26.49);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_122(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_122(k=40);
-  
+
 /* Light Model 121 */
   HPF.DC.Variable_DC_Load Light_121;
   HPF.Cables.NEC_CableModel cable_light_121(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=29.51);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_121(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_121(k=40);
-  
+
 /* Light Model 120 */
   HPF.DC.Variable_DC_Load Light_120;
   HPF.Cables.NEC_CableModel cable_light_120(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=31.16);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_120(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_120(k=40);
-  
+
 /* Light Model 119 */
   HPF.DC.Variable_DC_Load Light_119;
   HPF.Cables.NEC_CableModel cable_light_119(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=26.95);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_119(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_119(k=40);
-  
+
 /* Light Model 118 */
   HPF.DC.Variable_DC_Load Light_118;
   HPF.Cables.NEC_CableModel cable_light_118(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=28.75);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_118(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_118(k=40);
-  
+
 /* Light Model 117 */
   HPF.DC.Variable_DC_Load Light_117;
   HPF.Cables.NEC_CableModel cable_light_117(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=25.61);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_117(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=30,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_117(k=28);
-  
+
 /* Light Model 116 */
   HPF.DC.Variable_DC_Load Light_116;
   HPF.Cables.NEC_CableModel cable_light_116(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=26.86);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_116(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=30,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_116(k=28);
-  
+
 /* Light Model 115 */
   HPF.DC.Variable_DC_Load Light_115;
   HPF.Cables.NEC_CableModel cable_light_115(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=23.62);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_115(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_115(k=40);
-  
+
 /* Light Model 114 */
   HPF.DC.Variable_DC_Load Light_114;
   HPF.Cables.NEC_CableModel cable_light_114(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=25.38);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_114(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_114(k=40);
-  
+
 /* Light Model 113 */
   HPF.DC.Variable_DC_Load Light_113;
   HPF.Cables.NEC_CableModel cable_light_113(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=19.7);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_113(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=30,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_113(k=25);
-  
+
 /* Light Model 112 */
   HPF.DC.Variable_DC_Load Light_112;
   HPF.Cables.NEC_CableModel cable_light_112(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=20.0);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_112(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=30,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_112(k=25);
-  
+
 /* Light Model 111 */
   HPF.DC.Variable_DC_Load Light_111;
   HPF.Cables.NEC_CableModel cable_light_111(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=23.59);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_111(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_111(k=40);
-  
+
 /* Light Model 110 */
   HPF.DC.Variable_DC_Load Light_110;
   HPF.Cables.NEC_CableModel cable_light_110(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=20.56);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_110(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_110(k=40);
-  
+
 /* Light Model 109 */
   HPF.DC.Variable_DC_Load Light_109;
   HPF.Cables.NEC_CableModel cable_light_109(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=24.03);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_109(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_109(k=40);
-  
+
 /* Light Model 108 */
   HPF.DC.Variable_DC_Load Light_108;
   HPF.Cables.NEC_CableModel cable_light_108(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=21.06);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_108(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_108(k=40);
-  
+
 /* Light Model 105 */
   HPF.DC.Variable_DC_Load Light_105;
   HPF.Cables.NEC_CableModel cable_light_105(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=17.73);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_105(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=30,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_105(k=21);
-  
+
 /* Light Model 103 */
   HPF.DC.Variable_DC_Load Light_103;
   HPF.Cables.NEC_CableModel cable_light_103(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=19.34);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_103(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=30,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_103(k=21);
-  
+
 /* Light Model 102 */
   HPF.DC.Variable_DC_Load Light_102;
   HPF.Cables.NEC_CableModel cable_light_102(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=21.57);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_102(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=30,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_102(k=21);
-  
+
 /* Light Model 100 */
   HPF.DC.Variable_DC_Load Light_100;
   HPF.Cables.NEC_CableModel cable_light_100(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=24.24);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_100(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=30,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_100(k=21);
-  
+
 /* Light Model 92 */
   HPF.DC.Variable_DC_Load Light_92;
   HPF.Cables.NEC_CableModel cable_light_92(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=12.05);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_92(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_92(k=31);
-  
+
 /* Light Model 91 */
   HPF.DC.Variable_DC_Load Light_91;
   HPF.Cables.NEC_CableModel cable_light_91(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=13.07);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_91(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_91(k=31);
-  
+
 /* Light Model 90 */
   HPF.DC.Variable_DC_Load Light_90;
   HPF.Cables.NEC_CableModel cable_light_90(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=14.17);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_90(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_90(k=31);
-  
+
 /* Light Model 89 */
   HPF.DC.Variable_DC_Load Light_89;
   HPF.Cables.NEC_CableModel cable_light_89(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=15.91);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_89(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_89(k=31);
-  
+
 /* Light Model 88 */
   HPF.DC.Variable_DC_Load Light_88;
   HPF.Cables.NEC_CableModel cable_light_88(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=17.16);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_88(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_88(k=31);
-  
+
 /* Light Model 87 */
   HPF.DC.Variable_DC_Load Light_87;
   HPF.Cables.NEC_CableModel cable_light_87(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=18.46);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_87(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_87(k=31);
-  
+
 /* Light Model 86 */
   HPF.DC.Variable_DC_Load Light_86;
   HPF.Cables.NEC_CableModel cable_light_86(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=15.31);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_86(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_86(k=31);
-  
+
 /* Light Model 85 */
   HPF.DC.Variable_DC_Load Light_85;
   HPF.Cables.NEC_CableModel cable_light_85(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=16.12);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_85(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_85(k=31);
-  
+
 /* Light Model 84 */
   HPF.DC.Variable_DC_Load Light_84;
   HPF.Cables.NEC_CableModel cable_light_84(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=17.03);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_84(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_84(k=31);
-  
+
 /* Light Model 83 */
   HPF.DC.Variable_DC_Load Light_83;
   HPF.Cables.NEC_CableModel cable_light_83(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=18.5);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_83(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_83(k=31);
-  
+
 /* Light Model 82 */
   HPF.DC.Variable_DC_Load Light_82;
   HPF.Cables.NEC_CableModel cable_light_82(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=19.59);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_82(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_82(k=31);
-  
+
 /* Light Model 81 */
   HPF.DC.Variable_DC_Load Light_81;
   HPF.Cables.NEC_CableModel cable_light_81(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=20.74);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_81(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_81(k=31);
-  
+
 /* Light Model 73 */
   HPF.DC.Variable_DC_Load Light_73;
   HPF.Cables.NEC_CableModel cable_light_73(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=10.12);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_73(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_73(k=31);
-  
+
 /* Light Model 72 */
   HPF.DC.Variable_DC_Load Light_72;
   HPF.Cables.NEC_CableModel cable_light_72(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=10.79);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_72(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_72(k=31);
-  
+
 /* Light Model 64 */
   HPF.DC.Variable_DC_Load Light_64;
   HPF.Cables.NEC_CableModel cable_light_64(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=13.84);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_64(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_64(k=31);
-  
+
 /* Light Model 63 */
   HPF.DC.Variable_DC_Load Light_63;
   HPF.Cables.NEC_CableModel cable_light_63(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=14.34);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_63(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_63(k=31);
-  
+
 /* Light Model 62 */
   HPF.DC.Variable_DC_Load Light_62;
   HPF.Cables.NEC_CableModel cable_light_62(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=11.0);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_62(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=30,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_62(k=22);
-  
+
 /* Light Model 61 */
   HPF.DC.Variable_DC_Load Light_61;
   HPF.Cables.NEC_CableModel cable_light_61(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=11.41);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_61(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=30,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_61(k=22);
-  
+
 /* Light Model 44 */
   HPF.DC.Variable_DC_Load Light_44;
   HPF.Cables.NEC_CableModel cable_light_44(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=6.11);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_44(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=30,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_44(k=28);
-  
+
 /* Light Model 43 */
   HPF.DC.Variable_DC_Load Light_43;
   HPF.Cables.NEC_CableModel cable_light_43(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=4.77);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_43(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=30,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_43(k=28);
-  
+
 /* Light Model 37 */
   HPF.DC.Variable_DC_Load Light_37;
   HPF.Cables.NEC_CableModel cable_light_37(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=8.05);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_37(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=30,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_37(k=22);
-  
+
 /* Light Model 32 */
   HPF.DC.Variable_DC_Load Light_32;
   HPF.Cables.NEC_CableModel cable_light_32(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=1.59);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_32(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_32(k=35);
-  
+
 /* Light Model 31 */
   HPF.DC.Variable_DC_Load Light_31;
   HPF.Cables.NEC_CableModel cable_light_31(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=3.74);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_31(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_31(k=35);
-  
+
 /* Light Model 30 */
   HPF.DC.Variable_DC_Load Light_30;
   HPF.Cables.NEC_CableModel cable_light_30(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=12.61);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_30(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_30(k=35);
-  
+
 /* Light Model 29 */
   HPF.DC.Variable_DC_Load Light_29;
   HPF.Cables.NEC_CableModel cable_light_29(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=6.12);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_29(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_29(k=35);
-  
+
 /* Light Model 28 */
   HPF.DC.Variable_DC_Load Light_28;
   HPF.Cables.NEC_CableModel cable_light_28(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=8.52);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_28(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_28(k=42);
-  
+
 /* Light Model 27 */
   HPF.DC.Variable_DC_Load Light_27;
   HPF.Cables.NEC_CableModel cable_light_27(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=8.16);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_27(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=45,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_27(k=42);
-  
+
 /* Light Model 26 */
   HPF.DC.Variable_DC_Load Light_26;
   HPF.Cables.NEC_CableModel cable_light_26(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=7.77);
   HPF.PowerConverters.SinglePhase.ACDC_1pRectifierSimple Light_Driver_26(P_DCmin=2.25, VAC_nom=120,VDC_nom=19.5,P_nom=30,P_stby=1.047973212,alpha=0.007433973,beta=0.101408771,gamma=0.050936187);
   Modelica.Blocks.Math.Gain Gain_Light_driver_26(k=21);
-  
+
 /* Light Model 25 */
   HPF.DC.Variable_DC_Load Light_25;
   HPF.Cables.NEC_CableModel cable_light_25(wireGaugeAC=HPF.Types.WireGaugeAC.gauge_14, length=7.88);
